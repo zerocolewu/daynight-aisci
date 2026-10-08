@@ -1,0 +1,25 @@
+Matching SMILES to precomputed graphs...
+  Matched 5162/5162 (100.0%)
+  Matched 573/573 (100.0%)
+  Matched 1434/1435 (99.9%)
+
+============================================================
+Training exp5_enriched_edge_cpa | Seed 71 | Device: cuda
+============================================================
+Model: exp5_enriched_edge_cpa, Params: 1,371,393
+Epoch   1 | Train Loss: 1.4389 | Val RMSE: 82.21 K | Best: 82.21 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.1762 | Val RMSE: 47.00 K | Best: 47.00 K (ep 21) | LR: 0.000989
+Epoch  41 | Train Loss: 0.1269 | Val RMSE: 42.35 K | Best: 40.08 K (ep 40) | LR: 0.000957
+Epoch  61 | Train Loss: 0.0952 | Val RMSE: 40.31 K | Best: 38.03 K (ep 60) | LR: 0.000905
+Epoch  81 | Train Loss: 0.0761 | Val RMSE: 38.21 K | Best: 37.87 K (ep 65) | LR: 0.000835
+Epoch 101 | Train Loss: 0.0605 | Val RMSE: 37.77 K | Best: 37.36 K (ep 99) | LR: 0.000750
+Epoch 121 | Train Loss: 0.0595 | Val RMSE: 38.95 K | Best: 36.42 K (ep 110) | LR: 0.000655
+Early stopping at epoch 140
+
+Final Results for exp5_enriched_edge_cpa Seed 71:
+  Best Epoch: 110
+  Best Val RMSE: 36.4200 K
+  Test RMSE: 40.4524 K
+  Test MAE: 27.4929 K
+  Training Time: 906.2s
+Test RMSE: 40.45 K

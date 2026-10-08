@@ -107,7 +107,6 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 TOPIC_STATE_ID = "mem_001"
 META_METHOD_ID = "mem_002"
 
-
 # ==================== read_deepdetail (tool) ====================
 
 def read_deepdetail(mem_id: str, max_chars: int = 20000) -> Dict[str, Any]:
@@ -175,17 +174,16 @@ class AIScientist:
         self.src_dir.mkdir(parents=True, exist_ok=True)
 
         self.model_config = {
-            "id": "glm-5",
+            "id": "glm-5.2",
             "api_key": self.api_key,
             "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-            "temperature": 0.6,
         }
 
         self.description = """
 Act as an objective scientific reasoning system specialized in deep learning for science.
 Prioritize scrutiny-resistant evidence; do not hallucinate.
 Be faithful to the facts, and never beautify results.
-Always show your reasoning before you act.
+Always thoroughly reasoning and fully understand the meaning of prompts before you act.
 """
 
         # Lazy agents
@@ -261,7 +259,7 @@ First read:
 - read_memory("{META_METHOD_ID}", detail="content")
 
 Output MUST be plain text ONLY (no JSON), faithful to the trace (no fabrication).
-Keep it very brief, only capture the most important information (what was done, approximate results), around 300 words, do not fabricate.
+Keep it **very brief and concise**, only capture the most important information (what was done and what is the result), **not exceed 100 words**, definitely do not fabricate.
 
 If a tool call fails, it may be due to tool-call formatting; try adjusting the format. If it still fails after multiple attempts, skip using that tool.
 """,
@@ -271,7 +269,7 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
                     markdown=False,
                 )
 
-            max_chars = 50000
+            max_chars = 80000
             trace_for_agent = lite_trace[-max_chars:] if len(lite_trace) > max_chars else lite_trace
             self._inject_memory_counts_into_instructions(self._daily_summary_agent)
             resp = self._daily_summary_agent.run(
@@ -343,9 +341,10 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
                 instructions=f"""
 You are now focused on literature selection (not summarization).
 
-First read TopicState and MetaMethod:
+First read TopicState and MetaMethod which are your metacognition and you should align with them:
 - read_memory("{TOPIC_STATE_ID}", detail="content")
 - read_memory("{META_METHOD_ID}", detail="content")
+
 
 You have two sources:
 1) Local pool: list_pool_papers() then choose 1–2 PDFs to move into {self.papers_dir} (selected PDFs will be removed from pool)
@@ -358,7 +357,7 @@ Hard rules:
 
 Task focus: {task}
 
-If a tool call fails, it may be due to tool-call formatting; try adjusting the format. If it still fails after multiple attempts, skip using that tool.
+If a tool call fails, it may be due to tool-call formatting; try adjusting the format. If it still fails after multiple attempts, skip using that tool (Include arxiv network request timeout).
 """,
                 tools=[
                     read_memory,
@@ -389,6 +388,10 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
         """
         LEARN READ v2: structured paper reading (daynight.py-style) + TopicState/MetaMethod link fields
         """
+        
+        print(f"\n{'='*60}")
+        print("🌅 DAY MODE: LEARNING READ (v2)")
+        print(f"{'='*60}\n")
 
         md_files = list(self.papers_dir.rglob("*.md"))
         if not md_files:
@@ -406,8 +409,8 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
             try:
                 with open(md_file, "r", encoding="utf-8") as f:
                     content = f.read()
-                if len(content) > 80000:
-                    content = content[:80000] + "\n...(truncated)..."
+                if len(content) > 100000:
+                    content = content[:100000] + "\n...(truncated)..."
 
                 paper_title = md_file.stem
                 self._current_paper_local_path = str(md_file)
@@ -418,7 +421,7 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
                         instructions=f"""
 You are now focused on reading papers and committing them to memory.
 
-First read TopicState and MetaMethod:
+First read TopicState and MetaMethod which are your metacognition and you should align with them:
 - read_memory("{TOPIC_STATE_ID}", detail="content")
 - read_memory("{META_METHOD_ID}", detail="content")
 
@@ -437,10 +440,10 @@ You MUST save ONE memory per paper via write_memory_with_day with:
 "method": "Systematically describe the core idea, specific technical design, and theoretical foundation. Explain why this design was chosen, why it works, and the synergistic mechanisms among key components, etc. (Approximately 500-1500 words)",
 "experiment": "Detail the specific experimental setup: dataset selection, experimental configuration, baseline comparisons, main experiments, ablation studies, etc. (Approximately 500-1500 words)",
 "result": "Present main experimental findings and explain the principles behind performance improvements. Discuss the method's advantages, limitations, and future directions, etc. (Approximately 300-500 words)",
-"github_url": "if the paper provides a repo link, extract it; otherwise "N/A".
-"dataset": "what dataset(s) are used; if unclear, "N/A".
-"topic_relation": "how this paper relates to current TopicState (which hypothesis/evidence need it touches).
-"topic_contribution": "what actionable contribution it provides to TopicState (what decision/experiment it enables).
+"github_url": "if the paper provides a repo link, extract it; otherwise N/A".
+"dataset": "what dataset(s) are used; if unclear, N/A".
+"topic_relation": "how this paper relates to current TopicState (which hypothesis/evidence need it touches)."
+"topic_contribution": "what actionable contribution it provides to TopicState (what decision/experiment it enables)."
 
 If a tool call fails, it may be due to tool-call formatting; try adjusting the format. If it still fails after multiple attempts, skip using that tool.
 """,
@@ -479,7 +482,7 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
             return run_project_task(
                 task=task_description,
                 project_name=full_project_name,
-                timeout=72000,
+                timeout=108000,
             )
 
         def run_experiment_continue(task_description: str, project_name: str = None):
@@ -495,7 +498,7 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
             return run_project_task(
                 task=task_description,
                 project_name=full_project_name,
-                timeout=72000,
+                timeout=108000,
                 continue_session=True,
             )
 
@@ -517,7 +520,7 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
                     instructions=f"""
 You select ONE best next executable idea for work, based on TopicState and current memory.
 
-First read TopicState and MetaMethod:
+First read TopicState and MetaMethod which are your metacognition and you should align with them:
 - read_memory("{TOPIC_STATE_ID}", detail="content")
 - read_memory("{META_METHOD_ID}", detail="content")
 
@@ -562,7 +565,7 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
 You are now acting as a **Research Supervisor**. Fully execute one best idea, including the complete deep learning computational experiment workflow such as code generation and training, and save the experience to memory.
 
 === WORKFLOW ===
-First read TopicState and MetaMethod:
+First read TopicState and MetaMethod which are your metacognition and you should align with them:
 read_memory("{TOPIC_STATE_ID}", detail="content")
 read_memory("{META_METHOD_ID}", detail="content")
 
@@ -686,7 +689,7 @@ Today’s memories (id + abstract):
 Your tasks:
 1) Read the most relevant memories from today (read_memory).
 2) Retrieve relevant past memories when needed (search_memory), guided by today’s memories and the active hypotheses in TopicState.
-3) For groups of memories with deep, strong relevance (not superficial similarity), write 1–3 new memories of type="integration" using write_integration_with_day. Do not write more than 3.
+3) For groups of memories with deep, strong relevance (not superficial similarity), write **1–3** new memories of type="integration" using write_integration_with_day. **Do not write more than 3**.
 4) The integration memory’s content should be a dict. It should include consensus / conflicts / alignment / mentioned_memory_ids. Use deep narrative statements and explicitly cite the referenced memories using parentheses (mem_###). Turn messy atomic memories into a clear, structured understanding, and let key insights emerge from this reorganization.
 
 After writing the integration memories, output a short plain-text integration report including:
@@ -711,9 +714,9 @@ You are internalize_meta_agent.
 
 You update:
 - TopicState (mem_001): research direction + active hypotheses
-Don't update daily_journal and connections in TopicState.
+Do not update daily_journal, connections, and other content in TopicState that is not belong to research direction and active hypotheses
 
-First read TopicState and MetaMethod:
+First read TopicState and MetaMethod which are your metacognition and you should align with them:
 - read_memory("{TOPIC_STATE_ID}", detail="content")
 - read_memory("{META_METHOD_ID}", detail="content")
 
@@ -778,7 +781,8 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
                 description=self.description,
                 instructions=f"""
 You are generating executable ideas (Idea = operational wrapper of hypotheses). **No more than 2 ideas**.
-First read TopicState and MetaMethod:
+
+First read TopicState and MetaMethod which are your metacognition and you should align with them:
 read_memory("{TOPIC_STATE_ID}", detail="content")
 read_memory("{META_METHOD_ID}", detail="content")
 Your tools are read_memory, search_memory, write_memory_with_day:
@@ -822,8 +826,9 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
                 model=OpenAILike(**self.model_config),
                 description=self.description,
                 instructions=f"""
-You are generating executable ideas (Idea = operational wrapper of hypotheses). **No more than 2 ideas**.
-First read TopicState and MetaMethod:
+You are generating executable ideas (Idea = operational wrapper of hypotheses). **only 1 idea**.
+
+First read TopicState and MetaMethod which are your metacognition and you should align with them:
 read_memory("{TOPIC_STATE_ID}", detail="content")
 read_memory("{META_METHOD_ID}", detail="content")
 Your tools are read_memory, search_memory, write_memory_with_day:
@@ -874,6 +879,7 @@ If a tool call fails, it may be due to tool-call formatting; try adjusting the f
             instructions=f"""
 You are the PI of a long-term research initiative focusing on Deep Learning for Science.
 Today is Day {self.day} of a consecutive multi-day run. Treat this as a continuation: inherit context from TopicState and maintain the long-term consistency.
+On Day 1, prioritize “Data Centric Foundation” hypotheses; on subsequent days, explore other promising hypotheses.
 
 Innovation requires logic; too much complexity isn't necessarily good, nor is too little simplicity. The best algorithm is perhaps a delicate balance.
 

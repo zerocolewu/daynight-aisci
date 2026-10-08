@@ -1,0 +1,70 @@
+============================================================
+ABLATION 2: No GNN-SSM (GINConv instead)
+============================================================
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 754,754
+Epoch   1 | Train RMSE: 109.9559 | Val RMSE: 68.3897 | Val MAE: 52.2508 | Val R2: 0.6008 | LR: 0.000997 | Best: 68.3897 @ 1
+Epoch  20 | Train RMSE: 43.6944 | Val RMSE: 46.5141 | Val MAE: 34.4528 | Val R2: 0.8153 | LR: 0.000251 | Best: 45.3094 @ 13
+Epoch  40 | Train RMSE: 42.9802 | Val RMSE: 47.7748 | Val MAE: 35.3477 | Val R2: 0.8052 | LR: 0.000933 | Best: 42.5730 @ 36
+Epoch  60 | Train RMSE: 35.1003 | Val RMSE: 47.2027 | Val MAE: 34.5056 | Val R2: 0.8098 | LR: 0.000501 | Best: 41.6068 @ 49
+Epoch  80 | Train RMSE: 28.8766 | Val RMSE: 43.0541 | Val MAE: 31.2262 | Val R2: 0.8418 | LR: 0.000068 | Best: 41.4844 @ 67
+Early stopping at epoch 97
+
+Best val RMSE: 41.4844 at epoch 67
+
+--- Seed 42 Final Results ---
+Train RMSE: 33.1456
+Val RMSE:   41.4844
+Test RMSE:  45.5569
+Test MAE:   30.0553
+Test R2:    0.8365
+Test RMSE (no GNN-SSM): 45.5569
+
+============================================================
+ABLATION 3: No non-covalent edges (covalent only)
+============================================================
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with covalent edges only...
+Graph building complete: 7170 success, 0 failed
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 1,054,290
+Epoch   1 | Train RMSE: 82.0659 | Val RMSE: 82.2606 | Val MAE: 66.8499 | Val R2: 0.4225 | LR: 0.000997 | Best: 82.2606 @ 1
+Epoch  20 | Train RMSE: 51.8778 | Val RMSE: 50.1497 | Val MAE: 38.1918 | Val R2: 0.7853 | LR: 0.000251 | Best: 50.1497 @ 20
+Epoch  40 | Train RMSE: 58.6587 | Val RMSE: 52.7631 | Val MAE: 39.8427 | Val R2: 0.7624 | LR: 0.000933 | Best: 45.6099 @ 27
+Early stopping at epoch 57
+
+Best val RMSE: 45.6099 at epoch 27
+
+--- Seed 42 Final Results ---
+Train RMSE: 47.4089
+Val RMSE:   45.6099
+Test RMSE:  48.3381
+Test MAE:   34.8287
+Test R2:    0.8159
+Test RMSE (no non-covalent): 48.3381
+
+============================================================
+ABLATION SUMMARY
+============================================================
+Ablation 1 (no Fourier-KAN): 50.13
+Ablation 2 (no GNN-SSM):      45.5569
+Ablation 3 (no non-covalent): 48.3381

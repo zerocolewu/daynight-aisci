@@ -1,0 +1,93 @@
+======================================================================
+CHEMPROP-POLYMER DIAGNOSTIC REPORT
+======================================================================
+
+======================================================================
+1. PERIODIC EDGE BOND MESSAGE DISCRIMINABILITY
+======================================================================
+
+Seed 42 - Forward periodic edge messages:
+  N polymers: 500
+  Mean pairwise cos_sim: 0.7536
+  Std: 0.2875
+  Min: 0.1189
+  Max: 1.0000
+  Stratified by backbone bond type:
+    SINGLE: mean=0.7529 ± 0.2877
+    DOUBLE: mean=0.9347 ± 0.0456
+
+  Backward periodic edge messages:
+  Mean pairwise cos_sim: 0.6773
+  Std: 0.3379
+
+  GOOD: cos_sim < 0.90 → periodic edge messages are DISCRIMINATIVE
+  Chemprop IS utilizing periodic edge chemistry
+
+======================================================================
+2. OVERFITTING GAP ANALYSIS
+======================================================================
+
+Ablation                  Train RMSE      Val RMSE        Test RMSE       Gap       
+--------------------------------------------------------------------------------
+A_monomer                 43.44           42.91           45.76           -2.32±0.65
+B_trimer                  41.37           40.98           43.92           -2.55±0.51
+C_polymer_full            41.06           40.49           43.46           -2.40±0.51
+D_polymer_minimal         41.34           40.99           43.71           -2.37±0.41
+E_polymer_random          40.86           40.87           43.58           -2.72±0.50
+F_polymer_256             41.93           41.17           44.48           -2.54±1.25
+
+======================================================================
+3. ARCHITECTURE COMPARISON
+======================================================================
+
+Chemprop+polymer (C):     43.46 ± 0.89
+GIN+trimer (reference):   50.19
+GIN+polymer (reference):  53.28
+
+  Chemprop+polymer BEATS GIN+trimer by 6.73 RMSE
+  → Architecture-periodicity compatibility CONFIRMED
+
+  Chemprop+polymer BEATS GIN+polymer by 9.82 RMSE
+  → Directed bond messages handle periodicity better than atom-level aggregation
+
+======================================================================
+4. PROGRESSIVE IMPROVEMENT ANALYSIS
+======================================================================
+
+  Monomer (A):    45.76
+  Trimer (B):     43.92  (improvement: +1.84)
+  Polymer (C):    43.46  (improvement: +0.46)
+
+  Monomer→Trimer: POSITIVE (+1.84)
+  Trimer→Polymer: POSITIVE (+0.46)
+
+======================================================================
+5. RANDOM PERIODIC EDGE CONTROL
+======================================================================
+
+  Correct periodic edge (C):    43.46
+  Random periodic edge (E):     43.58
+  Difference: +0.12
+
+  RESULT: Similar performance → specific chemistry does NOT matter
+  Extra connection alone provides the benefit
+
+======================================================================
+6. MINIMAL vs FULL PERIODIC EDGE FEATURES
+======================================================================
+
+  Full features (C):     43.46
+  Minimal features (D):  43.71
+  Difference: +0.25
+
+  RESULT: Rich features NOT essential → topology marker sufficient
+
+======================================================================
+7. HIDDEN DIMENSION COMPARISON (300 vs 256)
+======================================================================
+
+  hidden_dim=300 (C): 43.46
+  hidden_dim=256 (F): 44.48
+  Difference: -1.01
+
+  RESULT: 300-dim better → more capacity helps

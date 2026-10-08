@@ -1,0 +1,284 @@
+============================================================
+PSCP EFFICIENT EXPERIMENT
+Started: 2026-03-21 04:55:46.782008
+============================================================
+Device: cuda
+GPU: NVIDIA GeForce RTX 2080 Ti
+
+Loaded Tg: 7170 samples
+Tg range: -139.0 to 495.0
+
+Preparing Tg data...
+Valid samples: 6971
+Node feature dim: 155
+
+============================================================
+BASELINE: MLP + ECFP4
+============================================================
+
+Fold 1/5
+  Epoch 50: Val RMSE = 0.35
+  Fold 1: RMSE=38.25
+
+Fold 2/5
+  Epoch 50: Val RMSE = 0.34
+  Fold 2: RMSE=36.71
+
+Fold 3/5
+  Epoch 50: Val RMSE = 0.35
+  Fold 3: RMSE=38.80
+
+Fold 4/5
+  Epoch 50: Val RMSE = 0.34
+  Fold 4: RMSE=37.97
+
+Fold 5/5
+  Epoch 50: Val RMSE = 0.34
+  Fold 5: RMSE=37.07
+
+BASELINE: 37.76 +/- 0.77
+
+============================================================
+LOADING PRETRAIN DATA
+============================================================
+PI1M samples: 995799
+Building pretrain graphs for 10000 samples...
+  Processed 1000/10000
+  Processed 2000/10000
+  Processed 3000/10000
+  Processed 4000/10000
+  Processed 5000/10000
+  Processed 6000/10000
+  Processed 7000/10000
+  Processed 8000/10000
+  Processed 9000/10000
+  Processed 10000/10000
+Valid graphs: 9902
+Building pretrain graphs for 100000 samples...
+  Processed 1000/100000
+  Processed 2000/100000
+  Processed 3000/100000
+  Processed 4000/100000
+  Processed 5000/100000
+  Processed 6000/100000
+  Processed 7000/100000
+  Processed 8000/100000
+  Processed 9000/100000
+  Processed 10000/100000
+  Processed 11000/100000
+  Processed 12000/100000
+  Processed 13000/100000
+  Processed 14000/100000
+  Processed 15000/100000
+  Processed 16000/100000
+  Processed 17000/100000
+  Processed 18000/100000
+  Processed 19000/100000
+  Processed 20000/100000
+  Processed 21000/100000
+  Processed 22000/100000
+  Processed 23000/100000
+  Processed 24000/100000
+  Processed 25000/100000
+  Processed 26000/100000
+  Processed 27000/100000
+  Processed 28000/100000
+  Processed 29000/100000
+  Processed 30000/100000
+  Processed 31000/100000
+  Processed 32000/100000
+  Processed 33000/100000
+  Processed 34000/100000
+  Processed 35000/100000
+  Processed 36000/100000
+  Processed 37000/100000
+  Processed 38000/100000
+  Processed 39000/100000
+  Processed 40000/100000
+  Processed 41000/100000
+  Processed 42000/100000
+  Processed 43000/100000
+  Processed 44000/100000
+  Processed 45000/100000
+  Processed 46000/100000
+  Processed 47000/100000
+  Processed 48000/100000
+  Processed 49000/100000
+  Processed 50000/100000
+  Processed 51000/100000
+  Processed 52000/100000
+  Processed 53000/100000
+  Processed 54000/100000
+  Processed 55000/100000
+  Processed 56000/100000
+  Processed 57000/100000
+  Processed 58000/100000
+  Processed 59000/100000
+  Processed 60000/100000
+  Processed 61000/100000
+  Processed 62000/100000
+  Processed 63000/100000
+  Processed 64000/100000
+  Processed 65000/100000
+  Processed 66000/100000
+  Processed 67000/100000
+  Processed 68000/100000
+  Processed 69000/100000
+  Processed 70000/100000
+  Processed 71000/100000
+  Processed 72000/100000
+  Processed 73000/100000
+  Processed 74000/100000
+  Processed 75000/100000
+  Processed 76000/100000
+  Processed 77000/100000
+  Processed 78000/100000
+  Processed 79000/100000
+  Processed 80000/100000
+  Processed 81000/100000
+  Processed 82000/100000
+  Processed 83000/100000
+  Processed 84000/100000
+  Processed 85000/100000
+  Processed 86000/100000
+  Processed 87000/100000
+  Processed 88000/100000
+  Processed 89000/100000
+  Processed 90000/100000
+  Processed 91000/100000
+  Processed 92000/100000
+  Processed 93000/100000
+  Processed 94000/100000
+  Processed 95000/100000
+  Processed 96000/100000
+  Processed 97000/100000
+  Processed 98000/100000
+  Processed 99000/100000
+  Processed 100000/100000
+Valid graphs: 99103
+
+============================================================
+PSCP ABLATIONS
+============================================================
+
+============================================================
+CONDITION: no_pretrain
+============================================================
+
+Fold 1/5
+    Epoch 50: Val RMSE = 0.34
+  Fold 1: RMSE=37.38
+
+Fold 2/5
+    Epoch 50: Val RMSE = 0.34
+  Fold 2: RMSE=36.75
+
+Fold 3/5
+    Epoch 50: Val RMSE = 0.35
+  Fold 3: RMSE=37.96
+
+Fold 4/5
+    Epoch 50: Val RMSE = 0.34
+  Fold 4: RMSE=36.30
+
+Fold 5/5
+    Epoch 50: Val RMSE = 0.34
+  Fold 5: RMSE=36.37
+
+no_pretrain: 36.95 +/- 0.63
+
+============================================================
+CONDITION: pretrain_10k
+============================================================
+  Pretraining on 9902 graphs...
+    Epoch 5/30: Loss = 0.5854
+    Epoch 10/30: Loss = 0.4273
+    Epoch 15/30: Loss = 0.3496
+    Epoch 20/30: Loss = 0.3087
+    Epoch 25/30: Loss = 0.2812
+    Epoch 30/30: Loss = 0.2545
+
+Fold 1/5
+    Epoch 50: Val RMSE = 0.34
+  Fold 1: RMSE=36.88
+
+Fold 2/5
+    Epoch 50: Val RMSE = 0.34
+  Fold 2: RMSE=36.00
+
+Fold 3/5
+  Fold 3: RMSE=36.96
+
+Fold 4/5
+    Epoch 50: Val RMSE = 0.33
+  Fold 4: RMSE=35.70
+
+Fold 5/5
+    Epoch 50: Val RMSE = 0.33
+  Fold 5: RMSE=35.70
+
+pretrain_10k: 36.25 +/- 0.56
+
+============================================================
+CONDITION: pretrain_100k
+============================================================
+  Pretraining on 99103 graphs...
+    Epoch 5/30: Loss = 0.2341
+    Epoch 10/30: Loss = 0.1820
+    Epoch 15/30: Loss = 0.1636
+    Epoch 20/30: Loss = 0.1531
+    Epoch 25/30: Loss = 0.1487
+    Epoch 30/30: Loss = 0.1420
+
+Fold 1/5
+    Epoch 50: Val RMSE = 0.34
+  Fold 1: RMSE=36.85
+
+Fold 2/5
+    Epoch 50: Val RMSE = 0.33
+    Epoch 100: Val RMSE = 0.32
+  Fold 2: RMSE=35.41
+
+Fold 3/5
+    Epoch 50: Val RMSE = 0.34
+  Fold 3: RMSE=37.41
+
+Fold 4/5
+  Fold 4: RMSE=36.10
+
+Fold 5/5
+    Epoch 50: Val RMSE = 0.33
+  Fold 5: RMSE=35.73
+
+pretrain_100k: 36.30 +/- 0.73
+
+============================================================
+FINAL SUMMARY
+============================================================
+
+Baseline: 37.76 +/- 0.77
+
+PSCP:
+  no_pretrain: 36.95 +/- 0.63
+  pretrain_10k: 36.25 +/- 0.56
+  pretrain_100k: 36.30 +/- 0.73
+
+Best: pretrain_10k with RMSE = 36.25
+Target: RMSE < 35.0
+Status: NOT ACHIEVED
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/6_day6_pscp/run_efficient_experiment.py", line 719, in <module>
+    results = main()
+  File "/home/home_public/aisci/AIscientist/src/6_day6_pscp/run_efficient_experiment.py", line 710, in main
+    json.dump(final_results, f, indent=2)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool_ is not JSON serializable

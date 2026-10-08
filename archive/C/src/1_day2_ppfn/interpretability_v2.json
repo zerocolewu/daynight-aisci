@@ -1,0 +1,106 @@
+{
+  "model": "PPFN-v2 (simple, periodic edge, hidden_dim=256)",
+  "test_metrics": {
+    "rmse": 37.7580,
+    "mae": 24.934179306030273,
+    "r2": 0.8893320858478546
+  },
+  "error_analysis": {
+    "mean_error": -0.09145114570856094,
+    "std_error": 37.75786209106445,
+    "median_error": -1.8926095962524414,
+    "error_Tg_correlation": 0.06053003533599098
+  },
+  "performance_by_Tg_range": [
+    {
+      "range": "-200-0",
+      "count": 141,
+      "rmse": 43.997989654541016,
+      "mae": 25.47005271911621
+    },
+    {
+      "range": "0-100",
+      "count": 412,
+      "rmse": 35.02396774291992,
+      "mae": 22.77161407470703
+    },
+    {
+      "range": "100-200",
+      "count": 376,
+      "rmse": 36.14201736450195,
+      "mae": 25.30401039123535
+    },
+    {
+      "range": "200-300",
+      "count": 373,
+      "rmse": 36.981021881103516,
+      "mae": 24.40793800354004
+    },
+    {
+      "range": "300-400",
+      "count": 124,
+      "rmse": 41.55495071411133,
+      "mae": 29.378660202026367
+    },
+    {
+      "range": "400-600",
+      "count": 9,
+      "rmse": 76.08427429199219,
+      "mae": 60.66012954711914
+    }
+  ],
+  "aromatic_analysis": {
+    "aromatic": {
+      "count": 1230,
+      "mean_Tg": 163.28961181640625,
+      "rmse": 38.017704010009766
+    },
+    "non_aromatic": {
+      "count": 205,
+      "mean_Tg": 37.67790222167969,
+      "rmse": 36.16041946411133
+    }
+  },
+  "attention_weights": {
+    "mean": 0.009159497916698456,
+    "std": 0.01210852712392807,
+    "min": 0.000446187739726156,
+    "max": 0.24871326982975006,
+    "median": 0.005132787860929966
+  },
+  "systematic_bias": {
+    "description": "Model over-predicts low Tg and under-predicts high Tg",
+    "low_Tg_bias": 7.383174419403076,
+    "high_Tg_bias": -23.299802780151367
+  },
+  "all_experiments_summary": {
+    "v1_complex_hierarchical": {
+      "rmse": 37.36
+    },
+    "v2_simple_periodic_256": {
+      "rmse": 37.76
+    },
+    "v2_simple_no_periodic_256": {
+      "rmse": 38.73
+    },
+    "v2_improved_virtual_node_cosine": {
+      "rmse": 44.39
+    },
+    "v2_improved_virtual_node_plateau": {
+      "rmse": 41.42
+    },
+    "v2_wide_512": {
+      "rmse": 39.21
+    },
+    "v2_ensemble_5models": {
+      "rmse": 36.74
+    }
+  },
+  "periodic_edge_ablation": {
+    "with_periodic": 37.76,
+    "without_periodic": 38.73,
+    "improvement": 0.97,
+    "pct_improvement": 2.51,
+    "conclusion": "Periodic edges provide a small positive contribution (~2.5% RMSE reduction)"
+  }
+}

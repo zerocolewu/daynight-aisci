@@ -1,0 +1,121 @@
+======================================================================
+PolyBG-CPA Iteration 2: Hierarchical Bond->Atom Encoding
+======================================================================
+
+Loading data...
+Matching SMILES to precomputed graphs...
+  Matched 5162/5162 (100.0%)
+  Matched 573/573 (100.0%)
+  Matched 1434/1435 (99.9%)
+
+Computing bond data (with bond_to_atom mapping)...
+
+######################################################################
+# Experiment 6: Hierarchical-Pre (Bond->Atom Input Augmentation)
+######################################################################
+
+============================================================
+Training exp6_hierarchical_pre | Seed 71 | Device: cuda
+============================================================
+Model: exp6_hierarchical_pre, Params: 1,019,649
+Epoch   1 | Train Loss: 8814.9637 | Val RMSE: 481.41 K | Best: 481.41 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 1.0001 | Val RMSE: 110.45 K | Best: 110.44 K (ep 5) | LR: 0.000989
+Early stopping at epoch 35
+
+Final Results for exp6_hierarchical_pre Seed 71:
+  Best Epoch: 5
+  Best Val RMSE: 110.4450 K
+  Test RMSE: 110.2499 K
+  Test MAE: 93.1056 K
+  Training Time: 514.3s
+
+============================================================
+Training exp6_hierarchical_pre | Seed 42 | Device: cuda
+============================================================
+Model: exp6_hierarchical_pre, Params: 1,019,649
+Epoch   1 | Train Loss: 5198.4983 | Val RMSE: 121.43 K | Best: 121.43 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 1.0001 | Val RMSE: 110.45 K | Best: 110.44 K (ep 5) | LR: 0.000989
+Early stopping at epoch 35
+
+Final Results for exp6_hierarchical_pre Seed 42:
+  Best Epoch: 5
+  Best Val RMSE: 110.4448 K
+  Test RMSE: 110.2571 K
+  Test MAE: 93.1237 K
+  Training Time: 531.9s
+
+============================================================
+Training exp6_hierarchical_pre | Seed 123 | Device: cuda
+============================================================
+Model: exp6_hierarchical_pre, Params: 1,019,649
+Epoch   1 | Train Loss: 9229.9188 | Val RMSE: 2833.52 K | Best: 2833.52 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 1.0000 | Val RMSE: 110.45 K | Best: 110.44 K (ep 4) | LR: 0.000989
+Early stopping at epoch 34
+
+Final Results for exp6_hierarchical_pre Seed 123:
+  Best Epoch: 4
+  Best Val RMSE: 110.4448 K
+  Test RMSE: 110.2518 K
+  Test MAE: 93.1134 K
+  Training Time: 513.6s
+
+######################################################################
+# Experiment 7: Hierarchical-Mid (Bond->Atom After Layer 1)
+######################################################################
+
+============================================================
+Training exp7_hierarchical_mid | Seed 71 | Device: cuda
+============================================================
+Model: exp7_hierarchical_mid, Params: 1,085,441
+Epoch   1 | Train Loss: 338.3691 | Val RMSE: 99.91 K | Best: 99.91 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.2089 | Val RMSE: 48.50 K | Best: 47.43 K (ep 20) | LR: 0.000989
+Epoch  41 | Train Loss: 0.1644 | Val RMSE: 43.33 K | Best: 41.01 K (ep 40) | LR: 0.000957
+Epoch  61 | Train Loss: 0.1426 | Val RMSE: 43.92 K | Best: 40.49 K (ep 60) | LR: 0.000905
+Epoch  81 | Train Loss: 0.1563 | Val RMSE: 46.71 K | Best: 40.30 K (ep 64) | LR: 0.000835
+Early stopping at epoch 94
+
+Final Results for exp7_hierarchical_mid Seed 71:
+  Best Epoch: 64
+  Best Val RMSE: 40.2974 K
+  Test RMSE: 41.7476 K
+  Test MAE: 29.8381 K
+  Training Time: 1026.4s
+
+######################################################################
+# Experiment 8: Hierarchical-Pre Gated Fusion
+######################################################################
+
+============================================================
+Training exp8_hierarchical_pre_gated | Seed 71 | Device: cuda
+============================================================
+Model: exp8_hierarchical_pre_gated, Params: 1,041,537
+Epoch   1 | Train Loss: 1819.9704 | Val RMSE: 157.16 K | Best: 157.16 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 1.0001 | Val RMSE: 110.45 K | Best: 110.45 K (ep 7) | LR: 0.000989
+Epoch  41 | Train Loss: 1.0002 | Val RMSE: 110.45 K | Best: 110.44 K (ep 37) | LR: 0.000957
+Epoch  61 | Train Loss: 1.0001 | Val RMSE: 110.45 K | Best: 110.44 K (ep 37) | LR: 0.000905
+Early stopping at epoch 67
+
+Final Results for exp8_hierarchical_pre_gated Seed 71:
+  Best Epoch: 37
+  Best Val RMSE: 110.4448 K
+  Test RMSE: 110.2546 K
+  Test MAE: 93.1150 K
+  Training Time: 730.2s
+
+================================================================================
+ITERATION 2 FINAL RESULTS
+================================================================================
+
+Experiment                                    RMSE (K)        MAE (K)      vs Baseline
+--------------------------------------------------------------------------------------------
+Exp1: CPA-GAT Atom-Only (Baseline)            35.80 +/- 0.44  23.12       (vs Exp2: +0.16K)
+Exp2: PolyBG-CPA Parallel                     35.64 +/- 0.27  23.16       (vs Exp2: +0.00K)
+Exp3: PolyBG-noCPA (Ablation)                 37.00          24.45       (vs Exp2: +1.35K)
+Exp4: Bond-CPA-GAT Only (Ablation)            45.37          29.18       (vs Exp2: +9.72K)
+Exp5: Enriched-Edge CPA-GAT (Ablation)        40.45          27.49       (vs Exp2: +4.81K)
+Exp6: Hierarchical-Pre (Bond->Atom Input Aug) 110.25 +/- 0.00  93.11       (vs Exp2: +74.61K)
+Exp7: Hierarchical-Mid (Bond->Atom After L1)  41.75          29.84       (vs Exp2: +6.10K)
+Exp8: Hierarchical-Pre Gated (Learned Gate)   110.25          93.11       (vs Exp2: +74.61K)
+--------------------------------------------------------------------------------------------
+
+Summary saved to /home/home_public/aisci/AIscientist/src/7_day7_polybg_cpa/results/results.json

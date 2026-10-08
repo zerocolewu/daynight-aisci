@@ -1,0 +1,41 @@
+{
+  "pspe_stats": {
+    "dce_all": {
+      "mean": 0.2564561585571701,
+      "std": 0.3245446202283254,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dce_nonzero": {
+      "mean": 0.5094554977029093,
+      "std": 0.283455049566644
+    },
+    "mi_all": {
+      "mean": 0.2583310010324616,
+      "std": 0.38496392116976225,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "backbone_ratio_percent": 50.33926608182828,
+    "non_backbone_percent": 49.66073391817172,
+    "avg_backbone_length": 54.42859135285914,
+    "std_backbone_length": 29.213970260925322
+  },
+  "pspe_rwpe_corr": {
+    "max_abs_dce_rwpe": NaN,
+    "max_abs_mi_rwpe": NaN,
+    "is_orthogonal": 0.0
+  },
+  "pspe_tg_corr": {
+    "dce_tg_r": -0.26530517739739573,
+    "dce_tg_p": 6.927661353843588e-84,
+    "mi_tg_r": -0.2799255531902779,
+    "mi_tg_p": 1.471665558063949e-93
+  },
+  "error_analysis": {
+    "best_pspe_variant": "pspe_combined",
+    "fraction_improved": 0.5289198606271777,
+    "fraction_degraded": 0.4710801393728223,
+    "mean_delta": -1.5906637726812412
+  }
+}

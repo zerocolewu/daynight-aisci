@@ -1,0 +1,23 @@
+============================================================
+Phase: Fine-tuning (pretrained)
+============================================================
+Device: cuda
+Data: train=5162, val=573, test=1435
+Model parameters: 444,932
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_hybrid_corrupt.pt
+Epoch   1: train_rmse=151.3534, val_rmse=185.4346
+Epoch  10: train_rmse=49.3655, val_rmse=41.8843
+Epoch  20: train_rmse=46.4771, val_rmse=53.8946
+Epoch  30: train_rmse=44.4628, val_rmse=46.0486
+Epoch  40: train_rmse=43.1151, val_rmse=53.3311
+Early stopping at epoch 49 (no improvement for 30 epochs)
+
+============================================================
+Results (pretrained):
+  Train RMSE: 42.7125
+  Val RMSE:   40.6174
+  Test RMSE:  52.5456
+  Best epoch: 19
+  Overfit gap: -9.8332
+  Saved to /home/home_public/aisci/AIscientist/src/3_periogt_lite/results_pretrained_hybrid_corrupt.json
+============================================================

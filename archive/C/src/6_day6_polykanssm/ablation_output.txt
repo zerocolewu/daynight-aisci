@@ -1,0 +1,67 @@
+
+############################################################
+# ABLATION STUDIES
+############################################################
+
+============================================================
+ABLATION 1: No Fourier-KAN (Linear+GELU instead)
+============================================================
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 1,012,610
+Epoch   1 | Train RMSE: 71.3544 | Val RMSE: 54.8083 | Val MAE: 41.9384 | Val R2: 0.7436 | LR: 0.000997 | Best: 54.8083 @ 1
+Epoch  20 | Train RMSE: 50.1419 | Val RMSE: 51.2425 | Val MAE: 38.2027 | Val R2: 0.7759 | LR: 0.000251 | Best: 49.5507 @ 4
+Epoch  40 | Train RMSE: 67.7502 | Val RMSE: 66.0395 | Val MAE: 50.9102 | Val R2: 0.6278 | LR: 0.000933 | Best: 49.3552 @ 24
+Early stopping at epoch 54
+
+Best val RMSE: 49.3552 at epoch 24
+
+--- Seed 42 Final Results ---
+Train RMSE: 47.1750
+Val RMSE:   49.3552
+Test RMSE:  50.1298
+Test MAE:   36.2336
+Test R2:    0.8020
+Test RMSE (no Fourier-KAN): 50.1298
+
+============================================================
+ABLATION 2: No GNN-SSM (GINConv instead)
+============================================================
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 754,754
+Traceback (most recent call last):
+  File "<string>", line 6, in <module>
+  File "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm/train_v4.py", line 997, in run_ablation_studies
+    result = train_single_seed(42, graphs_ssm, targets_ssm, config, device, checkpoint_dir, PolyKANSSM_v4_NoSSM)
+  File "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm/train_v4.py", line 584, in train_single_seed
+    train_rmse = train_one_epoch(model, train_loader, optimizer, device, target_mean, target_std)
+  File "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm/train_v4.py", line 418, in train_one_epoch
+    preds = model(
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm/train_v4.py", line 809, in forward
+    h = F.dropout(h, p=0.2, training=self.training)
+NameError: name 'F' is not defined

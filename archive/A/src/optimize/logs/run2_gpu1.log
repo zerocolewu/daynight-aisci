@@ -1,0 +1,158 @@
+[run] PTKGE_RUN_ID=run2 -> /home/home_public/wuzl/AIscientist/archive/ablation2archive/src/optimize/results/run2
+
+===== RUN tm_sp42_init42 =====
+[featurize tm] loaded from cache tm_v1_full.pkl (valid 3651/3651)
+[tm split=42] train/val/test = 2628/292/731  (valid molecules used: 3651/3651, 0 dropped before split)
+[tm_sp42_init42] ep  1 val_rmse=76.865 best=inf
+[tm_sp42_init42] ep 10 val_rmse=55.567 best=55.633
+[tm_sp42_init42] ep 20 val_rmse=55.286 best=52.920
+[tm_sp42_init42] ep 30 val_rmse=54.382 best=52.920
+[tm_sp42_init42] ep 40 val_rmse=54.441 best=52.920
+[tm_sp42_init42] early stop @ ep41
+[tm_sp42_init42] DONE test_rmse=52.3024 val=52.9198(ep11) params=2081286 pretrained=True time=102s
+
+===== RUN tm_sp42_init71 =====
+[featurize tm] loaded from cache tm_v1_full.pkl (valid 3651/3651)
+[tm split=42] train/val/test = 2628/292/731  (valid molecules used: 3651/3651, 0 dropped before split)
+[tm_sp42_init71] ep  1 val_rmse=73.054 best=inf
+[tm_sp42_init71] ep 10 val_rmse=56.384 best=56.767
+[tm_sp42_init71] ep 20 val_rmse=53.663 best=54.295
+[tm_sp42_init71] ep 30 val_rmse=54.328 best=53.663
+[tm_sp42_init71] ep 40 val_rmse=53.688 best=52.775
+[tm_sp42_init71] ep 50 val_rmse=53.630 best=52.544
+[tm_sp42_init71] ep 60 val_rmse=52.724 best=52.544
+[tm_sp42_init71] ep 70 val_rmse=53.583 best=52.544
+[tm_sp42_init71] early stop @ ep76
+[tm_sp42_init71] DONE test_rmse=50.8224 val=52.5438(ep46) params=2081286 pretrained=True time=195s
+
+===== RUN tm_sp42_init2026 =====
+[featurize tm] loaded from cache tm_v1_full.pkl (valid 3651/3651)
+[tm split=42] train/val/test = 2628/292/731  (valid molecules used: 3651/3651, 0 dropped before split)
+[tm_sp42_init2026] ep  1 val_rmse=75.283 best=inf
+[tm_sp42_init2026] ep 10 val_rmse=56.813 best=56.130
+[tm_sp42_init2026] ep 20 val_rmse=54.677 best=53.203
+[tm_sp42_init2026] ep 30 val_rmse=55.828 best=53.203
+[tm_sp42_init2026] ep 40 val_rmse=53.902 best=53.203
+[tm_sp42_init2026] ep 50 val_rmse=54.270 best=52.618
+[tm_sp42_init2026] ep 60 val_rmse=52.371 best=51.946
+[tm_sp42_init2026] ep 70 val_rmse=52.551 best=51.882
+[tm_sp42_init2026] ep 80 val_rmse=53.049 best=51.882
+[tm_sp42_init2026] ep 90 val_rmse=53.959 best=51.882
+[tm_sp42_init2026] early stop @ ep98
+[tm_sp42_init2026] DONE test_rmse=50.5381 val=51.8819(ep68) params=2081286 pretrained=True time=257s
+
+===== RUN tm_sp71_init42 =====
+[featurize tm] loaded from cache tm_v1_full.pkl (valid 3651/3651)
+[tm split=71] train/val/test = 2628/292/731  (valid molecules used: 3651/3651, 0 dropped before split)
+[tm_sp71_init42] ep  1 val_rmse=96.068 best=inf
+[tm_sp71_init42] ep 10 val_rmse=64.567 best=68.507
+[tm_sp71_init42] ep 20 val_rmse=59.952 best=57.805
+[tm_sp71_init42] ep 30 val_rmse=61.481 best=57.131
+[tm_sp71_init42] ep 40 val_rmse=58.625 best=56.800
+[tm_sp71_init42] ep 50 val_rmse=58.337 best=56.724
+[tm_sp71_init42] ep 60 val_rmse=58.465 best=56.373
+[tm_sp71_init42] ep 70 val_rmse=56.324 best=55.548
+[tm_sp71_init42] ep 80 val_rmse=56.620 best=54.954
+[tm_sp71_init42] ep 90 val_rmse=57.004 best=54.954
+[tm_sp71_init42] ep100 val_rmse=57.277 best=54.954
+[tm_sp71_init42] early stop @ ep109
+[tm_sp71_init42] DONE test_rmse=49.4505 val=54.9542(ep79) params=2081286 pretrained=True time=280s
+
+===== RUN tm_sp71_init71 =====
+[featurize tm] loaded from cache tm_v1_full.pkl (valid 3651/3651)
+[tm split=71] train/val/test = 2628/292/731  (valid molecules used: 3651/3651, 0 dropped before split)
+[tm_sp71_init71] ep  1 val_rmse=74.814 best=inf
+[tm_sp71_init71] ep 10 val_rmse=72.624 best=59.969
+[tm_sp71_init71] ep 20 val_rmse=60.250 best=59.300
+[tm_sp71_init71] ep 30 val_rmse=62.089 best=56.876
+[tm_sp71_init71] ep 40 val_rmse=60.630 best=56.876
+[tm_sp71_init71] ep 50 val_rmse=65.927 best=56.876
+[tm_sp71_init71] early stop @ ep52
+[tm_sp71_init71] DONE test_rmse=51.4112 val=56.8760(ep22) params=2081286 pretrained=True time=132s
+
+===== RUN tm_sp71_init2026 =====
+[featurize tm] loaded from cache tm_v1_full.pkl (valid 3651/3651)
+[tm split=71] train/val/test = 2628/292/731  (valid molecules used: 3651/3651, 0 dropped before split)
+[tm_sp71_init2026] ep  1 val_rmse=121.179 best=inf
+[tm_sp71_init2026] ep 10 val_rmse=84.354 best=68.822
+[tm_sp71_init2026] ep 20 val_rmse=69.040 best=66.403
+[tm_sp71_init2026] ep 30 val_rmse=69.354 best=59.458
+[tm_sp71_init2026] ep 40 val_rmse=59.103 best=58.620
+[tm_sp71_init2026] ep 50 val_rmse=59.796 best=58.043
+[tm_sp71_init2026] ep 60 val_rmse=57.528 best=57.599
+[tm_sp71_init2026] ep 70 val_rmse=57.963 best=57.528
+[tm_sp71_init2026] ep 80 val_rmse=59.288 best=57.281
+[tm_sp71_init2026] ep 90 val_rmse=57.834 best=56.408
+[tm_sp71_init2026] ep100 val_rmse=58.382 best=56.408
+[tm_sp71_init2026] ep110 val_rmse=58.196 best=56.408
+[tm_sp71_init2026] early stop @ ep115
+[tm_sp71_init2026] DONE test_rmse=49.5656 val=56.4084(ep85) params=2081286 pretrained=True time=300s
+
+===== ENSEMBLE tm =====
+[ensemble tm split=42] single 51.2210+/-0.7735  ens_mean 49.4414  ens_median 49.9440  (n_init=3, n_test=731)
+[ensemble tm split=71] single 50.1425+/-0.8984  ens_mean 49.0702  ens_median 49.4037  (n_init=3, n_test=731)
+[ensemble tm] FINAL ens_mean=49.2558+/-0.1856 (over 2 split(s)); single=50.6817+/-0.5392 [mean/std over splits of per-split init-mean]
+
+===== RUN ip_spgiven_init42 =====
+[featurize ip] loaded from cache ip_v1_full.pkl (valid 42966/42966)
+[ip split=given] train/val/test = 30935/3437/8594  (valid molecules used: 42966/42966, 0 dropped before split)
+[ip_spgiven_init42] ep  1 val_rmse=0.109 best=inf
+[ip_spgiven_init42] ep 10 val_rmse=0.055 best=0.055
+[ip_spgiven_init42] ep 20 val_rmse=0.072 best=0.050
+[ip_spgiven_init42] ep 30 val_rmse=0.046 best=0.045
+[ip_spgiven_init42] ep 40 val_rmse=0.043 best=0.044
+[ip_spgiven_init42] ep 50 val_rmse=0.043 best=0.043
+[ip_spgiven_init42] ep 60 val_rmse=0.046 best=0.043
+[ip_spgiven_init42] ep 70 val_rmse=0.041 best=0.042
+[ip_spgiven_init42] ep 80 val_rmse=0.043 best=0.041
+[ip_spgiven_init42] ep 90 val_rmse=0.044 best=0.041
+[ip_spgiven_init42] ep100 val_rmse=0.041 best=0.041
+[ip_spgiven_init42] ep110 val_rmse=0.043 best=0.041
+[ip_spgiven_init42] ep120 val_rmse=0.043 best=0.041
+[ip_spgiven_init42] ep130 val_rmse=0.042 best=0.041
+[ip_spgiven_init42] early stop @ ep130
+[ip_spgiven_init42] DONE test_rmse=0.0369 val=0.0408(ep100) params=2082566 pretrained=False time=2003s
+
+===== RUN ip_spgiven_init71 =====
+[featurize ip] loaded from cache ip_v1_full.pkl (valid 42966/42966)
+[ip split=given] train/val/test = 30935/3437/8594  (valid molecules used: 42966/42966, 0 dropped before split)
+[ip_spgiven_init71] ep  1 val_rmse=0.101 best=inf
+[ip_spgiven_init71] ep 10 val_rmse=0.077 best=0.063
+[ip_spgiven_init71] ep 20 val_rmse=0.058 best=0.049
+[ip_spgiven_init71] ep 30 val_rmse=0.048 best=0.045
+[ip_spgiven_init71] ep 40 val_rmse=0.046 best=0.044
+[ip_spgiven_init71] ep 50 val_rmse=0.046 best=0.043
+[ip_spgiven_init71] ep 60 val_rmse=0.045 best=0.043
+[ip_spgiven_init71] ep 70 val_rmse=0.043 best=0.041
+[ip_spgiven_init71] ep 80 val_rmse=0.042 best=0.041
+[ip_spgiven_init71] ep 90 val_rmse=0.043 best=0.041
+[ip_spgiven_init71] ep100 val_rmse=0.041 best=0.041
+[ip_spgiven_init71] ep110 val_rmse=0.042 best=0.040
+[ip_spgiven_init71] ep120 val_rmse=0.041 best=0.040
+[ip_spgiven_init71] ep130 val_rmse=0.043 best=0.040
+[ip_spgiven_init71] early stop @ ep132
+[ip_spgiven_init71] DONE test_rmse=0.0363 val=0.0401(ep102) params=2082566 pretrained=False time=2001s
+
+===== RUN ip_spgiven_init2026 =====
+[featurize ip] loaded from cache ip_v1_full.pkl (valid 42966/42966)
+[ip split=given] train/val/test = 30935/3437/8594  (valid molecules used: 42966/42966, 0 dropped before split)
+[ip_spgiven_init2026] ep  1 val_rmse=0.106 best=inf
+[ip_spgiven_init2026] ep 10 val_rmse=0.061 best=0.057
+[ip_spgiven_init2026] ep 20 val_rmse=0.052 best=0.049
+[ip_spgiven_init2026] ep 30 val_rmse=0.051 best=0.047
+[ip_spgiven_init2026] ep 40 val_rmse=0.045 best=0.043
+[ip_spgiven_init2026] ep 50 val_rmse=0.043 best=0.043
+[ip_spgiven_init2026] ep 60 val_rmse=0.044 best=0.041
+[ip_spgiven_init2026] ep 70 val_rmse=0.042 best=0.041
+[ip_spgiven_init2026] ep 80 val_rmse=0.044 best=0.041
+[ip_spgiven_init2026] ep 90 val_rmse=0.046 best=0.041
+[ip_spgiven_init2026] ep100 val_rmse=0.045 best=0.041
+[ip_spgiven_init2026] ep110 val_rmse=0.045 best=0.041
+[ip_spgiven_init2026] ep120 val_rmse=0.047 best=0.041
+[ip_spgiven_init2026] ep130 val_rmse=0.043 best=0.041
+[ip_spgiven_init2026] early stop @ ep134
+[ip_spgiven_init2026] DONE test_rmse=0.0369 val=0.0408(ep104) params=2082566 pretrained=False time=1994s
+
+===== ENSEMBLE ip =====
+[ensemble ip split=given] single 0.0367+/-0.0003  ens_mean 0.0343  ens_median 0.0347  (n_init=3, n_test=8594)
+[ensemble ip] FINAL ens_mean=0.0343+/-0.0000 (over 1 split(s)); single=0.0367+/-0.0003 [mean/std over init seeds]

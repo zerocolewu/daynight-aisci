@@ -1,0 +1,33 @@
+{
+  "pspe_stats": {
+    "dce_all": {
+      "mean": 0.2564561585571701,
+      "std": 0.3245446202283254,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dce_nonzero": {
+      "mean": 0.5094554977029093,
+      "std": 0.283455049566644,
+      "min": 0.009803921915590763,
+      "max": 1.0
+    },
+    "mi_all": {
+      "mean": 0.2583310010324616,
+      "std": 0.38496392116976225,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "mi_nonzero": {
+      "mean": 0.7485061770548795,
+      "std": 0.24999553694617963,
+      "min": 0.5,
+      "max": 1.0
+    },
+    "backbone_ratio_percent": 50.33926608182828,
+    "non_backbone_percent": 49.66073391817172,
+    "avg_backbone_length": 54.42859135285914,
+    "std_backbone_length": 29.213970260925322
+  },
+  "pspe_rwpe_corr": {
+    "max_abs_dce_rwpe": 

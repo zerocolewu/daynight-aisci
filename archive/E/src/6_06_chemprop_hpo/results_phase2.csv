@@ -1,0 +1,2 @@
+config_name,depth,hidden_dim,lr,dropout,dense_connections,seed,best_epoch,n_params,train_rmse,train_mae,train_r2,val_rmse,val_mae,val_r2,test_rmse,test_mae,test_r2,overfitting_gap
+combined_best,7,1200,0.001,0.1,False,71,130,9260401,21.439396,14.72836971282959,0.9627841711044312,36.44658,24.310558319091797,0.885857880115509,35.718964,23.935802459716797,0.8937398791313171,-14.279568

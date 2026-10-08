@@ -1,0 +1,148 @@
+[device] cuda
+[gpu] NVIDIA GeForce RTX 2080 Ti
+
+[RUN] Tg | ecfp_mlp | split_seed=42 | init_seed=42001 | run 1/3
+   -> test_rmse=38.1238  test_mae=24.9120  best_epoch=75  (25.9s)
+
+[RUN] Tg | ecfp_mlp | split_seed=42 | init_seed=42002 | run 2/3
+   -> test_rmse=39.1558  test_mae=26.0639  best_epoch=21  (10.8s)
+
+[RUN] Tg | ecfp_mlp | split_seed=42 | init_seed=42003 | run 3/3
+   -> test_rmse=39.9750  test_mae=27.0669  best_epoch=10  (9.5s)
+
+[RUN] Tg | gcn | split_seed=42 | init_seed=42001 | run 1/3
+   -> test_rmse=48.5824  test_mae=34.9168  best_epoch=297  (254.0s)
+
+[RUN] Tg | gcn | split_seed=42 | init_seed=42002 | run 2/3
+   -> test_rmse=47.9668  test_mae=34.1355  best_epoch=293  (253.7s)
+
+[RUN] Tg | gcn | split_seed=42 | init_seed=42003 | run 3/3
+   -> test_rmse=46.3798  test_mae=33.0853  best_epoch=300  (246.0s)
+
+[RUN] Tg | gin | split_seed=42 | init_seed=42001 | run 1/3
+   -> test_rmse=46.5122  test_mae=33.2566  best_epoch=146  (188.9s)
+
+[RUN] Tg | gin | split_seed=42 | init_seed=42002 | run 2/3
+   -> test_rmse=46.7653  test_mae=32.5656  best_epoch=172  (215.1s)
+
+[RUN] Tg | gin | split_seed=42 | init_seed=42003 | run 3/3
+   -> test_rmse=45.0112  test_mae=31.8362  best_epoch=174  (217.5s)
+
+[RUN] Tg | gat | split_seed=42 | init_seed=42001 | run 1/3
+   -> test_rmse=51.7941  test_mae=38.0601  best_epoch=290  (488.1s)
+
+[RUN] Tg | gat | split_seed=42 | init_seed=42002 | run 2/3
+   -> test_rmse=51.3424  test_mae=37.9713  best_epoch=255  (485.5s)
+
+[RUN] Tg | gat | split_seed=42 | init_seed=42003 | run 3/3
+   -> test_rmse=51.1790  test_mae=37.6595  best_epoch=292  (482.2s)
+
+[RUN] Tg | ecfp_mlp | split_seed=71 | init_seed=71001 | run 1/3
+   -> test_rmse=38.3816  test_mae=24.5740  best_epoch=79  (18.8s)
+
+[RUN] Tg | ecfp_mlp | split_seed=71 | init_seed=71002 | run 2/3
+   -> test_rmse=38.1501  test_mae=24.7649  best_epoch=51  (19.0s)
+
+[RUN] Tg | ecfp_mlp | split_seed=71 | init_seed=71003 | run 3/3
+   -> test_rmse=37.8963  test_mae=24.7761  best_epoch=25  (11.0s)
+
+[RUN] Tg | gcn | split_seed=71 | init_seed=71001 | run 1/3
+   -> test_rmse=50.3662  test_mae=37.1374  best_epoch=269  (255.6s)
+
+[RUN] Tg | gcn | split_seed=71 | init_seed=71002 | run 2/3
+   -> test_rmse=48.3132  test_mae=35.5817  best_epoch=283  (255.9s)
+
+[RUN] Tg | gcn | split_seed=71 | init_seed=71003 | run 3/3
+   -> test_rmse=47.2751  test_mae=34.5820  best_epoch=291  (256.5s)
+
+[RUN] Tg | gin | split_seed=71 | init_seed=71001 | run 1/3
+   -> test_rmse=44.2271  test_mae=31.1040  best_epoch=286  (287.9s)
+
+[RUN] Tg | gin | split_seed=71 | init_seed=71002 | run 2/3
+   -> test_rmse=44.0101  test_mae=30.3096  best_epoch=252  (288.3s)
+
+[RUN] Tg | gin | split_seed=71 | init_seed=71003 | run 3/3
+   -> test_rmse=43.9862  test_mae=30.5122  best_epoch=286  (287.8s)
+
+[RUN] Tg | gat | split_seed=71 | init_seed=71001 | run 1/3
+   -> test_rmse=52.0569  test_mae=39.0427  best_epoch=283  (487.5s)
+
+[RUN] Tg | gat | split_seed=71 | init_seed=71002 | run 2/3
+   -> test_rmse=52.7653  test_mae=39.4790  best_epoch=223  (442.2s)
+
+[RUN] Tg | gat | split_seed=71 | init_seed=71003 | run 3/3
+   -> test_rmse=52.7204  test_mae=39.6417  best_epoch=252  (485.2s)
+
+[RUN] Tm | ecfp_mlp | split_seed=42 | init_seed=42001 | run 1/3
+   -> test_rmse=57.3812  test_mae=40.3529  best_epoch=27  (7.1s)
+
+[RUN] Tm | ecfp_mlp | split_seed=42 | init_seed=42002 | run 2/3
+   -> test_rmse=57.2179  test_mae=39.3350  best_epoch=34  (6.1s)
+
+[RUN] Tm | ecfp_mlp | split_seed=42 | init_seed=42003 | run 3/3
+   -> test_rmse=57.2587  test_mae=40.0993  best_epoch=17  (6.2s)
+
+[RUN] Tm | gcn | split_seed=42 | init_seed=42001 | run 1/3
+   -> test_rmse=90.1805  test_mae=71.6988  best_epoch=67  (50.6s)
+
+[RUN] Tm | gcn | split_seed=42 | init_seed=42002 | run 2/3
+   -> test_rmse=89.1498  test_mae=70.9586  best_epoch=130  (78.2s)
+
+[RUN] Tm | gcn | split_seed=42 | init_seed=42003 | run 3/3
+   -> test_rmse=91.3633  test_mae=72.8267  best_epoch=35  (37.3s)
+
+[RUN] Tm | gin | split_seed=42 | init_seed=42001 | run 1/3
+   -> test_rmse=66.2206  test_mae=48.0548  best_epoch=293  (146.1s)
+
+[RUN] Tm | gin | split_seed=42 | init_seed=42002 | run 2/3
+   -> test_rmse=70.1923  test_mae=51.9152  best_epoch=232  (138.3s)
+
+[RUN] Tm | gin | split_seed=42 | init_seed=42003 | run 3/3
+   -> test_rmse=66.9135  test_mae=47.8189  best_epoch=277  (146.8s)
+
+[RUN] Tm | gat | split_seed=42 | init_seed=42001 | run 1/3
+   -> test_rmse=75.4846  test_mae=57.2445  best_epoch=262  (246.6s)
+
+[RUN] Tm | gat | split_seed=42 | init_seed=42002 | run 2/3
+   -> test_rmse=90.2113  test_mae=72.0310  best_epoch=32  (68.0s)
+
+[RUN] Tm | gat | split_seed=42 | init_seed=42003 | run 3/3
+   -> test_rmse=76.7481  test_mae=58.4710  best_epoch=235  (235.4s)
+
+[RUN] Tm | ecfp_mlp | split_seed=71 | init_seed=71001 | run 1/3
+   -> test_rmse=57.6602  test_mae=41.8526  best_epoch=4  (6.5s)
+
+[RUN] Tm | ecfp_mlp | split_seed=71 | init_seed=71002 | run 2/3
+   -> test_rmse=57.2072  test_mae=40.4056  best_epoch=30  (9.7s)
+
+[RUN] Tm | ecfp_mlp | split_seed=71 | init_seed=71003 | run 3/3
+   -> test_rmse=58.1345  test_mae=41.4491  best_epoch=6  (6.2s)
+
+[RUN] Tm | gcn | split_seed=71 | init_seed=71001 | run 1/3
+   -> test_rmse=83.6388  test_mae=67.1337  best_epoch=115  (75.4s)
+
+[RUN] Tm | gcn | split_seed=71 | init_seed=71002 | run 2/3
+   -> test_rmse=80.5450  test_mae=63.7367  best_epoch=300  (132.6s)
+
+[RUN] Tm | gcn | split_seed=71 | init_seed=71003 | run 3/3
+   -> test_rmse=75.8628  test_mae=57.8880  best_epoch=298  (132.6s)
+
+[RUN] Tm | gin | split_seed=71 | init_seed=71001 | run 1/3
+   -> test_rmse=65.0540  test_mae=47.6016  best_epoch=268  (139.9s)
+
+[RUN] Tm | gin | split_seed=71 | init_seed=71002 | run 2/3
+   -> test_rmse=66.5312  test_mae=47.9406  best_epoch=251  (144.1s)
+
+[RUN] Tm | gin | split_seed=71 | init_seed=71003 | run 3/3
+   -> test_rmse=64.2070  test_mae=46.6778  best_epoch=286  (142.5s)
+
+[RUN] Tm | gat | split_seed=71 | init_seed=71001 | run 1/3
+   -> test_rmse=74.3257  test_mae=56.5898  best_epoch=286  (246.1s)
+
+[RUN] Tm | gat | split_seed=71 | init_seed=71002 | run 2/3
+   -> test_rmse=76.0813  test_mae=57.0445  best_epoch=300  (246.6s)
+
+[RUN] Tm | gat | split_seed=71 | init_seed=71003 | run 3/3
+   -> test_rmse=74.4935  test_mae=56.5261  best_epoch=300  (245.2s)
+
+[done] all runs finished in 8667.2s

@@ -1,0 +1,20 @@
+============================================================
+PerioGT Ablation Study
+============================================================
+Model type: chemprop
+Hidden dim: 300
+Num layers: 3
+Epochs: 100
+Learning rate: 0.001
+Add periodic edge: True
+Output: /home/home_public/aisci/AIscientist/src/2_02_PerioGT_Ablation
+============================================================
+
+Running Quick Ablation Study...
+
+============================================================
+Quick Ablation: paper_baseline
+============================================================
+Loaded 7170 samples from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv
+Successfully parsed 7170 molecules
+Split: Train=5736, Val=717, Test=717

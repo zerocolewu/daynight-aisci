@@ -1,0 +1,52 @@
+Loaded 3651 samples
+Processing molecules...
+Fold 1/5
+    Seed 42: Test RMSE=65.7728, MAE=44.8165, R2=0.6540
+    Seed 123: Test RMSE=61.4889, MAE=43.5785, R2=0.6976
+    Seed 456: Test RMSE=64.8907, MAE=45.9375, R2=0.6632
+    Seed 789: Test RMSE=70.7258, MAE=49.6758, R2=0.5999
+    Seed 1024: Test RMSE=64.7889, MAE=45.9579, R2=0.6642
+  Fold 1 Results:
+    Individual seeds RMSE: 65.5334 ± 2.9780
+    Ensemble RMSE: 60.7852
+Fold 2/5
+    Seed 42: Test RMSE=62.3646, MAE=43.5593, R2=0.6772
+    Seed 123: Test RMSE=68.5250, MAE=49.8226, R2=0.6103
+    Seed 456: Test RMSE=62.9179, MAE=44.5629, R2=0.6715
+    Seed 789: Test RMSE=65.9946, MAE=47.0852, R2=0.6385
+    Seed 1024: Test RMSE=60.0232, MAE=41.4504, R2=0.7010
+  Fold 2 Results:
+    Individual seeds RMSE: 63.9651 ± 2.9701
+    Ensemble RMSE: 59.6940
+Fold 3/5
+    Seed 42: Test RMSE=63.1766, MAE=45.0628, R2=0.6886
+    Seed 123: Test RMSE=63.0192, MAE=40.4654, R2=0.6902
+    Seed 456: Test RMSE=61.5167, MAE=41.9226, R2=0.7048
+    Seed 789: Test RMSE=61.2899, MAE=40.7704, R2=0.7069
+    Seed 1024: Test RMSE=61.6748, MAE=43.0637, R2=0.7032
+  Fold 3 Results:
+    Individual seeds RMSE: 62.1354 ± 0.7969
+    Ensemble RMSE: 58.2442
+Fold 4/5
+    Seed 42: Test RMSE=68.5908, MAE=49.1762, R2=0.5848
+    Seed 123: Test RMSE=62.5843, MAE=43.8043, R2=0.6543
+    Seed 456: Test RMSE=64.3040, MAE=45.9572, R2=0.6351
+    Seed 789: Test RMSE=62.9112, MAE=43.5908, R2=0.6507
+    Seed 1024: Test RMSE=63.0212, MAE=43.3398, R2=0.6495
+  Fold 4 Results:
+    Individual seeds RMSE: 64.2823 ± 2.2324
+    Ensemble RMSE: 59.5599
+Fold 5/5
+    Seed 42: Test RMSE=62.7312, MAE=45.2241, R2=0.6480
+    Seed 123: Test RMSE=61.3546, MAE=45.1351, R2=0.6633
+    Seed 456: Test RMSE=62.8706, MAE=45.8467, R2=0.6465
+    Seed 789: Test RMSE=58.6717, MAE=42.2333, R2=0.6921
+    Seed 1024: Test RMSE=63.6873, MAE=46.3248, R2=0.6372
+  Fold 5 Results:
+    Individual seeds RMSE: 61.8631 ± 1.7630
+    Ensemble RMSE: 57.6392
+Tm Cross-Fold Results:
+  Ensemble RMSE: 59.1845 ± 1.1167
+  Best fold: 5 (RMSE: 57.6392)
+  Worst fold: 1 (RMSE: 60.7852)
+Tm results saved to: /home/home_public/aisci/AIscientist/src/4_day4_ensemble_uq/tm_results.json

@@ -1,0 +1,167 @@
+Using device: cuda
+
+================================================================================
+COMPREHENSIVE DATA-CENTRIC FOUNDATION EXPERIMENT
+Polymer Glass Transition Temperature (Tg) Prediction
+================================================================================
+
+================================================================================
+PHASE 1: Data Analysis Pipeline
+================================================================================
+
+Loading data...
+Loaded 7170 samples
+Columns: ['Smiles', 'Tg']
+
+First few samples:
+        Smiles    Tg
+0          *C* -54.0
+1      *CC(*)C  -3.0
+2     *CC(*)CC -24.1
+3    *CC(*)CCC -37.0
+4  *CC(*)C(C)C  60.0
+
+Plotting Tg distribution...
+Saved: figures/tg_distribution.png
+
+Checking for outliers...
+Samples with Tg < 100K or > 800K: 2843
+Samples with Tg < -150°C or > 600°C: 0
+Statistical outliers (IQR method): 0
+Bounds: [-209.00, 495.00]
+
+Analyzing distribution characteristics...
+Mean Tg: 141.87°C
+Median Tg: 134.00°C
+Std Tg: 112.15°C
+Skewness: 0.1257
+Kurtosis: -0.7056
+Shapiro-Wilk test (n=5000): statistic=0.9863, p-value=1.2087e-21
+
+Checking for duplicate SMILES...
+Found 0 unique SMILES with multiple entries
+
+Checking SMILES validity...
+Valid SMILES: 7170/7170 (100.00%)
+Invalid SMILES: 0/7170 (0.00%)
+
+SMILES with wildcard (*) connection points: 7170/7170
+
+Generating data analysis report: data_analysis_report.txt
+Report saved to: data_analysis_report.txt
+
+================================================================================
+PHASE 2: Multimer 3D Structure Generation
+================================================================================
+
+Generating multimers for 100 random samples...
+Processed 20/100 samples...
+Processed 40/100 samples...
+Processed 60/100 samples...
+Processed 80/100 samples...
+Processed 100/100 samples...
+
+Success rates:
+  2-mer: 13/100 (13.0%)
+  3-mer: 11/100 (11.0%)
+  4-mer: 6/100 (6.0%)
+  5-mer: 6/100 (6.0%)
+
+Saving multimer generation log: multimer_generation_log.txt
+Log saved to: multimer_generation_log.txt
+
+Splitting data into train/val/test (80/10/10)...
+Train: 5736, Val: 717, Test: 717
+
+================================================================================
+PHASE 3: Vanilla Baseline Models - MLP
+================================================================================
+
+Extracting ECFP fingerprints...
+Feature dimensions: (5736, 2048)
+
+Training MLP...
+Epoch 20/200, Train Loss: 1149.9013, Val Loss: 1523.5959
+Epoch 40/200, Train Loss: 941.1686, Val Loss: 1471.1077
+Epoch 60/200, Train Loss: 924.5873, Val Loss: 1429.3217
+Epoch 80/200, Train Loss: 868.3215, Val Loss: 1519.4217
+
+Early stopping at epoch 81
+
+Evaluating MLP...
+
+MLP Results:
+  RMSE: 38.7766°C
+  MAE: 26.7965°C
+  R²: 0.8781
+Model saved: trained_models/mlp_baseline.pth
+
+================================================================================
+PHASE 3: Vanilla Baseline Models - Simple GCN
+================================================================================
+
+Converting SMILES to graphs...
+Node feature dimension: 5
+
+Training GCN...
+Epoch 20/200, Train Loss: 3694.6804, Val Loss: 2929.7445
+Epoch 40/200, Train Loss: 3478.1933, Val Loss: 2717.9540
+Epoch 60/200, Train Loss: 3295.1469, Val Loss: 3755.7687
+Epoch 80/200, Train Loss: 3080.5612, Val Loss: 2488.7915
+Epoch 100/200, Train Loss: 3107.5732, Val Loss: 2339.2891
+Epoch 120/200, Train Loss: 3062.6611, Val Loss: 2906.8991
+Epoch 140/200, Train Loss: 2923.9157, Val Loss: 2071.1130
+Epoch 160/200, Train Loss: 2900.8951, Val Loss: 2261.6378
+Epoch 180/200, Train Loss: 2845.9486, Val Loss: 2043.9330
+
+Early stopping at epoch 192
+
+Evaluating GCN...
+
+GCN Results:
+  RMSE: 45.6924°C
+  MAE: 32.9822°C
+  R²: 0.8307
+Model saved: trained_models/gcn_baseline.pth
+
+Saving baseline results: baseline_results.txt
+Results saved: baseline_results.txt
+
+================================================================================
+PHASE 4: Diagnostic Analysis
+================================================================================
+
+Best model: MLP
+Saved: figures/predicted_vs_actual.png
+
+Analyzing error distribution...
+Saved: figures/error_distribution.png
+Saved: figures/error_histogram.png
+
+Identifying failure modes...
+
+High error threshold (90th percentile): 61.95°C
+Samples with high errors: 72
+
+Tg statistics:
+  High-error samples: mean=107.38, std=143.94
+  Low-error samples: mean=142.65, std=106.17
+
+Correlation between |error| and Tg: -0.0314
+
+Saving diagnostic report: diagnostic_analysis.txt
+Report saved: diagnostic_analysis.txt
+
+================================================================================
+EXPERIMENT COMPLETE
+================================================================================
+
+Generated outputs:
+  - data_analysis_report.txt
+  - multimer_generation_log.txt
+  - baseline_results.txt
+  - diagnostic_analysis.txt
+  - figures/*.png
+  - trained_models/*.pth
+
+

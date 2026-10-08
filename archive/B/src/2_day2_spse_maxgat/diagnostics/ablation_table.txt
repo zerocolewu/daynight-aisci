@@ -1,0 +1,12 @@
+SPSE-MaxGAT Ablation Table
+================================================================================
+
+Model                                Test RMSE   Test MAE  Test R² Best Epoch Time (s)
+-------------------------------------------------------------------------------------
+Baseline (GAT + Rich + 3-RU)            36.8 K     24.7 K   0.8881      132     442
+Treatment A (+SPSE)                     38.0 K     25.0 K   0.8811      147     583
+Treatment B (+SPSE + MaxAggr)           38.3 K     26.3 K   0.8793      207     782
+
+Delta vs Baseline:
+  Treatment A (+SPSE): +1.1 K
+  Treatment B (+SPSE + MaxAggr): +1.4 K

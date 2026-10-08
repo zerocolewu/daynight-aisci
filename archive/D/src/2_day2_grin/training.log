@@ -1,0 +1,208 @@
+Results directory: /home/home_public/aisci/AIscientist/src/2_day2_grin/results_20260324_072344
+
+================================================================================
+Experiment: Baseline: GIN with mean aggregation, no augmentation
+================================================================================
+Config: {
+  "csv_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.1,
+  "lr": 0.0001,
+  "max_epochs": 200,
+  "patience": 30,
+  "readout": "mean",
+  "name": "Baseline: GIN with mean aggregation, no augmentation",
+  "use_max_aggregation": false,
+  "use_l1": false,
+  "l1_lambda": 0.0,
+  "augmentation": null
+}
+Device: cuda
+Loading data...
+Loaded 5736 graphs for train split with augmentation=None
+Loaded 717 graphs for val split with augmentation=None
+Loaded 717 graphs for test split with augmentation=None
+Input dimension: 9
+Model parameters: 701,446
+
+Starting training for 200 epochs...
+Epoch   1/200: Train Loss: 32252.9347, Val RMSE: 176.8715, Val MAE: 145.8423
+Epoch  10/200: Train Loss: 29858.1177, Val RMSE: 171.1142, Val MAE: 139.8362
+Epoch  20/200: Train Loss: 27298.2711, Val RMSE: 163.1510, Val MAE: 131.2793
+Epoch  30/200: Train Loss: 24513.0763, Val RMSE: 154.6620, Val MAE: 122.5902
+Epoch  40/200: Train Loss: 21714.7283, Val RMSE: 145.7290, Val MAE: 114.0279
+Epoch  50/200: Train Loss: 19066.1176, Val RMSE: 136.6951, Val MAE: 105.7162
+Epoch  60/200: Train Loss: 16557.7305, Val RMSE: 127.7575, Val MAE: 96.9242
+Epoch  70/200: Train Loss: 14421.2775, Val RMSE: 119.7105, Val MAE: 90.0009
+Epoch  80/200: Train Loss: 12557.6592, Val RMSE: 111.8075, Val MAE: 82.7400
+Epoch  90/200: Train Loss: 10994.7535, Val RMSE: 104.0045, Val MAE: 75.2465
+Epoch 100/200: Train Loss: 9704.0494, Val RMSE: 97.9588, Val MAE: 70.0124
+Epoch 110/200: Train Loss: 8636.9016, Val RMSE: 92.9347, Val MAE: 66.1598
+Epoch 120/200: Train Loss: 7822.0730, Val RMSE: 88.5155, Val MAE: 62.5347
+Epoch 130/200: Train Loss: 7136.4100, Val RMSE: 85.0668, Val MAE: 59.9626
+Epoch 140/200: Train Loss: 6659.2065, Val RMSE: 82.4877, Val MAE: 57.9266
+Epoch 150/200: Train Loss: 6300.4145, Val RMSE: 80.2337, Val MAE: 55.9092
+Epoch 160/200: Train Loss: 6033.7498, Val RMSE: 78.6837, Val MAE: 54.8736
+Epoch 170/200: Train Loss: 5858.2323, Val RMSE: 77.6759, Val MAE: 54.1670
+Epoch 180/200: Train Loss: 5782.9988, Val RMSE: 77.0827, Val MAE: 53.6675
+Epoch 190/200: Train Loss: 5747.6874, Val RMSE: 76.8294, Val MAE: 53.4471
+Epoch 200/200: Train Loss: 5698.0749, Val RMSE: 76.8728, Val MAE: 53.5421
+
+Best validation RMSE: 76.6455 at epoch 199
+Test RMSE: 76.0824
+Test MAE: 52.2674
+
+================================================================================
+Experiment: Ablation 1: GIN with max aggregation only
+================================================================================
+Config: {
+  "csv_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.1,
+  "lr": 0.0001,
+  "max_epochs": 200,
+  "patience": 30,
+  "readout": "mean",
+  "name": "Ablation 1: GIN with max aggregation only",
+  "use_max_aggregation": true,
+  "use_l1": false,
+  "l1_lambda": 0.0,
+  "augmentation": null
+}
+Device: cuda
+Loading data...
+Loaded 5736 graphs for train split with augmentation=None
+Loaded 717 graphs for val split with augmentation=None
+Loaded 717 graphs for test split with augmentation=None
+Input dimension: 9
+Model parameters: 701,441
+
+Starting training for 200 epochs...
+Epoch   1/200: Train Loss: 32313.5869, Val RMSE: 176.8282, Val MAE: 145.5281
+Epoch  10/200: Train Loss: 29993.5326, Val RMSE: 171.0008, Val MAE: 139.2351
+Epoch  20/200: Train Loss: 27487.3569, Val RMSE: 163.7480, Val MAE: 131.4979
+Epoch  30/200: Train Loss: 24816.9628, Val RMSE: 155.7763, Val MAE: 123.9291
+Epoch  40/200: Train Loss: 22120.9512, Val RMSE: 146.9434, Val MAE: 114.6982
+Epoch  50/200: Train Loss: 19496.9967, Val RMSE: 138.2632, Val MAE: 106.8004
+Epoch  60/200: Train Loss: 17087.8552, Val RMSE: 129.8041, Val MAE: 98.9940
+Epoch  70/200: Train Loss: 14985.7478, Val RMSE: 122.0235, Val MAE: 92.3675
+Epoch  80/200: Train Loss: 13115.1957, Val RMSE: 113.9977, Val MAE: 84.1020
+Epoch  90/200: Train Loss: 11536.7149, Val RMSE: 106.8351, Val MAE: 77.5334
+Epoch 100/200: Train Loss: 10234.5678, Val RMSE: 100.9148, Val MAE: 72.5430
+Epoch 110/200: Train Loss: 9143.5115, Val RMSE: 95.7095, Val MAE: 68.2708
+Epoch 120/200: Train Loss: 8282.5845, Val RMSE: 91.2918, Val MAE: 64.7016
+Epoch 130/200: Train Loss: 7625.0833, Val RMSE: 88.0388, Val MAE: 62.1230
+Epoch 140/200: Train Loss: 7084.7614, Val RMSE: 85.2545, Val MAE: 59.9359
+Epoch 150/200: Train Loss: 6731.9412, Val RMSE: 83.1458, Val MAE: 58.4175
+Epoch 160/200: Train Loss: 6442.8500, Val RMSE: 81.7305, Val MAE: 57.3507
+Epoch 170/200: Train Loss: 6302.7610, Val RMSE: 80.8295, Val MAE: 56.7517
+Epoch 180/200: Train Loss: 6195.5954, Val RMSE: 80.1938, Val MAE: 56.1013
+Epoch 190/200: Train Loss: 6138.6942, Val RMSE: 79.8655, Val MAE: 55.8685
+Epoch 200/200: Train Loss: 6125.6478, Val RMSE: 79.7624, Val MAE: 55.8128
+
+Best validation RMSE: 79.7624 at epoch 200
+Test RMSE: 78.7479
+Test MAE: 54.5568
+
+================================================================================
+Experiment: Ablation 2: GIN with max aggregation + L1 sparsity
+================================================================================
+Config: {
+  "csv_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.1,
+  "lr": 0.0001,
+  "max_epochs": 200,
+  "patience": 30,
+  "readout": "mean",
+  "name": "Ablation 2: GIN with max aggregation + L1 sparsity",
+  "use_max_aggregation": true,
+  "use_l1": true,
+  "l1_lambda": 0.001,
+  "augmentation": null
+}
+Device: cuda
+Loading data...
+Loaded 5736 graphs for train split with augmentation=None
+Loaded 717 graphs for val split with augmentation=None
+Loaded 717 graphs for test split with augmentation=None
+Input dimension: 9
+Model parameters: 701,441
+
+Starting training for 200 epochs...
+Epoch   1/200: Train Loss: 32302.5028, Val RMSE: 176.6963, Val MAE: 145.4085
+Epoch  10/200: Train Loss: 29907.0802, Val RMSE: 170.7228, Val MAE: 138.8408
+Epoch  20/200: Train Loss: 27449.6562, Val RMSE: 163.4640, Val MAE: 131.3387
+Epoch  30/200: Train Loss: 24720.1682, Val RMSE: 155.2916, Val MAE: 122.9698
+Epoch  40/200: Train Loss: 21983.7056, Val RMSE: 146.5664, Val MAE: 114.7389
+Epoch  50/200: Train Loss: 19399.8336, Val RMSE: 137.6817, Val MAE: 106.0080
+Epoch  60/200: Train Loss: 17032.0054, Val RMSE: 129.0845, Val MAE: 98.5738
+Epoch  70/200: Train Loss: 14871.6128, Val RMSE: 121.5083, Val MAE: 92.3277
+Epoch  80/200: Train Loss: 13020.6161, Val RMSE: 113.8262, Val MAE: 84.4695
+Epoch  90/200: Train Loss: 11462.6491, Val RMSE: 106.6572, Val MAE: 77.8846
+Epoch 100/200: Train Loss: 10064.3481, Val RMSE: 100.7331, Val MAE: 72.5869
+Epoch 110/200: Train Loss: 9042.3061, Val RMSE: 95.3160, Val MAE: 68.1505
+Epoch 120/200: Train Loss: 8179.5113, Val RMSE: 90.6160, Val MAE: 64.2609
+Epoch 130/200: Train Loss: 7522.4952, Val RMSE: 87.4153, Val MAE: 61.8212
+Epoch 140/200: Train Loss: 6975.1847, Val RMSE: 84.8084, Val MAE: 59.7312
+Epoch 150/200: Train Loss: 6652.4590, Val RMSE: 82.7008, Val MAE: 58.0853
+Epoch 160/200: Train Loss: 6351.2350, Val RMSE: 81.2478, Val MAE: 56.9720
+Epoch 170/200: Train Loss: 6144.1587, Val RMSE: 80.3963, Val MAE: 56.2631
+Epoch 180/200: Train Loss: 6064.6914, Val RMSE: 79.6907, Val MAE: 55.7494
+Epoch 190/200: Train Loss: 6027.6479, Val RMSE: 79.5544, Val MAE: 55.7782
+Epoch 200/200: Train Loss: 5974.8810, Val RMSE: 79.3312, Val MAE: 55.4277
+
+Best validation RMSE: 79.3312 at epoch 200
+Test RMSE: 77.9384
+Test MAE: 53.8768
+
+================================================================================
+Experiment: Full GRIN: Max aggregation + L1 + {1,3}-RU augmentation
+================================================================================
+Config: {
+  "csv_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.1,
+  "lr": 0.0001,
+  "max_epochs": 200,
+  "patience": 30,
+  "readout": "mean",
+  "name": "Full GRIN: Max aggregation + L1 + {1,3}-RU augmentation",
+  "use_max_aggregation": true,
+  "use_l1": true,
+  "l1_lambda": 0.001,
+  "augmentation": "both"
+}
+Device: cuda
+Loading data...
+Loaded 11472 graphs for train split with augmentation=both
+Loaded 717 graphs for val split with augmentation=None
+Loaded 717 graphs for test split with augmentation=None
+Input dimension: 9
+Model parameters: 701,441
+
+Starting training for 200 epochs...
+/home/home_public/aisci/AIscientist/src/2_day2_grin/train.py:41: UserWarning: Using a target size (torch.Size([64, 1])) that is different to the input size (torch.Size([60, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  mse_loss = nn.functional.mse_loss(pred, target)
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/2_day2_grin/train.py", line 401, in <module>
+    main()
+  File "/home/home_public/aisci/AIscientist/src/2_day2_grin/train.py", line 352, in main
+    results = train_model(config, exp_dir)
+  File "/home/home_public/aisci/AIscientist/src/2_day2_grin/train.py", line 164, in train_model
+    train_loss = train_epoch(
+  File "/home/home_public/aisci/AIscientist/src/2_day2_grin/train.py", line 41, in train_epoch
+    mse_loss = nn.functional.mse_loss(pred, target)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/functional.py", line 3884, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/functional.py", line 76, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+RuntimeError: The size of tensor a (60) must match the size of tensor b (64) at non-singleton dimension 0

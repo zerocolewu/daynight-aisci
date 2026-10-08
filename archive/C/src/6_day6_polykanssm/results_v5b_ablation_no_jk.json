@@ -1,0 +1,54 @@
+{
+  "model": "PolyKAN-SSM-v5b",
+  "config": {
+    "data_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+    "work_dir": "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm",
+    "hidden_dim": 256,
+    "num_layers": 4,
+    "dropout": 0.3,
+    "spectral_radius": 0.99,
+    "num_frequencies": 4,
+    "lr": 0.0005,
+    "weight_decay": 0.005,
+    "batch_size": 32,
+    "max_epochs": 500,
+    "patience": 30,
+    "scheduler_patience": 15,
+    "scheduler_factor": 0.5,
+    "noncovalent_cutoff": 5.0,
+    "num_seeds": 1,
+    "train_ratio": 0.72,
+    "val_ratio": 0.08,
+    "seeds": [
+      42
+    ],
+    "pred_l2_penalty": 0.01
+  },
+  "node_dim": 21,
+  "edge_dim": 23,
+  "num_samples": 7170,
+  "mean_test_rmse": 41.67557961538683,
+  "std_test_rmse": 0.0,
+  "mean_test_mae": 28.72438570809281,
+  "std_test_mae": 0.0,
+  "mean_test_r2": 0.8631392674345725,
+  "mean_train_rmse": 36.05056016250449,
+  "mean_val_rmse": 39.53782784999184,
+  "train_val_gap": 3.4872676874873534,
+  "best_test_rmse": 41.67557961538683,
+  "sota_target": 30.8,
+  "beat_sota": false,
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "best_epoch": 55,
+      "train_rmse": 36.05056016250449,
+      "val_rmse": 39.53782784999184,
+      "test_rmse": 41.67557961538683,
+      "test_mae": 28.72438570809281,
+      "test_r2": 0.8631392674345725,
+      "num_params": 1618055
+    }
+  ],
+  "timestamp": "2026-05-08T19:46:51.110776"
+}

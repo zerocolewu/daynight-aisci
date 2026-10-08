@@ -1,0 +1,1168 @@
+2026-05-13 23:06:10,061 - __main__ - INFO - Starting Data Centric Foundation Experiments
+2026-05-13 23:06:10,062 - __main__ - INFO - Working directory: /home/home_public/aisci/AIscientist/src/1_01_data_centric_foundation
+2026-05-13 23:06:10,062 - __main__ - INFO - Device: cuda
+2026-05-13 23:06:10,062 - __main__ - INFO - 
+============================================================
+2026-05-13 23:06:10,062 - __main__ - INFO - Starting experiment: a_monomer (mode=monomer)
+2026-05-13 23:06:10,062 - __main__ - INFO - ============================================================
+Processing...
+[23:06:10] Can't kekulize mol.  Unkekulized atoms: 31 32 33 34 35 36 37 38 39
+[23:06:10] Can't kekulize mol.  Unkekulized atoms: 30 31 32 33 34 35 36 37 38
+[23:06:10] Can't kekulize mol.  Unkekulized atoms: 36 37 38 39 40 41 42 43 44
+[23:06:10] Can't kekulize mol.  Unkekulized atoms: 37 38 39 40 41 42 43 44 45
+[23:06:10] Can't kekulize mol.  Unkekulized atoms: 41 42 43 44 45 46 47 48 49
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 23 24 25 28 31 32 33
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 55 56 57 58 59 60 61 62 63 64 65 66 67
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 54 55 56 57 58 59 60 61 62 63 64 65 66
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 52 53 54 55 56 57 58 59 60 61 62 63 64
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 12 13 14 17 20 21 22
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 17 18 19 22 25 26 27
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 12 13 14 17 20 21 22
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 12 13 14 17 20 21 22
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 11 12 13 16 19 20 21
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 12 13 14 17 20 21 22
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 13 14 15 18 21 22 23
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 31 32 33 36 39 40 41
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 30 31 32 35 38 39 40
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 29 30 31 34 37 38 39
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 32 33 34 37 40 41 42
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 12 13 14 17 20 21 22
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 13 14 15 18 21 22 23
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 7 8 9 12 15 16 17
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 8 9 10 13 16 17 18
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 30 31 32 35 38 39 40
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 22 23 24 27 30 31 32
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 18 19 20 23 26 27 28
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 21 22 23 26 29 30 31
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 26 27 28 31 34 35 36
+[23:06:11] Can't kekulize mol.  Unkekulized atoms: 22 23 24 27 30 31 32
+[23:06:12] Can't kekulize mol.  Unkekulized atoms: 22 23 24 27 30 31 32
+[23:06:12] Can't kekulize mol.  Unkekulized atoms: 23 24 25 28 31 32 33
+[23:06:12] Can't kekulize mol.  Unkekulized atoms: 18 19 20 23 26 27 28
+[23:06:12] Can't kekulize mol.  Unkekulized atoms: 17 18 19 22 25 26 27
+[23:06:12] Can't kekulize mol.  Unkekulized atoms: 19 20 21 24 27 28 29
+[23:06:12] Can't kekulize mol.  Unkekulized atoms: 15 16 17 18 19
+[23:06:12] Can't kekulize mol.  Unkekulized atoms: 14 15 16 17 18
+[23:06:12] Can't kekulize mol.  Unkekulized atoms: 13 14 15 16 17
+[23:06:12] Can't kekulize mol.  Unkekulized atoms: 12 13 14 15 16
+[23:06:13] Can't kekulize mol.  Unkekulized atoms: 25 26 27 34 35
+[23:06:13] Can't kekulize mol.  Unkekulized atoms: 24 25 26 33 34
+[23:06:13] Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22
+[23:06:13] Can't kekulize mol.  Unkekulized atoms: 19 20 21 22 23
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 25 26 27 28 29 36 37 40 41
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 36 37 38 39 40 47 48 51 52
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 23 24 25 26 27 34 35 38 39
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 35 36 37 38 39 46 47 50 51
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22 29 30 33 34
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 30 31 32 33 34 41 42 45 46
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 23 24 25 28 29 30 31 32 33
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 22 23 24 27 28 29 30 31 32
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 21 22 23 24 25
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 21 22 23 26 27 28 29 30 31
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 21 22 23 24 25
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 16 17 18 21 22 23 24 25 26
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 17 18 19 22 23 24 25 26 27
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 21 22 23 24 25
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 28 29 30 33 34 35 36 37 38
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 23 24 25 28 29 30 31 32 33
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 28 29 30 33 34 35 36 37 38
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 33 34 35 38 39 40 41 42 43
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 33 34 35 38 39 40 41 42 43
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 30 31 32 33 34 35 36 54 55
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 30 31 32 33 34 35 36 43 44
+[23:06:15] Can't kekulize mol.  Unkekulized atoms: 30 31 32 33 34 35 36 37 38
+[23:06:16] Can't kekulize mol.  Unkekulized atoms: 22 23 24 27 28 29 30 31 32
+[23:06:16] Can't kekulize mol.  Unkekulized atoms: 40 41 42 43 44 45 46 47 48 49 50 51 52
+[23:06:16] Can't kekulize mol.  Unkekulized atoms: 39 40 41 42 43 44 45 46 47 48 49 50 51
+[23:06:16] Can't kekulize mol.  Unkekulized atoms: 38 39 40 41 42 43 44 45 46 47 48 49 50
+[23:06:16] Can't kekulize mol.  Unkekulized atoms: 37 38 39 40 41 42 43 44 45 46 47 48 49
+[23:06:16] Can't kekulize mol.  Unkekulized atoms: 36 37 38 39 40 41 42 43 44 45 46 47 48
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 27 28 29 30 31 38 39 42 43
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 23 24 25
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 24 25 26 29 32 33 34
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 14 15 16 19 22 23 24
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 16 17 18 21 24 25 26
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 6 7 8 11 14 15 16
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 21 22 23 26 29 30 31
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 30 31 32 35 38 39 40
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 18 19 20 23 26 27 28
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 13 14 15 18 21 22 23
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 23 24 25
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 12 13 14 17 20 21 22
+[23:06:17] Can't kekulize mol.  Unkekulized atoms: 20 21 22 25 28 29 30
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 14 15 16 19 22 23 24
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 14 15 16 19 22 23 24
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 13 14 15 18 21 22 23
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 14 15 16 19 22 23 24
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 14 15 16 19 22 23 24
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 30 31 32 35 38 39 40
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 11 12 17 20 23 24 29
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 11 12 13 16 19 20 25
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 11 12 13 16 19 20 21
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 11 12 17 20 23 24 29
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 11 12 13 16 19 20 25
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 11 12 13 16 19 20 21
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 15 16 21 24 27 28 33
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 23 24 29
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 11 12 13 16 19 20 21
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 9 10 11 14 17 18 19
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 13 14 15 18 21 22 23
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 13 14 15 18 21 22 23
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 13 14 15 18 21 22 23
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 7 8 9 12 15 16 17
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 13 14 15 18 21 22 23
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 14 15 16 19 22 23 24
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 24 25 26 29 32 33 34
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 23 24 25 28 31 32 33
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 23 24 25 28 31 32 33
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 23 24 25 28 31 32 33
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 28 29 30 33 36 37 38
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 26 27 28 31 34 35 36
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 35 36 37 40 43 44 45
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 37 38 39 42 45 46 47
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 17 18 19 22 25 26 27
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 29 30 31 34 37 38 39
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 31 32 33 36 39 40 41
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 33 34 35 38 41 42 43
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 35 36 37 40 43 44 45
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 32 33 34 37 40 41 42
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 36 37 38 41 44 45 46
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 23 24 25 28 31 32 33
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 25 26 27 30 33 34 35
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 50 51 52 55 58 59 60
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 12 13 23 26 29 30 40
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 12 13 26 29 32 33 46
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 12 13 30 33 36 37 54
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 12 13 34 37 40 41 62
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 22 23 24 27 30 31 32
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 12 13 14 17 20 21 22
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 10 11 12 15 18 19 20
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 63 64 65 68 71 72 73
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 11 12 13 16 19 20 21
+[23:06:18] Can't kekulize mol.  Unkekulized atoms: 11 12 13 16 19 20 21
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 10 11 12 15 18 19 20
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 20 21 22 25 28 29 30
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 32 33 34 37 40 41 42
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 14 15 16 19 22 23 24
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 14 15 16 19 22 23 24
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 14 15 16 19 22 23 24
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 24 25 26 29 32 33 34
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 24 25 26 29 32 33 34
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 23 24 25
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 25 26 27 30 33 34 35
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 21 22 23 26 29 30 31
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 19 20 21 24 27 28 29
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 17 18 19 22 25 26 27
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 17 18 19 22 25 26 27
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 17 18 19 22 25 26 27
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 23 24 25 28 31 32 33
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 12 13 14 17 20 21 22
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 34 35 36 39 42 43 44
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 20 21 22 25 28 29 30
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 48 49 50 53 56 57 58
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 15 16 31 34 37 38 53
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 25 26 41 44 47 48 63
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 21 22 37 40 43 44 59
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 15 16 27 30 33 34 45
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 25 26 37 40 43 44 55
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 21 22 33 36 39 40 51
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 15 16 23 26 29 30 37
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 25 26 33 36 39 40 47
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 21 22 29 32 35 36 43
+[23:06:19] Can't kekulize mol.  Unkekulized atoms: 19 20 21 24 27 28 29
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 24 25 26 29 32 33 34
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 25 26 27 30 33 34 35
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 41 42 43 46 49 50 51
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 26 27 28 31 34 35 36
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 38 39 40 43 46 47 48
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 23 24 39
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 25 26 27 30 33 34 49
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 21 22 23 26 29 30 45
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 23 24 35
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 25 26 27 30 33 34 45
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 21 22 23 26 29 30 41
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 23 24 31
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 25 26 27 30 33 34 41
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 21 22 23 26 29 30 37
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 20 21 22 25 28 29 30
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 28 29 30 33 36 37 38
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 17 18 19 22 25 26 27
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 30 31 32 35 38 39 40
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 18 19 20 23 26 27 28
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 30 31 32 35 38 39 40
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 8 9 10 13 16 17 18
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 19 20 21 24 27 28 29
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 22 23 24 27 30 31 32
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 24 25 26 29 32 33 34
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 25 26 27 30 33 34 35
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 35 36 37 40 43 44 45
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 20 21 22 25 28 29 30
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 20 21 22 25 28 29 30
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 34 35 36 39 42 43 44
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 50 51 52 55 58 59 60
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 23 24 25
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 16 17 18 21 24 25 26
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 17 18 19 22 25 26 27
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 18 19 20 23 26 27 28
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 15 16 17 20 23 24 25
+[23:06:20] Can't kekulize mol.  Unkekulized atoms: 12 13 14 17 20 21 22
+[23:06:21] Can't kekulize mol.  Unkekulized atoms: 18 19 20 23 26 27 28
+[23:06:21] Can't kekulize mol.  Unkekulized atoms: 25 26 27 34 35
+[23:06:21] Can't kekulize mol.  Unkekulized atoms: 24 25 26 33 34
+[23:06:21] Can't kekulize mol.  Unkekulized atoms: 20 21 22 23 24
+[23:06:21] Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22
+[23:06:21] Can't kekulize mol.  Unkekulized atoms: 21 22 23 24 25
+[23:06:21] Can't kekulize mol.  Unkekulized atoms: 19 20 21 22 23
+[23:06:21] Can't kekulize mol.  Unkekulized atoms: 0 1 2 3 4 5 6 7 8
+2026-05-13 23:06:22,203 - dataset - INFO - Mode 'monomer': processed 7170 molecules successfully
+Done!
+2026-05-13 23:06:22,263 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:06:22,263 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:06:22,279 - __main__ - INFO - Graph stats: {'avg_nodes': 11.23, 'avg_edges': 10.95, 'max_nodes': 30, 'min_nodes': 1}
+2026-05-13 23:06:22,279 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:06:22,280 - __main__ - INFO - Feature dims: node=30, edge=7
+2026-05-13 23:06:27,649 - train - INFO - [a_monomer] Epoch 1: train_rmse=102.0912, val_rmse=63.4580
+2026-05-13 23:07:27,353 - train - INFO - [a_monomer] Epoch 20: train_rmse=41.2123, val_rmse=47.0871
+2026-05-13 23:08:28,021 - train - INFO - [a_monomer] Epoch 40: train_rmse=32.9479, val_rmse=51.3563
+2026-05-13 23:09:36,840 - train - INFO - [a_monomer] Epoch 60: train_rmse=28.0147, val_rmse=43.0515
+2026-05-13 23:09:36,840 - train - INFO - [a_monomer] Early stopping at epoch 60, best epoch=30, best val_rmse=41.3695
+2026-05-13 23:09:37,513 - train - INFO - [a_monomer] Final: train=36.3785, val=41.3695, test=52.7059, best_epoch=30
+2026-05-13 23:09:37,514 - __main__ - INFO - Experiment a_monomer completed in 195.2s
+2026-05-13 23:09:37,514 - __main__ - INFO - Results: train=36.3785, val=41.3695, test=52.7059
+2026-05-13 23:09:38,245 - __main__ - INFO - Saved learning curve plot for a_monomer
+2026-05-13 23:09:38,266 - __main__ - INFO - 
+============================================================
+2026-05-13 23:09:38,266 - __main__ - INFO - Starting experiment: b_dimer (mode=dimer)
+2026-05-13 23:09:38,266 - __main__ - INFO - ============================================================
+Processing...
+[23:09:40] Can't kekulize mol.  Unkekulized atoms: 90 91 92 93 94 95 96 97 98
+[23:09:40] Can't kekulize mol.  Unkekulized atoms: 88 89 90 91 92 93 94 95 96
+[23:09:40] Can't kekulize mol.  Unkekulized atoms: 102 103 104 105 106 107 108 109 110
+[23:09:40] Can't kekulize mol.  Unkekulized atoms: 103 104 105 106 107 108 109 110 111
+[23:09:40] Can't kekulize mol.  Unkekulized atoms: 114 115 116 117 118 119 120 121 122
+[23:09:40] Can't kekulize mol.  Unkekulized atoms: 65 66 67 70 73 74 75
+[23:09:41] Can't kekulize mol.  Unkekulized atoms: 130 131 132 133 134 135 136 137 138 139 140 141 142
+[23:09:41] Can't kekulize mol.  Unkekulized atoms: 130 131 132 133 134 135 136 137 138 139 140 141 142
+[23:09:41] Can't kekulize mol.  Unkekulized atoms: 121 122 123 124 125 126 127 128 129 130 131 132 133
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 41 42 43 46 49 50 51
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 41 42 43 46 49 50 51
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 37 38 39 42 45 46 47
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 35 36 37 40 43 44 45
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 37 38 39 42 45 46 47
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 42 43 44 47 50 51 52
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 89 90 91 94 97 98 99
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 103 104 105
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 41 42 43 46 49 50 51
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 43 44 45 48 51 52 53
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 29 30 31 34 37 38 39
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 30 31 32 35 38 39 40
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 65 66 67 70 73 74 75
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 63 64 65 68 71 72 73
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:09:42] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+[23:09:43] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:09:43] Can't kekulize mol.  Unkekulized atoms: 63 64 65 68 71 72 73
+[23:09:43] Can't kekulize mol.  Unkekulized atoms: 57 58 59 62 65 66 67
+[23:09:43] Can't kekulize mol.  Unkekulized atoms: 48 49 50 53 56 57 58
+[23:09:43] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[23:09:43] Can't kekulize mol.  Unkekulized atoms: 37 38 39 40 41
+[23:09:43] Can't kekulize mol.  Unkekulized atoms: 36 37 38 39 40
+[23:09:43] Can't kekulize mol.  Unkekulized atoms: 35 36 37 38 39
+[23:09:43] Can't kekulize mol.  Unkekulized atoms: 34 35 36 37 38
+[23:09:46] Can't kekulize mol.  Unkekulized atoms: 66 67 68 75 76
+[23:09:46] Can't kekulize mol.  Unkekulized atoms: 65 66 67 74 75
+[23:09:46] Can't kekulize mol.  Unkekulized atoms: 47 48 49 50 51
+[23:09:46] Can't kekulize mol.  Unkekulized atoms: 48 49 50 51 52
+[23:09:49] Can't kekulize mol.  Unkekulized atoms: 75 76 77 78 79 86 87 90 91
+[23:09:49] Can't kekulize mol.  Unkekulized atoms: 102 103 104 105 106 113 114 117 118
+[23:09:49] Can't kekulize mol.  Unkekulized atoms: 72 73 74 75 76 83 84 87 88
+[23:09:49] Can't kekulize mol.  Unkekulized atoms: 100 101 102 103 104 111 112 115 116
+[23:09:49] Can't kekulize mol.  Unkekulized atoms: 61 62 63 64 65 72 73 76 77
+[23:09:49] Can't kekulize mol.  Unkekulized atoms: 89 90 91 92 93 100 101 104 105
+[23:09:49] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 79 80 81 82 83
+[23:09:49] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 77 78 79 80 81
+[23:09:49] Can't kekulize mol.  Unkekulized atoms: 47 48 49 52 53 54 55 56 57
+[23:09:50] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 68 69 70 71 72
+[23:09:50] Can't kekulize mol.  Unkekulized atoms: 48 49 50 53 54 55 56 57 58
+[23:09:50] Can't kekulize mol.  Unkekulized atoms: 50 51 52 55 56 57 58 59 60
+[23:09:50] Can't kekulize mol.  Unkekulized atoms: 56 57 58 61 62 63 64 65 66
+[23:09:50] Can't kekulize mol.  Unkekulized atoms: 48 49 50 53 54 55 56 57 58
+[23:09:51] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 83 84 85 86 87
+[23:09:51] Can't kekulize mol.  Unkekulized atoms: 69 70 71 74 75 76 77 78 79
+[23:09:51] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[23:09:51] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 99 100 101 102 103
+[23:09:51] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 107 108 109 110 111
+[23:09:51] Can't kekulize mol.  Unkekulized atoms: 87 88 89 90 91 92 93 111 112
+[23:09:51] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80 81 82 89 90
+[23:09:51] Can't kekulize mol.  Unkekulized atoms: 70 71 72 73 74 75 76 77 78
+[23:09:52] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 77 78 79 80 81
+[23:09:52] Can't kekulize mol.  Unkekulized atoms: 96 97 98 99 100 101 102 103 104 105 106 107 108
+[23:09:52] Can't kekulize mol.  Unkekulized atoms: 94 95 96 97 98 99 100 101 102 103 104 105 106
+[23:09:52] Can't kekulize mol.  Unkekulized atoms: 92 93 94 95 96 97 98 99 100 101 102 103 104
+[23:09:52] Can't kekulize mol.  Unkekulized atoms: 90 91 92 93 94 95 96 97 98 99 100 101 102
+[23:09:52] Can't kekulize mol.  Unkekulized atoms: 88 89 90 91 92 93 94 95 96 97 98 99 100
+[23:09:54] Can't kekulize mol.  Unkekulized atoms: 79 80 81 82 83 90 91 94 95
+[23:09:55] Can't kekulize mol.  Unkekulized atoms: 46 47 48 51 54 55 56
+[23:09:55] Can't kekulize mol.  Unkekulized atoms: 64 65 66 69 72 73 74
+[23:09:55] Can't kekulize mol.  Unkekulized atoms: 45 46 47 50 53 54 55
+[23:09:55] Can't kekulize mol.  Unkekulized atoms: 47 48 49 52 55 56 57
+[23:09:55] Can't kekulize mol.  Unkekulized atoms: 30 31 32 35 38 39 40
+[23:09:55] Can't kekulize mol.  Unkekulized atoms: 65 66 67 70 73 74 75
+[23:09:55] Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+[23:09:55] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+[23:09:56] Can't kekulize mol.  Unkekulized atoms: 42 43 44 47 50 51 52
+[23:09:56] Can't kekulize mol.  Unkekulized atoms: 45 46 47 50 53 54 55
+[23:09:56] Can't kekulize mol.  Unkekulized atoms: 41 42 43 46 49 50 51
+[23:09:56] Can't kekulize mol.  Unkekulized atoms: 56 57 58 61 64 65 66
+[23:09:56] Can't kekulize mol.  Unkekulized atoms: 44 45 46 49 52 53 54
+[23:09:56] Can't kekulize mol.  Unkekulized atoms: 43 44 45 48 51 52 53
+[23:09:56] Can't kekulize mol.  Unkekulized atoms: 42 43 44 47 50 51 52
+[23:09:56] Can't kekulize mol.  Unkekulized atoms: 43 44 45 48 51 52 53
+[23:09:56] Can't kekulize mol.  Unkekulized atoms: 43 44 45 48 51 52 53
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 89 90 91 94 97 98 99
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 55 56 61 64 67 68 73
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 51 52 53 56 59 60 65
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 47 48 49 52 55 56 57
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 49 50 55 58 61 62 67
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 45 46 47 50 53 54 59
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 41 42 43 46 49 50 51
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 57 58 63 66 69 70 75
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 67
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 49 50 51 54 57 58 59
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 31 32 33 36 39 40 41
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 45 46 47 50 53 54 55
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 45 46 47 50 53 54 55
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 34 35 36 39 42 43 44
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 43 44 45 48 51 52 53
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 67 68 69 72 75 76 77
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 68 69 70 73 76 77 78
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 87 88 89 92 95 96 97
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 55 56 57 60 63 64 65
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 89
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:09:57] Can't kekulize mol.  Unkekulized atoms: 94 95 96 99 102 103 104
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 63 64 65 68 71 72 73
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 114 115 116 119 122 123 124
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 59 60 70 73 76 77 87
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 65 66 79 82 85 86 99
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 73 74 91 94 97 98 115
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 81 82 103 106 109 110 131
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 89 90 91
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 49 50 51 54 57 58 59
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 35 36 37 40 43 44 45
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 167 168 169 172 175 176 177
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 175 176 177 180 183 184 185
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 43 44 45 48 51 52 53
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 41 42 43 46 49 50 51
+[23:09:58] Can't kekulize mol.  Unkekulized atoms: 34 35 36 39 42 43 44
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 69 70 71 74 77 78 79
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 42 43 44 47 50 51 52
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 50 51 52 55 58 59 60
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 89 90 91
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 65 66 67 70 73 74 75
+[23:09:59] Can't kekulize mol.  Unkekulized atoms: 57 58 59 62 65 66 67
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 55 56 57 60 63 64 65
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 57 58 59 62 65 66 67
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 63 64 65 68 71 72 73
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 49 50 51 54 57 58 59
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 92 93 94
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 60 61 62 65 68 69 70
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 134 135 136
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 87 88 103 106 109 110 125
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 93 94 109 112 115 116 131
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 85 86 101 104 107 108 123
+[23:10:00] Can't kekulize mol.  Unkekulized atoms: 79 80 91 94 97 98 109
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 85 86 97 100 103 104 115
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 77 78 89 92 95 96 107
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 71 72 79 82 85 86 93
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 77 78 85 88 91 92 99
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 69 70 77 80 83 84 91
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 63 64 65 68 71 72 73
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 64 65 66 69 72 73 74
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 97
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 103
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 95
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 69 70 71 74 77 78 89
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 95
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 67 68 69 72 75 76 87
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 65 66 67 70 73 74 81
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 87
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 63 64 65 68 71 72 79
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 57 58 59 62 65 66 67
+[23:10:01] Can't kekulize mol.  Unkekulized atoms: 74 75 76 79 82 83 84
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 57 58 59 62 65 66 67
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 56 57 58 61 64 65 66
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 90 91 92 95 98 99 100
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 30 31 32 35 38 39 40
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 57 58 59 62 65 66 67
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 65 66 67 70 73 74 75
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 68 69 70 73 76 77 78
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 63 64 65 68 71 72 73
+[23:10:02] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 63 64 65 68 71 72 73
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 67 68 69 72 75 76 77
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 133 134 135 138 141 142 143
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 134 135 136
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 49 50 51 54 57 58 59
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 47 48 49 52 55 56 57
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 49 50 51 54 57 58 59
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 51 52 53 56 59 60 61
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 45 46 47 50 53 54 55
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 47 48 49 52 55 56 57
+[23:10:03] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+[23:10:04] Can't kekulize mol.  Unkekulized atoms: 66 67 68 75 76
+[23:10:04] Can't kekulize mol.  Unkekulized atoms: 65 66 67 74 75
+[23:10:04] Can't kekulize mol.  Unkekulized atoms: 51 52 53 54 55
+[23:10:04] Can't kekulize mol.  Unkekulized atoms: 47 48 49 50 51
+[23:10:04] Can't kekulize mol.  Unkekulized atoms: 52 53 54 55 56
+[23:10:04] Can't kekulize mol.  Unkekulized atoms: 48 49 50 51 52
+[23:10:04] Can't kekulize mol.  Unkekulized atoms: 9 10 11 12 13 14 15 16 17
+2026-05-13 23:10:06,175 - dataset - INFO - Mode 'dimer': processed 7170 molecules successfully
+Done!
+2026-05-13 23:10:06,260 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:10:06,260 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:10:06,282 - __main__ - INFO - Graph stats: {'avg_nodes': 22.46, 'avg_edges': 22.9, 'max_nodes': 60, 'min_nodes': 2}
+2026-05-13 23:10:06,282 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:10:06,282 - __main__ - INFO - Feature dims: node=30, edge=7
+2026-05-13 23:10:10,093 - train - INFO - [b_dimer] Epoch 1: train_rmse=101.5068, val_rmse=111.8208
+2026-05-13 23:11:15,441 - train - INFO - [b_dimer] Epoch 20: train_rmse=40.0040, val_rmse=40.3429
+2026-05-13 23:12:14,015 - train - INFO - [b_dimer] Epoch 40: train_rmse=32.4446, val_rmse=44.3104
+2026-05-13 23:12:35,576 - train - INFO - [b_dimer] Early stopping at epoch 46, best epoch=16, best val_rmse=39.0404
+2026-05-13 23:12:36,301 - train - INFO - [b_dimer] Final: train=41.6527, val=39.0404, test=51.2942, best_epoch=16
+2026-05-13 23:12:36,302 - __main__ - INFO - Experiment b_dimer completed in 150.0s
+2026-05-13 23:12:36,302 - __main__ - INFO - Results: train=41.6527, val=39.0404, test=51.2942
+2026-05-13 23:12:36,596 - __main__ - INFO - Saved learning curve plot for b_dimer
+2026-05-13 23:12:36,618 - __main__ - INFO - 
+============================================================
+2026-05-13 23:12:36,618 - __main__ - INFO - Starting experiment: c_trimer (mode=trimer)
+2026-05-13 23:12:36,618 - __main__ - INFO - ============================================================
+Processing...
+[23:12:39] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157
+[23:12:39] Can't kekulize mol.  Unkekulized atoms: 146 147 148 149 150 151 152 153 154
+[23:12:39] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 173 174 175 176
+[23:12:39] Can't kekulize mol.  Unkekulized atoms: 169 170 171 172 173 174 175 176 177
+[23:12:39] Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 195
+[23:12:39] Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+[23:12:41] Can't kekulize mol.  Unkekulized atoms: 205 206 207 208 209 210 211 212 213 214 215 216 217
+[23:12:41] Can't kekulize mol.  Unkekulized atoms: 206 207 208 209 210 211 212 213 214 215 216 217 218
+[23:12:41] Can't kekulize mol.  Unkekulized atoms: 190 191 192 193 194 195 196 197 198 199 200 201 202
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 89 90 91 94 97 98 99
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 155 156 157 160 163 164 165
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 149 150 151 154 157 158 159
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 158 159 160 163 166 167 168
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 51 52 53 56 59 60 61
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 90 91 92 95 98 99 100
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 116 117 118 121 124 125 126
+[23:12:42] Can't kekulize mol.  Unkekulized atoms: 124 125 126 129 132 133 134
+[23:12:43] Can't kekulize mol.  Unkekulized atoms: 102 103 104 107 110 111 112
+[23:12:43] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:12:43] Can't kekulize mol.  Unkekulized atoms: 96 97 98 101 104 105 106
+[23:12:43] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 89
+[23:12:43] Can't kekulize mol.  Unkekulized atoms: 85 86 87 90 93 94 95
+[23:12:44] Can't kekulize mol.  Unkekulized atoms: 59 60 61 62 63
+[23:12:44] Can't kekulize mol.  Unkekulized atoms: 58 59 60 61 62
+[23:12:44] Can't kekulize mol.  Unkekulized atoms: 57 58 59 60 61
+[23:12:44] Can't kekulize mol.  Unkekulized atoms: 56 57 58 59 60
+[23:12:47] Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[23:12:47] Can't kekulize mol.  Unkekulized atoms: 106 107 108 115 116
+[23:12:47] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[23:12:47] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[23:12:52] Can't kekulize mol.  Unkekulized atoms: 125 126 127 128 129 136 137 140 141
+[23:12:52] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 179 180 183 184
+[23:12:52] Can't kekulize mol.  Unkekulized atoms: 121 122 123 124 125 132 133 136 137
+[23:12:52] Can't kekulize mol.  Unkekulized atoms: 165 166 167 168 169 176 177 180 181
+[23:12:52] Can't kekulize mol.  Unkekulized atoms: 104 105 106 107 108 115 116 119 120
+[23:12:52] Can't kekulize mol.  Unkekulized atoms: 148 149 150 151 152 159 160 163 164
+[23:12:52] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 129 130 131 132 133
+[23:12:52] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+[23:12:52] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 85 86 87 88 89
+[23:12:53] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 109 110 111 112 113
+[23:12:53] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[23:12:53] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 90 91 92 93 94
+[23:12:53] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 101 102 103 104 105
+[23:12:54] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[23:12:54] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 132 133 134 135 136
+[23:12:54] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 121 122 123 124 125
+[23:12:54] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 140 141 142 143 144
+[23:12:54] Can't kekulize mol.  Unkekulized atoms: 153 154 155 158 159 160 161 162 163
+[23:12:54] Can't kekulize mol.  Unkekulized atoms: 169 170 171 174 175 176 177 178 179
+[23:12:54] Can't kekulize mol.  Unkekulized atoms: 144 145 146 147 148 149 150 168 169
+[23:12:54] Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 126 127 128 135 136
+[23:12:54] Can't kekulize mol.  Unkekulized atoms: 110 111 112 113 114 115 116 117 118
+[23:12:55] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+[23:12:56] Can't kekulize mol.  Unkekulized atoms: 152 153 154 155 156 157 158 159 160 161 162 163 164
+[23:12:56] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157 158 159 160 161
+[23:12:56] Can't kekulize mol.  Unkekulized atoms: 146 147 148 149 150 151 152 153 154 155 156 157 158
+[23:12:56] Can't kekulize mol.  Unkekulized atoms: 143 144 145 146 147 148 149 150 151 152 153 154 155
+[23:12:56] Can't kekulize mol.  Unkekulized atoms: 140 141 142 143 144 145 146 147 148 149 150 151 152
+[23:12:59] Can't kekulize mol.  Unkekulized atoms: 131 132 133 134 135 142 143 146 147
+[23:13:00] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[23:13:00] Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+[23:13:00] Can't kekulize mol.  Unkekulized atoms: 76 77 78 81 84 85 86
+[23:13:00] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[23:13:00] Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+[23:13:00] Can't kekulize mol.  Unkekulized atoms: 109 110 111 114 117 118 119
+[23:13:00] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:13:00] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[23:13:01] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:13:01] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:13:01] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:13:01] Can't kekulize mol.  Unkekulized atoms: 92 93 94 97 100 101 102
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 74 75 76 79 82 83 84
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 148 149 150 153 156 157 158
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 87 88 93 96 99 100 105
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 93
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[23:13:02] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 87 88 89 92 95 96 97
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 61 62 63 66 69 70 71
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 134 135 136
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 111 112 113 116 119 120 121
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 110 111 112 115 118 119 120
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 139 140 141 144 147 148 149
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 145 146 147 150 153 154 155
+[23:13:03] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 123
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 119 120 121 124 127 128 129
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 135
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 141
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 103 104 105
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 178 179 180 183 186 187 188
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 106 107 117 120 123 124 134
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 118 119 132 135 138 139 152
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 134 135 152 155 158 159 176
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 150 151 172 175 178 179 200
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[23:13:04] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 60 61 62 65 68 69 70
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 275 276 277 280 283 284 285
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 287 288 289 292 295 296 297
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 58 59 60 63 66 67 68
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[23:13:05] Can't kekulize mol.  Unkekulized atoms: 138 139 140 143 146 147 148
+[23:13:06] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:13:06] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+[23:13:06] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:13:07] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:13:07] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:13:07] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+[23:13:07] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:13:07] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:13:07] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:13:07] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 204 205 206 209 212 213 214
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 159 160 175 178 181 182 197
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 161 162 177 180 183 184 199
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 149 150 165 168 171 172 187
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 143 144 155 158 161 162 173
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 145 146 157 160 163 164 175
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 133 134 145 148 151 152 163
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 127 128 135 138 141 142 149
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 129 130 137 140 143 144 151
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 117 118 125 128 131 132 139
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[23:13:08] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 173 174 175 178 181 182 183
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 144 145 146 149 152 153 154
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 155
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 133 134 135 138 141 142 157
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 121 122 123 126 129 130 145
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 131 132 143
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 145
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 133
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 123 124 131
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 117 118 119 122 125 126 133
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 121
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 94 95 96 99 102 103 104
+[23:13:09] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+[23:13:10] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+[23:13:10] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:13:10] Can't kekulize mol.  Unkekulized atoms: 94 95 96 99 102 103 104
+[23:13:10] Can't kekulize mol.  Unkekulized atoms: 150 151 152 155 158 159 160
+[23:13:10] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[23:13:10] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 103 104 105
+[23:13:10] Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+[23:13:10] Can't kekulize mol.  Unkekulized atoms: 112 113 114 117 120 121 122
+[23:13:11] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:13:11] Can't kekulize mol.  Unkekulized atoms: 171 172 173 176 179 180 181
+[23:13:11] Can't kekulize mol.  Unkekulized atoms: 106 107 108 111 114 115 116
+[23:13:11] Can't kekulize mol.  Unkekulized atoms: 114 115 116 119 122 123 124
+[23:13:11] Can't kekulize mol.  Unkekulized atoms: 142 143 144 147 150 151 152
+[23:13:11] Can't kekulize mol.  Unkekulized atoms: 212 213 214 217 220 221 222
+[23:13:11] Can't kekulize mol.  Unkekulized atoms: 202 203 204 207 210 211 212
+[23:13:11] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[23:13:11] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[23:13:12] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 89 90 91
+[23:13:12] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 92 93 94
+[23:13:12] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:13:12] Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+[23:13:12] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[23:13:13] Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[23:13:13] Can't kekulize mol.  Unkekulized atoms: 106 107 108 115 116
+[23:13:13] Can't kekulize mol.  Unkekulized atoms: 82 83 84 85 86
+[23:13:13] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[23:13:13] Can't kekulize mol.  Unkekulized atoms: 83 84 85 86 87
+[23:13:13] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[23:13:13] Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22 23 24 25 26
+2026-05-13 23:13:15,777 - dataset - INFO - Mode 'trimer': processed 7170 molecules successfully
+Done!
+2026-05-13 23:13:15,889 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:13:15,889 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:13:15,913 - __main__ - INFO - Graph stats: {'avg_nodes': 33.69, 'avg_edges': 34.85, 'max_nodes': 90, 'min_nodes': 3}
+2026-05-13 23:13:15,913 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:13:15,913 - __main__ - INFO - Feature dims: node=30, edge=7
+2026-05-13 23:13:19,597 - train - INFO - [c_trimer] Epoch 1: train_rmse=101.5938, val_rmse=64.4972
+2026-05-13 23:14:34,362 - train - INFO - [c_trimer] Epoch 20: train_rmse=39.0605, val_rmse=42.1954
+2026-05-13 23:15:46,412 - train - INFO - [c_trimer] Epoch 40: train_rmse=31.9381, val_rmse=44.8930
+2026-05-13 23:16:04,186 - train - INFO - [c_trimer] Early stopping at epoch 45, best epoch=15, best val_rmse=39.6497
+2026-05-13 23:16:05,062 - train - INFO - [c_trimer] Final: train=41.2877, val=39.6497, test=50.1926, best_epoch=15
+2026-05-13 23:16:05,063 - __main__ - INFO - Experiment c_trimer completed in 169.1s
+2026-05-13 23:16:05,063 - __main__ - INFO - Results: train=41.2877, val=39.6497, test=50.1926
+2026-05-13 23:16:05,335 - __main__ - INFO - Saved learning curve plot for c_trimer
+2026-05-13 23:16:05,359 - __main__ - INFO - 
+============================================================
+2026-05-13 23:16:05,359 - __main__ - INFO - Starting experiment: d_cyclized (mode=cyclized)
+2026-05-13 23:16:05,359 - __main__ - INFO - ============================================================
+Processing...
+[23:16:08] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157
+[23:16:08] Can't kekulize mol.  Unkekulized atoms: 146 147 148 149 150 151 152 153 154
+[23:16:08] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 173 174 175 176
+[23:16:08] Can't kekulize mol.  Unkekulized atoms: 169 170 171 172 173 174 175 176 177
+[23:16:08] Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 195
+[23:16:08] Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+[23:16:10] Can't kekulize mol.  Unkekulized atoms: 205 206 207 208 209 210 211 212 213 214 215 216 217
+[23:16:10] Can't kekulize mol.  Unkekulized atoms: 206 207 208 209 210 211 212 213 214 215 216 217 218
+[23:16:10] Can't kekulize mol.  Unkekulized atoms: 190 191 192 193 194 195 196 197 198 199 200 201 202
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 89 90 91 94 97 98 99
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 155 156 157 160 163 164 165
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 149 150 151 154 157 158 159
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 158 159 160 163 166 167 168
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 51 52 53 56 59 60 61
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 90 91 92 95 98 99 100
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 116 117 118 121 124 125 126
+[23:16:12] Can't kekulize mol.  Unkekulized atoms: 124 125 126 129 132 133 134
+[23:16:13] Can't kekulize mol.  Unkekulized atoms: 102 103 104 107 110 111 112
+[23:16:14] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:16:14] Can't kekulize mol.  Unkekulized atoms: 96 97 98 101 104 105 106
+[23:16:14] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 89
+[23:16:14] Can't kekulize mol.  Unkekulized atoms: 85 86 87 90 93 94 95
+[23:16:14] Can't kekulize mol.  Unkekulized atoms: 59 60 61 62 63
+[23:16:14] Can't kekulize mol.  Unkekulized atoms: 58 59 60 61 62
+[23:16:14] Can't kekulize mol.  Unkekulized atoms: 57 58 59 60 61
+[23:16:14] Can't kekulize mol.  Unkekulized atoms: 56 57 58 59 60
+[23:16:18] Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[23:16:18] Can't kekulize mol.  Unkekulized atoms: 106 107 108 115 116
+[23:16:18] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[23:16:18] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[23:16:24] Can't kekulize mol.  Unkekulized atoms: 125 126 127 128 129 136 137 140 141
+[23:16:24] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 179 180 183 184
+[23:16:24] Can't kekulize mol.  Unkekulized atoms: 121 122 123 124 125 132 133 136 137
+[23:16:24] Can't kekulize mol.  Unkekulized atoms: 165 166 167 168 169 176 177 180 181
+[23:16:24] Can't kekulize mol.  Unkekulized atoms: 104 105 106 107 108 115 116 119 120
+[23:16:24] Can't kekulize mol.  Unkekulized atoms: 148 149 150 151 152 159 160 163 164
+[23:16:24] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 129 130 131 132 133
+[23:16:24] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+[23:16:24] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 85 86 87 88 89
+[23:16:26] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 109 110 111 112 113
+[23:16:26] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[23:16:26] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 90 91 92 93 94
+[23:16:26] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 101 102 103 104 105
+[23:16:26] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[23:16:27] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 132 133 134 135 136
+[23:16:27] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 121 122 123 124 125
+[23:16:27] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 140 141 142 143 144
+[23:16:27] Can't kekulize mol.  Unkekulized atoms: 153 154 155 158 159 160 161 162 163
+[23:16:27] Can't kekulize mol.  Unkekulized atoms: 169 170 171 174 175 176 177 178 179
+[23:16:27] Can't kekulize mol.  Unkekulized atoms: 144 145 146 147 148 149 150 168 169
+[23:16:27] Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 126 127 128 135 136
+[23:16:27] Can't kekulize mol.  Unkekulized atoms: 110 111 112 113 114 115 116 117 118
+[23:16:28] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+[23:16:29] Can't kekulize mol.  Unkekulized atoms: 152 153 154 155 156 157 158 159 160 161 162 163 164
+[23:16:29] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157 158 159 160 161
+[23:16:29] Can't kekulize mol.  Unkekulized atoms: 146 147 148 149 150 151 152 153 154 155 156 157 158
+[23:16:29] Can't kekulize mol.  Unkekulized atoms: 143 144 145 146 147 148 149 150 151 152 153 154 155
+[23:16:29] Can't kekulize mol.  Unkekulized atoms: 140 141 142 143 144 145 146 147 148 149 150 151 152
+[23:16:32] Can't kekulize mol.  Unkekulized atoms: 131 132 133 134 135 142 143 146 147
+[23:16:33] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[23:16:33] Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+[23:16:33] Can't kekulize mol.  Unkekulized atoms: 76 77 78 81 84 85 86
+[23:16:33] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[23:16:34] Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+[23:16:34] Can't kekulize mol.  Unkekulized atoms: 109 110 111 114 117 118 119
+[23:16:34] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:16:34] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[23:16:35] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:16:35] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:16:35] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:16:35] Can't kekulize mol.  Unkekulized atoms: 92 93 94 97 100 101 102
+[23:16:36] Can't kekulize mol.  Unkekulized atoms: 74 75 76 79 82 83 84
+[23:16:36] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:16:36] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:16:36] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:16:36] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:16:36] Can't kekulize mol.  Unkekulized atoms: 148 149 150 153 156 157 158
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 87 88 93 96 99 100 105
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 93
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 87 88 89 92 95 96 97
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 61 62 63 66 69 70 71
+[23:16:37] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 134 135 136
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 111 112 113 116 119 120 121
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 110 111 112 115 118 119 120
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 139 140 141 144 147 148 149
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 145 146 147 150 153 154 155
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 123
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 119 120 121 124 127 128 129
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 135
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 141
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 103 104 105
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:16:38] Can't kekulize mol.  Unkekulized atoms: 178 179 180 183 186 187 188
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 106 107 117 120 123 124 134
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 118 119 132 135 138 139 152
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 134 135 152 155 158 159 176
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 150 151 172 175 178 179 200
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 60 61 62 65 68 69 70
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 275 276 277 280 283 284 285
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 287 288 289 292 295 296 297
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:16:39] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:16:40] Can't kekulize mol.  Unkekulized atoms: 58 59 60 63 66 67 68
+[23:16:40] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[23:16:40] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[23:16:40] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:16:40] Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+[23:16:40] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:16:40] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[23:16:40] Can't kekulize mol.  Unkekulized atoms: 138 139 140 143 146 147 148
+[23:16:41] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:16:41] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+[23:16:41] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:16:42] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:16:42] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:16:42] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+[23:16:42] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:16:42] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:16:42] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:16:42] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:16:43] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[23:16:43] Can't kekulize mol.  Unkekulized atoms: 204 205 206 209 212 213 214
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 159 160 175 178 181 182 197
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 161 162 177 180 183 184 199
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 149 150 165 168 171 172 187
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 143 144 155 158 161 162 173
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 145 146 157 160 163 164 175
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 133 134 145 148 151 152 163
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 127 128 135 138 141 142 149
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 129 130 137 140 143 144 151
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 117 118 125 128 131 132 139
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[23:16:44] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 173 174 175 178 181 182 183
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 144 145 146 149 152 153 154
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 155
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 133 134 135 138 141 142 157
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 121 122 123 126 129 130 145
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 131 132 143
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 145
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 133
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 123 124 131
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 117 118 119 122 125 126 133
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 121
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 94 95 96 99 102 103 104
+[23:16:45] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+[23:16:46] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+[23:16:46] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:16:46] Can't kekulize mol.  Unkekulized atoms: 94 95 96 99 102 103 104
+[23:16:46] Can't kekulize mol.  Unkekulized atoms: 150 151 152 155 158 159 160
+[23:16:46] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[23:16:46] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 103 104 105
+[23:16:47] Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+[23:16:47] Can't kekulize mol.  Unkekulized atoms: 112 113 114 117 120 121 122
+[23:16:47] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:16:47] Can't kekulize mol.  Unkekulized atoms: 171 172 173 176 179 180 181
+[23:16:47] Can't kekulize mol.  Unkekulized atoms: 106 107 108 111 114 115 116
+[23:16:47] Can't kekulize mol.  Unkekulized atoms: 114 115 116 119 122 123 124
+[23:16:48] Can't kekulize mol.  Unkekulized atoms: 142 143 144 147 150 151 152
+[23:16:48] Can't kekulize mol.  Unkekulized atoms: 212 213 214 217 220 221 222
+[23:16:48] Can't kekulize mol.  Unkekulized atoms: 202 203 204 207 210 211 212
+[23:16:48] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[23:16:48] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[23:16:48] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 89 90 91
+[23:16:48] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 92 93 94
+[23:16:48] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:16:48] Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+[23:16:49] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[23:16:49] Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[23:16:49] Can't kekulize mol.  Unkekulized atoms: 106 107 108 115 116
+[23:16:49] Can't kekulize mol.  Unkekulized atoms: 82 83 84 85 86
+[23:16:49] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[23:16:49] Can't kekulize mol.  Unkekulized atoms: 83 84 85 86 87
+[23:16:49] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[23:16:50] Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22 23 24 25 26
+2026-05-13 23:16:52,934 - dataset - INFO - Mode 'cyclized': processed 7170 molecules successfully
+Done!
+2026-05-13 23:16:53,039 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:16:53,040 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:16:53,059 - __main__ - INFO - Graph stats: {'avg_nodes': 33.69, 'avg_edges': 35.85, 'max_nodes': 90, 'min_nodes': 3}
+2026-05-13 23:16:53,059 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:16:53,059 - __main__ - INFO - Feature dims: node=30, edge=7
+2026-05-13 23:16:56,294 - train - INFO - [d_cyclized] Epoch 1: train_rmse=101.2810, val_rmse=70.3820
+2026-05-13 23:18:04,801 - train - INFO - [d_cyclized] Epoch 20: train_rmse=39.0719, val_rmse=42.0234
+2026-05-13 23:19:21,360 - train - INFO - [d_cyclized] Epoch 40: train_rmse=31.7144, val_rmse=50.3771
+2026-05-13 23:20:38,777 - train - INFO - [d_cyclized] Epoch 60: train_rmse=26.7645, val_rmse=45.2536
+2026-05-13 23:21:43,338 - train - INFO - [d_cyclized] Epoch 80: train_rmse=23.7448, val_rmse=45.0462
+2026-05-13 23:22:31,695 - train - INFO - [d_cyclized] Early stopping at epoch 94, best epoch=64, best val_rmse=39.6162
+2026-05-13 23:22:32,507 - train - INFO - [d_cyclized] Final: train=26.5263, val=39.6162, test=53.2779, best_epoch=64
+2026-05-13 23:22:32,508 - __main__ - INFO - Experiment d_cyclized completed in 339.4s
+2026-05-13 23:22:32,508 - __main__ - INFO - Results: train=26.5263, val=39.6162, test=53.2779
+2026-05-13 23:22:32,780 - __main__ - INFO - Saved learning curve plot for d_cyclized
+2026-05-13 23:22:32,804 - __main__ - INFO - 
+============================================================
+2026-05-13 23:22:32,804 - __main__ - INFO - Starting experiment: e_augmented (mode=augmented)
+2026-05-13 23:22:32,805 - __main__ - INFO - ============================================================
+Processing...
+[23:22:35] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157
+[23:22:35] Can't kekulize mol.  Unkekulized atoms: 146 147 148 149 150 151 152 153 154
+[23:22:35] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 173 174 175 176
+[23:22:35] Can't kekulize mol.  Unkekulized atoms: 169 170 171 172 173 174 175 176 177
+[23:22:35] Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 195
+[23:22:35] Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+[23:22:37] Can't kekulize mol.  Unkekulized atoms: 205 206 207 208 209 210 211 212 213 214 215 216 217
+[23:22:37] Can't kekulize mol.  Unkekulized atoms: 206 207 208 209 210 211 212 213 214 215 216 217 218
+[23:22:37] Can't kekulize mol.  Unkekulized atoms: 190 191 192 193 194 195 196 197 198 199 200 201 202
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 89 90 91 94 97 98 99
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 155 156 157 160 163 164 165
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 149 150 151 154 157 158 159
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 158 159 160 163 166 167 168
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 51 52 53 56 59 60 61
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 90 91 92 95 98 99 100
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 116 117 118 121 124 125 126
+[23:22:38] Can't kekulize mol.  Unkekulized atoms: 124 125 126 129 132 133 134
+[23:22:39] Can't kekulize mol.  Unkekulized atoms: 102 103 104 107 110 111 112
+[23:22:39] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:22:39] Can't kekulize mol.  Unkekulized atoms: 96 97 98 101 104 105 106
+[23:22:39] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 89
+[23:22:39] Can't kekulize mol.  Unkekulized atoms: 85 86 87 90 93 94 95
+[23:22:40] Can't kekulize mol.  Unkekulized atoms: 59 60 61 62 63
+[23:22:40] Can't kekulize mol.  Unkekulized atoms: 58 59 60 61 62
+[23:22:40] Can't kekulize mol.  Unkekulized atoms: 57 58 59 60 61
+[23:22:40] Can't kekulize mol.  Unkekulized atoms: 56 57 58 59 60
+[23:22:43] Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[23:22:43] Can't kekulize mol.  Unkekulized atoms: 106 107 108 115 116
+[23:22:43] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[23:22:43] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[23:22:47] Can't kekulize mol.  Unkekulized atoms: 125 126 127 128 129 136 137 140 141
+[23:22:47] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 179 180 183 184
+[23:22:47] Can't kekulize mol.  Unkekulized atoms: 121 122 123 124 125 132 133 136 137
+[23:22:47] Can't kekulize mol.  Unkekulized atoms: 165 166 167 168 169 176 177 180 181
+[23:22:47] Can't kekulize mol.  Unkekulized atoms: 104 105 106 107 108 115 116 119 120
+[23:22:47] Can't kekulize mol.  Unkekulized atoms: 148 149 150 151 152 159 160 163 164
+[23:22:47] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 129 130 131 132 133
+[23:22:47] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+[23:22:48] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 85 86 87 88 89
+[23:22:49] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 109 110 111 112 113
+[23:22:49] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[23:22:49] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 90 91 92 93 94
+[23:22:49] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 101 102 103 104 105
+[23:22:49] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[23:22:50] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 132 133 134 135 136
+[23:22:50] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 121 122 123 124 125
+[23:22:50] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 140 141 142 143 144
+[23:22:50] Can't kekulize mol.  Unkekulized atoms: 153 154 155 158 159 160 161 162 163
+[23:22:50] Can't kekulize mol.  Unkekulized atoms: 169 170 171 174 175 176 177 178 179
+[23:22:50] Can't kekulize mol.  Unkekulized atoms: 144 145 146 147 148 149 150 168 169
+[23:22:50] Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 126 127 128 135 136
+[23:22:50] Can't kekulize mol.  Unkekulized atoms: 110 111 112 113 114 115 116 117 118
+[23:22:51] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+[23:22:52] Can't kekulize mol.  Unkekulized atoms: 152 153 154 155 156 157 158 159 160 161 162 163 164
+[23:22:52] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157 158 159 160 161
+[23:22:52] Can't kekulize mol.  Unkekulized atoms: 146 147 148 149 150 151 152 153 154 155 156 157 158
+[23:22:52] Can't kekulize mol.  Unkekulized atoms: 143 144 145 146 147 148 149 150 151 152 153 154 155
+[23:22:52] Can't kekulize mol.  Unkekulized atoms: 140 141 142 143 144 145 146 147 148 149 150 151 152
+[23:22:54] Can't kekulize mol.  Unkekulized atoms: 131 132 133 134 135 142 143 146 147
+[23:22:55] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[23:22:55] Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+[23:22:55] Can't kekulize mol.  Unkekulized atoms: 76 77 78 81 84 85 86
+[23:22:55] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[23:22:56] Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+[23:22:56] Can't kekulize mol.  Unkekulized atoms: 109 110 111 114 117 118 119
+[23:22:56] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:22:56] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[23:22:56] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:22:57] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:22:57] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:22:57] Can't kekulize mol.  Unkekulized atoms: 92 93 94 97 100 101 102
+[23:22:57] Can't kekulize mol.  Unkekulized atoms: 74 75 76 79 82 83 84
+[23:22:57] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:22:57] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:22:57] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:22:57] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 148 149 150 153 156 157 158
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 87 88 93 96 99 100 105
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 93
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 87 88 89 92 95 96 97
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 61 62 63 66 69 70 71
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:22:58] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 134 135 136
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 111 112 113 116 119 120 121
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 110 111 112 115 118 119 120
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 139 140 141 144 147 148 149
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 145 146 147 150 153 154 155
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 123
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 119 120 121 124 127 128 129
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 135
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 141
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 103 104 105
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:22:59] Can't kekulize mol.  Unkekulized atoms: 178 179 180 183 186 187 188
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 106 107 117 120 123 124 134
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 118 119 132 135 138 139 152
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 134 135 152 155 158 159 176
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 150 151 172 175 178 179 200
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 60 61 62 65 68 69 70
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 275 276 277 280 283 284 285
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 287 288 289 292 295 296 297
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 58 59 60 63 66 67 68
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[23:23:00] Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+[23:23:01] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:23:01] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[23:23:01] Can't kekulize mol.  Unkekulized atoms: 138 139 140 143 146 147 148
+[23:23:01] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:23:01] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+[23:23:01] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[23:23:02] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:23:02] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[23:23:02] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+[23:23:02] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:23:02] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:23:02] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[23:23:02] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 204 205 206 209 212 213 214
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 159 160 175 178 181 182 197
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 161 162 177 180 183 184 199
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 149 150 165 168 171 172 187
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 143 144 155 158 161 162 173
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 145 146 157 160 163 164 175
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 133 134 145 148 151 152 163
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 127 128 135 138 141 142 149
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 129 130 137 140 143 144 151
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 117 118 125 128 131 132 139
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[23:23:03] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 173 174 175 178 181 182 183
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 144 145 146 149 152 153 154
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 155
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 133 134 135 138 141 142 157
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 121 122 123 126 129 130 145
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 131 132 143
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 145
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 133
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 123 124 131
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 117 118 119 122 125 126 133
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 121
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 94 95 96 99 102 103 104
+[23:23:04] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+[23:23:05] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+[23:23:05] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[23:23:05] Can't kekulize mol.  Unkekulized atoms: 94 95 96 99 102 103 104
+[23:23:05] Can't kekulize mol.  Unkekulized atoms: 150 151 152 155 158 159 160
+[23:23:05] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[23:23:05] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 103 104 105
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 112 113 114 117 120 121 122
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 171 172 173 176 179 180 181
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 106 107 108 111 114 115 116
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 114 115 116 119 122 123 124
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 142 143 144 147 150 151 152
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 212 213 214 217 220 221 222
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 202 203 204 207 210 211 212
+[23:23:06] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[23:23:07] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[23:23:07] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 89 90 91
+[23:23:07] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 92 93 94
+[23:23:07] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[23:23:07] Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+[23:23:07] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[23:23:08] Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[23:23:08] Can't kekulize mol.  Unkekulized atoms: 106 107 108 115 116
+[23:23:08] Can't kekulize mol.  Unkekulized atoms: 82 83 84 85 86
+[23:23:08] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[23:23:08] Can't kekulize mol.  Unkekulized atoms: 83 84 85 86 87
+[23:23:08] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[23:23:08] Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22 23 24 25 26
+2026-05-13 23:23:10,807 - dataset - INFO - Mode 'augmented': processed 7170 molecules successfully
+Done!
+2026-05-13 23:23:10,918 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:23:10,919 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:23:10,939 - __main__ - INFO - Graph stats: {'avg_nodes': 33.69, 'avg_edges': 34.85, 'max_nodes': 90, 'min_nodes': 3}
+2026-05-13 23:23:10,939 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:23:10,939 - __main__ - INFO - Feature dims: node=33, edge=7
+2026-05-13 23:23:14,161 - train - INFO - [e_augmented] Epoch 1: train_rmse=103.0859, val_rmse=57.1681
+2026-05-13 23:24:14,117 - train - INFO - [e_augmented] Epoch 20: train_rmse=40.1047, val_rmse=48.1242
+2026-05-13 23:25:20,875 - train - INFO - [e_augmented] Epoch 40: train_rmse=32.3894, val_rmse=40.4678
+2026-05-13 23:25:36,278 - train - INFO - [e_augmented] Early stopping at epoch 44, best epoch=14, best val_rmse=40.0677
+2026-05-13 23:25:36,881 - train - INFO - [e_augmented] Final: train=40.5873, val=40.0677, test=50.5227, best_epoch=14
+2026-05-13 23:25:36,882 - __main__ - INFO - Experiment e_augmented completed in 145.9s
+2026-05-13 23:25:36,882 - __main__ - INFO - Results: train=40.5873, val=40.0677, test=50.5227
+2026-05-13 23:25:37,187 - __main__ - INFO - Saved learning curve plot for e_augmented
+2026-05-13 23:25:37,213 - __main__ - INFO - Results summary written to /home/home_public/aisci/AIscientist/src/1_01_data_centric_foundation/results_summary.txt
+2026-05-13 23:25:37,213 - __main__ - INFO - All experiments completed. Summary: /home/home_public/aisci/AIscientist/src/1_01_data_centric_foundation/results_summary.txt
+
+============================================================
+RESULTS SUMMARY
+============================================================
+  a_monomer: test_rmse=52.7059, best_epoch=30
+  b_dimer: test_rmse=51.2942, best_epoch=16
+  c_trimer: test_rmse=50.1926, best_epoch=15
+  d_cyclized: test_rmse=53.2779, best_epoch=64
+  e_augmented: test_rmse=50.5227, best_epoch=14
+============================================================

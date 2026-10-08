@@ -1,0 +1,105 @@
+Device: cuda
+GPU: NVIDIA GeForce RTX 2080 Ti
+VRAM: 10.6 GB
+============================================================
+GPS-Lite: Single Global Attention Layer atop GAT Backbone
+============================================================
+
+[1] Building datasets...
+  Train: 5162, Val: 573, Test: 1435
+
+[2] Loading RWPE...
+Loaded RWPE data: 7170 graphs, k=32
+  RWPE assigned: train=5162/0 fallbacks, val=573/0, test=1435/0
+  Dataloaders created: train=81, val=9, test=23 batches
+
+  Loaded baseline results, training remaining variants: ['no_bias', 'spd']
+
+============================================================
+Training variant: no_bias
+============================================================
+Model: 3,582,465 parameters, input_dim=81
+  Epoch   1 | Train Loss: 0.4689 | Val RMSE: 65.14K | Val MAE: 52.38K | Val R²: 0.6521 | LR: 1.00e-03 | Time: 16.4s
+  Epoch   2 | Train Loss: 0.2824 | Val RMSE: 61.10K | Val MAE: 45.36K | Val R²: 0.6939 | LR: 1.00e-03 | Time: 15.4s
+  Epoch   3 | Train Loss: 0.2394 | Val RMSE: 52.99K | Val MAE: 39.43K | Val R²: 0.7698 | LR: 1.00e-03 | Time: 15.3s
+  Epoch   4 | Train Loss: 0.2313 | Val RMSE: 49.84K | Val MAE: 38.05K | Val R²: 0.7964 | LR: 1.00e-03 | Time: 15.2s
+  Epoch   5 | Train Loss: 0.2105 | Val RMSE: 49.13K | Val MAE: 36.40K | Val R²: 0.8021 | LR: 9.99e-04 | Time: 15.3s
+  Epoch   6 | Train Loss: 0.1990 | Val RMSE: 48.82K | Val MAE: 35.54K | Val R²: 0.8046 | LR: 9.99e-04 | Time: 15.7s
+  Epoch   7 | Train Loss: 0.1955 | Val RMSE: 47.26K | Val MAE: 34.88K | Val R²: 0.8169 | LR: 9.99e-04 | Time: 15.3s
+  Epoch  10 | Train Loss: 0.1812 | Val RMSE: 44.85K | Val MAE: 34.15K | Val R²: 0.8351 | LR: 9.97e-04 | Time: 15.3s
+  Epoch  12 | Train Loss: 0.1774 | Val RMSE: 44.73K | Val MAE: 32.74K | Val R²: 0.8360 | LR: 9.96e-04 | Time: 15.6s
+  Epoch  16 | Train Loss: 0.1664 | Val RMSE: 42.13K | Val MAE: 29.76K | Val R²: 0.8545 | LR: 9.93e-04 | Time: 15.4s
+  Epoch  20 | Train Loss: 0.1554 | Val RMSE: 43.04K | Val MAE: 31.51K | Val R²: 0.8481 | LR: 9.89e-04 | Time: 15.4s
+  Epoch  21 | Train Loss: 0.1603 | Val RMSE: 41.57K | Val MAE: 30.26K | Val R²: 0.8583 | LR: 9.88e-04 | Time: 15.4s
+  Epoch  27 | Train Loss: 0.1535 | Val RMSE: 41.14K | Val MAE: 29.96K | Val R²: 0.8612 | LR: 9.80e-04 | Time: 15.5s
+  Epoch  40 | Train Loss: 0.1458 | Val RMSE: 42.72K | Val MAE: 30.84K | Val R²: 0.8504 | LR: 9.57e-04 | Time: 15.1s
+  Epoch  60 | Train Loss: 0.1475 | Val RMSE: 44.37K | Val MAE: 32.15K | Val R²: 0.8386 | LR: 9.05e-04 | Time: 15.1s
+  Epoch  65 | Train Loss: 0.1435 | Val RMSE: 40.92K | Val MAE: 28.99K | Val R²: 0.8627 | LR: 8.89e-04 | Time: 15.0s
+  Epoch  80 | Train Loss: 0.1346 | Val RMSE: 42.21K | Val MAE: 29.67K | Val R²: 0.8540 | LR: 8.35e-04 | Time: 15.2s
+  Epoch 100 | Train Loss: 0.1264 | Val RMSE: 43.45K | Val MAE: 30.48K | Val R²: 0.8452 | LR: 7.50e-04 | Time: 15.7s
+  Early stopping at epoch 115
+
+  Best epoch: 65
+  Test  RMSE: 43.43K
+  Test  MAE:  30.84K
+  Test  R²:   0.8446
+  Time: 1762.5s
+
+============================================================
+Training variant: spd
+============================================================
+Model: 3,584,645 parameters, input_dim=81
+  Epoch   1 | Train Loss: 0.4889 | Val RMSE: 58.85K | Val MAE: 46.78K | Val R²: 0.7160 | LR: 1.00e-03 | Time: 32.3s
+  Epoch   3 | Train Loss: 0.2340 | Val RMSE: 54.84K | Val MAE: 40.62K | Val R²: 0.7534 | LR: 1.00e-03 | Time: 32.0s
+  Epoch   4 | Train Loss: 0.2234 | Val RMSE: 50.57K | Val MAE: 38.16K | Val R²: 0.7903 | LR: 1.00e-03 | Time: 32.0s
+  Epoch   6 | Train Loss: 0.1993 | Val RMSE: 47.08K | Val MAE: 34.83K | Val R²: 0.8183 | LR: 9.99e-04 | Time: 31.9s
+  Epoch   8 | Train Loss: 0.1953 | Val RMSE: 46.24K | Val MAE: 33.63K | Val R²: 0.8247 | LR: 9.98e-04 | Time: 32.0s
+  Epoch   9 | Train Loss: 0.1855 | Val RMSE: 45.70K | Val MAE: 32.88K | Val R²: 0.8288 | LR: 9.98e-04 | Time: 32.0s
+  Epoch  12 | Train Loss: 0.1827 | Val RMSE: 44.84K | Val MAE: 32.39K | Val R²: 0.8352 | LR: 9.96e-04 | Time: 32.0s
+  Epoch  13 | Train Loss: 0.1833 | Val RMSE: 44.48K | Val MAE: 32.82K | Val R²: 0.8378 | LR: 9.95e-04 | Time: 32.0s
+  Epoch  20 | Train Loss: 0.1637 | Val RMSE: 42.41K | Val MAE: 30.22K | Val R²: 0.8526 | LR: 9.89e-04 | Time: 32.4s
+  Epoch  25 | Train Loss: 0.1576 | Val RMSE: 42.18K | Val MAE: 29.77K | Val R²: 0.8542 | LR: 9.83e-04 | Time: 32.4s
+  Epoch  31 | Train Loss: 0.1532 | Val RMSE: 41.41K | Val MAE: 29.89K | Val R²: 0.8594 | LR: 9.74e-04 | Time: 32.4s
+  Epoch  37 | Train Loss: 0.1555 | Val RMSE: 40.29K | Val MAE: 29.20K | Val R²: 0.8669 | LR: 9.63e-04 | Time: 32.0s
+  Epoch  40 | Train Loss: 0.1542 | Val RMSE: 41.22K | Val MAE: 29.86K | Val R²: 0.8607 | LR: 9.57e-04 | Time: 32.0s
+  Epoch  60 | Train Loss: 0.1418 | Val RMSE: 42.10K | Val MAE: 30.09K | Val R²: 0.8547 | LR: 9.05e-04 | Time: 32.2s
+  Epoch  80 | Train Loss: 0.1372 | Val RMSE: 42.30K | Val MAE: 30.78K | Val R²: 0.8533 | LR: 8.35e-04 | Time: 32.3s
+  Early stopping at epoch 87
+
+  Best epoch: 37
+  Test  RMSE: 43.14K
+  Test  MAE:  30.97K
+  Test  R²:   0.8467
+  Time: 2803.7s
+
+
+============================================================
+RESULTS SUMMARY
+============================================================
+
+  no_bias:
+    Test RMSE: 43.43 K
+    Test MAE:  30.84 K
+    Test R²:   0.8446
+    Best Epoch: 65
+    Params: 3,582,465
+
+  spd:
+    Test RMSE: 43.14 K
+    Test MAE:  30.97 K
+    Test R²:   0.8467
+    Best Epoch: 37
+    Params: 3,584,645
+
+  Summary saved: /home/home_public/aisci/AIscientist/src/5_day5_gps_lite/results/results_summary.json
+
+[3] Generating diagnostic plots...
+  Saved SPD histogram: /home/home_public/aisci/AIscientist/src/5_day5_gps_lite/results/spd_histogram.png
+  Saved attention analysis: /home/home_public/aisci/AIscientist/src/5_day5_gps_lite/results/attention_analysis.png
+  Saved training curves: /home/home_public/aisci/AIscientist/src/5_day5_gps_lite/results/training_curves.png
+
+============================================================
+FINAL REPORT
+============================================================
+  no_bias: RMSE=43.43K, MAE=30.84K, R²=0.8446
+  spd: RMSE=43.14K, MAE=30.97K, R²=0.8467

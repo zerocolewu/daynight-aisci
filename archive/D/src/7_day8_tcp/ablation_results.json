@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Ablation 1: Exact Day 2 Baseline (GRIN features)",
+    "mean_rmse": "34.91105",
+    "std_rmse": "1.8227676",
+    "fold_rmses": [
+      "34.48534",
+      "33.33554",
+      "34.217438",
+      "38.476208",
+      "34.040703"
+    ],
+    "config": {
+      "n_folds": 5,
+      "seed": 42,
+      "batch_size": 64,
+      "hidden_dim": 256,
+      "num_layers": 5,
+      "dropout": 0.15,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "max_epochs": 300,
+      "patience": 40,
+      "readout": "mean"
+    }
+  },
+  {
+    "name": "Ablation 2: TCP Setup (ReperioGT features)",
+    "mean_rmse": "35.35018",
+    "std_rmse": "1.4753886",
+    "fold_rmses": [
+      "35.229324",
+      "34.37423",
+      "33.850178",
+      "38.11403",
+      "35.183132"
+    ],
+    "config": {
+      "n_folds": 5,
+      "seed": 42,
+      "batch_size": 64,
+      "hidden_dim": 256,
+      "num_layers": 5,
+      "dropout": 0.15,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "max_epochs": 300,
+      "patience": 40,
+      "readout": "mean"
+    }
+  }
+]

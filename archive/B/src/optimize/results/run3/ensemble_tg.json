@@ -1,0 +1,62 @@
+{
+  "dataset": "tg",
+  "n_splits": 2,
+  "protocol": "multi-split x multi-init",
+  "per_split": [
+    {
+      "split_tag": "42",
+      "n_init": 3,
+      "init_seeds": [
+        42,
+        71,
+        2026
+      ],
+      "single_seed_rmse": [
+        32.90192342770138,
+        33.122284422603876,
+        35.2005772708265
+      ],
+      "single_seed_mean": 33.741595040377256,
+      "single_seed_std": 1.0355712122925538,
+      "swa_rmse_mean": 33.08741894552741,
+      "ensemble_mean_rmse": 32.555956694193426,
+      "ensemble_mean_mae": 21.35537141634594,
+      "ensemble_mean_r2": 0.9162146426242668,
+      "ensemble_median_rmse": 32.65359953945633,
+      "ensemble_median_mae": 21.633603758486494,
+      "ensemble_median_r2": 0.915711305604915,
+      "test_size": 1434
+    },
+    {
+      "split_tag": "71",
+      "n_init": 3,
+      "init_seeds": [
+        42,
+        71,
+        2026
+      ],
+      "single_seed_rmse": [
+        31.99252411139944,
+        32.44896436114905,
+        32.27230292159383
+      ],
+      "single_seed_mean": 32.237930464714104,
+      "single_seed_std": 0.18791935281184352,
+      "swa_rmse_mean": 32.02195407119664,
+      "ensemble_mean_rmse": 31.20303141901134,
+      "ensemble_mean_mae": 19.859439576173703,
+      "ensemble_mean_r2": 0.9202918502809345,
+      "ensemble_median_rmse": 31.196156543291323,
+      "ensemble_median_mae": 19.890549607065765,
+      "ensemble_median_r2": 0.9203269701542565,
+      "test_size": 1434
+    }
+  ],
+  "ensemble_mean_rmse_splits_mean": 31.879494056602383,
+  "ensemble_mean_rmse_splits_std": 0.6764626375910439,
+  "ensemble_median_rmse_splits_mean": 31.924878041373827,
+  "ensemble_median_rmse_splits_std": 0.7287214980825034,
+  "single_seed_all_mean": 32.98976275254568,
+  "single_seed_all_std": 0.7518322878315757,
+  "single_seed_aggregation": "mean/std over splits of per-split init-mean"
+}

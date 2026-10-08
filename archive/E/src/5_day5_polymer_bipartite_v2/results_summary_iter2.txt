@@ -1,0 +1,65 @@
+================================================================================
+PolymerBipartite v2 Iteration 2 — Results Summary
+================================================================================
+
+1. MAIN RESULT (seed=71)
+----------------------------------------
+  PolymerBipartiteV2:
+    Train RMSE: 44.17
+    Val RMSE:   37.91
+    Test RMSE:  54.85
+    Overfitting gap: -10.68
+    Best epoch: 24
+    Parameters: 1,769,736
+
+  GIN+Trimer:
+    Train RMSE: 44.91
+    Val RMSE:   40.78
+    Test RMSE:  56.73
+    Overfitting gap: -11.82
+    Best epoch: 19
+    Parameters: 714,502
+
+2. MULTI-SEED RESULTS
+----------------------------------------
+  PolymerBipartiteV2: 53.81 +/- 0.94
+    seed=71: 54.85
+    seed=42: 52.57
+    seed=123: 54.02
+
+  GIN+Trimer: 54.00 +/- 1.96
+    seed=71: 56.73
+    seed=42: 53.03
+    seed=123: 52.23
+
+3. DIAGNOSTICS
+----------------------------------------
+  D1: RU Discriminability
+    Mean cos_sim: 0.4623
+    Median: 0.8250
+    Std: 0.6551
+    % > 0.95: 30.4%
+
+  D2: Random RU Control
+    Real RMSE: 54.85
+    Random RMSE: 54.88
+    Delta: +0.03
+
+  D3: Parameter-Matched Baseline
+    Bipartite params: 1,769,736
+    Baseline params: 714,502
+    Matched params: 1,758,590
+    Baseline test RMSE: 56.73
+    Matched test RMSE: 53.66
+
+  Gate Value Distribution
+    Boundary atoms: mean=0.2846, std=0.0000
+    Interior atoms: mean=0.0617, std=0.0000
+    Learned scalars: boundary=-0.9219, interior=-2.7216
+
+  D4: Overfitting Gap Analysis
+    PolymerBipartiteV2: gap=-10.68
+    GIN+Trimer: gap=-11.82
+    RandomRU: gap=-12.95
+    GIN+Trimer_matched: gap=-7.11
+

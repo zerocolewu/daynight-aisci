@@ -1,0 +1,104 @@
+{
+  "experiment": "SelfGNN Polymer Iteration 2",
+  "date": "2026-05-24",
+  "architecture": {
+    "gnn": "GATConv",
+    "layers": 4,
+    "hidden_dim": 256,
+    "heads": 4,
+    "concat": true,
+    "activation": "ELU",
+    "batch_norm": true,
+    "readout": "Set2Set(256, processing_steps=3)",
+    "predictor": "512→256→128→1 (BN+ReLU+Dropout0.1)",
+    "input_dim": 42,
+    "features": "8 rich + 2 PSPE + 32 RWPE k=32"
+  },
+  "hyperparameters": {
+    "optimizer": "AdamW",
+    "lr": 3e-4,
+    "weight_decay": 1e-4,
+    "scheduler": "CosineAnnealingLR to 1e-6",
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 50
+  },
+  "pretraining": {
+    "data": "PI1M 200K 1-RU with RWPE",
+    "augmentations": {
+      "combined": {
+        "best_loss": 0.0608,
+        "epochs": 40,
+        "final_cos_mean": 0.223,
+        "collapsed_at_epoch10": true,
+        "recovered": true,
+        "teacher_norm_final": 35.4
+      },
+      "split_only": {
+        "best_loss": 0.0124,
+        "epochs": 67,
+        "final_cos_mean": 0.754,
+        "collapsed_at_epoch10": true,
+        "recovered": true,
+        "teacher_norm_final": 454.4
+      },
+      "standardize_only": {
+        "best_loss": 0.0011,
+        "cos_mean": -0.494,
+        "teacher_norm": 12624.6,
+        "status": "COMPLETELY COLLAPSED - SKIPPED FINETUNING"
+      }
+    }
+  },
+  "finetuning_results": {
+    "baseline_no_pretrain": {
+      "seed_71": {"test_rmse": 39.48, "test_mae": 25.64, "test_r2": 0.8803, "best_epoch": 73},
+      "seed_42": {"test_rmse": 41.02, "test_mae": 26.73, "test_r2": 0.8708, "best_epoch": 47},
+      "seed_123": {"test_rmse": 41.14, "test_mae": 27.79, "test_r2": 0.8701, "best_epoch": 36},
+      "mean_rmse": 40.55,
+      "std_rmse": 0.75
+    },
+    "primary_combined_pretrain": {
+      "seed_71": {"test_rmse": 41.15, "test_mae": 27.38, "test_r2": 0.8699, "best_epoch": 47},
+      "seed_42": {"test_rmse": 39.84, "test_mae": 25.98, "test_r2": 0.8708, "best_epoch": 84},
+      "seed_123": {"test_rmse": 39.01, "test_mae": 25.20, "test_r2": 0.8832, "best_epoch": 67},
+      "mean_rmse": 40.00,
+      "std_rmse": 0.88,
+      "delta_vs_baseline": -0.55
+    },
+    "split_only_pretrain": {
+      "seed_71": {"test_rmse": 40.37, "test_mae": 26.42, "test_r2": 0.8749, "best_epoch": 94},
+      "seed_42": {"test_rmse": 41.42, "test_mae": 27.75, "test_r2": 0.8683, "best_epoch": 54},
+      "seed_123": {"test_rmse": 41.94, "test_mae": 28.57, "test_r2": 0.8650, "best_epoch": 26},
+      "mean_rmse": 41.24,
+      "std_rmse": 0.66,
+      "delta_vs_baseline": 0.69
+    },
+    "frozen_encoder": {
+      "seed_71": {"test_rmse": 41.22, "test_mae": 27.90, "test_r2": 0.8696, "best_epoch": 88},
+      "seed_42": {"test_rmse": 40.38, "test_mae": 26.62, "test_r2": 0.8748, "best_epoch": 146},
+      "seed_123": {"test_rmse": 39.60, "test_mae": 26.13, "test_r2": 0.8797, "best_epoch": 191},
+      "mean_rmse": 40.40,
+      "std_rmse": 0.66,
+      "delta_vs_baseline": -0.15
+    },
+    "standardize_only_pretrain": {
+      "status": "SKIPPED - pretrained model completely collapsed"
+    }
+  },
+  "comparison_to_previous_iteration": {
+    "baseline": {"previous": 40.87, "current": 40.55, "delta": -0.32},
+    "combined_pretrain": {"previous": 41.82, "current": 40.00, "delta": -1.82},
+    "split_only": {"previous": 40.57, "current": 41.24, "delta": 0.67},
+    "frozen_encoder": {"previous": 41.73, "current": 40.40, "delta": -1.33}
+  },
+  "key_findings": [
+    "Baseline of 40.55K does not match ~35.44K target due to architecture differences",
+    "Combined pretraining gives marginal -0.55K improvement over baseline",
+    "Split-only pretrained model performs WORSE than baseline (+0.69K)",
+    "Standardize-only pretraining completely collapses (skipped for finetuning)",
+    "Frozen encoder achieves 40.40K — pretrained features add marginal value",
+    "All BYOL models show initial collapse at epoch 10 with partial recovery",
+    "Feature-dim Split augmentation is insufficient to prevent BYOL collapse on 1-RU graphs"
+  ]
+}

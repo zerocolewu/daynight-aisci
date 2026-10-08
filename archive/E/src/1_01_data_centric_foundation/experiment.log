@@ -1,0 +1,98 @@
+2026-05-13 23:06:10,061 - __main__ - INFO - Starting Data Centric Foundation Experiments
+2026-05-13 23:06:10,062 - __main__ - INFO - Working directory: /home/home_public/aisci/AIscientist/src/1_01_data_centric_foundation
+2026-05-13 23:06:10,062 - __main__ - INFO - Device: cuda
+2026-05-13 23:06:10,062 - __main__ - INFO - 
+============================================================
+2026-05-13 23:06:10,062 - __main__ - INFO - Starting experiment: a_monomer (mode=monomer)
+2026-05-13 23:06:10,062 - __main__ - INFO - ============================================================
+2026-05-13 23:06:22,203 - dataset - INFO - Mode 'monomer': processed 7170 molecules successfully
+2026-05-13 23:06:22,263 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:06:22,263 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:06:22,279 - __main__ - INFO - Graph stats: {'avg_nodes': 11.23, 'avg_edges': 10.95, 'max_nodes': 30, 'min_nodes': 1}
+2026-05-13 23:06:22,279 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:06:22,280 - __main__ - INFO - Feature dims: node=30, edge=7
+2026-05-13 23:06:27,649 - train - INFO - [a_monomer] Epoch 1: train_rmse=102.0912, val_rmse=63.4580
+2026-05-13 23:07:27,353 - train - INFO - [a_monomer] Epoch 20: train_rmse=41.2123, val_rmse=47.0871
+2026-05-13 23:08:28,021 - train - INFO - [a_monomer] Epoch 40: train_rmse=32.9479, val_rmse=51.3563
+2026-05-13 23:09:36,840 - train - INFO - [a_monomer] Epoch 60: train_rmse=28.0147, val_rmse=43.0515
+2026-05-13 23:09:36,840 - train - INFO - [a_monomer] Early stopping at epoch 60, best epoch=30, best val_rmse=41.3695
+2026-05-13 23:09:37,513 - train - INFO - [a_monomer] Final: train=36.3785, val=41.3695, test=52.7059, best_epoch=30
+2026-05-13 23:09:37,514 - __main__ - INFO - Experiment a_monomer completed in 195.2s
+2026-05-13 23:09:37,514 - __main__ - INFO - Results: train=36.3785, val=41.3695, test=52.7059
+2026-05-13 23:09:38,245 - __main__ - INFO - Saved learning curve plot for a_monomer
+2026-05-13 23:09:38,266 - __main__ - INFO - 
+============================================================
+2026-05-13 23:09:38,266 - __main__ - INFO - Starting experiment: b_dimer (mode=dimer)
+2026-05-13 23:09:38,266 - __main__ - INFO - ============================================================
+2026-05-13 23:10:06,175 - dataset - INFO - Mode 'dimer': processed 7170 molecules successfully
+2026-05-13 23:10:06,260 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:10:06,260 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:10:06,282 - __main__ - INFO - Graph stats: {'avg_nodes': 22.46, 'avg_edges': 22.9, 'max_nodes': 60, 'min_nodes': 2}
+2026-05-13 23:10:06,282 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:10:06,282 - __main__ - INFO - Feature dims: node=30, edge=7
+2026-05-13 23:10:10,093 - train - INFO - [b_dimer] Epoch 1: train_rmse=101.5068, val_rmse=111.8208
+2026-05-13 23:11:15,441 - train - INFO - [b_dimer] Epoch 20: train_rmse=40.0040, val_rmse=40.3429
+2026-05-13 23:12:14,015 - train - INFO - [b_dimer] Epoch 40: train_rmse=32.4446, val_rmse=44.3104
+2026-05-13 23:12:35,576 - train - INFO - [b_dimer] Early stopping at epoch 46, best epoch=16, best val_rmse=39.0404
+2026-05-13 23:12:36,301 - train - INFO - [b_dimer] Final: train=41.6527, val=39.0404, test=51.2942, best_epoch=16
+2026-05-13 23:12:36,302 - __main__ - INFO - Experiment b_dimer completed in 150.0s
+2026-05-13 23:12:36,302 - __main__ - INFO - Results: train=41.6527, val=39.0404, test=51.2942
+2026-05-13 23:12:36,596 - __main__ - INFO - Saved learning curve plot for b_dimer
+2026-05-13 23:12:36,618 - __main__ - INFO - 
+============================================================
+2026-05-13 23:12:36,618 - __main__ - INFO - Starting experiment: c_trimer (mode=trimer)
+2026-05-13 23:12:36,618 - __main__ - INFO - ============================================================
+2026-05-13 23:13:15,777 - dataset - INFO - Mode 'trimer': processed 7170 molecules successfully
+2026-05-13 23:13:15,889 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:13:15,889 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:13:15,913 - __main__ - INFO - Graph stats: {'avg_nodes': 33.69, 'avg_edges': 34.85, 'max_nodes': 90, 'min_nodes': 3}
+2026-05-13 23:13:15,913 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:13:15,913 - __main__ - INFO - Feature dims: node=30, edge=7
+2026-05-13 23:13:19,597 - train - INFO - [c_trimer] Epoch 1: train_rmse=101.5938, val_rmse=64.4972
+2026-05-13 23:14:34,362 - train - INFO - [c_trimer] Epoch 20: train_rmse=39.0605, val_rmse=42.1954
+2026-05-13 23:15:46,412 - train - INFO - [c_trimer] Epoch 40: train_rmse=31.9381, val_rmse=44.8930
+2026-05-13 23:16:04,186 - train - INFO - [c_trimer] Early stopping at epoch 45, best epoch=15, best val_rmse=39.6497
+2026-05-13 23:16:05,062 - train - INFO - [c_trimer] Final: train=41.2877, val=39.6497, test=50.1926, best_epoch=15
+2026-05-13 23:16:05,063 - __main__ - INFO - Experiment c_trimer completed in 169.1s
+2026-05-13 23:16:05,063 - __main__ - INFO - Results: train=41.2877, val=39.6497, test=50.1926
+2026-05-13 23:16:05,335 - __main__ - INFO - Saved learning curve plot for c_trimer
+2026-05-13 23:16:05,359 - __main__ - INFO - 
+============================================================
+2026-05-13 23:16:05,359 - __main__ - INFO - Starting experiment: d_cyclized (mode=cyclized)
+2026-05-13 23:16:05,359 - __main__ - INFO - ============================================================
+2026-05-13 23:16:52,934 - dataset - INFO - Mode 'cyclized': processed 7170 molecules successfully
+2026-05-13 23:16:53,039 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:16:53,040 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:16:53,059 - __main__ - INFO - Graph stats: {'avg_nodes': 33.69, 'avg_edges': 35.85, 'max_nodes': 90, 'min_nodes': 3}
+2026-05-13 23:16:53,059 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:16:53,059 - __main__ - INFO - Feature dims: node=30, edge=7
+2026-05-13 23:16:56,294 - train - INFO - [d_cyclized] Epoch 1: train_rmse=101.2810, val_rmse=70.3820
+2026-05-13 23:18:04,801 - train - INFO - [d_cyclized] Epoch 20: train_rmse=39.0719, val_rmse=42.0234
+2026-05-13 23:19:21,360 - train - INFO - [d_cyclized] Epoch 40: train_rmse=31.7144, val_rmse=50.3771
+2026-05-13 23:20:38,777 - train - INFO - [d_cyclized] Epoch 60: train_rmse=26.7645, val_rmse=45.2536
+2026-05-13 23:21:43,338 - train - INFO - [d_cyclized] Epoch 80: train_rmse=23.7448, val_rmse=45.0462
+2026-05-13 23:22:31,695 - train - INFO - [d_cyclized] Early stopping at epoch 94, best epoch=64, best val_rmse=39.6162
+2026-05-13 23:22:32,507 - train - INFO - [d_cyclized] Final: train=26.5263, val=39.6162, test=53.2779, best_epoch=64
+2026-05-13 23:22:32,508 - __main__ - INFO - Experiment d_cyclized completed in 339.4s
+2026-05-13 23:22:32,508 - __main__ - INFO - Results: train=26.5263, val=39.6162, test=53.2779
+2026-05-13 23:22:32,780 - __main__ - INFO - Saved learning curve plot for d_cyclized
+2026-05-13 23:22:32,804 - __main__ - INFO - 
+============================================================
+2026-05-13 23:22:32,804 - __main__ - INFO - Starting experiment: e_augmented (mode=augmented)
+2026-05-13 23:22:32,805 - __main__ - INFO - ============================================================
+2026-05-13 23:23:10,807 - dataset - INFO - Mode 'augmented': processed 7170 molecules successfully
+2026-05-13 23:23:10,918 - __main__ - INFO - Dataset size: 7170
+2026-05-13 23:23:10,919 - __main__ - INFO - Failed conversions: 0
+2026-05-13 23:23:10,939 - __main__ - INFO - Graph stats: {'avg_nodes': 33.69, 'avg_edges': 34.85, 'max_nodes': 90, 'min_nodes': 3}
+2026-05-13 23:23:10,939 - __main__ - INFO - Split: train=5162, val=573, test=1435
+2026-05-13 23:23:10,939 - __main__ - INFO - Feature dims: node=33, edge=7
+2026-05-13 23:23:14,161 - train - INFO - [e_augmented] Epoch 1: train_rmse=103.0859, val_rmse=57.1681
+2026-05-13 23:24:14,117 - train - INFO - [e_augmented] Epoch 20: train_rmse=40.1047, val_rmse=48.1242
+2026-05-13 23:25:20,875 - train - INFO - [e_augmented] Epoch 40: train_rmse=32.3894, val_rmse=40.4678
+2026-05-13 23:25:36,278 - train - INFO - [e_augmented] Early stopping at epoch 44, best epoch=14, best val_rmse=40.0677
+2026-05-13 23:25:36,881 - train - INFO - [e_augmented] Final: train=40.5873, val=40.0677, test=50.5227, best_epoch=14
+2026-05-13 23:25:36,882 - __main__ - INFO - Experiment e_augmented completed in 145.9s
+2026-05-13 23:25:36,882 - __main__ - INFO - Results: train=40.5873, val=40.0677, test=50.5227
+2026-05-13 23:25:37,187 - __main__ - INFO - Saved learning curve plot for e_augmented
+2026-05-13 23:25:37,213 - __main__ - INFO - Results summary written to /home/home_public/aisci/AIscientist/src/1_01_data_centric_foundation/results_summary.txt
+2026-05-13 23:25:37,213 - __main__ - INFO - All experiments completed. Summary: /home/home_public/aisci/AIscientist/src/1_01_data_centric_foundation/results_summary.txt

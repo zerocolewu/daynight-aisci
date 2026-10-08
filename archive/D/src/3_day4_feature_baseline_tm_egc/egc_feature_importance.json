@@ -1,0 +1,105 @@
+{
+  "dataset": "Egc",
+  "top_features": [
+    {
+      "rank": 1,
+      "feature": "single_bond_frac",
+      "importance": 0.5626482004547395
+    },
+    {
+      "rank": 2,
+      "feature": "ring5",
+      "importance": 0.04498219348205109
+    },
+    {
+      "rank": 3,
+      "feature": "S_count",
+      "importance": 0.02652067117868952
+    },
+    {
+      "rank": 4,
+      "feature": "FractionCSP3_2",
+      "importance": 0.019200927405296307
+    },
+    {
+      "rank": 5,
+      "feature": "MinAbsPartialCharge",
+      "importance": 0.017821036039962487
+    },
+    {
+      "rank": 6,
+      "feature": "FractionCSP3",
+      "importance": 0.01703815024984491
+    },
+    {
+      "rank": 7,
+      "feature": "MaxPartialCharge",
+      "importance": 0.01671779421078574
+    },
+    {
+      "rank": 8,
+      "feature": "sp3_frac",
+      "importance": 0.015819555886159898
+    },
+    {
+      "rank": 9,
+      "feature": "MinEStateIndex",
+      "importance": 0.014027440318231452
+    },
+    {
+      "rank": 10,
+      "feature": "MaxAbsPartialCharge",
+      "importance": 0.013440127679047884
+    },
+    {
+      "rank": 11,
+      "feature": "SPS",
+      "importance": 0.011873854295608713
+    },
+    {
+      "rank": 12,
+      "feature": "HeavyAtomMolWt_ratio",
+      "importance": 0.011309065684027016
+    },
+    {
+      "rank": 13,
+      "feature": "MinAbsEStateIndex",
+      "importance": 0.010512728095730397
+    },
+    {
+      "rank": 14,
+      "feature": "NumHAcceptors",
+      "importance": 0.010235449521197228
+    },
+    {
+      "rank": 15,
+      "feature": "MinPartialCharge",
+      "importance": 0.009663281404356497
+    },
+    {
+      "rank": 16,
+      "feature": "N_count",
+      "importance": 0.00933378333412287
+    },
+    {
+      "rank": 17,
+      "feature": "HallKierAlpha",
+      "importance": 0.008770152673002235
+    },
+    {
+      "rank": 18,
+      "feature": "qed",
+      "importance": 0.008411609855103724
+    },
+    {
+      "rank": 19,
+      "feature": "double_bond_frac",
+      "importance": 0.00799023623900228
+    },
+    {
+      "rank": 20,
+      "feature": "NumHeterocycles",
+      "importance": 0.007623725820546154
+    }
+  ]
+}

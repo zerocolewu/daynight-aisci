@@ -1,0 +1,1596 @@
+{
+  "total_days": 7,
+  "by_day": {
+    "day_1": {
+      "day_number": 1,
+      "start_time": "",
+      "end_time": "2026-03-19T03:06:45.697234",
+      "orchestrator_runs": [
+        {
+          "agent_id": "0a20ca1c-577a-4a50-9408-e763aafb536b",
+          "run_id": "e09604db-e824-4b9c-aaf0-3b9d916368bb",
+          "input_tokens": 39516,
+          "output_tokens": 6494,
+          "total_tokens": 46010,
+          "llm_time": 203.41140000000001,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory"
+          ]
+        }
+      ],
+      "behaviours": [
+        {
+          "agent_type": "learn_search",
+          "agent_id": "c2fd4909-4f45-4a7c-8380-99a58ced7899",
+          "run_id": "f7c85654-58dd-4eb2-bff8-c016fe5406ee",
+          "input_tokens": 137501,
+          "output_tokens": 3851,
+          "total_tokens": 141352,
+          "llm_time": 111.5108,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "copy_pool_papers_to_day",
+            "download_to_day_dir",
+            "download_to_day_dir"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "0a20ca1c-577a-4a50-9408-e763aafb536b",
+          "run_id": "f9609d39-31fb-4610-b6a0-5d074ea709e2",
+          "input_tokens": 62377,
+          "output_tokens": 2465,
+          "total_tokens": 64842,
+          "llm_time": 79.5566,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "d853139d-84dd-4354-9206-5f698950557b",
+          "input_tokens": 50420,
+          "output_tokens": 2603,
+          "total_tokens": 53023,
+          "llm_time": 80.2248,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "c6ccd2c0-901b-4ffb-b7a1-8a177db86413",
+          "input_tokens": 76625,
+          "output_tokens": 3163,
+          "total_tokens": 79788,
+          "llm_time": 96.7368,
+          "tool_calls": [
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "a559e94c-75ed-4ff4-bc47-bb84f34fa172",
+          "input_tokens": 72884,
+          "output_tokens": 2786,
+          "total_tokens": 75670,
+          "llm_time": 84.1609,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "work",
+          "agent_id": "cfa2e260-9d0d-4124-9c59-0fca73b6bd06",
+          "run_id": "0c635f13-3299-4b7d-b30b-6d95d4afa282",
+          "input_tokens": 10308,
+          "output_tokens": 826,
+          "total_tokens": 11134,
+          "llm_time": 29.5957,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 2687.4604,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "internalize",
+          "agent_id": "765070b4-3d9b-419a-8026-07d63fe364cb",
+          "run_id": "91b61ce2-aa99-49bc-88e5-067772458e48",
+          "input_tokens": 41770,
+          "output_tokens": 5550,
+          "total_tokens": 47320,
+          "llm_time": 154.53070000000002,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory"
+          ]
+        },
+        {
+          "agent_type": "associate_reason",
+          "agent_id": "d222da56-dc3d-498d-9806-c78d83b5a0bb",
+          "run_id": "c152c092-ccea-4327-9207-d5265aa3053e",
+          "input_tokens": 53022,
+          "output_tokens": 7995,
+          "total_tokens": 61017,
+          "llm_time": 255.0451,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "write_memory_with_day"
+          ]
+        },
+        {
+          "agent_type": "associate_random",
+          "agent_id": "e02db811-5eda-4bbc-ba3d-1c6c60562176",
+          "run_id": "d397ecc3-9b4c-461d-bddd-8e11a5ee6047",
+          "input_tokens": 55934,
+          "output_tokens": 12047,
+          "total_tokens": 67981,
+          "llm_time": 374.19780000000003,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory"
+          ]
+        }
+      ],
+      "day_total_tokens": 648137,
+      "day_llm_time": 4156.4310000000005
+    },
+    "day_2": {
+      "day_number": 2,
+      "start_time": "",
+      "end_time": "2026-03-19T05:27:22.088228",
+      "orchestrator_runs": [
+        {
+          "agent_id": "0f680e44-cbb4-4ef0-b921-f36d40f14de8",
+          "run_id": "7ba8973a-3362-4731-aa19-91257173d2ad",
+          "input_tokens": 53011,
+          "output_tokens": 6361,
+          "total_tokens": 59372,
+          "llm_time": 180.3285,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "work",
+            "read_memory"
+          ]
+        }
+      ],
+      "behaviours": [
+        {
+          "agent_type": "learn_search",
+          "agent_id": "48c33050-4bf5-4a63-b694-51d1225629dd",
+          "run_id": "7606ef5f-4722-4c53-b792-b817a1fba26c",
+          "input_tokens": 112658,
+          "output_tokens": 4669,
+          "total_tokens": 117327,
+          "llm_time": 137.067,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "download_to_day_dir",
+            "download_to_day_dir",
+            "copy_pool_papers_to_day"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "0f680e44-cbb4-4ef0-b921-f36d40f14de8",
+          "run_id": "ce87e05f-6b12-4c72-bc02-6345e20e8777",
+          "input_tokens": 49163,
+          "output_tokens": 2973,
+          "total_tokens": 52136,
+          "llm_time": 87.1199,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "f81bb52f-0027-4db3-aa7f-6d50c42d58be",
+          "input_tokens": 76818,
+          "output_tokens": 3043,
+          "total_tokens": 79861,
+          "llm_time": 96.89,
+          "tool_calls": [
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "bdf743b5-8855-493e-8850-f4f2b13e4956",
+          "input_tokens": 67262,
+          "output_tokens": 2710,
+          "total_tokens": 69972,
+          "llm_time": 83.976,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "2fa6a46f-7a91-4240-a3bf-7309d35b8ed6",
+          "input_tokens": 49327,
+          "output_tokens": 3400,
+          "total_tokens": 52727,
+          "llm_time": 105.06939999999999,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "work",
+          "agent_id": "e7462509-fbbf-4410-9aaa-15612808348e",
+          "run_id": "8d630ba8-f2b0-4479-b013-9e7338f691c5",
+          "input_tokens": 17495,
+          "output_tokens": 1575,
+          "total_tokens": 19070,
+          "llm_time": 51.1081,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 6608.1457,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "internalize",
+          "agent_id": "a9b68530-e141-46b8-9d9b-7ad1166ea86b",
+          "run_id": "6aa5c9f6-af66-40d5-9507-996743253cdb",
+          "input_tokens": 45417,
+          "output_tokens": 5315,
+          "total_tokens": 50732,
+          "llm_time": 155.7259,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "write_integration_with_day",
+            "write_integration_with_day"
+          ]
+        },
+        {
+          "agent_type": "associate_reason",
+          "agent_id": "bc66b1bd-24aa-4a35-a375-cb44d0090779",
+          "run_id": "58bafe45-7694-49a2-b439-4e3eb86c62a2",
+          "input_tokens": 37978,
+          "output_tokens": 10924,
+          "total_tokens": 48902,
+          "llm_time": 292.7433,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "write_memory_with_day"
+          ]
+        },
+        {
+          "agent_type": "associate_random",
+          "agent_id": "d3eb3d7d-f09d-4a55-ba6f-339b2266e44b",
+          "run_id": "4858b129-51e2-4c45-a66c-724016850c3e",
+          "input_tokens": 66938,
+          "output_tokens": 10385,
+          "total_tokens": 77323,
+          "llm_time": 348.82959999999997,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory"
+          ]
+        }
+      ],
+      "day_total_tokens": 627422,
+      "day_llm_time": 8147.0034000000005
+    },
+    "day_3": {
+      "day_number": 3,
+      "start_time": "",
+      "end_time": "2026-03-19T10:00:44.952158",
+      "orchestrator_runs": [
+        {
+          "agent_id": "5611c338-c361-4001-8aa4-e68a944f80cb",
+          "run_id": "6bedbe1e-c5f6-4080-9fc7-636b20c09e1a",
+          "input_tokens": 240822,
+          "output_tokens": 11621,
+          "total_tokens": 252443,
+          "llm_time": 315.43149999999997,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "learn_read",
+            "read_memory",
+            "run_experiment",
+            "run_experiment",
+            "read_memory"
+          ]
+        }
+      ],
+      "behaviours": [
+        {
+          "agent_type": "learn_search",
+          "agent_id": "b95fca1a-c8a2-4912-af1b-724e6fec2a5c",
+          "run_id": "54bb37d7-283a-46b7-87db-86326a6bd45f",
+          "input_tokens": 58538,
+          "output_tokens": 2856,
+          "total_tokens": 61394,
+          "llm_time": 85.5107,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "download_to_day_dir",
+            "download_to_day_dir",
+            "copy_pool_papers_to_day"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "5611c338-c361-4001-8aa4-e68a944f80cb",
+          "run_id": "fc022d55-55c2-449a-b81f-0cb61e4c0dcd",
+          "input_tokens": 74580,
+          "output_tokens": 3057,
+          "total_tokens": 77637,
+          "llm_time": 97.6927,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "0cd2dce7-f16d-49d9-bd8e-5ef9cbf51a85",
+          "input_tokens": 82034,
+          "output_tokens": 3430,
+          "total_tokens": 85464,
+          "llm_time": 112.45250000000001,
+          "tool_calls": [
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "98b3d947-1cc0-452a-8a2a-56a038fb4cde",
+          "input_tokens": 62292,
+          "output_tokens": 3333,
+          "total_tokens": 65625,
+          "llm_time": 103.2329,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "d63c52a8-fff4-4378-985c-54c9fccabae3",
+          "input_tokens": 79409,
+          "output_tokens": 4098,
+          "total_tokens": 83507,
+          "llm_time": 109.4504,
+          "tool_calls": [
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "work",
+          "agent_id": "51f5a536-260c-4e64-97d7-4da7b78fc5f1",
+          "run_id": "9413590c-9313-47f1-87f3-c3d56f541c7f",
+          "input_tokens": 23238,
+          "output_tokens": 1479,
+          "total_tokens": 24717,
+          "llm_time": 46.9483,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 3127.0846,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 4361.7983,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 1502.7805,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 123.3663,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 2589.2681,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 26.8473,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 81.8889,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 134.6869,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 39.921,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "internalize",
+          "agent_id": "0f7fc618-c0a2-4ebf-95b2-0c9ab61e5c60",
+          "run_id": "a73985a6-9edf-4f5b-aced-a39cfdf72d7b",
+          "input_tokens": 87277,
+          "output_tokens": 6341,
+          "total_tokens": 93618,
+          "llm_time": 185.7648,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory"
+          ]
+        },
+        {
+          "agent_type": "associate_reason",
+          "agent_id": "33ccfb39-29ff-455d-9d48-0eace0642c6c",
+          "run_id": "d21e748c-7410-4a43-b1fa-eee22762478f",
+          "input_tokens": 79421,
+          "output_tokens": 4797,
+          "total_tokens": 84218,
+          "llm_time": 144.29059999999998,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory",
+            "read_memory",
+            "write_memory_with_day"
+          ]
+        },
+        {
+          "agent_type": "associate_random",
+          "agent_id": "3337ce83-dbe5-4ba0-ac96-be1586644a0d",
+          "run_id": "3121ef72-2733-4c12-89b9-26538556108c",
+          "input_tokens": 108160,
+          "output_tokens": 6742,
+          "total_tokens": 114902,
+          "llm_time": 221.5545,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory"
+          ]
+        }
+      ],
+      "day_total_tokens": 943525,
+      "day_llm_time": 13409.970800000003
+    },
+    "day_4": {
+      "day_number": 4,
+      "start_time": "",
+      "end_time": "2026-03-20T00:48:32.580264",
+      "orchestrator_runs": [
+        {
+          "agent_id": "8bd73066-9d0c-4db9-b95a-5f7d34d7f369",
+          "run_id": "a0a283aa-865f-4107-97ca-ae28f58b535a",
+          "input_tokens": 59046,
+          "output_tokens": 6203,
+          "total_tokens": 65249,
+          "llm_time": 187.61630000000002,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory"
+          ]
+        }
+      ],
+      "behaviours": [
+        {
+          "agent_type": "learn_search",
+          "agent_id": "9db72eff-f784-4726-8c90-1eff7b287481",
+          "run_id": "173847e5-ef96-4b0e-8775-e5ddfcef63a4",
+          "input_tokens": 119597,
+          "output_tokens": 2945,
+          "total_tokens": 122542,
+          "llm_time": 103.3909,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "download_to_day_dir",
+            "download_to_day_dir",
+            "copy_pool_papers_to_day"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "8bd73066-9d0c-4db9-b95a-5f7d34d7f369",
+          "run_id": "adaa361c-7e18-4bd6-9b1d-8fd18c203af1",
+          "input_tokens": 74729,
+          "output_tokens": 3249,
+          "total_tokens": 77978,
+          "llm_time": 97.99690000000001,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "de4118a0-a8ae-4ed4-9426-ac3aa051e9e3",
+          "input_tokens": 54475,
+          "output_tokens": 2570,
+          "total_tokens": 57045,
+          "llm_time": 89.83149999999999,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "26f6b678-d942-4478-b4e2-ec06ddeeb6d8",
+          "input_tokens": 84128,
+          "output_tokens": 2256,
+          "total_tokens": 86384,
+          "llm_time": 74.6505,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "99cbeca8-fd5f-48a2-8922-80ac0629cf84",
+          "input_tokens": 78152,
+          "output_tokens": 2633,
+          "total_tokens": 80785,
+          "llm_time": 87.78,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "work",
+          "agent_id": "fe02ba07-b7ad-4c9c-b5cf-3c5636bf3890",
+          "run_id": "9ab75843-f4bc-4d2b-bb49-1e1203ae849b",
+          "input_tokens": 30234,
+          "output_tokens": 1288,
+          "total_tokens": 31522,
+          "llm_time": 50.7979,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 51703.7072,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "internalize",
+          "agent_id": "638a93c9-5231-4d56-b6f4-7313b47dad7f",
+          "run_id": "e22858ad-5a8d-4b87-8109-798544d38cc2",
+          "input_tokens": 61524,
+          "output_tokens": 5365,
+          "total_tokens": 66889,
+          "llm_time": 169.7518,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory"
+          ]
+        },
+        {
+          "agent_type": "associate_reason",
+          "agent_id": "5a4e38ef-4ca6-4c5b-b77b-1aa13f472dcd",
+          "run_id": "74691a2f-6087-4b9e-bb92-81a9a6f4d35e",
+          "input_tokens": 143364,
+          "output_tokens": 6574,
+          "total_tokens": 149938,
+          "llm_time": 195.7979,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "write_memory_with_day",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "associate_random",
+          "agent_id": "c5abad58-fda5-4872-b5e7-d0fd83e5af48",
+          "run_id": "fb7c0307-843a-4d85-b86c-fd27d6fd732c",
+          "input_tokens": 98334,
+          "output_tokens": 5674,
+          "total_tokens": 104008,
+          "llm_time": 193.6348,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory"
+          ]
+        }
+      ],
+      "day_total_tokens": 842340,
+      "day_llm_time": 52954.95569999999
+    },
+    "day_5": {
+      "day_number": 5,
+      "start_time": "2026-03-20T21:56:49.437600",
+      "end_time": "2026-03-20T22:13:54.822524",
+      "orchestrator_runs": [
+        {
+          "agent_id": "9c9e7e29-6b9b-403b-b552-2abe86a38f7c",
+          "run_id": "f449df96-69b4-4835-8b71-80175da7b511",
+          "input_tokens": 125350,
+          "output_tokens": 11009,
+          "total_tokens": 136359,
+          "llm_time": 287.2823,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "work",
+            "read_memory",
+            "run_experiment",
+            "run_experiment",
+            "write_memory_with_day",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_id": "353382ea-6ff6-41c9-a2b0-daa1afc0ef2d",
+          "run_id": "f55d8f2a-d93b-450c-bf06-002b4e584047",
+          "input_tokens": 44629,
+          "output_tokens": 2471,
+          "total_tokens": 47100,
+          "llm_time": 76.7492,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "work"
+          ]
+        }
+      ],
+      "behaviours": [
+        {
+          "agent_type": "learn_search",
+          "agent_id": "6e3ff556-96a1-4329-b4ba-b70c03dd7127",
+          "run_id": "390c7cef-ee9e-4e57-aabc-e8479f523013",
+          "input_tokens": 137754,
+          "output_tokens": 4421,
+          "total_tokens": 142175,
+          "llm_time": 133.9295,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "download_to_day_dir",
+            "download_to_day_dir"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "9c9e7e29-6b9b-403b-b552-2abe86a38f7c",
+          "run_id": "7500e770-bb21-45ad-8d4e-cdfad7298675",
+          "input_tokens": 33432,
+          "output_tokens": 2586,
+          "total_tokens": 36018,
+          "llm_time": 82.4491,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "afa1176c-2113-4a20-8c56-27f2c2001bed",
+          "input_tokens": 72361,
+          "output_tokens": 2597,
+          "total_tokens": 74958,
+          "llm_time": 96.7756,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "work",
+          "agent_id": "9700303f-ee47-4bae-9249-ae2bdfd84633",
+          "run_id": "04110855-924b-4069-95bf-cfb186681d62",
+          "input_tokens": 30754,
+          "output_tokens": 1335,
+          "total_tokens": 32089,
+          "llm_time": 42.2625,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "best_of_n_select",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 1391.9374,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 3020.7839,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "work",
+          "agent_id": "9700303f-ee47-4bae-9249-ae2bdfd84633",
+          "run_id": "df1435f0-3d3e-4e5b-bf60-6dd7631d1545",
+          "input_tokens": 29297,
+          "output_tokens": 1452,
+          "total_tokens": 30749,
+          "llm_time": 53.902899999999995,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "best_of_n_select",
+            "read_memory",
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 0.0149,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "work",
+          "agent_id": "dd64c2db-0e8f-490f-b750-08c6023666f4",
+          "run_id": "ca160b83-581e-44bc-b271-533cd24b813d",
+          "input_tokens": 38628,
+          "output_tokens": 1699,
+          "total_tokens": 40327,
+          "llm_time": 46.2366,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "internalize",
+          "agent_id": "ffe8cd94-6c8d-49a1-a6b8-837dc6691d1c",
+          "run_id": "7de75cae-3aeb-4923-a436-57f28e20d88d",
+          "input_tokens": 80190,
+          "output_tokens": 5325,
+          "total_tokens": 85515,
+          "llm_time": 145.46970000000002,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "internalize",
+          "agent_id": "",
+          "run_id": "fa16f872-d757-41bd-b15f-1dbd8d2fb91c",
+          "input_tokens": 16883,
+          "output_tokens": 2928,
+          "total_tokens": 19811,
+          "llm_time": 75.8121,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "update_memory_content"
+          ]
+        },
+        {
+          "agent_type": "associate_reason",
+          "agent_id": "d6882c4e-d2ce-4f2e-afc6-38152578ba18",
+          "run_id": "b8d2c351-299b-4386-8a9d-f0cb4f07a624",
+          "input_tokens": 116758,
+          "output_tokens": 8866,
+          "total_tokens": 125624,
+          "llm_time": 278.7853,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory"
+          ]
+        },
+        {
+          "agent_type": "associate_random",
+          "agent_id": "0e03f6f3-5ac5-4c35-95d4-d17f7fcd425a",
+          "run_id": "7bbab415-fe52-44f7-b77a-940766f1efb6",
+          "input_tokens": 63090,
+          "output_tokens": 11769,
+          "total_tokens": 74859,
+          "llm_time": 336.6733,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory"
+          ]
+        }
+      ],
+      "day_total_tokens": 845584,
+      "day_llm_time": 6069.0643
+    },
+    "day_6": {
+      "day_number": 6,
+      "start_time": "",
+      "end_time": "2026-03-22T03:23:39.510768",
+      "orchestrator_runs": [
+        {
+          "agent_id": "e4260a29-bf39-42dc-8ba2-b360cce6509e",
+          "run_id": "b78a7020-e9ae-44bb-b56b-f599d769a02d",
+          "input_tokens": 278774,
+          "output_tokens": 12049,
+          "total_tokens": 290823,
+          "llm_time": 360.1146,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "run_experiment",
+            "read_memory"
+          ]
+        }
+      ],
+      "behaviours": [
+        {
+          "agent_type": "work",
+          "agent_id": "84073dc5-c9fc-4a7f-9458-245e2203c1e0",
+          "run_id": "516cdff6-4ddc-4305-a0a8-a96e03c66b2b",
+          "input_tokens": 77052,
+          "output_tokens": 2149,
+          "total_tokens": 79201,
+          "llm_time": 61.3928,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_search",
+          "agent_id": "23a04cbe-6173-46ba-97a1-67a24205ce54",
+          "run_id": "2dfdb7d2-11c8-48e1-a1d1-9868794f09fd",
+          "input_tokens": 79506,
+          "output_tokens": 3375,
+          "total_tokens": 82881,
+          "llm_time": 96.42579999999998,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "download_to_day_dir",
+            "download_to_day_dir"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "e4260a29-bf39-42dc-8ba2-b360cce6509e",
+          "run_id": "deeaf12e-7d39-4a32-b94e-c0255172198e",
+          "input_tokens": 53201,
+          "output_tokens": 2662,
+          "total_tokens": 55863,
+          "llm_time": 76.7396,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "118f7678-362b-4c6f-8f13-1028c09bf0f8",
+          "input_tokens": 73814,
+          "output_tokens": 3375,
+          "total_tokens": 77189,
+          "llm_time": 99.18730000000001,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "work",
+          "agent_id": "d7f9e0de-4421-48f1-84b2-b530f4ec48d6",
+          "run_id": "e522ffb5-cdc1-4049-99ff-0a76be097042",
+          "input_tokens": 38542,
+          "output_tokens": 1562,
+          "total_tokens": 40104,
+          "llm_time": 49.724599999999995,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 2523.3122,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 9613.2887,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 7447.8907,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 1299.9926,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 10084.4181,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 72000.1661,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 162.586,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 302.3767,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "internalize",
+          "agent_id": "89aaca95-5cfc-4798-ad42-0e5fb9e8b8ae",
+          "run_id": "10dea750-095b-44b1-9569-ba54d21d8536",
+          "input_tokens": 79824,
+          "output_tokens": 5014,
+          "total_tokens": 84838,
+          "llm_time": 136.4997,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "write_integration_with_day"
+          ]
+        },
+        {
+          "agent_type": "associate_reason",
+          "agent_id": "57a1da8d-8909-4b3e-a058-d2579c2b2cb7",
+          "run_id": "87af8e24-bb98-4f18-9b11-b51b5bdff472",
+          "input_tokens": 73670,
+          "output_tokens": 6713,
+          "total_tokens": 80383,
+          "llm_time": 196.5597,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory"
+          ]
+        },
+        {
+          "agent_type": "associate_random",
+          "agent_id": "5176ebbc-ff4c-43cb-829e-0ad1d746904d",
+          "run_id": "3883da9e-2619-4b0d-ba86-49f74e23e38c",
+          "input_tokens": 42224,
+          "output_tokens": 6451,
+          "total_tokens": 48675,
+          "llm_time": 184.1315,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory"
+          ]
+        }
+      ],
+      "day_total_tokens": 839957,
+      "day_llm_time": 104694.80669999999
+    },
+    "day_7": {
+      "day_number": 7,
+      "start_time": "",
+      "end_time": "2026-03-22T12:21:47.162637",
+      "orchestrator_runs": [
+        {
+          "agent_id": "7e4c08a9-88e1-4708-9348-d110bf46763f",
+          "run_id": "858444e8-7dd9-4f51-87b2-f0723bf710c4",
+          "input_tokens": 177421,
+          "output_tokens": 10402,
+          "total_tokens": 187823,
+          "llm_time": 293.8734,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory"
+          ]
+        }
+      ],
+      "behaviours": [
+        {
+          "agent_type": "learn_search",
+          "agent_id": "ca76697f-c0ba-41d9-9687-e65a5ff78053",
+          "run_id": "9f47ffb9-f86c-460e-9b66-8e46d8228454",
+          "input_tokens": 279434,
+          "output_tokens": 3426,
+          "total_tokens": 282860,
+          "llm_time": 107.3618,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "search_arxiv",
+            "download_to_day_dir",
+            "download_to_day_dir",
+            "copy_pool_papers_to_day"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "7e4c08a9-88e1-4708-9348-d110bf46763f",
+          "run_id": "28b6771d-f227-4c2f-9dd7-650ca7bb9524",
+          "input_tokens": 67490,
+          "output_tokens": 2743,
+          "total_tokens": 70233,
+          "llm_time": 82.31889999999999,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "2f92d238-cb34-4119-b081-dd7b02762e97",
+          "input_tokens": 42562,
+          "output_tokens": 2365,
+          "total_tokens": 44927,
+          "llm_time": 73.5223,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "learn_read",
+          "agent_id": "",
+          "run_id": "1a9263a4-9620-4b46-b638-1351cdd95f4e",
+          "input_tokens": 90458,
+          "output_tokens": 2946,
+          "total_tokens": 93404,
+          "llm_time": 86.4711,
+          "tool_calls": [
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "work",
+          "agent_id": "4e1ff3e6-f171-480d-b380-a8cb37c04d2b",
+          "run_id": "0dcdc471-c93a-4e4d-a22a-463d706b53d0",
+          "input_tokens": 31082,
+          "output_tokens": 994,
+          "total_tokens": 32076,
+          "llm_time": 36.188199999999995,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 18446.5789,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 1381.3895,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 1506.1312,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 1416.9563,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "run_experiment",
+          "agent_id": "",
+          "run_id": "",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "llm_time": 7920.8953,
+          "tool_calls": []
+        },
+        {
+          "agent_type": "internalize",
+          "agent_id": "d2518861-63e0-4061-9830-06b3693b72ef",
+          "run_id": "4e44f625-130e-4c8d-8d51-7832bd8078c2",
+          "input_tokens": 152054,
+          "output_tokens": 4133,
+          "total_tokens": 156187,
+          "llm_time": 133.4082,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "read_memory",
+            "read_memory"
+          ]
+        },
+        {
+          "agent_type": "associate_reason",
+          "agent_id": "b3246c97-892d-4808-b6c9-a6ec40729da0",
+          "run_id": "104bb69a-2375-4236-9a88-1ba4f8d9bc0f",
+          "input_tokens": 87312,
+          "output_tokens": 6386,
+          "total_tokens": 93698,
+          "llm_time": 193.6964,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory"
+          ]
+        },
+        {
+          "agent_type": "associate_random",
+          "agent_id": "79e5907c-9ee6-4b02-ad84-bbdef1542db7",
+          "run_id": "467b689d-a220-429c-93dc-bd28c79d3383",
+          "input_tokens": 225667,
+          "output_tokens": 11589,
+          "total_tokens": 237256,
+          "llm_time": 314.1446,
+          "tool_calls": [
+            "read_memory",
+            "read_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "search_memory",
+            "write_memory_with_day"
+          ]
+        }
+      ],
+      "day_total_tokens": 1198464,
+      "day_llm_time": 31992.936100000006
+    }
+  },
+  "by_agent_type": {
+    "orchestrator": {
+      "count": 8,
+      "total_input_tokens": 1018569,
+      "total_output_tokens": 66610,
+      "total_tokens": 1085179,
+      "total_llm_time": 1904.8071999999997,
+      "tool_calls": {
+        "read_memory": 27,
+        "work": 3,
+        "learn_read": 1,
+        "run_experiment": 5,
+        "write_memory_with_day": 1
+      }
+    },
+    "learn_search": {
+      "count": 7,
+      "total_input_tokens": 924988,
+      "total_output_tokens": 25543,
+      "total_tokens": 950531,
+      "total_llm_time": 775.1965,
+      "tool_calls": {
+        "read_memory": 14,
+        "search_arxiv": 45,
+        "copy_pool_papers_to_day": 5,
+        "download_to_day_dir": 14
+      }
+    },
+    "learn_read": {
+      "count": 23,
+      "total_input_tokens": 1527993,
+      "total_output_tokens": 67043,
+      "total_tokens": 1595036,
+      "total_llm_time": 2084.2857000000004,
+      "tool_calls": {
+        "read_memory": 42
+      }
+    },
+    "work": {
+      "count": 10,
+      "total_input_tokens": 326630,
+      "total_output_tokens": 14359,
+      "total_tokens": 340989,
+      "total_llm_time": 468.1576,
+      "tool_calls": {
+        "read_memory": 50,
+        "search_memory": 8,
+        "best_of_n_select": 2
+      }
+    },
+    "run_experiment": {
+      "count": 28,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_tokens": 0,
+      "total_llm_time": 211505.67369999998,
+      "tool_calls": {}
+    },
+    "internalize": {
+      "count": 8,
+      "total_input_tokens": 564939,
+      "total_output_tokens": 39971,
+      "total_tokens": 604910,
+      "total_llm_time": 1156.9629,
+      "tool_calls": {
+        "read_memory": 22,
+        "search_memory": 17,
+        "write_integration_with_day": 3,
+        "update_memory_content": 1
+      }
+    },
+    "associate_reason": {
+      "count": 7,
+      "total_input_tokens": 591525,
+      "total_output_tokens": 52255,
+      "total_tokens": 643780,
+      "total_llm_time": 1556.9183,
+      "tool_calls": {
+        "read_memory": 26,
+        "search_memory": 27,
+        "write_memory_with_day": 4
+      }
+    },
+    "associate_random": {
+      "count": 7,
+      "total_input_tokens": 660347,
+      "total_output_tokens": 64657,
+      "total_tokens": 725004,
+      "total_llm_time": 1973.1661,
+      "tool_calls": {
+        "read_memory": 20,
+        "search_memory": 33,
+        "write_memory_with_day": 1
+      }
+    }
+  },
+  "total_tokens": 5945429,
+  "total_llm_time": 221425.168,
+  "total_runs_by_type": {
+    "orchestrator": 8
+  }
+}

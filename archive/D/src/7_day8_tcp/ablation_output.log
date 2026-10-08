@@ -1,0 +1,248 @@
+================================================================================
+TCP FAILURE DIAGNOSIS - ABLATION STUDIES
+================================================================================
+Started at: 2026-03-26 16:35:41.071817
+
+================================================================================
+ABLATION 1: EXACT DAY 2 BASELINE (GRIN FEATURES)
+Expected: ~32.31 K
+================================================================================
+Loading Tg data with GRIN features from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Total samples: 7170
+Successfully loaded 7170 samples
+Feature dimension: 148
+
+================================================================================
+Ablation: Ablation 1: Exact Day 2 Baseline (GRIN features)
+================================================================================
+Config: {
+  "n_folds": 5,
+  "seed": 42,
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.15,
+  "lr": 0.0005,
+  "weight_decay": 1e-05,
+  "max_epochs": 300,
+  "patience": 40,
+  "readout": "mean"
+}
+Device: cuda
+
+--- Fold 1/5 ---
+Input dimension: 148
+Model parameters: 701,446
+Epoch   1: Train Loss: 0.2711, Val RMSE: 46.32
+Epoch  20: Train Loss: 0.1232, Val RMSE: 39.62
+Epoch  40: Train Loss: 0.0895, Val RMSE: 44.48
+Epoch  60: Train Loss: 0.0714, Val RMSE: 37.10
+Epoch  80: Train Loss: 0.0601, Val RMSE: 35.48
+Epoch 100: Train Loss: 0.0497, Val RMSE: 35.16
+Epoch 120: Train Loss: 0.0425, Val RMSE: 35.31
+Epoch 140: Train Loss: 0.0375, Val RMSE: 35.87
+Early stopping at epoch 151
+Fold 1 Best Val RMSE: 34.49
+
+--- Fold 2/5 ---
+Input dimension: 148
+Model parameters: 701,446
+Epoch   1: Train Loss: 0.2737, Val RMSE: 54.72
+Epoch  20: Train Loss: 0.1220, Val RMSE: 40.32
+Epoch  40: Train Loss: 0.0876, Val RMSE: 38.56
+Epoch  60: Train Loss: 0.0730, Val RMSE: 39.67
+Epoch  80: Train Loss: 0.0641, Val RMSE: 37.99
+Epoch 100: Train Loss: 0.0532, Val RMSE: 35.53
+Epoch 120: Train Loss: 0.0465, Val RMSE: 35.05
+Epoch 140: Train Loss: 0.0383, Val RMSE: 34.06
+Epoch 160: Train Loss: 0.0349, Val RMSE: 34.45
+Epoch 180: Train Loss: 0.0298, Val RMSE: 33.91
+Epoch 200: Train Loss: 0.0281, Val RMSE: 33.69
+Epoch 220: Train Loss: 0.0252, Val RMSE: 33.66
+Epoch 240: Train Loss: 0.0236, Val RMSE: 33.66
+Early stopping at epoch 255
+Fold 2 Best Val RMSE: 33.34
+
+--- Fold 3/5 ---
+Input dimension: 148
+Model parameters: 701,446
+Epoch   1: Train Loss: 0.2566, Val RMSE: 52.25
+Epoch  20: Train Loss: 0.1192, Val RMSE: 40.53
+Epoch  40: Train Loss: 0.0923, Val RMSE: 39.79
+Epoch  60: Train Loss: 0.0729, Val RMSE: 37.90
+Epoch  80: Train Loss: 0.0628, Val RMSE: 36.55
+Epoch 100: Train Loss: 0.0525, Val RMSE: 35.73
+Epoch 120: Train Loss: 0.0448, Val RMSE: 36.06
+Epoch 140: Train Loss: 0.0391, Val RMSE: 35.71
+Epoch 160: Train Loss: 0.0349, Val RMSE: 34.31
+Early stopping at epoch 164
+Fold 3 Best Val RMSE: 34.22
+
+--- Fold 4/5 ---
+Input dimension: 148
+Model parameters: 701,446
+Epoch   1: Train Loss: 0.2712, Val RMSE: 51.69
+Epoch  20: Train Loss: 0.1172, Val RMSE: 43.79
+Epoch  40: Train Loss: 0.0883, Val RMSE: 42.27
+Epoch  60: Train Loss: 0.0669, Val RMSE: 41.82
+Epoch  80: Train Loss: 0.0586, Val RMSE: 40.97
+Epoch 100: Train Loss: 0.0489, Val RMSE: 39.48
+Epoch 120: Train Loss: 0.0425, Val RMSE: 39.11
+Epoch 140: Train Loss: 0.0357, Val RMSE: 39.72
+Early stopping at epoch 155
+Fold 4 Best Val RMSE: 38.48
+
+--- Fold 5/5 ---
+Input dimension: 148
+Model parameters: 701,446
+Epoch   1: Train Loss: 0.2457, Val RMSE: 60.75
+Epoch  20: Train Loss: 0.1246, Val RMSE: 42.14
+Epoch  40: Train Loss: 0.0932, Val RMSE: 38.02
+Epoch  60: Train Loss: 0.0734, Val RMSE: 37.77
+Epoch  80: Train Loss: 0.0625, Val RMSE: 37.43
+Epoch 100: Train Loss: 0.0517, Val RMSE: 36.18
+Epoch 120: Train Loss: 0.0457, Val RMSE: 36.18
+Epoch 140: Train Loss: 0.0405, Val RMSE: 35.42
+Epoch 160: Train Loss: 0.0338, Val RMSE: 35.18
+Epoch 180: Train Loss: 0.0322, Val RMSE: 34.94
+Epoch 200: Train Loss: 0.0279, Val RMSE: 34.89
+Epoch 220: Train Loss: 0.0263, Val RMSE: 34.21
+Epoch 240: Train Loss: 0.0244, Val RMSE: 34.34
+Epoch 260: Train Loss: 0.0233, Val RMSE: 34.36
+Early stopping at epoch 274
+Fold 5 Best Val RMSE: 34.04
+
+================================================================================
+RESULTS: Ablation 1: Exact Day 2 Baseline (GRIN features)
+================================================================================
+Mean RMSE: 34.91 ± 1.82 K
+Fold RMSEs: ['34.49', '33.34', '34.22', '38.48', '34.04']
+
+================================================================================
+ABLATION 2: CURRENT TCP SETUP (REPERIOGT FEATURES)
+This should match current TCP performance (~35 K)
+================================================================================
+Loading Tg data with ReperioGT features from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Total samples: 7170
+Successfully loaded 7170 samples
+Feature dimension: 153
+
+================================================================================
+Ablation: Ablation 2: TCP Setup (ReperioGT features)
+================================================================================
+Config: {
+  "n_folds": 5,
+  "seed": 42,
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.15,
+  "lr": 0.0005,
+  "weight_decay": 1e-05,
+  "max_epochs": 300,
+  "patience": 40,
+  "readout": "mean"
+}
+Device: cuda
+
+--- Fold 1/5 ---
+Input dimension: 153
+Model parameters: 702,726
+Epoch   1: Train Loss: 0.2665, Val RMSE: 48.29
+Epoch  20: Train Loss: 0.1245, Val RMSE: 39.99
+Epoch  40: Train Loss: 0.0945, Val RMSE: 38.65
+Epoch  60: Train Loss: 0.0758, Val RMSE: 38.07
+Epoch  80: Train Loss: 0.0602, Val RMSE: 36.16
+Epoch 100: Train Loss: 0.0511, Val RMSE: 36.12
+Epoch 120: Train Loss: 0.0439, Val RMSE: 37.38
+Epoch 140: Train Loss: 0.0407, Val RMSE: 36.30
+Early stopping at epoch 154
+Fold 1 Best Val RMSE: 35.23
+
+--- Fold 2/5 ---
+Input dimension: 153
+Model parameters: 702,726
+Epoch   1: Train Loss: 0.2583, Val RMSE: 48.78
+Epoch  20: Train Loss: 0.1215, Val RMSE: 41.63
+Epoch  40: Train Loss: 0.0858, Val RMSE: 38.40
+Epoch  60: Train Loss: 0.0709, Val RMSE: 37.85
+Epoch  80: Train Loss: 0.0587, Val RMSE: 37.11
+Epoch 100: Train Loss: 0.0495, Val RMSE: 36.80
+Epoch 120: Train Loss: 0.0429, Val RMSE: 36.43
+Epoch 140: Train Loss: 0.0378, Val RMSE: 35.69
+Epoch 160: Train Loss: 0.0332, Val RMSE: 35.51
+Epoch 180: Train Loss: 0.0297, Val RMSE: 34.68
+Epoch 200: Train Loss: 0.0272, Val RMSE: 34.84
+Early stopping at epoch 214
+Fold 2 Best Val RMSE: 34.37
+
+--- Fold 3/5 ---
+Input dimension: 153
+Model parameters: 702,726
+Epoch   1: Train Loss: 0.2650, Val RMSE: 62.01
+Epoch  20: Train Loss: 0.1202, Val RMSE: 39.78
+Epoch  40: Train Loss: 0.0900, Val RMSE: 38.14
+Epoch  60: Train Loss: 0.0718, Val RMSE: 36.80
+Epoch  80: Train Loss: 0.0618, Val RMSE: 36.17
+Epoch 100: Train Loss: 0.0517, Val RMSE: 35.61
+Epoch 120: Train Loss: 0.0423, Val RMSE: 35.86
+Epoch 140: Train Loss: 0.0395, Val RMSE: 35.32
+Epoch 160: Train Loss: 0.0346, Val RMSE: 34.89
+Epoch 180: Train Loss: 0.0297, Val RMSE: 34.62
+Epoch 200: Train Loss: 0.0272, Val RMSE: 34.29
+Epoch 220: Train Loss: 0.0251, Val RMSE: 34.20
+Epoch 240: Train Loss: 0.0238, Val RMSE: 34.26
+Early stopping at epoch 258
+Fold 3 Best Val RMSE: 33.85
+
+--- Fold 4/5 ---
+Input dimension: 153
+Model parameters: 702,726
+Epoch   1: Train Loss: 0.2636, Val RMSE: 49.05
+Epoch  20: Train Loss: 0.1186, Val RMSE: 43.57
+Epoch  40: Train Loss: 0.0887, Val RMSE: 46.09
+Epoch  60: Train Loss: 0.0741, Val RMSE: 43.27
+Epoch  80: Train Loss: 0.0595, Val RMSE: 40.67
+Epoch 100: Train Loss: 0.0520, Val RMSE: 41.16
+Epoch 120: Train Loss: 0.0438, Val RMSE: 39.93
+Epoch 140: Train Loss: 0.0383, Val RMSE: 38.44
+Epoch 160: Train Loss: 0.0335, Val RMSE: 38.64
+Epoch 180: Train Loss: 0.0312, Val RMSE: 38.76
+Epoch 200: Train Loss: 0.0281, Val RMSE: 38.55
+Early stopping at epoch 204
+Fold 4 Best Val RMSE: 38.11
+
+--- Fold 5/5 ---
+Input dimension: 153
+Model parameters: 702,726
+Epoch   1: Train Loss: 0.2757, Val RMSE: 55.07
+Epoch  20: Train Loss: 0.1300, Val RMSE: 38.94
+Epoch  40: Train Loss: 0.0926, Val RMSE: 39.94
+Epoch  60: Train Loss: 0.0761, Val RMSE: 36.78
+Epoch  80: Train Loss: 0.0628, Val RMSE: 36.71
+Epoch 100: Train Loss: 0.0524, Val RMSE: 38.22
+Epoch 120: Train Loss: 0.0451, Val RMSE: 36.33
+Epoch 140: Train Loss: 0.0387, Val RMSE: 38.67
+Early stopping at epoch 142
+Fold 5 Best Val RMSE: 35.18
+
+================================================================================
+RESULTS: Ablation 2: TCP Setup (ReperioGT features)
+================================================================================
+Mean RMSE: 35.35 ± 1.48 K
+Fold RMSEs: ['35.23', '34.37', '33.85', '38.11', '35.18']
+
+================================================================================
+ABLATION STUDY RESULTS
+================================================================================
+
+Ablation 1: Exact Day 2 Baseline (GRIN features):
+  Mean RMSE: 34.91 ± 1.82 K
+  Fold RMSEs: ['34.49', '33.34', '34.22', '38.48', '34.04']
+
+Ablation 2: TCP Setup (ReperioGT features):
+  Mean RMSE: 35.35 ± 1.48 K
+  Fold RMSEs: ['35.23', '34.37', '33.85', '38.11', '35.18']
+
+Results saved to ablation_results.txt
+JSON results saved to ablation_results.json

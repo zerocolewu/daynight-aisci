@@ -1,0 +1,301 @@
+[22:57:23] Explicit valence for atom # 0 H, 2, is greater than permitted
+[22:57:23] SMILES Parse Error: syntax error while parsing: =CC1CC(C=)C2CN(c3cc(C(F)(F)F)cc(C(F)(F)F)c3)CC12
+[22:57:23] SMILES Parse Error: check for mistakes around position 1:
+[22:57:23] =CC1CC(C=)C2CN(c3cc(C(F)(F)F)cc(C(F)(F)F)
+[22:57:23] ^
+[22:57:23] SMILES Parse Error: Failed parsing SMILES '=CC1CC(C=)C2CN(c3cc(C(F)(F)F)cc(C(F)(F)F)c3)CC12' for input: '=CC1CC(C=)C2CN(c3cc(C(F)(F)F)cc(C(F)(F)F)c3)CC12'
+[22:57:23] Explicit valence for atom # 0 H, 2, is greater than permitted
+[22:57:23] SMILES Parse Error: syntax error while parsing: =CC1OC(C=)C2C(=O)N(c3cc(C(F)(F)F)cc(C(F)(F)F)c3)C(=O)C12
+[22:57:23] SMILES Parse Error: check for mistakes around position 1:
+[22:57:23] =CC1OC(C=)C2C(=O)N(c3cc(C(F)(F)F)cc(C(F)(
+[22:57:23] ^
+[22:57:23] SMILES Parse Error: Failed parsing SMILES '=CC1OC(C=)C2C(=O)N(c3cc(C(F)(F)F)cc(C(F)(F)F)c3)C(=O)C12' for input: '=CC1OC(C=)C2C(=O)N(c3cc(C(F)(F)F)cc(C(F)(F)F)c3)C(=O)C12'
+[22:57:23] Explicit valence for atom # 0 H, 2, is greater than permitted
+[22:57:23] SMILES Parse Error: syntax error while parsing: =CC1OC(C=)C2C(=O)N(c3ccc(C(F)(F)F)cc3)C(=O)C12
+[22:57:23] SMILES Parse Error: check for mistakes around position 1:
+[22:57:23] =CC1OC(C=)C2C(=O)N(c3ccc(C(F)(F)F)cc3)C(=
+[22:57:23] ^
+[22:57:23] SMILES Parse Error: Failed parsing SMILES '=CC1OC(C=)C2C(=O)N(c3ccc(C(F)(F)F)cc3)C(=O)C12' for input: '=CC1OC(C=)C2C(=O)N(c3ccc(C(F)(F)F)cc3)C(=O)C12'
+[22:57:23] Explicit valence for atom # 0 H, 2, is greater than permitted
+[22:57:23] SMILES Parse Error: syntax error while parsing: =CC1OC(C=)C2C(=O)N(c3cccc(C(F)(F)F)c3)C(=O)C12
+[22:57:23] SMILES Parse Error: check for mistakes around position 1:
+[22:57:23] =CC1OC(C=)C2C(=O)N(c3cccc(C(F)(F)F)c3)C(=
+[22:57:23] ^
+[22:57:23] SMILES Parse Error: Failed parsing SMILES '=CC1OC(C=)C2C(=O)N(c3cccc(C(F)(F)F)c3)C(=O)C12' for input: '=CC1OC(C=)C2C(=O)N(c3cccc(C(F)(F)F)c3)C(=O)C12'
+[22:57:23] Explicit valence for atom # 0 H, 2, is greater than permitted
+[22:57:23] SMILES Parse Error: syntax error while parsing: =CC1OC(C=)C2C(=O)N(c3ccccc3C(F)(F)F)C(=O)C12
+[22:57:23] SMILES Parse Error: check for mistakes around position 1:
+[22:57:23] =CC1OC(C=)C2C(=O)N(c3ccccc3C(F)(F)F)C(=O)
+[22:57:23] ^
+[22:57:23] SMILES Parse Error: Failed parsing SMILES '=CC1OC(C=)C2C(=O)N(c3ccccc3C(F)(F)F)C(=O)C12' for input: '=CC1OC(C=)C2C(=O)N(c3ccccc3C(F)(F)F)C(=O)C12'
+[22:57:23] Explicit valence for atom # 0 H, 2, is greater than permitted
+[22:57:23] SMILES Parse Error: syntax error while parsing: =CC1OC(C=)C2C(=O)N(c3ccccc3)C(=O)C12
+[22:57:23] SMILES Parse Error: check for mistakes around position 1:
+[22:57:23] =CC1OC(C=)C2C(=O)N(c3ccccc3)C(=O)C12
+[22:57:23] ^
+[22:57:23] SMILES Parse Error: Failed parsing SMILES '=CC1OC(C=)C2C(=O)N(c3ccccc3)C(=O)C12' for input: '=CC1OC(C=)C2C(=O)N(c3ccccc3)C(=O)C12'
+Using device: cuda
+
+Tm training already complete. Skipping...
+Loaded Tm results from /home/home_public/aisci/AIscientist/src/4_day4_ensemble_uq/tm_results.json
+
+================================================================================
+Training ensemble for Egc
+================================================================================
+Loaded 3380 samples
+Using columns: psmiles=smiles, target=value
+Processing molecules...
+Successfully processed 3374 molecules, 6 failed
+
+================================================================================
+Fold 1/5
+================================================================================
+Train: 2159, Val: 540, Test: 675
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=0.3071, Val Loss=5.7664, Val RMSE=2.2796
+    Early stopping at epoch 98
+    Seed 42: Test RMSE=0.9287, MAE=0.5875, R2=0.6404
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=0.3666, Val Loss=5.1049, Val RMSE=2.1506
+    Epoch 100/500: Train Loss=0.3197, Val Loss=4.1809, Val RMSE=1.9455
+    Epoch 150/500: Train Loss=0.2451, Val Loss=3.3292, Val RMSE=1.7439
+    Early stopping at epoch 169
+    Seed 123: Test RMSE=0.7899, MAE=0.5408, R2=0.7398
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=0.3702, Val Loss=5.7319, Val RMSE=2.2732
+    Epoch 100/500: Train Loss=0.2838, Val Loss=3.3521, Val RMSE=1.7492
+    Epoch 150/500: Train Loss=0.2248, Val Loss=2.3052, Val RMSE=1.4625
+    Epoch 200/500: Train Loss=0.1837, Val Loss=1.6150, Val RMSE=1.2392
+    Epoch 250/500: Train Loss=0.1741, Val Loss=1.4953, Val RMSE=1.1905
+    Epoch 300/500: Train Loss=0.1752, Val Loss=1.4008, Val RMSE=1.1560
+    Epoch 350/500: Train Loss=0.1655, Val Loss=1.2834, Val RMSE=1.1169
+    Epoch 400/500: Train Loss=0.1592, Val Loss=1.1660, Val RMSE=1.0654
+    Early stopping at epoch 427
+    Seed 456: Test RMSE=0.7091, MAE=0.4436, R2=0.7903
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=0.3921, Val Loss=2.7532, Val RMSE=1.6061
+    Epoch 100/500: Train Loss=0.2798, Val Loss=2.0585, Val RMSE=1.3873
+    Early stopping at epoch 141
+    Seed 789: Test RMSE=0.7652, MAE=0.5115, R2=0.7559
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=0.3779, Val Loss=2.2300, Val RMSE=1.4421
+    Early stopping at epoch 98
+    Seed 1024: Test RMSE=0.8278, MAE=0.5336, R2=0.7142
+
+  Fold 1 Results:
+    Individual seeds RMSE: 0.8041 ± 0.0733
+    Ensemble RMSE: 0.7316
+    Uncertainty-Error correlation: r=0.3210 (p=1.2089e-17)
+    High uncertainty RMSE: 0.9739, Low uncertainty RMSE: 0.6572
+
+================================================================================
+Fold 2/5
+================================================================================
+Train: 2159, Val: 540, Test: 675
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=0.3367, Val Loss=5.4765, Val RMSE=2.2148
+    Early stopping at epoch 84
+    Seed 42: Test RMSE=1.2908, MAE=0.5819, R2=0.2874
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=0.4035, Val Loss=2.5361, Val RMSE=1.5256
+    Early stopping at epoch 95
+    Seed 123: Test RMSE=0.9048, MAE=0.4858, R2=0.6498
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=0.3829, Val Loss=3.7264, Val RMSE=1.8441
+    Epoch 100/500: Train Loss=0.3056, Val Loss=3.5426, Val RMSE=1.7980
+    Epoch 150/500: Train Loss=0.2387, Val Loss=3.0276, Val RMSE=1.6669
+    Early stopping at epoch 193
+    Seed 456: Test RMSE=0.8515, MAE=0.4922, R2=0.6899
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=0.4030, Val Loss=2.7094, Val RMSE=1.5828
+    Epoch 100/500: Train Loss=0.2943, Val Loss=2.2462, Val RMSE=1.4354
+    Epoch 150/500: Train Loss=0.2413, Val Loss=2.3140, Val RMSE=1.4564
+    Early stopping at epoch 158
+    Seed 789: Test RMSE=0.9380, MAE=0.5426, R2=0.6237
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=0.3932, Val Loss=1.6880, Val RMSE=1.2584
+    Early stopping at epoch 93
+    Seed 1024: Test RMSE=0.8648, MAE=0.5018, R2=0.6801
+
+  Fold 2 Results:
+    Individual seeds RMSE: 0.9700 ± 0.1633
+    Ensemble RMSE: 0.8715
+    Uncertainty-Error correlation: r=0.7646 (p=1.7001e-130)
+    High uncertainty RMSE: 1.6296, Low uncertainty RMSE: 0.5343
+
+================================================================================
+Fold 3/5
+================================================================================
+Train: 2159, Val: 540, Test: 675
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=0.3522, Val Loss=5.6497, Val RMSE=2.2588
+    Epoch 100/500: Train Loss=0.2815, Val Loss=5.9027, Val RMSE=2.3034
+    Epoch 150/500: Train Loss=0.2371, Val Loss=4.9410, Val RMSE=2.1124
+    Early stopping at epoch 181
+    Seed 42: Test RMSE=3.1661, MAE=0.6109, R2=-2.8694
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=0.3622, Val Loss=3.1064, Val RMSE=1.6987
+    Epoch 100/500: Train Loss=0.3213, Val Loss=2.6911, Val RMSE=1.5783
+    Epoch 150/500: Train Loss=0.2588, Val Loss=2.1758, Val RMSE=1.4265
+    Epoch 200/500: Train Loss=0.2274, Val Loss=1.7271, Val RMSE=1.2757
+    Epoch 250/500: Train Loss=0.2050, Val Loss=1.6299, Val RMSE=1.2466
+    Epoch 300/500: Train Loss=0.2021, Val Loss=1.4080, Val RMSE=1.1621
+    Epoch 350/500: Train Loss=0.1582, Val Loss=1.5954, Val RMSE=1.2344
+    Early stopping at epoch 365
+    Seed 123: Test RMSE=1.0532, MAE=0.5001, R2=0.5718
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=0.3849, Val Loss=5.3914, Val RMSE=2.2054
+    Epoch 100/500: Train Loss=0.2837, Val Loss=3.2406, Val RMSE=1.7227
+    Epoch 150/500: Train Loss=0.2484, Val Loss=2.1842, Val RMSE=1.4232
+    Epoch 200/500: Train Loss=0.2179, Val Loss=1.9489, Val RMSE=1.3511
+    Early stopping at epoch 238
+    Seed 456: Test RMSE=1.8629, MAE=0.5437, R2=-0.3396
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=0.3705, Val Loss=3.2979, Val RMSE=1.7394
+    Epoch 100/500: Train Loss=0.2978, Val Loss=2.0746, Val RMSE=1.3871
+    Epoch 150/500: Train Loss=0.2341, Val Loss=2.5786, Val RMSE=1.5460
+    Early stopping at epoch 150
+    Seed 789: Test RMSE=3.4365, MAE=0.6382, R2=-3.5588
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=0.4073, Val Loss=2.8682, Val RMSE=1.6223
+    Epoch 100/500: Train Loss=0.3206, Val Loss=2.4365, Val RMSE=1.5000
+    Epoch 150/500: Train Loss=0.2493, Val Loss=2.2261, Val RMSE=1.4343
+    Early stopping at epoch 166
+    Seed 1024: Test RMSE=1.2874, MAE=0.5068, R2=0.3602
+
+  Fold 3 Results:
+    Individual seeds RMSE: 2.1612 ± 0.9712
+    Ensemble RMSE: 2.1118
+    Uncertainty-Error correlation: r=0.9619 (p=0.0000e+00)
+    High uncertainty RMSE: 4.5211, Low uncertainty RMSE: 0.6816
+
+================================================================================
+Fold 4/5
+================================================================================
+Train: 2159, Val: 540, Test: 675
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=0.3346, Val Loss=5.4026, Val RMSE=2.2052
+    Epoch 100/500: Train Loss=0.2780, Val Loss=5.5221, Val RMSE=2.2319
+    Early stopping at epoch 114
+    Seed 42: Test RMSE=1.5801, MAE=0.5372, R2=-0.0958
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=0.3581, Val Loss=3.4357, Val RMSE=1.7715
+    Epoch 100/500: Train Loss=0.3235, Val Loss=2.6809, Val RMSE=1.5692
+    Epoch 150/500: Train Loss=0.2690, Val Loss=3.0506, Val RMSE=1.6717
+    Early stopping at epoch 154
+    Seed 123: Test RMSE=1.0583, MAE=0.5457, R2=0.5084
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=0.4033, Val Loss=4.4590, Val RMSE=2.0182
+    Epoch 100/500: Train Loss=0.2842, Val Loss=3.0912, Val RMSE=1.6810
+    Epoch 150/500: Train Loss=0.2304, Val Loss=3.3630, Val RMSE=1.7567
+    Early stopping at epoch 157
+    Seed 456: Test RMSE=1.1040, MAE=0.4978, R2=0.4651
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=0.3658, Val Loss=2.1219, Val RMSE=1.4224
+    Epoch 100/500: Train Loss=0.2752, Val Loss=1.5874, Val RMSE=1.2262
+    Epoch 150/500: Train Loss=0.2356, Val Loss=1.6017, Val RMSE=1.2325
+    Early stopping at epoch 179
+    Seed 789: Test RMSE=0.7284, MAE=0.4452, R2=0.7671
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=0.3628, Val Loss=2.5036, Val RMSE=1.5305
+    Epoch 100/500: Train Loss=0.3332, Val Loss=1.8296, Val RMSE=1.3124
+    Early stopping at epoch 135
+    Seed 1024: Test RMSE=0.8727, MAE=0.5113, R2=0.6657
+
+  Fold 4 Results:
+    Individual seeds RMSE: 1.0687 ± 0.2888
+    Ensemble RMSE: 0.9992
+    Uncertainty-Error correlation: r=0.8808 (p=1.1737e-220)
+    High uncertainty RMSE: 2.0069, Low uncertainty RMSE: 0.4911
+
+================================================================================
+Fold 5/5
+================================================================================
+Train: 2160, Val: 540, Test: 674
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=0.3618, Val Loss=12.5797, Val RMSE=3.3450
+    Early stopping at epoch 55
+    Seed 42: Test RMSE=2.5580, MAE=2.3632, R2=-1.4977
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=0.3590, Val Loss=2.9013, Val RMSE=1.6321
+    Epoch 100/500: Train Loss=0.3109, Val Loss=2.0555, Val RMSE=1.3792
+    Epoch 150/500: Train Loss=0.2411, Val Loss=2.0050, Val RMSE=1.3722
+    Epoch 200/500: Train Loss=0.2072, Val Loss=1.4879, Val RMSE=1.1858
+    Epoch 250/500: Train Loss=0.1761, Val Loss=1.3393, Val RMSE=1.1279
+    Early stopping at epoch 294
+    Seed 123: Test RMSE=0.6452, MAE=0.4509, R2=0.8411
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=0.3927, Val Loss=6.3762, Val RMSE=2.3914
+    Epoch 100/500: Train Loss=0.2877, Val Loss=3.1734, Val RMSE=1.7004
+    Epoch 150/500: Train Loss=0.2503, Val Loss=3.1721, Val RMSE=1.7005
+    Epoch 200/500: Train Loss=0.2311, Val Loss=2.6950, Val RMSE=1.5693
+    Early stopping at epoch 208
+    Seed 456: Test RMSE=0.7528, MAE=0.4612, R2=0.7837
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=0.3873, Val Loss=3.3344, Val RMSE=1.7541
+    Epoch 100/500: Train Loss=0.2900, Val Loss=2.6591, Val RMSE=1.5613
+    Epoch 150/500: Train Loss=0.2651, Val Loss=3.0156, Val RMSE=1.6589
+    Early stopping at epoch 159
+    Seed 789: Test RMSE=0.7770, MAE=0.5060, R2=0.7696
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=0.3577, Val Loss=3.4178, Val RMSE=1.8156
+    Epoch 100/500: Train Loss=0.2875, Val Loss=2.3462, Val RMSE=1.4806
+    Early stopping at epoch 114
+    Seed 1024: Test RMSE=0.7104, MAE=0.4725, R2=0.8074
+
+  Fold 5 Results:
+    Individual seeds RMSE: 1.0887 ± 0.7360
+    Ensemble RMSE: 0.9100
+    Uncertainty-Error correlation: r=0.4262 (p=3.9699e-31)
+    High uncertainty RMSE: 1.2292, Low uncertainty RMSE: 0.8105
+
+================================================================================
+Egc Cross-Fold Results:
+  Ensemble RMSE: 1.1248 ± 0.5010
+  Best fold: 1 (RMSE: 0.7316)
+  Worst fold: 3 (RMSE: 2.1118)
+  Variance reduction: -3.94%
+================================================================================
+
+
+================================================================================
+FINAL SUMMARY
+================================================================================
+
+Tm:
+  Mean RMSE: 59.1845 ± 1.1167
+  Variance reduction: 18.94%
+
+Egc:
+  Mean RMSE: 1.1248 ± 0.5010
+  Variance reduction: -3.94%
+
+Results saved to: /home/home_public/aisci/AIscientist/src/4_day4_ensemble_uq/results.json
+Checkpoints saved to: /home/home_public/aisci/AIscientist/src/4_day4_ensemble_uq/checkpoints
+================================================================================
+

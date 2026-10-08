@@ -1,0 +1,29 @@
+================================================================================
+TCP FAILURE DIAGNOSIS - ABLATION STUDIES
+================================================================================
+
+Date: 2026-03-26 17:50:57.365027
+
+ABLATION 1: EXACT DAY 2 BASELINE (GRIN FEATURES)
+--------------------------------------------------------------------------------
+Mean RMSE: 34.91 ± 1.82 K
+Fold RMSEs: ['34.49', '33.34', '34.22', '38.48', '34.04']
+Expected: ~32.31 K
+Gap: 2.60 K
+
+ABLATION 2: CURRENT TCP SETUP (REPERIOGT FEATURES)
+--------------------------------------------------------------------------------
+Mean RMSE: 35.35 ± 1.48 K
+Fold RMSEs: ['35.23', '34.37', '33.85', '38.11', '35.18']
+Expected: ~35 K (current TCP performance)
+
+================================================================================
+DIAGNOSIS
+================================================================================
+
+❌ ABLATION 1 DOES NOT MATCH EXPECTED BASELINE
+   Gap: 2.60 K
+   There may be implementation issues
+
+✅ Feature choice is not the main issue
+

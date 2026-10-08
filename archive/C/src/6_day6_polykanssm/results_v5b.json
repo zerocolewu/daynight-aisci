@@ -1,0 +1,98 @@
+{
+  "model": "PolyKAN-SSM-v5b",
+  "config": {
+    "data_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+    "work_dir": "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm",
+    "hidden_dim": 256,
+    "num_layers": 4,
+    "dropout": 0.3,
+    "spectral_radius": 0.99,
+    "num_frequencies": 4,
+    "lr": 0.0005,
+    "weight_decay": 0.005,
+    "batch_size": 32,
+    "max_epochs": 500,
+    "patience": 30,
+    "scheduler_patience": 15,
+    "scheduler_factor": 0.5,
+    "noncovalent_cutoff": 5.0,
+    "num_seeds": 5,
+    "train_ratio": 0.72,
+    "val_ratio": 0.08,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      2024
+    ],
+    "pred_l2_penalty": 0.01
+  },
+  "node_dim": 21,
+  "edge_dim": 23,
+  "num_samples": 7170,
+  "mean_test_rmse": 38.173412217116315,
+  "std_test_rmse": 1.4584586212016513,
+  "mean_test_mae": 26.45208527609239,
+  "std_test_mae": 0.9902377708772411,
+  "mean_test_r2": 0.8835320896255425,
+  "mean_train_rmse": 29.064256583358638,
+  "mean_val_rmse": 39.40121710984455,
+  "train_val_gap": 10.336960526485914,
+  "best_test_rmse": 36.45039447757612,
+  "sota_target": 30.8,
+  "beat_sota": false,
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "best_epoch": 139,
+      "train_rmse": 26.68947479867294,
+      "val_rmse": 35.060717052842236,
+      "test_rmse": 38.735910528318406,
+      "test_mae": 25.750442169726103,
+      "test_r2": 0.8817658045949814,
+      "num_params": 2207879
+    },
+    {
+      "seed": 123,
+      "best_epoch": 189,
+      "train_rmse": 26.32924276717295,
+      "val_rmse": 37.42860152761345,
+      "test_rmse": 36.45039447757612,
+      "test_mae": 25.450329832499037,
+      "test_r2": 0.8915305212981733,
+      "num_params": 2207879
+    },
+    {
+      "seed": 456,
+      "best_epoch": 112,
+      "train_rmse": 28.18519623529691,
+      "val_rmse": 38.50580012876491,
+      "test_rmse": 37.32198929216921,
+      "test_mae": 25.994911074897967,
+      "test_r2": 0.8866431381147822,
+      "num_params": 2207879
+    },
+    {
+      "seed": 789,
+      "best_epoch": 59,
+      "train_rmse": 32.99435762592369,
+      "val_rmse": 45.77584441682662,
+      "test_rmse": 40.69619522360381,
+      "test_mae": 28.18963554088247,
+      "test_r2": 0.8695228917251041,
+      "num_params": 2207879
+    },
+    {
+      "seed": 2024,
+      "best_epoch": 90,
+      "train_rmse": 31.123011489726718,
+      "val_rmse": 40.235122423175504,
+      "test_rmse": 37.66257156391404,
+      "test_mae": 26.875107762456356,
+      "test_r2": 0.8881980923946711,
+      "num_params": 2207879
+    }
+  ],
+  "timestamp": "2026-05-08T19:22:23.313065"
+}

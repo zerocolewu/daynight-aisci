@@ -1,0 +1,36 @@
+================================================================================
+IAPT v2: Intensive-Aware Polymer Transformer
+Target: Beat RMSE 30.8 on Tg dataset
+================================================================================
+
+Device: cuda
+Work directory: /home/home_public/aisci/AIscientist/src/4_iapt_v2_intensive_aware
+
+Hyperparameters:
+  Hidden dim: 256
+  GNN layers: 5
+  Line graph layers: 2
+  Dropout: 0.1
+  Batch size: 32
+  Max epochs: 500
+  Early stopping patience: 30
+
+
+================================================================================
+Creating datasets...
+================================================================================
+Processing 5162 train samples...
+[17:29:42] UFFTYPER: Unrecognized atom type: *_ (0)
+[17:29:42] UFFTYPER: Unrecognized atom type: *_ (7)
+[17:29:42] UFFTYPER: Unrecognized atom type: *_ (0)
+[17:29:42] UFFTYPER: Unrecognized atom type: *_ (64)
+[17:29:43] UFFTYPER: Unrecognized atom type: *_ (0)
+[17:29:43] UFFTYPER: Unrecognized atom type: *_ (35)
+[17:29:43] UFFTYPER: Unrecognized atom type: *_ (0)
+[17:29:43] UFFTYPER: Unrecognized atom type: *_ (21)
+[17:29:44] UFFTYPER: Unrecognized atom type: *_ (0)
+[17:29:44] UFFTYPER: Unrecognized atom type: *_ (79)
+[17:29:44] UFFTYPER: Unrecognized atom type: *_ (0)
+[17:29:44] UFFTYPER: Unrecognized atom type: *_ (76)
+[17:29:44] UFFTYPER: Unrecognized atom type: *_ (0)
+[17:29:44] UFFTYPER: Unrecognized atom type: *_ (7)

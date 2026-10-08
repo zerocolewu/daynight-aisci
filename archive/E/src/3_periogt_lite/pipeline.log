@@ -1,0 +1,122 @@
+[Sat May 16 13:08:25 CST 2026] Pipeline started
+[Sat May 16 13:08:25 CST 2026] Waiting for pre-training jobs to complete...
+[Sat May 16 13:08:27 CST 2026] Still running... SC: Epoch 1/50, SR: 
+[Sat May 16 13:13:35 CST 2026] Still running... SC: Epoch 1/50, SR: 
+[Sat May 16 13:18:47 CST 2026] Still running... SC: Epoch 2/50, SR: 
+[Sat May 16 13:24:05 CST 2026] Still running... SC: Epoch 2/50, SR: Epoch 1/50
+[Sat May 16 13:29:34 CST 2026] Still running... SC: Epoch 3/50, SR: Epoch 2/50
+[Sat May 16 13:35:14 CST 2026] Still running... SC: Epoch 3/50, SR: Epoch 3/50
+[Sat May 16 13:41:07 CST 2026] Still running... SC: Epoch 4/50, SR: Epoch 4/50
+[Sat May 16 13:47:11 CST 2026] Still running... SC: Epoch 4/50, SR: Epoch 5/50
+[Sat May 16 13:53:29 CST 2026] Still running... SC: Epoch 5/50, SR: Epoch 6/50
+[Sat May 16 13:59:59 CST 2026] Still running... SC: Epoch 5/50, SR: Epoch 7/50
+[Sat May 16 14:06:44 CST 2026] Still running... SC: Epoch 6/50, SR: Epoch 8/50
+[Sat May 16 14:13:40 CST 2026] Still running... SC: Epoch 6/50, SR: Epoch 9/50
+[Sat May 16 14:20:53 CST 2026] Still running... SC: Epoch 7/50, SR: Epoch 10/50
+[Sat May 16 14:28:18 CST 2026] Still running... SC: Epoch 7/50, SR: Epoch 11/50
+[Sat May 16 14:36:00 CST 2026] Still running... SC: Epoch 8/50, SR: Epoch 12/50
+[Sat May 16 14:43:55 CST 2026] Still running... SC: Epoch 9/50, SR: Epoch 13/50
+[Sat May 16 14:52:05 CST 2026] Still running... SC: Epoch 9/50, SR: Epoch 14/50
+[Sat May 16 15:00:35 CST 2026] Still running... SC: Epoch 10/50, SR: Epoch 15/50
+[Sat May 16 15:09:20 CST 2026] Still running... SC: Epoch 11/50, SR: Epoch 17/50
+[Sat May 16 15:18:29 CST 2026] Still running... SC: Epoch 11/50, SR: Epoch 18/50
+[Sat May 16 15:27:50 CST 2026] Still running... SC: Epoch 12/50, SR: Epoch 20/50
+[Sat May 16 15:37:27 CST 2026] Still running... SC: Epoch 13/50, SR: Epoch 21/50
+[Sat May 16 15:47:35 CST 2026] Still running... SC: Epoch 14/50, SR: Epoch 22/50
+[Sat May 16 15:57:55 CST 2026] Still running... SC: Epoch 15/50, SR: Epoch 24/50
+[Sat May 16 16:08:36 CST 2026] Still running... SC: Epoch 16/50, SR: Epoch 26/50
+[Sat May 16 16:19:50 CST 2026] Still running... SC: Epoch 17/50, SR: Epoch 27/50
+[Sat May 16 16:31:20 CST 2026] Still running... SC: Epoch 18/50, SR: Epoch 29/50
+[Sat May 16 16:43:13 CST 2026] Still running... SC: Epoch 19/50, SR: Epoch 31/50
+[Sat May 16 16:55:42 CST 2026] Still running... SC: Epoch 19/50, SR: Epoch 33/50
+[Sat May 16 17:08:26 CST 2026] Still running... SC: Epoch 20/50, SR: Epoch 35/50
+[Sat May 16 17:21:36 CST 2026] Still running... SC: Epoch 22/50, SR: Epoch 37/50
+[Sat May 16 17:35:23 CST 2026] Still running... SC: Epoch 23/50, SR: Epoch 39/50
+[Sat May 16 17:49:33 CST 2026] Still running... SC: Epoch 24/50, SR: Epoch 41/50
+[Sat May 16 18:04:01 CST 2026] Still running... SC: Epoch 25/50, SR: Epoch 43/50
+[Sat May 16 18:19:08 CST 2026] Still running... SC: Epoch 26/50, SR: Epoch 45/50
+[Sat May 16 18:35:03 CST 2026] Still running... SC: Epoch 27/50, SR: Epoch 47/50
+[Sat May 16 18:51:13 CST 2026] Still running... SC: Epoch 29/50, SR: Epoch 50/50
+[Sat May 16 19:07:56 CST 2026] Still running... SC: Epoch 30/50, SR: Epoch 50/50
+[Sat May 16 19:24:35 CST 2026] Still running... SC: Epoch 32/50, SR: Epoch 50/50
+[Sat May 16 19:41:32 CST 2026] Still running... SC: Epoch 33/50, SR: Epoch 50/50
+[Sat May 16 19:58:39 CST 2026] Still running... SC: Epoch 34/50, SR: Epoch 50/50
+[Sat May 16 20:16:20 CST 2026] Still running... SC: Epoch 36/50, SR: Epoch 50/50
+[Sat May 16 20:33:52 CST 2026] Still running... SC: Epoch 37/50, SR: Epoch 50/50
+[Sat May 16 20:51:53 CST 2026] Still running... SC: Epoch 39/50, SR: Epoch 50/50
+[Sat May 16 21:09:55 CST 2026] Still running... SC: Epoch 40/50, SR: Epoch 50/50
+[Sat May 16 21:28:28 CST 2026] Still running... SC: Epoch 42/50, SR: Epoch 50/50
+[Sat May 16 21:46:59 CST 2026] Still running... SC: Epoch 43/50, SR: Epoch 50/50
+[Sat May 16 22:06:00 CST 2026] Still running... SC: Epoch 45/50, SR: Epoch 50/50
+[Sat May 16 22:25:11 CST 2026] Still running... SC: Epoch 47/50, SR: Epoch 50/50
+[Sat May 16 22:44:38 CST 2026] Still running... SC: Epoch 48/50, SR: Epoch 50/50
+[Sat May 16 23:04:18 CST 2026] Still running... SC: Epoch 50/50, SR: Epoch 50/50
+[Sat May 16 23:09:18 CST 2026] Both pre-training processes finished
+[Sat May 16 23:09:18 CST 2026] All output files found!
+
+[Sat May 16 23:09:18 CST 2026] === PRE-TRAINING SUMMARY ===
+subgraph_crop: ERROR - -1
+shifted_ru: ERROR - -1
+
+[Sat May 16 23:09:18 CST 2026] === FINE-TUNING: subgraph_crop ===
+============================================================
+Phase: Fine-tuning (pretrained)
+============================================================
+Device: cuda
+Data: train=5162, val=573, test=1435
+Model parameters: 444,932
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_subgraph_crop.pt
+Epoch   1: train_rmse=138.7697, val_rmse=64.1096
+Epoch  10: train_rmse=41.3766, val_rmse=42.9619
+Epoch  20: train_rmse=36.6724, val_rmse=42.2564
+Epoch  30: train_rmse=32.8450, val_rmse=42.7410
+Epoch  40: train_rmse=30.2706, val_rmse=42.5467
+Epoch  50: train_rmse=28.4716, val_rmse=43.4534
+Epoch  60: train_rmse=27.2727, val_rmse=40.5425
+Epoch  70: train_rmse=25.8641, val_rmse=42.8621
+Early stopping at epoch 72 (no improvement for 30 epochs)
+
+============================================================
+Results (pretrained):
+  Train RMSE: 27.1630
+  Val RMSE:   40.1053
+  Test RMSE:  52.2537
+  Best epoch: 42
+  Overfit gap: -25.0907
+  Saved to /home/home_public/aisci/AIscientist/src/3_periogt_lite/results_pretrained_subgraph_crop.json
+============================================================
+[Sat May 16 23:13:29 CST 2026] subgraph_crop fine-tuning done
+
+[Sat May 16 23:13:29 CST 2026] === FINE-TUNING: shifted_ru ===
+============================================================
+Phase: Fine-tuning (pretrained)
+============================================================
+Device: cuda
+Data: train=5162, val=573, test=1435
+Model parameters: 444,932
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_shifted_ru.pt
+Epoch   1: train_rmse=129.7666, val_rmse=62.6735
+Epoch  10: train_rmse=36.7290, val_rmse=45.1128
+Epoch  20: train_rmse=28.9792, val_rmse=45.7433
+Epoch  30: train_rmse=25.4602, val_rmse=42.0749
+Epoch  40: train_rmse=22.9036, val_rmse=46.5418
+Epoch  50: train_rmse=21.9025, val_rmse=44.3328
+Epoch  60: train_rmse=20.6192, val_rmse=42.7397
+Epoch  70: train_rmse=19.3295, val_rmse=45.0592
+Early stopping at epoch 73 (no improvement for 30 epochs)
+
+============================================================
+Results (pretrained):
+  Train RMSE: 20.0559
+  Val RMSE:   41.1426
+  Test RMSE:  54.1300
+  Best epoch: 43
+  Overfit gap: -34.0741
+  Saved to /home/home_public/aisci/AIscientist/src/3_periogt_lite/results_pretrained_shifted_ru.json
+============================================================
+[Sat May 16 23:17:21 CST 2026] shifted_ru fine-tuning done
+
+[Sat May 16 23:17:21 CST 2026] === FINAL COMPARISON ===
+Traceback (most recent call last):
+  File "<string>", line 5, in <module>
+KeyError: 'test_rmse'

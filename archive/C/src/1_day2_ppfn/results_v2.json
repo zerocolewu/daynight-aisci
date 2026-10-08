@@ -1,0 +1,81 @@
+{
+  "main": {
+    "experiment_name": "periodic_edge",
+    "config": {
+      "use_periodic_edge": true,
+      "hidden_dim": 256,
+      "num_gnn_layers": 6,
+      "dropout": 0.1,
+      "batch_size": 64,
+      "learning_rate": 0.0005,
+      "weight_decay": 0.0001,
+      "max_epochs": 300,
+      "patience": 30,
+      "n_params": 978953
+    },
+    "best_epoch": 83,
+    "train": {
+      "rmse": 33.811893463134766,
+      "mae": 21.354232788085938,
+      "r2": 0.9085165336728096
+    },
+    "val": {
+      "rmse": 37.43675994873047,
+      "mae": 24.096736907958984,
+      "r2": 0.8870677351951599
+    },
+    "test": {
+      "rmse": 37.757972717285156,
+      "mae": 24.934179306030273,
+      "r2": 0.8893320858478546
+    },
+    "timestamp": "2026-05-07 03:42:38"
+  },
+  "ablation": {
+    "experiment_name": "no_periodic_edge",
+    "config": {
+      "use_periodic_edge": false,
+      "hidden_dim": 256,
+      "num_gnn_layers": 6,
+      "dropout": 0.1,
+      "batch_size": 64,
+      "learning_rate": 0.0005,
+      "weight_decay": 0.0001,
+      "max_epochs": 300,
+      "patience": 30,
+      "n_params": 978953
+    },
+    "best_epoch": 80,
+    "train": {
+      "rmse": 33.935611724853516,
+      "mae": 21.427976608276367,
+      "r2": 0.9078458473086357
+    },
+    "val": {
+      "rmse": 38.99427032470703,
+      "mae": 24.41812515258789,
+      "r2": 0.8774754479527473
+    },
+    "test": {
+      "rmse": 38.72866439819336,
+      "mae": 25.309358596801758,
+      "r2": 0.8835687637329102
+    },
+    "timestamp": "2026-05-07 03:49:04"
+  },
+  "ablation_comparison": {
+    "with_periodic_edge": {
+      "rmse": 37.757972717285156,
+      "mae": 24.934179306030273,
+      "r2": 0.8893320858478546
+    },
+    "without_periodic_edge": {
+      "rmse": 38.72866439819336,
+      "mae": 25.309358596801758,
+      "r2": 0.8835687637329102
+    },
+    "rmse_improvement": 0.9706916809082031,
+    "pct_improvement": 2.5063907986289466,
+    "periodic_edge_contribution": "positive"
+  }
+}

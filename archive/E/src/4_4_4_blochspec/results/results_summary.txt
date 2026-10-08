@@ -1,0 +1,95 @@
+BlochSpec Iteration 2 Results Summary
+CRITICAL FIX: global_mean_pool (matching Day 1 reference ~50.19)
+====================================================================================================
+
+Experiment                                          Test RMSE           Train RMSE             Gap       Params
+----------------------------------------------------------------------------------------------------
+(a) Baseline GIN+Trimer                        51.71 +/- 0.33       33.88 +/- 2.36  17.83 +/- 2.15      478,724
+(b) BlochSpec (GIN+Bloch)                      53.25 +/- 0.51       29.26 +/- 1.51  23.99 +/- 2.00      447,236
+(c) GIN+WiderMLP (param ctrl)                  51.37 +/- 1.76       28.07 +/- 7.53  23.30 +/- 9.17      675,844
+(d) ReducedGNN+Bloch (dim ctrl)                53.49 +/- 0.10       33.75 +/- 2.85  19.74 +/- 2.95      441,812
+(e) Pure Spectral MLP                          76.71 +/- 1.26       72.46 +/- 1.63   4.25 +/- 0.69        2,945
+(f) GIN + Random Features                      52.11 +/- 0.57       33.35 +/- 4.93  18.76 +/- 5.45      447,236
+(g) GIN + Unweighted Lap                       51.89 +/- 2.18       34.44 +/- 5.24  17.44 +/- 7.12      447,236
+
+====================================================================================================
+Per-Seed Results:
+----------------------------------------------------------------------------------------------------
+
+(a) Baseline GIN+Trimer:
+  seed=42: test=52.1114, train=37.0930, val=40.1181, best_epoch=24, gap=15.0184
+  seed=71: test=51.3101, train=33.0892, val=37.8131, best_epoch=32, gap=18.2209
+  seed=123: test=51.7099, train=31.4695, val=37.8824, best_epoch=39, gap=20.2404
+
+(b) BlochSpec (GIN+Bloch):
+  seed=42: test=52.5274, train=31.3352, val=39.2369, best_epoch=46, gap=21.1922
+  seed=71: test=53.5515, train=27.8148, val=39.5438, best_epoch=69, gap=25.7368
+  seed=123: test=53.6750, train=28.6267, val=37.2700, best_epoch=66, gap=25.0483
+
+(c) GIN+WiderMLP (param ctrl):
+  seed=42: test=53.7288, train=17.4625, val=37.6769, best_epoch=121, gap=36.2663
+  seed=71: test=50.8935, train=34.1829, val=38.5487, best_epoch=27, gap=16.7107
+  seed=123: test=49.4949, train=32.5736, val=37.5684, best_epoch=31, gap=16.9213
+
+(d) ReducedGNN+Bloch (dim ctrl):
+  seed=42: test=53.3562, train=37.4766, val=39.0971, best_epoch=24, gap=15.8797
+  seed=71: test=53.6063, train=30.5697, val=38.9004, best_epoch=54, gap=23.0366
+  seed=123: test=53.5138, train=33.2086, val=38.9316, best_epoch=39, gap=20.3053
+
+(e) Pure Spectral MLP:
+  seed=42: test=77.3241, train=72.3196, val=75.7471, best_epoch=62, gap=5.0045
+  seed=71: test=77.8613, train=74.5188, val=78.4776, best_epoch=26, gap=3.3425
+  seed=123: test=74.9505, train=70.5386, val=74.1559, best_epoch=119, gap=4.4119
+
+(f) GIN + Random Features:
+  seed=42: test=52.1918, train=35.9742, val=38.1354, best_epoch=34, gap=16.2176
+  seed=71: test=51.3701, train=37.6378, val=39.8970, best_epoch=27, gap=13.7322
+  seed=123: test=52.7673, train=26.4404, val=38.8428, best_epoch=84, gap=26.3269
+
+(g) GIN + Unweighted Lap:
+  seed=42: test=48.9901, train=41.5573, val=39.7884, best_epoch=16, gap=7.4329
+  seed=71: test=52.4285, train=29.0691, val=38.8513, best_epoch=63, gap=23.3594
+  seed=123: test=54.2398, train=32.7018, val=39.4231, best_epoch=45, gap=21.5380
+
+====================================================================================================
+Statistical Significance (Paired t-test vs Baseline):
+----------------------------------------------------------------------------------------------------
+Experiment                                     t-stat      p-value    Significant?
+----------------------------------------------------------------------------------------------------
+(a) Baseline GIN+Trimer                           ---          ---        baseline
+(b) BlochSpec (GIN+Bloch)                     -2.7124       0.1133 NO (p>=0.05) (exp worse)
+(c) GIN+WiderMLP (param ctrl)                  0.3054       0.7889 NO (p>=0.05) (exp better)
+(d) ReducedGNN+Bloch (dim ctrl)               -5.8660       0.0279 YES (p<0.05) (exp worse)
+(e) Pure Spectral MLP                        -26.0024       0.0015 YES (p<0.05) (exp worse)
+(f) GIN + Random Features                     -1.2131       0.3489 NO (p>=0.05) (exp worse)
+(g) GIN + Unweighted Lap                      -0.1035       0.9270 NO (p>=0.05) (exp worse)
+
+====================================================================================================
+Delta from Baseline (negative = improvement):
+----------------------------------------------------------------------------------------------------
+(a) Baseline GIN+Trimer                  delta=+0.00 (+0.0%)
+(b) BlochSpec (GIN+Bloch)                delta=+1.54 (+3.0%)
+(c) GIN+WiderMLP (param ctrl)            delta=-0.34 (-0.7%)
+(d) ReducedGNN+Bloch (dim ctrl)          delta=+1.78 (+3.4%)
+(e) Pure Spectral MLP                    delta=+25.00 (+48.3%)
+(f) GIN + Random Features                delta=+0.40 (+0.8%)
+(g) GIN + Unweighted Lap                 delta=+0.18 (+0.3%)
+
+====================================================================================================
+Analysis:
+----------------------------------------------------------------------------------------------------
+
+1. Baseline (global_mean_pool): 51.71 +/- 0.33
+   Day 1 reference: ~50.19
+
+2. BlochSpec improvement: +1.54
+   Random features delta: +0.40
+   Bloch vs Random: +1.14
+   WARNING: Bloch and Random features produce similar results.
+   This suggests the improvement is from dimensionality, not physics.
+
+3. Wider MLP (param control) delta: -0.34
+   If Wider MLP matches BlochSpec, improvement is from params not features.
+
+4. Reduced GNN (dim control, total=256) delta: +1.78
+   If this matches BlochSpec, the input dimension matters more than feature content.

@@ -1,0 +1,151 @@
+{
+  "gate_saturation_per_layer": {
+    "layer_1": {
+      "mean": 0.4303,
+      "std": 0.168,
+      "frac_low": 0.016,
+      "frac_mid": 0.982,
+      "frac_high": 0.003,
+      "mode": "unimodal"
+    },
+    "layer_2": {
+      "mean": 0.4233,
+      "std": 0.4008,
+      "frac_low": 0.384,
+      "frac_mid": 0.379,
+      "frac_high": 0.237,
+      "mode": "BIMODAL"
+    },
+    "layer_3": {
+      "mean": 0.4078,
+      "std": 0.4657,
+      "frac_low": 0.538,
+      "frac_mid": 0.108,
+      "frac_high": 0.354,
+      "mode": "BIMODAL"
+    },
+    "layer_4": {
+      "mean": 0.3724,
+      "std": 0.4652,
+      "frac_low": 0.589,
+      "frac_mid": 0.076,
+      "frac_high": 0.335,
+      "mode": "BIMODAL"
+    }
+  },
+  "cpa_cardinality_correlation": {
+    "neighbor_stats": {
+      "min": 2,
+      "max": 5,
+      "mean": 3.2,
+      "std": 0.7
+    },
+    "sum_norm_correlations": {
+      "layer_1": 0.3145,
+      "layer_2": 0.518,
+      "layer_3": 0.5634,
+      "layer_4": 0.5136
+    },
+    "gate_norm_correlations": {
+      "layer_1": 0.301,
+      "layer_2": 0.2015,
+      "layer_3": -0.0001,
+      "layer_4": -0.0792
+    },
+    "mem146_reference": "r=0.31-0.51 for CPA sum norm"
+  },
+  "chain_length_performance": [
+    {
+      "bin": "Short (<60 nodes)",
+      "count": 355,
+      "cpa_mae": 30.19,
+      "cpa_pspe_mae": 32.54,
+      "delta": -2.35
+    },
+    {
+      "bin": "Medium (60-99 nodes)",
+      "count": 378,
+      "cpa_mae": 22.1,
+      "cpa_pspe_mae": 22.06,
+      "delta": 0.04
+    },
+    {
+      "bin": "Medium-Long (100-138 nodes)",
+      "count": 353,
+      "cpa_mae": 18.91,
+      "cpa_pspe_mae": 18.81,
+      "delta": 0.11
+    },
+    {
+      "bin": "Long (>138 nodes)",
+      "count": 349,
+      "cpa_mae": 18.42,
+      "cpa_pspe_mae": 19.27,
+      "delta": -0.85
+    }
+  ],
+  "pspe_ablation": {
+    "with_pspe": {
+      "rmse": 35.44,
+      "mae": 23.17
+    },
+    "without_pspe": {
+      "rmse": 91.19,
+      "mae": 72.67
+    },
+    "degradation": {
+      "rmse": 55.75,
+      "mae": 49.5
+    },
+    "note": "Zeroing PSPE at test time causes catastrophic degradation. This confirms the model relies on PSPE when available, but this reliance does not improve over CPA-GAT without PSPE."
+  },
+  "attention_patterns": {
+    "representative_polymers": [
+      {
+        "type": "Short",
+        "nodes": 6,
+        "edges": 10
+      },
+      {
+        "type": "Medium",
+        "nodes": 99,
+        "edges": 208
+      },
+      {
+        "type": "Long",
+        "nodes": 348,
+        "edges": 802
+      }
+    ]
+  },
+  "ablation_summary": {
+    "baseline_gat": {
+      "mean_rmse": 37.45,
+      "std_rmse": 0.86,
+      "seeds": [
+        38.12,
+        37.99,
+        36.23
+      ]
+    },
+    "cpa_gat": {
+      "mean_rmse": 35.52,
+      "std_rmse": 0.41,
+      "seeds": [
+        35.27,
+        35.2,
+        36.09
+      ]
+    },
+    "cpa_gat_pspe": {
+      "mean_rmse": 35.86,
+      "std_rmse": 1.06,
+      "seeds": [
+        35.44,
+        34.82,
+        37.31
+      ]
+    }
+  },
+  "conclusion": "PSPE is redundant with CPA. CPA-GAT (35.52K) outperforms CPA-GAT+PSPE (35.86K), though the difference is within statistical noise."
+}

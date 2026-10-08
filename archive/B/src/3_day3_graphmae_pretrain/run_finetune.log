@@ -1,0 +1,78 @@
+============================================================
+GRAPHMAE FINETUNING + BASELINE (3-RU Multimer Graphs)
+============================================================
+Device: cuda
+
+----------------------------------------
+Loading 3-RU graphs and pretrained encoder...
+----------------------------------------
+  Loaded 7170 Tg graphs (7170 labels)
+  Tg avg nodes: 104.2, min=3, max=492
+  Tg label range: [-139.0, 495.0]
+
+  Loading pretrained encoder from /home/home_public/aisci/AIscientist/src/3_day3_graphmae_pretrain/best_pretrained_encoder.pt
+  Encoder keys: 37, e.g. first layer weight: torch.Size([1, 4, 256])
+  Pretraining: 50 epochs, initial loss=0.013483, final=0.004123
+
+Creating Tg train/val/test split (seed=71, 72/8/20)...
+  Train: 5162, Val: 573, Test: 1435
+
+----------------------------------------
+STAGE 3: FINETUNING (PRETRAINED ENCODER)
+----------------------------------------
+  Parameters: 3,570,945
+  LR: 0.0003, WD: 1e-05, Batch: 32
+  [FT] Epoch   1 | Train RMSE: 100.69K | Val RMSE: 56.22K
+  [FT] Epoch  10 | Train RMSE: 41.28K | Val RMSE: 51.12K
+  [FT] Epoch  20 | Train RMSE: 36.81K | Val RMSE: 43.46K
+  [FT] Epoch  30 | Train RMSE: 33.50K | Val RMSE: 48.88K
+  [FT] Epoch  40 | Train RMSE: 31.09K | Val RMSE: 40.94K
+  [FT] Epoch  50 | Train RMSE: 29.16K | Val RMSE: 39.05K
+  [FT] Epoch  60 | Train RMSE: 27.91K | Val RMSE: 39.87K
+  [FT] Epoch  70 | Train RMSE: 27.41K | Val RMSE: 37.83K
+  [FT] Epoch  80 | Train RMSE: 25.92K | Val RMSE: 36.54K
+  [FT] Epoch  90 | Train RMSE: 24.66K | Val RMSE: 38.10K
+  [FT] Epoch 100 | Train RMSE: 23.94K | Val RMSE: 35.60K
+  [FT] Epoch 110 | Train RMSE: 23.34K | Val RMSE: 36.17K
+  [FT] Epoch 120 | Train RMSE: 22.87K | Val RMSE: 36.25K
+  [FT] Early stopping at epoch 128 (best val=35.18K at epoch 98)
+
+Pretrained Test RMSE: 39.69K, MAE: 25.82K, R2: 0.8703
+
+----------------------------------------
+STAGE 4: BASELINE (RANDOM INIT)
+----------------------------------------
+  Parameters: 3,570,945
+  LR: 0.0003, WD: 1e-05, Batch: 32
+  [BL] Epoch   1 | Train RMSE: 94.28K | Val RMSE: 65.10K
+  [BL] Epoch  10 | Train RMSE: 52.17K | Val RMSE: 56.41K
+  [BL] Epoch  20 | Train RMSE: 48.03K | Val RMSE: 50.57K
+  [BL] Epoch  30 | Train RMSE: 43.99K | Val RMSE: 49.18K
+  [BL] Epoch  40 | Train RMSE: 41.99K | Val RMSE: 47.57K
+  [BL] Epoch  50 | Train RMSE: 39.67K | Val RMSE: 40.50K
+  [BL] Epoch  60 | Train RMSE: 38.92K | Val RMSE: 45.36K
+  [BL] Epoch  70 | Train RMSE: 36.46K | Val RMSE: 40.47K
+  [BL] Epoch  80 | Train RMSE: 35.28K | Val RMSE: 40.42K
+  [BL] Epoch  90 | Train RMSE: 34.90K | Val RMSE: 43.58K
+  [BL] Epoch 100 | Train RMSE: 33.55K | Val RMSE: 46.17K
+  [BL] Early stopping at epoch 102 (best val=38.46K at epoch 72)
+
+Baseline Test RMSE: 40.27K, MAE: 27.83K, R2: 0.8665
+
+----------------------------------------
+STAGE 5: RESULTS & ANALYSIS
+----------------------------------------
+Results saved to /home/home_public/aisci/AIscientist/src/3_day3_graphmae_pretrain/finetune_results.json
+Finetuning curves saved to /home/home_public/aisci/AIscientist/src/3_day3_graphmae_pretrain/finetune_curves.png
+
+Writing diagnostic analysis...
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/3_day3_graphmae_pretrain/run_finetune.py", line 598, in <module>
+    main()
+  File "/home/home_public/aisci/AIscientist/src/3_day3_graphmae_pretrain/run_finetune.py", line 551, in main
+    diff = (ft_encoder.state_dict()[key].cpu() - original_pretrained[key]).norm().item()
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/_tensor.py", line 872, in norm
+    return torch.norm(self, p, dim, keepdim, dtype=dtype)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/functional.py", line 1805, in norm
+    return torch.linalg.vector_norm(
+RuntimeError: linalg.vector_norm: Expected a floating point or complex tensor as input. Got Long

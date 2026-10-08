@@ -1,0 +1,6 @@
+/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase2_sampling.py:208: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  train_loader = DataLoader(train_data, batch_size=64, shuffle=True)
+/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase2_sampling.py:209: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  val_loader = DataLoader(val_data, batch_size=256, shuffle=False)
+/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(

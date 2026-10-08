@@ -1,0 +1,158 @@
+Using device: cuda
+
+================================================================================
+FEATURE-DECOMPOSED MULTI-TASK LEARNING (FD-MTL)
+================================================================================
+Start time: 2026-03-25 04:57:04
+================================================================================
+
+Loading Tg dataset...
+  Loaded 7170 samples
+  Successfully processed 7145 molecules (25 failed)
+
+Loading Tm dataset...
+  Loaded 3651 samples
+  Successfully processed 3636 molecules (15 failed)
+
+Loading Egc dataset...
+  Loaded 3380 samples
+  Successfully processed 3374 molecules (6 failed)
+
+================================================================================
+FEATURE-PROPERTY CORRELATION ANALYSIS
+================================================================================
+
+  Shared features: 51
+  Tg-specific: 24
+  Tm-specific: 0
+  Egc-specific: 5
+
+  Validated correlations (Day 4-5):
+    Rigidity (rotatable bonds) vs Tg: r=-0.2256
+    Conjugation (aromatic bonds) vs Egc: r=-0.7365
+
+================================================================================
+ABLATION STUDIES
+================================================================================
+
+--------------------------------------------------------------------------------
+Ablation 1: Single-task Models (Baseline)
+--------------------------------------------------------------------------------
+
+  Training Tg single-task model...
+
+    Fold 1/5
+      Test RMSE: 40.7248
+
+    Fold 2/5
+      Test RMSE: 60.5683
+
+    Fold 3/5
+      Test RMSE: 42.0240
+
+    Fold 4/5
+      Test RMSE: 760.8186
+
+    Fold 5/5
+      Test RMSE: 37.7164
+
+  Training Tm single-task model...
+
+    Fold 1/5
+      Test RMSE: 60.3945
+
+    Fold 2/5
+      Test RMSE: 59.5211
+
+    Fold 3/5
+      Test RMSE: 60.7961
+
+    Fold 4/5
+      Test RMSE: 208.9542
+
+    Fold 5/5
+      Test RMSE: 58.7694
+
+  Training Egc single-task model...
+
+    Fold 1/5
+      Test RMSE: 0.9712
+
+    Fold 2/5
+      Test RMSE: 1.5883
+
+    Fold 3/5
+      Test RMSE: 1.1713
+
+    Fold 4/5
+      Test RMSE: 0.7298
+
+    Fold 5/5
+      Test RMSE: 0.6067
+
+--------------------------------------------------------------------------------
+Ablation 2: Multi-task with ALL Features (Naive)
+--------------------------------------------------------------------------------
+
+    Fold 1/5
+      Tg RMSE: 38.7271, Tm RMSE: 57.3601, Egc RMSE: 0.5116
+
+    Fold 2/5
+      Tg RMSE: 38.0395, Tm RMSE: 58.9681, Egc RMSE: 0.5047
+
+    Fold 3/5
+      Tg RMSE: 42.6046, Tm RMSE: 60.7842, Egc RMSE: 0.5285
+
+    Fold 4/5
+      Tg RMSE: 37.1261, Tm RMSE: 59.7088, Egc RMSE: 0.5009
+
+    Fold 5/5
+      Tg RMSE: 41.0162, Tm RMSE: 58.6577, Egc RMSE: 0.5232
+
+--------------------------------------------------------------------------------
+Ablation 3: Multi-task with Feature Decomposition (Full Model)
+--------------------------------------------------------------------------------
+
+    Fold 1/5
+      Tg RMSE: 37.8550, Tm RMSE: 57.2443, Egc RMSE: 0.5079
+
+    Fold 2/5
+      Tg RMSE: 38.9939, Tm RMSE: 58.4016, Egc RMSE: 0.5302
+
+    Fold 3/5
+      Tg RMSE: 42.1155, Tm RMSE: 60.9699, Egc RMSE: 0.5005
+
+    Fold 4/5
+      Tg RMSE: 40.2346, Tm RMSE: 59.2111, Egc RMSE: 0.5270
+
+    Fold 5/5
+      Tg RMSE: 41.3237, Tm RMSE: 58.7835, Egc RMSE: 0.5296
+
+Report saved to /home/home_public/aisci/AIscientist/src/5_day5_fd_mtl/results.txt
+
+================================================================================
+FINAL RESULTS SUMMARY
+================================================================================
+
+Single-Task Baseline:
+  Tg:  188.3704 +/- 286.3367
+  Tm:  89.6871 +/- 59.6377
+  Egc: 1.0135 +/- 0.3473
+
+MTL with ALL Features:
+  Tg:  39.5027 +/- 2.0151
+  Tm:  59.0958 +/- 1.1356
+  Egc: 0.5138 +/- 0.0105
+
+MTL with Feature Decomposition:
+  Tg:  40.1045 +/- 1.5389
+  Tm:  58.9221 +/- 1.2151
+  Egc: 0.5190 +/- 0.0124
+
+Target Assessment:
+  Tg:  Target <31.5, Achieved 188.3704 - FAIL
+  Tm:  Target <55.0, Achieved 89.6871 - FAIL
+  Egc: Target <0.50, Achieved 1.0135 - FAIL
+
+End time: 2026-03-25 08:14:08
+================================================================================

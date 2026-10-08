@@ -1,0 +1,4 @@
+,Test RMSE,Test MAE,Test R²,Test Pearson R,Best Val RMSE,Best Epoch,Training Time (min)
+PerioGT (Baseline),36.41,25.60,0.9000,0.9487,39.19,211,29.6
+RE-PerioGT (Feature Only),35.56,24.83,0.9046,0.9521,36.94,207,30.7
+RE-PerioGT (Full),35.55,24.95,0.9047,0.9513,37.97,245,316.9

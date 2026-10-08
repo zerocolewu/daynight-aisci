@@ -1,0 +1,82 @@
+================================================================================
+GRIN + ELENE Readout Variants Experiment - SUMMARY
+Generated: 2026-05-23 07:25:28.670992
+================================================================================
+
+Experiment Configuration:
+  Multimer: {1,3}-RU mixed (1:1 mixed augmentation)
+  Feature level: rich (Rich: 47 node + 10 edge)
+  Backbone: 3-layer GAT, 128 hidden, 4 heads, dropout=0.1
+  Train/Val/Test split: 72/8/20, seed=71
+  Optimizer: Adam, lr=0.001, weight_decay=1e-05
+  Batch size: 32, Max epochs: 300, Patience: 30
+  L1 lambda: 0.001, L1 warmup: 50 epochs
+  Seeds: [71, 72, 73] (3 per condition)
+  Test: 1-RU graphs (standard test)
+
+================================================================================
+1. RESULTS TABLE (mean +/- std over 3 seeds)
+================================================================================
+Condition                      Test RMSE     Test MAE    Test R2  Best Ep    Time(s)
+--------------------------------------------------------------------------------
+GAT+mean                      44.57±1.73   30.88±1.08   0.8392±0.0097     168       851
+GAT+max                       46.74±2.46   34.31±1.82   0.8230±0.0153      50       349
+GAT+max+L1                    46.83±1.82   33.85±2.08   0.8225±0.0105      38       301
+GAT+mean+ELENE                45.70±0.78   32.02±0.46   0.8310±0.0052     113       625
+GAT+max+L1+ELENE              46.97±0.56   34.38±0.20   0.8214±0.0012      69       441
+
+L1 Sparsity Analysis:
+----------------------------------------
+  GAT+max+L1: final sparsity = 0.0072 ± 0.0001
+  GAT+max+L1+ELENE: final sparsity = 0.0194 ± 0.0078
+
+================================================================================
+2. HYPOTHESIS TESTS
+================================================================================
+
+a) B vs A: Does max readout alone help with {1,3}-RU mixed?
+   GAT+mean: 44.57
+   GAT+max: 46.74
+   Difference: +2.17 K
+   Verdict: NO (max worse/same)
+
+b) C vs B: Does L1 sparsity on top of max provide additional benefit?
+   GAT+max: 46.74
+   GAT+max+L1: 46.83
+   Difference: +0.09 K
+   Verdict: NO (L1 doesn't help)
+
+c) C vs A: Does GRIN-style (max+L1) rescue {1,3}-RU mixed vs mean?
+   GAT+mean: 44.57
+   GAT+max+L1: 46.83
+   Difference: +2.26 K
+   Verdict: NO (GRIN doesn't rescue)
+
+d) D vs A: Do ELENE edge encodings improve mean readout?
+   GAT+mean: 44.57
+   GAT+mean+ELENE: 45.70
+   Difference: +1.13 K
+   Verdict: NO (ELENE doesn't help)
+
+e) E vs C: Do ELENE edge encodings add value beyond GRIN-style?
+   GAT+max+L1: 46.83
+   GAT+max+L1+ELENE: 46.97
+   Difference: +0.14 K
+   Verdict: NO (ELENE doesn't add value)
+
+================================================================================
+3. COMPARISON AGAINST DAY 1 BASELINES
+================================================================================
+
+  Pure 3-RU baseline (Day 1, GAT+mean+rich): 41.6 RMSE
+  {1,3}-RU mixed baseline (Day 1, GAT+mean+rich): 43.6 RMSE
+
+  Best condition: GAT+mean = 44.57 RMSE
+  vs pure 3-RU (41.6): +2.97 K
+  vs mixed mean baseline (43.6): +0.97 K
+
+================================================================================
+4. OVERALL VERDICT
+================================================================================
+
+  * None of the tested hypotheses were supported by the data

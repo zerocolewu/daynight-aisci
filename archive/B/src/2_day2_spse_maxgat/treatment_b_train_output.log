@@ -1,0 +1,41 @@
+Building datasets (3-RU, rich features)...
+  Built: train=5162, val=573, test=1435 (44s)
+Precomputing SPSE path counts...
+  SPSE precomputation: 7s
+  Model params: 260,097 + SPSE: 8
+  epoch  10/300 | train=0.4369 | val=0.4317 | best=0.4282@9 | lr=5.00e-04 | waited=1 | time=33s
+  epoch  20/300 | train=0.4103 | val=0.4287 | best=0.4109@18 | lr=5.00e-04 | waited=2 | time=63s
+  epoch  30/300 | train=0.3990 | val=0.4120 | best=0.3957@29 | lr=5.00e-04 | waited=1 | time=100s
+  epoch  40/300 | train=0.3810 | val=0.3792 | best=0.3792@40 | lr=5.00e-04 | waited=0 | time=134s
+  epoch  50/300 | train=0.3694 | val=0.3899 | best=0.3706@48 | lr=5.00e-04 | waited=2 | time=169s
+  epoch  60/300 | train=0.3547 | val=0.3733 | best=0.3693@59 | lr=5.00e-04 | waited=1 | time=206s
+  epoch  70/300 | train=0.3429 | val=0.3746 | best=0.3599@65 | lr=5.00e-04 | waited=5 | time=232s
+  epoch  80/300 | train=0.3264 | val=0.3585 | best=0.3585@80 | lr=2.50e-04 | waited=0 | time=256s
+  epoch  90/300 | train=0.3248 | val=0.3490 | best=0.3485@88 | lr=2.50e-04 | waited=2 | time=283s
+  epoch 100/300 | train=0.3134 | val=0.3470 | best=0.3441@98 | lr=2.50e-04 | waited=2 | time=308s
+  epoch 110/300 | train=0.3110 | val=0.3475 | best=0.3438@109 | lr=2.50e-04 | waited=1 | time=342s
+  epoch 120/300 | train=0.3069 | val=0.3393 | best=0.3391@117 | lr=2.50e-04 | waited=3 | time=374s
+  epoch 130/300 | train=0.2967 | val=0.3417 | best=0.3391@117 | lr=1.25e-04 | waited=13 | time=409s
+  epoch 140/300 | train=0.2923 | val=0.3411 | best=0.3373@136 | lr=1.25e-04 | waited=4 | time=445s
+  epoch 150/300 | train=0.2894 | val=0.3381 | best=0.3357@146 | lr=1.25e-04 | waited=4 | time=475s
+  epoch 160/300 | train=0.2854 | val=0.3362 | best=0.3342@158 | lr=1.25e-04 | waited=2 | time=507s
+  epoch 170/300 | train=0.2834 | val=0.3353 | best=0.3342@158 | lr=6.25e-05 | waited=12 | time=543s
+  epoch 180/300 | train=0.2819 | val=0.3410 | best=0.3339@173 | lr=6.25e-05 | waited=7 | time=576s
+  epoch 190/300 | train=0.2772 | val=0.3358 | best=0.3339@186 | lr=3.13e-05 | waited=4 | time=612s
+  epoch 200/300 | train=0.2785 | val=0.3343 | best=0.3338@199 | lr=1.56e-05 | waited=1 | time=649s
+  epoch 210/300 | train=0.2772 | val=0.3355 | best=0.3333@207 | lr=1.56e-05 | waited=3 | time=683s
+  epoch 220/300 | train=0.2742 | val=0.3338 | best=0.3333@207 | lr=7.81e-06 | waited=13 | time=719s
+  epoch 230/300 | train=0.2780 | val=0.3336 | best=0.3333@207 | lr=3.91e-06 | waited=23 | time=755s
+  epoch 237/300 | train=0.2770 | val=0.3348 | best=0.3333@207 | lr=3.91e-06 | waited=30 | time=780s
+
+=== Final Results (Treatment B: +SPSE + MaxAggr) ===
+  Best epoch: 207 / 237
+  Train RMSE: 29.971 K
+  Val RMSE:   37.614 K
+  Test RMSE:  38.273 K
+  Test MAE:   26.288 K
+  Test R²:    0.8793
+  Total time: 782s
+
+  Plots saved to /home/home_public/aisci/AIscientist/src/2_day2_spse_maxgat/treatment_b/results/learning_curves.png
+Treatment B training complete.

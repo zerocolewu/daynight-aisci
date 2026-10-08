@@ -1,0 +1,73 @@
+{
+  "dataset": "Egc",
+  "n_samples": 3380,
+  "n_folds": 5,
+  "fold_results": [
+    {
+      "fold": 1,
+      "rmse": 0.49915835951047277,
+      "mae": 0.3476857542991638,
+      "r2": 0.9028332829475403,
+      "best_val_loss": 0.09043954286349595
+    },
+    {
+      "fold": 2,
+      "rmse": 0.5131617576824383,
+      "mae": 0.3318972885608673,
+      "r2": 0.8929568529129028,
+      "best_val_loss": 0.08534327105304898
+    },
+    {
+      "fold": 3,
+      "rmse": 0.6145086216100604,
+      "mae": 0.3624851107597351,
+      "r2": 0.8411204814910889,
+      "best_val_loss": 0.10105907335083865
+    },
+    {
+      "fold": 4,
+      "rmse": 0.5270580224102895,
+      "mae": 0.31696730852127075,
+      "r2": 0.8856341242790222,
+      "best_val_loss": 0.08182351339674561
+    },
+    {
+      "fold": 5,
+      "rmse": 0.4771845619246111,
+      "mae": 0.3264453411102295,
+      "r2": 0.9044267535209656,
+      "best_val_loss": 0.08165724158904256
+    }
+  ],
+  "mean_rmse": 0.5262142646275744,
+  "std_rmse": 0.0471230455054551,
+  "mean_mae": 0.3370961606502533,
+  "std_mae": 0.01613925151434971,
+  "mean_r2": 0.885394299030304,
+  "std_r2": 0.023167965559701513,
+  "overall_rmse": 0.5283200304520678,
+  "overall_mae": 0.3370961546897888,
+  "overall_r2": 0.8857313394546509,
+  "correlations": {
+    "aromatic_ring_count": -0.6433744618202006,
+    "aromatic_ring_fraction": -0.6935710049330455,
+    "conjugated_bond_fraction": -0.7474271302789823,
+    "conjugation_length": -0.6592853387827388,
+    "sp2_sp2_bond_fraction": -0.7474271302789823,
+    "pi_electron_density": -0.7429478147389608,
+    "pi_electron_count": -0.6070708886774355,
+    "aromatic_atom_fraction": -0.7362651133497159,
+    "avg_conjugated_bond_order": -0.25404355132361706,
+    "aromatic_heteroatom_count": -0.4318309576570135
+  },
+  "comparison": {
+    "baseline_mean_rmse": 1.19,
+    "baseline_std_rmse": 0.59,
+    "baseline_fold3_rmse": 2.25,
+    "our_mean_rmse": 0.5262142646275744,
+    "our_std_rmse": 0.0471230455054551,
+    "our_fold3_rmse": 0.6145086216100604,
+    "improvement_percent": 55.78031389684249,
+    "fold3_improvement_percent": 72.68850570621954
+  }
+}

@@ -1,0 +1,82 @@
+================================================================================
+DIAGNOSTIC ANALYSIS REPORT
+Generated: 2026-05-23 04:49:32.197101
+================================================================================
+
+1. MAIN RESULTS TABLE (Test RMSE in K, mean ± std over 3 seeds)
+----------------------------------------------------------------------
+Multimer                    Basic     Standard         Rich        Avg
+----------------------------------------------------------------------
+1-RU                    69.2±0.3    46.6±0.4    44.1±1.1       53.3
+2-RU                    69.4±1.1    43.9±0.8    42.0±0.7       51.8
+3-RU                    68.6±1.0    44.3±1.4    41.6±0.9       51.5
+{1,3}-RU mixed          69.0±1.8    45.8±0.3    43.6±0.7       52.8
+----------------------------------------------------------------------
+Avg                          69.0         45.2         42.8
+
+2. FEATURE ABLATION ANALYSIS (for {1,3}-RU mixed)
+----------------------------------------
+  basic -> standard: 69.0 -> 45.8 (+23.2K, improvement)
+  standard -> rich: 45.8 -> 43.6 (+2.2K, improvement)
+  Interpretation: Richer features consistently reduce RMSE.
+  Basic->Standard: ~23K improvement (>33% reduction).
+  Standard->Rich: ~2K additional improvement.
+
+3. MULTIMER ABLATION ANALYSIS (for rich features)
+----------------------------------------
+  1-RU -> 2-RU: 44.1 -> 42.0 (+2.1K, improvement)
+  2-RU -> 3-RU: 42.0 -> 41.6 (+0.4K, improvement)
+  3-RU -> {1,3}-RU mixed: 41.6 -> 43.6 (-2.0K, degradation)
+  Interpretation: Multimer augmentation provides modest gains.
+  1-RU (44.1) -> 2-RU (42.0) -> 3-RU (41.6): ~2.5K total improvement.
+  {1,3}-RU mixed (43.6) underperformed vs. 3-RU (41.6).
+
+4. GRIN HYPOTHESIS TEST
+----------------------------------------
+Expected: {1,3}-RU mixed > 3-RU > 2-RU > 1-RU
+Actual (rich features):
+  3-RU: 41.6K
+  2-RU: 42.0K
+  {1,3}-RU mixed: 43.6K
+  1-RU: 44.1K
+  Best->Worst: 3-RU < 2-RU < {1,3}-RU mixed < 1-RU (lower=better)
+  3-RU > 2-RU > 1-RU holds. {1,3}-RU mixed underperformed.
+  Possible cause: mixed 1-RU/3-RU graphs create distributional instability.
+
+5. BEST OVERALL CONFIGURATION
+----------------------------------------
+  Configuration: 3-RU x rich
+  Test RMSE: 41.61 ± 0.90 K
+  Test R²: 0.8573
+  Test MAE: 28.75 K
+
+  vs GAT baseline RMSE=50.5K (from literature):
+  Improves by 8.9K (17.6% reduction)
+
+6. ALL CONFIGURATIONS
+----------------------------------------
+                1-RU x basic   : test_rmse=69.2±0.3K, R²=0.6054
+                1-RU x rich    : test_rmse=44.1±1.1K, R²=0.8395
+                1-RU x standard: test_rmse=46.6±0.4K, R²=0.8213
+                2-RU x basic   : test_rmse=69.4±1.1K, R²=0.6034
+                2-RU x rich    : test_rmse=42.0±0.7K, R²=0.8548
+                2-RU x standard: test_rmse=43.9±0.8K, R²=0.8408
+                3-RU x basic   : test_rmse=68.6±1.0K, R²=0.6123
+                3-RU x rich    : test_rmse=41.6±0.9K, R²=0.8573
+                3-RU x standard: test_rmse=44.3±1.4K, R²=0.8380
+      {1,3}-RU mixed x basic   : test_rmse=69.0±1.8K, R²=0.6078
+      {1,3}-RU mixed x rich    : test_rmse=43.6±0.7K, R²=0.8431
+      {1,3}-RU mixed x standard: test_rmse=45.8±0.3K, R²=0.8270
+
+7. CONCLUSIONS
+----------------------------------------
+  H1 (Multimer): PARTIALLY SUPPORTED - 3-RU > 2-RU > 1-RU with rich features
+    (41.6 > 42.0 > 44.1). However {1,3}-RU mixed (43.6) did NOT outperform
+    pure 3-RU (41.6) on this dataset with GAT architecture.
+
+  H2 (Feature richness): STRONGLY SUPPORTED - Rich > Standard >> Basic
+    Basic->Standard: ~23K improvement; Standard->Rich: ~2K improvement.
+    R² increases from 0.61 (basic) to 0.83 (standard) to 0.86 (rich).
+
+  H3 (Combined): BEST CONFIG = 3-RU x rich (41.6K), beats GAT baseline
+    of 50.5K by 17.6%. No architecture changes needed.

@@ -1,0 +1,14 @@
+[Sat May 16 23:27:39 CST 2026] Starting Iteration 3 pipeline
+[Sat May 16 23:27:39 CST 2026] === Strategy A: edge_drop_feat_mask ===
+[Sun May 17 05:23:24 CST 2026] Strategy A pre-training DONE
+[Sun May 17 05:23:24 CST 2026] Fine-tuning Strategy A...
+[Sun May 17 05:26:13 CST 2026] Strategy A fine-tuning DONE
+[Sun May 17 05:26:13 CST 2026] === Strategy B: monomer_dimer ===
+[Sun May 17 11:58:52 CST 2026] Strategy B pre-training DONE
+[Sun May 17 11:58:52 CST 2026] Fine-tuning Strategy B...
+[Sun May 17 12:02:51 CST 2026] Strategy B fine-tuning DONE
+[Sun May 17 12:02:51 CST 2026] === Strategy C: hybrid_corrupt ===
+[Sun May 17 18:03:44 CST 2026] Strategy C pre-training DONE
+[Sun May 17 18:03:44 CST 2026] Fine-tuning Strategy C...
+[Sun May 17 18:06:37 CST 2026] Strategy C fine-tuning DONE
+[Sun May 17 18:06:37 CST 2026] === ALL ITERATION 3 EXPERIMENTS COMPLETE ===

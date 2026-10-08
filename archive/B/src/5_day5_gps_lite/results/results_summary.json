@@ -1,0 +1,25 @@
+{
+  "baseline": {
+    "test_rmse": 35.19,
+    "test_mae": 23.17,
+    "test_r2": 0.898,
+    "best_epoch": 168,
+    "n_params": 3318273
+  },
+  "no_bias": {
+    "test_rmse": 43.43,
+    "test_mae": 30.84,
+    "test_r2": 0.8446,
+    "best_epoch": 65,
+    "n_params": 3582465,
+    "delta_rmse_vs_baseline": -8.24
+  },
+  "spd": {
+    "test_rmse": 43.14,
+    "test_mae": 30.97,
+    "test_r2": 0.8467,
+    "best_epoch": 37,
+    "n_params": 3584645,
+    "delta_rmse_vs_baseline": -7.95
+  }
+}

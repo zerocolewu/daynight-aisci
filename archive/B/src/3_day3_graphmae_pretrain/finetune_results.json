@@ -1,0 +1,17 @@
+{
+  "graph_construction": "3-RU multimer",
+  "pretrained_test_rmse": 39.6882,
+  "baseline_test_rmse": 40.2682,
+  "pretrained_best_val_rmse": 35.1792,
+  "baseline_best_val_rmse": 38.4613,
+  "improvement_k": 0.5799,
+  "improvement_pct": 1.44,
+  "pretrained_test_mae": 25.8247,
+  "baseline_test_mae": 27.8324,
+  "pretrained_test_r2": 0.8703,
+  "baseline_test_r2": 0.8665,
+  "pretrained_epochs_to_best": 98,
+  "baseline_epochs_to_best": 72,
+  "expected_baseline_k": 35.94,
+  "baseline_deviation_k": 4.3282
+}

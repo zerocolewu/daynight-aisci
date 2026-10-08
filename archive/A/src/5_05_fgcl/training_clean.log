@@ -1,0 +1,54 @@
+Using device: cuda
+GPU: NVIDIA GeForce RTX 2080 Ti
+
+Loading dataset...
+Loaded 7170 samples from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv
+Successfully processed 7170 samples, 0 failed
+Dataset size: 7170
+Sample: Data(x=[3, 32], edge_index=[2, 4], ecfp=[2048], y=[1], smiles='*C*')
+
+################################################################################
+# Starting FGCL Ablation Studies
+# Dataset size: 7170
+# Folds: 5
+# Ablation modes: ['supervised_only', 'pretrain_only', 'regularization_only', 'full']
+# Lambda values: [0.1, 0.5, 1.0, 2.0]
+################################################################################
+
+
+================================================================================
+Ablation Mode: supervised_only
+================================================================================
+
+================================================================================
+Fold 1 - Ablation: supervised_only, Lambda: 0.0
+================================================================================
+
+--- Skipping contrastive pre-training (ablation: supervised_only) ---
+
+--- Phase 2: Fine-tuning (100 epochs) ---
+Lambda for fine-tuning: 0.0
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/5_05_fgcl/train_fgcl.py", line 542, in <module>
+    main()
+  File "/home/home_public/aisci/AIscientist/src/5_05_fgcl/train_fgcl.py", line 521, in main
+    all_results, summary = run_ablation_studies(
+  File "/home/home_public/aisci/AIscientist/src/5_05_fgcl/train_fgcl.py", line 398, in run_ablation_studies
+    results, _ = train_fgcl_fold(
+  File "/home/home_public/aisci/AIscientist/src/5_05_fgcl/train_fgcl.py", line 283, in train_fgcl_fold
+    sup_loss, cont_loss, total_loss = train_supervised_epoch(
+  File "/home/home_public/aisci/AIscientist/src/5_05_fgcl/train_fgcl.py", line 81, in train_supervised_epoch
+    predictions = model(batch, return_projection=False)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/home_public/aisci/AIscientist/src/5_05_fgcl/fgcl_model.py", line 165, in forward
+    return self.prediction_head(graph_emb, ecfp_batch)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/home_public/aisci/AIscientist/src/5_05_fgcl/fgcl_model.py", line 96, in forward
+    x = torch.cat([graph_emb, ecfp], dim=-1)
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 32 but got size 1 for tensor number 1 in the list.

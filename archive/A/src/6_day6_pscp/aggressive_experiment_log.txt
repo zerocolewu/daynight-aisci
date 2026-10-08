@@ -1,0 +1,129 @@
+======================================================================
+AGGRESSIVE PSCP OPTIMIZATION - TARGETING RMSE < 35.0
+Started: 2026-03-21 14:35:37.761669
+======================================================================
+Device: cuda
+GPU: NVIDIA GeForce RTX 2080 Ti
+
+Loaded Tg: 7170 samples
+
+Preparing Tg data...
+Valid samples: 6971
+Node feature dim: 155
+
+======================================================================
+LOADING PRETRAIN DATA
+======================================================================
+Loading cached pretrain graphs...
+Loaded 99103 pretrain graphs
+
+======================================================================
+TESTING LOW TEMPERATURES
+======================================================================
+
+======================================================================
+TEMPERATURE: 0.01
+======================================================================
+  Aggressive pretraining on 99103 graphs (epochs=100, temp=0.01)...
+    Epoch 20/100: Loss = 0.3707 (best: 0.3656)
+    Epoch 40/100: Loss = 0.2586 (best: 0.2586)
+    Epoch 60/100: Loss = 0.2141 (best: 0.2141)
+    Epoch 80/100: Loss = 0.1965 (best: 0.1965)
+    Epoch 100/100: Loss = 0.1898 (best: 0.1882)
+
+Fold 1/5
+    Epoch 100: Val RMSE = 0.34 (best: 0.34)
+    Epoch 200: Val RMSE = 0.35 (best: 0.33)
+    Early stopping at epoch 291
+  Fold 1: RMSE=36.22
+
+Fold 2/5
+    Epoch 100: Val RMSE = 0.33 (best: 0.33)
+    Early stopping at epoch 122
+  Fold 2: RMSE=35.94
+
+Fold 3/5
+    Epoch 100: Val RMSE = 0.33 (best: 0.33)
+    Early stopping at epoch 122
+  Fold 3: RMSE=36.24
+
+Fold 4/5
+    Epoch 100: Val RMSE = 0.33 (best: 0.33)
+    Epoch 200: Val RMSE = 0.33 (best: 0.32)
+    Early stopping at epoch 278
+  Fold 4: RMSE=35.55
+
+Fold 5/5
+    Epoch 100: Val RMSE = 0.32 (best: 0.31)
+    Early stopping at epoch 178
+  Fold 5: RMSE=34.03
+
+Temperature 0.01: 35.59 +/- 0.82
+
+======================================================================
+TEMPERATURE: 0.02
+======================================================================
+  Aggressive pretraining on 99103 graphs (epochs=100, temp=0.02)...
+    Epoch 20/100: Loss = 0.3386 (best: 0.3386)
+    Epoch 40/100: Loss = 0.2410 (best: 0.2363)
+    Epoch 60/100: Loss = 0.2009 (best: 0.2009)
+    Epoch 80/100: Loss = 0.1897 (best: 0.1897)
+    Epoch 100/100: Loss = 0.1927 (best: 0.1834)
+
+Fold 1/5
+    Epoch 100: Val RMSE = 0.34 (best: 0.34)
+    Epoch 200: Val RMSE = 0.34 (best: 0.33)
+    Early stopping at epoch 237
+  Fold 1: RMSE=36.69
+
+Fold 2/5
+    Epoch 100: Val RMSE = 0.33 (best: 0.32)
+    Epoch 200: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 278
+  Fold 2: RMSE=35.04
+
+Fold 3/5
+    Epoch 100: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 155
+  Fold 3: RMSE=35.14
+
+Fold 4/5
+    Epoch 100: Val RMSE = 0.33 (best: 0.33)
+    Early stopping at epoch 149
+  Fold 4: RMSE=36.03
+
+Fold 5/5
+    Epoch 100: Val RMSE = 0.32 (best: 0.31)
+    Early stopping at epoch 151
+  Fold 5: RMSE=34.71
+
+Temperature 0.02: 35.52 +/- 0.73
+
+======================================================================
+FINAL SUMMARY
+======================================================================
+
+Temperature results:
+  temp=0.01: 35.59 +/- 0.82
+  temp=0.02: 35.52 +/- 0.73
+
+Best: temp=0.02 with RMSE = 35.52
+
+Target: RMSE < 35.0
+Status: NOT ACHIEVED
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/6_day6_pscp/run_aggressive_pscp.py", line 618, in <module>
+    results = main()
+  File "/home/home_public/aisci/AIscientist/src/6_day6_pscp/run_aggressive_pscp.py", line 609, in main
+    json.dump(final_results, f, indent=2)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool_ is not JSON serializable

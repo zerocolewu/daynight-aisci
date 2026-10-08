@@ -1,0 +1,80 @@
+{
+  "baseline_gat": {
+    "description": "Config A: Baseline GAT (no CPA, no PSPE)",
+    "test_rmse_mean": 37.44527473327992,
+    "test_rmse_std": 0.8617866272198036,
+    "test_mae_mean": 24.67894681294759,
+    "seeds": [
+      {
+        "seed": 71,
+        "test_rmse": 38.11694651107464,
+        "test_mae": 25.649890899658203,
+        "best_epoch": 91
+      },
+      {
+        "seed": 72,
+        "test_rmse": 37.99015278969505,
+        "test_mae": 25.11994171142578,
+        "best_epoch": 106
+      },
+      {
+        "seed": 73,
+        "test_rmse": 36.22872489907007,
+        "test_mae": 23.26700782775879,
+        "best_epoch": 173
+      }
+    ]
+  },
+  "cpa_gat": {
+    "description": "Config B: CPA-GAT (CPA, no PSPE)",
+    "test_rmse_mean": 35.5213250306089,
+    "test_rmse_std": 0.4059926711212813,
+    "test_mae_mean": 22.62148920694987,
+    "seeds": [
+      {
+        "seed": 71,
+        "test_rmse": 35.273684073058455,
+        "test_mae": 22.423219680786133,
+        "best_epoch": 224
+      },
+      {
+        "seed": 72,
+        "test_rmse": 35.19653594571666,
+        "test_mae": 22.615924835205078,
+        "best_epoch": 231
+      },
+      {
+        "seed": 73,
+        "test_rmse": 36.09375507305159,
+        "test_mae": 22.8253231048584,
+        "best_epoch": 208
+      }
+    ]
+  },
+  "cpa_gat_pspe": {
+    "description": "Config C: CPA-GAT + PSPE",
+    "test_rmse_mean": 35.860393719605106,
+    "test_rmse_std": 1.0589981367085723,
+    "test_mae_mean": 23.60020637512207,
+    "seeds": [
+      {
+        "seed": 71,
+        "test_rmse": 35.44262701282613,
+        "test_mae": 23.174226760864258,
+        "best_epoch": 135
+      },
+      {
+        "seed": 72,
+        "test_rmse": 34.82375757721839,
+        "test_mae": 22.705371856689453,
+        "best_epoch": 170
+      },
+      {
+        "seed": 73,
+        "test_rmse": 37.31479656877081,
+        "test_mae": 24.9210205078125,
+        "best_epoch": 70
+      }
+    ]
+  }
+}

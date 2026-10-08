@@ -1,0 +1,38 @@
+{
+  "dataset": "ea",
+  "n_splits": 1,
+  "protocol": "given-split x multi-init",
+  "per_split": [
+    {
+      "split_tag": "given",
+      "n_init": 3,
+      "init_seeds": [
+        42,
+        71,
+        2026
+      ],
+      "single_seed_rmse": [
+        0.04099798918642345,
+        0.0410293792684924,
+        0.04046384802527693
+      ],
+      "single_seed_mean": 0.040830405493397594,
+      "single_seed_std": 0.0002595118717764146,
+      "swa_rmse_mean": 0.0407029964773908,
+      "ensemble_mean_rmse": 0.03985083726496227,
+      "ensemble_mean_mae": 0.02499308001032424,
+      "ensemble_mean_r2": 0.9962410329174223,
+      "ensemble_median_rmse": 0.03997906121692671,
+      "ensemble_median_mae": 0.025136946189228758,
+      "ensemble_median_r2": 0.9962168043153632,
+      "test_size": 8594
+    }
+  ],
+  "ensemble_mean_rmse_splits_mean": 0.03985083726496227,
+  "ensemble_mean_rmse_splits_std": 0.0,
+  "ensemble_median_rmse_splits_mean": 0.03997906121692671,
+  "ensemble_median_rmse_splits_std": 0.0,
+  "single_seed_all_mean": 0.040830405493397594,
+  "single_seed_all_std": 0.0002595118717764146,
+  "single_seed_aggregation": "mean/std over init seeds"
+}

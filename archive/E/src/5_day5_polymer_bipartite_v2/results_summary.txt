@@ -1,0 +1,57 @@
+================================================================================
+PolymerBipartite v2 Experiment — Results Summary
+================================================================================
+
+1. MAIN RESULT (seed=71)
+----------------------------------------
+  PolymerBipartiteV2:
+    Train RMSE: 46.13
+    Val RMSE:   37.38
+    Test RMSE:  53.93
+    Overfitting gap: -7.81
+    Best epoch: 30
+    Parameters: 1,933,579
+
+  GIN+Trimer:
+    Train RMSE: 44.95
+    Val RMSE:   40.89
+    Test RMSE:  54.71
+    Overfitting gap: -9.76
+    Best epoch: 19
+    Parameters: 714,502
+
+2. MULTI-SEED RESULTS
+----------------------------------------
+  PolymerBipartiteV2: 55.22 +/- 1.04
+    seed=71: 53.93
+    seed=42: 55.26
+    seed=123: 56.47
+
+  GIN+Trimer: 53.41 +/- 0.93
+    seed=71: 54.71
+    seed=42: 53.01
+    seed=123: 52.53
+
+3. DIAGNOSTICS
+----------------------------------------
+  D1: RU Discriminability
+    Mean cos_sim: 0.4405
+    Median: 1.0000
+    Std: 0.8966
+    % > 0.95: 71.8%
+
+  D2: Random RU Control
+    Real RMSE: 53.93
+    Random RMSE: 56.97
+    Delta: +3.04
+
+  Gate Value Distribution
+    Boundary atoms: mean=0.9972, std=0.0518
+    Interior atoms: mean=0.9999, std=0.0108
+
+  D4: Overfitting Gap Analysis
+    PolymerBipartiteV2: gap=-7.81
+    GIN+Trimer: gap=-9.76
+    RandomRU: gap=-8.55
+    GIN+Trimer_matched: gap=-18.22
+

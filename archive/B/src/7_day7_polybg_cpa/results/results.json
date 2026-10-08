@@ -1,0 +1,159 @@
+{
+  "exp1_cpa_gat_baseline": {
+    "description": "Exp1: CPA-GAT Atom-Only (Baseline)",
+    "test_rmse_mean": 35.80409557421444,
+    "test_rmse_std": 0.4396896935112541,
+    "test_mae_mean": 23.12352116902669,
+    "num_params": 835585,
+    "num_seeds": 3,
+    "seeds": [
+      {
+        "seed": 123,
+        "test_rmse": 35.637691338599815,
+        "best_epoch": 145
+      },
+      {
+        "seed": 42,
+        "test_rmse": 36.40616449829015,
+        "best_epoch": 148
+      },
+      {
+        "seed": 71,
+        "test_rmse": 35.36843088575336,
+        "best_epoch": 177
+      }
+    ]
+  },
+  "exp2_polybg_cpa": {
+    "description": "Exp2: PolyBG-CPA Parallel",
+    "test_rmse_mean": 35.64349137096075,
+    "test_rmse_std": 0.2682519080325628,
+    "test_mae_mean": 23.16222318013509,
+    "num_params": 1027969,
+    "num_seeds": 3,
+    "seeds": [
+      {
+        "seed": 123,
+        "test_rmse": 35.88921178377895,
+        "best_epoch": 220
+      },
+      {
+        "seed": 42,
+        "test_rmse": 35.270321879290385,
+        "best_epoch": 157
+      },
+      {
+        "seed": 71,
+        "test_rmse": 35.770940449812926,
+        "best_epoch": 211
+      }
+    ]
+  },
+  "exp3_polybg_nocpa": {
+    "description": "Exp3: PolyBG-noCPA (Ablation)",
+    "test_rmse_mean": 36.99710484080562,
+    "test_rmse_std": 0.0,
+    "test_mae_mean": 24.447416305541992,
+    "num_params": 715265,
+    "num_seeds": 1,
+    "seeds": [
+      {
+        "seed": 71,
+        "test_rmse": 36.99710484080562,
+        "best_epoch": 135
+      }
+    ]
+  },
+  "exp4_bond_cpa_only": {
+    "description": "Exp4: Bond-CPA-GAT Only (Ablation)",
+    "test_rmse_mean": 45.36738594002579,
+    "test_rmse_std": 0.0,
+    "test_mae_mean": 29.17731475830078,
+    "num_params": 176257,
+    "num_seeds": 1,
+    "seeds": [
+      {
+        "seed": 71,
+        "test_rmse": 45.36738594002579,
+        "best_epoch": 104
+      }
+    ]
+  },
+  "exp5_enriched_edge_cpa": {
+    "description": "Exp5: Enriched-Edge CPA-GAT (Ablation)",
+    "test_rmse_mean": 40.45243095194496,
+    "test_rmse_std": 0.0,
+    "test_mae_mean": 27.492935180664062,
+    "num_params": 1371393,
+    "num_seeds": 1,
+    "seeds": [
+      {
+        "seed": 71,
+        "test_rmse": 40.45243095194496,
+        "best_epoch": 110
+      }
+    ]
+  },
+  "exp6_hierarchical_pre": {
+    "description": "Exp6: Hierarchical-Pre (Bond->Atom Input Aug)",
+    "test_rmse_mean": 110.2529583932291,
+    "test_rmse_std": 0.003048096856608821,
+    "test_mae_mean": 93.11424509684245,
+    "num_seeds": 3,
+    "seeds": [
+      {
+        "seed": 71,
+        "test_rmse": 110.24992028058342,
+        "test_mae": 93.10559844970703,
+        "best_epoch": 5,
+        "train_time": 514.2565875053406
+      },
+      {
+        "seed": 42,
+        "test_rmse": 110.25712579721322,
+        "test_mae": 93.12370300292969,
+        "best_epoch": 5,
+        "train_time": 531.9122250080109
+      },
+      {
+        "seed": 123,
+        "test_rmse": 110.25182910189064,
+        "test_mae": 93.11343383789062,
+        "best_epoch": 4,
+        "train_time": 513.5720093250275
+      }
+    ]
+  },
+  "exp7_hierarchical_mid": {
+    "description": "Exp7: Hierarchical-Mid (Bond->Atom After L1)",
+    "test_rmse_mean": 41.7476053065098,
+    "test_rmse_std": 0.0,
+    "test_mae_mean": 29.83812141418457,
+    "num_seeds": 1,
+    "seeds": [
+      {
+        "seed": 71,
+        "test_rmse": 41.7476053065098,
+        "test_mae": 29.83812141418457,
+        "best_epoch": 64,
+        "train_time": 1026.440452337265
+      }
+    ]
+  },
+  "exp8_hierarchical_pre_gated": {
+    "description": "Exp8: Hierarchical-Pre Gated (Learned Gate)",
+    "test_rmse_mean": 110.25457934083735,
+    "test_rmse_std": 0.0,
+    "test_mae_mean": 93.11497497558594,
+    "num_seeds": 1,
+    "seeds": [
+      {
+        "seed": 71,
+        "test_rmse": 110.25457934083735,
+        "test_mae": 93.11497497558594,
+        "best_epoch": 37,
+        "train_time": 730.1655547618866
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+======================================================================
+PolyBG-CPA: Parallel Bond-Graph CPA-GAT for Polymer Tg Prediction
+======================================================================
+
+Loading data...
+Matching SMILES to precomputed graphs...
+  Matched 5162/5162 (100.0%)
+  Matched 573/573 (100.0%)
+  Matched 1434/1435 (99.9%)
+
+Computing bond data...
+
+######################################################################
+# Experiment 1: CPA-GAT Atom-Only Baseline
+######################################################################
+
+============================================================
+Training exp1_cpa_gat_baseline | Seed 71 | Device: cuda
+============================================================
+Model: exp1_cpa_gat_baseline, Params: 835,585
+Epoch   1 | Train Loss: 0.6652 | Val RMSE: 62.98 K | Best: 62.98 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.1612 | Val RMSE: 45.24 K | Best: 43.72 K (ep 20) | LR: 0.000989
+Epoch  41 | Train Loss: 0.0923 | Val RMSE: 38.95 K | Best: 38.03 K (ep 35) | LR: 0.000957
+Epoch  61 | Train Loss: 0.0659 | Val RMSE: 38.03 K | Best: 34.84 K (ep 60) | LR: 0.000905
+Epoch  81 | Train Loss: 0.0485 | Val RMSE: 35.00 K | Best: 34.84 K (ep 60) | LR: 0.000835
+Epoch 101 | Train Loss: 0.0356 | Val RMSE: 33.44 K | Best: 33.38 K (ep 93) | LR: 0.000750
+Epoch 121 | Train Loss: 0.0308 | Val RMSE: 32.72 K | Best: 32.72 K (ep 121) | LR: 0.000655
+Epoch 141 | Train Loss: 0.0239 | Val RMSE: 33.44 K | Best: 32.72 K (ep 121) | LR: 0.000553
+Epoch 161 | Train Loss: 0.0199 | Val RMSE: 33.37 K | Best: 31.76 K (ep 159) | LR: 0.000448
+Epoch 181 | Train Loss: 0.0149 | Val RMSE: 32.30 K | Best: 31.72 K (ep 177) | LR: 0.000346
+Epoch 201 | Train Loss: 0.0130 | Val RMSE: 32.93 K | Best: 31.72 K (ep 177) | LR: 0.000251
+Early stopping at epoch 207
+
+Final Results for exp1_cpa_gat_baseline Seed 71:
+  Best Epoch: 177
+  Best Val RMSE: 31.7164 K
+  Test RMSE: 35.3684 K
+  Test MAE: 22.6076 K
+  Training Time: 1207.3s
+
+============================================================
+Training exp1_cpa_gat_baseline | Seed 42 | Device: cuda
+============================================================
+Model: exp1_cpa_gat_baseline, Params: 835,585
+Epoch   1 | Train Loss: 0.8691 | Val RMSE: 66.41 K | Best: 66.41 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.1543 | Val RMSE: 44.89 K | Best: 43.06 K (ep 19) | LR: 0.000989
+Epoch  41 | Train Loss: 0.0863 | Val RMSE: 39.21 K | Best: 38.12 K (ep 40) | LR: 0.000957
+Epoch  61 | Train Loss: 0.0636 | Val RMSE: 39.40 K | Best: 36.21 K (ep 58) | LR: 0.000905
+Epoch  81 | Train Loss: 0.0453 | Val RMSE: 35.75 K | Best: 35.62 K (ep 77) | LR: 0.000835
+Epoch 101 | Train Loss: 0.0374 | Val RMSE: 35.53 K | Best: 35.09 K (ep 97) | LR: 0.000750
+Epoch 121 | Train Loss: 0.0260 | Val RMSE: 33.77 K | Best: 33.77 K (ep 121) | LR: 0.000655
+Epoch 141 | Train Loss: 0.0241 | Val RMSE: 35.80 K | Best: 33.77 K (ep 121) | LR: 0.000553
+Epoch 161 | Train Loss: 0.0197 | Val RMSE: 33.13 K | Best: 32.77 K (ep 148) | LR: 0.000448
+Early stopping at epoch 178
+
+Final Results for exp1_cpa_gat_baseline Seed 42:
+  Best Epoch: 148
+  Best Val RMSE: 32.7691 K
+  Test RMSE: 36.4062 K
+  Test MAE: 23.3124 K
+  Training Time: 1036.6s
+
+============================================================
+Training exp1_cpa_gat_baseline | Seed 123 | Device: cuda
+============================================================
+Model: exp1_cpa_gat_baseline, Params: 835,585
+Epoch   1 | Train Loss: 0.5814 | Val RMSE: 74.09 K | Best: 74.09 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.1578 | Val RMSE: 43.36 K | Best: 43.36 K (ep 21) | LR: 0.000989
+Epoch  41 | Train Loss: 0.0908 | Val RMSE: 37.55 K | Best: 37.55 K (ep 41) | LR: 0.000957
+Epoch  61 | Train Loss: 0.0594 | Val RMSE: 37.84 K | Best: 35.93 K (ep 58) | LR: 0.000905
+Epoch  81 | Train Loss: 0.0436 | Val RMSE: 35.45 K | Best: 34.05 K (ep 79) | LR: 0.000835
+Epoch 101 | Train Loss: 0.0350 | Val RMSE: 34.66 K | Best: 32.72 K (ep 100) | LR: 0.000750
+Epoch 121 | Train Loss: 0.0281 | Val RMSE: 33.54 K | Best: 32.55 K (ep 120) | LR: 0.000655
+Epoch 141 | Train Loss: 0.0228 | Val RMSE: 34.34 K | Best: 32.22 K (ep 139) | LR: 0.000553
+Epoch 161 | Train Loss: 0.0184 | Val RMSE: 32.93 K | Best: 31.69 K (ep 145) | LR: 0.000448
+Early stopping at epoch 175
+
+Final Results for exp1_cpa_gat_baseline Seed 123:
+  Best Epoch: 145
+  Best Val RMSE: 31.6896 K
+  Test RMSE: 35.6377 K
+  Test MAE: 23.4506 K
+  Training Time: 1020.6s
+
+######################################################################
+# Experiment 2: PolyBG-CPA Parallel
+######################################################################
+
+============================================================
+Training exp2_polybg_cpa | Seed 71 | Device: cuda
+============================================================
+Model: exp2_polybg_cpa, Params: 1,027,969
+Epoch   1 | Train Loss: 6.9550 | Val RMSE: 80.76 K | Best: 80.76 K (ep 1) | LR: 0.001000

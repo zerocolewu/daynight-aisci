@@ -1,0 +1,21 @@
+{
+  "data_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+  "output_dir": "/home/home_public/aisci/AIscientist/src/1_day2_reperioGT/results_baseline",
+  "seed": 42,
+  "hidden_dim": 256,
+  "num_layers": 4,
+  "num_heads": 4,
+  "dropout": 0.1,
+  "use_rigidity_feature": false,
+  "use_contrastive": false,
+  "lambda_cl": 0.1,
+  "cl_temperature": 0.1,
+  "cl_pos_threshold": 0.1,
+  "cl_neg_threshold": 0.3,
+  "batch_size": 64,
+  "epochs": 500,
+  "lr": 0.0001,
+  "weight_decay": 1e-05,
+  "patience": 50,
+  "mode": "baseline"
+}

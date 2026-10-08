@@ -1,0 +1,167 @@
+Monitoring training process...
+Fri Mar 20 02:31:42 CST 2026: Process running, log has 7222 lines
+Fri Mar 20 02:32:42 CST 2026: Process running, log has 7242 lines
+Fri Mar 20 02:33:42 CST 2026: Process running, log has 7279 lines
+Fri Mar 20 02:34:42 CST 2026: Process running, log has 7306 lines
+Fri Mar 20 02:35:42 CST 2026: Process running, log has 7323 lines
+Fri Mar 20 02:36:42 CST 2026: Process running, log has 7346 lines
+Fri Mar 20 02:37:42 CST 2026: Process running, log has 7354 lines
+Fri Mar 20 02:38:42 CST 2026: Process running, log has 7376 lines
+Fri Mar 20 02:39:42 CST 2026: Process running, log has 7399 lines
+Fri Mar 20 02:40:42 CST 2026: Process running, log has 7422 lines
+Fri Mar 20 02:41:43 CST 2026: Process running, log has 7423 lines
+Fri Mar 20 02:42:43 CST 2026: Process running, log has 7442 lines
+Fri Mar 20 02:43:43 CST 2026: Process running, log has 7461 lines
+Fri Mar 20 02:44:43 CST 2026: Process running, log has 7463 lines
+Fri Mar 20 02:45:43 CST 2026: Process running, log has 7480 lines
+Fri Mar 20 02:46:43 CST 2026: Process running, log has 7499 lines
+Fri Mar 20 02:47:43 CST 2026: Process running, log has 7500 lines
+Fri Mar 20 02:48:43 CST 2026: Process running, log has 7526 lines
+Fri Mar 20 02:49:43 CST 2026: Process running, log has 7528 lines
+Fri Mar 20 02:50:43 CST 2026: Process running, log has 7550 lines
+Fri Mar 20 02:51:43 CST 2026: Process running, log has 7551 lines
+Fri Mar 20 02:52:43 CST 2026: Process running, log has 7573 lines
+Fri Mar 20 02:53:43 CST 2026: Process running, log has 7589 lines
+Fri Mar 20 02:54:43 CST 2026: Process running, log has 7596 lines
+Fri Mar 20 02:55:43 CST 2026: Process running, log has 7618 lines
+Fri Mar 20 02:56:43 CST 2026: Process running, log has 7620 lines
+Fri Mar 20 02:57:43 CST 2026: Process running, log has 7648 lines
+Fri Mar 20 02:58:43 CST 2026: Process running, log has 7650 lines
+Fri Mar 20 02:59:43 CST 2026: Process running, log has 7671 lines
+Fri Mar 20 03:00:43 CST 2026: Process running, log has 7673 lines
+Fri Mar 20 03:01:44 CST 2026: Process running, log has 7695 lines
+Fri Mar 20 03:02:44 CST 2026: Process running, log has 7696 lines
+Fri Mar 20 03:03:44 CST 2026: Process running, log has 7719 lines
+Fri Mar 20 03:04:44 CST 2026: Process running, log has 7720 lines
+Fri Mar 20 03:05:44 CST 2026: Process running, log has 7743 lines
+Fri Mar 20 03:06:44 CST 2026: Process running, log has 7760 lines
+Fri Mar 20 03:07:44 CST 2026: Process running, log has 7768 lines
+Fri Mar 20 03:08:44 CST 2026: Process running, log has 7783 lines
+Fri Mar 20 03:09:44 CST 2026: Process running, log has 7791 lines
+Fri Mar 20 03:10:44 CST 2026: Process running, log has 7806 lines
+Fri Mar 20 03:11:44 CST 2026: Process running, log has 7814 lines
+Fri Mar 20 03:12:44 CST 2026: Process running, log has 7830 lines
+Fri Mar 20 03:13:44 CST 2026: Process running, log has 7838 lines
+Fri Mar 20 03:14:44 CST 2026: Process running, log has 7852 lines
+Fri Mar 20 03:15:44 CST 2026: Process running, log has 7861 lines
+Fri Mar 20 03:16:44 CST 2026: Process running, log has 7879 lines
+Fri Mar 20 03:17:44 CST 2026: Process running, log has 7886 lines
+Fri Mar 20 03:18:44 CST 2026: Process running, log has 7902 lines
+Fri Mar 20 03:19:44 CST 2026: Process running, log has 7909 lines
+Fri Mar 20 03:20:44 CST 2026: Process running, log has 7931 lines
+Fri Mar 20 03:21:45 CST 2026: Process running, log has 7933 lines
+Fri Mar 20 03:22:45 CST 2026: Process running, log has 7955 lines
+Fri Mar 20 03:23:45 CST 2026: Process running, log has 7957 lines
+Fri Mar 20 03:24:45 CST 2026: Process running, log has 7978 lines
+Fri Mar 20 03:25:45 CST 2026: Process running, log has 7996 lines
+Fri Mar 20 03:26:45 CST 2026: Process running, log has 8004 lines
+Fri Mar 20 03:27:45 CST 2026: Process running, log has 8020 lines
+Fri Mar 20 03:28:45 CST 2026: Process running, log has 8027 lines
+Fri Mar 20 03:29:45 CST 2026: Process running, log has 8049 lines
+Fri Mar 20 03:30:45 CST 2026: Process running, log has 8051 lines
+Fri Mar 20 03:31:45 CST 2026: Process running, log has 8073 lines
+Fri Mar 20 03:32:45 CST 2026: Process running, log has 8075 lines
+Fri Mar 20 03:33:45 CST 2026: Process running, log has 8097 lines
+Fri Mar 20 03:34:45 CST 2026: Process running, log has 8099 lines
+Fri Mar 20 03:35:45 CST 2026: Process running, log has 8128 lines
+Training completed!
+Early stopping at epoch 27 (no improvement for 20 epochs)
+
+--- Final Evaluation on Test Set ---
+Best Val RMSE: 50.9858 @ epoch 7
+Test RMSE: 41.4337
+Test MAE: 28.4359
+Test R2: 0.8552
+
+================================================================================
+Fold 3 - Ablation: full, Lambda: 2.0
+================================================================================
+
+--- Phase 1: Contrastive Pre-training (10 epochs) ---
+Epoch 1/10 - Contrastive Loss: 0.1298
+Epoch 5/10 - Contrastive Loss: 0.0301
+Epoch 10/10 - Contrastive Loss: 0.0210
+Pre-training completed. Final loss: 0.0210
+
+--- Phase 2: Fine-tuning (100 epochs) ---
+Lambda for fine-tuning: 2.0
+Epoch 1/100 - Sup Loss: 17643.5018, Cont Loss: 0.3840, Val RMSE: 66.1329, Best: 66.1329 @ epoch 1
+Epoch 10/100 - Sup Loss: 1570.5042, Cont Loss: 0.1263, Val RMSE: 50.5158, Best: 50.5158 @ epoch 10
+Epoch 20/100 - Sup Loss: 1257.2822, Cont Loss: 0.0993, Val RMSE: 53.6055, Best: 50.5158 @ epoch 10
+Epoch 30/100 - Sup Loss: 1053.8377, Cont Loss: 0.0570, Val RMSE: 53.7892, Best: 50.5158 @ epoch 10
+Early stopping at epoch 30 (no improvement for 20 epochs)
+
+--- Final Evaluation on Test Set ---
+Best Val RMSE: 50.5158 @ epoch 10
+Test RMSE: 41.8403
+Test MAE: 29.1050
+Test R2: 0.8651
+
+================================================================================
+Fold 4 - Ablation: full, Lambda: 2.0
+================================================================================
+
+--- Phase 1: Contrastive Pre-training (10 epochs) ---
+Epoch 1/10 - Contrastive Loss: 0.1341
+Epoch 5/10 - Contrastive Loss: 0.0325
+Epoch 10/10 - Contrastive Loss: 0.0240
+Pre-training completed. Final loss: 0.0240
+
+--- Phase 2: Fine-tuning (100 epochs) ---
+Lambda for fine-tuning: 2.0
+Epoch 1/100 - Sup Loss: 18169.1081, Cont Loss: 0.2847, Val RMSE: 70.8322, Best: 70.8322 @ epoch 1
+Epoch 10/100 - Sup Loss: 1580.7707, Cont Loss: 0.1179, Val RMSE: 49.6456, Best: 49.6456 @ epoch 10
+Epoch 20/100 - Sup Loss: 1221.7866, Cont Loss: 0.0878, Val RMSE: 52.3778, Best: 49.6456 @ epoch 10
+Epoch 30/100 - Sup Loss: 1007.2757, Cont Loss: 0.0508, Val RMSE: 54.3857, Best: 49.6456 @ epoch 10
+Early stopping at epoch 30 (no improvement for 20 epochs)
+
+--- Final Evaluation on Test Set ---
+Best Val RMSE: 49.6456 @ epoch 10
+Test RMSE: 44.1966
+Test MAE: 29.2417
+Test R2: 0.8437
+
+================================================================================
+Fold 5 - Ablation: full, Lambda: 2.0
+================================================================================
+
+--- Phase 1: Contrastive Pre-training (10 epochs) ---
+Epoch 1/10 - Contrastive Loss: 0.1360
+Epoch 5/10 - Contrastive Loss: 0.0280
+Epoch 10/10 - Contrastive Loss: 0.0231
+Pre-training completed. Final loss: 0.0231
+
+--- Phase 2: Fine-tuning (100 epochs) ---
+Lambda for fine-tuning: 2.0
+Epoch 1/100 - Sup Loss: 18108.0205, Cont Loss: 0.3553, Val RMSE: 75.1102, Best: 75.1102 @ epoch 1
+Epoch 10/100 - Sup Loss: 1587.5150, Cont Loss: 0.1362, Val RMSE: 51.7505, Best: 51.0972 @ epoch 6
+Epoch 20/100 - Sup Loss: 1184.0980, Cont Loss: 0.0724, Val RMSE: 53.2311, Best: 51.0972 @ epoch 6
+Early stopping at epoch 26 (no improvement for 20 epochs)
+
+--- Final Evaluation on Test Set ---
+Best Val RMSE: 51.0972 @ epoch 6
+Test RMSE: 41.3969
+Test MAE: 28.5413
+Test R2: 0.8669
+
+================================================================================
+Summary of Results
+================================================================================
+                    test_rmse                   ... test_mae test_r2        
+                         mean     std      min  ...      std    mean     std
+ablation_mode                                   ...                         
+full                  41.6513  1.7952  38.7414  ...   1.0894  0.8616  0.0133
+full_lambda_0.1       41.7559  1.6415  39.7187  ...   0.7693  0.8610  0.0116
+full_lambda_0.5       41.8524  1.7878  39.4014  ...   0.9900  0.8602  0.0141
+full_lambda_1.0       41.5858  1.6796  39.3970  ...   0.9060  0.8621  0.0126
+full_lambda_2.0       41.5954  1.8078  39.1094  ...   0.9386  0.8620  0.0133
+pretrain_only         42.0850  2.3259  39.2095  ...   1.4725  0.8586  0.0168
+regularization_only   41.5852  1.3161  39.7082  ...   0.6631  0.8621  0.0120
+supervised_only       41.5928  1.0569  39.9949  ...   0.5628  0.8621  0.0095
+
+[8 rows x 8 columns]
+
+================================================================================
+Training completed!
+Results saved to: results/
+================================================================================

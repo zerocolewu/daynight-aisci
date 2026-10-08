@@ -1,0 +1,39 @@
+BlochSpec Experiment Results Summary
+================================================================================
+
+Experiment                                     Test RMSE           Train RMSE             Gap
+--------------------------------------------------------------------------------
+Baseline GIN+Trimer                       66.15 +/- 0.27       26.84 +/- 3.05  39.32 +/- 3.27
+BlochSpec (GIN+Bloch)                     61.52 +/- 5.99       26.34 +/- 6.73  35.18 +/- 3.24
+Pure Spectral MLP                         76.71 +/- 1.26       72.46 +/- 1.63   4.25 +/- 0.69
+GIN + Random Features                     58.68 +/- 1.41       28.80 +/- 6.20  29.88 +/- 5.43
+GIN + Unweighted Lap                      58.45 +/- 1.09       21.11 +/- 0.57  37.34 +/- 1.24
+
+================================================================================
+Individual Seed Results:
+--------------------------------------------------------------------------------
+
+Baseline GIN+Trimer:
+  seed=42: test=65.7844, train=29.4970, val=58.7552, best_epoch=50, gap=36.2874
+  seed=71: test=66.4179, train=22.5633, val=55.6401, best_epoch=90, gap=43.8545
+  seed=123: test=66.2520, train=28.4455, val=60.6331, best_epoch=56, gap=37.8065
+
+BlochSpec (GIN+Bloch):
+  seed=42: test=69.8397, train=35.4233, val=53.9266, best_epoch=33, gap=34.4164
+  seed=71: test=58.7942, train=19.3184, val=48.8018, best_epoch=177, gap=39.4758
+  seed=123: test=55.9402, train=24.2850, val=49.1159, best_epoch=99, gap=31.6552
+
+Pure Spectral MLP:
+  seed=42: test=77.3241, train=72.3196, val=75.7471, best_epoch=62, gap=5.0045
+  seed=71: test=77.8613, train=74.5188, val=78.4776, best_epoch=26, gap=3.3425
+  seed=123: test=74.9505, train=70.5386, val=74.1559, best_epoch=119, gap=4.4119
+
+GIN + Random Features:
+  seed=42: test=58.8131, train=35.9864, val=54.8535, best_epoch=31, gap=22.8267
+  seed=71: test=60.3367, train=29.5475, val=56.8126, best_epoch=57, gap=30.7892
+  seed=123: test=56.8963, train=20.8625, val=51.6807, best_epoch=164, gap=36.0338
+
+GIN + Unweighted Lap:
+  seed=42: test=59.2238, train=21.8052, val=51.3445, best_epoch=147, gap=37.4186
+  seed=71: test=56.9036, train=21.1095, val=53.8681, best_epoch=137, gap=35.7941
+  seed=123: test=59.2180, train=20.4013, val=51.5823, best_epoch=186, gap=38.8167

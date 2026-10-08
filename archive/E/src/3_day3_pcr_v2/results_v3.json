@@ -1,0 +1,56 @@
+[
+  {
+    "exp_name": "v3_baseline",
+    "mode": "baseline",
+    "train_rmse": 35.811219020591984,
+    "val_rmse": 39.994563198257254,
+    "test_rmse": 51.33862125786687,
+    "best_epoch": 27,
+    "total_epochs": 57,
+    "n_params": 444932
+  },
+  {
+    "exp_name": "v3_pcr_a0.01",
+    "mode": "pcr",
+    "alpha": 0.01,
+    "train_rmse": 28.639561330623696,
+    "val_rmse": 39.32670417655364,
+    "test_rmse": 52.485118278421155,
+    "best_epoch": 52,
+    "total_epochs": 82,
+    "n_params": 486084
+  },
+  {
+    "exp_name": "v3_pcr_a0.05",
+    "mode": "pcr",
+    "alpha": 0.05,
+    "train_rmse": 29.177471743403693,
+    "val_rmse": 38.15707359255681,
+    "test_rmse": 52.243688629859314,
+    "best_epoch": 52,
+    "total_epochs": 82,
+    "n_params": 486084
+  },
+  {
+    "exp_name": "v3_pcr_a0.1",
+    "mode": "pcr",
+    "alpha": 0.1,
+    "train_rmse": 32.807798324325944,
+    "val_rmse": 40.27125606039003,
+    "test_rmse": 52.992633150151356,
+    "best_epoch": 35,
+    "total_epochs": 65,
+    "n_params": 486084
+  },
+  {
+    "exp_name": "v3_pcr_a0.5",
+    "mode": "pcr",
+    "alpha": 0.5,
+    "train_rmse": 38.801122826513094,
+    "val_rmse": 40.26387549162246,
+    "test_rmse": 52.27082494327699,
+    "best_epoch": 20,
+    "total_epochs": 50,
+    "n_params": 486084
+  }
+]

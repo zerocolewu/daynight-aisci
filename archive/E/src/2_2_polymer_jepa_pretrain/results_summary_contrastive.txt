@@ -1,0 +1,35 @@
+======================================================================
+POLYMER CONTRASTIVE PRE-TRAINING EXPERIMENT RESULTS
+======================================================================
+
+PHASE 1: Contrastive Pre-training on PI1M (SimCLR-style)
+----------------------------------------
+Number of PI1M samples used: 300000
+Number of epochs: 30
+Augmentations: node feature masking + edge dropping / subgraph sampling
+Loss: NT-Xent + VICReg variance + covariance
+
+PHASE 2: Fine-tuning on Tg
+----------------------------------------
+Strategy                        Test RMSE   Val RMSE Train RMSE
+----------------------------------------------------------------------
+baseline                          56.1785    46.2030    24.3008
+strategy_A                        66.7750    55.8931    27.0193
+strategy_B                        65.3075    53.0814    25.0061
+strategy_C                        77.3790    64.8018    42.9995
+
+KEY FINDINGS
+----------------------------------------
+Baseline (no pre-train) Test RMSE: 56.1785
+strategy_A Test RMSE: 66.7750 (delta: +10.5965)
+strategy_B Test RMSE: 65.3075 (delta: +9.1290)
+strategy_C Test RMSE: 77.3790 (delta: +21.2005)
+
+Any pre-training strategy beats baseline: False
+Any pre-training strategy beats 50.19 target: False
+
+Monomer-Trimer Cosine Similarity: 0.8826
+
+======================================================================
+SUCCESS CRITERION: ANY strategy with Test RMSE < 50.19 validates hypothesis
+======================================================================

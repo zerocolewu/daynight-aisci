@@ -1,0 +1,23 @@
+{
+  "data_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+  "output_dir": "/home/home_public/aisci/AIscientist/src/5_SAPI/results",
+  "n_folds": 5,
+  "n_epochs": 500,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "patience": 20,
+  "hidden_dim": 128,
+  "n_bits": 2048,
+  "radius": 2,
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "use_test_time_aug": [
+    false,
+    true
+  ],
+  "device": "cuda"
+}

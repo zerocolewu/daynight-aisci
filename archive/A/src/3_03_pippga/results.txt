@@ -1,0 +1,33 @@
+PIPGA Results on Tg Dataset
+============================================================
+
+Model Configuration:
+  hidden_dim: 256
+  num_layers: 3
+  num_heads: 4
+  dropout: 0.1
+  lr: 0.001
+  weight_decay: 1e-05
+  batch_size: 32
+  epochs: 500
+  patience: 50
+  n_folds: 5
+
+Dataset Statistics:
+  Total samples: 7170
+  Target mean: 141.87
+  Target std: 112.15
+  Target range: [-139.00, 495.00]
+
+5-Fold Cross-Validation Results:
+  Fold 1: RMSE = 44.5443, MAE = 32.4990
+  Fold 2: RMSE = 41.6935, MAE = 28.4541
+  Fold 3: RMSE = 55.1513, MAE = 41.9367
+  Fold 4: RMSE = 44.5710, MAE = 31.0616
+  Fold 5: RMSE = 41.6779, MAE = 29.4263
+
+============================================================
+FINAL RESULTS:
+  RMSE: 45.5276 ± 4.9803
+  MAE:  32.6755 ± 4.8329
+============================================================

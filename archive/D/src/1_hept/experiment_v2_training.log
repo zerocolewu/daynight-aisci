@@ -1,0 +1,166 @@
+================================================================================
+HEPT Iteration 2 - Improved Training
+Target: Beat PerioGT baseline RMSE=30.8 on Tg dataset
+================================================================================
+
+Device: cuda
+Configuration:
+  Hidden dim: 384
+  Batch size: 24
+  Learning rate: 0.0005
+  Dropout: 0.15
+  Weight decay: 0.0001
+  Max epochs: 300
+  Patience: 25
+  Gradient clip: 0.5
+
+Starting training...
+
+============================================================
+Training HEPT model
+============================================================
+Device: cuda
+Hidden dim: 384
+Batch size: 24
+Learning rate: 0.0005
+Max epochs: 300
+Patience: 25
+============================================================
+
+Loading data...
+Loading 7170 polymers from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv
+Successfully processed: 7170, Failed: 0
+Split sizes - Train: 5732, Val: 713, Test: 725
+Input dimension: 36
+Model parameters: 8,180,356
+
+Starting training...
+Epoch   1/300 | Train Loss: 31254.1893 | Val RMSE: 174.68 | Val MAE: 143.75 | Val R²: -1.3831 | LR: 0.000500 | Time: 14.4s
+  -> New best model saved! RMSE: 174.68
+Epoch   2/300 | Train Loss: 29350.1927 | Val RMSE: 168.61 | Val MAE: 137.60 | Val R²: -1.2203 | LR: 0.000500 | Time: 14.2s
+  -> New best model saved! RMSE: 168.61
+Epoch   3/300 | Train Loss: 27138.6078 | Val RMSE: 161.48 | Val MAE: 130.68 | Val R²: -1.0364 | LR: 0.000500 | Time: 13.5s
+  -> New best model saved! RMSE: 161.48
+Epoch   4/300 | Train Loss: 24657.3615 | Val RMSE: 153.33 | Val MAE: 123.00 | Val R²: -0.8361 | LR: 0.000500 | Time: 13.5s
+  -> New best model saved! RMSE: 153.33
+Epoch   5/300 | Train Loss: 22091.6359 | Val RMSE: 144.77 | Val MAE: 115.41 | Val R²: -0.6368 | LR: 0.000500 | Time: 14.1s
+  -> New best model saved! RMSE: 144.77
+Epoch   6/300 | Train Loss: 19565.7804 | Val RMSE: 136.23 | Val MAE: 108.53 | Val R²: -0.4493 | LR: 0.000500 | Time: 13.6s
+  -> New best model saved! RMSE: 136.23
+Epoch   7/300 | Train Loss: 17309.5953 | Val RMSE: 128.28 | Val MAE: 103.06 | Val R²: -0.2852 | LR: 0.000500 | Time: 13.6s
+  -> New best model saved! RMSE: 128.28
+Epoch   8/300 | Train Loss: 15412.2500 | Val RMSE: 121.52 | Val MAE: 98.70 | Val R²: -0.1533 | LR: 0.000500 | Time: 13.0s
+  -> New best model saved! RMSE: 121.52
+Epoch   9/300 | Train Loss: 14028.7369 | Val RMSE: 116.97 | Val MAE: 96.05 | Val R²: -0.0685 | LR: 0.000500 | Time: 14.5s
+  -> New best model saved! RMSE: 116.97
+Epoch  10/300 | Train Loss: 13236.7120 | Val RMSE: 114.53 | Val MAE: 94.99 | Val R²: -0.0245 | LR: 0.000500 | Time: 13.3s
+  -> New best model saved! RMSE: 114.53
+Epoch  11/300 | Train Loss: 12868.5951 | Val RMSE: 113.56 | Val MAE: 94.79 | Val R²: -0.0071 | LR: 0.000500 | Time: 12.7s
+  -> New best model saved! RMSE: 113.56
+Epoch  12/300 | Train Loss: 12758.1384 | Val RMSE: 113.29 | Val MAE: 94.78 | Val R²: -0.0024 | LR: 0.000500 | Time: 13.8s
+  -> New best model saved! RMSE: 113.29
+Epoch  13/300 | Train Loss: 11576.4123 | Val RMSE: 96.42 | Val MAE: 76.55 | Val R²: 0.2739 | LR: 0.000500 | Time: 12.3s
+  -> New best model saved! RMSE: 96.42
+Epoch  14/300 | Train Loss: 8556.2050 | Val RMSE: 89.20 | Val MAE: 68.52 | Val R²: 0.3787 | LR: 0.000500 | Time: 10.8s
+  -> New best model saved! RMSE: 89.20
+Epoch  15/300 | Train Loss: 7550.9833 | Val RMSE: 85.69 | Val MAE: 67.20 | Val R²: 0.4265 | LR: 0.000500 | Time: 12.1s
+  -> New best model saved! RMSE: 85.69
+Epoch  16/300 | Train Loss: 7457.3412 | Val RMSE: 88.67 | Val MAE: 72.51 | Val R²: 0.3860 | LR: 0.000500 | Time: 12.5s
+Epoch  17/300 | Train Loss: 6750.5561 | Val RMSE: 81.31 | Val MAE: 62.80 | Val R²: 0.4837 | LR: 0.000500 | Time: 13.6s
+  -> New best model saved! RMSE: 81.31
+Epoch  18/300 | Train Loss: 6062.1171 | Val RMSE: 78.31 | Val MAE: 59.44 | Val R²: 0.5210 | LR: 0.000500 | Time: 14.2s
+  -> New best model saved! RMSE: 78.31
+Epoch  19/300 | Train Loss: 5602.9274 | Val RMSE: 74.29 | Val MAE: 56.45 | Val R²: 0.5690 | LR: 0.000500 | Time: 10.8s
+  -> New best model saved! RMSE: 74.29
+Epoch  20/300 | Train Loss: 5217.0359 | Val RMSE: 72.35 | Val MAE: 54.57 | Val R²: 0.5912 | LR: 0.000500 | Time: 11.1s
+  -> New best model saved! RMSE: 72.35
+Epoch  21/300 | Train Loss: 4851.9037 | Val RMSE: 68.71 | Val MAE: 52.91 | Val R²: 0.6313 | LR: 0.000500 | Time: 13.7s
+  -> New best model saved! RMSE: 68.71
+Epoch  22/300 | Train Loss: 4500.4686 | Val RMSE: 68.57 | Val MAE: 51.82 | Val R²: 0.6328 | LR: 0.000500 | Time: 13.1s
+  -> New best model saved! RMSE: 68.57
+Epoch  23/300 | Train Loss: 4393.7070 | Val RMSE: 67.03 | Val MAE: 51.26 | Val R²: 0.6491 | LR: 0.000500 | Time: 12.9s
+  -> New best model saved! RMSE: 67.03
+Epoch  24/300 | Train Loss: 4335.2083 | Val RMSE: 63.48 | Val MAE: 47.88 | Val R²: 0.6853 | LR: 0.000500 | Time: 13.2s
+  -> New best model saved! RMSE: 63.48
+Epoch  25/300 | Train Loss: 4164.3021 | Val RMSE: 66.18 | Val MAE: 49.91 | Val R²: 0.6579 | LR: 0.000500 | Time: 13.5s
+Epoch  26/300 | Train Loss: 4046.0662 | Val RMSE: 61.88 | Val MAE: 45.26 | Val R²: 0.7010 | LR: 0.000500 | Time: 13.5s
+  -> New best model saved! RMSE: 61.88
+Epoch  27/300 | Train Loss: 3928.6314 | Val RMSE: 68.56 | Val MAE: 52.78 | Val R²: 0.6329 | LR: 0.000500 | Time: 14.2s
+Epoch  28/300 | Train Loss: 3753.9735 | Val RMSE: 68.04 | Val MAE: 52.32 | Val R²: 0.6384 | LR: 0.000500 | Time: 13.1s
+Epoch  29/300 | Train Loss: 3731.7359 | Val RMSE: 59.31 | Val MAE: 43.36 | Val R²: 0.7252 | LR: 0.000500 | Time: 12.5s
+  -> New best model saved! RMSE: 59.31
+Epoch  30/300 | Train Loss: 3615.9218 | Val RMSE: 65.21 | Val MAE: 50.02 | Val R²: 0.6679 | LR: 0.000500 | Time: 13.8s
+Epoch  31/300 | Train Loss: 3534.8818 | Val RMSE: 60.53 | Val MAE: 45.32 | Val R²: 0.7139 | LR: 0.000500 | Time: 13.2s
+Epoch  32/300 | Train Loss: 3569.6035 | Val RMSE: 62.68 | Val MAE: 46.40 | Val R²: 0.6931 | LR: 0.000500 | Time: 14.5s
+Epoch  33/300 | Train Loss: 3487.1681 | Val RMSE: 64.23 | Val MAE: 48.35 | Val R²: 0.6778 | LR: 0.000500 | Time: 14.1s
+Epoch  34/300 | Train Loss: 3488.5897 | Val RMSE: 59.18 | Val MAE: 43.37 | Val R²: 0.7265 | LR: 0.000500 | Time: 13.8s
+  -> New best model saved! RMSE: 59.18
+Epoch  35/300 | Train Loss: 3495.9667 | Val RMSE: 69.87 | Val MAE: 55.67 | Val R²: 0.6188 | LR: 0.000500 | Time: 13.7s
+Epoch  36/300 | Train Loss: 3387.3832 | Val RMSE: 60.67 | Val MAE: 45.38 | Val R²: 0.7125 | LR: 0.000500 | Time: 13.5s
+Epoch  37/300 | Train Loss: 3440.2547 | Val RMSE: 60.15 | Val MAE: 44.88 | Val R²: 0.7174 | LR: 0.000500 | Time: 13.8s
+Epoch  38/300 | Train Loss: 3322.3722 | Val RMSE: 59.09 | Val MAE: 43.75 | Val R²: 0.7273 | LR: 0.000500 | Time: 14.1s
+  -> New best model saved! RMSE: 59.09
+Epoch  39/300 | Train Loss: 3394.3909 | Val RMSE: 58.84 | Val MAE: 43.86 | Val R²: 0.7296 | LR: 0.000500 | Time: 13.3s
+  -> New best model saved! RMSE: 58.84
+Epoch  40/300 | Train Loss: 3449.8232 | Val RMSE: 60.38 | Val MAE: 45.50 | Val R²: 0.7152 | LR: 0.000500 | Time: 13.5s
+Epoch  41/300 | Train Loss: 3594.4743 | Val RMSE: 56.03 | Val MAE: 40.47 | Val R²: 0.7548 | LR: 0.000500 | Time: 14.3s
+  -> New best model saved! RMSE: 56.03
+Epoch  42/300 | Train Loss: 3456.9042 | Val RMSE: 59.73 | Val MAE: 43.88 | Val R²: 0.7214 | LR: 0.000500 | Time: 11.4s
+Epoch  43/300 | Train Loss: 3651.2604 | Val RMSE: 63.08 | Val MAE: 47.47 | Val R²: 0.6892 | LR: 0.000500 | Time: 14.4s
+Epoch  44/300 | Train Loss: 3378.2932 | Val RMSE: 62.52 | Val MAE: 46.89 | Val R²: 0.6947 | LR: 0.000500 | Time: 13.6s
+Epoch  45/300 | Train Loss: 3366.0543 | Val RMSE: 63.70 | Val MAE: 48.11 | Val R²: 0.6831 | LR: 0.000500 | Time: 13.9s
+Epoch  46/300 | Train Loss: 3359.4143 | Val RMSE: 61.03 | Val MAE: 44.51 | Val R²: 0.7091 | LR: 0.000500 | Time: 14.2s
+Epoch  47/300 | Train Loss: 3383.8317 | Val RMSE: 59.03 | Val MAE: 42.90 | Val R²: 0.7279 | LR: 0.000500 | Time: 14.1s
+Epoch  48/300 | Train Loss: 3275.8948 | Val RMSE: 60.48 | Val MAE: 44.09 | Val R²: 0.7143 | LR: 0.000500 | Time: 13.9s
+Epoch  49/300 | Train Loss: 3273.5711 | Val RMSE: 59.51 | Val MAE: 43.88 | Val R²: 0.7234 | LR: 0.000500 | Time: 13.1s
+Epoch  50/300 | Train Loss: 3331.9603 | Val RMSE: 56.80 | Val MAE: 41.91 | Val R²: 0.7480 | LR: 0.000500 | Time: 13.8s
+Epoch  51/300 | Train Loss: 3352.3412 | Val RMSE: 59.00 | Val MAE: 43.55 | Val R²: 0.7281 | LR: 0.000500 | Time: 12.4s
+Epoch  52/300 | Train Loss: 3306.1129 | Val RMSE: 62.01 | Val MAE: 46.74 | Val R²: 0.6997 | LR: 0.000250 | Time: 12.5s
+Epoch  53/300 | Train Loss: 3223.3229 | Val RMSE: 58.19 | Val MAE: 42.67 | Val R²: 0.7356 | LR: 0.000250 | Time: 14.2s
+Epoch  54/300 | Train Loss: 3169.8785 | Val RMSE: 57.80 | Val MAE: 42.73 | Val R²: 0.7391 | LR: 0.000250 | Time: 14.0s
+Epoch  55/300 | Train Loss: 3151.6413 | Val RMSE: 58.83 | Val MAE: 42.56 | Val R²: 0.7297 | LR: 0.000250 | Time: 13.5s
+Epoch  56/300 | Train Loss: 3189.3742 | Val RMSE: 57.33 | Val MAE: 41.36 | Val R²: 0.7433 | LR: 0.000250 | Time: 14.3s
+Epoch  57/300 | Train Loss: 3132.2797 | Val RMSE: 58.84 | Val MAE: 43.78 | Val R²: 0.7296 | LR: 0.000250 | Time: 13.7s
+Epoch  58/300 | Train Loss: 3119.0528 | Val RMSE: 58.71 | Val MAE: 43.80 | Val R²: 0.7308 | LR: 0.000250 | Time: 12.4s
+Epoch  59/300 | Train Loss: 3205.3124 | Val RMSE: 59.18 | Val MAE: 44.54 | Val R²: 0.7264 | LR: 0.000250 | Time: 12.4s
+Epoch  60/300 | Train Loss: 3194.0874 | Val RMSE: 61.07 | Val MAE: 45.53 | Val R²: 0.7087 | LR: 0.000250 | Time: 12.4s
+Epoch  61/300 | Train Loss: 3146.1576 | Val RMSE: 59.08 | Val MAE: 43.70 | Val R²: 0.7274 | LR: 0.000250 | Time: 12.4s
+Epoch  62/300 | Train Loss: 3206.9433 | Val RMSE: 57.08 | Val MAE: 41.93 | Val R²: 0.7456 | LR: 0.000250 | Time: 13.0s
+Epoch  63/300 | Train Loss: 3148.5265 | Val RMSE: 56.53 | Val MAE: 41.47 | Val R²: 0.7504 | LR: 0.000125 | Time: 12.9s
+Epoch  64/300 | Train Loss: 3133.3545 | Val RMSE: 57.47 | Val MAE: 42.00 | Val R²: 0.7421 | LR: 0.000125 | Time: 12.4s
+Epoch  65/300 | Train Loss: 3112.7170 | Val RMSE: 57.99 | Val MAE: 42.14 | Val R²: 0.7374 | LR: 0.000125 | Time: 12.5s
+Epoch  66/300 | Train Loss: 3118.8117 | Val RMSE: 58.13 | Val MAE: 43.29 | Val R²: 0.7361 | LR: 0.000125 | Time: 13.9s
+
+Early stopping triggered after 66 epochs
+
+Training completed in 14.8 minutes
+Best validation RMSE: 56.03 at epoch 41
+
+Evaluating on test set...
+
+Test Results:
+  RMSE: 53.84
+  MAE: 39.56
+  R²: 0.7689
+
+Training completed in 17.3 minutes
+Best validation RMSE: 56.03
+Test RMSE: 53.84
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/1_hept/run_experiment_v2.py", line 182, in <module>
+    results = run_iteration2()
+  File "/home/home_public/aisci/AIscientist/src/1_hept/run_experiment_v2.py", line 144, in run_iteration2
+    json.dump(results_dict, f, indent=2)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type float32 is not JSON serializable

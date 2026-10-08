@@ -1,0 +1,4 @@
+  File "/home/home_public/aisci/AIscientist/src/3_pfcl_pretraining/wait_and_analyze.py", line 187
+    print(f"  ✓ Loaded {len(data.get('folds', [])} folds")
+                                                           ^
+SyntaxError: f-string: closing parenthesis '}' does not match opening parenthesis '('

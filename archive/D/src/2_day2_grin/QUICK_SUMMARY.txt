@@ -1,0 +1,47 @@
+GRIN EXPERIMENT - QUICK SUMMARY
+================================
+
+Date: March 24, 2026
+Dataset: Tg (Glass Transition Temperature) - 7170 polymers
+Target: Test RMSE < 37.0 (GraphFormer baseline)
+
+RESULTS (3/5 experiments completed):
+------------------------------------
+✅ Baseline (Mean, No Aug):     RMSE = 76.08 (BEST)
+✅ Max Only:                    RMSE = 78.75
+✅ Max + L1:                    RMSE = 77.94
+❌ Full GRIN (Max+L1+Aug):      FAILED (augmentation bug)
+⏭️ Mean + Aug:                  NOT RUN
+
+KEY FINDINGS:
+-------------
+1. Baseline performed BEST - mean aggregation > max aggregation
+2. Max aggregation made performance WORSE (+3.5%)
+3. L1 sparsity provided minor improvement (-1.0%)
+4. Target NOT ACHIEVED: 76.08 vs 37.0 (2.06x worse)
+
+ISSUES:
+-------
+- Augmentation failed due to SMILES-to-graph conversion errors
+- Simplified repeat unit concatenation generated invalid SMILES
+- Could not test core GRIN hypothesis about augmentation
+
+CONCLUSION:
+-----------
+❌ Target not met
+✅ Valuable negative results obtained
+⚠️ Partial success (3/5 experiments)
+
+FILES:
+------
+- FINAL_REPORT.md: Comprehensive analysis and recommendations
+- results_20260324_072344/: All experiment results and visualizations
+- *.py: Implementation code (data_utils, models, train, analysis)
+- comparison_results.png: Visual comparison of results
+
+NEXT STEPS:
+-----------
+1. Fix augmentation pipeline using RDKit properly
+2. Add polymer-specific features
+3. Increase model capacity
+4. Compare directly with GraphFormer

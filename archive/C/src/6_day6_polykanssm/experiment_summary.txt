@@ -1,0 +1,166 @@
+================================================================================
+PolyKAN-SSM v4: Complete Experimental Summary
+================================================================================
+
+DATE: 2026-05-08
+TASK: Implement and run PolyKAN-SSM v4 for polymer Tg prediction
+DIRECTORY: /home/home_public/aisci/AIscientist/src/6_day6_polykanssm
+
+================================================================================
+FILES CREATED
+================================================================================
+
+1. model_v4.py - Improved architecture with:
+   - FourierKANLayer: Learnable Fourier frequencies initialized small
+   - GNNSSMLayer: SSM-style GNN with multi-head attention
+   - PolyKANSSM_v4: Full model (192 hidden dim, 4 layers, no virtual node)
+
+2. train_v4.py - Complete training pipeline:
+   - 5-seed main experiment
+   - 3 ablation studies
+   - Cosine annealing with warm restarts
+   - Early stopping (patience=30)
+
+================================================================================
+MAIN EXPERIMENT RESULTS (5 seeds)
+================================================================================
+
+Aggregate Performance:
+  Mean Test RMSE:  54.54 ± 1.56
+  Mean Test MAE:   40.82 ± 0.97
+  Mean Test R²:    0.762 ± 0.014
+  Train-Val Gap:   0.55  ← MAJOR IMPROVEMENT from v3's ~11.2!
+  Best Seed:       52.25 (seed 42)
+
+Per-Seed Breakdown:
+  Seed 42:  Train=50.40  Val=50.20  Test=52.25  R²=0.785
+  Seed 123: Train=55.78  Val=56.99  Test=53.70  R²=0.765
+  Seed 456: Train=56.58  Val=54.90  Test=54.98  R²=0.754
+  Seed 789: Train=51.51  Val=55.86  Test=56.97  R²=0.744
+  Seed 2024: Train=53.55  Val=52.60  Test=54.82  R²=0.763
+
+Model Parameters: 1,054,290
+Dataset: 7,170 polymers (train=5,162, val=573, test=1,435)
+
+================================================================================
+ABLATION STUDIES (seed=42)
+================================================================================
+
+1. No Fourier-KAN (Linear+GELU instead):
+   Test RMSE: 50.13  ← BETTER than full model!
+   Train-Val Gap: 2.2 (excellent)
+   
+2. No GNN-SSM (GINConv instead):
+   Test RMSE: 45.56  ← BEST ablation result!
+   Train-Val Gap: 8.3 (reasonable)
+   Conclusion: Standard GINConv outperforms custom SSM layer
+   
+3. No non-covalent edges (covalent only):
+   Test RMSE: 48.34  ← Better than full model
+   Train-Val Gap: -1.8 (slight underfitting)
+   Conclusion: Non-covalent edges may be adding noise
+
+Full v4 Model (for comparison):
+   Test RMSE: 52.25
+   Train-Val Gap: 0.2 (best generalization)
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+✅ SUCCESS:
+- Overfitting problem SOLVED: train-val gap reduced from 11.2 to 0.55
+- Stable training across all 5 seeds
+- No early stopping issues
+- SSM successfully controls gradient flow
+
+❌ CHALLENGES:
+- Absolute performance degraded: RMSE increased from ~40 (v3) to ~54 (v4)
+- SSM layer too restrictive (GINConv works better)
+- Fourier-KAN not providing clear benefit
+- Non-covalent edges not helping
+- Still far from SOTA target of 30.8
+
+🔍 SURPRISING INSIGHTS:
+- Simpler architectures (GINConv, Linear+GELU) perform better
+- Removing non-covalent edges improves performance
+- The complex SSM formulation may be over-engineering
+- Less is more in this case
+
+================================================================================
+COMPARISON WITH PREVIOUS VERSIONS
+================================================================================
+
+v3 Results:
+  Mean Test RMSE: ~39.96
+  Train-Val Gap: ~11.2  ← Severe overfitting
+  Architecture: GINEConv + virtual node + SSM residual
+  
+v4 Results:
+  Mean Test RMSE: 54.54
+  Train-Val Gap: 0.55  ← No overfitting!
+  Architecture: Custom SSM-GNN + no virtual node
+
+Trade-off: v4 fixed overfitting but hurt absolute performance
+
+================================================================================
+RECOMMENDATIONS FOR v5
+================================================================================
+
+Based on ablation results, v5 should:
+
+1. Use GINConv backbone (best ablation: 45.56 RMSE)
+2. Remove Fourier-KAN (not helping)
+3. Keep strong regularization from v4
+4. Increase model capacity moderately
+5. Reconsider non-covalent edges (maybe different cutoff)
+6. Target: Bridge the gap between 45.56 and SOTA (30.8)
+
+Potential v5 Architecture:
+- GINConv backbone (proven effective)
+- hidden_dim=224 (between v4's 192 and ablation's needs)
+- num_layers=5 (slightly deeper)
+- No Fourier-KAN (use GELU)
+- No virtual node
+- Dual pooling (keep from v4)
+- Non-covalent edges with 4Å cutoff (try shorter)
+
+================================================================================
+OUTPUT FILES
+================================================================================
+
+Results:
+  - results_v4.json: Main experiment results
+  - final_report_v4.md: Detailed analysis
+  - experiment_summary.txt: This file
+
+Diagnostics:
+  - diagnostics/training_curves_v4.png: Training/validation curves
+  - diagnostics/overfitting_gap_v4.png: Overfitting analysis
+
+Code:
+  - model_v4.py: Model architecture
+  - train_v4.py: Training script
+
+Logs:
+  - output_v4.txt: Full training output
+  - ablation_output2.txt: Ablation study results
+
+================================================================================
+CONCLUSION
+================================================================================
+
+PolyKAN-SSM v4 successfully achieved its primary goal: eliminating overfitting.
+The train-val gap of 0.55 is excellent compared to v3's 11.2. However, the
+absolute performance (RMSE 54.54) is worse than v3 (~40) and far from SOTA (30.8).
+
+The ablation studies provide clear direction: simpler is better. The best
+performing variant used standard GINConv without Fourier-KAN, suggesting that
+the complex SSM and Fourier formulations are over-engineering for this task.
+
+Next step: v5 should combine the best elements - GINConv backbone, strong
+regularization, moderate capacity, and simplified architecture.
+
+================================================================================
+END OF REPORT
+================================================================================

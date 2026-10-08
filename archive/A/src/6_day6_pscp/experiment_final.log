@@ -1,0 +1,80 @@
+======================================================================
+PSCP: Polymer-Specific Contrastive Pretraining
+FINAL EXPERIMENT
+======================================================================
+Device: cuda
+GPU: NVIDIA GeForce RTX 2080 Ti
+
+======================================================================
+LOADING Tg DATASET
+======================================================================
+Loading Tg from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Loaded 7170 samples
+Pre-computing ECFP fingerprints...
+ECFP:   0%|          | 0/7170 [00:00<?, ?it/s]ECFP:   3%|▎         | 245/7170 [00:00<00:02, 2446.86it/s]ECFP:   7%|▋         | 490/7170 [00:00<00:02, 2371.29it/s]ECFP:  10%|█         | 728/7170 [00:00<00:04, 1496.87it/s]ECFP:  13%|█▎        | 905/7170 [00:00<00:04, 1434.94it/s]ECFP:  15%|█▍        | 1064/7170 [00:00<00:04, 1360.93it/s]ECFP:  17%|█▋        | 1210/7170 [00:00<00:05, 1098.98it/s]ECFP:  19%|█▊        | 1331/7170 [00:01<00:05, 1092.67it/s]ECFP:  20%|██        | 1448/7170 [00:01<00:06, 922.31it/s] ECFP:  22%|██▏       | 1548/7170 [00:01<00:05, 938.44it/s]ECFP:  23%|██▎       | 1648/7170 [00:01<00:06, 868.11it/s]ECFP:  26%|██▌       | 1865/7170 [00:01<00:04, 1178.02it/s]ECFP:  29%|██▉       | 2094/7170 [00:01<00:03, 1459.69it/s]ECFP:  33%|███▎      | 2343/7170 [00:01<00:02, 1732.99it/s]ECFP:  36%|███▌      | 2583/7170 [00:01<00:02, 1915.78it/s]ECFP:  39%|███▉      | 2816/7170 [00:01<00:02, 2023.67it/s]ECFP:  42%|████▏     | 3027/7170 [00:02<00:02, 1802.45it/s]ECFP:  45%|████▍     | 3218/7170 [00:02<00:02, 1533.98it/s]ECFP:  47%|████▋     | 3385/7170 [00:02<00:02, 1384.75it/s]ECFP:  49%|████▉     | 3534/7170 [00:02<00:02, 1226.85it/s]ECFP:  51%|█████▏    | 3688/7170 [00:02<00:02, 1296.39it/s]ECFP:  53%|█████▎    | 3827/7170 [00:02<00:02, 1238.75it/s]ECFP:  55%|█████▌    | 3957/7170 [00:02<00:02, 1219.72it/s]ECFP:  57%|█████▋    | 4083/7170 [00:03<00:02, 1178.92it/s]ECFP:  60%|█████▉    | 4276/7170 [00:03<00:02, 1372.30it/s]ECFP:  62%|██████▏   | 4418/7170 [00:03<00:02, 1335.65it/s]ECFP:  64%|██████▎   | 4558/7170 [00:03<00:01, 1349.97it/s]ECFP:  65%|██████▌   | 4696/7170 [00:03<00:02, 1155.01it/s]ECFP:  67%|██████▋   | 4818/7170 [00:03<00:02, 1118.16it/s]ECFP:  69%|██████▉   | 4966/7170 [00:03<00:01, 1204.64it/s]ECFP:  71%|███████   | 5091/7170 [00:03<00:01, 1129.83it/s]ECFP:  74%|███████▎  | 5286/7170 [00:03<00:01, 1343.70it/s]ECFP:  77%|███████▋  | 5489/7170 [00:04<00:01, 1529.17it/s]ECFP:  80%|███████▉  | 5718/7170 [00:04<00:00, 1740.22it/s]ECFP:  82%|████████▏ | 5908/7170 [00:04<00:00, 1783.68it/s]ECFP:  85%|████████▍ | 6091/7170 [00:04<00:00, 1715.19it/s]ECFP:  88%|████████▊ | 6321/7170 [00:04<00:00, 1880.05it/s]ECFP:  91%|█████████ | 6513/7170 [00:04<00:00, 1886.51it/s]ECFP:  94%|█████████▎| 6704/7170 [00:04<00:00, 1840.67it/s]ECFP:  97%|█████████▋| 6942/7170 [00:04<00:00, 1993.96it/s]ECFP: 100%|██████████| 7170/7170 [00:04<00:00, 1467.29it/s]
+
+======================================================================
+ABLATION STUDY
+======================================================================
+
+======================================================================
+Condition: no_pretrain
+Tasks: None
+======================================================================
+Skipping pretraining (random initialization)
+
+Fine-tuning on Tg dataset...
+
+Fold 1/5
+  Epoch 25: Train Loss=28024.1880, Val RMSE=164.39, R2=-1.1362
+  Epoch 50: Train Loss=22304.5396, Val RMSE=147.31, R2=-0.7154
+  Epoch 75: Train Loss=19461.3963, Val RMSE=138.45, R2=-0.5154
+  Epoch 100: Train Loss=19078.3358, Val RMSE=130.77, R2=-0.3519
+  Fold 1 Results: RMSE=130.46, MAE=104.58, R2=-0.3455
+
+Fold 2/5
+  Epoch 25: Train Loss=28057.6511, Val RMSE=163.55, R2=-1.2564
+  Epoch 50: Train Loss=22676.2133, Val RMSE=148.41, R2=-0.8580
+  Epoch 75: Train Loss=19997.2788, Val RMSE=138.80, R2=-0.6252
+  Fold 2 Results: RMSE=125.17, MAE=100.37, R2=-0.3216
+
+Fold 3/5
+  Epoch 25: Train Loss=27095.2436, Val RMSE=166.78, R2=-1.1432
+  Epoch 50: Train Loss=20972.2839, Val RMSE=147.57, R2=-0.6780
+  Epoch 75: Train Loss=18225.7679, Val RMSE=133.64, R2=-0.3761
+  Fold 3 Results: RMSE=127.96, MAE=104.49, R2=-0.2617
+
+Fold 4/5
+  Epoch 25: Train Loss=27734.2849, Val RMSE=167.23, R2=-1.2374
+  Epoch 50: Train Loss=22383.8437, Val RMSE=149.56, R2=-0.7895
+  Epoch 75: Train Loss=19728.6541, Val RMSE=139.86, R2=-0.5650
+  Epoch 100: Train Loss=19345.4760, Val RMSE=141.41, R2=-0.5999
+  Fold 4 Results: RMSE=132.44, MAE=107.26, R2=-0.4032
+
+Fold 5/5
+  Epoch 25: Train Loss=26988.5489, Val RMSE=169.28, R2=-1.2256
+  Epoch 50: Train Loss=21220.9294, Val RMSE=150.43, R2=-0.7576
+  Epoch 75: Train Loss=18654.9410, Val RMSE=141.35, R2=-0.5518
+  Epoch 100: Train Loss=18088.9456, Val RMSE=139.38, R2=-0.5089
+  Fold 5 Results: RMSE=128.74, MAE=104.77, R2=-0.2873
+
+======================================================================
+Condition: fgm_only
+Tasks: ['fgm']
+======================================================================
+
+Pretraining on 100000 samples...
+Loading PI1M from /home/home_public/aisci/AIscientist/src/alldataset/PI1M.csv...
+Loaded 100000 SMILES
+Combined Pretrain:   0%|          | 0/1563 [00:00<?, ?it/s]                                                           Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/6_day6_pscp/run_final_experiment.py", line 828, in <module>
+    results = run_experiment()
+  File "/home/home_public/aisci/AIscientist/src/6_day6_pscp/run_final_experiment.py", line 719, in run_experiment
+    losses = pretrain_combined(model, pretrain_loader, optimizer, device, task_weights)
+  File "/home/home_public/aisci/AIscientist/src/6_day6_pscp/run_final_experiment.py", line 513, in pretrain_combined
+    fgm_loss = F.mse_loss(node_emb[mask_indices], original[:, :node_emb.size(1)])
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/functional.py", line 3884, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/functional.py", line 76, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+RuntimeError: The size of tensor a (256) must match the size of tensor b (159) at non-singleton dimension 1

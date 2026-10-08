@@ -1,0 +1,86 @@
+{
+  "JEPA_v6_B_lr5e4": {
+    "strategy": "JEPA_v6_B_lr5e4",
+    "best_epoch": 67,
+    "test_rmse": 54.78725876158263,
+    "val_rmse": 41.54035389577349
+  },
+  "Contrastive_B_cosine": {
+    "strategy": "Contrastive_B_cosine",
+    "best_epoch": 74,
+    "test_rmse": 53.17914864560173,
+    "val_rmse": 42.752938501678834
+  },
+  "Contrastive_B_lr5e4_run2": {
+    "strategy": "Contrastive_B_lr5e4_run2",
+    "best_epoch": 45,
+    "test_rmse": 52.03133009664001,
+    "val_rmse": 42.83638000833303
+  },
+  "Contrastive_B_lr5e4_run3": {
+    "strategy": "Contrastive_B_lr5e4_run3",
+    "best_epoch": 54,
+    "test_rmse": 57.450648863737285,
+    "val_rmse": 45.75836440275105
+  },
+  "Contrastive_B_seed42": {
+    "strategy": "Contrastive_B_seed42",
+    "best_epoch": 53,
+    "test_rmse": 55.202908514710565,
+    "val_rmse": 44.47960993349319
+  },
+  "Contrastive_B_seed43": {
+    "strategy": "Contrastive_B_seed43",
+    "best_epoch": 108,
+    "test_rmse": 56.5942110646936,
+    "val_rmse": 43.84074340426372
+  },
+  "Contrastive_B_seed44": {
+    "strategy": "Contrastive_B_seed44",
+    "best_epoch": 46,
+    "test_rmse": 58.234035014524316,
+    "val_rmse": 42.723766289752625
+  },
+  "Contrastive_B_seed45": {
+    "strategy": "Contrastive_B_seed45",
+    "best_epoch": 13,
+    "test_rmse": 62.369489075454275,
+    "val_rmse": 46.84937729573575
+  },
+  "Contrastive_B_seed46": {
+    "strategy": "Contrastive_B_seed46",
+    "best_epoch": 8,
+    "test_rmse": 61.32484702257411,
+    "val_rmse": 48.56092256254443
+  },
+  "Contrastive_B_seed47": {
+    "strategy": "Contrastive_B_seed47",
+    "best_epoch": 59,
+    "test_rmse": 54.305746746568836,
+    "val_rmse": 45.864409210537914
+  },
+  "Contrastive_B_seed48": {
+    "strategy": "Contrastive_B_seed48",
+    "best_epoch": 79,
+    "test_rmse": 59.11164998172788,
+    "val_rmse": 45.63121822652285
+  },
+  "Contrastive_B_seed49": {
+    "strategy": "Contrastive_B_seed49",
+    "best_epoch": 42,
+    "test_rmse": 53.6920360165121,
+    "val_rmse": 40.40926971262745
+  },
+  "Contrastive_B_seed50": {
+    "strategy": "Contrastive_B_seed50",
+    "best_epoch": 59,
+    "test_rmse": 57.221979745614,
+    "val_rmse": 42.6200642484345
+  },
+  "Contrastive_B_seed51": {
+    "strategy": "Contrastive_B_seed51",
+    "best_epoch": 6,
+    "test_rmse": 51.476769351785144,
+    "val_rmse": 41.89644766580811
+  }
+}

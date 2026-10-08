@@ -1,0 +1,109 @@
+======================================================================
+PSPE Experiment: Polymer-Specific Positional Encodings for Tg Prediction
+======================================================================
+Device: cuda
+Batch size: 64
+Model seed: 42
+
+======================================================================
+Step 1: Building datasets with PSPE features
+======================================================================
+Train: 5162, Val: 573, Test: 1435
+PSPE-dce stats: mean=0.2565, std=0.3245
+PSPE-mi stats: mean=0.2583, std=0.3850
+Backbone length: mean=54.4, min=3.0, max=205.0
+
+======================================================================
+Step 2: Loading RWPE k=32
+======================================================================
+Loaded RWPE data: 7170 graphs, k=32
+RWPE assigned: train=5162/0, val=573/0, test=1435/0 (ok/fallback)
+
+======================================================================
+Step 3: Creating dataloaders
+======================================================================
+Train batches: 81, Val batches: 9, Test batches: 23
+
+======================================================================
+Condition: baseline
+======================================================================
+[baseline] Model: 489,217 parameters, input_dim=79
+  Epoch   1: train_loss=0.3692, val_rmse=56.17K, val_r2=0.7413, lr=1.00e-03
+  Epoch  20: train_loss=0.1378, val_rmse=40.59K, val_r2=0.8649, lr=1.00e-03
+  Epoch  40: train_loss=0.0947, val_rmse=38.08K, val_r2=0.8811, lr=1.00e-03
+  Epoch  60: train_loss=0.0702, val_rmse=36.40K, val_r2=0.8914, lr=1.00e-03
+  Epoch  80: train_loss=0.0587, val_rmse=35.76K, val_r2=0.8952, lr=1.00e-03
+  Epoch 100: train_loss=0.0409, val_rmse=35.78K, val_r2=0.8951, lr=5.00e-04
+  Early stopping at epoch 113
+  Best epoch: 83
+  Test  RMSE: 38.68K
+  Test  MAE:  25.23K
+  Test  R²:   0.8767
+  Time: 323.3s
+
+======================================================================
+Condition: pspe_dce
+======================================================================
+[pspe_dce] Model: 489,729 parameters, input_dim=80
+  Epoch   1: train_loss=0.3475, val_rmse=54.76K, val_r2=0.7542, lr=1.00e-03
+  Epoch  20: train_loss=0.1323, val_rmse=41.15K, val_r2=0.8612, lr=1.00e-03
+  Epoch  40: train_loss=0.0911, val_rmse=38.33K, val_r2=0.8796, lr=1.00e-03
+  Epoch  60: train_loss=0.0705, val_rmse=36.17K, val_r2=0.8927, lr=1.00e-03
+  Epoch  80: train_loss=0.0493, val_rmse=33.72K, val_r2=0.9068, lr=5.00e-04
+  Epoch 100: train_loss=0.0378, val_rmse=32.88K, val_r2=0.9113, lr=2.50e-04
+  Epoch 120: train_loss=0.0344, val_rmse=33.03K, val_r2=0.9106, lr=2.50e-04
+  Epoch 140: train_loss=0.0301, val_rmse=32.54K, val_r2=0.9132, lr=6.25e-05
+  Early stopping at epoch 142
+  Best epoch: 112
+  Test  RMSE: 36.43K
+  Test  MAE:  23.40K
+  Test  R²:   0.8906
+  Time: 421.7s
+
+======================================================================
+Condition: pspe_mi
+======================================================================
+[pspe_mi] Model: 489,729 parameters, input_dim=80
+  Epoch   1: train_loss=0.3521, val_rmse=54.05K, val_r2=0.7605, lr=1.00e-03
+  Epoch  20: train_loss=0.1348, val_rmse=41.63K, val_r2=0.8579, lr=1.00e-03
+  Epoch  40: train_loss=0.0930, val_rmse=38.24K, val_r2=0.8801, lr=1.00e-03
+  Epoch  60: train_loss=0.0695, val_rmse=36.55K, val_r2=0.8905, lr=1.00e-03
+  Epoch  80: train_loss=0.0464, val_rmse=34.31K, val_r2=0.9035, lr=2.50e-04
+  Early stopping at epoch 98
+  Best epoch: 68
+  Test  RMSE: 36.65K
+  Test  MAE:  24.13K
+  Test  R²:   0.8894
+  Time: 298.2s
+
+======================================================================
+Condition: pspe_combined
+======================================================================
+[pspe_combined] Model: 490,241 parameters, input_dim=81
+  Epoch   1: train_loss=0.3547, val_rmse=55.05K, val_r2=0.7516, lr=1.00e-03
+  Epoch  20: train_loss=0.1354, val_rmse=40.08K, val_r2=0.8683, lr=1.00e-03
+  Epoch  40: train_loss=0.0951, val_rmse=36.72K, val_r2=0.8895, lr=1.00e-03
+  Epoch  60: train_loss=0.0719, val_rmse=35.92K, val_r2=0.8942, lr=1.00e-03
+  Epoch  80: train_loss=0.0498, val_rmse=34.73K, val_r2=0.9011, lr=2.50e-04
+  Epoch 100: train_loss=0.0423, val_rmse=34.07K, val_r2=0.9049, lr=2.50e-04
+  Epoch 120: train_loss=0.0361, val_rmse=33.52K, val_r2=0.9079, lr=6.25e-05
+  Epoch 140: train_loss=0.0351, val_rmse=33.32K, val_r2=0.9090, lr=3.13e-05
+  Epoch 160: train_loss=0.0337, val_rmse=33.18K, val_r2=0.9097, lr=1.56e-05
+  Early stopping at epoch 179
+  Best epoch: 149
+  Test  RMSE: 36.66K
+  Test  MAE:  23.63K
+  Test  R²:   0.8893
+  Time: 530.9s
+
+======================================================================
+Summary of Results
+======================================================================
+Condition            Test RMSE    Test MAE     Test R²    Best Epoch  
+------------------------------------------------------------------
+baseline                38.68K       25.23K      0.8767      83       baseline
+pspe_dce                36.43K       23.40K      0.8906     112         -2.25K
+pspe_mi                 36.65K       24.13K      0.8894      68         -2.03K
+pspe_combined           36.66K       23.63K      0.8893     149         -2.02K
+
+Results saved to: /home/home_public/aisci/AIscientist/src/3_day3_pspe/results/

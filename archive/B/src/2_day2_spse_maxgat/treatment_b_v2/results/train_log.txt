@@ -1,0 +1,55 @@
+Treatment B v2: Residual MaxGAT + Rich + 3-RU + SPSE
+Device: cuda:0 | Seed: 71
+LR: 0.0005, WD: 0.0001, Batch: 64
+================================================================================
+  Model params: 272,133 + SPSE: 8
+  epoch  10/300 | train=0.4430 | val=0.4307 | best=0.4307@10 | lr=5.00e-04 | waited=0 | time=38s
+    gates=['0.627', '0.620', '0.629', '0.632']
+  epoch  20/300 | train=0.4040 | val=0.3917 | best=0.3917@20 | lr=5.00e-04 | waited=0 | time=73s
+    gates=['0.625', '0.613', '0.619', '0.630']
+  epoch  30/300 | train=0.3895 | val=0.3804 | best=0.3804@30 | lr=5.00e-04 | waited=0 | time=111s
+    gates=['0.621', '0.610', '0.614', '0.628']
+  epoch  40/300 | train=0.3788 | val=0.3909 | best=0.3727@38 | lr=5.00e-04 | waited=2 | time=149s
+    gates=['0.617', '0.609', '0.610', '0.625']
+  epoch  50/300 | train=0.3682 | val=0.3690 | best=0.3635@48 | lr=5.00e-04 | waited=2 | time=182s
+    gates=['0.612', '0.607', '0.604', '0.622']
+  epoch  60/300 | train=0.3631 | val=0.3809 | best=0.3585@59 | lr=5.00e-04 | waited=1 | time=220s
+    gates=['0.608', '0.606', '0.600', '0.619']
+  epoch  70/300 | train=0.3514 | val=0.3605 | best=0.3549@65 | lr=5.00e-04 | waited=5 | time=260s
+    gates=['0.604', '0.604', '0.594', '0.616']
+  epoch  80/300 | train=0.3454 | val=0.3600 | best=0.3489@78 | lr=5.00e-04 | waited=2 | time=299s
+    gates=['0.599', '0.602', '0.590', '0.612']
+  epoch  90/300 | train=0.3377 | val=0.3713 | best=0.3424@89 | lr=5.00e-04 | waited=1 | time=338s
+    gates=['0.594', '0.600', '0.585', '0.606']
+  epoch 100/300 | train=0.3278 | val=0.3509 | best=0.3403@98 | lr=5.00e-04 | waited=2 | time=375s
+    gates=['0.590', '0.596', '0.579', '0.601']
+  epoch 110/300 | train=0.3246 | val=0.3358 | best=0.3358@110 | lr=5.00e-04 | waited=0 | time=413s
+    gates=['0.585', '0.592', '0.574', '0.595']
+  epoch 120/300 | train=0.3184 | val=0.3303 | best=0.3286@116 | lr=5.00e-04 | waited=4 | time=452s
+    gates=['0.581', '0.589', '0.570', '0.589']
+  epoch 130/300 | train=0.3011 | val=0.3389 | best=0.3276@129 | lr=2.50e-04 | waited=1 | time=485s
+    gates=['0.577', '0.584', '0.566', '0.583']
+  epoch 140/300 | train=0.2982 | val=0.3319 | best=0.3276@129 | lr=1.25e-04 | waited=11 | time=523s
+    gates=['0.576', '0.582', '0.563', '0.579']
+  epoch 150/300 | train=0.2920 | val=0.3319 | best=0.3253@146 | lr=1.25e-04 | waited=4 | time=558s
+    gates=['0.575', '0.580', '0.561', '0.576']
+  epoch 160/300 | train=0.2887 | val=0.3304 | best=0.3253@146 | lr=6.25e-05 | waited=14 | time=592s
+    gates=['0.575', '0.579', '0.559', '0.574']
+  epoch 170/300 | train=0.2871 | val=0.3324 | best=0.3243@164 | lr=6.25e-05 | waited=6 | time=630s
+    gates=['0.574', '0.578', '0.558', '0.572']
+  epoch 180/300 | train=0.2888 | val=0.3312 | best=0.3243@164 | lr=3.13e-05 | waited=16 | time=666s
+    gates=['0.574', '0.577', '0.557', '0.571']
+  epoch 190/300 | train=0.2842 | val=0.3292 | best=0.3243@164 | lr=1.56e-05 | waited=26 | time=704s
+    gates=['0.574', '0.577', '0.557', '0.570']
+  epoch 194/300 | train=0.2874 | val=0.3295 | best=0.3243@164 | lr=1.56e-05 | waited=30 | time=720s
+    gates=['0.574', '0.577', '0.557', '0.570']
+
+=== Final Results (Treatment B v2: Residual MaxGAT) ===
+  Best epoch: 164 / 194
+  Train RMSE: 31.324 K
+  Val RMSE:   36.603 K
+  Test RMSE:  38.956 K
+  Test MAE:   26.798 K
+  Test R²:    0.8750
+  Total time: 722s
+  Gates: {'conv1.residual_gate': 0.5743847489356995, 'conv2.residual_gate': 0.5784298181533813, 'conv3.residual_gate': 0.5586707592010498, 'conv4.residual_gate': 0.5729952454566956}

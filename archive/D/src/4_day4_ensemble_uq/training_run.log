@@ -1,0 +1,414 @@
+[18:22:29] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:29] SMILES Parse Error: syntax error while parsing: =C=Nc1ccc(-c2ccc(N=)c(OC)c2)cc1OC
+[18:22:29] SMILES Parse Error: check for mistakes around position 1:
+[18:22:29] =C=Nc1ccc(-c2ccc(N=)c(OC)c2)cc1OC
+[18:22:29] ^
+[18:22:29] SMILES Parse Error: Failed parsing SMILES '=C=Nc1ccc(-c2ccc(N=)c(OC)c2)cc1OC' for input: '=C=Nc1ccc(-c2ccc(N=)c(OC)c2)cc1OC'
+[18:22:30] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:30] SMILES Parse Error: syntax error while parsing: =C=C=C(COS(=O)(=O)c1ccc(C)cc1)C(=)COS(=O)(=O)c1ccc(C)cc1
+[18:22:30] SMILES Parse Error: check for mistakes around position 1:
+[18:22:30] =C=C=C(COS(=O)(=O)c1ccc(C)cc1)C(=)COS(=O)
+[18:22:30] ^
+[18:22:30] SMILES Parse Error: Failed parsing SMILES '=C=C=C(COS(=O)(=O)c1ccc(C)cc1)C(=)COS(=O)(=O)c1ccc(C)cc1' for input: '=C=C=C(COS(=O)(=O)c1ccc(C)cc1)C(=)COS(=O)(=O)c1ccc(C)cc1'
+[18:22:30] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:30] SMILES Parse Error: syntax error while parsing: =C=C=C(CCCCOC(=O)NCC)C(=)CCCCOC(=O)NCC
+[18:22:30] SMILES Parse Error: check for mistakes around position 1:
+[18:22:30] =C=C=C(CCCCOC(=O)NCC)C(=)CCCCOC(=O)NCC
+[18:22:30] ^
+[18:22:30] SMILES Parse Error: Failed parsing SMILES '=C=C=C(CCCCOC(=O)NCC)C(=)CCCCOC(=O)NCC' for input: '=C=C=C(CCCCOC(=O)NCC)C(=)CCCCOC(=O)NCC'
+[18:22:40] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:40] SMILES Parse Error: syntax error while parsing: =C=NC1CC1N=
+[18:22:40] SMILES Parse Error: check for mistakes around position 1:
+[18:22:40] =C=NC1CC1N=
+[18:22:40] ^
+[18:22:40] SMILES Parse Error: Failed parsing SMILES '=C=NC1CC1N=' for input: '=C=NC1CC1N='
+[18:22:40] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:40] SMILES Parse Error: syntax error while parsing: =C=Nc1ccc(Cc2ccc(N=)cc2)cc1
+[18:22:40] SMILES Parse Error: check for mistakes around position 1:
+[18:22:40] =C=Nc1ccc(Cc2ccc(N=)cc2)cc1
+[18:22:40] ^
+[18:22:40] SMILES Parse Error: Failed parsing SMILES '=C=Nc1ccc(Cc2ccc(N=)cc2)cc1' for input: '=C=Nc1ccc(Cc2ccc(N=)cc2)cc1'
+[18:22:40] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:40] SMILES Parse Error: syntax error while parsing: =Cc1cc(OCCCCCCCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1OCCCCCCCCCCCCCC
+[18:22:40] SMILES Parse Error: check for mistakes around position 1:
+[18:22:40] =Cc1cc(OCCCCCCCCCCCCCC)c(/C=N/c2ccc(N=)cc
+[18:22:40] ^
+[18:22:40] SMILES Parse Error: Failed parsing SMILES '=Cc1cc(OCCCCCCCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1OCCCCCCCCCCCCCC' for input: '=Cc1cc(OCCCCCCCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1OCCCCCCCCCCCCCC'
+[18:22:40] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:40] SMILES Parse Error: syntax error while parsing: =Cc1cc(OCCCCCCCCCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1OCCCCCCCCCCCCCCCC
+[18:22:40] SMILES Parse Error: check for mistakes around position 1:
+[18:22:40] =Cc1cc(OCCCCCCCCCCCCCCCC)c(/C=N/c2ccc(N=)
+[18:22:40] ^
+[18:22:40] SMILES Parse Error: Failed parsing SMILES '=Cc1cc(OCCCCCCCCCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1OCCCCCCCCCCCCCCCC' for input: '=Cc1cc(OCCCCCCCCCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1OCCCCCCCCCCCCCCCC'
+[18:22:41] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:41] SMILES Parse Error: syntax error while parsing: =CNc1ccc(N=)cc1
+[18:22:41] SMILES Parse Error: check for mistakes around position 1:
+[18:22:41] =CNc1ccc(N=)cc1
+[18:22:41] ^
+[18:22:41] SMILES Parse Error: Failed parsing SMILES '=CNc1ccc(N=)cc1' for input: '=CNc1ccc(N=)cc1'
+[18:22:41] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:41] SMILES Parse Error: syntax error while parsing: =CNc1ccc(-c2ccc(N=)cc2)cc1
+[18:22:41] SMILES Parse Error: check for mistakes around position 1:
+[18:22:41] =CNc1ccc(-c2ccc(N=)cc2)cc1
+[18:22:41] ^
+[18:22:41] SMILES Parse Error: Failed parsing SMILES '=CNc1ccc(-c2ccc(N=)cc2)cc1' for input: '=CNc1ccc(-c2ccc(N=)cc2)cc1'
+[18:22:41] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:41] SMILES Parse Error: syntax error while parsing: =CNc1cccc2c(N=)cccc12
+[18:22:41] SMILES Parse Error: check for mistakes around position 1:
+[18:22:41] =CNc1cccc2c(N=)cccc12
+[18:22:41] ^
+[18:22:41] SMILES Parse Error: Failed parsing SMILES '=CNc1cccc2c(N=)cccc12' for input: '=CNc1cccc2c(N=)cccc12'
+[18:22:41] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:41] SMILES Parse Error: syntax error while parsing: =CNc1cccc(N=)c1
+[18:22:41] SMILES Parse Error: check for mistakes around position 1:
+[18:22:41] =CNc1cccc(N=)c1
+[18:22:41] ^
+[18:22:41] SMILES Parse Error: Failed parsing SMILES '=CNc1cccc(N=)c1' for input: '=CNc1cccc(N=)c1'
+[18:22:41] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:41] SMILES Parse Error: syntax error while parsing: =CNc1ccc(Cc2ccc(N=)cc2)cc1
+[18:22:41] SMILES Parse Error: check for mistakes around position 1:
+[18:22:41] =CNc1ccc(Cc2ccc(N=)cc2)cc1
+[18:22:41] ^
+[18:22:41] SMILES Parse Error: Failed parsing SMILES '=CNc1ccc(Cc2ccc(N=)cc2)cc1' for input: '=CNc1ccc(Cc2ccc(N=)cc2)cc1'
+[18:22:41] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:41] SMILES Parse Error: syntax error while parsing: =CNc1ccc(CCc2ccc(N=)cc2)cc1
+[18:22:41] SMILES Parse Error: check for mistakes around position 1:
+[18:22:41] =CNc1ccc(CCc2ccc(N=)cc2)cc1
+[18:22:41] ^
+[18:22:41] SMILES Parse Error: Failed parsing SMILES '=CNc1ccc(CCc2ccc(N=)cc2)cc1' for input: '=CNc1ccc(CCc2ccc(N=)cc2)cc1'
+[18:22:41] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:41] SMILES Parse Error: syntax error while parsing: =CNc1ccc(C(=O)c2ccc(N=)cc2)cc1
+[18:22:41] SMILES Parse Error: check for mistakes around position 1:
+[18:22:41] =CNc1ccc(C(=O)c2ccc(N=)cc2)cc1
+[18:22:41] ^
+[18:22:41] SMILES Parse Error: Failed parsing SMILES '=CNc1ccc(C(=O)c2ccc(N=)cc2)cc1' for input: '=CNc1ccc(C(=O)c2ccc(N=)cc2)cc1'
+[18:22:41] Explicit valence for atom # 0 H, 2, is greater than permitted
+[18:22:41] SMILES Parse Error: syntax error while parsing: =Nc1ccc(Cc2ccc(NC(=)C)cc2)cc1
+[18:22:41] SMILES Parse Error: check for mistakes around position 1:
+[18:22:41] =Nc1ccc(Cc2ccc(NC(=)C)cc2)cc1
+[18:22:41] ^
+[18:22:41] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(Cc2ccc(NC(=)C)cc2)cc1' for input: '=Nc1ccc(Cc2ccc(NC(=)C)cc2)cc1'
+Using device: cuda
+
+================================================================================
+Training ensemble for Tm
+================================================================================
+Loaded 3651 samples
+Using columns: psmiles=Smiles, target=Tm
+Processing molecules...
+Successfully processed 3636 molecules, 15 failed
+
+================================================================================
+Fold 1/5
+================================================================================
+Train: 2326, Val: 582, Test: 728
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=27078.1770, Val Loss=34540.5362, Val RMSE=186.4408
+    Epoch 100/500: Train Loss=8118.2638, Val Loss=14921.9775, Val RMSE=119.5699
+    Epoch 150/500: Train Loss=1663.9735, Val Loss=7985.0388, Val RMSE=90.2826
+    Epoch 200/500: Train Loss=1139.4129, Val Loss=7458.3700, Val RMSE=86.6578
+    Epoch 250/500: Train Loss=983.7999, Val Loss=7094.6645, Val RMSE=85.6395
+    Early stopping at epoch 254
+    Seed 42: Test RMSE=65.7728, MAE=44.8165, R2=0.6540
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=27497.1876, Val Loss=33521.1656, Val RMSE=183.7656
+    Epoch 100/500: Train Loss=8697.1447, Val Loss=12308.6645, Val RMSE=110.4746
+    Epoch 150/500: Train Loss=1621.4691, Val Loss=7604.6197, Val RMSE=86.3577
+    Epoch 200/500: Train Loss=1062.4977, Val Loss=6753.0170, Val RMSE=82.6927
+    Early stopping at epoch 231
+    Seed 123: Test RMSE=61.4889, MAE=43.5785, R2=0.6976
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=27494.1385, Val Loss=37197.3759, Val RMSE=193.7423
+    Epoch 100/500: Train Loss=8138.2989, Val Loss=13598.6060, Val RMSE=113.5250
+    Epoch 150/500: Train Loss=1459.6446, Val Loss=7586.1695, Val RMSE=86.4963
+    Epoch 200/500: Train Loss=1109.1661, Val Loss=8444.5281, Val RMSE=92.2217
+    Epoch 250/500: Train Loss=1000.9459, Val Loss=7128.7441, Val RMSE=84.7992
+    Epoch 300/500: Train Loss=825.0048, Val Loss=6781.9797, Val RMSE=81.4722
+    Epoch 350/500: Train Loss=833.3740, Val Loss=6226.3211, Val RMSE=78.6533
+    Epoch 400/500: Train Loss=777.9559, Val Loss=6751.5978, Val RMSE=80.5753
+    Early stopping at epoch 442
+    Seed 456: Test RMSE=64.8907, MAE=45.9375, R2=0.6632
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=27093.6890, Val Loss=32831.5434, Val RMSE=181.5844
+    Epoch 100/500: Train Loss=8093.3351, Val Loss=13395.6825, Val RMSE=114.9890
+    Epoch 150/500: Train Loss=1585.4667, Val Loss=7319.9333, Val RMSE=86.7700
+    Epoch 200/500: Train Loss=1251.0028, Val Loss=7982.4198, Val RMSE=90.5566
+    Epoch 250/500: Train Loss=949.2490, Val Loss=6910.7753, Val RMSE=83.3331
+    Early stopping at epoch 251
+    Seed 789: Test RMSE=70.7258, MAE=49.6758, R2=0.5999
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=27530.6334, Val Loss=39633.5377, Val RMSE=200.1991
+    Epoch 100/500: Train Loss=8506.6073, Val Loss=16186.6407, Val RMSE=124.9641
+    Epoch 150/500: Train Loss=1515.1803, Val Loss=7491.2761, Val RMSE=87.3494
+    Epoch 200/500: Train Loss=1140.2665, Val Loss=6853.8825, Val RMSE=83.0797
+    Early stopping at epoch 201
+    Seed 1024: Test RMSE=64.7889, MAE=45.9579, R2=0.6642
+
+  Fold 1 Results:
+    Individual seeds RMSE: 65.5334 ± 2.9780
+    Ensemble RMSE: 60.7852
+    Uncertainty-Error correlation: r=0.3430 (p=1.5715e-21)
+    High uncertainty RMSE: 84.3989, Low uncertainty RMSE: 53.2429
+
+================================================================================
+Fold 2/5
+================================================================================
+Train: 2327, Val: 582, Test: 727
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=27408.9940, Val Loss=38036.1021, Val RMSE=196.6997
+    Epoch 100/500: Train Loss=8286.5879, Val Loss=14742.2641, Val RMSE=120.8678
+    Epoch 150/500: Train Loss=1713.8256, Val Loss=40810.4562, Val RMSE=206.0148
+    Epoch 200/500: Train Loss=1056.9974, Val Loss=10167.1918, Val RMSE=102.4373
+    Epoch 250/500: Train Loss=1038.7165, Val Loss=9879.5033, Val RMSE=100.8400
+    Epoch 300/500: Train Loss=992.8864, Val Loss=7765.1641, Val RMSE=89.1110
+    Early stopping at epoch 337
+    Seed 42: Test RMSE=62.3646, MAE=43.5593, R2=0.6772
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=27411.7689, Val Loss=35820.7373, Val RMSE=190.9789
+    Epoch 100/500: Train Loss=8008.3178, Val Loss=13040.6439, Val RMSE=113.1022
+    Epoch 150/500: Train Loss=1603.5784, Val Loss=8130.2091, Val RMSE=91.3599
+    Epoch 200/500: Train Loss=1178.2551, Val Loss=13347.2184, Val RMSE=117.6179
+    Early stopping at epoch 244
+    Seed 123: Test RMSE=68.5250, MAE=49.8226, R2=0.6103
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=27598.0670, Val Loss=38774.6932, Val RMSE=199.0238
+    Epoch 100/500: Train Loss=8189.8217, Val Loss=13707.4595, Val RMSE=116.2480
+    Epoch 150/500: Train Loss=1543.8742, Val Loss=23158.7389, Val RMSE=155.3367
+    Epoch 200/500: Train Loss=1200.1383, Val Loss=11936.7681, Val RMSE=111.2758
+    Early stopping at epoch 244
+    Seed 456: Test RMSE=62.9179, MAE=44.5629, R2=0.6715
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=27285.9890, Val Loss=35185.2087, Val RMSE=189.1742
+    Epoch 100/500: Train Loss=8299.6083, Val Loss=16619.8475, Val RMSE=128.2516
+    Epoch 150/500: Train Loss=1687.7765, Val Loss=8826.3906, Val RMSE=95.1199
+    Epoch 200/500: Train Loss=1100.1947, Val Loss=53377.8627, Val RMSE=235.7738
+    Early stopping at epoch 201
+    Seed 789: Test RMSE=65.9946, MAE=47.0852, R2=0.6385
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=27611.2558, Val Loss=37966.7180, Val RMSE=196.6778
+    Epoch 100/500: Train Loss=8212.8263, Val Loss=32608.3968, Val RMSE=182.0870
+    Epoch 150/500: Train Loss=1634.9999, Val Loss=9347.1883, Val RMSE=97.5810
+    Epoch 200/500: Train Loss=1201.5046, Val Loss=6986.2823, Val RMSE=84.4891
+    Epoch 250/500: Train Loss=933.8088, Val Loss=40391.7849, Val RMSE=205.1887
+    Epoch 300/500: Train Loss=893.4515, Val Loss=7643.5394, Val RMSE=88.7163
+    Epoch 350/500: Train Loss=887.4525, Val Loss=23211.4854, Val RMSE=155.5095
+    Early stopping at epoch 369
+    Seed 1024: Test RMSE=60.0232, MAE=41.4504, R2=0.7010
+
+  Fold 2 Results:
+    Individual seeds RMSE: 63.9651 ± 2.9701
+    Ensemble RMSE: 59.6940
+    Uncertainty-Error correlation: r=0.3229 (p=4.2382e-19)
+    High uncertainty RMSE: 83.8761, Low uncertainty RMSE: 51.8742
+
+================================================================================
+Fold 3/5
+================================================================================
+Train: 2327, Val: 582, Test: 727
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=26940.9990, Val Loss=34947.4627, Val RMSE=187.4408
+    Epoch 100/500: Train Loss=7924.3810, Val Loss=17398.6551, Val RMSE=130.9600
+    Epoch 150/500: Train Loss=1723.4676, Val Loss=7851.1214, Val RMSE=88.7706
+    Epoch 200/500: Train Loss=1061.2832, Val Loss=7294.1660, Val RMSE=86.2814
+    Epoch 250/500: Train Loss=920.7972, Val Loss=7113.1080, Val RMSE=85.1338
+    Early stopping at epoch 256
+    Seed 42: Test RMSE=63.1766, MAE=45.0628, R2=0.6886
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=27193.8353, Val Loss=34039.6642, Val RMSE=185.0594
+    Epoch 100/500: Train Loss=8199.0272, Val Loss=12801.9467, Val RMSE=111.4712
+    Epoch 150/500: Train Loss=1739.1612, Val Loss=7773.1689, Val RMSE=88.4361
+    Epoch 200/500: Train Loss=1040.3434, Val Loss=7254.3075, Val RMSE=85.6819
+    Epoch 250/500: Train Loss=991.7294, Val Loss=6880.1568, Val RMSE=83.6832
+    Epoch 300/500: Train Loss=1003.1943, Val Loss=6427.5985, Val RMSE=81.2175
+    Epoch 350/500: Train Loss=753.6381, Val Loss=7107.6200, Val RMSE=84.4399
+    Epoch 400/500: Train Loss=747.3786, Val Loss=6801.4222, Val RMSE=83.5969
+    Epoch 450/500: Train Loss=729.9100, Val Loss=6785.7098, Val RMSE=82.8083
+    Epoch 500/500: Train Loss=601.4763, Val Loss=6205.5527, Val RMSE=79.7822
+    Seed 123: Test RMSE=63.0192, MAE=40.4654, R2=0.6902
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=27165.9069, Val Loss=35308.7447, Val RMSE=188.6134
+    Epoch 100/500: Train Loss=8072.8308, Val Loss=13919.6125, Val RMSE=115.7665
+    Epoch 150/500: Train Loss=1494.0897, Val Loss=8011.2852, Val RMSE=89.8672
+    Epoch 200/500: Train Loss=1130.7334, Val Loss=8245.1198, Val RMSE=91.4874
+    Epoch 250/500: Train Loss=1013.5667, Val Loss=7657.5885, Val RMSE=87.6662
+    Epoch 300/500: Train Loss=855.0656, Val Loss=7622.3918, Val RMSE=87.8960
+    Epoch 350/500: Train Loss=847.3839, Val Loss=7193.4565, Val RMSE=85.6246
+    Epoch 400/500: Train Loss=727.8701, Val Loss=7190.2674, Val RMSE=85.2971
+    Epoch 450/500: Train Loss=771.5685, Val Loss=9800.7915, Val RMSE=99.9948
+    Early stopping at epoch 474
+    Seed 456: Test RMSE=61.5167, MAE=41.9226, R2=0.7048
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=26963.9313, Val Loss=37398.4228, Val RMSE=194.1456
+    Epoch 100/500: Train Loss=8249.3213, Val Loss=12970.9736, Val RMSE=113.9505
+    Epoch 150/500: Train Loss=1640.0416, Val Loss=8939.7068, Val RMSE=96.1668
+    Epoch 200/500: Train Loss=1253.2075, Val Loss=8309.4890, Val RMSE=92.1779
+    Epoch 250/500: Train Loss=931.5446, Val Loss=6909.0943, Val RMSE=83.1961
+    Early stopping at epoch 258
+    Seed 789: Test RMSE=61.2899, MAE=40.7704, R2=0.7069
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=27065.0303, Val Loss=35931.2387, Val RMSE=190.1597
+    Epoch 100/500: Train Loss=8255.6041, Val Loss=16025.3576, Val RMSE=124.0036
+    Epoch 150/500: Train Loss=1766.5265, Val Loss=8017.5315, Val RMSE=89.4563
+    Epoch 200/500: Train Loss=1257.9899, Val Loss=8059.0722, Val RMSE=90.4747
+    Epoch 250/500: Train Loss=1028.6779, Val Loss=6561.8760, Val RMSE=81.2341
+    Early stopping at epoch 282
+    Seed 1024: Test RMSE=61.6748, MAE=43.0637, R2=0.7032
+
+  Fold 3 Results:
+    Individual seeds RMSE: 62.1354 ± 0.7969
+    Ensemble RMSE: 58.2442
+    Uncertainty-Error correlation: r=0.2784 (p=2.0661e-14)
+    High uncertainty RMSE: 81.5256, Low uncertainty RMSE: 50.7413
+
+================================================================================
+Fold 4/5
+================================================================================
+Train: 2327, Val: 582, Test: 727
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=27195.5127, Val Loss=34011.4433, Val RMSE=186.3539
+    Epoch 100/500: Train Loss=8313.8862, Val Loss=14829.6001, Val RMSE=120.2380
+    Epoch 150/500: Train Loss=1536.6089, Val Loss=9263.3160, Val RMSE=97.4964
+    Epoch 200/500: Train Loss=1087.4667, Val Loss=19883.2804, Val RMSE=143.3465
+    Early stopping at epoch 235
+    Seed 42: Test RMSE=68.5908, MAE=49.1762, R2=0.5848
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=27714.4590, Val Loss=42264.4300, Val RMSE=207.6205
+    Epoch 100/500: Train Loss=8444.1808, Val Loss=18913.1273, Val RMSE=139.4891
+    Epoch 150/500: Train Loss=1633.0580, Val Loss=14934.1800, Val RMSE=124.5637
+    Epoch 200/500: Train Loss=1099.4232, Val Loss=8368.7240, Val RMSE=92.9411
+    Epoch 250/500: Train Loss=923.4387, Val Loss=7485.2140, Val RMSE=88.0418
+    Epoch 300/500: Train Loss=823.7944, Val Loss=6986.5550, Val RMSE=85.1148
+    Epoch 350/500: Train Loss=779.3509, Val Loss=8782.4401, Val RMSE=95.3727
+    Epoch 400/500: Train Loss=819.7197, Val Loss=7700.2891, Val RMSE=89.1200
+    Early stopping at epoch 404
+    Seed 123: Test RMSE=62.5843, MAE=43.8043, R2=0.6543
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=27744.1541, Val Loss=39890.9304, Val RMSE=202.0596
+    Epoch 100/500: Train Loss=8282.1105, Val Loss=17102.5128, Val RMSE=130.8997
+    Epoch 150/500: Train Loss=1687.6984, Val Loss=9206.3767, Val RMSE=97.2933
+    Epoch 200/500: Train Loss=1222.6670, Val Loss=8609.6316, Val RMSE=93.8512
+    Epoch 250/500: Train Loss=1059.8526, Val Loss=7506.4833, Val RMSE=87.7481
+    Epoch 300/500: Train Loss=924.4572, Val Loss=7546.5945, Val RMSE=87.6495
+    Early stopping at epoch 302
+    Seed 456: Test RMSE=64.3040, MAE=45.9572, R2=0.6351
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=27132.7339, Val Loss=42197.3969, Val RMSE=207.4518
+    Epoch 100/500: Train Loss=8196.5324, Val Loss=14317.1984, Val RMSE=118.2548
+    Epoch 150/500: Train Loss=1746.5141, Val Loss=9511.4410, Val RMSE=98.4400
+    Epoch 200/500: Train Loss=1223.4769, Val Loss=8105.8993, Val RMSE=91.2686
+    Epoch 250/500: Train Loss=1020.7209, Val Loss=7429.6148, Val RMSE=87.3276
+    Early stopping at epoch 289
+    Seed 789: Test RMSE=62.9112, MAE=43.5908, R2=0.6507
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=27569.6636, Val Loss=32858.3219, Val RMSE=182.4335
+    Epoch 100/500: Train Loss=8479.6173, Val Loss=12298.0898, Val RMSE=111.5414
+    Epoch 150/500: Train Loss=1699.1871, Val Loss=23734.4425, Val RMSE=157.2348
+    Epoch 200/500: Train Loss=1265.0713, Val Loss=9681.1136, Val RMSE=100.1159
+    Epoch 250/500: Train Loss=961.5357, Val Loss=8300.4951, Val RMSE=92.4591
+    Epoch 300/500: Train Loss=836.4370, Val Loss=7949.1713, Val RMSE=90.7401
+    Early stopping at epoch 308
+    Seed 1024: Test RMSE=63.0212, MAE=43.3398, R2=0.6495
+
+  Fold 4 Results:
+    Individual seeds RMSE: 64.2823 ± 2.2324
+    Ensemble RMSE: 59.5599
+    Uncertainty-Error correlation: r=0.2527 (p=4.6926e-12)
+    High uncertainty RMSE: 83.0541, Low uncertainty RMSE: 52.0134
+
+================================================================================
+Fold 5/5
+================================================================================
+Train: 2327, Val: 582, Test: 727
+
+  Training seed 42...
+    Epoch 50/500: Train Loss=27338.5319, Val Loss=39290.5406, Val RMSE=200.0032
+    Epoch 100/500: Train Loss=8061.6382, Val Loss=11304.7772, Val RMSE=107.1208
+    Epoch 150/500: Train Loss=1560.3556, Val Loss=10092.0986, Val RMSE=101.9281
+    Epoch 200/500: Train Loss=1218.3749, Val Loss=7506.5297, Val RMSE=87.2182
+    Early stopping at epoch 208
+    Seed 42: Test RMSE=62.7312, MAE=45.2241, R2=0.6480
+
+  Training seed 123...
+    Epoch 50/500: Train Loss=27674.4536, Val Loss=37889.5375, Val RMSE=196.3057
+    Epoch 100/500: Train Loss=8317.7065, Val Loss=13538.5137, Val RMSE=115.2978
+    Epoch 150/500: Train Loss=1823.9218, Val Loss=7168.1850, Val RMSE=85.7524
+    Epoch 200/500: Train Loss=1193.3955, Val Loss=6545.8420, Val RMSE=82.2603
+    Epoch 250/500: Train Loss=1181.4120, Val Loss=6564.0540, Val RMSE=82.4933
+    Epoch 300/500: Train Loss=921.8933, Val Loss=6838.1793, Val RMSE=83.9853
+    Early stopping at epoch 343
+    Seed 123: Test RMSE=61.3546, MAE=45.1351, R2=0.6633
+
+  Training seed 456...
+    Epoch 50/500: Train Loss=27547.7766, Val Loss=44451.0523, Val RMSE=213.0743
+    Epoch 100/500: Train Loss=8436.6468, Val Loss=13495.8865, Val RMSE=114.2741
+    Epoch 150/500: Train Loss=1675.2091, Val Loss=7517.7332, Val RMSE=88.3467
+    Epoch 200/500: Train Loss=1170.8376, Val Loss=8746.8979, Val RMSE=95.4064
+    Early stopping at epoch 242
+    Seed 456: Test RMSE=62.8706, MAE=45.8467, R2=0.6465
+
+  Training seed 789...
+    Epoch 50/500: Train Loss=27306.0771, Val Loss=33206.5930, Val RMSE=183.4225
+    Epoch 100/500: Train Loss=8040.4950, Val Loss=12543.8835, Val RMSE=110.8172
+    Epoch 150/500: Train Loss=1489.9888, Val Loss=9756.1807, Val RMSE=100.5808
+    Epoch 200/500: Train Loss=1136.5375, Val Loss=6397.8483, Val RMSE=81.0294
+    Epoch 250/500: Train Loss=914.4095, Val Loss=6441.7938, Val RMSE=81.6250
+    Epoch 300/500: Train Loss=832.6620, Val Loss=5979.5406, Val RMSE=78.7160
+    Early stopping at epoch 329
+    Seed 789: Test RMSE=58.6717, MAE=42.2333, R2=0.6921
+
+  Training seed 1024...
+    Epoch 50/500: Train Loss=27627.2158, Val Loss=34328.0117, Val RMSE=186.5914
+    Epoch 100/500: Train Loss=8246.2138, Val Loss=12538.9284, Val RMSE=111.1423
+    Epoch 150/500: Train Loss=1643.9150, Val Loss=7751.8529, Val RMSE=89.3748
+    Epoch 200/500: Train Loss=1294.2851, Val Loss=6219.5341, Val RMSE=80.4892
+    Epoch 250/500: Train Loss=984.5702, Val Loss=7017.7193, Val RMSE=85.4728
+    Early stopping at epoch 250
+    Seed 1024: Test RMSE=63.6873, MAE=46.3248, R2=0.6372
+
+  Fold 5 Results:
+    Individual seeds RMSE: 61.8631 ± 1.7630
+    Ensemble RMSE: 57.6392
+    Uncertainty-Error correlation: r=0.2968 (p=2.9957e-16)
+    High uncertainty RMSE: 73.6663, Low uncertainty RMSE: 52.8531
+
+================================================================================
+Tm Cross-Fold Results:
+  Ensemble RMSE: 59.1845 ± 1.1167
+  Best fold: 5 (RMSE: 57.6392)
+  Worst fold: 1 (RMSE: 60.7852)
+  Variance reduction: 18.94%
+================================================================================
+
+
+================================================================================
+Training ensemble for Egc
+================================================================================
+Loaded 3380 samples
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/4_day4_ensemble_uq/train_ensemble_v2.py", line 772, in <module>
+    main()
+  File "/home/home_public/aisci/AIscientist/src/4_day4_ensemble_uq/train_ensemble_v2.py", line 738, in main
+    egc_results = run_ensemble_training(
+  File "/home/home_public/aisci/AIscientist/src/4_day4_ensemble_uq/train_ensemble_v2.py", line 542, in run_ensemble_training
+    target_col = [c for c in df.columns if c.lower() in ['tm', 'egc', 'tg']][0]
+IndexError: list index out of range

@@ -1,0 +1,16 @@
+{
+  "run": "D",
+  "ablation": "ab3",
+  "property": "Tg (K)",
+  "selection_rule": "Select the main model configuration within each day, excluding discarded versions and control-only baselines.",
+  "std_definition": "Population SD across folds (ddof=0), where available; see the Day 5 exception.",
+  "data_note": "Day 4 is omitted because no Tg experiment was performed.",
+  "days": {
+    "1": {"model":"RE-PerioGT full","rmse":35.55,"std":null,"note":"Single seed and split; no cross-validation.","source":"src/1_day2_reperioGT/final_results.json"},
+    "2": {"model":"GRIN baseline","rmse":32.31,"std":null,"note":"Single seed and split; best result in this run.","source":"src/2_day2_grin/results_v2_20260324_090902/baseline/results.json"},
+    "3": {"model":"PFCL Joint","rmse":39.23,"std":1.81,"note":"5-fold cross-validation.","source":"src/3_pfcl_pretraining/FINAL_5FOLD_REPORT.md"},
+    "5": {"model":"FD-MTL (mtl_decomp)","rmse":40.1,"std":1.54,"note":"5-fold cross-validation; a seed-reset bug prevents interpreting the stored SD as a true across-fold SD.","source":"src/5_day5_fd_mtl/results.json"},
+    "6": {"model":"CFD-MTL main version","rmse":39.42,"std":1.44,"note":"5-fold cross-validation.","source":"src/6_day6_cfd_mtl/results.json"},
+    "7": {"model":"TCP fine-tuned","rmse":35.49,"std":1.6,"note":"5-fold cross-validation; excludes a separate diagnostic GRIN rerun.","source":"src/7_day8_tcp/Tg_finetuned_results.txt"}
+  }
+}

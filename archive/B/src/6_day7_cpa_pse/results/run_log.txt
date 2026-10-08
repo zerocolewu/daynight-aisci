@@ -1,0 +1,90 @@
+
+============================================================
+CPA-PSE EXPERIMENT RUNNER
+Started: 2026-05-25 23:09:57
+Conditions: ['A', 'B']
+Seeds: [71, 42, 123, 888, 2024]
+============================================================
+
+## CONDITION A: CPA-GAT baseline (42-dim)
+  Seed 71 starting...
+  Seed 71: Test RMSE = 35.5027 K, Time = 909s
+  Seed 42 starting...
+  Seed 42: Test RMSE = 36.1289 K, Time = 862s
+  Seed 123 starting...
+  Seed 123: Test RMSE = 34.9945 K, Time = 960s
+  Seed 888 starting...
+  Seed 888: Test RMSE = 35.6552 K, Time = 1410s
+  Seed 2024 starting...
+  Seed 2024: Test RMSE = 34.6721 K, Time = 1068s
+  CONDITION A SUMMARY: 35.3907 ± 0.5703 K (per-seed: ['35.50', '36.13', '34.99', '35.66', '34.67'])
+  Condition time: 5209s
+
+## CONDITION B: CPA-PSE full (45-dim)
+  Seed 71 starting...
+  Seed 71: Test RMSE = 34.8716 K, Time = 944s
+  Seed 42 starting...
+  Seed 42: Test RMSE = 36.5765 K, Time = 687s
+  Seed 123 starting...
+  Seed 123: Test RMSE = 36.1200 K, Time = 1428s
+  Seed 888 starting...
+  Seed 888: Test RMSE = 35.8820 K, Time = 1164s
+  Seed 2024 starting...
+  Seed 2024: Test RMSE = 36.5328 K, Time = 1067s
+  CONDITION B SUMMARY: 35.9966 ± 0.6924 K (per-seed: ['34.87', '36.58', '36.12', '35.88', '36.53'])
+  Condition time: 5291s
+
+Total time: 10500s (2.9h)
+Finished: 2026-05-26 02:04:57
+
+============================================================
+CPA-PSE EXPERIMENT RUNNER
+Started: 2026-05-26 02:05:21
+Conditions: ['C', 'D', 'E']
+Seeds: [71, 42, 123, 888, 2024]
+============================================================
+
+## CONDITION C: CPA + modular_position only (43-dim)
+  Seed 71 starting...
+  Seed 71: Test RMSE = 36.0675 K, Time = 686s
+  Seed 42 starting...
+  Seed 42: Test RMSE = 36.4154 K, Time = 938s
+  Seed 123 starting...
+  Seed 123: Test RMSE = 36.3888 K, Time = 801s
+  Seed 888 starting...
+  Seed 888: Test RMSE = 36.3623 K, Time = 900s
+  Seed 2024 starting...
+  Seed 2024: Test RMSE = 36.2188 K, Time = 1239s
+  CONDITION C SUMMARY: 36.2906 ± 0.1460 K (per-seed: ['36.07', '36.42', '36.39', '36.36', '36.22'])
+  Condition time: 4564s
+
+## CONDITION D: CPA + periodic_distance only (43-dim)
+  Seed 71 starting...
+  Seed 71: Test RMSE = 37.3179 K, Time = 636s
+  Seed 42 starting...
+  Seed 42: Test RMSE = 34.9376 K, Time = 1101s
+  Seed 123 starting...
+  Seed 123: Test RMSE = 35.2812 K, Time = 883s
+  Seed 888 starting...
+  Seed 888: Test RMSE = 36.1239 K, Time = 686s
+  Seed 2024 starting...
+  Seed 2024: Test RMSE = 35.4764 K, Time = 635s
+  CONDITION D SUMMARY: 35.8274 ± 0.9385 K (per-seed: ['37.32', '34.94', '35.28', '36.12', '35.48'])
+  Condition time: 3940s
+
+## CONDITION E: CPA + is_backbone only (43-dim)
+  Seed 71 starting...
+  Seed 71: Test RMSE = 35.2948 K, Time = 862s
+  Seed 42 starting...
+  Seed 42: Test RMSE = 35.5808 K, Time = 822s
+  Seed 123 starting...
+  Seed 123: Test RMSE = 34.5321 K, Time = 1172s
+  Seed 888 starting...
+  Seed 888: Test RMSE = 35.7214 K, Time = 781s
+  Seed 2024 starting...
+  Seed 2024: Test RMSE = 34.0176 K, Time = 1047s
+  CONDITION E SUMMARY: 35.0294 ± 0.7288 K (per-seed: ['35.29', '35.58', '34.53', '35.72', '34.02'])
+  Condition time: 4684s
+
+Total time: 13188s (3.7h)
+Finished: 2026-05-26 05:45:09

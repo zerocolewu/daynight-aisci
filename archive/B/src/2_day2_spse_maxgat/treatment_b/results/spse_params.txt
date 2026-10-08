@@ -1,0 +1,6 @@
+Learned SPSE Encoding Parameters (Treatment B)
+==================================================
+k=1: alpha=0.155619, beta=0.055687
+k=2: alpha=-0.391095, beta=-0.067591
+k=3: alpha=0.331868, beta=0.072768
+k=4: alpha=0.393972, beta=0.024047

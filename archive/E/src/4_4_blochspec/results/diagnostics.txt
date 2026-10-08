@@ -1,0 +1,32 @@
+BlochSpec Diagnostic Analysis
+======================================================================
+
+1. Feature Correlations with Tg
+--------------------------------------------------
+  spectral_gap             : r=-0.4683, p=0.00e+00 ***
+  spectral_radius          : r=+0.2040, p=3.10e-68 ***
+  spectral_centroid        : r=+0.5768, p=0.00e+00 ***
+  spectral_variance        : r=+0.1538, p=3.23e-39 
+  low_freq_density         : r=-0.6366, p=0.00e+00 ***
+  band_width_max           : r=-0.4473, p=0.00e+00 ***
+  band_width_mean          : r=-0.3742, p=3.68e-237 ***
+  band_flatness            : r=-0.0555, p=2.59e-06 
+  spectral_gap_kpi         : r=-0.1793, p=7.38e-53 
+  density_at_Fermi         : r=-0.3037, p=7.19e-153 ***
+  spectral_skew            : r=-0.3548, p=1.00e-211 ***
+  spectral_kurtosis        : r=-0.2628, p=1.48e-113 ***
+
+2. Feature Importance (single feature, ranked)
+--------------------------------------------------
+   1. band_flatness            : test_rmse=62.5985
+   2. band_width_mean          : test_rmse=63.6338
+   3. spectral_kurtosis        : test_rmse=63.9371
+   4. spectral_radius          : test_rmse=64.5626
+   5. band_width_max           : test_rmse=65.1507
+   6. spectral_gap             : test_rmse=66.7229
+   7. spectral_centroid        : test_rmse=67.6969
+   8. spectral_variance        : test_rmse=67.9429
+   9. spectral_gap_kpi         : test_rmse=68.2506
+  10. low_freq_density         : test_rmse=68.9589
+  11. density_at_Fermi         : test_rmse=69.5268
+  12. spectral_skew            : test_rmse=70.6780

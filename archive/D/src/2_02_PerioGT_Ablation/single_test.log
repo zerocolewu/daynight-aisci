@@ -1,0 +1,20 @@
+============================================================
+PerioGT Ablation Study
+============================================================
+Model type: chemprop
+Hidden dim: 300
+Num layers: 3
+Epochs: 50
+Learning rate: 0.001
+Add periodic edge: True
+Output: /home/home_public/aisci/AIscientist/src/2_02_PerioGT_Ablation
+============================================================
+
+============================================================
+Running with seed 42
+============================================================
+Loaded 7170 samples from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv
+Successfully parsed 7170 molecules
+Split: Train=5736, Val=717, Test=717
+Epoch   1 | Loss: 13651.9655 | Val RMSE: 68.13 | LR: 1.00e-03
+Epoch  10 | Loss: 2897.5680 | Val RMSE: 53.20 | LR: 1.00e-03

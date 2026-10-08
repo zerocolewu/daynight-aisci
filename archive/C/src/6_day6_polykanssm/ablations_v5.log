@@ -1,0 +1,122 @@
+Using device: cuda
+
+============================================================
+ABLATION 1: No Fourier-KAN
+============================================================
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 2,140,294
+Epoch   1 | Train RMSE: 67.5303 | Val RMSE: 55.3002 | Val MAE: 42.5279 | Val R2: 0.7390 | LR: 0.000500 | Best: 55.3002 @ 1
+Epoch  20 | Train RMSE: 44.3524 | Val RMSE: 47.1466 | Val MAE: 34.6557 | Val R2: 0.8103 | LR: 0.000500 | Best: 43.1706 @ 19
+Epoch  40 | Train RMSE: 38.1489 | Val RMSE: 41.6299 | Val MAE: 30.1351 | Val R2: 0.8521 | LR: 0.000500 | Best: 40.2121 @ 36
+Epoch  60 | Train RMSE: 34.3587 | Val RMSE: 39.8792 | Val MAE: 28.7000 | Val R2: 0.8643 | LR: 0.000500 | Best: 37.8758 @ 57
+Epoch  80 | Train RMSE: 31.2924 | Val RMSE: 38.3675 | Val MAE: 26.6876 | Val R2: 0.8744 | LR: 0.000500 | Best: 37.2613 @ 67
+Epoch 100 | Train RMSE: 25.0087 | Val RMSE: 37.7926 | Val MAE: 26.3985 | Val R2: 0.8781 | LR: 0.000250 | Best: 36.3019 @ 98
+Epoch 120 | Train RMSE: 22.7868 | Val RMSE: 38.2892 | Val MAE: 26.9205 | Val R2: 0.8749 | LR: 0.000250 | Best: 35.6934 @ 117
+Epoch 140 | Train RMSE: 21.5546 | Val RMSE: 37.0145 | Val MAE: 25.0925 | Val R2: 0.8831 | LR: 0.000250 | Best: 35.4544 @ 130
+Epoch 160 | Train RMSE: 18.4741 | Val RMSE: 35.8945 | Val MAE: 24.0968 | Val R2: 0.8900 | LR: 0.000125 | Best: 34.6753 @ 150
+Epoch 180 | Train RMSE: 17.0875 | Val RMSE: 35.6518 | Val MAE: 23.8072 | Val R2: 0.8915 | LR: 0.000063 | Best: 34.5109 @ 167
+Early stopping at epoch 197
+
+Best val RMSE: 34.5109 at epoch 167
+
+--- Seed 42 Final Results ---
+Train RMSE: 16.5960
+Val RMSE:   34.5109
+Test RMSE:  39.8149
+Test MAE:   25.2235
+Test R2:    0.8751
+Test RMSE (no Fourier-KAN): 39.8149
+
+============================================================
+ABLATION 2: No JumpingKnowledge
+============================================================
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 1,815,943
+Epoch   1 | Train RMSE: 68.6923 | Val RMSE: 75.2098 | Val MAE: 58.1127 | Val R2: 0.5172 | LR: 0.000500 | Best: 75.2098 @ 1
+Epoch  20 | Train RMSE: 44.6217 | Val RMSE: 51.7461 | Val MAE: 38.7141 | Val R2: 0.7715 | LR: 0.000500 | Best: 45.8215 @ 11
+Epoch  40 | Train RMSE: 39.3939 | Val RMSE: 45.9419 | Val MAE: 34.1963 | Val R2: 0.8199 | LR: 0.000500 | Best: 39.9289 @ 37
+Epoch  60 | Train RMSE: 35.0078 | Val RMSE: 40.8810 | Val MAE: 29.4642 | Val R2: 0.8574 | LR: 0.000500 | Best: 39.3454 @ 49
+Epoch  80 | Train RMSE: 29.1182 | Val RMSE: 37.7594 | Val MAE: 26.4070 | Val R2: 0.8783 | LR: 0.000250 | Best: 37.7594 @ 80
+Epoch 100 | Train RMSE: 26.4941 | Val RMSE: 38.7666 | Val MAE: 26.6123 | Val R2: 0.8717 | LR: 0.000250 | Best: 37.0519 @ 91
+Epoch 120 | Train RMSE: 24.8687 | Val RMSE: 35.4832 | Val MAE: 24.7197 | Val R2: 0.8925 | LR: 0.000250 | Best: 35.4832 @ 120
+Epoch 140 | Train RMSE: 22.7896 | Val RMSE: 37.6974 | Val MAE: 26.1636 | Val R2: 0.8787 | LR: 0.000250 | Best: 35.4498 @ 133
+Epoch 160 | Train RMSE: 19.9598 | Val RMSE: 36.0617 | Val MAE: 24.4300 | Val R2: 0.8890 | LR: 0.000125 | Best: 35.4498 @ 133
+Epoch 180 | Train RMSE: 18.5376 | Val RMSE: 36.3039 | Val MAE: 24.7393 | Val R2: 0.8875 | LR: 0.000063 | Best: 35.4068 @ 163
+Early stopping at epoch 193
+
+Best val RMSE: 35.4068 at epoch 163
+
+--- Seed 42 Final Results ---
+Train RMSE: 18.3529
+Val RMSE:   35.4068
+Test RMSE:  39.8274
+Test MAE:   25.4488
+Test R2:    0.8750
+Test RMSE (no JK): 39.8274
+
+============================================================
+ABLATION 3: No Virtual Node
+============================================================
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 1,945,735
+Epoch   1 | Train RMSE: 68.2449 | Val RMSE: 60.2478 | Val MAE: 48.2435 | Val R2: 0.6902 | LR: 0.000500 | Best: 60.2478 @ 1
+Epoch  20 | Train RMSE: 45.9453 | Val RMSE: 46.0736 | Val MAE: 34.2889 | Val R2: 0.8188 | LR: 0.000500 | Best: 43.9054 @ 18
+Epoch  40 | Train RMSE: 41.0614 | Val RMSE: 40.5692 | Val MAE: 29.3858 | Val R2: 0.8595 | LR: 0.000500 | Best: 40.5298 @ 34
+Epoch  60 | Train RMSE: 38.5137 | Val RMSE: 39.7049 | Val MAE: 27.6782 | Val R2: 0.8654 | LR: 0.000500 | Best: 37.7419 @ 59
+Epoch  80 | Train RMSE: 34.7674 | Val RMSE: 38.5745 | Val MAE: 26.6791 | Val R2: 0.8730 | LR: 0.000500 | Best: 37.4728 @ 77
+Epoch 100 | Train RMSE: 32.0231 | Val RMSE: 36.3774 | Val MAE: 25.6630 | Val R2: 0.8871 | LR: 0.000500 | Best: 36.2337 @ 99
+Epoch 120 | Train RMSE: 30.5955 | Val RMSE: 36.7613 | Val MAE: 26.0230 | Val R2: 0.8847 | LR: 0.000250 | Best: 35.2808 @ 104
+Epoch 140 | Train RMSE: 25.3895 | Val RMSE: 35.8568 | Val MAE: 24.4780 | Val R2: 0.8903 | LR: 0.000125 | Best: 34.4534 @ 123
+Early stopping at epoch 153
+
+Best val RMSE: 34.4534 at epoch 123
+
+--- Seed 42 Final Results ---
+Train RMSE: 25.2887
+Val RMSE:   34.4534
+Test RMSE:  38.4843
+Test MAE:   24.7145
+Test R2:    0.8833
+Test RMSE (no virtual node): 38.4843
+
+Ablation results saved to /home/home_public/aisci/AIscientist/src/6_day6_polykanssm/ablation_results_v5.json
+
+============================================================
+ABLATION SUMMARY
+============================================================
+No Fourier-KAN:  39.8149
+No JK:           39.8274
+No Virtual Node: 38.4843

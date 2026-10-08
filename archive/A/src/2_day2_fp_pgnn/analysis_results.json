@@ -1,0 +1,48 @@
+{
+  "overall_metrics": {
+    "rmse": 37.04358084523208,
+    "r2": 0.8908900426282893,
+    "n_samples": 7170
+  },
+  "error_by_polymer_type": {
+    "sampled": {
+      "count": 500,
+      "mean_error": 23.728232385158538,
+      "std_error": 24.287595666291732,
+      "mae": 23.728232385158538
+    }
+  },
+  "periodic_edge_attention": null,
+  "sample_analysis": [
+    {
+      "index": 0,
+      "smiles": "*C*",
+      "actual_tg": -54.0,
+      "predicted_tg": -42.80548858642578,
+      "error": 11.194511413574219,
+      "num_nodes": 3,
+      "num_edges": 6,
+      "n_attention_layers": 3
+    },
+    {
+      "index": 100,
+      "smiles": "*CC(*)c1ccc(C(C)(O)CCCCC)cc1",
+      "actual_tg": 100.0,
+      "predicted_tg": 116.97069549560547,
+      "error": 16.97069549560547,
+      "num_nodes": 18,
+      "num_edges": 38,
+      "n_attention_layers": 3
+    },
+    {
+      "index": 500,
+      "smiles": "*CC(*)(CC(=O)OCCCCCC)C(=O)OCCCCCC",
+      "actual_tg": -7.0,
+      "predicted_tg": -9.036853790283203,
+      "error": 2.036853790283203,
+      "num_nodes": 23,
+      "num_edges": 46,
+      "n_attention_layers": 3
+    }
+  ]
+}

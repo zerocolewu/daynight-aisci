@@ -1,0 +1,5 @@
+# Preserve archived bytes and the checksums in ARCHIVE_INDEX.json.
+* -text
+*.gz binary
+*.npy binary
+*.index binary

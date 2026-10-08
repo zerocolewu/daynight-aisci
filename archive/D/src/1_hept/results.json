@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-03-23T18:08:05.427421",
+  "model": "HEPT",
+  "experiment": "Polymer Tg Prediction",
+  "dataset": {
+    "path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+    "total_samples": 7170,
+    "train_samples": 5732,
+    "val_samples": 713,
+    "test_samples": 725
+  },
+  "model_config": {
+    "hidden_dim": 256,
+    "num_equivariant_layers": 3,
+    "num_periodic_layers": 2,
+    "num_heads": 8,
+    "dropout": 0.1,
+    "num_parameters": 2876804
+  },
+  "training": {
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "max_epochs": 200,
+    "patience": 20,
+    "best_epoch": 86,
+    "early_stopped_at_epoch": 106,
+    "training_time_minutes": 15.2
+  },
+  "test_metrics": {
+    "rmse": 49.57761777182948,
+    "mae": 35.92751110979311,
+    "mse": 2457.940183929622,
+    "r2": 0.8040767274610845,
+    "correlation": 0.8971746611407685,
+    "bias": -3.1885657310344824
+  },
+  "baseline_comparison": {
+    "GAT_baseline_rmse": 50.5,
+    "PerioGT_baseline_rmse": 30.8,
+    "HEPT_rmse": 49.57761777182948,
+    "improvement_vs_GAT": 0.9223822281705196,
+    "improvement_vs_PerioGT": -18.77761777182948,
+    "percent_improvement_vs_PerioGT": -60.96629146697883
+  },
+  "success": false,
+  "status": "TARGET_NOT_REACHED"
+}

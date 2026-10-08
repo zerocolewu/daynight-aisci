@@ -1,0 +1,8 @@
+Learned SPSE Encoding Parameters
+==================================================
+f_k(x) = alpha_k * ln(1 + x) + beta_k
+
+k=1: alpha=0.172807, beta=0.072872
+k=2: alpha=-0.100594, beta=-0.092527
+k=3: alpha=0.552038, beta=-0.094481
+k=4: alpha=0.389768, beta=-0.024344

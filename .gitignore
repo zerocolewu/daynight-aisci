@@ -1,0 +1,48 @@
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+.claude/
+.vscode/
+.idea/
+.DS_Store
+._*
+__pycache__/
+*.pyc
+*.pyo
+*.pid
+
+# Manuscript files, figures and submission-only source-data tables
+/source_data/
+*.tex
+*.bib
+*.aux
+*.bbl
+*.blg
+*.out
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.tif
+*.tiff
+*.xlsx
+
+# Third-party full-text literature and generated training artifacts
+papers/
+papers_big/
+lamnew-markdown/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.npz
+*.bin
+*.safetensors
+
+# Small archived memory vectors outside src are intentionally retained.
+**/src/**/*.npy
+**/src/**/*.index
+node_modules/

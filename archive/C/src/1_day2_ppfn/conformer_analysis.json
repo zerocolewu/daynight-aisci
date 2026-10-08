@@ -1,0 +1,58 @@
+{
+  "conformer_generation": {
+    "success_rate_train": "21.0% (1086/5162)",
+    "success_rate_val": "21.3% (122/573)",
+    "success_rate_test": "20.6% (296/1435)",
+    "note": "Molecules with >100 atoms skipped conformer generation (use 2D fallback)"
+  },
+  "model_comparison": {
+    "base_256": {
+      "test_rmse": 36.71192521317132,
+      "test_mae": 23.936087428999073,
+      "test_r2": 0.8953790286308252,
+      "n_params": 2558731,
+      "best_epoch": 107
+    },
+    "wide_512": {
+      "test_rmse": 37.434418827045135,
+      "test_mae": 24.92119957497311,
+      "test_r2": 0.8912206102411759,
+      "best_epoch": 106
+    },
+    "ensemble": {
+      "test_rmse": 34.1419425518077,
+      "test_mae": 21.78658676147461,
+      "test_r2": 0.9095140695571899,
+      "ensemble_size": 5
+    }
+  },
+  "improvement_over_baselines": {
+    "v2_single_best_rmse": 39.21,
+    "v2_ensemble_rmse": 36.74,
+    "v3_3d_single_best_rmse": 36.71,
+    "v3_3d_ensemble_rmse": 34.14,
+    "improvement_single": "6.4% over v2 single best",
+    "improvement_ensemble": "7.1% over v2 ensemble"
+  },
+  "feature_importance_analysis": {
+    "3d_conformer_features": {
+      "bond_length": "Added to edge features - captures actual inter-atomic distances",
+      "3d_distance": "Added to edge features - captures spatial proximity",
+      "global_features": "12 features from conformer statistics (bond length stats, angle stats, dihedral stats, volume estimate, etc.)"
+    },
+    "key_findings": [
+      "3D features improved single model RMSE by 6.4% (39.21 -> 36.71)",
+      "3D ensemble improved by 7.1% (36.74 -> 34.14)",
+      "Global geometric features provide complementary information to 2D graph features",
+      "Gated fusion of structural + geometric features enables effective feature combination",
+      "Only 21% of molecules had successful conformer generation due to trimer size > 100 atoms",
+      "Even partial 3D feature coverage provides significant improvement"
+    ]
+  },
+  "gap_to_sota": {
+    "target_sota": 30.8,
+    "best_achieved": 34.14,
+    "remaining_gap": 3.34,
+    "gap_reduction_from_v2": "2.60 RMSE points reduced"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "best_condition": "pretrain_100k",
+  "best_rmse": 103.17725537243174,
+  "all_results": [
+    {
+      "experiment": "ablation",
+      "condition": "no_pretrain",
+      "fold": 1,
+      "rmse": 103.19522230340898,
+      "mae": 82.13150787353516,
+      "r2": 0.15816611051559448
+    },
+    {
+      "experiment": "ablation",
+      "condition": "no_pretrain",
+      "fold": 2,
+      "rmse": 100.51060558934813,
+      "mae": 79.54153442382812,
+      "r2": 0.14781588315963745
+    },
+    {
+      "experiment": "ablation",
+      "condition": "no_pretrain",
+      "fold": 3,
+      "rmse": 104.62458463925914,
+      "mae": 84.19376373291016,
+      "r2": 0.15655231475830078
+    },
+    {
+      "experiment": "ablation",
+      "condition": "no_pretrain",
+      "fold": 4,
+      "rmse": 102.98987359201874,
+      "mae": 82.38568115234375,
+      "r2": 0.15141886472702026
+    },
+    {
+      "experiment": "ablation",
+      "condition": "no_pretrain",
+      "fold": 5,
+      "rmse": 104.70018113493167,
+      "mae": 83.78616333007812,
+      "r2": 0.148603618144989
+    },
+    {
+      "experiment": "ablation",
+      "condition": "no_pretrain",
+      "fold": "mean",
+      "rmse": 103.20409345179333,
+      "mae": 82.40773010253906,
+      "r2": 0.1525113582611084
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_10k",
+      "fold": 1,
+      "rmse": 103.0154579192487,
+      "mae": 81.62670135498047,
+      "r2": 0.1610965132713318
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_10k",
+      "fold": 2,
+      "rmse": 100.50665109365897,
+      "mae": 79.54549407958984,
+      "r2": 0.14788293838500977
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_10k",
+      "fold": 3,
+      "rmse": 104.76625302757324,
+      "mae": 84.69992065429688,
+      "r2": 0.1542665958404541
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_10k",
+      "fold": 4,
+      "rmse": 103.15576245719383,
+      "mae": 82.50077056884766,
+      "r2": 0.14868301153182983
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_10k",
+      "fold": 5,
+      "rmse": 104.483345712367,
+      "mae": 83.49077606201172,
+      "r2": 0.1521264910697937
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_10k",
+      "fold": "mean",
+      "rmse": 103.18549404200834,
+      "mae": 82.37273254394532,
+      "r2": 0.15281111001968384
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_100k",
+      "fold": 1,
+      "rmse": 103.17466607045549,
+      "mae": 81.97838592529297,
+      "r2": 0.15850144624710083
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_100k",
+      "fold": 2,
+      "rmse": 100.45092182410522,
+      "mae": 79.40003967285156,
+      "r2": 0.1488276720046997
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_100k",
+      "fold": 3,
+      "rmse": 104.72473218514335,
+      "mae": 84.50318145751953,
+      "r2": 0.15493690967559814
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_100k",
+      "fold": 4,
+      "rmse": 103.02476662949788,
+      "mae": 82.27345275878906,
+      "r2": 0.15084373950958252
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_100k",
+      "fold": 5,
+      "rmse": 104.51119015295683,
+      "mae": 83.7580337524414,
+      "r2": 0.1516745686531067
+    },
+    {
+      "experiment": "ablation",
+      "condition": "pretrain_100k",
+      "fold": "mean",
+      "rmse": 103.17725537243174,
+      "mae": 82.3826187133789,
+      "r2": 0.15295686721801757
+    }
+  ],
+  "timestamp": "2026-03-21 03:49:09.794720"
+}

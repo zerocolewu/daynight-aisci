@@ -1,0 +1,151 @@
+
+===== RUN tg_sp42_init42 =====
+[featurize tg] loaded from cache tg_v2_m3_rw32_d70_full.pkl (valid 7170/7170)
+[tg split=42] train/val/test = 5162/574/1434  (valid molecules used: 7170/7170, 0 dropped before split)
+[tg_sp42_init42] ep  1 val_rmse=62.052 best=62.052
+[tg_sp42_init42] ep 25 val_rmse=41.171 best=38.913
+[tg_sp42_init42] ep 50 val_rmse=36.050 best=36.050
+[tg_sp42_init42] ep 75 val_rmse=35.472 best=34.674
+[tg_sp42_init42] ep100 val_rmse=34.989 best=34.674
+[tg_sp42_init42] ep125 val_rmse=34.570 best=34.211
+[tg_sp42_init42] ep150 val_rmse=34.623 best=33.880 swa
+[tg_sp42_init42] ep175 val_rmse=34.089 best=33.508 swa
+[tg_sp42_init42] ep200 val_rmse=33.856 best=33.454 swa
+[tg_sp42_init42] ep225 val_rmse=33.701 best=33.454 swa
+[tg_sp42_init42] early stop @ ep236
+[tg_sp42_init42] DONE test_rmse=32.9019 swa=32.37881865962341 val=33.4541(ep186) params=845313 time=1398s
+
+===== RUN tg_sp42_init71 =====
+[featurize tg] loaded from cache tg_v2_m3_rw32_d70_full.pkl (valid 7170/7170)
+[tg split=42] train/val/test = 5162/574/1434  (valid molecules used: 7170/7170, 0 dropped before split)
+[tg_sp42_init71] ep  1 val_rmse=58.680 best=58.680
+[tg_sp42_init71] ep 25 val_rmse=38.720 best=38.720
+[tg_sp42_init71] ep 50 val_rmse=36.552 best=36.552
+[tg_sp42_init71] ep 75 val_rmse=36.587 best=35.183
+[tg_sp42_init71] ep100 val_rmse=35.084 best=34.052
+[tg_sp42_init71] ep125 val_rmse=34.200 best=34.052
+[tg_sp42_init71] ep150 val_rmse=34.129 best=33.959 swa
+[tg_sp42_init71] ep175 val_rmse=34.199 best=33.739 swa
+[tg_sp42_init71] ep200 val_rmse=34.230 best=33.739 swa
+[tg_sp42_init71] early stop @ ep219
+[tg_sp42_init71] DONE test_rmse=33.1223 swa=33.09386824762335 val=33.7390(ep169) params=845313 time=1317s
+
+===== RUN tg_sp42_init2026 =====
+[featurize tg] loaded from cache tg_v2_m3_rw32_d70_full.pkl (valid 7170/7170)
+[tg split=42] train/val/test = 5162/574/1434  (valid molecules used: 7170/7170, 0 dropped before split)
+[tg_sp42_init2026] ep  1 val_rmse=58.031 best=58.031
+[tg_sp42_init2026] ep 25 val_rmse=39.252 best=39.252
+[tg_sp42_init2026] ep 50 val_rmse=36.481 best=36.481
+[tg_sp42_init2026] ep 75 val_rmse=35.215 best=35.215
+[tg_sp42_init2026] ep100 val_rmse=34.579 best=34.579
+[tg_sp42_init2026] ep125 val_rmse=34.416 best=33.864
+[tg_sp42_init2026] ep150 val_rmse=34.437 best=33.864 swa
+[tg_sp42_init2026] early stop @ ep169
+[tg_sp42_init2026] DONE test_rmse=35.2006 swa=33.78956992933548 val=33.8645(ep119) params=845313 time=1011s
+
+===== RUN tg_sp71_init42 =====
+[featurize tg] loaded from cache tg_v2_m3_rw32_d70_full.pkl (valid 7170/7170)
+[tg split=71] train/val/test = 5162/574/1434  (valid molecules used: 7170/7170, 0 dropped before split)
+[tg_sp71_init42] ep  1 val_rmse=57.951 best=57.951
+[tg_sp71_init42] ep 25 val_rmse=42.028 best=41.314
+[tg_sp71_init42] ep 50 val_rmse=37.486 best=37.009
+[tg_sp71_init42] ep 75 val_rmse=36.492 best=34.868
+[tg_sp71_init42] ep100 val_rmse=35.330 best=33.366
+[tg_sp71_init42] ep125 val_rmse=33.903 best=33.223
+[tg_sp71_init42] ep150 val_rmse=33.512 best=33.223 swa
+[tg_sp71_init42] early stop @ ep161
+[tg_sp71_init42] DONE test_rmse=31.9925 swa=31.651509062344875 val=33.2226(ep111) params=845313 time=968s
+
+===== RUN tg_sp71_init71 =====
+[featurize tg] loaded from cache tg_v2_m3_rw32_d70_full.pkl (valid 7170/7170)
+[tg split=71] train/val/test = 5162/574/1434  (valid molecules used: 7170/7170, 0 dropped before split)
+[tg_sp71_init71] ep  1 val_rmse=57.492 best=57.492
+[tg_sp71_init71] ep 25 val_rmse=44.601 best=42.335
+[tg_sp71_init71] ep 50 val_rmse=38.728 best=37.957
+[tg_sp71_init71] ep 75 val_rmse=36.878 best=35.692
+[tg_sp71_init71] ep100 val_rmse=35.500 best=35.160
+[tg_sp71_init71] ep125 val_rmse=35.387 best=34.597
+[tg_sp71_init71] ep150 val_rmse=34.461 best=33.966 swa
+[tg_sp71_init71] ep175 val_rmse=34.771 best=33.966 swa
+[tg_sp71_init71] early stop @ ep191
+[tg_sp71_init71] DONE test_rmse=32.4490 swa=32.489590146820326 val=33.9665(ep141) params=845313 time=1159s
+
+===== RUN tg_sp71_init2026 =====
+[featurize tg] loaded from cache tg_v2_m3_rw32_d70_full.pkl (valid 7170/7170)
+[tg split=71] train/val/test = 5162/574/1434  (valid molecules used: 7170/7170, 0 dropped before split)
+[tg_sp71_init2026] ep  1 val_rmse=56.698 best=56.698
+[tg_sp71_init2026] ep 25 val_rmse=42.099 best=42.099
+[tg_sp71_init2026] ep 50 val_rmse=37.384 best=37.384
+[tg_sp71_init2026] ep 75 val_rmse=35.953 best=35.827
+[tg_sp71_init2026] ep100 val_rmse=34.870 best=34.819
+[tg_sp71_init2026] ep125 val_rmse=33.980 best=33.867
+[tg_sp71_init2026] ep150 val_rmse=33.857 best=33.367 swa
+[tg_sp71_init2026] ep175 val_rmse=34.174 best=33.367 swa
+[tg_sp71_init2026] ep200 val_rmse=33.512 best=33.190 swa
+[tg_sp71_init2026] ep225 val_rmse=33.908 best=33.050 swa
+[tg_sp71_init2026] ep250 val_rmse=33.490 best=33.050 swa
+[tg_sp71_init2026] early stop @ ep259
+[tg_sp71_init2026] DONE test_rmse=32.2723 swa=31.92476300442472 val=33.0495(ep209) params=845313 time=1573s
+
+===== ENSEMBLE tg =====
+[ensemble tg split=42] single 33.7416+/-1.0356  ens_mean 32.5560  ens_median 32.6536  (n_init=3, n_test=1434)
+[ensemble tg split=71] single 32.2379+/-0.1879  ens_mean 31.2030  ens_median 31.1962  (n_init=3, n_test=1434)
+[ensemble tg] FINAL ens_mean=31.8795+/-0.6765 (over 2 split(s)); single=32.9898+/-0.7518 [mean/std over splits of per-split init-mean]
+
+===== RUN ea_spgiven_init42 =====
+[featurize ea] loaded from cache ea_v2_m3_rw32_d70_full.pkl (valid 42966/42966)
+[ea split=given] train/val/test = 30935/3437/8594  (valid molecules used: 42966/42966, 0 dropped before split)
+[ea_spgiven_init42] ep  1 val_rmse=0.273 best=0.273
+[ea_spgiven_init42] ep 25 val_rmse=0.072 best=0.070
+[ea_spgiven_init42] ep 50 val_rmse=0.060 best=0.055
+[ea_spgiven_init42] ep 75 val_rmse=0.050 best=0.048
+[ea_spgiven_init42] ep100 val_rmse=0.048 best=0.047
+[ea_spgiven_init42] ep125 val_rmse=0.047 best=0.047
+[ea_spgiven_init42] ep150 val_rmse=0.047 best=0.045 swa
+[ea_spgiven_init42] ep175 val_rmse=0.044 best=0.044 swa
+[ea_spgiven_init42] ep200 val_rmse=0.044 best=0.044 swa
+[ea_spgiven_init42] ep225 val_rmse=0.044 best=0.043 swa
+[ea_spgiven_init42] ep250 val_rmse=0.043 best=0.043 swa
+[ea_spgiven_init42] ep275 val_rmse=0.043 best=0.043 swa
+[ea_spgiven_init42] early stop @ ep290
+[ea_spgiven_init42] DONE test_rmse=0.0409 swa=0.04043258153962204 val=0.0430(ep240) params=846081 time=10092s
+
+===== RUN ea_spgiven_init71 =====
+[featurize ea] loaded from cache ea_v2_m3_rw32_d70_full.pkl (valid 42966/42966)
+[ea split=given] train/val/test = 30935/3437/8594  (valid molecules used: 42966/42966, 0 dropped before split)
+[ea_spgiven_init71] ep  1 val_rmse=0.282 best=0.282
+[ea_spgiven_init71] ep 25 val_rmse=0.066 best=0.066
+[ea_spgiven_init71] ep 50 val_rmse=0.065 best=0.055
+[ea_spgiven_init71] ep 75 val_rmse=0.051 best=0.050
+[ea_spgiven_init71] ep100 val_rmse=0.054 best=0.047
+[ea_spgiven_init71] ep125 val_rmse=0.050 best=0.047
+[ea_spgiven_init71] ep150 val_rmse=0.046 best=0.045 swa
+[ea_spgiven_init71] ep175 val_rmse=0.046 best=0.044 swa
+[ea_spgiven_init71] ep200 val_rmse=0.045 best=0.044 swa
+[ea_spgiven_init71] ep225 val_rmse=0.044 best=0.043 swa
+[ea_spgiven_init71] ep250 val_rmse=0.043 best=0.043 swa
+[ea_spgiven_init71] ep275 val_rmse=0.043 best=0.043 swa
+[ea_spgiven_init71] ep300 val_rmse=0.043 best=0.043 swa
+[ea_spgiven_init71] DONE test_rmse=0.0407 swa=0.04065264878357267 val=0.0429(ep288) params=846081 time=10528s
+
+===== RUN ea_spgiven_init2026 =====
+[featurize ea] loaded from cache ea_v2_m3_rw32_d70_full.pkl (valid 42966/42966)
+[ea split=given] train/val/test = 30935/3437/8594  (valid molecules used: 42966/42966, 0 dropped before split)
+[ea_spgiven_init2026] ep  1 val_rmse=0.285 best=0.285
+[ea_spgiven_init2026] ep 25 val_rmse=0.068 best=0.068
+[ea_spgiven_init2026] ep 50 val_rmse=0.057 best=0.054
+[ea_spgiven_init2026] ep 75 val_rmse=0.052 best=0.050
+[ea_spgiven_init2026] ep100 val_rmse=0.048 best=0.047
+[ea_spgiven_init2026] ep125 val_rmse=0.047 best=0.046
+[ea_spgiven_init2026] ep150 val_rmse=0.048 best=0.045 swa
+[ea_spgiven_init2026] ep175 val_rmse=0.046 best=0.044 swa
+[ea_spgiven_init2026] ep200 val_rmse=0.044 best=0.043 swa
+[ea_spgiven_init2026] ep225 val_rmse=0.044 best=0.043 swa
+[ea_spgiven_init2026] ep250 val_rmse=0.043 best=0.043 swa
+[ea_spgiven_init2026] ep275 val_rmse=0.043 best=0.042 swa
+[ea_spgiven_init2026] ep300 val_rmse=0.043 best=0.042 swa
+[ea_spgiven_init2026] DONE test_rmse=0.0405 swa=0.040393827409199994 val=0.0424(ep270) params=846081 time=10443s
+
+===== ENSEMBLE ea =====
+[ensemble ea split=given] single 0.0407+/-0.0002  ens_mean 0.0396  ens_median 0.0399  (n_init=3, n_test=8594)
+[ensemble ea] FINAL ens_mean=0.0396+/-0.0000 (over 1 split(s)); single=0.0407+/-0.0002 [mean/std over init seeds]

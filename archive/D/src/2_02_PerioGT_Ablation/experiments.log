@@ -1,0 +1,78 @@
+Device: cuda
+Loading data...
+Loaded 7170 samples from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv
+Successfully parsed 7170 molecules
+Split: Train=5736, Val=717, Test=717
+Train: 5736, Val: 717, Test: 717
+
+==================================================
+Config: paper_baseline
+==================================================
+Epoch   1 | Loss: 9353.03 | Val RMSE: 67.28
+Epoch  10 | Loss: 2715.70 | Val RMSE: 53.26
+Epoch  20 | Loss: 2620.32 | Val RMSE: 49.85
+Epoch  30 | Loss: 2315.89 | Val RMSE: 48.93
+Epoch  40 | Loss: 2324.47 | Val RMSE: 51.82
+Early stop at epoch 46
+Test RMSE: 46.75 | MAE: 34.23 | Time: 59.9s
+
+==================================================
+Config: chemprop_h256
+==================================================
+Epoch   1 | Loss: 12102.67 | Val RMSE: 67.90
+Epoch  10 | Loss: 2834.38 | Val RMSE: 53.99
+Epoch  20 | Loss: 2566.56 | Val RMSE: 49.69
+Epoch  30 | Loss: 2361.88 | Val RMSE: 55.94
+Epoch  40 | Loss: 2199.73 | Val RMSE: 48.65
+Epoch  50 | Loss: 2134.39 | Val RMSE: 50.52
+Test RMSE: 46.74 | MAE: 34.04 | Time: 59.5s
+
+==================================================
+Config: chemprop_e100
+==================================================
+Epoch   1 | Loss: 10806.31 | Val RMSE: 67.37
+Epoch  10 | Loss: 3388.61 | Val RMSE: 56.73
+Epoch  20 | Loss: 2558.36 | Val RMSE: 51.73
+Epoch  30 | Loss: 2573.61 | Val RMSE: 54.14
+Epoch  40 | Loss: 2251.83 | Val RMSE: 48.20
+Epoch  50 | Loss: 2149.05 | Val RMSE: 53.24
+Epoch  60 | Loss: 2095.59 | Val RMSE: 48.99
+Epoch  70 | Loss: 1967.60 | Val RMSE: 48.10
+Epoch  80 | Loss: 1969.31 | Val RMSE: 51.63
+Epoch  90 | Loss: 1928.11 | Val RMSE: 55.50
+Epoch 100 | Loss: 1743.55 | Val RMSE: 48.70
+Test RMSE: 44.04 | MAE: 31.77 | Time: 129.1s
+
+==================================================
+Config: chemprop_lr1e4
+==================================================
+Epoch   1 | Loss: 19571.09 | Val RMSE: 75.91
+Epoch  10 | Loss: 2925.03 | Val RMSE: 54.88
+Epoch  20 | Loss: 2741.34 | Val RMSE: 53.24
+Epoch  30 | Loss: 2626.24 | Val RMSE: 52.10
+Epoch  40 | Loss: 2521.46 | Val RMSE: 51.90
+Epoch  50 | Loss: 2402.58 | Val RMSE: 50.29
+Test RMSE: 47.89 | MAE: 35.36 | Time: 71.8s
+
+==================================================
+Config: graphformer
+==================================================
+Epoch   1 | Loss: 12384.38 | Val RMSE: 65.50
+Epoch  10 | Loss: 2629.99 | Val RMSE: 51.79
+Epoch  20 | Loss: 2829.08 | Val RMSE: 54.26
+Epoch  30 | Loss: 2581.94 | Val RMSE: 56.94
+Epoch  40 | Loss: 2509.82 | Val RMSE: 50.76
+Epoch  50 | Loss: 2363.72 | Val RMSE: 51.87
+Test RMSE: 46.29 | MAE: 34.15 | Time: 201.0s
+
+============================================================
+ABLATION RESULTS SUMMARY
+============================================================
+          name  test_rmse  test_mae  test_r2   time_sec
+ chemprop_e100  44.043207 31.768457 0.853647 129.124775
+   graphformer  46.288854 34.145393 0.838343 201.020631
+ chemprop_h256  46.735785 34.037914 0.835206  59.546268
+paper_baseline  46.753110 34.231743 0.835084  59.901025
+chemprop_lr1e4  47.891298 35.364883 0.826956  71.837105
+
+Best: chemprop_e100 with RMSE 44.04

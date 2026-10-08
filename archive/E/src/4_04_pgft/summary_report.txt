@@ -1,0 +1,79 @@
+================================================================================
+PCFT Experiment Summary Report
+Day 4 Experiment 1: Prompt-Conditioned Fine-Tuning
+================================================================================
+
+ABLATION RESULTS (Test RMSE, mean ± std across 3 seeds)
+--------------------------------------------------------------------------------
+Ablation                                         Test RMSE   Train RMSE        Gap
+--------------------------------------------------------------------------------
+(a) GIN+Trimer Baseline (no pretrain)         52.46±0.20 22.51±4.61 -29.95±4.79
+(b) PCFT Random-Init Encoder P                53.34±0.36 43.47±5.86 -9.87±5.80
+(c) PCFT PA Pre-trained Encoder P [PRIMARY]   52.72±0.76 34.13±2.34 -18.59±3.08
+(d) Standard Fine-tuning (no prompt)          53.53±0.37 26.70±3.64 -26.83±4.00
+(e) PCFT Both Encoders Frozen                 54.02±1.43 40.19±2.21 -13.83±1.13
+--------------------------------------------------------------------------------
+
+STATISTICAL SIGNIFICANCE (Paired t-test on test RMSE)
+------------------------------------------------------------
+  c_vs_a: t=0.5511, p=0.6369, significant=NO
+  c_vs_d: t=-1.1993, p=0.3532, significant=NO
+  b_vs_a: t=3.1136, p=0.0895, significant=NO
+  c_vs_b: t=-0.8192, p=0.4987, significant=NO
+  c_vs_e: t=-1.0501, p=0.4038, significant=NO
+
+DIAGNOSTIC: h_pre QUALITY
+------------------------------------------------------------
+  Mean pairwise cosine similarity: 0.9633
+  Std pairwise cosine similarity:  0.0417
+  Min cosine similarity:           0.7764
+  Max cosine similarity:           1.0000
+  % pairs with cos_sim > 0.95:     72.78%
+  % pairs with cos_sim > 0.90:     88.57%
+  % pairs with cos_sim < 0.50:     0.00%
+
+DIAGNOSTIC: h_task vs h_pre DIVERGENCE
+------------------------------------------------------------
+  epoch_0: mean_cos_sim=0.5795, std=0.0278
+  epoch_1: mean_cos_sim=0.5754, std=0.0252
+  epoch_10: mean_cos_sim=0.5786, std=0.0349
+  epoch_11: mean_cos_sim=0.5717, std=0.0301
+  epoch_12: mean_cos_sim=0.5721, std=0.0219
+  epoch_13: mean_cos_sim=0.5757, std=0.0363
+  epoch_14: mean_cos_sim=0.5614, std=0.0445
+  epoch_15: mean_cos_sim=0.5693, std=0.0364
+  epoch_16: mean_cos_sim=0.5679, std=0.0385
+  epoch_17: mean_cos_sim=0.5682, std=0.0319
+  epoch_18: mean_cos_sim=0.5672, std=0.0422
+  epoch_19: mean_cos_sim=0.5578, std=0.0307
+  epoch_2: mean_cos_sim=0.5793, std=0.0201
+  epoch_20: mean_cos_sim=0.5575, std=0.0362
+  epoch_3: mean_cos_sim=0.5824, std=0.0311
+  epoch_4: mean_cos_sim=0.5722, std=0.0431
+  epoch_5: mean_cos_sim=0.5719, std=0.0491
+  epoch_6: mean_cos_sim=0.5775, std=0.0350
+  epoch_7: mean_cos_sim=0.5648, std=0.0574
+  epoch_8: mean_cos_sim=0.5654, std=0.0292
+  epoch_9: mean_cos_sim=0.5738, std=0.0444
+
+DIAGNOSTIC: PREDICTION HEAD WEIGHT ANALYSIS
+------------------------------------------------------------
+  ||W_task|| = 20.5653
+  ||W_pre||  = 13.3880
+  Ratio (pre/task) = 0.6510
+  Mean |W_task| = 0.037096
+  Mean |W_pre|  = 0.029099
+
+CONCLUSIONS
+------------------------------------------------------------
+1. PCFT (c) test RMSE: 52.72
+   Baseline (a) test RMSE: 52.46
+   -> PCFT DOES NOT improve over baseline (diff = 0.26)
+   -> H4a NOT SUPPORTED: Prompt mechanism alone insufficient
+   Standard FT (d) test RMSE: 53.53
+   -> PCFT IMPROVES over standard FT by 0.81 RMSE
+   Random-Init PCFT (b) test RMSE: 53.34
+   -> PA pre-training helps: 0.62 improvement over random prompt
+   -> Dual-encoder structure alone does NOT help (b vs a: 0.88)
+
+================================================================================

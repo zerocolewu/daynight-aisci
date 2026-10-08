@@ -1,0 +1,175 @@
+Loading data...
+Matching SMILES to precomputed graphs...
+  Matched 5162/5162 (100.0%)
+  Matched 573/573 (100.0%)
+  Matched 1434/1435 (99.9%)
+Computing bond data...
+
+######################################################################
+# Experiment 2: PolyBG-CPA Parallel
+######################################################################
+
+============================================================
+Training exp2_polybg_cpa | Seed 71 | Device: cuda
+============================================================
+Model: exp2_polybg_cpa, Params: 1,027,969
+Epoch   1 | Train Loss: 3.2861 | Val RMSE: 65.92 K | Best: 65.92 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.1549 | Val RMSE: 44.85 K | Best: 43.66 K (ep 17) | LR: 0.000989
+Epoch  41 | Train Loss: 0.0997 | Val RMSE: 41.80 K | Best: 39.69 K (ep 35) | LR: 0.000957
+Epoch  61 | Train Loss: 0.0660 | Val RMSE: 38.60 K | Best: 36.25 K (ep 60) | LR: 0.000905
+Epoch  81 | Train Loss: 0.0489 | Val RMSE: 36.41 K | Best: 35.95 K (ep 69) | LR: 0.000835
+Epoch 101 | Train Loss: 0.0376 | Val RMSE: 36.15 K | Best: 35.10 K (ep 88) | LR: 0.000750
+Epoch 121 | Train Loss: 0.0297 | Val RMSE: 34.98 K | Best: 34.98 K (ep 121) | LR: 0.000655
+Epoch 141 | Train Loss: 0.0231 | Val RMSE: 36.63 K | Best: 34.78 K (ep 130) | LR: 0.000553
+Epoch 161 | Train Loss: 0.0186 | Val RMSE: 34.86 K | Best: 34.33 K (ep 144) | LR: 0.000448
+Epoch 181 | Train Loss: 0.0155 | Val RMSE: 34.31 K | Best: 34.10 K (ep 176) | LR: 0.000346
+Epoch 201 | Train Loss: 0.0130 | Val RMSE: 34.38 K | Best: 33.90 K (ep 191) | LR: 0.000251
+Epoch 221 | Train Loss: 0.0112 | Val RMSE: 33.73 K | Best: 33.34 K (ep 211) | LR: 0.000166
+Epoch 241 | Train Loss: 0.0100 | Val RMSE: 34.26 K | Best: 33.34 K (ep 211) | LR: 0.000096
+Early stopping at epoch 241
+
+Final Results for exp2_polybg_cpa Seed 71:
+  Best Epoch: 211
+  Best Val RMSE: 33.3387 K
+  Test RMSE: 35.7709 K
+  Test MAE: 23.1816 K
+  Training Time: 2162.0s
+
+============================================================
+Training exp2_polybg_cpa | Seed 42 | Device: cuda
+============================================================
+Model: exp2_polybg_cpa, Params: 1,027,969
+Epoch   1 | Train Loss: 1.3615 | Val RMSE: 67.73 K | Best: 67.73 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.1569 | Val RMSE: 46.15 K | Best: 43.94 K (ep 19) | LR: 0.000989
+Epoch  41 | Train Loss: 0.0938 | Val RMSE: 40.68 K | Best: 38.02 K (ep 36) | LR: 0.000957
+Epoch  61 | Train Loss: 0.0614 | Val RMSE: 37.28 K | Best: 36.84 K (ep 53) | LR: 0.000905
+Epoch  81 | Train Loss: 0.0513 | Val RMSE: 36.64 K | Best: 36.04 K (ep 67) | LR: 0.000835
+Epoch 101 | Train Loss: 0.0384 | Val RMSE: 37.36 K | Best: 35.32 K (ep 95) | LR: 0.000750
+Epoch 121 | Train Loss: 0.0302 | Val RMSE: 36.18 K | Best: 35.07 K (ep 114) | LR: 0.000655
+Epoch 141 | Train Loss: 0.0234 | Val RMSE: 35.37 K | Best: 34.94 K (ep 131) | LR: 0.000553
+Epoch 161 | Train Loss: 0.0184 | Val RMSE: 34.81 K | Best: 34.32 K (ep 157) | LR: 0.000448
+Epoch 181 | Train Loss: 0.0153 | Val RMSE: 34.89 K | Best: 34.32 K (ep 157) | LR: 0.000346
+Early stopping at epoch 187
+
+Final Results for exp2_polybg_cpa Seed 42:
+  Best Epoch: 157
+  Best Val RMSE: 34.3212 K
+  Test RMSE: 35.2703 K
+  Test MAE: 23.3035 K
+  Training Time: 1625.2s
+
+============================================================
+Training exp2_polybg_cpa | Seed 123 | Device: cuda
+============================================================
+Model: exp2_polybg_cpa, Params: 1,027,969
+Epoch   1 | Train Loss: 4.1728 | Val RMSE: 83.43 K | Best: 83.43 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.1640 | Val RMSE: 45.37 K | Best: 43.42 K (ep 18) | LR: 0.000989
+Epoch  41 | Train Loss: 0.0978 | Val RMSE: 41.54 K | Best: 40.13 K (ep 36) | LR: 0.000957
+Epoch  61 | Train Loss: 0.0637 | Val RMSE: 37.24 K | Best: 37.24 K (ep 61) | LR: 0.000905
+Epoch  81 | Train Loss: 0.0490 | Val RMSE: 35.95 K | Best: 35.94 K (ep 74) | LR: 0.000835
+Epoch 101 | Train Loss: 0.0370 | Val RMSE: 35.11 K | Best: 35.11 K (ep 101) | LR: 0.000750
+Epoch 121 | Train Loss: 0.0283 | Val RMSE: 35.90 K | Best: 34.06 K (ep 117) | LR: 0.000655
+Epoch 141 | Train Loss: 0.0217 | Val RMSE: 35.32 K | Best: 33.48 K (ep 133) | LR: 0.000553
+Epoch 161 | Train Loss: 0.0187 | Val RMSE: 33.46 K | Best: 33.46 K (ep 161) | LR: 0.000448
+Epoch 181 | Train Loss: 0.0151 | Val RMSE: 33.88 K | Best: 33.26 K (ep 165) | LR: 0.000346
+Epoch 201 | Train Loss: 0.0124 | Val RMSE: 33.63 K | Best: 33.07 K (ep 189) | LR: 0.000251
+Epoch 221 | Train Loss: 0.0111 | Val RMSE: 33.23 K | Best: 33.06 K (ep 220) | LR: 0.000166
+Epoch 241 | Train Loss: 0.0093 | Val RMSE: 33.40 K | Best: 33.06 K (ep 220) | LR: 0.000096
+Early stopping at epoch 250
+
+Final Results for exp2_polybg_cpa Seed 123:
+  Best Epoch: 220
+  Best Val RMSE: 33.0611 K
+  Test RMSE: 35.8892 K
+  Test MAE: 23.0016 K
+  Training Time: 2211.2s
+
+######################################################################
+# Experiment 3: PolyBG-noCPA
+######################################################################
+
+============================================================
+Training exp3_polybg_nocpa | Seed 71 | Device: cuda
+============================================================
+Model: exp3_polybg_nocpa, Params: 715,265
+Epoch   1 | Train Loss: 0.3789 | Val RMSE: 61.37 K | Best: 61.37 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.1777 | Val RMSE: 48.13 K | Best: 48.13 K (ep 21) | LR: 0.000989
+Epoch  41 | Train Loss: 0.1028 | Val RMSE: 41.44 K | Best: 37.83 K (ep 40) | LR: 0.000957
+Epoch  61 | Train Loss: 0.0695 | Val RMSE: 37.90 K | Best: 37.58 K (ep 51) | LR: 0.000905
+Epoch  81 | Train Loss: 0.0522 | Val RMSE: 37.20 K | Best: 35.42 K (ep 78) | LR: 0.000835
+Epoch 101 | Train Loss: 0.0395 | Val RMSE: 35.71 K | Best: 34.04 K (ep 88) | LR: 0.000750
+Epoch 121 | Train Loss: 0.0314 | Val RMSE: 36.90 K | Best: 33.83 K (ep 113) | LR: 0.000655
+Epoch 141 | Train Loss: 0.0213 | Val RMSE: 34.96 K | Best: 32.74 K (ep 135) | LR: 0.000553
+Epoch 161 | Train Loss: 0.0172 | Val RMSE: 34.49 K | Best: 32.74 K (ep 135) | LR: 0.000448
+Early stopping at epoch 165
+
+Final Results for exp3_polybg_nocpa Seed 71:
+  Best Epoch: 135
+  Best Val RMSE: 32.7448 K
+  Test RMSE: 36.9971 K
+  Test MAE: 24.4474 K
+  Training Time: 607.1s
+
+######################################################################
+# Experiment 4: Bond-CPA-GAT Only
+######################################################################
+
+============================================================
+Training exp4_bond_cpa_only | Seed 71 | Device: cuda
+============================================================
+Model: exp4_bond_cpa_only, Params: 176,257
+Epoch   1 | Train Loss: 4.2262 | Val RMSE: 63.15 K | Best: 63.15 K (ep 1) | LR: 0.001000
+Epoch  21 | Train Loss: 0.2235 | Val RMSE: 55.39 K | Best: 50.44 K (ep 18) | LR: 0.000989
+Epoch  41 | Train Loss: 0.1568 | Val RMSE: 42.87 K | Best: 42.87 K (ep 41) | LR: 0.000957
+Epoch  61 | Train Loss: 0.1219 | Val RMSE: 41.65 K | Best: 41.65 K (ep 61) | LR: 0.000905
+Epoch  81 | Train Loss: 0.0997 | Val RMSE: 42.00 K | Best: 40.82 K (ep 76) | LR: 0.000835
+Epoch 101 | Train Loss: 0.0812 | Val RMSE: 40.10 K | Best: 40.10 K (ep 101) | LR: 0.000750
+Epoch 121 | Train Loss: 0.0693 | Val RMSE: 41.71 K | Best: 39.37 K (ep 104) | LR: 0.000655
+Early stopping at epoch 134
+
+Final Results for exp4_bond_cpa_only Seed 71:
+  Best Epoch: 104
+  Best Val RMSE: 39.3692 K
+  Test RMSE: 45.3674 K
+  Test MAE: 29.1773 K
+  Training Time: 729.4s
+
+######################################################################
+# Experiment 5: Enriched-Edge CPA-GAT
+######################################################################
+
+============================================================
+Training exp5_enriched_edge_cpa | Seed 71 | Device: cuda
+============================================================
+Model: exp5_enriched_edge_cpa, Params: 1,371,393
+Traceback (most recent call last):
+  File "<string>", line 71, in <module>
+  File "/home/home_public/aisci/AIscientist/src/7_day7_polybg_cpa/train.py", line 144, in train_model
+    train_loss = train_epoch(model, train_loader, optimizer, criterion, device,
+  File "/home/home_public/aisci/AIscientist/src/7_day7_polybg_cpa/train.py", line 53, in train_epoch
+    pred = model(atom_batch, bond_data=bond_data)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/home_public/aisci/AIscientist/src/7_day7_polybg_cpa/models/polybg_cpa.py", line 325, in forward
+    x = conv(x, edge_index, edge_attr)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/home_public/aisci/AIscientist/src/7_day7_polybg_cpa/models/polybg_cpa.py", line 398, in forward
+    o_std = self.gat_heads[h]((aug_src, x), edge_index)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch_geometric/nn/conv/gatv2_conv.py", line 300, in forward
+    x_r = self.lin_r(x_r).view(-1, H, C)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch_geometric/nn/dense/linear.py", line 127, in forward
+    return F.linear(x, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (7485x256 and 512x64)

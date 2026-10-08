@@ -1,0 +1,1344 @@
+[Sat May 16 23:29:54 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+
+[Sat May 16 23:34:54 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+
+[Sat May 16 23:39:54 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 1: loss=0.0688, cosine_sim=0.9152
+
+[Sat May 16 23:44:54 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 2: loss=0.0111, cosine_sim=0.9136
+
+[Sat May 16 23:49:54 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 2: loss=0.0111, cosine_sim=0.9136
+
+[Sat May 16 23:54:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 3: loss=0.0076, cosine_sim=0.9160
+
+[Sat May 16 23:59:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 4: loss=0.0074, cosine_sim=0.9177
+
+[Sun May 17 00:04:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 5: loss=0.0057, cosine_sim=0.9189
+
+[Sun May 17 00:09:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 5: loss=0.0057, cosine_sim=0.9189
+
+[Sun May 17 00:14:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 6: loss=0.0050, cosine_sim=0.9202
+
+[Sun May 17 00:19:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 7: loss=0.0046, cosine_sim=0.9205
+
+[Sun May 17 00:24:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 7: loss=0.0046, cosine_sim=0.9205
+
+[Sun May 17 00:29:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 8: loss=0.0051, cosine_sim=0.9200
+
+[Sun May 17 00:34:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 9: loss=0.0049, cosine_sim=0.9212
+
+[Sun May 17 00:39:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 9: loss=0.0049, cosine_sim=0.9212
+
+[Sun May 17 00:44:55 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 10: loss=0.0040, cosine_sim=0.9214
+
+[Sun May 17 00:49:56 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 11: loss=0.0041, cosine_sim=0.9215
+
+[Sun May 17 00:54:56 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 12: loss=0.0040, cosine_sim=0.9231
+
+[Sun May 17 00:59:56 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 12: loss=0.0040, cosine_sim=0.9231
+
+[Sun May 17 01:04:56 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 13: loss=0.0039, cosine_sim=0.9222
+
+[Sun May 17 01:09:56 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 14: loss=0.0033, cosine_sim=0.9233
+
+[Sun May 17 01:14:56 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 14: loss=0.0033, cosine_sim=0.9233
+
+[Sun May 17 01:19:56 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 15: loss=0.0037, cosine_sim=0.9225
+
+[Sun May 17 01:24:56 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 16: loss=0.0035, cosine_sim=0.9237
+
+[Sun May 17 01:29:57 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 16: loss=0.0035, cosine_sim=0.9237
+
+[Sun May 17 01:34:57 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 17: loss=0.0036, cosine_sim=0.9224
+
+[Sun May 17 01:39:57 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 18: loss=0.0031, cosine_sim=0.9237
+
+[Sun May 17 01:44:57 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 19: loss=0.0034, cosine_sim=0.9232
+
+[Sun May 17 01:49:57 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 19: loss=0.0034, cosine_sim=0.9232
+
+[Sun May 17 01:54:57 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 20: loss=0.0032, cosine_sim=0.9247
+
+[Sun May 17 01:59:58 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 21: loss=0.0031, cosine_sim=0.9247
+
+[Sun May 17 02:04:58 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 21: loss=0.0031, cosine_sim=0.9247
+
+[Sun May 17 02:09:58 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 22: loss=0.0035, cosine_sim=0.9232
+
+[Sun May 17 02:14:58 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 23: loss=0.0029, cosine_sim=0.9242
+
+[Sun May 17 02:19:58 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 24: loss=0.0026, cosine_sim=0.9236
+
+[Sun May 17 02:24:58 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 24: loss=0.0026, cosine_sim=0.9236
+
+[Sun May 17 02:29:59 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 25: loss=0.0029, cosine_sim=0.9231
+
+[Sun May 17 02:34:59 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 26: loss=0.0030, cosine_sim=0.9241
+
+[Sun May 17 02:39:59 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 26: loss=0.0030, cosine_sim=0.9241
+
+[Sun May 17 02:44:59 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 27: loss=0.0027, cosine_sim=0.9241
+
+[Sun May 17 02:49:59 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 28: loss=0.0028, cosine_sim=0.9237
+
+[Sun May 17 02:54:59 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 29: loss=0.0025, cosine_sim=0.9245
+
+[Sun May 17 03:00:00 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 29: loss=0.0025, cosine_sim=0.9245
+
+[Sun May 17 03:05:00 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 30: loss=0.0029, cosine_sim=0.9237
+
+[Sun May 17 03:10:00 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 31: loss=0.0024, cosine_sim=0.9257
+
+[Sun May 17 03:15:00 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 31: loss=0.0024, cosine_sim=0.9257
+
+[Sun May 17 03:20:01 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 32: loss=0.0028, cosine_sim=0.9240
+
+[Sun May 17 03:25:01 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 33: loss=0.0025, cosine_sim=0.9246
+
+[Sun May 17 03:30:01 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 34: loss=0.0026, cosine_sim=0.9242
+
+[Sun May 17 03:35:01 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 34: loss=0.0026, cosine_sim=0.9242
+
+[Sun May 17 03:40:01 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 35: loss=0.0027, cosine_sim=0.9234
+
+[Sun May 17 03:45:02 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 36: loss=0.0025, cosine_sim=0.9248
+
+[Sun May 17 03:50:02 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 36: loss=0.0025, cosine_sim=0.9248
+
+[Sun May 17 03:55:02 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 37: loss=0.0027, cosine_sim=0.9239
+
+[Sun May 17 04:00:02 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 38: loss=0.0024, cosine_sim=0.9258
+
+[Sun May 17 04:05:03 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 39: loss=0.0023, cosine_sim=0.9264
+
+[Sun May 17 04:10:03 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 39: loss=0.0023, cosine_sim=0.9264
+
+[Sun May 17 04:15:03 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 40: loss=0.0026, cosine_sim=0.9252
+
+[Sun May 17 04:20:03 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 41: loss=0.0024, cosine_sim=0.9251
+
+[Sun May 17 04:25:04 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 41: loss=0.0024, cosine_sim=0.9251
+
+[Sun May 17 04:30:04 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 42: loss=0.0021, cosine_sim=0.9262
+
+[Sun May 17 04:35:04 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 43: loss=0.0024, cosine_sim=0.9244
+
+[Sun May 17 04:40:04 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 43: loss=0.0024, cosine_sim=0.9244
+
+[Sun May 17 04:45:05 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 44: loss=0.0024, cosine_sim=0.9252
+
+[Sun May 17 04:50:05 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 45: loss=0.0023, cosine_sim=0.9255
+
+[Sun May 17 04:55:05 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 46: loss=0.0025, cosine_sim=0.9245
+
+[Sun May 17 05:00:05 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 46: loss=0.0025, cosine_sim=0.9245
+
+[Sun May 17 05:05:06 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 47: loss=0.0026, cosine_sim=0.9244
+
+[Sun May 17 05:10:06 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 48: loss=0.0026, cosine_sim=0.9256
+
+[Sun May 17 05:15:06 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 48: loss=0.0026, cosine_sim=0.9256
+
+[Sun May 17 05:20:07 CST 2026]
+  Running: 305277 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 49: loss=0.0023, cosine_sim=0.9253
+
+[Sun May 17 05:25:07 CST 2026]
+  Running: 345019 python -u finetune.py --mode
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  20: train_rmse=37.1151, val_rmse=47.8160
+
+[Sun May 17 05:30:07 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+
+[Sun May 17 05:35:08 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+
+[Sun May 17 05:40:08 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+
+[Sun May 17 05:45:08 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+
+[Sun May 17 05:50:09 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+
+[Sun May 17 05:55:09 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 1: loss=2.9018, cosine_sim=0.8068
+
+[Sun May 17 06:00:09 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 2: loss=2.7819, cosine_sim=0.7735
+
+[Sun May 17 06:05:10 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 2: loss=2.7819, cosine_sim=0.7735
+
+[Sun May 17 06:10:10 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 3: loss=2.7460, cosine_sim=0.7639
+
+[Sun May 17 06:15:10 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 4: loss=2.7235, cosine_sim=0.7589
+
+[Sun May 17 06:20:11 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 4: loss=2.7235, cosine_sim=0.7589
+
+[Sun May 17 06:25:11 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 5: loss=2.7082, cosine_sim=0.7557
+
+[Sun May 17 06:30:11 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 6: loss=2.6957, cosine_sim=0.7531
+
+[Sun May 17 06:35:12 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 6: loss=2.6957, cosine_sim=0.7531
+
+[Sun May 17 06:40:12 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 7: loss=2.6872, cosine_sim=0.7512
+
+[Sun May 17 06:45:13 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 8: loss=2.6773, cosine_sim=0.7494
+
+[Sun May 17 06:50:13 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 8: loss=2.6773, cosine_sim=0.7494
+
+[Sun May 17 06:55:13 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 9: loss=2.6684, cosine_sim=0.7479
+
+[Sun May 17 07:00:14 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 10: loss=2.6615, cosine_sim=0.7464
+
+[Sun May 17 07:05:14 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 10: loss=2.6615, cosine_sim=0.7464
+
+[Sun May 17 07:10:14 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 11: loss=2.6538, cosine_sim=0.7446
+
+[Sun May 17 07:15:15 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 12: loss=2.6470, cosine_sim=0.7432
+
+[Sun May 17 07:20:15 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 12: loss=2.6470, cosine_sim=0.7432
+
+[Sun May 17 07:25:16 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 13: loss=2.6396, cosine_sim=0.7416
+
+[Sun May 17 07:30:16 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 14: loss=2.6328, cosine_sim=0.7402
+
+[Sun May 17 07:35:16 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 14: loss=2.6328, cosine_sim=0.7402
+
+[Sun May 17 07:40:17 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 15: loss=2.6261, cosine_sim=0.7389
+
+[Sun May 17 07:45:17 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 16: loss=2.6198, cosine_sim=0.7375
+
+[Sun May 17 07:50:18 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 16: loss=2.6198, cosine_sim=0.7375
+
+[Sun May 17 07:55:18 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 17: loss=2.6131, cosine_sim=0.7362
+
+[Sun May 17 08:00:18 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 18: loss=2.6068, cosine_sim=0.7347
+
+[Sun May 17 08:05:19 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 18: loss=2.6068, cosine_sim=0.7347
+
+[Sun May 17 08:10:19 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 19: loss=2.6014, cosine_sim=0.7336
+
+[Sun May 17 08:15:20 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 20: loss=2.5930, cosine_sim=0.7320
+
+[Sun May 17 08:20:20 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 20: loss=2.5930, cosine_sim=0.7320
+
+[Sun May 17 08:25:21 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 21: loss=2.5869, cosine_sim=0.7305
+
+[Sun May 17 08:30:21 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 22: loss=2.5816, cosine_sim=0.7293
+
+[Sun May 17 08:35:22 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 22: loss=2.5816, cosine_sim=0.7293
+
+[Sun May 17 08:40:22 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 23: loss=2.5750, cosine_sim=0.7275
+
+[Sun May 17 08:45:22 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 24: loss=2.5700, cosine_sim=0.7265
+
+[Sun May 17 08:50:23 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 24: loss=2.5700, cosine_sim=0.7265
+
+[Sun May 17 08:55:23 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 25: loss=2.5624, cosine_sim=0.7249
+
+[Sun May 17 09:00:24 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 26: loss=2.5555, cosine_sim=0.7233
+
+[Sun May 17 09:05:24 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 26: loss=2.5555, cosine_sim=0.7233
+
+[Sun May 17 09:10:25 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 27: loss=2.5491, cosine_sim=0.7218
+
+[Sun May 17 09:15:25 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 28: loss=2.5435, cosine_sim=0.7203
+
+[Sun May 17 09:20:26 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 28: loss=2.5435, cosine_sim=0.7203
+
+[Sun May 17 09:25:26 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 29: loss=2.5360, cosine_sim=0.7186
+
+[Sun May 17 09:30:27 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 30: loss=2.5299, cosine_sim=0.7172
+
+[Sun May 17 09:35:27 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 30: loss=2.5299, cosine_sim=0.7172
+
+[Sun May 17 09:40:28 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 31: loss=2.5240, cosine_sim=0.7154
+
+[Sun May 17 09:45:28 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 32: loss=2.5165, cosine_sim=0.7138
+
+[Sun May 17 09:50:29 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 32: loss=2.5165, cosine_sim=0.7138
+
+[Sun May 17 09:55:29 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 33: loss=2.5105, cosine_sim=0.7123
+
+[Sun May 17 10:00:30 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 34: loss=2.5046, cosine_sim=0.7106
+
+[Sun May 17 10:05:30 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 34: loss=2.5046, cosine_sim=0.7106
+
+[Sun May 17 10:10:31 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 35: loss=2.4962, cosine_sim=0.7088
+
+[Sun May 17 10:15:31 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 36: loss=2.4900, cosine_sim=0.7072
+
+[Sun May 17 10:20:32 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 36: loss=2.4900, cosine_sim=0.7072
+
+[Sun May 17 10:25:32 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 37: loss=2.4837, cosine_sim=0.7055
+
+[Sun May 17 10:30:33 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 38: loss=2.4765, cosine_sim=0.7036
+
+[Sun May 17 10:35:33 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 38: loss=2.4765, cosine_sim=0.7036
+
+[Sun May 17 10:40:34 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 39: loss=2.4698, cosine_sim=0.7018
+
+[Sun May 17 10:45:34 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 40: loss=2.4647, cosine_sim=0.7004
+
+[Sun May 17 10:50:35 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 40: loss=2.4647, cosine_sim=0.7004
+
+[Sun May 17 10:55:35 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 41: loss=2.4578, cosine_sim=0.6983
+
+[Sun May 17 11:00:36 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 42: loss=2.4511, cosine_sim=0.6970
+
+[Sun May 17 11:05:37 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 42: loss=2.4511, cosine_sim=0.6970
+
+[Sun May 17 11:10:37 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 43: loss=2.4459, cosine_sim=0.6954
+
+[Sun May 17 11:15:38 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 44: loss=2.4400, cosine_sim=0.6936
+
+[Sun May 17 11:20:38 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 44: loss=2.4400, cosine_sim=0.6936
+
+[Sun May 17 11:25:39 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 45: loss=2.4334, cosine_sim=0.6920
+
+[Sun May 17 11:30:39 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 46: loss=2.4262, cosine_sim=0.6902
+
+[Sun May 17 11:35:40 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 46: loss=2.4262, cosine_sim=0.6902
+
+[Sun May 17 11:40:40 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 47: loss=2.4213, cosine_sim=0.6885
+
+[Sun May 17 11:45:41 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 48: loss=2.4145, cosine_sim=0.6869
+
+[Sun May 17 11:50:42 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 48: loss=2.4145, cosine_sim=0.6869
+
+[Sun May 17 11:55:42 CST 2026]
+  Running: 345529 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 49: loss=2.4103, cosine_sim=0.6853
+
+[Sun May 17 12:00:43 CST 2026]
+  Running: 398618 python -u finetune.py --mode
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  30: train_rmse=26.0242, val_rmse=41.3708
+
+[Sun May 17 12:05:43 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+
+[Sun May 17 12:10:44 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+
+[Sun May 17 12:15:44 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 1: loss=0.0608, cosine_sim=0.9277
+
+[Sun May 17 12:20:45 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 2: loss=0.0081, cosine_sim=0.9327
+
+[Sun May 17 12:25:46 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 2: loss=0.0081, cosine_sim=0.9327
+
+[Sun May 17 12:30:46 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 3: loss=0.0051, cosine_sim=0.9358
+
+[Sun May 17 12:35:47 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 4: loss=0.0038, cosine_sim=0.9393
+
+[Sun May 17 12:40:47 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 4: loss=0.0038, cosine_sim=0.9393
+
+[Sun May 17 12:45:48 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 5: loss=0.0033, cosine_sim=0.9425
+
+[Sun May 17 12:50:49 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 6: loss=0.0029, cosine_sim=0.9446
+
+[Sun May 17 12:55:49 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 6: loss=0.0029, cosine_sim=0.9446
+
+[Sun May 17 13:00:50 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 7: loss=0.0024, cosine_sim=0.9469
+
+[Sun May 17 13:05:50 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 8: loss=0.0022, cosine_sim=0.9486
+
+[Sun May 17 13:10:51 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 9: loss=0.0022, cosine_sim=0.9509
+
+[Sun May 17 13:15:51 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 9: loss=0.0022, cosine_sim=0.9509
+
+[Sun May 17 13:20:52 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 10: loss=0.0020, cosine_sim=0.9528
+
+[Sun May 17 13:25:53 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 11: loss=0.0018, cosine_sim=0.9543
+
+[Sun May 17 13:30:53 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 11: loss=0.0018, cosine_sim=0.9543
+
+[Sun May 17 13:35:54 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 12: loss=0.0017, cosine_sim=0.9558
+
+[Sun May 17 13:40:54 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 13: loss=0.0016, cosine_sim=0.9583
+
+[Sun May 17 13:45:55 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 14: loss=0.0017, cosine_sim=0.9593
+
+[Sun May 17 13:50:56 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 14: loss=0.0017, cosine_sim=0.9593
+
+[Sun May 17 13:55:56 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 15: loss=0.0015, cosine_sim=0.9599
+
+[Sun May 17 14:00:57 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 16: loss=0.0014, cosine_sim=0.9621
+
+[Sun May 17 14:05:58 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 16: loss=0.0014, cosine_sim=0.9621
+
+[Sun May 17 14:10:58 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 17: loss=0.0014, cosine_sim=0.9626
+
+[Sun May 17 14:15:59 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 18: loss=0.0014, cosine_sim=0.9637
+
+[Sun May 17 14:20:59 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 18: loss=0.0014, cosine_sim=0.9637
+
+[Sun May 17 14:26:00 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 19: loss=0.0014, cosine_sim=0.9655
+
+[Sun May 17 14:31:01 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 20: loss=0.0012, cosine_sim=0.9663
+
+[Sun May 17 14:36:01 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 21: loss=0.0013, cosine_sim=0.9662
+
+[Sun May 17 14:41:02 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 21: loss=0.0013, cosine_sim=0.9662
+
+[Sun May 17 14:46:03 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 22: loss=0.0013, cosine_sim=0.9675
+
+[Sun May 17 14:51:03 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 23: loss=0.0011, cosine_sim=0.9691
+
+[Sun May 17 14:56:04 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 23: loss=0.0011, cosine_sim=0.9691
+
+[Sun May 17 15:01:05 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 24: loss=0.0011, cosine_sim=0.9684
+
+[Sun May 17 15:06:05 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 25: loss=0.0011, cosine_sim=0.9694
+
+[Sun May 17 15:11:06 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 25: loss=0.0011, cosine_sim=0.9694
+
+[Sun May 17 15:16:07 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 26: loss=0.0012, cosine_sim=0.9684
+
+[Sun May 17 15:21:07 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 27: loss=0.0013, cosine_sim=0.9698
+
+[Sun May 17 15:26:08 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 27: loss=0.0013, cosine_sim=0.9698
+
+[Sun May 17 15:31:09 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 28: loss=0.0014, cosine_sim=0.9677
+
+[Sun May 17 15:36:09 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 29: loss=0.0011, cosine_sim=0.9676
+
+[Sun May 17 15:41:10 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 30: loss=0.0012, cosine_sim=0.9693
+
+[Sun May 17 15:46:11 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 30: loss=0.0012, cosine_sim=0.9693
+
+[Sun May 17 15:51:12 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 31: loss=0.0012, cosine_sim=0.9693
+
+[Sun May 17 15:56:12 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 32: loss=0.0012, cosine_sim=0.9703
+
+[Sun May 17 16:01:13 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 32: loss=0.0012, cosine_sim=0.9703
+
+[Sun May 17 16:06:14 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 33: loss=0.0012, cosine_sim=0.9699
+
+[Sun May 17 16:11:14 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 34: loss=0.0010, cosine_sim=0.9710
+
+[Sun May 17 16:16:15 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 35: loss=0.0011, cosine_sim=0.9716
+
+[Sun May 17 16:21:16 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 35: loss=0.0011, cosine_sim=0.9716
+
+[Sun May 17 16:26:17 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 36: loss=0.0010, cosine_sim=0.9712
+
+[Sun May 17 16:31:17 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 37: loss=0.0010, cosine_sim=0.9708
+
+[Sun May 17 16:36:18 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 37: loss=0.0010, cosine_sim=0.9708
+
+[Sun May 17 16:41:19 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 38: loss=0.0012, cosine_sim=0.9711
+
+[Sun May 17 16:46:19 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 39: loss=0.0010, cosine_sim=0.9719
+
+[Sun May 17 16:51:20 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 39: loss=0.0010, cosine_sim=0.9719
+
+[Sun May 17 16:56:21 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 40: loss=0.0010, cosine_sim=0.9727
+
+[Sun May 17 17:01:22 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 41: loss=0.0011, cosine_sim=0.9718
+
+[Sun May 17 17:06:22 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 41: loss=0.0011, cosine_sim=0.9718
+
+[Sun May 17 17:11:23 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 42: loss=0.0010, cosine_sim=0.9712
+
+[Sun May 17 17:16:24 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 43: loss=0.0011, cosine_sim=0.9727
+
+[Sun May 17 17:21:25 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 44: loss=0.0011, cosine_sim=0.9727
+
+[Sun May 17 17:26:25 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 44: loss=0.0011, cosine_sim=0.9727
+
+[Sun May 17 17:31:26 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 45: loss=0.0011, cosine_sim=0.9721
+
+[Sun May 17 17:36:27 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 46: loss=0.0012, cosine_sim=0.9719
+
+[Sun May 17 17:41:28 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 46: loss=0.0012, cosine_sim=0.9719
+
+[Sun May 17 17:46:28 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 47: loss=0.0011, cosine_sim=0.9718
+
+[Sun May 17 17:51:29 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 48: loss=0.0012, cosine_sim=0.9717
+
+[Sun May 17 17:56:30 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 49: loss=0.0011, cosine_sim=0.9704
+
+[Sun May 17 18:01:31 CST 2026]
+  Running: 399520 python -u pretrain.py --augment
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 49: loss=0.0011, cosine_sim=0.9704
+
+[Sun May 17 18:06:31 CST 2026]
+  Running: 448601 python -u finetune.py --mode
+  edge_drop_feat_mask: Epoch 50: loss=0.0025, cosine_sim=0.9253
+  FT edge_drop_feat_mask: Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+  monomer_dimer: Epoch 50: loss=2.4033, cosine_sim=0.6833
+  FT monomer_dimer: Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+  hybrid_corrupt: Epoch 50: loss=0.0011, cosine_sim=0.9703
+  FT hybrid_corrupt: Epoch  40: train_rmse=43.1151, val_rmse=53.3311
+
+[Sun May 17 18:11:32 CST 2026]
+  No training process running - checking if pipeline completed
+  PIPELINE COMPLETE!
+[Sun May 17 18:11:32 CST 2026] Monitoring complete

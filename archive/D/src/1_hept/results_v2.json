@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-03-23T19:06:17.769885",
+  "model": "HEPT_v2_Iteration2",
+  "experiment": "Polymer Tg Prediction",
+  "dataset": {
+    "path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+    "total_samples": 7170
+  },
+  "model_config": {
+    "hidden_dim": 384,
+    "num_equivariant_layers": 4,
+    "num_periodic_layers": 3,
+    "num_heads": 8,
+    "dropout": 0.15,
+    "weight_decay": 0.0001,
+    "gradient_clip": 0.5,
+    "num_parameters": 8180356
+  },
+  "training": {
+    "batch_size": 24,
+    "learning_rate": 0.0005,
+    "max_epochs": 300,
+    "patience": 25,
+    "best_epoch": 41,
+    "early_stopped_at_epoch": 66,
+    "training_time_minutes": 17.31850837469101
+  },
+  "test_metrics": {
+    "rmse": 

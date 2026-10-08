@@ -1,0 +1,35 @@
+======================================================================
+POLYMER JEPA PRE-TRAINING EXPERIMENT RESULTS
+======================================================================
+
+PHASE 1: JEPA Pre-training on PI1M
+----------------------------------------
+Number of PI1M samples used: 300000
+Number of epochs: 30
+Initial loss: 30.917653
+Final loss: 19.549947
+Best loss: 19.524594
+
+PHASE 2: Fine-tuning on Tg
+----------------------------------------
+Strategy                        Test RMSE   Val RMSE Train RMSE      Gap  Epoch
+--------------------------------------------------------------------------
+baseline                          59.5238    48.1647    29.8596 -29.6643     70
+strategy_A                       112.4636    69.4391    71.9504 -40.5131     37
+strategy_B                        79.7410    62.6253    30.7749 -48.9660    153
+strategy_C                       115.2465    98.1427    94.8798 -20.3667      1
+
+KEY FINDINGS
+----------------------------------------
+Baseline (no pre-train) Test RMSE: 59.5238
+strategy_A Test RMSE: 112.4636 (delta: +52.9397)
+strategy_B Test RMSE: 79.7410 (delta: +20.2171)
+strategy_C Test RMSE: 115.2465 (delta: +55.7227)
+
+Any pre-training strategy beats baseline: False
+
+Monomer-Trimer Cosine Similarity: 0.9952
+
+======================================================================
+SUCCESS CRITERION: ANY strategy with Test RMSE < 50.19 validates hypothesis
+======================================================================

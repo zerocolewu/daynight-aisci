@@ -1,0 +1,23 @@
+============================================================
+Phase: Fine-tuning (pretrained)
+============================================================
+Device: cuda
+Data: train=5162, val=573, test=1435
+Model parameters: 444,932
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_edge_drop_feat_mask.pt
+Epoch   1: train_rmse=138.4871, val_rmse=80.1613
+Epoch  10: train_rmse=41.4953, val_rmse=47.4675
+Epoch  20: train_rmse=37.1151, val_rmse=47.8160
+Epoch  30: train_rmse=33.8646, val_rmse=47.8640
+Epoch  40: train_rmse=31.4279, val_rmse=45.7550
+Early stopping at epoch 48 (no improvement for 30 epochs)
+
+============================================================
+Results (pretrained):
+  Train RMSE: 35.2006
+  Val RMSE:   40.6886
+  Test RMSE:  51.5290
+  Best epoch: 18
+  Overfit gap: -16.3284
+  Saved to /home/home_public/aisci/AIscientist/src/3_periogt_lite/results_pretrained_edge_drop_feat_mask.json
+============================================================

@@ -1,0 +1,32 @@
+{
+  "tm_top_10": [
+    "MinAbsEStateIndex",
+    "Kappa3",
+    "rotatable_bond_frac",
+    "sp3_frac",
+    "amine",
+    "FractionCSP3_2",
+    "sp2_frac",
+    "FractionCSP3",
+    "ether",
+    "N_count"
+  ],
+  "egc_top_10": [
+    "single_bond_frac",
+    "MinAbsPartialCharge",
+    "MaxPartialCharge",
+    "MinEStateIndex",
+    "sp3_frac",
+    "FractionCSP3_2",
+    "MaxAbsPartialCharge",
+    "ring5",
+    "FractionCSP3",
+    "S_count"
+  ],
+  "common_features": [
+    "FractionCSP3",
+    "sp3_frac",
+    "FractionCSP3_2"
+  ],
+  "n_common": 3
+}

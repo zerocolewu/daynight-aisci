@@ -1,0 +1,119 @@
+====================================================================================================
+DAY 1 EXPERIMENT 2: ARCHITECTURE IMPROVEMENT — GIN-GAT HYBRID & VIRTUAL NODE
+====================================================================================================
+
+RESULTS COMPARISON TABLE
+----------------------------------------------------------------------------------------------------
+Model                Data                 Train RMSE   Val RMSE     Test RMSE    Best Epoch   Params       Gap       
+----------------------------------------------------------------------------------------------------
+GIN (ref)            Monomer              36.38        41.37        52.71        30           445,700      16.33     
+GIN (ref)            Trimer               41.29        39.65        50.19        15           ~445K        8.90      
+GIN (ref)            Cyclized             26.53        39.62        53.28        64           ~445K        26.75     
+----------------------------------------------------------------------------------------------------
+GIN-GAT              trimer               27.9905      39.0867      51.6608      64           481,028      23.6703   
+GIN-GAT              cyclized             35.8586      41.4966      54.0071      26           481,028      18.1486   
+GIN+VN               trimer               30.8960      38.6237      53.7805      74           478,724      22.8845   
+GIN+VN               cyclized             31.9596      36.4985      51.1398      63           478,724      19.1802   
+
+
+================================================================================
+ATTENTION WEIGHT ANALYSIS (GIN-GAT MODELS)
+================================================================================
+
+--- gin_gat_trimer ---
+  Molecules analyzed: 50
+  Layer 0:
+    Mean attention weight: 0.443351
+    Std attention weight:  0.172967
+    Max attention weight:  1.000000
+    Min attention weight:  0.204870
+    Selectivity ratio (std/mean): 0.3901361757414814
+    -> LOW selectivity: attention is near-uniform (~sum aggregation)
+  Layer 1:
+    Mean attention weight: 0.443351
+    Std attention weight:  0.367690
+    Max attention weight:  1.000000
+    Min attention weight:  0.000035
+    Selectivity ratio (std/mean): 0.8293423754275969
+    -> MODERATE selectivity: some neighbor preference
+  Layer 2:
+    Mean attention weight: 0.443351
+    Std attention weight:  0.290837
+    Max attention weight:  1.000000
+    Min attention weight:  0.010452
+    Selectivity ratio (std/mean): 0.6559976737398423
+    -> MODERATE selectivity: some neighbor preference
+
+--- gin_gat_cyclized ---
+  Molecules analyzed: 50
+  Layer 0:
+    Mean attention weight: 0.440297
+    Std attention weight:  0.165166
+    Max attention weight:  1.000000
+    Min attention weight:  0.218076
+    Selectivity ratio (std/mean): 0.37512493854903456
+    -> LOW selectivity: attention is near-uniform (~sum aggregation)
+  Layer 1:
+    Mean attention weight: 0.440297
+    Std attention weight:  0.357728
+    Max attention weight:  1.000000
+    Min attention weight:  0.000367
+    Selectivity ratio (std/mean): 0.8124697186534654
+    -> MODERATE selectivity: some neighbor preference
+  Layer 2:
+    Mean attention weight: 0.440297
+    Std attention weight:  0.318268
+    Max attention weight:  1.000000
+    Min attention weight:  0.000067
+    Selectivity ratio (std/mean): 0.7228496722472567
+    -> MODERATE selectivity: some neighbor preference
+
+
+================================================================================
+VIRTUAL NODE REPRESENTATION ANALYSIS
+================================================================================
+
+--- gin_vn_trimer ---
+  Molecules analyzed: 1435
+  VN representation dim: 256
+  Mean |corr(VN_dim, Tg)|: 0.2707
+  Max  |corr(VN_dim, Tg)|: 0.7236
+  Top-5 correlated dims: [107, 173, 41, 200, 224]
+  Top-5 corr values: ['0.7236', '0.7117', '0.7078', '0.7041', '0.6979']
+  Mean VN repr L2 norm: 132.1497
+  -> VN has weak correlation with Tg (VN partially informative)
+
+--- gin_vn_cyclized ---
+  Molecules analyzed: 1435
+  VN representation dim: 256
+  Mean |corr(VN_dim, Tg)|: 0.2358
+  Max  |corr(VN_dim, Tg)|: 0.7504
+  Top-5 correlated dims: [60, 8, 121, 211, 168]
+  Top-5 corr values: ['0.7504', '0.7254', '0.7057', '0.7028', '0.6881']
+  Mean VN repr L2 norm: 136.3932
+  -> VN has weak correlation with Tg (VN partially informative)
+
+
+================================================================================
+KEY FINDINGS & HYPOTHESIS EVALUATION
+================================================================================
+
+Best performing model: gin_vn_cyclized (Test RMSE=51.1398)
+
+Hypothesis 1 (GIN-GAT improves on trimer):
+  GIN-GAT Trimer: 51.6608 (vs GIN Trimer 50.19, delta=-1.4708)
+  NOT SUPPORTED
+
+Hypothesis 2 (Virtual node improves on trimer):
+  GIN+VN Trimer: 53.7805 (vs GIN Trimer 50.19, delta=-3.5905)
+  NOT SUPPORTED
+
+Hypothesis 3 (Attention rescues cyclized from overfitting):
+  GIN-GAT Cyclized: test=54.0071 (vs GIN Cyclized 53.28, delta=-0.7271)
+  Overfitting gap: 18.1486 (vs 26.75, delta=+8.6014)
+  NOT SUPPORTED
+
+Hypothesis 4 (Virtual node rescues cyclized from overfitting):
+  GIN+VN Cyclized: test=51.1398 (vs GIN Cyclized 53.28, delta=+2.1402)
+  Overfitting gap: 19.1802 (vs 26.75, delta=+7.5698)
+  SUPPORTED

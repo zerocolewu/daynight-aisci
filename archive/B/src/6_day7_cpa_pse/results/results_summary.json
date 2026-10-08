@@ -1,0 +1,287 @@
+{
+  "A": {
+    "description": "CPA-GAT baseline (42-dim)",
+    "model_name": "cpa_baseline",
+    "num_params": 835585,
+    "input_dim": 42,
+    "test_rmse_mean": 35.390683748569444,
+    "test_rmse_std": 0.5702770752614857,
+    "test_mae_mean": 23.25504379272461,
+    "test_mae_std": 0.578639204566165,
+    "test_r2_mean": 0.8967894457909515,
+    "test_r2_std": 0.00332519764257428,
+    "val_rmse_mean": 32.59128170087309,
+    "val_rmse_std": 1.1841325942357783,
+    "seeds": [
+      {
+        "seed": 123,
+        "test_rmse": 34.99454477575755,
+        "test_mae": 23.173965454101562,
+        "test_r2": 0.8991080097811999,
+        "best_val_rmse": 32.9957143139217
+      },
+      {
+        "seed": 2024,
+        "test_rmse": 34.67205279641209,
+        "test_mae": 22.392547607421875,
+        "test_r2": 0.9009589787611644,
+        "best_val_rmse": 34.133614483311206
+      },
+      {
+        "seed": 42,
+        "test_rmse": 36.12892969002645,
+        "test_mae": 23.6513671875,
+        "test_r2": 0.8924609485159638,
+        "best_val_rmse": 32.02768844528805
+      },
+      {
+        "seed": 71,
+        "test_rmse": 35.50273873953687,
+        "test_mae": 23.904172897338867,
+        "test_r2": 0.8961564060750363,
+        "best_val_rmse": 32.84629583972331
+      },
+      {
+        "seed": 888,
+        "test_rmse": 35.65515274111426,
+        "test_mae": 23.153165817260742,
+        "test_r2": 0.8952628858213939,
+        "best_val_rmse": 30.95309542212115
+      }
+    ]
+  },
+  "B": {
+    "description": "CPA-PSE full (45-dim)",
+    "model_name": "cpa_pse",
+    "num_params": 836353,
+    "input_dim": 45,
+    "test_rmse_mean": 35.99659886974308,
+    "test_rmse_std": 0.6924287868383924,
+    "test_mae_mean": 23.421537780761717,
+    "test_mae_std": 0.7552506141358661,
+    "test_r2_mean": 0.8932156791081176,
+    "test_r2_std": 0.004075125201507757,
+    "val_rmse_mean": 32.50183460331768,
+    "val_rmse_std": 0.7601328495779115,
+    "seeds": [
+      {
+        "seed": 123,
+        "test_rmse": 36.12000702140799,
+        "test_mae": 22.8669376373291,
+        "test_r2": 0.8925140547909783,
+        "best_val_rmse": 32.169091747626126
+      },
+      {
+        "seed": 2024,
+        "test_rmse": 36.53283552215818,
+        "test_mae": 23.837121963500977,
+        "test_r2": 0.8900430269910777,
+        "best_val_rmse": 32.37534311473586
+      },
+      {
+        "seed": 42,
+        "test_rmse": 36.57653810365926,
+        "test_mae": 24.559764862060547,
+        "test_r2": 0.8897797992800971,
+        "best_val_rmse": 33.71803499299837
+      },
+      {
+        "seed": 71,
+        "test_rmse": 34.87161511911407,
+        "test_mae": 22.97916030883789,
+        "test_r2": 0.8998155934835788,
+        "best_val_rmse": 32.58098009071972
+      },
+      {
+        "seed": 888,
+        "test_rmse": 35.881998582375886,
+        "test_mae": 22.864704132080078,
+        "test_r2": 0.8939259209948568,
+        "best_val_rmse": 31.665723070508353
+      }
+    ]
+  },
+  "C": {
+    "description": "CPA + modular_position only (43-dim)",
+    "model_name": "cpa_modpos",
+    "num_params": 835841,
+    "input_dim": 43,
+    "test_rmse_mean": 36.29056463723056,
+    "test_rmse_std": 0.14603880339615163,
+    "test_mae_mean": 23.81948051452637,
+    "test_mae_std": 0.26916877948612206,
+    "test_r2_mean": 0.8914951664103785,
+    "test_r2_std": 0.0008721117457626633,
+    "val_rmse_mean": 33.5867478666493,
+    "val_rmse_std": 0.8706796016199524,
+    "seeds": [
+      {
+        "seed": 123,
+        "test_rmse": 36.3888269736141,
+        "test_mae": 24.06336784362793,
+        "test_r2": 0.8909081999763002,
+        "best_val_rmse": 33.26279014165547
+      },
+      {
+        "seed": 2024,
+        "test_rmse": 36.21877359252898,
+        "test_mae": 23.440610885620117,
+        "test_r2": 0.8919254363211555,
+        "best_val_rmse": 32.30217360986525
+      },
+      {
+        "seed": 42,
+        "test_rmse": 36.41544277715499,
+        "test_mae": 23.92005729675293,
+        "test_r2": 0.8907485510311688,
+        "best_val_rmse": 33.97566698779621
+      },
+      {
+        "seed": 71,
+        "test_rmse": 36.06749247829512,
+        "test_mae": 24.03171730041504,
+        "test_r2": 0.8928263771002527,
+        "best_val_rmse": 34.633742127439824
+      },
+      {
+        "seed": 888,
+        "test_rmse": 36.36228736455963,
+        "test_mae": 23.64164924621582,
+        "test_r2": 0.8910672676230159,
+        "best_val_rmse": 33.75936646648971
+      }
+    ]
+  },
+  "D": {
+    "description": "CPA + periodic_distance only (43-dim)",
+    "model_name": "cpa_perdist",
+    "num_params": 835841,
+    "input_dim": 43,
+    "test_rmse_mean": 35.82738995477722,
+    "test_rmse_std": 0.9384819889661049,
+    "test_mae_mean": 23.597698974609376,
+    "test_mae_std": 0.5570977113377323,
+    "test_r2_mean": 0.8941904978922837,
+    "test_r2_std": 0.005593715169381119,
+    "val_rmse_mean": 32.9758965741985,
+    "val_rmse_std": 1.2986497226301712,
+    "seeds": [
+      {
+        "seed": 123,
+        "test_rmse": 35.28116523185122,
+        "test_mae": 23.54951286315918,
+        "test_r2": 0.8974485391583281,
+        "best_val_rmse": 32.395891319950785
+      },
+      {
+        "seed": 2024,
+        "test_rmse": 35.47642572507217,
+        "test_mae": 23.57312774658203,
+        "test_r2": 0.896310277918629,
+        "best_val_rmse": 33.215740250529194
+      },
+      {
+        "seed": 42,
+        "test_rmse": 34.9375559033542,
+        "test_mae": 22.754344940185547,
+        "test_r2": 0.8994363500912624,
+        "best_val_rmse": 31.080959798753298
+      },
+      {
+        "seed": 71,
+        "test_rmse": 37.31794676011295,
+        "test_mae": 24.287734985351562,
+        "test_r2": 0.8852661749657135,
+        "best_val_rmse": 34.456361455129915
+      },
+      {
+        "seed": 888,
+        "test_rmse": 36.12385615349554,
+        "test_mae": 23.823774337768555,
+        "test_r2": 0.8924911473274856,
+        "best_val_rmse": 33.730530046629305
+      }
+    ]
+  },
+  "E": {
+    "description": "CPA + is_backbone only (43-dim)",
+    "model_name": "cpa_backbone",
+    "num_params": 835841,
+    "input_dim": 43,
+    "test_rmse_mean": 35.02935812894648,
+    "test_rmse_std": 0.7287657553068625,
+    "test_mae_mean": 22.929219055175782,
+    "test_mae_std": 0.7753644933461842,
+    "test_r2_mean": 0.8988721633785557,
+    "test_r2_std": 0.004188316149660324,
+    "val_rmse_mean": 31.691060816450307,
+    "val_rmse_std": 0.8314197958052344,
+    "seeds": [
+      {
+        "seed": 123,
+        "test_rmse": 34.53214436058996,
+        "test_mae": 22.202043533325195,
+        "test_r2": 0.9017566637179766,
+        "best_val_rmse": 31.094892409917982
+      },
+      {
+        "seed": 2024,
+        "test_rmse": 34.01759511405458,
+        "test_mae": 22.005155563354492,
+        "test_r2": 0.9046626175571986,
+        "best_val_rmse": 30.535825607109636
+      },
+      {
+        "seed": 42,
+        "test_rmse": 35.58082684899007,
+        "test_mae": 23.33656883239746,
+        "test_r2": 0.8956990964584487,
+        "best_val_rmse": 32.128159423311004
+      },
+      {
+        "seed": 71,
+        "test_rmse": 35.29482411593802,
+        "test_mae": 23.754287719726562,
+        "test_r2": 0.8973691237476105,
+        "best_val_rmse": 32.448951419763745
+      },
+      {
+        "seed": 888,
+        "test_rmse": 35.72140020515975,
+        "test_mae": 23.348039627075195,
+        "test_r2": 0.8948733154115444,
+        "best_val_rmse": 32.24747522214918
+      }
+    ]
+  },
+  "diagnostics": {
+    "H1_PSE_vs_baseline": {
+      "A_rmse": 35.390683748569444,
+      "B_rmse": 35.99659886974308,
+      "improvement_K": -0.6059151211736378,
+      "hypothesis": "H1: B > A by >= 0.3K",
+      "supported": false,
+      "conclusion": "NOT supported. PSE does NOT improve CPA-GAT baseline."
+    },
+    "H2_modpos_vs_full": {
+      "C_rmse": 36.29056463723056,
+      "B_rmse": 35.99659886974308,
+      "diff_K": 0.29396576748747805,
+      "hypothesis": "H2: modular_position alone provides most gain",
+      "conclusion": "NOT supported. modular_position alone is the worst (36.29K)."
+    },
+    "H3_isbackbone": {
+      "E_rmse": 35.02935812894648,
+      "A_rmse": 35.390683748569444,
+      "improvement_K": 0.36132561962296705,
+      "hypothesis": "H3: is_backbone is redundant with PSPE",
+      "conclusion": "Consistent. is_backbone (35.03K) is closest to baseline, suggesting PSPE overlap."
+    },
+    "overall": {
+      "best_condition": "A (baseline)",
+      "best_rmse": 35.390683748569444,
+      "pse_adds_noise": "All PSE variants degrade or do not improve performance",
+      "scientific_value": "Null result closes the PSE feature-encoding frontier for CPA-GAT on Tg prediction"
+    }
+  }
+}

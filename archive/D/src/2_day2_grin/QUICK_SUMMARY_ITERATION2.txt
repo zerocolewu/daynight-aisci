@@ -1,0 +1,63 @@
+GRIN EXPERIMENT - ITERATION 2 (FIXED)
+=====================================
+
+Date: March 24, 2026
+Dataset: Tg (Glass Transition Temperature) - 7,170 polymers
+Target: Test RMSE < 35.0 (GraphFormer baseline: 37.0)
+
+RESULTS (5/5 experiments completed):
+------------------------------------
+✅ Baseline (Mean, No Aug):     RMSE = 32.31 ⭐ BEST MODEL
+✅ Max Only:                    RMSE = 34.03 (+5.3% vs baseline)
+✅ Max + L1:                    RMSE = 44.54 (+37.8% vs baseline)
+✅ Full GRIN (Max+L1+Aug):      RMSE = 46.34 (+43.4% vs baseline)
+✅ Mean + Aug:                  RMSE = 32.38 (+0.2% vs baseline)
+
+KEY FINDINGS:
+-------------
+1. ✅ BASELINE TARGET ACHIEVED: 32.31 < 35.0
+2. ✅ BEATS GRAPHFORMER: 32.31 vs 37.0 (12.7% better)
+3. ❌ GRIN HYPOTHESIS REJECTED: All GRIN components hurt performance
+4. ✅ FIXED PREVIOUS ISSUES: Baseline improved from 76.08 to 32.31
+
+MAJOR FIXES FROM ITERATION 1:
+------------------------------
+1. Rich features: 9 dims → 148 dims (atom/bond features)
+2. Target normalization: StandardScaler on Tg values
+3. Proper augmentation: RDKit-based polymer chain construction (98.5% success)
+4. Better training: Larger model, more epochs, AdamW optimizer
+
+CONCLUSIONS:
+------------
+✅ Feature engineering is KEY (57.6% improvement)
+❌ Max aggregation HURTS for this task (+5.3% RMSE)
+❌ L1 regularization is DETRIMENTAL (+30.8% RMSE)
+≈ Augmentation provides MINIMAL benefit (+0.2% RMSE)
+❌ Full GRIN is WORST approach (+43.4% RMSE)
+
+BEST MODEL:
+-----------
+- Architecture: GIN with mean aggregation
+- Features: 148-dim rich atom/bond features
+- Performance: Test RMSE = 32.31, Test MAE = 20.85
+- Status: READY FOR DEPLOYMENT
+
+FILES:
+------
+- FINAL_REPORT_ITERATION2.md: Comprehensive analysis
+- QUICK_SUMMARY_ITERATION2.txt: This file
+- data_utils_v2.py: Improved data loading
+- train_v2.py: Updated training script
+- results_v2_20260324_090902/: All experiment results
+- all_experiments.log: Complete experiment log
+
+SCIENTIFIC VALUE:
+-----------------
+✅ Target achieved (RMSE < 35.0)
+✅ Strong baseline established (32.31 RMSE)
+✅ Complete ablation study (5/5 experiments)
+✅ Clear negative results documented
+✅ Feature engineering importance demonstrated
+❌ GRIN hypothesis rejected for this task
+
+STATUS: ✅ COMPLETE

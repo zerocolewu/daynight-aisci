@@ -1,0 +1,15 @@
+{
+  "with_periodic_edge": {
+    "rmse": 37.757972717285156,
+    "mae": 24.934179306030273,
+    "r2": 0.8893320858478546
+  },
+  "without_periodic_edge": {
+    "rmse": 38.72866439819336,
+    "mae": 25.309358596801758,
+    "r2": 0.8835687637329102
+  },
+  "rmse_improvement": 0.9706916809082031,
+  "pct_improvement": 2.5063907986289466,
+  "periodic_edge_contribution": "positive"
+}

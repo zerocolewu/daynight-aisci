@@ -1,0 +1,16 @@
+PerioGT-Lite Iteration 4 Pipeline Tracking
+Started: 2026-05-17 18:13:47
+Estimated completion: ~30 hours (2026-05-19 ~00:13)
+
+Status Timeline:
+- 2026-05-17 18:26: 40% corruption - Epoch 1/50 completed, cos_sim=0.8891
+- Epoch time: ~12 minutes
+- Per corruption rate: ~10 hours (50 epochs)
+- Total pipeline: ~30 hours
+
+Next checkpoints (every 2-3 hours):
+1. 2026-05-17 21:00 - Expected: 40% corruption ~15/50 epochs
+2. 2026-05-18 00:00 - Expected: 40% corruption ~30/50 epochs
+3. 2026-05-18 04:00 - Expected: 40% corruption complete, starting 50%
+4. 2026-05-18 14:00 - Expected: 50% corruption complete, starting 60%
+5. 2026-05-19 00:00 - Expected: All complete

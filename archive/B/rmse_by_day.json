@@ -1,0 +1,16 @@
+{
+  "run": "B",
+  "ablation": "ab6",
+  "property": "Tg (K)",
+  "selection_rule": "Select the main model configuration within each day, excluding discarded versions and control-only baselines.",
+  "std_definition": "Population SD across initialization seeds (ddof=0) on a fixed split (seed 71); no 5-fold cross-validation.",
+  "days": {
+    "1": {"model":"3-RU rich GAT 3-seed","rmse":41.61,"std":0.73,"note":"Mean over 3 seeds.","source":"src/1_day1_multimer_feature_gat/results_summary.csv"},
+    "2": {"model":"static RWPE k=32 3-seed","rmse":35.94,"std":0.64,"note":"Mean over 3 seeds.","source":"src/2_day_2_lspe_gat/iter2_results_summary.json"},
+    "3": {"model":"PSPE combined, second round","rmse":35.44,"std":null,"note":"Single seed (42); second-round result.","source":"src/3_3_day3_pspe/results/summary.json"},
+    "4": {"model":"SelfGNN D-PRIMARY 3-seed","rmse":40,"std":0.88,"note":"Mean over 3 seeds; pretraining provided no transfer benefit.","source":"src/4_4_day4_selfgnn_polymer/experiment_results_v2.json"},
+    "5": {"model":"GPS-Lite baseline","rmse":35.19,"std":null,"note":"Single seed (71); a re-evaluated baseline, not a new model.","source":"src/5_day5_gps_lite/results/results_summary.json"},
+    "6": {"model":"CPA-GAT all layers, 3-seed","rmse":34.77,"std":0.21,"note":"Mean over 3 seeds.","source":"src/6_day6_cpa_gat/results/summary.json"},
+    "7": {"model":"CPA-GAT without PSPE, config B, 3-seed","rmse":35.52,"std":0.41,"note":"Mean over 3 seeds; adding PSPE provided no improvement.","source":"src/7_day7_cpa_pspe/results/results_summary.json"}
+  }
+}

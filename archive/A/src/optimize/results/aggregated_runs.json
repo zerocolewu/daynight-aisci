@@ -1,0 +1,114 @@
+{
+  "n_runs": 3,
+  "runs": [
+    "run1",
+    "run2",
+    "run3"
+  ],
+  "rows": [
+    {
+      "dataset": "tg",
+      "kind": "single",
+      "n_runs": 3,
+      "per_run_ens_mean": [
+        31.422159,
+        31.428893,
+        31.389687
+      ],
+      "per_run_ens_median": [
+        31.551884,
+        31.581766,
+        31.571355
+      ],
+      "per_run_single": [
+        32.245647,
+        32.339697,
+        32.201933
+      ],
+      "ens_mean_across_runs_mean": 31.413579737457468,
+      "ens_mean_across_runs_std": 0.01711676094828715,
+      "ens_median_across_runs_mean": 31.568335011274105,
+      "ens_median_across_runs_std": 0.012384567109198405,
+      "single_across_runs_mean": 32.26242584906966,
+      "single_across_runs_std": 0.05747934973779286
+    },
+    {
+      "dataset": "tm",
+      "kind": "single",
+      "n_runs": 3,
+      "per_run_ens_mean": [
+        49.656529,
+        49.255819,
+        49.985927
+      ],
+      "per_run_ens_median": [
+        49.857668,
+        49.673859,
+        50.040295
+      ],
+      "per_run_single": [
+        51.060164,
+        50.681706,
+        51.652196
+      ],
+      "ens_mean_across_runs_mean": 49.632758229221395,
+      "ens_mean_across_runs_std": 0.2985389879367516,
+      "ens_median_across_runs_mean": 49.85727390252426,
+      "ens_median_across_runs_std": 0.14959708201248045,
+      "single_across_runs_mean": 51.131355270863274,
+      "single_across_runs_std": 0.39938592843125437
+    },
+    {
+      "dataset": "ea",
+      "kind": "copolymer",
+      "n_runs": 3,
+      "per_run_ens_mean": [
+        0.044158,
+        0.04426,
+        0.043791
+      ],
+      "per_run_ens_median": [
+        0.044518,
+        0.044836,
+        0.044406
+      ],
+      "per_run_single": [
+        0.046651,
+        0.046959,
+        0.046289
+      ],
+      "ens_mean_across_runs_mean": 0.04406933510845127,
+      "ens_mean_across_runs_std": 0.00020121848850739927,
+      "ens_median_across_runs_mean": 0.04458659212285008,
+      "ens_median_across_runs_std": 0.00018206663411550597,
+      "single_across_runs_mean": 0.046632888328539714,
+      "single_across_runs_std": 0.00027383988388672076
+    },
+    {
+      "dataset": "ip",
+      "kind": "copolymer",
+      "n_runs": 3,
+      "per_run_ens_mean": [
+        0.034002,
+        0.034259,
+        0.033648
+      ],
+      "per_run_ens_median": [
+        0.034347,
+        0.034744,
+        0.033911
+      ],
+      "per_run_single": [
+        0.036888,
+        0.036696,
+        0.035485
+      ],
+      "ens_mean_across_runs_mean": 0.033969476743069035,
+      "ens_mean_across_runs_std": 0.00025044712091233434,
+      "ens_median_across_runs_mean": 0.03433415992850315,
+      "ens_median_across_runs_std": 0.0003401596122750293,
+      "single_across_runs_mean": 0.03635637780442528,
+      "single_across_runs_std": 0.0006207894372063786
+    }
+  ]
+}

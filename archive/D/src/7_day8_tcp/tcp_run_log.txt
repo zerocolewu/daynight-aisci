@@ -1,0 +1,257 @@
+====================================================================================================
+                                 TCP EXPERIMENT - SIMPLIFIED RUNNER
+====================================================================================================
+Start time: Thu Mar 26 11:50:11 CST 2026
+
+PHASE 1: PSEUDO-LABEL GENERATION
+✓ Already completed - skipping
+
+PHASE 2: DISTRIBUTION-AWARE SAMPLING
+/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase2_sampling.py:196: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  train_loader = DataLoader(train_data, batch_size=64, shuffle=True)
+/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase2_sampling.py:197: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  val_loader = DataLoader(val_data, batch_size=256, shuffle=False)
+/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+================================================================================
+PHASE 2: DISTRIBUTION-AWARE SAMPLING
+================================================================================
+
+Using device: cuda
+
+Loading Tg dataset...
+Loading Tg data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Found 7170 samples
+Successfully loaded 7170 valid samples
+Train: 6453, Val: 717
+
+Creating SimpleGIN model...
+
+Training uncertainty estimation model...
+Epoch   1: Train Loss=8438.6080, Val Loss=5513.6022, Val RMSE=74.25 K
+Epoch   2: Train Loss=3852.6981, Val Loss=2564.6643, Val RMSE=50.64 K
+Epoch   3: Train Loss=3438.6223, Val Loss=2450.8056, Val RMSE=49.51 K
+Epoch   4: Train Loss=3186.0396, Val Loss=2360.2317, Val RMSE=48.58 K
+Epoch   5: Train Loss=3064.5137, Val Loss=2197.5246, Val RMSE=46.88 K
+Epoch   6: Train Loss=2860.9046, Val Loss=2570.8809, Val RMSE=50.70 K
+Epoch   7: Train Loss=2822.4735, Val Loss=1945.4610, Val RMSE=44.11 K
+Epoch   8: Train Loss=2591.2678, Val Loss=1869.0620, Val RMSE=43.23 K
+Epoch   9: Train Loss=2657.2014, Val Loss=1888.4214, Val RMSE=43.46 K
+Epoch  10: Train Loss=2534.8730, Val Loss=1705.4569, Val RMSE=41.30 K
+Epoch  11: Train Loss=2426.1861, Val Loss=1881.6934, Val RMSE=43.38 K
+Epoch  12: Train Loss=2435.3933, Val Loss=1607.0499, Val RMSE=40.09 K
+Epoch  13: Train Loss=2328.8596, Val Loss=1734.2406, Val RMSE=41.64 K
+Epoch  14: Train Loss=2324.5587, Val Loss=1822.3904, Val RMSE=42.69 K
+Epoch  15: Train Loss=2237.8286, Val Loss=1696.0847, Val RMSE=41.18 K
+Epoch  16: Train Loss=2274.5093, Val Loss=1606.8337, Val RMSE=40.09 K
+Epoch  17: Train Loss=2312.4223, Val Loss=2268.8965, Val RMSE=47.63 K
+Epoch  18: Train Loss=2234.6872, Val Loss=1867.2702, Val RMSE=43.21 K
+Epoch  19: Train Loss=2157.6474, Val Loss=1904.7178, Val RMSE=43.64 K
+Epoch  20: Train Loss=2228.7713, Val Loss=1581.0237, Val RMSE=39.76 K
+Epoch  21: Train Loss=2125.1281, Val Loss=1474.2022, Val RMSE=38.40 K
+Epoch  22: Train Loss=2154.3620, Val Loss=1592.2994, Val RMSE=39.90 K
+Epoch  23: Train Loss=2108.4335, Val Loss=1730.4013, Val RMSE=41.60 K
+Epoch  24: Train Loss=2133.1106, Val Loss=1613.4701, Val RMSE=40.17 K
+Epoch  25: Train Loss=2098.8311, Val Loss=1555.4472, Val RMSE=39.44 K
+Epoch  26: Train Loss=1995.5735, Val Loss=1746.7298, Val RMSE=41.79 K
+Epoch  27: Train Loss=2040.1686, Val Loss=1445.1175, Val RMSE=38.01 K
+Epoch  28: Train Loss=2067.5253, Val Loss=1449.6619, Val RMSE=38.07 K
+Epoch  29: Train Loss=2017.5922, Val Loss=1634.7296, Val RMSE=40.43 K
+Epoch  30: Train Loss=1987.9105, Val Loss=1447.6933, Val RMSE=38.05 K
+Epoch  31: Train Loss=1999.5225, Val Loss=1502.8590, Val RMSE=38.77 K
+Epoch  32: Train Loss=2039.9428, Val Loss=1400.9465, Val RMSE=37.43 K
+Epoch  33: Train Loss=2000.2469, Val Loss=1470.4607, Val RMSE=38.35 K
+Epoch  34: Train Loss=1963.6689, Val Loss=1568.7786, Val RMSE=39.61 K
+Epoch  35: Train Loss=1976.0837, Val Loss=2331.5599, Val RMSE=48.29 K
+Epoch  36: Train Loss=1954.7065, Val Loss=1789.3909, Val RMSE=42.30 K
+Epoch  37: Train Loss=1944.7897, Val Loss=1874.2148, Val RMSE=43.29 K
+Epoch  38: Train Loss=1930.6395, Val Loss=1464.6361, Val RMSE=38.27 K
+Epoch  39: Train Loss=1965.5364, Val Loss=1531.3846, Val RMSE=39.13 K
+Epoch  40: Train Loss=1888.2534, Val Loss=1477.4120, Val RMSE=38.44 K
+Epoch  41: Train Loss=1889.7691, Val Loss=1731.3385, Val RMSE=41.61 K
+Epoch  42: Train Loss=1845.7285, Val Loss=1287.3812, Val RMSE=35.88 K
+Epoch  43: Train Loss=1982.4687, Val Loss=1345.3527, Val RMSE=36.68 K
+Epoch  44: Train Loss=1939.4525, Val Loss=1371.8449, Val RMSE=37.04 K
+Epoch  45: Train Loss=1921.0805, Val Loss=1372.3563, Val RMSE=37.05 K
+Epoch  46: Train Loss=1798.6786, Val Loss=1553.4703, Val RMSE=39.41 K
+Epoch  47: Train Loss=1935.2213, Val Loss=1472.3375, Val RMSE=38.37 K
+Epoch  48: Train Loss=1878.6542, Val Loss=1547.5626, Val RMSE=39.34 K
+Epoch  49: Train Loss=1867.8905, Val Loss=1312.1042, Val RMSE=36.22 K
+Epoch  50: Train Loss=1828.3215, Val Loss=1327.6042, Val RMSE=36.44 K
+Epoch  51: Train Loss=1885.5179, Val Loss=1313.8244, Val RMSE=36.25 K
+Epoch  52: Train Loss=1841.8243, Val Loss=1274.6987, Val RMSE=35.70 K
+Epoch  53: Train Loss=1802.7090, Val Loss=1436.6091, Val RMSE=37.90 K
+Epoch  54: Train Loss=1820.5969, Val Loss=1472.5378, Val RMSE=38.37 K
+Epoch  55: Train Loss=1815.3719, Val Loss=1538.7690, Val RMSE=39.23 K
+Epoch  56: Train Loss=1802.2631, Val Loss=1321.6269, Val RMSE=36.35 K
+Epoch  57: Train Loss=1778.1193, Val Loss=1227.3444, Val RMSE=35.03 K
+Epoch  58: Train Loss=1785.1886, Val Loss=1245.7092, Val RMSE=35.29 K
+Epoch  59: Train Loss=1776.3652, Val Loss=1391.3997, Val RMSE=37.30 K
+Epoch  60: Train Loss=1804.3070, Val Loss=1398.4109, Val RMSE=37.40 K
+Epoch  61: Train Loss=1794.3613, Val Loss=1528.4395, Val RMSE=39.10 K
+Epoch  62: Train Loss=1783.2416, Val Loss=1305.8883, Val RMSE=36.14 K
+Epoch  63: Train Loss=1677.1206, Val Loss=1337.6283, Val RMSE=36.57 K
+Epoch  64: Train Loss=1760.3285, Val Loss=1193.2680, Val RMSE=34.54 K
+Epoch  65: Train Loss=1742.5479, Val Loss=1228.2868, Val RMSE=35.05 K
+Epoch  66: Train Loss=1784.7996, Val Loss=1440.3610, Val RMSE=37.95 K
+Epoch  67: Train Loss=1725.6065, Val Loss=1441.8951, Val RMSE=37.97 K
+Epoch  68: Train Loss=1774.2140, Val Loss=1209.6153, Val RMSE=34.78 K
+Epoch  69: Train Loss=1747.4278, Val Loss=1288.2717, Val RMSE=35.89 K
+Epoch  70: Train Loss=1678.2190, Val Loss=1481.2965, Val RMSE=38.49 K
+Epoch  71: Train Loss=1756.8819, Val Loss=1214.5323, Val RMSE=34.85 K
+Epoch  72: Train Loss=1732.2261, Val Loss=1264.1457, Val RMSE=35.55 K
+Epoch  73: Train Loss=1684.0485, Val Loss=1272.9246, Val RMSE=35.68 K
+Epoch  74: Train Loss=1668.5804, Val Loss=1187.7835, Val RMSE=34.46 K
+Epoch  75: Train Loss=1620.1922, Val Loss=1504.0230, Val RMSE=38.78 K
+Epoch  76: Train Loss=1766.3256, Val Loss=1219.1682, Val RMSE=34.92 K
+Epoch  77: Train Loss=1684.2430, Val Loss=1197.8360, Val RMSE=34.61 K
+Epoch  78: Train Loss=1670.4897, Val Loss=1328.9881, Val RMSE=36.46 K
+Epoch  79: Train Loss=1636.0463, Val Loss=1128.8644, Val RMSE=33.60 K
+Epoch  80: Train Loss=1695.3370, Val Loss=1299.9848, Val RMSE=36.06 K
+Epoch  81: Train Loss=1599.6395, Val Loss=1264.7793, Val RMSE=35.56 K
+Epoch  82: Train Loss=1618.2161, Val Loss=1248.3654, Val RMSE=35.33 K
+Epoch  83: Train Loss=1646.0374, Val Loss=1423.2416, Val RMSE=37.73 K
+Epoch  84: Train Loss=1700.3133, Val Loss=1234.6026, Val RMSE=35.14 K
+Epoch  85: Train Loss=1671.9113, Val Loss=1255.8365, Val RMSE=35.44 K
+Epoch  86: Train Loss=1581.4814, Val Loss=1263.2798, Val RMSE=35.54 K
+Epoch  87: Train Loss=1642.5806, Val Loss=1229.8197, Val RMSE=35.07 K
+Epoch  88: Train Loss=1625.6688, Val Loss=1352.7327, Val RMSE=36.78 K
+Epoch  89: Train Loss=1634.8695, Val Loss=1282.6733, Val RMSE=35.81 K
+Epoch  90: Train Loss=1630.8216, Val Loss=1244.0154, Val RMSE=35.27 K
+Epoch  91: Train Loss=1517.8061, Val Loss=1108.7351, Val RMSE=33.30 K
+Epoch  92: Train Loss=1490.9798, Val Loss=1102.9391, Val RMSE=33.21 K
+Epoch  93: Train Loss=1482.1073, Val Loss=1111.3815, Val RMSE=33.34 K
+Epoch  94: Train Loss=1513.8192, Val Loss=1138.8489, Val RMSE=33.75 K
+Epoch  95: Train Loss=1452.7841, Val Loss=1176.1288, Val RMSE=34.29 K
+Epoch  96: Train Loss=1531.0751, Val Loss=1132.1326, Val RMSE=33.65 K
+Epoch  97: Train Loss=1526.4382, Val Loss=1111.7466, Val RMSE=33.34 K
+Epoch  98: Train Loss=1491.5848, Val Loss=1084.2228, Val RMSE=32.93 K
+Epoch  99: Train Loss=1521.5517, Val Loss=1191.6042, Val RMSE=34.52 K
+Epoch 100: Train Loss=1477.7100, Val Loss=1174.0992, Val RMSE=34.27 K
+
+Best validation loss: 1084.2228
+
+================================================================================
+Loading PI1M data for uncertainty estimation...
+================================================================================
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase2_sampling.py", line 287, in <module>
+    distribution_aware_sampling()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase2_sampling.py", line 244, in distribution_aware_sampling
+    pseudo_labels = torch.load('/home/home_public/aisci/AIscientist/src/7_day8_tcp/PI1M_pseudo_labels.pt')
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1470, in load
+    raise pickle.UnpicklingError(_get_wo_message(str(e))) from None
+_pickle.UnpicklingError: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL numpy.core.multiarray._reconstruct was not an allowed global by default. Please use `torch.serialization.add_safe_globals([_reconstruct])` or the `torch.serialization.safe_globals([_reconstruct])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+
+PHASE 3: TCP PRE-TRAINING
+================================================================================
+PHASE 3: TCP PRE-TRAINING
+================================================================================
+
+Using device: cuda
+
+Loading pseudo-labels...
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase3_pretraining.py", line 390, in <module>
+    tcp_pretraining()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase3_pretraining.py", line 269, in tcp_pretraining
+    pseudo_labels = torch.load('/home/home_public/aisci/AIscientist/src/7_day8_tcp/PI1M_pseudo_labels.pt')
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1470, in load
+    raise pickle.UnpicklingError(_get_wo_message(str(e))) from None
+_pickle.UnpicklingError: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL numpy.core.multiarray._reconstruct was not an allowed global by default. Please use `torch.serialization.add_safe_globals([_reconstruct])` or the `torch.serialization.safe_globals([_reconstruct])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+
+PHASE 4: FINE-TUNING
+================================================================================
+PHASE 4: FINE-TUNING ON Tg PREDICTION
+================================================================================
+
+Using device: cuda
+
+Loading Tg dataset...
+Loading Tg data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Found 7170 samples
+Successfully loaded 7170 valid samples
+
+Creating 5-fold splits...
+
+Loading pre-trained TCP model...
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase4_finetuning.py", line 379, in <module>
+    phase4_finetuning()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase4_finetuning.py", line 252, in phase4_finetuning
+    checkpoint = torch.load('/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt')
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt'
+
+PHASE 5: ABLATION STUDIES
+================================================================================
+PHASE 5: ABLATION STUDIES
+================================================================================
+
+Using device: cuda
+
+Loading data...
+Loading Tg data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Found 7170 samples
+Successfully loaded 7170 valid samples
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase5_ablation.py", line 413, in <module>
+    phase5_ablation_studies()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase5_ablation.py", line 291, in phase5_ablation_studies
+    pseudo_labels = torch.load('/home/home_public/aisci/AIscientist/src/7_day8_tcp/PI1M_pseudo_labels.pt')
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1470, in load
+    raise pickle.UnpicklingError(_get_wo_message(str(e))) from None
+_pickle.UnpicklingError: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL numpy.core.multiarray._reconstruct was not an allowed global by default. Please use `torch.serialization.add_safe_globals([_reconstruct])` or the `torch.serialization.safe_globals([_reconstruct])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+
+PHASE 6: ANALYSIS
+================================================================================
+PHASE 6: ANALYSIS AND COMPARISON
+================================================================================
+
+Using device: cuda
+
+Loading models...
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase6_analysis.py", line 240, in <module>
+    phase6_analysis()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase6_analysis.py", line 92, in phase6_analysis
+    checkpoint = torch.load('/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt')
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt'
+
+====================================================================================================
+                                 EXPERIMENT COMPLETE
+====================================================================================================
+End time: Thu Mar 26 11:53:50 CST 2026
+
+Output Files:
+  PI1M_pseudo_labels.pt (83M)
+  tcp_experiment_log.txt (944K)
+  tcp_run_log.txt (18K)
+  uncertainty_model.pt (254K)
+

@@ -1,0 +1,31 @@
+{
+  "tm_top_10": [
+    "rotatable_bond_frac",
+    "NHOHCount2",
+    "MinEStateIndex",
+    "FpDensityMorgan3",
+    "NHOHCount",
+    "NumAmideBonds",
+    "single_bond_frac",
+    "Kappa3",
+    "amine",
+    "amide"
+  ],
+  "egc_top_10": [
+    "sulfide",
+    "FractionCSP3",
+    "sp3_frac",
+    "MinEStateIndex",
+    "S_count",
+    "single_bond_frac",
+    "HallKierAlpha",
+    "FractionCSP3_2",
+    "qed",
+    "MaxAbsPartialCharge"
+  ],
+  "common_features": [
+    "single_bond_frac",
+    "MinEStateIndex"
+  ],
+  "n_common": 2
+}

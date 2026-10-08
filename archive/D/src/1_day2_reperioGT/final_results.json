@@ -1,0 +1,39 @@
+{
+  "experiments": {
+    "baseline": {
+      "test_rmse": 36.41,
+      "test_mae": 25.6,
+      "test_r2": 0.9,
+      "test_pearson_r": 0.9487,
+      "best_val_rmse": 39.19,
+      "best_epoch": 211,
+      "training_time_min": 29.6
+    },
+    "feature_only": {
+      "test_rmse": 35.56,
+      "test_mae": 24.83,
+      "test_r2": 0.9046,
+      "test_pearson_r": 0.9521,
+      "best_val_rmse": 36.94,
+      "best_epoch": 207,
+      "training_time_min": 30.7
+    },
+    "full": {
+      "test_rmse": 35.55,
+      "test_mae": 24.95,
+      "test_r2": 0.9047,
+      "test_pearson_r": 0.9513,
+      "best_val_rmse": 37.97,
+      "best_epoch": 245,
+      "training_time_min": 316.9
+    }
+  },
+  "comparison": {
+    "baseline_rmse": 36.41,
+    "feature_only_rmse": 35.56,
+    "full_rmse": 35.55,
+    "improvement_feature_vs_baseline": 0.8499999999999943,
+    "improvement_full_vs_baseline": 0.8599999999999994,
+    "improvement_full_vs_feature": 0.010000000000005116
+  }
+}

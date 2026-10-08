@@ -1,0 +1,38 @@
+{
+  "dataset": "ip",
+  "n_splits": 1,
+  "protocol": "given-split x multi-init",
+  "per_split": [
+    {
+      "split_tag": "given",
+      "n_init": 3,
+      "init_seeds": [
+        42,
+        71,
+        2026
+      ],
+      "single_seed_rmse": [
+        0.030036452232533963,
+        0.0304188471342937,
+        0.030126217397987053
+      ],
+      "single_seed_mean": 0.030193838921604904,
+      "single_seed_std": 0.00016327067110631475,
+      "swa_rmse_mean": 0.03015841566881151,
+      "ensemble_mean_rmse": 0.029393169031499702,
+      "ensemble_mean_mae": 0.018360289061802808,
+      "ensemble_mean_r2": 0.9969389073090225,
+      "ensemble_median_rmse": 0.029440735392818298,
+      "ensemble_median_mae": 0.01850561305537234,
+      "ensemble_median_r2": 0.9969289918857733,
+      "test_size": 8594
+    }
+  ],
+  "ensemble_mean_rmse_splits_mean": 0.029393169031499702,
+  "ensemble_mean_rmse_splits_std": 0.0,
+  "ensemble_median_rmse_splits_mean": 0.029440735392818298,
+  "ensemble_median_rmse_splits_std": 0.0,
+  "single_seed_all_mean": 0.030193838921604904,
+  "single_seed_all_std": 0.00016327067110631475,
+  "single_seed_aggregation": "mean/std over init seeds"
+}

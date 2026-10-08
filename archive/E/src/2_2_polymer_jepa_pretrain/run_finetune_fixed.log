@@ -1,0 +1,158 @@
+2026-05-15 23:15:11,637 INFO Device: cuda
+2026-05-15 23:15:11,731 INFO Tg dataset size: 7170
+2026-05-15 23:15:11,732 INFO Train: 5162, Val: 573, Test: 1435
+2026-05-15 23:15:11,732 INFO 
+======================================================================
+2026-05-15 23:15:11,732 INFO BASELINE (bug-fixed: dropout=0.1, mean_pool, lr=5e-4)
+2026-05-15 23:15:11,732 INFO ======================================================================
+2026-05-15 23:15:11,732 INFO 
+============================================================
+2026-05-15 23:15:11,732 INFO BASELINE: Training from scratch (no pre-training)
+2026-05-15 23:15:11,732 INFO ============================================================
+2026-05-15 23:15:12,053 INFO 
+============================================================
+2026-05-15 23:15:12,053 INFO Strategy: baseline | LR: 0.0005 | Epochs: 500
+2026-05-15 23:15:12,054 INFO Trainable params: 641,542
+2026-05-15 23:15:12,054 INFO ============================================================
+2026-05-15 23:15:16,463 INFO [baseline] Epoch 1/500 | Train RMSE: 155.6699 | Val RMSE: 229.6990 | Val MAE: 217.0289 | Time: 4.4s
+2026-05-15 23:15:54,898 INFO [baseline] Epoch 10/500 | Train RMSE: 54.0128 | Val RMSE: 40.6584 | Val MAE: 30.8063 | Time: 4.3s
+2026-05-15 23:16:37,326 INFO [baseline] Epoch 20/500 | Train RMSE: 47.7468 | Val RMSE: 41.2020 | Val MAE: 31.2288 | Time: 4.1s
+2026-05-15 23:17:19,825 INFO [baseline] Epoch 30/500 | Train RMSE: 45.5325 | Val RMSE: 41.8426 | Val MAE: 32.7871 | Time: 4.2s
+2026-05-15 23:18:02,311 INFO [baseline] Epoch 40/500 | Train RMSE: 43.7789 | Val RMSE: 38.2415 | Val MAE: 28.2744 | Time: 4.3s
+2026-05-15 23:18:44,304 INFO [baseline] Epoch 50/500 | Train RMSE: 42.3467 | Val RMSE: 39.0379 | Val MAE: 29.8170 | Time: 4.2s
+2026-05-15 23:19:26,008 INFO [baseline] Epoch 60/500 | Train RMSE: 38.8209 | Val RMSE: 38.4670 | Val MAE: 28.9043 | Time: 4.2s
+2026-05-15 23:20:04,603 INFO Early stopping at epoch 69. Best val RMSE: 38.1534 at epoch 39
+2026-05-15 23:20:08,073 INFO 
+[baseline] Final Results:
+2026-05-15 23:20:08,073 INFO   Best Epoch: 39
+2026-05-15 23:20:08,073 INFO   Train RMSE: 35.6476
+2026-05-15 23:20:08,073 INFO   Val RMSE: 38.1534
+2026-05-15 23:20:08,073 INFO   Test RMSE: 54.8923
+2026-05-15 23:20:08,074 INFO   Test MAE: 37.9199
+2026-05-15 23:20:08,074 INFO   Overfitting Gap: -19.2446
+2026-05-15 23:20:08,076 INFO Baseline Test RMSE: 54.8923
+2026-05-15 23:20:08,076 INFO 
+======================================================================
+2026-05-15 23:20:08,076 INFO STRATEGY A (contrastive, bug-fixed)
+2026-05-15 23:20:08,076 INFO ======================================================================
+2026-05-15 23:20:08,076 INFO 
+============================================================
+2026-05-15 23:20:08,076 INFO STRATEGY A: Partial freeze (freeze first 3 GIN layers)
+2026-05-15 23:20:08,076 INFO ============================================================
+2026-05-15 23:20:08,175 INFO Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 23:20:08,177 INFO Frozen layers: 0-2, Trainable: layers 3-4 + head
+2026-05-15 23:20:08,177 INFO Trainable params: 299,267
+2026-05-15 23:20:08,178 INFO 
+============================================================
+2026-05-15 23:20:08,178 INFO Strategy: strategy_A_partial_freeze | LR: 0.0005 | Epochs: 500
+2026-05-15 23:20:08,178 INFO Trainable params: 299,267
+2026-05-15 23:20:08,178 INFO ============================================================
+2026-05-15 23:20:11,727 INFO [strategy_A_partial_freeze] Epoch 1/500 | Train RMSE: 153.6611 | Val RMSE: 198.9262 | Val MAE: 187.4724 | Time: 3.5s
+2026-05-15 23:20:41,378 INFO [strategy_A_partial_freeze] Epoch 10/500 | Train RMSE: 47.7985 | Val RMSE: 50.1425 | Val MAE: 34.4038 | Time: 3.2s
+2026-05-15 23:21:14,714 INFO [strategy_A_partial_freeze] Epoch 20/500 | Train RMSE: 41.7977 | Val RMSE: 50.2070 | Val MAE: 37.2399 | Time: 3.5s
+2026-05-15 23:21:48,289 INFO [strategy_A_partial_freeze] Epoch 30/500 | Train RMSE: 38.7887 | Val RMSE: 47.5353 | Val MAE: 33.5950 | Time: 3.4s
+2026-05-15 23:22:21,578 INFO [strategy_A_partial_freeze] Epoch 40/500 | Train RMSE: 37.7545 | Val RMSE: 46.0141 | Val MAE: 33.3240 | Time: 3.5s
+2026-05-15 23:22:55,452 INFO [strategy_A_partial_freeze] Epoch 50/500 | Train RMSE: 35.4454 | Val RMSE: 47.7540 | Val MAE: 34.0574 | Time: 3.3s
+2026-05-15 23:23:29,077 INFO [strategy_A_partial_freeze] Epoch 60/500 | Train RMSE: 34.5405 | Val RMSE: 44.9982 | Val MAE: 32.3241 | Time: 3.5s
+2026-05-15 23:24:02,504 INFO [strategy_A_partial_freeze] Epoch 70/500 | Train RMSE: 33.6732 | Val RMSE: 46.3536 | Val MAE: 33.7305 | Time: 3.4s
+2026-05-15 23:24:36,598 INFO [strategy_A_partial_freeze] Epoch 80/500 | Train RMSE: 32.4643 | Val RMSE: 47.5559 | Val MAE: 34.6083 | Time: 3.1s
+2026-05-15 23:25:09,436 INFO [strategy_A_partial_freeze] Epoch 90/500 | Train RMSE: 32.6043 | Val RMSE: 44.0023 | Val MAE: 32.7966 | Time: 3.4s
+2026-05-15 23:25:42,036 INFO [strategy_A_partial_freeze] Epoch 100/500 | Train RMSE: 32.2012 | Val RMSE: 46.6776 | Val MAE: 34.7247 | Time: 3.4s
+2026-05-15 23:26:15,010 INFO [strategy_A_partial_freeze] Epoch 110/500 | Train RMSE: 30.1362 | Val RMSE: 45.8943 | Val MAE: 34.4850 | Time: 2.4s
+2026-05-15 23:26:35,057 INFO Early stopping at epoch 116. Best val RMSE: 43.2801 at epoch 86
+2026-05-15 23:26:37,987 INFO 
+[strategy_A_partial_freeze] Final Results:
+2026-05-15 23:26:37,988 INFO   Best Epoch: 86
+2026-05-15 23:26:37,988 INFO   Train RMSE: 22.3739
+2026-05-15 23:26:37,988 INFO   Val RMSE: 43.2801
+2026-05-15 23:26:37,988 INFO   Test RMSE: 55.8355
+2026-05-15 23:26:37,988 INFO   Test MAE: 39.7761
+2026-05-15 23:26:37,988 INFO   Overfitting Gap: -33.4616
+2026-05-15 23:26:37,991 INFO Strategy A Test RMSE: 55.8355
+2026-05-15 23:26:37,991 INFO 
+======================================================================
+2026-05-15 23:26:37,991 INFO STRATEGY B (contrastive, bug-fixed)
+2026-05-15 23:26:37,991 INFO ======================================================================
+2026-05-15 23:26:37,991 INFO 
+============================================================
+2026-05-15 23:26:37,991 INFO STRATEGY B: End-to-end fine-tuning (all layers)
+2026-05-15 23:26:37,991 INFO ============================================================
+2026-05-15 23:26:38,115 INFO Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 23:26:38,117 INFO 
+============================================================
+2026-05-15 23:26:38,117 INFO Strategy: strategy_B_end2end | LR: 0.0005 | Epochs: 500
+2026-05-15 23:26:38,117 INFO Trainable params: 641,542
+2026-05-15 23:26:38,117 INFO ============================================================
+2026-05-15 23:26:42,435 INFO [strategy_B_end2end] Epoch 1/500 | Train RMSE: 154.4717 | Val RMSE: 197.5187 | Val MAE: 185.5217 | Time: 4.3s
+2026-05-15 23:27:20,475 INFO [strategy_B_end2end] Epoch 10/500 | Train RMSE: 47.1961 | Val RMSE: 56.0481 | Val MAE: 37.1752 | Time: 4.1s
+2026-05-15 23:28:03,235 INFO [strategy_B_end2end] Epoch 20/500 | Train RMSE: 39.0651 | Val RMSE: 53.2178 | Val MAE: 37.9696 | Time: 4.3s
+2026-05-15 23:28:45,789 INFO [strategy_B_end2end] Epoch 30/500 | Train RMSE: 35.1416 | Val RMSE: 43.2158 | Val MAE: 31.9847 | Time: 4.2s
+2026-05-15 23:29:27,748 INFO [strategy_B_end2end] Epoch 40/500 | Train RMSE: 33.2886 | Val RMSE: 44.1488 | Val MAE: 32.1964 | Time: 4.2s
+2026-05-15 23:30:10,001 INFO [strategy_B_end2end] Epoch 50/500 | Train RMSE: 32.9905 | Val RMSE: 44.4449 | Val MAE: 32.9294 | Time: 4.0s
+2026-05-15 23:30:52,289 INFO [strategy_B_end2end] Epoch 60/500 | Train RMSE: 30.7500 | Val RMSE: 42.5537 | Val MAE: 31.1614 | Time: 4.2s
+2026-05-15 23:31:35,108 INFO [strategy_B_end2end] Epoch 70/500 | Train RMSE: 30.7724 | Val RMSE: 42.2143 | Val MAE: 31.0392 | Time: 4.5s
+2026-05-15 23:32:19,314 INFO [strategy_B_end2end] Epoch 80/500 | Train RMSE: 29.9253 | Val RMSE: 42.4894 | Val MAE: 31.1725 | Time: 4.5s
+2026-05-15 23:33:02,366 INFO [strategy_B_end2end] Epoch 90/500 | Train RMSE: 29.7331 | Val RMSE: 44.4856 | Val MAE: 33.1159 | Time: 4.3s
+2026-05-15 23:33:44,791 INFO [strategy_B_end2end] Epoch 100/500 | Train RMSE: 28.7478 | Val RMSE: 43.0069 | Val MAE: 31.2671 | Time: 4.2s
+2026-05-15 23:34:02,047 INFO Early stopping at epoch 104. Best val RMSE: 41.7630 at epoch 74
+2026-05-15 23:34:04,918 INFO 
+[strategy_B_end2end] Final Results:
+2026-05-15 23:34:04,919 INFO   Best Epoch: 74
+2026-05-15 23:34:04,919 INFO   Train RMSE: 19.5828
+2026-05-15 23:34:04,919 INFO   Val RMSE: 41.7630
+2026-05-15 23:34:04,919 INFO   Test RMSE: 50.7707
+2026-05-15 23:34:04,919 INFO   Test MAE: 35.8135
+2026-05-15 23:34:04,919 INFO   Overfitting Gap: -31.1879
+2026-05-15 23:34:04,922 INFO Strategy B Test RMSE: 50.7707
+2026-05-15 23:34:04,923 INFO 
+======================================================================
+2026-05-15 23:34:04,923 INFO STRATEGY C (contrastive, bug-fixed)
+2026-05-15 23:34:04,923 INFO ======================================================================
+2026-05-15 23:34:04,923 INFO 
+============================================================
+2026-05-15 23:34:04,923 INFO STRATEGY C: Full freeze (only train head)
+2026-05-15 23:34:04,923 INFO ============================================================
+2026-05-15 23:34:05,038 INFO Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 23:34:05,039 INFO All encoder layers frozen. Only training head.
+2026-05-15 23:34:05,040 INFO Trainable params: 33,025
+2026-05-15 23:34:05,040 INFO 
+============================================================
+2026-05-15 23:34:05,040 INFO Strategy: strategy_C_full_freeze | LR: 0.0005 | Epochs: 500
+2026-05-15 23:34:05,040 INFO Trainable params: 33,025
+2026-05-15 23:34:05,041 INFO ============================================================
+2026-05-15 23:34:07,165 INFO [strategy_C_full_freeze] Epoch 1/500 | Train RMSE: 161.2196 | Val RMSE: 249.6044 | Val MAE: 235.5968 | Time: 2.1s
+2026-05-15 23:34:29,464 INFO [strategy_C_full_freeze] Epoch 10/500 | Train RMSE: 75.5242 | Val RMSE: 85.9129 | Val MAE: 68.4338 | Time: 2.6s
+2026-05-15 23:34:53,955 INFO [strategy_C_full_freeze] Epoch 20/500 | Train RMSE: 57.4658 | Val RMSE: 59.8509 | Val MAE: 46.0280 | Time: 2.5s
+2026-05-15 23:35:18,506 INFO [strategy_C_full_freeze] Epoch 30/500 | Train RMSE: 54.1430 | Val RMSE: 54.3162 | Val MAE: 41.4489 | Time: 2.6s
+2026-05-15 23:35:42,548 INFO [strategy_C_full_freeze] Epoch 40/500 | Train RMSE: 50.9207 | Val RMSE: 53.8312 | Val MAE: 41.0137 | Time: 2.3s
+2026-05-15 23:36:06,918 INFO [strategy_C_full_freeze] Epoch 50/500 | Train RMSE: 50.0981 | Val RMSE: 51.6059 | Val MAE: 39.1629 | Time: 2.4s
+2026-05-15 23:36:30,911 INFO [strategy_C_full_freeze] Epoch 60/500 | Train RMSE: 50.1185 | Val RMSE: 50.1521 | Val MAE: 38.9417 | Time: 2.2s
+2026-05-15 23:36:54,318 INFO [strategy_C_full_freeze] Epoch 70/500 | Train RMSE: 48.7157 | Val RMSE: 50.7042 | Val MAE: 39.8693 | Time: 2.4s
+2026-05-15 23:37:19,963 INFO [strategy_C_full_freeze] Epoch 80/500 | Train RMSE: 48.2919 | Val RMSE: 49.5399 | Val MAE: 37.9115 | Time: 2.8s
+2026-05-15 23:37:44,198 INFO [strategy_C_full_freeze] Epoch 90/500 | Train RMSE: 47.7223 | Val RMSE: 50.0175 | Val MAE: 38.5557 | Time: 2.5s
+2026-05-15 23:37:53,726 INFO Early stopping at epoch 94. Best val RMSE: 49.1441 at epoch 64
+2026-05-15 23:37:56,561 INFO 
+[strategy_C_full_freeze] Final Results:
+2026-05-15 23:37:56,561 INFO   Best Epoch: 64
+2026-05-15 23:37:56,561 INFO   Train RMSE: 42.5852
+2026-05-15 23:37:56,561 INFO   Val RMSE: 49.1440
+2026-05-15 23:37:56,561 INFO   Test RMSE: 64.2098
+2026-05-15 23:37:56,561 INFO   Test MAE: 45.9254
+2026-05-15 23:37:56,561 INFO   Overfitting Gap: -21.6247
+2026-05-15 23:37:56,563 INFO Strategy C Test RMSE: 64.2098
+
+======================================================================
+BUG-FIXED FINE-TUNING RESULTS (Contrastive Pre-trained)
+Fixes: dropout 0.5->0.1, add_pool->mean_pool, Strategy B/C lr fixed
+======================================================================
+
+Strategy                        Test RMSE   Val RMSE Train RMSE
+-----------------------------------------------------------------
+baseline                          54.8923    38.1534    35.6476
+strategy_A                        55.8355    43.2801    22.3739
+strategy_B                        50.7707    41.7630    19.5828
+strategy_C                        64.2098    49.1440    42.5852
+
+strategy_A delta from baseline: +0.9432
+strategy_B delta from baseline: -4.1216
+strategy_C delta from baseline: +9.3175

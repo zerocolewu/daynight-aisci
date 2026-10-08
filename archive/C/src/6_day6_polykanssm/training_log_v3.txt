@@ -1,0 +1,52 @@
+Using device: cuda
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+Sample graph: nodes=3, edges=6
+Node features: 21
+Edge features: 23
+
+Edge statistics (first 100 graphs):
+  Avg covalent edges: 25.9
+  Avg non-covalent edges: 62.4
+
+############################################################
+# Seed 1/5: 42
+############################################################
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Node dim: 21, Edge dim: 23
+Model parameters: 2,491,915
+Epoch   1 | Train RMSE: 133.1631 | Val RMSE: 70.6598 | Val MAE: 55.3316 | Val R2: 0.5739 | LR: 0.000999 | Best: 70.6598 @ 1
+Epoch  20 | Train RMSE: 51.1308 | Val RMSE: 48.6972 | Val MAE: 37.8858 | Val R2: 0.7976 | LR: 0.000655 | Best: 45.6556 @ 19
+Epoch  40 | Train RMSE: 43.5133 | Val RMSE: 43.1812 | Val MAE: 30.8829 | Val R2: 0.8409 | LR: 0.000096 | Best: 41.3398 @ 38
+Epoch  60 | Train RMSE: 46.9272 | Val RMSE: 44.6566 | Val MAE: 33.0180 | Val R2: 0.8298 | LR: 0.000976 | Best: 41.3398 @ 38
+Early stopping at epoch 68
+
+Best val RMSE: 41.3398 at epoch 38
+
+--- Seed 42 Final Results ---
+Train RMSE: 39.7556
+Val RMSE:   41.3398
+Test RMSE:  44.0290
+Test MAE:   30.3343
+Test R2:    0.8472
+
+############################################################
+# Seed 2/5: 123
+############################################################
+
+============================================================
+Training seed 123
+============================================================
+Split (seed=123): train=5162, val=573, test=1435
+Node dim: 21, Edge dim: 23
+Model parameters: 2,491,915
+Epoch   1 | Train RMSE: 129.9418 | Val RMSE: 70.7830 | Val MAE: 55.8147 | Val R2: 0.6234 | LR: 0.000999 | Best: 70.7830 @ 1
+Epoch  20 | Train RMSE: 50.9846 | Val RMSE: 47.3013 | Val MAE: 34.1577 | Val R2: 0.8318 | LR: 0.000655 | Best: 46.2129 @ 18

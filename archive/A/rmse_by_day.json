@@ -1,0 +1,16 @@
+{
+  "run": "A",
+  "ablation": "ab2",
+  "property": "Tg (K)",
+  "selection_rule": "Select the main model configuration within each day, excluding discarded versions and control-only baselines.",
+  "std_definition": "Population SD across folds (ddof=0), where available; see per-day protocol notes.",
+  "days": {
+    "1": {"model":"MLP+ECFP4","rmse":38.78,"std":null,"note":"Single-seed, single-split (80/10/10) baseline; no cross-validation.","source":"src/1_05_data_centric/baseline_results.txt"},
+    "2": {"model":"FP-PGNN full","rmse":37.04,"std":0.68,"note":"5-fold cross-validation.","source":"src/2_day2_fp_pgnn/results.json"},
+    "3": {"model":"PIPGA full","rmse":38.99,"std":2.1,"note":"5-fold cross-validation; replaces an earlier standalone run.","source":"src/3_03_pippga/results/full_model/results.json"},
+    "4": {"model":"LEMP Cutoff5Å","rmse":34.98,"std":1.5,"note":"5-fold cross-validation.","source":"src/4_04_lemp/ablation_results.json"},
+    "5": {"model":"SAPI k=10","rmse":38.39,"std":0.63,"note":"5-fold cross-validation.","source":"src/5_SAPI/results/final_results.json"},
+    "6": {"model":"PSCP ensemble","rmse":35.42,"std":0.07,"note":"Ensemble evaluated over 3 seeds and 5 folds.","source":"src/6_day6_pscp/improved_results.json"},
+    "7": {"model":"PTKGE physics","rmse":34.39,"std":0,"note":"Single split (seed 42); the separate 5-fold result was 34.47 with SD 1.83.","source":"src/7_day7_ptkge/results.json"}
+  }
+}

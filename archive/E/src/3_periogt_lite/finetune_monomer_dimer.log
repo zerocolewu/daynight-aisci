@@ -1,0 +1,26 @@
+============================================================
+Phase: Fine-tuning (pretrained)
+============================================================
+Device: cuda
+Data: train=5162, val=573, test=1435
+Model parameters: 444,932
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_monomer_dimer.pt
+Epoch   1: train_rmse=128.1871, val_rmse=51.9958
+Epoch  10: train_rmse=36.9778, val_rmse=45.0884
+Epoch  20: train_rmse=28.9593, val_rmse=43.1512
+Epoch  30: train_rmse=26.0242, val_rmse=41.3708
+Epoch  40: train_rmse=23.3916, val_rmse=42.5239
+Epoch  50: train_rmse=22.2915, val_rmse=40.4630
+Epoch  60: train_rmse=21.2305, val_rmse=40.4075
+Epoch  70: train_rmse=20.0261, val_rmse=43.5543
+Early stopping at epoch 73 (no improvement for 30 epochs)
+
+============================================================
+Results (pretrained):
+  Train RMSE: 20.5047
+  Val RMSE:   39.0112
+  Test RMSE:  54.1928
+  Best epoch: 43
+  Overfit gap: -33.6881
+  Saved to /home/home_public/aisci/AIscientist/src/3_periogt_lite/results_pretrained_monomer_dimer.json
+============================================================

@@ -1,0 +1,20 @@
+{
+  "data_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+  "output_dir": "/home/home_public/aisci/AIscientist/src/2_02_PerioGT_Ablation",
+  "seed": 42,
+  "model_type": "chemprop",
+  "hidden_dim": 300,
+  "num_layers": 3,
+  "num_heads": 4,
+  "dropout": 0.0,
+  "add_periodic_edge": true,
+  "normalize_targets": false,
+  "batch_size": 64,
+  "epochs": 50,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "patience": 20,
+  "lr_scheduler": "none",
+  "mode": "single",
+  "num_seeds": 1
+}

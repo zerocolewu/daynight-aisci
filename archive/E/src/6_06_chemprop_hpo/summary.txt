@@ -1,0 +1,78 @@
+======================================================================
+CHEMPROP HYPERPARAMETER OPTIMIZATION - FINAL REPORT
+======================================================================
+
+PHASE 1: One-Factor-At-A-Time Results
+----------------------------------------------------------------------
+Config               Test RMSE    Train RMSE   Gap        Epoch    Params      
+----------------------------------------------------------------------
+C_lr1e-03            36.5691      23.4225      -13.15(U)    139      695,101     
+B_hidden1200         38.1275      27.7588      -10.37(U)    111      9,260,401   
+B_hidden600          38.5197      29.8480      -8.67(U)    181      2,470,201   
+A_depth7             40.0603      34.2524      -5.81(U)    169      695,101     
+D_dropout0.1         41.5132      36.4792      -5.03(U)    192      695,101     
+D_dropout0.3         41.6028      35.8867      -5.72(U)    182      695,101     
+A_depth3             41.6296      36.5330      -5.10(U)    191      695,101     
+C_lr5e-04            42.0691      37.9434      -4.13(U)    54       695,101     
+C_lr1e-04            42.3056      35.7733      -6.53(U)    198      695,101     
+D_dropout0.0         42.4672      36.4775      -5.99(U)    182      695,101     
+B_hidden300          42.4900      35.9705      -6.52(U)    200      695,101     
+D_dropout0.2         42.5495      35.9309      -6.62(U)    195      695,101     
+A_depth5             43.0561      38.0237      -5.03(U)    124      695,101     
+
+Best hyperparameters from Phase 1:
+  Depth: 7
+  Hidden: 1200
+  LR: 0.001
+  Dropout: 0.1
+
+PHASE 2: Combined Best Configuration
+----------------------------------------------------------------------
+  Config: depth=7, hidden=1200, lr=0.001, dropout=0.1
+  Test RMSE: 35.7190
+  Train RMSE: 21.4394
+  Overfitting gap: -14.2796 (UNDERFITTING)
+  Best epoch: 130
+
+PHASE 3: Dense Skip Connections
+----------------------------------------------------------------------
+  dense_combined_d7_h1200:
+    Test RMSE: 35.7840 | Train RMSE: 27.7980 | Gap: -7.9860
+  dense_d7_h1200:
+    Test RMSE: 35.7317 | Train RMSE: 24.4642 | Gap: -11.2675
+  dense_d5_h1200:
+    Test RMSE: 35.4758 | Train RMSE: 20.9436 | Gap: -14.5322
+
+PHASE 4: Multi-Seed Verification
+----------------------------------------------------------------------
+  Config: depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True
+    Seed 42: Test RMSE=40.9522, Train RMSE=25.2894, Gap=-15.6629
+    Seed 71: Test RMSE=37.1104, Train RMSE=23.9531, Gap=-13.1573
+    Seed 123: Test RMSE=41.9501, Train RMSE=35.7240, Gap=-6.2261
+  Test RMSE: 40.00 ± 2.09
+  Train RMSE: 28.32 ± 5.26
+  Overfitting gap: -11.68 ± 3.99
+
+HYPOTHESIS ANALYSIS
+----------------------------------------------------------------------
+H12a - Capacity scaling and overfitting gap:
+  depth=3: gap=-5.10 (UNDERFITTING), test_rmse=41.63
+  depth=5: gap=-5.03 (UNDERFITTING), test_rmse=43.06
+  depth=7: gap=-5.81 (UNDERFITTING), test_rmse=40.06
+
+Dense skip connection effect:
+  dense_combined_d7_h1200: gap=-7.99 (UNDERFITTING), test_rmse=35.78
+  dense_d7_h1200: gap=-11.27 (UNDERFITTING), test_rmse=35.73
+  dense_d5_h1200: gap=-14.53 (UNDERFITTING), test_rmse=35.48
+
+OVERALL BEST CONFIGURATION
+----------------------------------------------------------------------
+  Config: dense_d5_h1200
+  depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True
+  Test RMSE: 35.4758
+  Train RMSE: 20.9436
+  Overfitting gap: -14.5322
+  Multi-seed: 40.00 ± 2.09
+
+Baseline (Day 5, default): ~43.46 ± 0.89
+Improvement: 7.98 RMSE

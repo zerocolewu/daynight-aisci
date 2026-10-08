@@ -1,0 +1,356 @@
+{
+  "experiment1_periodic_cosine": {
+    "results": {
+      "experiment_name": "improved_periodic_256",
+      "config": {
+        "hidden_dim": 256,
+        "num_gnn_layers": 6,
+        "dropout": 0.1,
+        "use_periodic_edge": true,
+        "batch_size": 64,
+        "lr": 0.0005,
+        "weight_decay": 0.0001,
+        "max_epochs": 300,
+        "patience": 30,
+        "huber_beta": 10.0,
+        "scheduler": "cosine"
+      },
+      "best_epoch": 15,
+      "n_params": 2038025,
+      "train": {
+        "rmse": 43.00679016113281,
+        "mae": 29.954238891601562,
+        "r2": 0.8519945740699768
+      },
+      "val": {
+        "rmse": 41.627750396728516,
+        "mae": 29.291072845458984,
+        "r2": 0.8603672087192535
+      },
+      "test": {
+        "rmse": 44.3946647644043,
+        "mae": 31.379545211791992,
+        "r2": 0.8470089435577393
+      },
+      "timestamp": "2026-05-07 03:56:22"
+    },
+    "analysis": {
+      "experiment_name": "Improved with Periodic (cosine)",
+      "error_distribution": {
+        "mean": -8.496392250061035,
+        "std": 43.57404708862305,
+        "median": -7.257667541503906,
+        "q25": -30.436141967773438,
+        "q75": 12.690267562866211
+      },
+      "accuracy_by_Tg_range": [
+        {
+          "range": "0-100",
+          "count": 412,
+          "rmse": 34.31979751586914,
+          "mae": 23.346267700195312
+        },
+        {
+          "range": "100-200",
+          "count": 376,
+          "rmse": 45.80289840698242,
+          "mae": 34.4215202331543
+        },
+        {
+          "range": "200-300",
+          "count": 373,
+          "rmse": 39.87571716308594,
+          "mae": 27.226316452026367
+        },
+        {
+          "range": "300-400",
+          "count": 124,
+          "rmse": 68.0638198852539,
+          "mae": 60.38050842285156
+        },
+        {
+          "range": "400-600",
+          "count": 9,
+          "rmse": 123.6878433227539,
+          "mae": 118.58281707763672
+        }
+      ],
+      "aromatic_analysis": {
+        "aromatic": {
+          "count": 1230,
+          "rmse": 44.784847259521484
+        },
+        "non_aromatic": {
+          "count": 205,
+          "rmse": 41.97747039794922
+        }
+      },
+      "bias_analysis": [
+        {
+          "quartile": 1,
+          "count": 359,
+          "mean_bias": 11.6904935836792,
+          "rmse": 34.610660552978516
+        },
+        {
+          "quartile": 2,
+          "count": 356,
+          "mean_bias": -1.0762180089950562,
+          "rmse": 43.914886474609375
+        },
+        {
+          "quartile": 3,
+          "count": 360,
+          "mean_bias": -5.409675598144531,
+          "rmse": 42.68525695800781
+        },
+        {
+          "quartile": 4,
+          "count": 360,
+          "mean_bias": -39.0516471862793,
+          "rmse": 54.152381896972656
+        }
+      ],
+      "error_Tg_correlation": 0.25214691119693455
+    }
+  },
+  "experiment2_no_periodic": {
+    "results": {
+      "experiment_name": "improved_no_periodic_256",
+      "config": {
+        "hidden_dim": 256,
+        "num_gnn_layers": 6,
+        "dropout": 0.1,
+        "use_periodic_edge": false,
+        "batch_size": 64,
+        "lr": 0.0005,
+        "weight_decay": 0.0001,
+        "max_epochs": 300,
+        "patience": 30,
+        "huber_beta": 10.0,
+        "scheduler": "cosine"
+      },
+      "best_epoch": 16,
+      "n_params": 2038025,
+      "train": {
+        "rmse": 43.4355583190918,
+        "mae": 30.68033218383789,
+        "r2": 0.8490287065505981
+      },
+      "val": {
+        "rmse": 42.8974609375,
+        "mae": 30.811838150024414,
+        "r2": 0.8517192602157593
+      },
+      "test": {
+        "rmse": 46.089630126953125,
+        "mae": 33.54237365722656,
+        "r2": 0.8351037055253983
+      },
+      "timestamp": "2026-05-07 04:00:40"
+    },
+    "analysis": {
+      "experiment_name": "Improved without Periodic",
+      "error_distribution": {
+        "mean": -4.13753604888916,
+        "std": 45.90353775024414,
+        "median": -4.360809326171875,
+        "q25": -29.707473754882812,
+        "q75": 18.272567749023438
+      },
+      "accuracy_by_Tg_range": [
+        {
+          "range": "0-100",
+          "count": 412,
+          "rmse": 35.50244903564453,
+          "mae": 24.535545349121094
+        },
+        {
+          "range": "100-200",
+          "count": 376,
+          "rmse": 44.70296096801758,
+          "mae": 33.864383697509766
+        },
+        {
+          "range": "200-300",
+          "count": 373,
+          "rmse": 40.31964874267578,
+          "mae": 28.90376853942871
+        },
+        {
+          "range": "300-400",
+          "count": 124,
+          "rmse": 67.35083770751953,
+          "mae": 59.302818298339844
+        },
+        {
+          "range": "400-600",
+          "count": 9,
+          "rmse": 125.43536376953125,
+          "mae": 121.45579528808594
+        }
+      ],
+      "aromatic_analysis": {
+        "aromatic": {
+          "count": 1230,
+          "rmse": 45.64737319946289
+        },
+        "non_aromatic": {
+          "count": 205,
+          "rmse": 48.65884017944336
+        }
+      },
+      "bias_analysis": [
+        {
+          "quartile": 1,
+          "count": 359,
+          "mean_bias": 22.95713996887207,
+          "rmse": 44.452449798583984
+        },
+        {
+          "quartile": 2,
+          "count": 356,
+          "mean_bias": 3.6091933250427246,
+          "rmse": 42.26968002319336
+        },
+        {
+          "quartile": 3,
+          "count": 360,
+          "mean_bias": -5.61718225479126,
+          "rmse": 42.640689849853516
+        },
+        {
+          "quartile": 4,
+          "count": 360,
+          "mean_bias": -37.33795928955078,
+          "rmse": 53.96183395385742
+        }
+      ],
+      "error_Tg_correlation": 0.15825161729278087
+    }
+  },
+  "experiment3_periodic_plateau": {
+    "results": {
+      "experiment_name": "improved_periodic_256_plateau",
+      "config": {
+        "hidden_dim": 256,
+        "num_gnn_layers": 6,
+        "dropout": 0.1,
+        "use_periodic_edge": true,
+        "batch_size": 64,
+        "lr": 0.0005,
+        "weight_decay": 0.0001,
+        "max_epochs": 300,
+        "patience": 40,
+        "huber_beta": 10.0,
+        "scheduler": "plateau"
+      },
+      "best_epoch": 101,
+      "n_params": 2038025,
+      "train": {
+        "rmse": 33.914920806884766,
+        "mae": 25.29005241394043,
+        "r2": 0.9079581797122955
+      },
+      "val": {
+        "rmse": 38.943214416503906,
+        "mae": 29.072547912597656,
+        "r2": 0.877796083688736
+      },
+      "test": {
+        "rmse": 41.42449188232422,
+        "mae": 30.493696212768555,
+        "r2": 0.8667955249547958
+      },
+      "timestamp": "2026-05-07 04:11:15"
+    },
+    "analysis": {
+      "experiment_name": "Improved with Periodic (plateau)",
+      "error_distribution": {
+        "mean": -19.090288162231445,
+        "std": 36.76342010498047,
+        "median": -18.88965606689453,
+        "q25": -35.20990753173828,
+        "q75": -1.3255729675292969
+      },
+      "accuracy_by_Tg_range": [
+        {
+          "range": "0-100",
+          "count": 412,
+          "rmse": 33.223182678222656,
+          "mae": 23.873008728027344
+        },
+        {
+          "range": "100-200",
+          "count": 376,
+          "rmse": 31.775142669677734,
+          "mae": 24.031156539916992
+        },
+        {
+          "range": "200-300",
+          "count": 373,
+          "rmse": 45.04979705810547,
+          "mae": 36.58304214477539
+        },
+        {
+          "range": "300-400",
+          "count": 124,
+          "rmse": 65.27139282226562,
+          "mae": 52.473487854003906
+        },
+        {
+          "range": "400-600",
+          "count": 9,
+          "rmse": 98.1139907836914,
+          "mae": 94.39339447021484
+        }
+      ],
+      "aromatic_analysis": {
+        "aromatic": {
+          "count": 1230,
+          "rmse": 41.59659957885742
+        },
+        "non_aromatic": {
+          "count": 205,
+          "rmse": 40.37641525268555
+        }
+      },
+      "bias_analysis": [
+        {
+          "quartile": 1,
+          "count": 359,
+          "mean_bias": -4.1055216789245605,
+          "rmse": 35.19963455200195
+        },
+        {
+          "quartile": 2,
+          "count": 356,
+          "mean_bias": -7.689273357391357,
+          "rmse": 33.266090393066406
+        },
+        {
+          "quartile": 3,
+          "count": 360,
+          "mean_bias": -20.575864791870117,
+          "rmse": 37.58394241333008
+        },
+        {
+          "quartile": 4,
+          "count": 360,
+          "mean_bias": -43.82218933105469,
+          "rmse": 55.6566047668457
+        }
+      ],
+      "error_Tg_correlation": 0.297254563339992
+    }
+  },
+  "ablation_comparison": {
+    "with_periodic_rmse": 44.3946647644043,
+    "without_periodic_rmse": 46.089630126953125,
+    "improvement": 1.6949653625488281
+  },
+  "scheduler_comparison": {
+    "cosine_rmse": 44.3946647644043,
+    "plateau_rmse": 41.42449188232422
+  }
+}

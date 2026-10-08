@@ -1,0 +1,236 @@
+======================================================================
+IMPROVED PSCP EXPERIMENT - TARGETING RMSE < 35.0
+Started: 2026-03-21 07:04:17.492675
+======================================================================
+Device: cuda
+GPU: NVIDIA GeForce RTX 2080 Ti
+
+Loaded Tg: 7170 samples
+Tg range: -139.0 to 495.0
+
+Preparing Tg data...
+Valid samples: 6971
+Node feature dim: 155
+
+======================================================================
+BASELINE: MLP + ECFP4
+======================================================================
+
+Fold 1/5
+  Epoch 50: Val RMSE = 0.35
+  Fold 1: RMSE=38.32
+
+Fold 2/5
+  Epoch 50: Val RMSE = 0.34
+  Fold 2: RMSE=37.23
+
+Fold 3/5
+  Epoch 50: Val RMSE = 0.36
+  Fold 3: RMSE=38.22
+
+Fold 4/5
+  Epoch 50: Val RMSE = 0.35
+  Fold 4: RMSE=37.85
+
+Fold 5/5
+  Epoch 50: Val RMSE = 0.34
+  Epoch 100: Val RMSE = 0.34
+  Fold 5: RMSE=36.58
+
+BASELINE: 37.64 +/- 0.65
+
+======================================================================
+LOADING PRETRAIN DATA
+======================================================================
+PI1M samples: 995799
+Loading cached pretrain graphs for 100000 samples...
+
+======================================================================
+HYPERPARAMETER SEARCH: TEMPERATURE
+======================================================================
+
+--- Temperature: 0.05 ---
+  Pretraining on 99103 graphs (epochs=50, batch=256, temp=0.05)...
+    Epoch 10/50: Loss = 0.1764 (best: 0.1764)
+    Epoch 20/50: Loss = 0.1334 (best: 0.1334)
+    Epoch 30/50: Loss = 0.1064 (best: 0.1064)
+    Epoch 40/50: Loss = 0.0898 (best: 0.0898)
+    Epoch 50/50: Loss = 0.0877 (best: 0.0867)
+    Epoch 50: Val RMSE = 0.33 (best: 0.33)
+    Early stopping at epoch 77
+    Epoch 50: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 79
+    Epoch 50: Val RMSE = 0.33 (best: 0.33)
+    Early stopping at epoch 61
+  Temperature 0.05: Mean RMSE (3 folds) = 35.97
+
+--- Temperature: 0.1 ---
+  Pretraining on 99103 graphs (epochs=50, batch=256, temp=0.1)...
+    Epoch 10/50: Loss = 0.4624 (best: 0.4624)
+    Epoch 20/50: Loss = 0.3939 (best: 0.3939)
+    Epoch 30/50: Loss = 0.3637 (best: 0.3637)
+    Epoch 40/50: Loss = 0.3418 (best: 0.3418)
+    Epoch 50/50: Loss = 0.3340 (best: 0.3325)
+    Epoch 50: Val RMSE = 0.34 (best: 0.33)
+    Early stopping at epoch 78
+    Epoch 50: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 77
+    Early stopping at epoch 43
+  Temperature 0.1: Mean RMSE (3 folds) = 36.35
+
+--- Temperature: 0.2 ---
+  Pretraining on 99103 graphs (epochs=50, batch=256, temp=0.2)...
+    Epoch 10/50: Loss = 2.2043 (best: 2.2043)
+    Epoch 20/50: Loss = 2.1421 (best: 2.1421)
+    Epoch 30/50: Loss = 2.1087 (best: 2.1087)
+    Epoch 40/50: Loss = 2.0882 (best: 2.0882)
+    Epoch 50/50: Loss = 2.0814 (best: 2.0794)
+    Epoch 50: Val RMSE = 0.33 (best: 0.33)
+    Early stopping at epoch 80
+    Epoch 50: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 78
+    Epoch 50: Val RMSE = 0.33 (best: 0.33)
+    Early stopping at epoch 62
+  Temperature 0.2: Mean RMSE (3 folds) = 36.16
+
+Best temperature: 0.05 with RMSE = 35.97
+
+======================================================================
+FULL EXPERIMENT WITH BEST TEMPERATURE (0.05)
+======================================================================
+
+Pretraining with best temperature...
+  Pretraining on 99103 graphs (epochs=50, batch=256, temp=0.05)...
+    Epoch 10/50: Loss = 0.1817 (best: 0.1817)
+    Epoch 20/50: Loss = 0.1255 (best: 0.1255)
+    Epoch 30/50: Loss = 0.1048 (best: 0.1048)
+    Epoch 40/50: Loss = 0.0921 (best: 0.0921)
+    Epoch 50/50: Loss = 0.0858 (best: 0.0841)
+
+5-fold cross-validation with ensemble...
+
+--- Seed: 42 ---
+
+Fold 1/5
+    Epoch 50: Val RMSE = 0.33 (best: 0.33)
+    Early stopping at epoch 75
+  Fold 1: RMSE=36.14
+
+Fold 2/5
+    Epoch 50: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 86
+  Fold 2: RMSE=35.33
+
+Fold 3/5
+    Epoch 50: Val RMSE = 0.34 (best: 0.33)
+    Early stopping at epoch 62
+  Fold 3: RMSE=36.61
+
+Fold 4/5
+    Epoch 50: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 66
+  Fold 4: RMSE=35.20
+
+Fold 5/5
+    Epoch 50: Val RMSE = 0.31 (best: 0.31)
+    Early stopping at epoch 80
+  Fold 5: RMSE=34.11
+
+Seed 42: 35.48 +/- 0.86
+
+--- Seed: 123 ---
+
+Fold 1/5
+    Epoch 50: Val RMSE = 0.31 (best: 0.31)
+    Early stopping at epoch 87
+  Fold 1: RMSE=33.76
+
+Fold 2/5
+    Epoch 50: Val RMSE = 0.35 (best: 0.33)
+    Early stopping at epoch 85
+  Fold 2: RMSE=36.06
+
+Fold 3/5
+    Epoch 50: Val RMSE = 0.35 (best: 0.33)
+    Early stopping at epoch 61
+  Fold 3: RMSE=36.89
+
+Fold 4/5
+    Epoch 50: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 81
+  Fold 4: RMSE=34.94
+
+Fold 5/5
+    Epoch 50: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 90
+  Fold 5: RMSE=34.95
+
+Seed 123: 35.32 +/- 1.07
+
+--- Seed: 456 ---
+
+Fold 1/5
+    Epoch 50: Val RMSE = 0.31 (best: 0.31)
+    Early stopping at epoch 73
+  Fold 1: RMSE=34.19
+
+Fold 2/5
+    Epoch 50: Val RMSE = 0.31 (best: 0.30)
+    Early stopping at epoch 85
+  Fold 2: RMSE=33.14
+
+Fold 3/5
+    Epoch 50: Val RMSE = 0.32 (best: 0.32)
+    Early stopping at epoch 90
+  Fold 3: RMSE=35.29
+
+Fold 4/5
+    Epoch 50: Val RMSE = 0.34 (best: 0.34)
+    Early stopping at epoch 88
+  Fold 4: RMSE=37.08
+
+Fold 5/5
+    Epoch 50: Val RMSE = 0.34 (best: 0.34)
+    Early stopping at epoch 86
+  Fold 5: RMSE=37.66
+
+Seed 456: 35.47 +/- 1.70
+
+======================================================================
+FINAL SUMMARY
+======================================================================
+
+Baseline: 37.64 +/- 0.65
+
+Temperature search results:
+  temp=0.05: 35.97
+  temp=0.1: 36.35
+  temp=0.2: 36.16
+
+Best temperature: 0.05
+
+Improved PSCP (ensemble of 3 seeds):
+  Seed 42: 35.48 +/- 0.86
+  Seed 123: 35.32 +/- 1.07
+  Seed 456: 35.47 +/- 1.70
+
+Final ensemble mean: 35.42 +/- 0.07
+
+Target: RMSE < 35.0
+Status: NOT ACHIEVED
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/6_day6_pscp/run_improved_pscp.py", line 838, in <module>
+    results = main()
+  File "/home/home_public/aisci/AIscientist/src/6_day6_pscp/run_improved_pscp.py", line 829, in main
+    json.dump(final_results, f, indent=2)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool_ is not JSON serializable

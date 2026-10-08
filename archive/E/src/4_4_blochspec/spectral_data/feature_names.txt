@@ -1,0 +1,12 @@
+spectral_gap
+spectral_radius
+spectral_centroid
+spectral_variance
+low_freq_density
+band_width_max
+band_width_mean
+band_flatness
+spectral_gap_kpi
+density_at_Fermi
+spectral_skew
+spectral_kurtosis

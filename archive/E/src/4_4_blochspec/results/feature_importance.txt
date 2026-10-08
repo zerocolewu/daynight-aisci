@@ -1,0 +1,17 @@
+Feature Importance Analysis (1 feature at a time, seed=71)
+Lower test RMSE = more important feature
+======================================================================
+Rank   Feature                   Test RMSE    Val RMSE     Best Epoch  
+----------------------------------------------------------------------
+1      band_flatness             62.5985      59.6023      53          
+2      band_width_mean           63.6338      59.1406      71          
+3      spectral_kurtosis         63.9371      58.7262      67          
+4      spectral_radius           64.5626      53.1597      90          
+5      band_width_max            65.1507      57.4992      118         
+6      spectral_gap              66.7229      59.8282      37          
+7      spectral_centroid         67.6969      60.7540      14          
+8      spectral_variance         67.9429      61.7317      14          
+9      spectral_gap_kpi          68.2506      58.1647      37          
+10     low_freq_density          68.9589      61.2739      34          
+11     density_at_Fermi          69.5268      62.2109      7           
+12     spectral_skew             70.6780      61.8133      32          

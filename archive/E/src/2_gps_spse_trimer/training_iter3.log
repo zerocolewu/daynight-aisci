@@ -1,0 +1,62 @@
+2026-05-14 15:46:49,949 [INFO] Using device: cuda
+2026-05-14 15:46:49,949 [INFO] Config: hidden=256, transformer=32, blocks=5, spse=32, bs=64, lr=0.0005, mask_ratio=0.1, denoise_coeff=0.1
+2026-05-14 15:46:49,950 [INFO] Loading dataset...
+2026-05-14 15:46:50,029 [INFO] Dataset size: 7170
+2026-05-14 15:46:51,074 [INFO] Loaded SPSE cache: 7170 graphs
+2026-05-14 15:46:51,075 [INFO] Train: 5162, Val: 573, Test: 1435
+2026-05-14 15:46:51,075 [INFO] 
+============================================================
+2026-05-14 15:46:51,075 [INFO] Starting training with seed=71
+2026-05-14 15:46:51,075 [INFO] ============================================================
+2026-05-14 15:46:51,404 [INFO] Model parameters: total=892,073, mpnn=672,005 (75.3%), transformer=168,160 (18.9%), spse=165
+2026-05-14 15:48:17,771 [INFO] [Seed 71] Epoch   1 | Train RMSE: 126.5603 | Val RMSE: 206.6403 | Task Loss: 21727.1301 | Denoise: 0.1464 | LR: 0.000500
+2026-05-14 15:57:52,869 [INFO] [Seed 71] Epoch  10 | Train RMSE: 47.6992 | Val RMSE: 45.6853 | Task Loss: 2111.6066 | Denoise: 0.0624 | LR: 0.000499
+2026-05-14 16:08:49,506 [INFO] [Seed 71] Epoch  20 | Train RMSE: 38.7789 | Val RMSE: 40.0368 | Task Loss: 1708.2820 | Denoise: 0.0618 | LR: 0.000495
+2026-05-14 16:19:32,347 [INFO] [Seed 71] Epoch  30 | Train RMSE: 35.6385 | Val RMSE: 43.5122 | Task Loss: 1516.4310 | Denoise: 0.0602 | LR: 0.000488
+2026-05-14 16:31:09,023 [INFO] [Seed 71] Epoch  40 | Train RMSE: 31.3636 | Val RMSE: 47.9996 | Task Loss: 1318.4783 | Denoise: 0.0600 | LR: 0.000478
+2026-05-14 16:42:26,775 [INFO] [Seed 71] Epoch  50 | Train RMSE: 29.6714 | Val RMSE: 42.2365 | Task Loss: 1228.6617 | Denoise: 0.0615 | LR: 0.000467
+2026-05-14 16:42:26,775 [INFO] [Seed 71] Early stopping at epoch 50. Best epoch: 20
+2026-05-14 16:42:26,775 [INFO] [Seed 71] Training completed in 3335.4s (55.6min). Best epoch: 20, Best Val RMSE: 40.0368
+2026-05-14 16:42:51,197 [INFO] [Seed 71] Test RMSE: 53.2193 | Train RMSE: 38.7789 | Overfit Gap: -14.4404
+2026-05-14 16:42:51,201 [INFO] 
+============================================================
+2026-05-14 16:42:51,201 [INFO] Starting training with seed=42
+2026-05-14 16:42:51,201 [INFO] ============================================================
+2026-05-14 16:44:08,288 [INFO] [Seed 42] Epoch   1 | Train RMSE: 128.4309 | Val RMSE: 208.4148 | Task Loss: 21998.1843 | Denoise: 0.1470 | LR: 0.000500
+2026-05-14 16:53:35,160 [INFO] [Seed 42] Epoch  10 | Train RMSE: 48.1890 | Val RMSE: 49.2606 | Task Loss: 2013.1737 | Denoise: 0.0585 | LR: 0.000499
+2026-05-14 17:04:19,050 [INFO] [Seed 42] Epoch  20 | Train RMSE: 36.0618 | Val RMSE: 46.5355 | Task Loss: 1580.9331 | Denoise: 0.0575 | LR: 0.000495
+2026-05-14 17:15:48,442 [INFO] [Seed 42] Epoch  30 | Train RMSE: 33.7149 | Val RMSE: 49.8371 | Task Loss: 1392.4666 | Denoise: 0.0576 | LR: 0.000488
+2026-05-14 17:26:41,870 [INFO] [Seed 42] Epoch  40 | Train RMSE: 33.2188 | Val RMSE: 49.6737 | Task Loss: 1228.2123 | Denoise: 0.0559 | LR: 0.000478
+2026-05-14 17:37:19,044 [INFO] [Seed 42] Epoch  50 | Train RMSE: 29.3792 | Val RMSE: 46.0534 | Task Loss: 1071.1877 | Denoise: 0.0556 | LR: 0.000467
+2026-05-14 17:43:46,190 [INFO] [Seed 42] Early stopping at epoch 56. Best epoch: 26
+2026-05-14 17:43:46,191 [INFO] [Seed 42] Training completed in 3655.0s (60.9min). Best epoch: 26, Best Val RMSE: 42.0223
+2026-05-14 17:44:10,582 [INFO] [Seed 42] Test RMSE: 55.0380 | Train RMSE: 34.2631 | Overfit Gap: -20.7749
+2026-05-14 17:44:10,586 [INFO] 
+============================================================
+2026-05-14 17:44:10,586 [INFO] Starting training with seed=123
+2026-05-14 17:44:10,587 [INFO] ============================================================
+2026-05-14 17:45:37,079 [INFO] [Seed 123] Epoch   1 | Train RMSE: 123.9023 | Val RMSE: 201.4821 | Task Loss: 21377.0558 | Denoise: 0.1744 | LR: 0.000500
+2026-05-14 17:55:52,219 [INFO] [Seed 123] Epoch  10 | Train RMSE: 41.3043 | Val RMSE: 45.6457 | Task Loss: 2048.1027 | Denoise: 0.0506 | LR: 0.000499
+2026-05-14 18:06:45,692 [INFO] [Seed 123] Epoch  20 | Train RMSE: 40.3090 | Val RMSE: 42.1966 | Task Loss: 1688.8098 | Denoise: 0.0500 | LR: 0.000495
+2026-05-14 18:18:17,740 [INFO] [Seed 123] Epoch  30 | Train RMSE: 34.8781 | Val RMSE: 48.2115 | Task Loss: 1409.1624 | Denoise: 0.0500 | LR: 0.000488
+2026-05-14 18:28:40,709 [INFO] [Seed 123] Epoch  40 | Train RMSE: 30.4752 | Val RMSE: 44.2746 | Task Loss: 1281.5769 | Denoise: 0.0501 | LR: 0.000478
+2026-05-14 18:39:52,441 [INFO] [Seed 123] Epoch  50 | Train RMSE: 31.9019 | Val RMSE: 44.7627 | Task Loss: 1173.2374 | Denoise: 0.0489 | LR: 0.000467
+2026-05-14 18:50:34,651 [INFO] [Seed 123] Epoch  60 | Train RMSE: 28.8307 | Val RMSE: 37.6744 | Task Loss: 1047.9119 | Denoise: 0.0508 | LR: 0.000452
+2026-05-14 19:01:46,574 [INFO] [Seed 123] Epoch  70 | Train RMSE: 27.4140 | Val RMSE: 43.4918 | Task Loss: 923.2079 | Denoise: 0.0495 | LR: 0.000436
+2026-05-14 19:14:06,283 [INFO] [Seed 123] Epoch  80 | Train RMSE: 25.0578 | Val RMSE: 38.7134 | Task Loss: 859.6419 | Denoise: 0.0505 | LR: 0.000417
+2026-05-14 19:25:45,810 [INFO] [Seed 123] Epoch  90 | Train RMSE: 27.0581 | Val RMSE: 48.6734 | Task Loss: 812.6969 | Denoise: 0.0509 | LR: 0.000397
+2026-05-14 19:25:45,811 [INFO] [Seed 123] Early stopping at epoch 90. Best epoch: 60
+2026-05-14 19:25:45,811 [INFO] [Seed 123] Training completed in 6095.2s (101.6min). Best epoch: 60, Best Val RMSE: 37.6744
+2026-05-14 19:26:10,070 [INFO] [Seed 123] Test RMSE: 54.9744 | Train RMSE: 28.8307 | Overfit Gap: -26.1437
+2026-05-14 19:26:10,075 [INFO] 
+============================================================
+2026-05-14 19:26:10,075 [INFO] MULTI-SEED RESULTS SUMMARY
+2026-05-14 19:26:10,075 [INFO] ============================================================
+2026-05-14 19:26:10,075 [INFO]   Seed  71: Test RMSE = 53.2193, Train RMSE = 38.7789, Overfit Gap = -14.4404, Best Epoch = 20
+2026-05-14 19:26:10,075 [INFO]   Seed  42: Test RMSE = 55.0380, Train RMSE = 34.2631, Overfit Gap = -20.7749, Best Epoch = 26
+2026-05-14 19:26:10,075 [INFO]   Seed 123: Test RMSE = 54.9744, Train RMSE = 28.8307, Overfit Gap = -26.1437, Best Epoch = 60
+2026-05-14 19:26:10,075 [INFO]   Mean Test RMSE: 54.4105 +/- 0.8428
+2026-05-14 19:26:10,075 [INFO]   Mean Test MAE:  39.1666
+2026-05-14 19:26:10,075 [INFO]   Baseline (GIN+Trimer): 50.19
+2026-05-14 19:26:10,075 [INFO]   RESULT: Does NOT beat baseline (gap: 4.2205)
+2026-05-14 19:26:10,075 [INFO] ============================================================

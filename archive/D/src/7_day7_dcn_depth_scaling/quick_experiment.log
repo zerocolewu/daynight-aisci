@@ -1,0 +1,13 @@
+Using device: cuda
+================================================================================
+DCN-GIN Quick Experiment
+================================================================================
+Loading cached data from /home/home_public/aisci/AIscientist/src/6_day6_cfd_mtl/cache/tg_features.pkl
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day7_dcn_depth_scaling/quick_experiment.py", line 288, in <module>
+    main()
+  File "/home/home_public/aisci/AIscientist/src/7_day7_dcn_depth_scaling/quick_experiment.py", line 213, in main
+    data_list, features, scaler = load_cached_data()
+  File "/home/home_public/aisci/AIscientist/src/7_day7_dcn_depth_scaling/quick_experiment.py", line 53, in load_cached_data
+    features = data_dict['features']
+TypeError: tuple indices must be integers or slices, not str

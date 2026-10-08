@@ -1,0 +1,94 @@
+2026-05-16 05:45:32,983 INFO Device: cuda
+2026-05-16 05:45:32,983 INFO Architecture: Day 1 exact - EdgeAwareGINConv, 3 layers, mean_pool, MLP(256->128->1)
+2026-05-16 05:45:32,983 INFO Loading pre-processed data from ./data/dual_view_data.pt
+2026-05-16 05:45:36,618 INFO Dataset: 7170 total, 7170 valid pairs
+2026-05-16 05:45:36,618 INFO Node features: 30, Edge features: 6
+2026-05-16 05:45:36,618 INFO Split: train=5162, val=573, test=1435
+2026-05-16 05:45:36,618 INFO Node features: 30, Edge features: 6
+2026-05-16 05:45:36,618 INFO 
+============================================================
+2026-05-16 05:45:36,618 INFO Experiment: v3_baseline (BASELINE)
+2026-05-16 05:45:36,618 INFO ============================================================
+2026-05-16 05:45:36,930 INFO Parameters: 444,932
+2026-05-16 05:45:40,819 INFO [v3_baseline] Epoch 1: train_rmse=101.9620, val_rmse=64.9098
+2026-05-16 05:46:14,587 INFO [v3_baseline] Epoch 10: train_rmse=44.5758, val_rmse=45.6335
+2026-05-16 05:46:51,717 INFO [v3_baseline] Epoch 20: train_rmse=38.5402, val_rmse=42.7951
+2026-05-16 05:47:21,376 INFO [v3_baseline] Epoch 30: train_rmse=34.4099, val_rmse=41.1889
+2026-05-16 05:47:48,318 INFO [v3_baseline] Epoch 40: train_rmse=32.4953, val_rmse=43.8136
+2026-05-16 05:48:21,409 INFO [v3_baseline] Epoch 50: train_rmse=29.7207, val_rmse=42.3407
+2026-05-16 05:48:44,076 INFO [v3_baseline] Early stopping at epoch 57, best=27
+2026-05-16 05:48:44,490 INFO [v3_baseline] FINAL: train=35.8112, val=39.9946, test=51.3386, best_epoch=27
+2026-05-16 05:48:44,491 INFO 
+*** BASELINE TEST RMSE: 51.3386 ***
+2026-05-16 05:48:44,492 INFO 
+============================================================
+2026-05-16 05:48:44,492 INFO Experiment: v3_pcr_a0.01 (PCR, alpha=0.01)
+2026-05-16 05:48:44,492 INFO ============================================================
+2026-05-16 05:48:44,509 INFO Parameters: 486,084
+2026-05-16 05:48:52,478 INFO [v3_pcr_a0.01] Epoch 1: train_rmse=99.8084, val_rmse=54.0606, con_loss=0.5588, alpha=0.0005, cos_sim=0.9832
+2026-05-16 05:49:58,982 INFO [v3_pcr_a0.01] Epoch 10: train_rmse=44.9388, val_rmse=56.4420, con_loss=0.1060, alpha=0.0050, cos_sim=0.9659
+2026-05-16 05:51:11,556 INFO [v3_pcr_a0.01] Epoch 20: train_rmse=38.8922, val_rmse=39.4260, con_loss=0.0772, alpha=0.0100, cos_sim=0.9713
+2026-05-16 05:52:25,777 INFO [v3_pcr_a0.01] Epoch 30: train_rmse=34.5320, val_rmse=42.8380, con_loss=0.0491, alpha=0.0100, cos_sim=0.9418
+2026-05-16 05:53:42,391 INFO [v3_pcr_a0.01] Epoch 40: train_rmse=31.9283, val_rmse=48.1946, con_loss=0.0401, alpha=0.0100, cos_sim=0.9445
+2026-05-16 05:54:56,138 INFO [v3_pcr_a0.01] Epoch 50: train_rmse=29.7503, val_rmse=43.3541, con_loss=0.0297, alpha=0.0100, cos_sim=0.9411
+2026-05-16 05:56:08,689 INFO [v3_pcr_a0.01] Epoch 60: train_rmse=27.2516, val_rmse=41.1153, con_loss=0.0302, alpha=0.0100, cos_sim=0.9496
+2026-05-16 05:57:22,621 INFO [v3_pcr_a0.01] Epoch 70: train_rmse=26.7843, val_rmse=41.1841, con_loss=0.0270, alpha=0.0100, cos_sim=0.9457
+2026-05-16 05:58:36,761 INFO [v3_pcr_a0.01] Epoch 80: train_rmse=25.0629, val_rmse=41.4145, con_loss=0.0223, alpha=0.0100, cos_sim=0.9562
+2026-05-16 05:58:51,166 INFO [v3_pcr_a0.01] Early stopping at epoch 82, best=52
+2026-05-16 05:58:51,580 INFO [v3_pcr_a0.01] FINAL: train=28.6396, val=39.3267, test=52.4851, best_epoch=52
+2026-05-16 05:58:51,581 INFO 
+============================================================
+2026-05-16 05:58:51,581 INFO Experiment: v3_pcr_a0.05 (PCR, alpha=0.05)
+2026-05-16 05:58:51,581 INFO ============================================================
+2026-05-16 05:58:51,598 INFO Parameters: 486,084
+2026-05-16 05:58:58,932 INFO [v3_pcr_a0.05] Epoch 1: train_rmse=99.7715, val_rmse=54.1055, con_loss=0.5580, alpha=0.0025, cos_sim=0.9807
+2026-05-16 06:00:05,241 INFO [v3_pcr_a0.05] Epoch 10: train_rmse=44.8819, val_rmse=58.0364, con_loss=0.1070, alpha=0.0250, cos_sim=0.9670
+2026-05-16 06:01:21,031 INFO [v3_pcr_a0.05] Epoch 20: train_rmse=38.5719, val_rmse=40.6382, con_loss=0.0638, alpha=0.0500, cos_sim=0.9630
+2026-05-16 06:02:35,115 INFO [v3_pcr_a0.05] Epoch 30: train_rmse=34.3902, val_rmse=40.3876, con_loss=0.0440, alpha=0.0500, cos_sim=0.9548
+2026-05-16 06:03:48,986 INFO [v3_pcr_a0.05] Epoch 40: train_rmse=32.2649, val_rmse=44.4344, con_loss=0.0375, alpha=0.0500, cos_sim=0.9627
+2026-05-16 06:05:04,695 INFO [v3_pcr_a0.05] Epoch 50: train_rmse=29.6181, val_rmse=41.5075, con_loss=0.0333, alpha=0.0500, cos_sim=0.9383
+2026-05-16 06:06:19,600 INFO [v3_pcr_a0.05] Epoch 60: train_rmse=27.4166, val_rmse=39.6547, con_loss=0.0360, alpha=0.0500, cos_sim=0.9339
+2026-05-16 06:07:33,389 INFO [v3_pcr_a0.05] Epoch 70: train_rmse=26.3771, val_rmse=39.5555, con_loss=0.0266, alpha=0.0500, cos_sim=0.9544
+2026-05-16 06:08:46,406 INFO [v3_pcr_a0.05] Epoch 80: train_rmse=24.6118, val_rmse=40.9584, con_loss=0.0256, alpha=0.0500, cos_sim=0.9354
+2026-05-16 06:09:01,572 INFO [v3_pcr_a0.05] Early stopping at epoch 82, best=52
+2026-05-16 06:09:01,983 INFO [v3_pcr_a0.05] FINAL: train=29.1775, val=38.1571, test=52.2437, best_epoch=52
+2026-05-16 06:09:01,984 INFO 
+============================================================
+2026-05-16 06:09:01,984 INFO Experiment: v3_pcr_a0.1 (PCR, alpha=0.1)
+2026-05-16 06:09:01,984 INFO ============================================================
+2026-05-16 06:09:02,001 INFO Parameters: 486,084
+2026-05-16 06:09:09,444 INFO [v3_pcr_a0.1] Epoch 1: train_rmse=100.0370, val_rmse=58.1461, con_loss=0.5762, alpha=0.0050, cos_sim=0.9789
+2026-05-16 06:10:17,348 INFO [v3_pcr_a0.1] Epoch 10: train_rmse=45.0671, val_rmse=62.4630, con_loss=0.1021, alpha=0.0500, cos_sim=0.9607
+2026-05-16 06:11:29,804 INFO [v3_pcr_a0.1] Epoch 20: train_rmse=38.9271, val_rmse=40.9829, con_loss=0.0613, alpha=0.1000, cos_sim=0.9623
+2026-05-16 06:12:43,687 INFO [v3_pcr_a0.1] Epoch 30: train_rmse=34.6615, val_rmse=43.2840, con_loss=0.0430, alpha=0.1000, cos_sim=0.9476
+2026-05-16 06:13:55,732 INFO [v3_pcr_a0.1] Epoch 40: train_rmse=32.5762, val_rmse=44.7669, con_loss=0.0389, alpha=0.1000, cos_sim=0.9568
+2026-05-16 06:15:09,441 INFO [v3_pcr_a0.1] Epoch 50: train_rmse=29.9226, val_rmse=42.4719, con_loss=0.0310, alpha=0.1000, cos_sim=0.9408
+2026-05-16 06:16:23,543 INFO [v3_pcr_a0.1] Epoch 60: train_rmse=27.1999, val_rmse=42.2631, con_loss=0.0319, alpha=0.1000, cos_sim=0.9373
+2026-05-16 06:17:02,633 INFO [v3_pcr_a0.1] Early stopping at epoch 65, best=35
+2026-05-16 06:17:03,016 INFO [v3_pcr_a0.1] FINAL: train=32.8078, val=40.2713, test=52.9926, best_epoch=35
+2026-05-16 06:17:03,017 INFO 
+============================================================
+2026-05-16 06:17:03,017 INFO Experiment: v3_pcr_a0.5 (PCR, alpha=0.5)
+2026-05-16 06:17:03,017 INFO ============================================================
+2026-05-16 06:17:03,033 INFO Parameters: 486,084
+2026-05-16 06:17:10,557 INFO [v3_pcr_a0.5] Epoch 1: train_rmse=99.7141, val_rmse=56.2008, con_loss=0.5740, alpha=0.0250, cos_sim=0.9820
+2026-05-16 06:18:18,136 INFO [v3_pcr_a0.5] Epoch 10: train_rmse=46.0246, val_rmse=62.5838, con_loss=0.1272, alpha=0.2500, cos_sim=0.9739
+2026-05-16 06:19:32,828 INFO [v3_pcr_a0.5] Epoch 20: train_rmse=38.8011, val_rmse=40.2639, con_loss=0.0633, alpha=0.5000, cos_sim=0.9664
+2026-05-16 06:20:47,476 INFO [v3_pcr_a0.5] Epoch 30: train_rmse=34.2507, val_rmse=44.1754, con_loss=0.0433, alpha=0.5000, cos_sim=0.9561
+2026-05-16 06:21:59,696 INFO [v3_pcr_a0.5] Epoch 40: train_rmse=31.8286, val_rmse=48.1969, con_loss=0.0393, alpha=0.5000, cos_sim=0.9561
+2026-05-16 06:23:14,357 INFO [v3_pcr_a0.5] Epoch 50: train_rmse=29.1943, val_rmse=41.4651, con_loss=0.0291, alpha=0.5000, cos_sim=0.9239
+2026-05-16 06:23:14,357 INFO [v3_pcr_a0.5] Early stopping at epoch 50, best=20
+2026-05-16 06:23:14,826 INFO [v3_pcr_a0.5] FINAL: train=38.8011, val=40.2639, test=52.2708, best_epoch=20
+2026-05-16 06:23:14,828 INFO 
+Results saved to ./results_v3.json
+
+================================================================================
+PCR-v2 Iteration 3 RESULTS SUMMARY
+================================================================================
+Experiment                Train RMSE   Val RMSE     Test RMSE    Best Epoch   Params      
+--------------------------------------------------------------------------------
+v3_baseline               35.8112      39.9946      51.3386      27           444,932     
+v3_pcr_a0.01              28.6396      39.3267      52.4851      52           486,084     
+v3_pcr_a0.05              29.1775      38.1571      52.2437      52           486,084     
+v3_pcr_a0.1               32.8078      40.2713      52.9926      35           486,084     
+v3_pcr_a0.5               38.8011      40.2639      52.2708      20           486,084     

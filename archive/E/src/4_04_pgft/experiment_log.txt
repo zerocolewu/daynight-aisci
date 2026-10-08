@@ -1,0 +1,366 @@
+2026-05-19 03:30:53,003 INFO Device: cuda
+2026-05-19 03:30:53,003 INFO Loading Tg dataset...
+2026-05-19 03:31:39,550 INFO Tg dataset: 7170 polymers loaded
+2026-05-19 03:31:39,551 INFO   Failed monomers: 0, Failed trimers: 0
+2026-05-19 03:31:42,974 INFO Data split: train=5162, val=573, test=1435
+2026-05-19 03:31:42,975 INFO Loading pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_edge_drop_feat_mask_50.pt
+2026-05-19 03:31:42,988 INFO Checkpoint copied to /home/home_public/aisci/AIscientist/src/4_04_pgft/pretrain_checkpoint.pt
+2026-05-19 03:31:42,988 INFO Computing h_pre lookup table...
+2026-05-19 03:31:44,084 INFO h_pre lookup table shape: torch.Size([7170, 256])
+2026-05-19 03:31:44,090 INFO h_pre lookup saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/h_pre_lookup.pt
+2026-05-19 03:31:44,091 INFO 
+============================================================
+2026-05-19 03:31:44,091 INFO ABLATION (a): GIN+Trimer Baseline (random init, single encoder, mean_pool)
+2026-05-19 03:31:44,091 INFO ============================================================
+2026-05-19 03:31:48,740 INFO [ablation_a_seed42] Epoch 1: train_rmse=67.7523, val_rmse=74.6740, best_val=74.6740
+2026-05-19 03:32:22,641 INFO [ablation_a_seed42] Epoch 10: train_rmse=41.3363, val_rmse=41.0826, best_val=41.0826
+2026-05-19 03:33:01,589 INFO [ablation_a_seed42] Epoch 20: train_rmse=42.5307, val_rmse=53.4922, best_val=39.7441
+2026-05-19 03:33:41,941 INFO [ablation_a_seed42] Epoch 30: train_rmse=31.9269, val_rmse=43.6668, best_val=39.7441
+2026-05-19 03:34:23,920 INFO [ablation_a_seed42] Epoch 40: train_rmse=30.0966, val_rmse=40.5721, best_val=39.4197
+2026-05-19 03:35:04,319 INFO [ablation_a_seed42] Epoch 50: train_rmse=28.4176, val_rmse=39.8745, best_val=39.4197
+2026-05-19 03:35:44,716 INFO [ablation_a_seed42] Epoch 60: train_rmse=25.6945, val_rmse=40.9611, best_val=39.4197
+2026-05-19 03:36:25,885 INFO [ablation_a_seed42] Epoch 70: train_rmse=23.2876, val_rmse=40.6504, best_val=37.9618
+2026-05-19 03:37:00,955 INFO [ablation_a_seed42] Epoch 80: train_rmse=22.4412, val_rmse=40.0544, best_val=37.6993
+2026-05-19 03:37:41,336 INFO [ablation_a_seed42] Epoch 90: train_rmse=20.9326, val_rmse=38.3341, best_val=37.6993
+2026-05-19 03:38:21,665 INFO [ablation_a_seed42] Epoch 100: train_rmse=21.2036, val_rmse=42.6024, best_val=37.6993
+2026-05-19 03:38:49,868 INFO [ablation_a_seed42] Early stopping at epoch 107, best epoch=77
+2026-05-19 03:38:51,507 INFO [ablation_a_seed42] Seed=42: test_rmse=54.4730, train_rmse=24.3524, val_rmse=37.6993, gap=-30.1207
+2026-05-19 03:38:55,552 INFO [ablation_a_seed71] Epoch 1: train_rmse=58.1200, val_rmse=59.6673, best_val=59.6673
+2026-05-19 03:39:36,044 INFO [ablation_a_seed71] Epoch 10: train_rmse=43.2846, val_rmse=42.5462, best_val=42.0844
+2026-05-19 03:40:20,427 INFO [ablation_a_seed71] Epoch 20: train_rmse=38.6655, val_rmse=44.8143, best_val=41.1502
+2026-05-19 03:41:03,702 INFO [ablation_a_seed71] Epoch 30: train_rmse=34.4486, val_rmse=42.5119, best_val=39.4850
+2026-05-19 03:41:47,206 INFO [ablation_a_seed71] Epoch 40: train_rmse=29.8748, val_rmse=41.1658, best_val=39.4850
+2026-05-19 03:42:24,433 INFO [ablation_a_seed71] Epoch 50: train_rmse=28.1457, val_rmse=38.6226, best_val=38.6226
+2026-05-19 03:43:07,459 INFO [ablation_a_seed71] Epoch 60: train_rmse=26.1967, val_rmse=44.9006, best_val=38.6226
+2026-05-19 03:43:47,863 INFO [ablation_a_seed71] Epoch 70: train_rmse=24.3206, val_rmse=41.2544, best_val=38.6226
+2026-05-19 03:44:26,839 INFO [ablation_a_seed71] Epoch 80: train_rmse=22.9888, val_rmse=40.2409, best_val=37.5384
+2026-05-19 03:45:09,761 INFO [ablation_a_seed71] Epoch 90: train_rmse=22.1650, val_rmse=38.2645, best_val=37.5384
+2026-05-19 03:45:49,998 INFO [ablation_a_seed71] Epoch 100: train_rmse=21.9166, val_rmse=42.0442, best_val=37.5384
+2026-05-19 03:46:04,770 INFO [ablation_a_seed71] Early stopping at epoch 104, best epoch=74
+2026-05-19 03:46:06,082 INFO [ablation_a_seed71] Seed=71: test_rmse=53.6148, train_rmse=24.5509, val_rmse=37.5384, gap=-29.0639
+2026-05-19 03:46:08,957 INFO [ablation_a_seed123] Epoch 1: train_rmse=60.0854, val_rmse=53.9310, best_val=53.9310
+2026-05-19 03:46:45,183 INFO [ablation_a_seed123] Epoch 10: train_rmse=41.5994, val_rmse=42.2277, best_val=40.4540
+2026-05-19 03:47:25,479 INFO [ablation_a_seed123] Epoch 20: train_rmse=36.5894, val_rmse=41.7543, best_val=39.4157
+2026-05-19 03:48:06,950 INFO [ablation_a_seed123] Epoch 30: train_rmse=33.5317, val_rmse=41.7568, best_val=38.3389
+2026-05-19 03:48:47,021 INFO [ablation_a_seed123] Epoch 40: train_rmse=31.0620, val_rmse=40.8535, best_val=38.3389
+2026-05-19 03:49:30,056 INFO [ablation_a_seed123] Epoch 50: train_rmse=27.6576, val_rmse=40.9542, best_val=38.3389
+2026-05-19 03:49:38,149 INFO [ablation_a_seed123] Early stopping at epoch 52, best epoch=22
+2026-05-19 03:49:39,819 INFO [ablation_a_seed123] Seed=123: test_rmse=50.9827, train_rmse=35.5832, val_rmse=38.3389, gap=-15.3995
+2026-05-19 03:49:39,820 INFO Results saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/results_ablation_a.json
+2026-05-19 03:49:39,821 INFO 
+============================================================
+2026-05-19 03:49:39,821 INFO ABLATION (b): PCFT with Random-Init Encoder P
+2026-05-19 03:49:39,821 INFO ============================================================
+2026-05-19 03:49:39,830 INFO Computing h_pre lookup table...
+2026-05-19 03:49:40,762 INFO h_pre lookup table shape: torch.Size([7170, 256])
+2026-05-19 03:49:40,768 INFO h_pre lookup saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/h_pre_lookup.pt
+2026-05-19 03:55:22,015 INFO Device: cuda
+2026-05-19 03:55:22,015 INFO Loading Tg dataset...
+2026-05-19 03:55:22,026 INFO Loading cached processed data...
+2026-05-19 03:55:26,107 INFO Data split: train=5162, val=573, test=1435
+2026-05-19 03:55:26,108 INFO Loading pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_edge_drop_feat_mask_50.pt
+2026-05-19 03:55:26,122 INFO Checkpoint copied to /home/home_public/aisci/AIscientist/src/4_04_pgft/pretrain_checkpoint.pt
+2026-05-19 03:55:26,122 INFO Loading cached h_pre lookup table...
+2026-05-19 03:55:26,127 INFO 
+============================================================
+2026-05-19 03:55:26,127 INFO ABLATION (a): GIN+Trimer Baseline (random init, single encoder, mean_pool)
+2026-05-19 03:55:26,127 INFO ============================================================
+2026-05-19 03:55:32,023 INFO [ablation_a_seed42] Epoch 1: train_rmse=61.9000, val_rmse=74.0217, best_val=74.0217
+2026-05-19 03:56:12,744 INFO [ablation_a_seed42] Epoch 10: train_rmse=43.2483, val_rmse=46.9323, best_val=43.4464
+2026-05-19 03:56:51,774 INFO [ablation_a_seed42] Epoch 20: train_rmse=42.0447, val_rmse=54.4703, best_val=39.4116
+2026-05-19 03:57:35,064 INFO [ablation_a_seed42] Epoch 30: train_rmse=32.4591, val_rmse=41.8523, best_val=39.1204
+2026-05-19 03:58:19,773 INFO [ablation_a_seed42] Epoch 40: train_rmse=31.8402, val_rmse=40.5935, best_val=38.9753
+2026-05-19 03:59:01,988 INFO [ablation_a_seed42] Epoch 50: train_rmse=28.0167, val_rmse=40.3999, best_val=38.9753
+2026-05-19 03:59:47,579 INFO [ablation_a_seed42] Epoch 60: train_rmse=25.8408, val_rmse=39.8554, best_val=38.3081
+2026-05-19 04:00:28,845 INFO [ablation_a_seed42] Epoch 70: train_rmse=24.8028, val_rmse=39.7490, best_val=38.1439
+2026-05-19 04:01:12,821 INFO [ablation_a_seed42] Epoch 80: train_rmse=22.2852, val_rmse=40.6373, best_val=38.1128
+2026-05-19 04:01:57,226 INFO [ablation_a_seed42] Epoch 90: train_rmse=21.7849, val_rmse=39.8244, best_val=37.8475
+2026-05-19 04:02:42,568 INFO [ablation_a_seed42] Epoch 100: train_rmse=20.5916, val_rmse=39.7347, best_val=37.8475
+2026-05-19 04:03:23,944 INFO [ablation_a_seed42] Epoch 110: train_rmse=19.0990, val_rmse=38.7092, best_val=37.4898
+2026-05-19 04:04:11,929 INFO [ablation_a_seed42] Epoch 120: train_rmse=19.1505, val_rmse=40.2138, best_val=37.4898
+2026-05-19 04:04:55,573 INFO [ablation_a_seed42] Epoch 130: train_rmse=20.2400, val_rmse=38.8969, best_val=37.4898
+2026-05-19 04:05:35,354 INFO [ablation_a_seed42] Epoch 140: train_rmse=17.9615, val_rmse=40.5804, best_val=37.2430
+2026-05-19 04:06:22,280 INFO [ablation_a_seed42] Epoch 150: train_rmse=17.5303, val_rmse=39.3454, best_val=37.2430
+2026-05-19 04:07:08,812 INFO [ablation_a_seed42] Epoch 160: train_rmse=16.6584, val_rmse=39.5223, best_val=37.2430
+2026-05-19 04:07:22,145 INFO [ablation_a_seed42] Early stopping at epoch 163, best epoch=133
+2026-05-19 04:07:23,570 INFO [ablation_a_seed42] Seed=42: test_rmse=52.7307, train_rmse=17.6753, val_rmse=37.2430, gap=-35.0554
+2026-05-19 04:07:28,619 INFO [ablation_a_seed71] Epoch 1: train_rmse=66.2158, val_rmse=89.5592, best_val=89.5592
+2026-05-19 04:08:09,560 INFO [ablation_a_seed71] Epoch 10: train_rmse=43.1503, val_rmse=44.9172, best_val=44.4445
+2026-05-19 04:08:44,756 INFO [ablation_a_seed71] Epoch 20: train_rmse=39.1595, val_rmse=47.2371, best_val=42.1461
+2026-05-19 04:09:21,732 INFO [ablation_a_seed71] Epoch 30: train_rmse=34.4334, val_rmse=46.1870, best_val=39.3498
+2026-05-19 04:10:05,081 INFO [ablation_a_seed71] Epoch 40: train_rmse=30.0928, val_rmse=40.2615, best_val=39.3498
+2026-05-19 04:10:48,707 INFO [ablation_a_seed71] Epoch 50: train_rmse=28.1900, val_rmse=39.4375, best_val=38.0195
+2026-05-19 04:11:27,734 INFO [ablation_a_seed71] Epoch 60: train_rmse=27.1117, val_rmse=41.3312, best_val=38.0195
+2026-05-19 04:12:12,020 INFO [ablation_a_seed71] Epoch 70: train_rmse=24.9377, val_rmse=39.7267, best_val=38.0195
+2026-05-19 04:12:24,873 INFO [ablation_a_seed71] Early stopping at epoch 74, best epoch=44
+2026-05-19 04:12:26,283 INFO [ablation_a_seed71] Seed=71: test_rmse=52.2697, train_rmse=28.7235, val_rmse=38.0195, gap=-23.5462
+2026-05-19 04:12:30,265 INFO [ablation_a_seed123] Epoch 1: train_rmse=56.5685, val_rmse=52.4850, best_val=52.4850
+2026-05-19 04:13:11,633 INFO [ablation_a_seed123] Epoch 10: train_rmse=42.5441, val_rmse=43.1037, best_val=41.0962
+2026-05-19 04:13:51,708 INFO [ablation_a_seed123] Epoch 20: train_rmse=36.7890, val_rmse=45.3530, best_val=41.0962
+2026-05-19 04:14:37,485 INFO [ablation_a_seed123] Epoch 30: train_rmse=31.9296, val_rmse=40.7039, best_val=40.7039
+2026-05-19 04:15:19,944 INFO [ablation_a_seed123] Epoch 40: train_rmse=30.3403, val_rmse=40.9485, best_val=40.0225
+2026-05-19 04:16:02,887 INFO [ablation_a_seed123] Epoch 50: train_rmse=27.8093, val_rmse=43.0357, best_val=38.5694
+2026-05-19 04:16:44,159 INFO [ablation_a_seed123] Epoch 60: train_rmse=25.7916, val_rmse=42.8231, best_val=38.5694
+2026-05-19 04:17:25,053 INFO [ablation_a_seed123] Epoch 70: train_rmse=24.2077, val_rmse=40.1162, best_val=38.0145
+2026-05-19 04:18:11,480 INFO [ablation_a_seed123] Epoch 80: train_rmse=22.7373, val_rmse=38.0785, best_val=37.5648
+2026-05-19 04:18:53,007 INFO [ablation_a_seed123] Epoch 90: train_rmse=21.8423, val_rmse=40.0972, best_val=37.4910
+2026-05-19 04:19:38,556 INFO [ablation_a_seed123] Epoch 100: train_rmse=20.4297, val_rmse=41.8435, best_val=37.4910
+2026-05-19 04:20:16,097 INFO [ablation_a_seed123] Epoch 110: train_rmse=20.4379, val_rmse=37.8131, best_val=37.1520
+2026-05-19 04:20:52,421 INFO [ablation_a_seed123] Epoch 120: train_rmse=18.6601, val_rmse=39.3480, best_val=37.1520
+2026-05-19 04:21:30,858 INFO [ablation_a_seed123] Epoch 130: train_rmse=19.4095, val_rmse=42.3744, best_val=37.1520
+2026-05-19 04:21:36,164 INFO [ablation_a_seed123] Early stopping at epoch 132, best epoch=102
+2026-05-19 04:21:37,330 INFO [ablation_a_seed123] Seed=123: test_rmse=52.3838, train_rmse=21.1278, val_rmse=37.1520, gap=-31.2560
+2026-05-19 04:21:37,331 INFO Results saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/results_ablation_a.json
+2026-05-19 04:21:37,331 INFO 
+============================================================
+2026-05-19 04:21:37,332 INFO ABLATION (b): PCFT with Random-Init Encoder P
+2026-05-19 04:21:37,332 INFO ============================================================
+2026-05-19 04:21:37,339 INFO Computing h_pre lookup table...
+2026-05-19 04:21:37,932 INFO h_pre lookup table shape: torch.Size([7170, 256])
+2026-05-19 04:21:37,938 INFO h_pre lookup saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/h_pre_lookup.pt
+2026-05-19 04:21:41,431 INFO [ablation_b_seed42] Epoch 1: train_rmse=81.7612, val_rmse=96.7598, best_val=96.7598
+2026-05-19 04:22:27,390 INFO [ablation_b_seed42] Epoch 10: train_rmse=48.3603, val_rmse=53.7042, best_val=43.9033
+2026-05-19 04:23:16,932 INFO [ablation_b_seed42] Epoch 20: train_rmse=43.5048, val_rmse=42.9179, best_val=41.0000
+2026-05-19 04:24:03,810 INFO [ablation_b_seed42] Epoch 30: train_rmse=46.1025, val_rmse=55.0773, best_val=41.0000
+2026-05-19 04:24:49,803 INFO [ablation_b_seed42] Epoch 40: train_rmse=40.8890, val_rmse=45.2253, best_val=41.0000
+2026-05-19 04:25:36,787 INFO [ablation_b_seed42] Epoch 50: train_rmse=44.7757, val_rmse=61.5034, best_val=40.4022
+2026-05-19 04:26:24,368 INFO [ablation_b_seed42] Epoch 60: train_rmse=39.1139, val_rmse=53.0163, best_val=40.4022
+2026-05-19 04:27:12,991 INFO [ablation_b_seed42] Epoch 70: train_rmse=39.7579, val_rmse=55.8434, best_val=37.1338
+2026-05-19 04:28:00,530 INFO [ablation_b_seed42] Epoch 80: train_rmse=33.2931, val_rmse=42.2006, best_val=37.1338
+2026-05-19 04:28:48,814 INFO [ablation_b_seed42] Epoch 90: train_rmse=36.0620, val_rmse=53.0784, best_val=37.1338
+2026-05-19 04:29:21,729 INFO [ablation_b_seed42] Early stopping at epoch 97, best epoch=67
+2026-05-19 04:29:23,092 INFO [ablation_b_seed42] Seed=42: test_rmse=53.2482, train_rmse=35.1884, val_rmse=37.1338, gap=-18.0598
+2026-05-19 04:29:28,450 INFO [ablation_b_seed71] Epoch 1: train_rmse=69.0532, val_rmse=97.3994, best_val=97.3994
+2026-05-19 04:30:07,747 INFO [ablation_b_seed71] Epoch 10: train_rmse=53.5069, val_rmse=49.4995, best_val=41.1066
+2026-05-19 04:30:48,050 INFO [ablation_b_seed71] Epoch 20: train_rmse=47.5110, val_rmse=46.7085, best_val=39.5623
+2026-05-19 04:31:27,772 INFO [ablation_b_seed71] Epoch 30: train_rmse=46.6981, val_rmse=50.5813, best_val=39.5623
+2026-05-19 04:32:13,592 INFO [ablation_b_seed71] Epoch 40: train_rmse=43.3588, val_rmse=51.1447, best_val=39.5623
+2026-05-19 04:32:23,222 INFO [ablation_b_seed71] Early stopping at epoch 42, best epoch=12
+2026-05-19 04:32:24,819 INFO [ablation_b_seed71] Seed=71: test_rmse=52.9495, train_rmse=47.5052, val_rmse=39.5623, gap=-5.4442
+2026-05-19 04:32:30,199 INFO [ablation_b_seed123] Epoch 1: train_rmse=60.7824, val_rmse=55.5161, best_val=55.5161
+2026-05-19 04:33:13,084 INFO [ablation_b_seed123] Epoch 10: train_rmse=47.7230, val_rmse=39.4372, best_val=39.4372
+2026-05-19 04:34:01,970 INFO [ablation_b_seed123] Epoch 20: train_rmse=52.8254, val_rmse=62.6383, best_val=39.4372
+2026-05-19 04:34:45,503 INFO [ablation_b_seed123] Epoch 30: train_rmse=47.1657, val_rmse=56.3047, best_val=39.4372
+2026-05-19 04:35:31,990 INFO [ablation_b_seed123] Epoch 40: train_rmse=44.0684, val_rmse=57.4415, best_val=39.4372
+2026-05-19 04:35:31,990 INFO [ablation_b_seed123] Early stopping at epoch 40, best epoch=10
+2026-05-19 04:35:33,588 INFO [ablation_b_seed123] Seed=123: test_rmse=53.8148, train_rmse=47.7230, val_rmse=39.4372, gap=-6.0918
+2026-05-19 04:35:33,589 INFO Results saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/results_ablation_b.json
+2026-05-19 04:35:33,589 INFO 
+============================================================
+2026-05-19 04:35:33,589 INFO ABLATION (c): PCFT with PA Pre-trained Encoder P [PRIMARY]
+2026-05-19 04:35:33,589 INFO ============================================================
+2026-05-19 04:35:38,188 INFO [ablation_c_seed42] Epoch 1: train_rmse=57.0555, val_rmse=55.0223, best_val=55.0223
+2026-05-19 04:36:21,687 INFO [ablation_c_seed42] Epoch 10: train_rmse=43.6139, val_rmse=50.9579, best_val=40.1125
+2026-05-19 04:37:10,958 INFO [ablation_c_seed42] Epoch 20: train_rmse=39.3135, val_rmse=41.5178, best_val=39.5323
+2026-05-19 04:37:55,870 INFO [ablation_c_seed42] Epoch 30: train_rmse=36.9430, val_rmse=41.1236, best_val=39.5323
+2026-05-19 04:38:43,193 INFO [ablation_c_seed42] Epoch 40: train_rmse=39.3653, val_rmse=47.8093, best_val=39.4067
+2026-05-19 04:39:28,747 INFO [ablation_c_seed42] Epoch 50: train_rmse=34.6936, val_rmse=42.8154, best_val=39.4067
+2026-05-19 04:40:16,556 INFO [ablation_c_seed42] Epoch 60: train_rmse=33.2868, val_rmse=40.1815, best_val=39.4067
+2026-05-19 04:41:04,047 INFO [ablation_c_seed42] Epoch 70: train_rmse=32.5054, val_rmse=45.9837, best_val=39.1942
+2026-05-19 04:41:51,619 INFO [ablation_c_seed42] Epoch 80: train_rmse=34.6318, val_rmse=44.5556, best_val=39.1942
+2026-05-19 04:42:35,918 INFO [ablation_c_seed42] Epoch 90: train_rmse=30.8775, val_rmse=43.6241, best_val=39.1942
+2026-05-19 04:43:03,968 INFO [ablation_c_seed42] Early stopping at epoch 96, best epoch=66
+2026-05-19 04:43:05,298 INFO [ablation_c_seed42] Seed=42: test_rmse=53.5506, train_rmse=32.2552, val_rmse=39.1942, gap=-21.2954
+2026-05-19 04:43:09,858 INFO [ablation_c_seed71] Epoch 1: train_rmse=58.9552, val_rmse=64.5803, best_val=64.5803
+2026-05-19 04:43:51,969 INFO [ablation_c_seed71] Epoch 10: train_rmse=46.8211, val_rmse=51.3914, best_val=41.2132
+2026-05-19 04:44:38,356 INFO [ablation_c_seed71] Epoch 20: train_rmse=51.0970, val_rmse=61.9916, best_val=39.0467
+2026-05-19 04:45:26,686 INFO [ablation_c_seed71] Epoch 30: train_rmse=36.2232, val_rmse=41.9135, best_val=39.0467
+2026-05-19 04:46:09,904 INFO [ablation_c_seed71] Epoch 40: train_rmse=34.8718, val_rmse=38.5467, best_val=38.3059
+2026-05-19 04:46:49,749 INFO [ablation_c_seed71] Epoch 50: train_rmse=34.3321, val_rmse=40.5246, best_val=38.3059
+2026-05-19 04:47:36,253 INFO [ablation_c_seed71] Epoch 60: train_rmse=33.9995, val_rmse=45.6237, best_val=38.0682
+2026-05-19 04:48:21,306 INFO [ablation_c_seed71] Epoch 70: train_rmse=31.4980, val_rmse=41.4668, best_val=37.4590
+2026-05-19 04:49:08,296 INFO [ablation_c_seed71] Epoch 80: train_rmse=32.1307, val_rmse=43.2221, best_val=37.4590
+2026-05-19 04:49:52,798 INFO [ablation_c_seed71] Epoch 90: train_rmse=31.0546, val_rmse=43.0586, best_val=37.4590
+2026-05-19 04:50:18,510 INFO [ablation_c_seed71] Early stopping at epoch 96, best epoch=66
+2026-05-19 04:50:19,824 INFO [ablation_c_seed71] Seed=71: test_rmse=52.9058, train_rmse=32.7109, val_rmse=37.4590, gap=-20.1949
+2026-05-19 04:50:25,703 INFO [ablation_c_seed123] Epoch 1: train_rmse=59.2296, val_rmse=59.0289, best_val=59.0289
+2026-05-19 04:51:13,432 INFO [ablation_c_seed123] Epoch 10: train_rmse=41.7886, val_rmse=43.6964, best_val=43.6382
+2026-05-19 04:51:58,438 INFO [ablation_c_seed123] Epoch 20: train_rmse=41.1907, val_rmse=52.0336, best_val=41.7507
+2026-05-19 04:52:43,302 INFO [ablation_c_seed123] Epoch 30: train_rmse=37.4445, val_rmse=46.5735, best_val=39.9179
+2026-05-19 04:53:25,417 INFO [ablation_c_seed123] Epoch 40: train_rmse=35.3459, val_rmse=44.2956, best_val=39.9179
+2026-05-19 04:54:09,286 INFO [ablation_c_seed123] Epoch 50: train_rmse=36.4050, val_rmse=43.7763, best_val=39.9179
+2026-05-19 04:54:26,052 INFO [ablation_c_seed123] Early stopping at epoch 54, best epoch=24
+2026-05-19 04:54:27,415 INFO [ablation_c_seed123] Seed=123: test_rmse=51.7070, train_rmse=37.4314, val_rmse=39.9179, gap=-14.2756
+2026-05-19 04:54:27,416 INFO Results saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/results_ablation_c.json
+2026-05-19 04:54:27,416 INFO 
+============================================================
+2026-05-19 04:54:27,416 INFO ABLATION (d): Standard Fine-tuning (pre-trained, end-to-end, no prompt)
+2026-05-19 04:54:27,417 INFO ============================================================
+2026-05-19 04:54:30,448 INFO [ablation_d_seed42] Epoch 1: train_rmse=75.0063, val_rmse=96.6824, best_val=96.6824
+2026-05-19 04:55:06,626 INFO [ablation_d_seed42] Epoch 10: train_rmse=39.9317, val_rmse=47.3363, best_val=41.4892
+2026-05-19 04:55:56,114 INFO [ablation_d_seed42] Epoch 20: train_rmse=34.3452, val_rmse=44.3573, best_val=41.4892
+2026-05-19 04:56:41,310 INFO [ablation_d_seed42] Epoch 30: train_rmse=30.8694, val_rmse=45.4598, best_val=41.4892
+2026-05-19 04:57:23,562 INFO [ablation_d_seed42] Epoch 40: train_rmse=29.8053, val_rmse=46.0457, best_val=41.1128
+2026-05-19 04:58:09,629 INFO [ablation_d_seed42] Epoch 50: train_rmse=29.9781, val_rmse=47.4217, best_val=41.1128
+2026-05-19 04:58:46,223 INFO [ablation_d_seed42] Epoch 60: train_rmse=25.3920, val_rmse=42.3316, best_val=41.1128
+2026-05-19 04:58:50,935 INFO [ablation_d_seed42] Early stopping at epoch 61, best epoch=31
+2026-05-19 04:58:52,110 INFO [ablation_d_seed42] Seed=42: test_rmse=53.0765, train_rmse=30.2652, val_rmse=41.1128, gap=-22.8114
+2026-05-19 04:58:57,297 INFO [ablation_d_seed71] Epoch 1: train_rmse=84.0617, val_rmse=109.3709, best_val=109.3709
+2026-05-19 04:59:33,065 INFO [ablation_d_seed71] Epoch 10: train_rmse=44.3891, val_rmse=51.8388, best_val=40.3550
+2026-05-19 05:00:09,876 INFO [ablation_d_seed71] Epoch 20: train_rmse=34.8356, val_rmse=43.3624, best_val=40.3550
+2026-05-19 05:00:42,234 INFO [ablation_d_seed71] Epoch 30: train_rmse=32.3314, val_rmse=49.0707, best_val=40.3550
+2026-05-19 05:01:25,172 INFO [ablation_d_seed71] Epoch 40: train_rmse=28.6681, val_rmse=41.7703, best_val=39.9330
+2026-05-19 05:02:03,459 INFO [ablation_d_seed71] Epoch 50: train_rmse=27.2091, val_rmse=41.5190, best_val=39.9330
+2026-05-19 05:02:36,809 INFO [ablation_d_seed71] Epoch 60: train_rmse=25.9944, val_rmse=41.6121, best_val=39.7348
+2026-05-19 05:03:10,450 INFO [ablation_d_seed71] Epoch 70: train_rmse=24.4554, val_rmse=40.4323, best_val=39.7348
+2026-05-19 05:03:45,474 INFO [ablation_d_seed71] Epoch 80: train_rmse=25.7124, val_rmse=44.2569, best_val=39.7348
+2026-05-19 05:04:33,094 INFO [ablation_d_seed71] Epoch 90: train_rmse=23.2029, val_rmse=40.5522, best_val=38.0564
+2026-05-19 05:05:18,142 INFO [ablation_d_seed71] Epoch 100: train_rmse=21.5401, val_rmse=40.5378, best_val=37.8340
+2026-05-19 05:06:02,970 INFO [ablation_d_seed71] Epoch 110: train_rmse=21.2799, val_rmse=41.3043, best_val=37.8340
+2026-05-19 05:06:50,363 INFO [ablation_d_seed71] Epoch 120: train_rmse=21.3306, val_rmse=41.0658, best_val=37.8340
+2026-05-19 05:07:28,017 INFO [ablation_d_seed71] Early stopping at epoch 128, best epoch=98
+2026-05-19 05:07:29,207 INFO [ablation_d_seed71] Seed=71: test_rmse=53.9941, train_rmse=21.6983, val_rmse=37.8340, gap=-32.2958
+2026-05-19 05:07:34,585 INFO [ablation_d_seed123] Epoch 1: train_rmse=73.3768, val_rmse=96.9031, best_val=96.9031
+2026-05-19 05:08:16,554 INFO [ablation_d_seed123] Epoch 10: train_rmse=38.7042, val_rmse=43.1171, best_val=43.1171
+2026-05-19 05:08:56,058 INFO [ablation_d_seed123] Epoch 20: train_rmse=35.1737, val_rmse=45.2871, best_val=41.8803
+2026-05-19 05:09:42,266 INFO [ablation_d_seed123] Epoch 30: train_rmse=30.2709, val_rmse=41.0485, best_val=40.2246
+2026-05-19 05:10:30,030 INFO [ablation_d_seed123] Epoch 40: train_rmse=29.1698, val_rmse=41.9042, best_val=40.0055
+2026-05-19 05:11:15,229 INFO [ablation_d_seed123] Epoch 50: train_rmse=27.9688, val_rmse=42.8419, best_val=39.1891
+2026-05-19 05:11:48,745 INFO [ablation_d_seed123] Epoch 60: train_rmse=27.8317, val_rmse=41.9016, best_val=39.1891
+2026-05-19 05:12:29,300 INFO [ablation_d_seed123] Epoch 70: train_rmse=25.6257, val_rmse=42.1744, best_val=39.1891
+2026-05-19 05:12:37,740 INFO [ablation_d_seed123] Early stopping at epoch 72, best epoch=42
+2026-05-19 05:12:38,927 INFO [ablation_d_seed123] Seed=123: test_rmse=53.5271, train_rmse=28.1328, val_rmse=39.1891, gap=-25.3943
+2026-05-19 05:12:38,928 INFO Results saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/results_ablation_d.json
+2026-05-19 05:12:38,928 INFO 
+============================================================
+2026-05-19 05:12:38,928 INFO ABLATION (e): PCFT with Both Encoders Frozen (only head trainable)
+2026-05-19 05:12:38,928 INFO ============================================================
+2026-05-19 05:12:42,071 INFO [ablation_e_seed42] Epoch 1: train_rmse=66.1076, val_rmse=90.8134, best_val=90.8134
+2026-05-19 05:13:04,160 INFO [ablation_e_seed42] Epoch 10: train_rmse=47.3312, val_rmse=42.9390, best_val=42.9390
+2026-05-19 05:13:30,197 INFO [ablation_e_seed42] Epoch 20: train_rmse=45.1649, val_rmse=40.0970, best_val=39.8703
+2026-05-19 05:13:59,506 INFO [ablation_e_seed42] Epoch 30: train_rmse=43.5856, val_rmse=39.2018, best_val=38.5935
+2026-05-19 05:14:28,311 INFO [ablation_e_seed42] Epoch 40: train_rmse=42.6464, val_rmse=39.0919, best_val=38.0717
+2026-05-19 05:14:53,006 INFO [ablation_e_seed42] Epoch 50: train_rmse=41.9251, val_rmse=38.7824, best_val=38.0717
+2026-05-19 05:15:18,119 INFO [ablation_e_seed42] Epoch 60: train_rmse=41.3945, val_rmse=37.8117, best_val=37.5304
+2026-05-19 05:15:43,046 INFO [ablation_e_seed42] Epoch 70: train_rmse=41.1939, val_rmse=38.4460, best_val=37.4897
+2026-05-19 05:16:07,878 INFO [ablation_e_seed42] Epoch 80: train_rmse=40.7034, val_rmse=40.2032, best_val=37.1643
+2026-05-19 05:16:32,770 INFO [ablation_e_seed42] Epoch 90: train_rmse=39.0672, val_rmse=38.1400, best_val=36.9979
+2026-05-19 05:16:57,684 INFO [ablation_e_seed42] Epoch 100: train_rmse=39.8244, val_rmse=41.5447, best_val=36.9979
+2026-05-19 05:17:23,387 INFO [ablation_e_seed42] Epoch 110: train_rmse=38.4622, val_rmse=39.0507, best_val=36.8882
+2026-05-19 05:17:52,187 INFO [ablation_e_seed42] Epoch 120: train_rmse=37.1372, val_rmse=36.7440, best_val=36.7440
+2026-05-19 05:18:19,852 INFO [ablation_e_seed42] Epoch 130: train_rmse=37.7750, val_rmse=39.4712, best_val=36.7440
+2026-05-19 05:18:48,024 INFO [ablation_e_seed42] Epoch 140: train_rmse=36.3029, val_rmse=38.1040, best_val=36.7440
+2026-05-19 05:19:13,012 INFO [ablation_e_seed42] Epoch 150: train_rmse=37.7405, val_rmse=40.6610, best_val=36.7440
+2026-05-19 05:19:13,012 INFO [ablation_e_seed42] Early stopping at epoch 150, best epoch=120
+2026-05-19 05:19:14,356 INFO [ablation_e_seed42] Seed=42: test_rmse=52.4403, train_rmse=37.1372, val_rmse=36.7440, gap=-15.3032
+2026-05-19 05:19:17,261 INFO [ablation_e_seed71] Epoch 1: train_rmse=67.0522, val_rmse=86.6717, best_val=86.6717
+2026-05-19 05:19:41,263 INFO [ablation_e_seed71] Epoch 10: train_rmse=47.8596, val_rmse=45.8205, best_val=43.3744
+2026-05-19 05:20:09,089 INFO [ablation_e_seed71] Epoch 20: train_rmse=45.2460, val_rmse=39.7653, best_val=39.6989
+2026-05-19 05:20:34,200 INFO [ablation_e_seed71] Epoch 30: train_rmse=43.8731, val_rmse=41.9605, best_val=39.0707
+2026-05-19 05:20:59,162 INFO [ablation_e_seed71] Epoch 40: train_rmse=42.4648, val_rmse=39.1834, best_val=38.4343
+2026-05-19 05:21:24,051 INFO [ablation_e_seed71] Epoch 50: train_rmse=45.7983, val_rmse=46.4980, best_val=37.9202
+2026-05-19 05:21:48,931 INFO [ablation_e_seed71] Epoch 60: train_rmse=41.8550, val_rmse=44.0658, best_val=37.4495
+2026-05-19 05:22:13,813 INFO [ablation_e_seed71] Epoch 70: train_rmse=40.7039, val_rmse=40.2662, best_val=37.4495
+2026-05-19 05:22:38,408 INFO [ablation_e_seed71] Epoch 80: train_rmse=41.0697, val_rmse=43.9240, best_val=37.4495
+2026-05-19 05:22:50,568 INFO [ablation_e_seed71] Early stopping at epoch 85, best epoch=55
+2026-05-19 05:22:51,871 INFO [ablation_e_seed71] Seed=71: test_rmse=55.9020, train_rmse=42.2809, val_rmse=37.4495, gap=-13.6211
+2026-05-19 05:22:54,673 INFO [ablation_e_seed123] Epoch 1: train_rmse=66.2131, val_rmse=87.3162, best_val=87.3162
+2026-05-19 05:23:16,716 INFO [ablation_e_seed123] Epoch 10: train_rmse=47.4819, val_rmse=42.6297, best_val=42.6297
+2026-05-19 05:23:45,922 INFO [ablation_e_seed123] Epoch 20: train_rmse=45.8937, val_rmse=39.2935, best_val=39.2935
+2026-05-19 05:24:11,553 INFO [ablation_e_seed123] Epoch 30: train_rmse=44.0771, val_rmse=40.2525, best_val=38.3902
+2026-05-19 05:24:36,414 INFO [ablation_e_seed123] Epoch 40: train_rmse=42.9822, val_rmse=38.6683, best_val=37.8617
+2026-05-19 05:25:03,285 INFO [ablation_e_seed123] Epoch 50: train_rmse=42.1327, val_rmse=41.1035, best_val=37.2777
+2026-05-19 05:25:29,383 INFO [ablation_e_seed123] Epoch 60: train_rmse=41.2517, val_rmse=37.2333, best_val=37.1665
+2026-05-19 05:25:56,187 INFO [ablation_e_seed123] Epoch 70: train_rmse=41.7958, val_rmse=40.3158, best_val=37.1665
+2026-05-19 05:26:24,988 INFO [ablation_e_seed123] Epoch 80: train_rmse=40.3686, val_rmse=38.8675, best_val=37.1665
+2026-05-19 05:26:41,132 INFO [ablation_e_seed123] Early stopping at epoch 86, best epoch=56
+2026-05-19 05:26:42,485 INFO [ablation_e_seed123] Seed=123: test_rmse=53.7213, train_rmse=41.1599, val_rmse=37.1665, gap=-12.5614
+2026-05-19 05:26:42,486 INFO Results saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/results_ablation_e.json
+2026-05-19 05:26:42,486 INFO 
+============================================================
+2026-05-19 05:26:42,486 INFO PHASE 5: Diagnostic Analyses
+2026-05-19 05:26:42,486 INFO ============================================================
+2026-05-19 05:26:42,486 INFO Diagnostic: h_pre quality analysis...
+2026-05-19 05:26:42,506 INFO   h_pre cos_sim: mean=0.9633, std=0.0417, min=0.7764, max=1.0000
+2026-05-19 05:26:43,075 INFO Diagnostic: h_task vs h_pre divergence tracking...
+2026-05-19 05:26:43,088 INFO   Epoch 0: cos_sim(h_task, h_pre) = 0.5795
+2026-05-19 05:27:01,699 INFO   Epoch 5: cos_sim(h_task, h_pre) = 0.5719
+2026-05-19 05:27:20,621 INFO   Epoch 10: cos_sim(h_task, h_pre) = 0.5786
+2026-05-19 05:27:38,802 INFO   Epoch 15: cos_sim(h_task, h_pre) = 0.5693
+2026-05-19 05:27:57,488 INFO   Epoch 20: cos_sim(h_task, h_pre) = 0.5575
+2026-05-19 05:27:57,489 INFO Diagnostic: Prediction head weight analysis...
+2026-05-19 05:27:57,496 INFO   ||W_task||=20.5653, ||W_pre||=13.3880, ratio=0.6510
+2026-05-19 05:27:57,497 INFO Generating summary report...
+2026-05-19 05:27:57,767 INFO 
+================================================================================
+PCFT Experiment Summary Report
+Day 4 Experiment 1: Prompt-Conditioned Fine-Tuning
+================================================================================
+
+ABLATION RESULTS (Test RMSE, mean ± std across 3 seeds)
+--------------------------------------------------------------------------------
+Ablation                                         Test RMSE   Train RMSE        Gap
+--------------------------------------------------------------------------------
+(a) GIN+Trimer Baseline (no pretrain)         52.46±0.20 22.51±4.61 -29.95±4.79
+(b) PCFT Random-Init Encoder P                53.34±0.36 43.47±5.86 -9.87±5.80
+(c) PCFT PA Pre-trained Encoder P [PRIMARY]   52.72±0.76 34.13±2.34 -18.59±3.08
+(d) Standard Fine-tuning (no prompt)          53.53±0.37 26.70±3.64 -26.83±4.00
+(e) PCFT Both Encoders Frozen                 54.02±1.43 40.19±2.21 -13.83±1.13
+--------------------------------------------------------------------------------
+
+STATISTICAL SIGNIFICANCE (Paired t-test on test RMSE)
+------------------------------------------------------------
+  c_vs_a: t=0.5511, p=0.6369, significant=NO
+  c_vs_d: t=-1.1993, p=0.3532, significant=NO
+  b_vs_a: t=3.1136, p=0.0895, significant=NO
+  c_vs_b: t=-0.8192, p=0.4987, significant=NO
+  c_vs_e: t=-1.0501, p=0.4038, significant=NO
+
+DIAGNOSTIC: h_pre QUALITY
+------------------------------------------------------------
+  Mean pairwise cosine similarity: 0.9633
+  Std pairwise cosine similarity:  0.0417
+  Min cosine similarity:           0.7764
+  Max cosine similarity:           1.0000
+  % pairs with cos_sim > 0.95:     72.78%
+  % pairs with cos_sim > 0.90:     88.57%
+  % pairs with cos_sim < 0.50:     0.00%
+
+DIAGNOSTIC: h_task vs h_pre DIVERGENCE
+------------------------------------------------------------
+  epoch_0: mean_cos_sim=0.5795, std=0.0278
+  epoch_1: mean_cos_sim=0.5754, std=0.0252
+  epoch_10: mean_cos_sim=0.5786, std=0.0349
+  epoch_11: mean_cos_sim=0.5717, std=0.0301
+  epoch_12: mean_cos_sim=0.5721, std=0.0219
+  epoch_13: mean_cos_sim=0.5757, std=0.0363
+  epoch_14: mean_cos_sim=0.5614, std=0.0445
+  epoch_15: mean_cos_sim=0.5693, std=0.0364
+  epoch_16: mean_cos_sim=0.5679, std=0.0385
+  epoch_17: mean_cos_sim=0.5682, std=0.0319
+  epoch_18: mean_cos_sim=0.5672, std=0.0422
+  epoch_19: mean_cos_sim=0.5578, std=0.0307
+  epoch_2: mean_cos_sim=0.5793, std=0.0201
+  epoch_20: mean_cos_sim=0.5575, std=0.0362
+  epoch_3: mean_cos_sim=0.5824, std=0.0311
+  epoch_4: mean_cos_sim=0.5722, std=0.0431
+  epoch_5: mean_cos_sim=0.5719, std=0.0491
+  epoch_6: mean_cos_sim=0.5775, std=0.0350
+  epoch_7: mean_cos_sim=0.5648, std=0.0574
+  epoch_8: mean_cos_sim=0.5654, std=0.0292
+  epoch_9: mean_cos_sim=0.5738, std=0.0444
+
+DIAGNOSTIC: PREDICTION HEAD WEIGHT ANALYSIS
+------------------------------------------------------------
+  ||W_task|| = 20.5653
+  ||W_pre||  = 13.3880
+  Ratio (pre/task) = 0.6510
+  Mean |W_task| = 0.037096
+  Mean |W_pre|  = 0.029099
+
+CONCLUSIONS
+------------------------------------------------------------
+1. PCFT (c) test RMSE: 52.72
+   Baseline (a) test RMSE: 52.46
+   -> PCFT DOES NOT improve over baseline (diff = 0.26)
+   -> H4a NOT SUPPORTED: Prompt mechanism alone insufficient
+   Standard FT (d) test RMSE: 53.53
+   -> PCFT IMPROVES over standard FT by 0.81 RMSE
+   Random-Init PCFT (b) test RMSE: 53.34
+   -> PA pre-training helps: 0.62 improvement over random prompt
+   -> Dual-encoder structure alone does NOT help (b vs a: 0.88)
+
+================================================================================
+2026-05-19 05:27:57,767 INFO Summary report saved to /home/home_public/aisci/AIscientist/src/4_04_pgft/summary_report.txt
+2026-05-19 05:27:57,767 INFO 
+Experiment complete!

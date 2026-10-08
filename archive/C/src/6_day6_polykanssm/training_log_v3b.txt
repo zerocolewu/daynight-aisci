@@ -1,0 +1,171 @@
+Using device: cuda
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+Sample graph: nodes=3, edges=6
+Node features: 21
+Edge features: 23
+
+Edge statistics (first 100 graphs):
+  Avg covalent edges: 25.9
+  Avg non-covalent edges: 62.4
+
+############################################################
+# Seed 1/5: 42
+############################################################
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5019, val=717, test=1434
+Target mean: 141.71, std: 112.37
+Node dim: 21, Edge dim: 23
+Model parameters: 2,491,915
+Epoch   1 | Train RMSE: 68.7660 | Val RMSE: 56.2687 | Val MAE: 43.2441 | Val R2: 0.7359 | LR: 0.000500 | Best: 56.2687 @ 1
+Epoch  20 | Train RMSE: 45.1350 | Val RMSE: 48.7063 | Val MAE: 36.7558 | Val R2: 0.8021 | LR: 0.000500 | Best: 43.7040 @ 19
+Epoch  40 | Train RMSE: 39.0773 | Val RMSE: 46.8255 | Val MAE: 34.8884 | Val R2: 0.8171 | LR: 0.000500 | Best: 40.3828 @ 37
+Epoch  60 | Train RMSE: 35.0953 | Val RMSE: 38.9436 | Val MAE: 27.0252 | Val R2: 0.8735 | LR: 0.000500 | Best: 38.9436 @ 60
+Epoch  80 | Train RMSE: 27.8683 | Val RMSE: 44.0558 | Val MAE: 31.7479 | Val R2: 0.8381 | LR: 0.000250 | Best: 37.8218 @ 78
+Epoch 100 | Train RMSE: 23.6188 | Val RMSE: 39.5723 | Val MAE: 27.1166 | Val R2: 0.8694 | LR: 0.000125 | Best: 37.8218 @ 78
+Early stopping at epoch 118
+
+Best val RMSE: 37.8218 at epoch 78
+
+--- Seed 42 Final Results ---
+Train RMSE: 27.8323
+Val RMSE:   37.8218
+Test RMSE:  39.4730
+Test MAE:   27.1505
+Test R2:    0.8773
+
+############################################################
+# Seed 2/5: 123
+############################################################
+
+============================================================
+Training seed 123
+============================================================
+Split (seed=123): train=5019, val=717, test=1434
+Target mean: 141.72, std: 112.49
+Node dim: 21, Edge dim: 23
+Model parameters: 2,491,915
+Epoch   1 | Train RMSE: 70.9057 | Val RMSE: 59.7029 | Val MAE: 45.3489 | Val R2: 0.7199 | LR: 0.000500 | Best: 59.7029 @ 1
+Epoch  20 | Train RMSE: 44.9167 | Val RMSE: 48.1617 | Val MAE: 34.1906 | Val R2: 0.8177 | LR: 0.000500 | Best: 46.1938 @ 18
+Epoch  40 | Train RMSE: 39.9694 | Val RMSE: 44.4199 | Val MAE: 31.4087 | Val R2: 0.8449 | LR: 0.000500 | Best: 43.5573 @ 34
+Epoch  60 | Train RMSE: 35.8440 | Val RMSE: 45.5204 | Val MAE: 31.8039 | Val R2: 0.8372 | LR: 0.000500 | Best: 41.9047 @ 46
+Epoch  80 | Train RMSE: 32.9534 | Val RMSE: 41.3572 | Val MAE: 27.9450 | Val R2: 0.8656 | LR: 0.000500 | Best: 40.1958 @ 76
+Epoch 100 | Train RMSE: 26.3251 | Val RMSE: 42.0021 | Val MAE: 28.8772 | Val R2: 0.8614 | LR: 0.000250 | Best: 40.1958 @ 76
+Epoch 120 | Train RMSE: 22.2703 | Val RMSE: 43.4044 | Val MAE: 29.9941 | Val R2: 0.8519 | LR: 0.000125 | Best: 40.1940 @ 104
+Epoch 140 | Train RMSE: 20.1624 | Val RMSE: 44.3731 | Val MAE: 30.8661 | Val R2: 0.8453 | LR: 0.000031 | Best: 40.1940 @ 104
+Early stopping at epoch 144
+
+Best val RMSE: 40.1940 at epoch 104
+
+--- Seed 123 Final Results ---
+Train RMSE: 27.6826
+Val RMSE:   40.1940
+Test RMSE:  40.0104
+Test MAE:   26.9165
+Test R2:    0.8691
+
+############################################################
+# Seed 3/5: 456
+############################################################
+
+============================================================
+Training seed 456
+============================================================
+Split (seed=456): train=5019, val=717, test=1434
+Target mean: 142.52, std: 112.63
+Node dim: 21, Edge dim: 23
+Model parameters: 2,491,915
+Epoch   1 | Train RMSE: 70.5843 | Val RMSE: 70.8904 | Val MAE: 54.9462 | Val R2: 0.5939 | LR: 0.000500 | Best: 70.8904 @ 1
+Epoch  20 | Train RMSE: 45.5465 | Val RMSE: 48.3165 | Val MAE: 34.5441 | Val R2: 0.8114 | LR: 0.000500 | Best: 47.3479 @ 15
+Epoch  40 | Train RMSE: 38.9067 | Val RMSE: 45.0074 | Val MAE: 32.2140 | Val R2: 0.8363 | LR: 0.000500 | Best: 43.5762 @ 26
+Epoch  60 | Train RMSE: 33.3066 | Val RMSE: 42.4381 | Val MAE: 29.4008 | Val R2: 0.8545 | LR: 0.000250 | Best: 41.5222 @ 43
+Epoch  80 | Train RMSE: 27.6750 | Val RMSE: 41.1700 | Val MAE: 27.4541 | Val R2: 0.8630 | LR: 0.000125 | Best: 39.4640 @ 61
+Epoch 100 | Train RMSE: 24.9912 | Val RMSE: 42.7549 | Val MAE: 29.3262 | Val R2: 0.8523 | LR: 0.000063 | Best: 39.4640 @ 61
+Early stopping at epoch 101
+
+Best val RMSE: 39.4640 at epoch 61
+
+--- Seed 456 Final Results ---
+Train RMSE: 30.1698
+Val RMSE:   39.4640
+Test RMSE:  37.7707
+Test MAE:   26.3881
+Test R2:    0.8839
+
+############################################################
+# Seed 4/5: 789
+############################################################
+
+============================================================
+Training seed 789
+============================================================
+Split (seed=789): train=5019, val=717, test=1434
+Target mean: 142.30, std: 112.01
+Node dim: 21, Edge dim: 23
+Model parameters: 2,491,915
+Epoch   1 | Train RMSE: 70.5365 | Val RMSE: 61.1203 | Val MAE: 47.1033 | Val R2: 0.7025 | LR: 0.000500 | Best: 61.1203 @ 1
+Epoch  20 | Train RMSE: 44.3883 | Val RMSE: 53.2084 | Val MAE: 37.1103 | Val R2: 0.7746 | LR: 0.000500 | Best: 52.1929 @ 13
+Epoch  40 | Train RMSE: 38.1493 | Val RMSE: 48.4966 | Val MAE: 32.3431 | Val R2: 0.8127 | LR: 0.000500 | Best: 46.5859 @ 34
+Epoch  60 | Train RMSE: 34.4500 | Val RMSE: 46.2933 | Val MAE: 31.3731 | Val R2: 0.8293 | LR: 0.000500 | Best: 44.9077 @ 59
+Epoch  80 | Train RMSE: 30.8538 | Val RMSE: 45.4319 | Val MAE: 30.5633 | Val R2: 0.8356 | LR: 0.000500 | Best: 43.8462 @ 73
+Epoch 100 | Train RMSE: 24.9687 | Val RMSE: 43.5470 | Val MAE: 28.7533 | Val R2: 0.8490 | LR: 0.000250 | Best: 41.5119 @ 96
+Epoch 120 | Train RMSE: 21.9115 | Val RMSE: 43.3626 | Val MAE: 29.3440 | Val R2: 0.8503 | LR: 0.000125 | Best: 41.5119 @ 96
+Early stopping at epoch 136
+
+Best val RMSE: 41.5119 at epoch 96
+
+--- Seed 789 Final Results ---
+Train RMSE: 24.8117
+Val RMSE:   41.5119
+Test RMSE:  41.1433
+Test MAE:   27.6023
+Test R2:    0.8665
+
+############################################################
+# Seed 5/5: 2024
+############################################################
+
+============================================================
+Training seed 2024
+============================================================
+Split (seed=2024): train=5019, val=717, test=1434
+Target mean: 141.32, std: 112.44
+Node dim: 21, Edge dim: 23
+Model parameters: 2,491,915
+Epoch   1 | Train RMSE: 72.3621 | Val RMSE: 65.9834 | Val MAE: 49.7888 | Val R2: 0.6333 | LR: 0.000500 | Best: 65.9834 @ 1
+Epoch  20 | Train RMSE: 44.8131 | Val RMSE: 50.8718 | Val MAE: 37.3944 | Val R2: 0.7820 | LR: 0.000500 | Best: 46.5223 @ 19
+Epoch  40 | Train RMSE: 39.7625 | Val RMSE: 43.2092 | Val MAE: 30.1823 | Val R2: 0.8427 | LR: 0.000500 | Best: 43.2092 @ 40
+Epoch  60 | Train RMSE: 33.2279 | Val RMSE: 43.8000 | Val MAE: 30.2405 | Val R2: 0.8384 | LR: 0.000250 | Best: 43.2092 @ 40
+Epoch  80 | Train RMSE: 28.2215 | Val RMSE: 47.8313 | Val MAE: 33.0886 | Val R2: 0.8073 | LR: 0.000125 | Best: 43.2092 @ 40
+Early stopping at epoch 80
+
+Best val RMSE: 43.2092 at epoch 40
+
+--- Seed 2024 Final Results ---
+Train RMSE: 35.6248
+Val RMSE:   43.2092
+Test RMSE:  41.3865
+Test MAE:   29.1113
+Test R2:    0.8650
+
+============================================================
+AGGREGATE RESULTS (5 seeds)
+============================================================
+Test RMSE: 39.9568 +/- 1.3014
+Test MAE:  27.4337 +/- 0.9256
+Test R2:   0.8724 +/- 0.0072
+Train RMSE: 29.2242 +/- 3.6234
+Val RMSE: 40.4402 +/- 1.8268
+Train-Val gap: 11.2160
+Best single seed test RMSE: 37.7707
+SOTA target: 30.8
+
+Results saved to /home/home_public/aisci/AIscientist/src/6_day6_polykanssm/results.json
+Diagnostics saved to /home/home_public/aisci/AIscientist/src/6_day6_polykanssm/diagnostics/

@@ -1,0 +1,93 @@
+{
+  "test_rmse": 53.21927526531741,
+  "test_mae": 38.50599670410156,
+  "train_rmse": 38.7788891807611,
+  "val_rmse": 40.0368482619449,
+  "overfitting_gap": -14.440386084556309,
+  "best_epoch": 20,
+  "best_val_rmse": 40.03684521299568,
+  "total_epochs": 50,
+  "training_time_seconds": 13085.599999999999,
+  "model_params": {
+    "total": 892073,
+    "mpnn": 672005,
+    "transformer": 168160,
+    "spse": 165,
+    "other": 51743
+  },
+  "multi_seed": {
+    "seeds": [
+      71,
+      42,
+      123
+    ],
+    "test_rmses": [
+      53.21927526531741,
+      55.03796186355151,
+      54.97439478549309
+    ],
+    "test_maes": [
+      38.50599670410156,
+      39.68617248535156,
+      39.30775451660156
+    ],
+    "mean_test_rmse": 54.41054397145401,
+    "std_test_rmse": 0.8427538355567771,
+    "mean_test_mae": 39.16664123535156,
+    "best_seed": 71,
+    "per_seed_results": [
+      {
+        "seed": 71,
+        "test_rmse": 53.21927526531741,
+        "test_mae": 38.50599670410156,
+        "train_rmse": 38.7788891807611,
+        "val_rmse": 40.0368482619449,
+        "overfitting_gap": -14.440386084556309,
+        "best_epoch": 20,
+        "best_val_rmse": 40.03684521299568,
+        "total_epochs": 50,
+        "training_time_seconds": 3335.4
+      },
+      {
+        "seed": 42,
+        "test_rmse": 55.03796186355151,
+        "test_mae": 39.68617248535156,
+        "train_rmse": 34.26306883135525,
+        "val_rmse": 42.022308237987566,
+        "overfitting_gap": -20.77489303219626,
+        "best_epoch": 26,
+        "best_val_rmse": 42.022308237987566,
+        "total_epochs": 56,
+        "training_time_seconds": 3655.0
+      },
+      {
+        "seed": 123,
+        "test_rmse": 54.97439478549309,
+        "test_mae": 39.30775451660156,
+        "train_rmse": 28.83066871399437,
+        "val_rmse": 37.67442021420585,
+        "overfitting_gap": -26.14372607149872,
+        "best_epoch": 60,
+        "best_val_rmse": 37.67442183427471,
+        "total_epochs": 90,
+        "training_time_seconds": 6095.2
+      }
+    ]
+  },
+  "config": {
+    "hidden_dim": 256,
+    "transformer_dim": 32,
+    "n_heads": 4,
+    "n_blocks": 5,
+    "spse_dim": 32,
+    "batch_size": 64,
+    "lr": 0.0005,
+    "weight_decay": 1e-05,
+    "mask_ratio": 0.1,
+    "denoise_coeff": 0.1,
+    "max_epochs": 300,
+    "patience": 30,
+    "scheduler": "CosineAnnealingLR",
+    "grad_clip": 1.0
+  }
+}

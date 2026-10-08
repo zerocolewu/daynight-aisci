@@ -1,0 +1,134 @@
+Using device: cuda
+
+================================================================================
+POLYMER Tg PREDICTION PIPELINE
+GraphMAE pretraining on PI1M + Fine-tuning on Tg
+================================================================================
+
+================================================================================
+PRETRAINING PHASE - GraphMAE on PI1M
+================================================================================
+Loading pretraining data from /home/home_public/aisci/AIscientist/src/alldataset/PI1M.csv...
+Processing 100000 SMILES... OK (99298 valid, 702 failed)
+Pretraining dataset: 100000 graphs, 99298 valid
+Data loading took 83.8s
+Model params: 718,823
+Epoch 1/30, Loss: 0.0147, Best: 0.0147, LR: 0.000997
+Epoch 2/30, Loss: 0.0004, Best: 0.0004, LR: 0.000989
+Epoch 3/30, Loss: 0.0004, Best: 0.0004, LR: 0.000976
+Epoch 4/30, Loss: 0.0004, Best: 0.0004, LR: 0.000957
+Epoch 5/30, Loss: 0.0003, Best: 0.0003, LR: 0.000933
+Epoch 6/30, Loss: 0.0003, Best: 0.0003, LR: 0.000905
+Epoch 7/30, Loss: 0.0003, Best: 0.0003, LR: 0.000872
+Epoch 8/30, Loss: 0.0003, Best: 0.0003, LR: 0.000835
+Epoch 9/30, Loss: 0.0003, Best: 0.0003, LR: 0.000794
+Epoch 10/30, Loss: 0.0003, Best: 0.0003, LR: 0.000750
+Epoch 11/30, Loss: 0.0003, Best: 0.0003, LR: 0.000703
+Epoch 12/30, Loss: 0.0003, Best: 0.0003, LR: 0.000655
+Epoch 13/30, Loss: 0.0003, Best: 0.0003, LR: 0.000604
+Epoch 14/30, Loss: 0.0003, Best: 0.0003, LR: 0.000552
+Epoch 15/30, Loss: 0.0003, Best: 0.0003, LR: 0.000500
+Epoch 16/30, Loss: 0.0003, Best: 0.0003, LR: 0.000448
+Epoch 17/30, Loss: 0.0003, Best: 0.0003, LR: 0.000396
+Epoch 18/30, Loss: 0.0003, Best: 0.0003, LR: 0.000345
+Epoch 19/30, Loss: 0.0003, Best: 0.0003, LR: 0.000297
+Epoch 20/30, Loss: 0.0003, Best: 0.0003, LR: 0.000250
+Epoch 21/30, Loss: 0.0003, Best: 0.0003, LR: 0.000206
+Epoch 22/30, Loss: 0.0003, Best: 0.0003, LR: 0.000165
+Epoch 23/30, Loss: 0.0003, Best: 0.0003, LR: 0.000128
+Epoch 24/30, Loss: 0.0003, Best: 0.0003, LR: 0.000095
+Epoch 25/30, Loss: 0.0003, Best: 0.0003, LR: 0.000067
+Epoch 26/30, Loss: 0.0003, Best: 0.0003, LR: 0.000043
+Epoch 27/30, Loss: 0.0003, Best: 0.0003, LR: 0.000024
+Epoch 28/30, Loss: 0.0003, Best: 0.0003, LR: 0.000011
+Epoch 29/30, Loss: 0.0003, Best: 0.0003, LR: 0.000003
+Epoch 30/30, Loss: 0.0003, Best: 0.0003, LR: 0.000000
+
+Saved pretrained encoder: /home/home_public/aisci/AIscientist/src/5_day5_pretraining/pretrain_model.pt
+Pretraining took 488.6s
+
+================================================================================
+FINE-TUNING PHASE - Tg Prediction
+================================================================================
+Loading fine-tuning data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Split: Train=5162, Val=573, Test=1435
+Processing 5162 SMILES... OK (5162 valid, 0 failed)
+Processing 573 SMILES... OK (573 valid, 0 failed)
+Processing 1435 SMILES... OK (1435 valid, 0 failed)
+Data loading took 7.4s
+
+Loading pretrained encoder from /home/home_public/aisci/AIscientist/src/5_day5_pretraining/pretrain_model.pt...
+Loaded pretrained encoder!
+Model params: 1,370,373
+Epoch 1/500, Train RMSE: 169.8951, Val RMSE: 142.1987, LR: 0.000300
+Epoch 2/500, Train RMSE: 109.9444, Val RMSE: 59.1464, LR: 0.000299
+Epoch 3/500, Train RMSE: 58.8864, Val RMSE: 56.4482, LR: 0.000297
+Epoch 5/500, Train RMSE: 51.9447, Val RMSE: 47.3290, LR: 0.000293
+Epoch 7/500, Train RMSE: 48.6086, Val RMSE: 47.0237, LR: 0.000286
+Epoch 8/500, Train RMSE: 49.1292, Val RMSE: 44.1838, LR: 0.000281
+Epoch 10/500, Train RMSE: 46.6042, Val RMSE: 43.0836, LR: 0.000271
+Epoch 15/500, Train RMSE: 43.7514, Val RMSE: 41.8448, LR: 0.000238
+Epoch 18/500, Train RMSE: 42.4281, Val RMSE: 41.3011, LR: 0.000214
+Epoch 20/500, Train RMSE: 41.6082, Val RMSE: 42.0572, LR: 0.000196
+Epoch 21/500, Train RMSE: 41.4875, Val RMSE: 41.1675, LR: 0.000187
+Epoch 22/500, Train RMSE: 40.6931, Val RMSE: 40.9299, LR: 0.000178
+Epoch 23/500, Train RMSE: 40.5593, Val RMSE: 40.2214, LR: 0.000169
+Epoch 24/500, Train RMSE: 39.1235, Val RMSE: 40.2174, LR: 0.000159
+Epoch 25/500, Train RMSE: 40.1486, Val RMSE: 39.1888, LR: 0.000150
+Epoch 27/500, Train RMSE: 38.1448, Val RMSE: 38.8405, LR: 0.000131
+Epoch 29/500, Train RMSE: 37.7272, Val RMSE: 38.3135, LR: 0.000113
+Epoch 30/500, Train RMSE: 37.6391, Val RMSE: 39.3951, LR: 0.000104
+Epoch 34/500, Train RMSE: 35.8734, Val RMSE: 37.1588, LR: 0.000070
+Epoch 37/500, Train RMSE: 35.2228, Val RMSE: 36.8442, LR: 0.000047
+Epoch 40/500, Train RMSE: 34.4687, Val RMSE: 37.5529, LR: 0.000029
+Epoch 41/500, Train RMSE: 34.2316, Val RMSE: 36.7988, LR: 0.000023
+Epoch 47/500, Train RMSE: 33.6473, Val RMSE: 36.7234, LR: 0.000003
+Epoch 49/500, Train RMSE: 33.1945, Val RMSE: 36.7132, LR: 0.000000
+Epoch 50/500, Train RMSE: 33.4891, Val RMSE: 36.7609, LR: 0.000300
+Epoch 60/500, Train RMSE: 35.9554, Val RMSE: 42.0047, LR: 0.000293
+Epoch 65/500, Train RMSE: 34.7963, Val RMSE: 35.5505, LR: 0.000284
+Epoch 70/500, Train RMSE: 33.1219, Val RMSE: 40.3981, LR: 0.000271
+Epoch 80/500, Train RMSE: 30.9718, Val RMSE: 38.1820, LR: 0.000238
+Epoch 85/500, Train RMSE: 29.9346, Val RMSE: 35.4339, LR: 0.000218
+Epoch 90/500, Train RMSE: 28.8658, Val RMSE: 35.7060, LR: 0.000196
+Epoch 93/500, Train RMSE: 27.4902, Val RMSE: 34.8976, LR: 0.000183
+Epoch 100/500, Train RMSE: 26.7780, Val RMSE: 35.9331, LR: 0.000150
+Epoch 110/500, Train RMSE: 25.3821, Val RMSE: 37.8427, LR: 0.000104
+Epoch 111/500, Train RMSE: 25.0699, Val RMSE: 34.8015, LR: 0.000099
+Epoch 120/500, Train RMSE: 23.7902, Val RMSE: 35.2597, LR: 0.000062
+Epoch 129/500, Train RMSE: 23.0468, Val RMSE: 34.7372, LR: 0.000031
+Epoch 130/500, Train RMSE: 22.6803, Val RMSE: 34.7163, LR: 0.000029
+Epoch 140/500, Train RMSE: 22.3027, Val RMSE: 35.2014, LR: 0.000007
+Epoch 150/500, Train RMSE: 22.1535, Val RMSE: 35.2563, LR: 0.000300
+Epoch 160/500, Train RMSE: 26.1289, Val RMSE: 36.2967, LR: 0.000298
+Epoch 170/500, Train RMSE: 25.8331, Val RMSE: 35.6191, LR: 0.000293
+Epoch 180/500, Train RMSE: 25.5213, Val RMSE: 35.7052, LR: 0.000284
+
+Early stopping at epoch 180
+
+Fine-tuning done! Best Val RMSE: 34.7163
+Fine-tuning took 2547.5s
+
+================================================================================
+EVALUATION PHASE
+================================================================================
+Loading fine-tuning data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Split: Train=5162, Val=573, Test=1435
+Processing 5162 SMILES... OK (5162 valid, 0 failed)
+Processing 573 SMILES... OK (573 valid, 0 failed)
+Processing 1435 SMILES... OK (1435 valid, 0 failed)
+
+Test Set Results:
+  RMSE: 35.6044
+  MAE:  22.9238
+  R2:   0.9016
+
+Results saved to /home/home_public/aisci/AIscientist/src/5_day5_pretraining/results.json
+Training curves saved to /home/home_public/aisci/AIscientist/src/5_day5_pretraining/training_curves.png
+
+Generating t-SNE visualization...
+Loading fine-tuning data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Split: Train=5162, Val=573, Test=1435
+Processing 5162 SMILES... OK (5162 valid, 0 failed)
+Processing 573 SMILES... OK (573 valid, 0 failed)
+Processing 1435 SMILES... OK (1435 valid, 0 failed)

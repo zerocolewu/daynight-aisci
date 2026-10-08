@@ -1,0 +1,47 @@
+=== Independent run: run2 (identical config to run1) ===
+run2  GPU0 pid=496683 (tg, ea) -> logs/run2_gpu0.log
+run2  GPU1 pid=496684 (tm, ip) -> logs/run2_gpu1.log
+run2  GPU0 exit=0  GPU1 exit=0
+=== Independent run: run3 (identical config to run1) ===
+run3  GPU0 pid=3937862 (tg, ea) -> logs/run3_gpu0.log
+run3  GPU1 pid=3937863 (tm, ip) -> logs/run3_gpu1.log
+run3  GPU0 exit=0  GPU1 exit=0
+=== aggregating 3 independent runs ===
+# CPA-GAT (ORIG_BB, atomfeat35) — aggregation over 3 independent runs
+
+Runs: run1, run2, run3
+Final RMSE = mean +/- std over the independent runs of each run's ens_mean RMSE.
+(Each run's ens_mean RMSE is itself the mean over splits of the per-split 3-init ensemble.)
+RMSE in original units.
+
+| dataset | kind | protocol | n_runs | ens_mean RMSE | ens_median RMSE | single RMSE | per-run ens_mean |
+|---|---|---|---|---|---|---|---|
+| tg | single | multi-split x multi-init | 3 | 31.7769 +/- 0.0732 | 31.9412 +/- 0.0230 | 32.8793 +/- 0.0784 | 31.7381, 31.7132, 31.8795 |
+| tm | single | multi-split x multi-init | 3 | 49.6871 +/- 0.1059 | 49.9224 +/- 0.1934 | 51.1651 +/- 0.1413 | 49.6283, 49.8358, 49.5972 |
+| ea | copolymer | given-split x multi-init | 3 | 0.0398 +/- 0.0001 | 0.0399 +/- 0.0001 | 0.0408 +/- 0.0001 | 0.0399, 0.0398, 0.0396 |
+| ip | copolymer | given-split x multi-init | 3 | 0.0294 +/- 0.0000 | 0.0295 +/- 0.0000 | 0.0302 +/- 0.0000 | 0.0294, 0.0294, 0.0294 |
+
+## Per-run detail
+
+**tg**
+- run1: ens_mean 31.7381 | ens_median 31.9737 | single 32.8163
+- run2: ens_mean 31.7132 | ens_median 31.9248 | single 32.8317
+- run3: ens_mean 31.8795 | ens_median 31.9249 | single 32.9898
+
+**tm**
+- run1: ens_mean 49.6283 | ens_median 49.6973 | single 51.0142
+- run2: ens_mean 49.8358 | ens_median 50.1695 | single 51.3541
+- run3: ens_mean 49.5972 | ens_median 49.9004 | single 51.1270
+
+**ea**
+- run1: ens_mean 0.0399 | ens_median 0.0400 | single 0.0408
+- run2: ens_mean 0.0398 | ens_median 0.0399 | single 0.0409
+- run3: ens_mean 0.0396 | ens_median 0.0399 | single 0.0407
+
+**ip**
+- run1: ens_mean 0.0294 | ens_median 0.0295 | single 0.0303
+- run2: ens_mean 0.0294 | ens_median 0.0294 | single 0.0302
+- run3: ens_mean 0.0294 | ens_median 0.0295 | single 0.0302
+
+Wrote /home/home_public/aisci/AIscientist/archive/ablation6archive/src/optimize_atomfeat35/results/AGGREGATE.md and aggregate_runs.json
+=== DONE ===

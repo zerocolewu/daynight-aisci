@@ -1,0 +1,271 @@
+{
+  "base_periodic": {
+    "config": {
+      "hidden_dim": 256,
+      "num_gnn_layers": 6,
+      "dropout": 0.1,
+      "use_periodic_edge": true,
+      "batch_size": 64,
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "max_epochs": 300,
+      "patience": 30,
+      "huber_beta": 10.0,
+      "scheduler": "cosine",
+      "T_0": 30,
+      "T_mult": 2
+    },
+    "best_epoch": 21,
+    "n_params": 978953,
+    "train": {
+      "rmse": 40.8055534362793,
+      "mae": 27.763439178466797,
+      "r2": 0.8667577058076859
+    },
+    "val": {
+      "rmse": 41.08583068847656,
+      "mae": 27.739225387573242,
+      "r2": 0.8639790862798691
+    },
+    "test": {
+      "rmse": 42.76303482055664,
+      "mae": 29.007080078125,
+      "r2": 0.8580480217933655
+    }
+  },
+  "deeper_8layers": {
+    "config": {
+      "hidden_dim": 256,
+      "num_gnn_layers": 8,
+      "dropout": 0.15,
+      "use_periodic_edge": true,
+      "batch_size": 64,
+      "lr": 0.0003,
+      "weight_decay": 0.0001,
+      "max_epochs": 300,
+      "patience": 30,
+      "huber_beta": 10.0,
+      "scheduler": "cosine",
+      "T_0": 30,
+      "T_mult": 2
+    },
+    "best_epoch": 48,
+    "n_params": 1244171,
+    "train": {
+      "rmse": 39.40766143798828,
+      "mae": 26.86888885498047,
+      "r2": 0.875730387866497
+    },
+    "val": {
+      "rmse": 40.05263900756836,
+      "mae": 27.305686950683594,
+      "r2": 0.8707341402769089
+    },
+    "test": {
+      "rmse": 41.92267990112305,
+      "mae": 28.872610092163086,
+      "r2": 0.8635723143815994
+    }
+  },
+  "wide_512": {
+    "config": {
+      "hidden_dim": 512,
+      "num_gnn_layers": 4,
+      "dropout": 0.15,
+      "use_periodic_edge": true,
+      "batch_size": 32,
+      "lr": 0.0003,
+      "weight_decay": 0.0001,
+      "max_epochs": 300,
+      "patience": 30,
+      "huber_beta": 10.0,
+      "scheduler": "cosine",
+      "T_0": 30,
+      "T_mult": 2
+    },
+    "best_epoch": 56,
+    "n_params": 2565639,
+    "train": {
+      "rmse": 35.98623275756836,
+      "mae": 23.31171417236328,
+      "r2": 0.8963721767067909
+    },
+    "val": {
+      "rmse": 39.1394157409668,
+      "mae": 25.518404006958008,
+      "r2": 0.8765616118907928
+    },
+    "test": {
+      "rmse": 39.20537185668945,
+      "mae": 26.21315574645996,
+      "r2": 0.8806848675012589
+    }
+  },
+  "ensemble": {
+    "ensemble_size": 5,
+    "individual_results": [
+      {
+        "seed": 42,
+        "best_epoch": 20,
+        "test_rmse": 41.56708526611328,
+        "test_mae": 28.070905685424805,
+        "test_r2": 0.8658769130706787
+      },
+      {
+        "seed": 142,
+        "best_epoch": 145,
+        "test_rmse": 38.18865203857422,
+        "test_mae": 24.883460998535156,
+        "test_r2": 0.8867930471897125
+      },
+      {
+        "seed": 242,
+        "best_epoch": 86,
+        "test_rmse": 36.91242218017578,
+        "test_mae": 24.64145278930664,
+        "test_r2": 0.8942331671714783
+      },
+      {
+        "seed": 342,
+        "best_epoch": 57,
+        "test_rmse": 39.615814208984375,
+        "test_mae": 26.349390029907227,
+        "test_r2": 0.8781735599040985
+      },
+      {
+        "seed": 442,
+        "best_epoch": 62,
+        "test_rmse": 39.43549346923828,
+        "test_mae": 26.71055030822754,
+        "test_r2": 0.8792800605297089
+      }
+    ],
+    "ensemble": {
+      "rmse": 36.73638153076172,
+      "mae": 24.044384002685547,
+      "r2": 0.8952395915985107
+    }
+  },
+  "analysis_best": {
+    "name": "wide_512",
+    "accuracy_by_Tg_range": [
+      {
+        "range": "0-100",
+        "count": 412,
+        "rmse": 36.87085723876953
+      },
+      {
+        "range": "100-200",
+        "count": 376,
+        "rmse": 41.542423248291016
+      },
+      {
+        "range": "200-300",
+        "count": 373,
+        "rmse": 37.649505615234375
+      },
+      {
+        "range": "300-400",
+        "count": 124,
+        "rmse": 38.16721725463867
+      },
+      {
+        "range": "400-600",
+        "count": 9,
+        "rmse": 71.04198455810547
+      }
+    ],
+    "aromatic": {
+      "rmse": 39.621673583984375,
+      "count": 1230
+    },
+    "non_aromatic": {
+      "rmse": 36.60823440551758,
+      "count": 205
+    },
+    "bias_analysis": [
+      {
+        "quartile": 1,
+        "mean_bias": 8.767227172851562,
+        "rmse": 34.95717239379883
+      },
+      {
+        "quartile": 2,
+        "mean_bias": 7.632907867431641,
+        "rmse": 42.87041473388672
+      },
+      {
+        "quartile": 3,
+        "mean_bias": 7.506726264953613,
+        "rmse": 41.89669418334961
+      },
+      {
+        "quartile": 4,
+        "mean_bias": -6.489762306213379,
+        "rmse": 36.54450225830078
+      }
+    ],
+    "error_Tg_corr": 0.046120406469812074
+  },
+  "analysis_ensemble": {
+    "name": "ensemble",
+    "accuracy_by_Tg_range": [
+      {
+        "range": "0-100",
+        "count": 412,
+        "rmse": 33.807945251464844
+      },
+      {
+        "range": "100-200",
+        "count": 376,
+        "rmse": 36.16844940185547
+      },
+      {
+        "range": "200-300",
+        "count": 373,
+        "rmse": 35.61714172363281
+      },
+      {
+        "range": "300-400",
+        "count": 124,
+        "rmse": 40.6162223815918
+      },
+      {
+        "range": "400-600",
+        "count": 9,
+        "rmse": 72.00634002685547
+      }
+    ],
+    "aromatic": {
+      "rmse": 36.892372131347656,
+      "count": 1230
+    },
+    "non_aromatic": {
+      "rmse": 35.78615188598633,
+      "count": 205
+    },
+    "bias_analysis": [
+      {
+        "quartile": 1,
+        "mean_bias": 12.018510818481445,
+        "rmse": 34.72014236450195
+      },
+      {
+        "quartile": 2,
+        "mean_bias": 6.4008941650390625,
+        "rmse": 37.53009796142578
+      },
+      {
+        "quartile": 3,
+        "mean_bias": -0.17838875949382782,
+        "rmse": 37.20820999145508
+      },
+      {
+        "quartile": 4,
+        "mean_bias": -15.08006763458252,
+        "rmse": 37.41729736328125
+      }
+    ],
+    "error_Tg_corr": 0.07423471258263331
+  }
+}

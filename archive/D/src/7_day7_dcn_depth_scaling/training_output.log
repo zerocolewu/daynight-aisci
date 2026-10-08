@@ -1,0 +1,150 @@
+[09:19:46] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:19:46] SMILES Parse Error: syntax error while parsing: =Cc1ccc(/C=N/c2c(-c3ccccc3)cc(-c3ccc(-c4cc(-c5ccccc5)c(N=)c(-c5ccccc5)c4)cc3)cc2-c2ccccc2)cc1
+[09:19:46] SMILES Parse Error: check for mistakes around position 1:
+[09:19:46] =Cc1ccc(/C=N/c2c(-c3ccccc3)cc(-c3ccc(-c4c
+[09:19:46] ^
+[09:19:46] SMILES Parse Error: Failed parsing SMILES '=Cc1ccc(/C=N/c2c(-c3ccccc3)cc(-c3ccc(-c4cc(-c5ccccc5)c(N=)c(-c5ccccc5)c4)cc3)cc2-c2ccccc2)cc1' for input: '=Cc1ccc(/C=N/c2c(-c3ccccc3)cc(-c3ccc(-c4cc(-c5ccccc5)c(N=)c(-c5ccccc5)c4)cc3)cc2-c2ccccc2)cc1'
+[09:19:46] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:19:46] SMILES Parse Error: syntax error while parsing: =NP(Cl)(Cl)=NP(Cl)(Cl)=NC(=)Cl
+[09:19:46] SMILES Parse Error: check for mistakes around position 1:
+[09:19:46] =NP(Cl)(Cl)=NP(Cl)(Cl)=NC(=)Cl
+[09:19:46] ^
+[09:19:46] SMILES Parse Error: Failed parsing SMILES '=NP(Cl)(Cl)=NP(Cl)(Cl)=NC(=)Cl' for input: '=NP(Cl)(Cl)=NP(Cl)(Cl)=NC(=)Cl'
+[09:19:55] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:19:55] SMILES Parse Error: syntax error while parsing: =Nc1cccc(S(=O)(=O)c2cccc(/N=C3/OC(=O)c4ccc(Oc5ccc6c(c5)C(=O)OC6=)cc43)c2)c1
+[09:19:55] SMILES Parse Error: check for mistakes around position 1:
+[09:19:55] =Nc1cccc(S(=O)(=O)c2cccc(/N=C3/OC(=O)c4cc
+[09:19:55] ^
+[09:19:55] SMILES Parse Error: Failed parsing SMILES '=Nc1cccc(S(=O)(=O)c2cccc(/N=C3/OC(=O)c4ccc(Oc5ccc6c(c5)C(=O)OC6=)cc43)c2)c1' for input: '=Nc1cccc(S(=O)(=O)c2cccc(/N=C3/OC(=O)c4ccc(Oc5ccc6c(c5)C(=O)OC6=)cc43)c2)c1'
+[09:20:00] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:00] SMILES Parse Error: syntax error while parsing: =Nc1ccc(Oc2ccc(C(c3ccc(Oc4ccc(/N=C5/OC(=O)c6cc7c(cc65)C(=)OC7=O)cc4)cc3)(C(F)(F)F)C(F)(F)F)cc2)cc1
+[09:20:00] SMILES Parse Error: check for mistakes around position 1:
+[09:20:00] =Nc1ccc(Oc2ccc(C(c3ccc(Oc4ccc(/N=C5/OC(=O
+[09:20:00] ^
+[09:20:00] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(Oc2ccc(C(c3ccc(Oc4ccc(/N=C5/OC(=O)c6cc7c(cc65)C(=)OC7=O)cc4)cc3)(C(F)(F)F)C(F)(F)F)cc2)cc1' for input: '=Nc1ccc(Oc2ccc(C(c3ccc(Oc4ccc(/N=C5/OC(=O)c6cc7c(cc65)C(=)OC7=O)cc4)cc3)(C(F)(F)F)C(F)(F)F)cc2)cc1'
+[09:20:03] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:03] SMILES Parse Error: syntax error while parsing: =Nc1ccc(C(C)(C)c2ccc(C(C)(C)c3ccc(/N=C4/OC(=O)c5ccc(Oc6ccc7c(c6)C(=O)OC7=)cc54)cc3)cc2)cc1
+[09:20:03] SMILES Parse Error: check for mistakes around position 1:
+[09:20:03] =Nc1ccc(C(C)(C)c2ccc(C(C)(C)c3ccc(/N=C4/O
+[09:20:03] ^
+[09:20:03] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(C(C)(C)c2ccc(C(C)(C)c3ccc(/N=C4/OC(=O)c5ccc(Oc6ccc7c(c6)C(=O)OC7=)cc54)cc3)cc2)cc1' for input: '=Nc1ccc(C(C)(C)c2ccc(C(C)(C)c3ccc(/N=C4/OC(=O)c5ccc(Oc6ccc7c(c6)C(=O)OC7=)cc54)cc3)cc2)cc1'
+[09:20:38] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:38] SMILES Parse Error: syntax error while parsing: =Cc1cc(OCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1OCCCCCCCC
+[09:20:38] SMILES Parse Error: check for mistakes around position 1:
+[09:20:38] =Cc1cc(OCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1O
+[09:20:38] ^
+[09:20:38] SMILES Parse Error: Failed parsing SMILES '=Cc1cc(OCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1OCCCCCCCC' for input: '=Cc1cc(OCCCCCCCC)c(/C=N/c2ccc(N=)cc2)cc1OCCCCCCCC'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =CNc1ccc(Cc2ccc(N=)cc2)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =CNc1ccc(Cc2ccc(N=)cc2)cc1
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=CNc1ccc(Cc2ccc(N=)cc2)cc1' for input: '=CNc1ccc(Cc2ccc(N=)cc2)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =CNc1ccc(CCc2ccc(N=)cc2)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =CNc1ccc(CCc2ccc(N=)cc2)cc1
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=CNc1ccc(CCc2ccc(N=)cc2)cc1' for input: '=CNc1ccc(CCc2ccc(N=)cc2)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =NP(=NP(=NC(=)Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =NP(=NP(=NC(=)Oc1ccccc1)(Oc1ccccc1)Oc1ccc
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=NP(=NP(=NC(=)Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1' for input: '=NP(=NP(=NC(=)Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =NP(=NP(=NC(=)Oc1ccc(C(C)(C)C)cc1)(Oc1ccc(C(C)(C)C)cc1)Oc1ccc(C(C)(C)C)cc1)(Oc1ccc(C(C)(C)C)cc1)Oc1ccc(C(C)(C)C)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =NP(=NP(=NC(=)Oc1ccc(C(C)(C)C)cc1)(Oc1ccc
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=NP(=NP(=NC(=)Oc1ccc(C(C)(C)C)cc1)(Oc1ccc(C(C)(C)C)cc1)Oc1ccc(C(C)(C)C)cc1)(Oc1ccc(C(C)(C)C)cc1)Oc1ccc(C(C)(C)C)cc1' for input: '=NP(=NP(=NC(=)Oc1ccc(C(C)(C)C)cc1)(Oc1ccc(C(C)(C)C)cc1)Oc1ccc(C(C)(C)C)cc1)(Oc1ccc(C(C)(C)C)cc1)Oc1ccc(C(C)(C)C)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =NP(=NP(=NC(=)Oc1ccc(Br)cc1)(Oc1ccc(Br)cc1)Oc1ccc(Br)cc1)(Oc1ccc(Br)cc1)Oc1ccc(Br)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =NP(=NP(=NC(=)Oc1ccc(Br)cc1)(Oc1ccc(Br)cc
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=NP(=NP(=NC(=)Oc1ccc(Br)cc1)(Oc1ccc(Br)cc1)Oc1ccc(Br)cc1)(Oc1ccc(Br)cc1)Oc1ccc(Br)cc1' for input: '=NP(=NP(=NC(=)Oc1ccc(Br)cc1)(Oc1ccc(Br)cc1)Oc1ccc(Br)cc1)(Oc1ccc(Br)cc1)Oc1ccc(Br)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =NP(=NP(=NC(=)Oc1ccc(C(C)(C)c2ccccc2)cc1)(Oc1ccc(C(C)(C)c2ccccc2)cc1)Oc1ccc(C(C)(C)c2ccccc2)cc1)(Oc1ccc(C(C)(C)c2ccccc2)cc1)Oc1ccc(C(C)(C)c2ccccc2)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =NP(=NP(=NC(=)Oc1ccc(C(C)(C)c2ccccc2)cc1)
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=NP(=NP(=NC(=)Oc1ccc(C(C)(C)c2ccccc2)cc1)(Oc1ccc(C(C)(C)c2ccccc2)cc1)Oc1ccc(C(C)(C)c2ccccc2)cc1)(Oc1ccc(C(C)(C)c2ccccc2)cc1)Oc1ccc(C(C)(C)c2ccccc2)cc1' for input: '=NP(=NP(=NC(=)Oc1ccc(C(C)(C)c2ccccc2)cc1)(Oc1ccc(C(C)(C)c2ccccc2)cc1)Oc1ccc(C(C)(C)c2ccccc2)cc1)(Oc1ccc(C(C)(C)c2ccccc2)cc1)Oc1ccc(C(C)(C)c2ccccc2)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =NP(=NP(=NC(=)Oc1ccc(OC)cc1)(Oc1ccc(OC)cc1)Oc1ccc(OC)cc1)(Oc1ccc(OC)cc1)Oc1ccc(OC)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =NP(=NP(=NC(=)Oc1ccc(OC)cc1)(Oc1ccc(OC)cc
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=NP(=NP(=NC(=)Oc1ccc(OC)cc1)(Oc1ccc(OC)cc1)Oc1ccc(OC)cc1)(Oc1ccc(OC)cc1)Oc1ccc(OC)cc1' for input: '=NP(=NP(=NC(=)Oc1ccc(OC)cc1)(Oc1ccc(OC)cc1)Oc1ccc(OC)cc1)(Oc1ccc(OC)cc1)Oc1ccc(OC)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =NP(=NP(=NC(=)Oc1ccc(C(=O)OC)cc1)(Oc1ccc(C(=O)OC)cc1)Oc1ccc(C(=O)OC)cc1)(Oc1ccc(C(=O)OC)cc1)Oc1ccc(C(=O)OC)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =NP(=NP(=NC(=)Oc1ccc(C(=O)OC)cc1)(Oc1ccc(
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=NP(=NP(=NC(=)Oc1ccc(C(=O)OC)cc1)(Oc1ccc(C(=O)OC)cc1)Oc1ccc(C(=O)OC)cc1)(Oc1ccc(C(=O)OC)cc1)Oc1ccc(C(=O)OC)cc1' for input: '=NP(=NP(=NC(=)Oc1ccc(C(=O)OC)cc1)(Oc1ccc(C(=O)OC)cc1)Oc1ccc(C(=O)OC)cc1)(Oc1ccc(C(=O)OC)cc1)Oc1ccc(C(=O)OC)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =NP(=NP(=NC(=)Oc1ccc(C(F)(F)F)cc1)(Oc1ccc(C(F)(F)F)cc1)Oc1ccc(C(F)(F)F)cc1)(Oc1ccc(C(F)(F)F)cc1)Oc1ccc(C(F)(F)F)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =NP(=NP(=NC(=)Oc1ccc(C(F)(F)F)cc1)(Oc1ccc
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=NP(=NP(=NC(=)Oc1ccc(C(F)(F)F)cc1)(Oc1ccc(C(F)(F)F)cc1)Oc1ccc(C(F)(F)F)cc1)(Oc1ccc(C(F)(F)F)cc1)Oc1ccc(C(F)(F)F)cc1' for input: '=NP(=NP(=NC(=)Oc1ccc(C(F)(F)F)cc1)(Oc1ccc(C(F)(F)F)cc1)Oc1ccc(C(F)(F)F)cc1)(Oc1ccc(C(F)(F)F)cc1)Oc1ccc(C(F)(F)F)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =NP(=NP(=NC(=)Oc1ccccc1C(F)(F)F)(Oc1ccccc1C(F)(F)F)Oc1ccccc1C(F)(F)F)(Oc1ccccc1C(F)(F)F)Oc1ccccc1C(F)(F)F
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =NP(=NP(=NC(=)Oc1ccccc1C(F)(F)F)(Oc1ccccc
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=NP(=NP(=NC(=)Oc1ccccc1C(F)(F)F)(Oc1ccccc1C(F)(F)F)Oc1ccccc1C(F)(F)F)(Oc1ccccc1C(F)(F)F)Oc1ccccc1C(F)(F)F' for input: '=NP(=NP(=NC(=)Oc1ccccc1C(F)(F)F)(Oc1ccccc1C(F)(F)F)Oc1ccccc1C(F)(F)F)(Oc1ccccc1C(F)(F)F)Oc1ccccc1C(F)(F)F'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =Nc1ccc(Cc2ccc(NC(=)C)cc2)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =Nc1ccc(Cc2ccc(NC(=)C)cc2)cc1
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(Cc2ccc(NC(=)C)cc2)cc1' for input: '=Nc1ccc(Cc2ccc(NC(=)C)cc2)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =Nc1ccc(Cc2ccc(NC(=)CC)cc2)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =Nc1ccc(Cc2ccc(NC(=)CC)cc2)cc1
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(Cc2ccc(NC(=)CC)cc2)cc1' for input: '=Nc1ccc(Cc2ccc(NC(=)CC)cc2)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =Nc1ccc(Cc2ccc(NC(=)CCC)cc2)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =Nc1ccc(Cc2ccc(NC(=)CCC)cc2)cc1
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(Cc2ccc(NC(=)CCC)cc2)cc1' for input: '=Nc1ccc(Cc2ccc(NC(=)CCC)cc2)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =Nc1ccc(Cc2ccc(NC(=)CCCC)cc2)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =Nc1ccc(Cc2ccc(NC(=)CCCC)cc2)cc1
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(Cc2ccc(NC(=)CCCC)cc2)cc1' for input: '=Nc1ccc(Cc2ccc(NC(=)CCCC)cc2)cc1'
+[09:20:39] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:39] SMILES Parse Error: syntax error while parsing: =Nc1ccc(Cc2ccc(NC(=)c3ccccc3)cc2)cc1
+[09:20:39] SMILES Parse Error: check for mistakes around position 1:
+[09:20:39] =Nc1ccc(Cc2ccc(NC(=)c3ccccc3)cc2)cc1
+[09:20:39] ^
+[09:20:39] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(Cc2ccc(NC(=)c3ccccc3)cc2)cc1' for input: '=Nc1ccc(Cc2ccc(NC(=)c3ccccc3)cc2)cc1'
+[09:20:40] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:40] SMILES Parse Error: syntax error while parsing: =Nc1ccc(/N=C(\c2ccccc2)c2ccc(C(=)c3ccccc3)cc2)cc1
+[09:20:40] SMILES Parse Error: check for mistakes around position 1:
+[09:20:40] =Nc1ccc(/N=C(\c2ccccc2)c2ccc(C(=)c3ccccc3
+[09:20:40] ^
+[09:20:40] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(/N=C(\c2ccccc2)c2ccc(C(=)c3ccccc3)cc2)cc1' for input: '=Nc1ccc(/N=C(\c2ccccc2)c2ccc(C(=)c3ccccc3)cc2)cc1'
+[09:20:40] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:40] SMILES Parse Error: syntax error while parsing: =Nc1cccc(/N=C(\c2ccccc2)c2ccc(C(=)c3ccccc3)cc2)c1
+[09:20:40] SMILES Parse Error: check for mistakes around position 1:
+[09:20:40] =Nc1cccc(/N=C(\c2ccccc2)c2ccc(C(=)c3ccccc
+[09:20:40] ^
+[09:20:40] SMILES Parse Error: Failed parsing SMILES '=Nc1cccc(/N=C(\c2ccccc2)c2ccc(C(=)c3ccccc3)cc2)c1' for input: '=Nc1cccc(/N=C(\c2ccccc2)c2ccc(C(=)c3ccccc3)cc2)c1'
+[09:20:40] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:40] SMILES Parse Error: syntax error while parsing: =Nc1ccc(/N=C(/C=C/C(=)c2ccccc2)c2ccccc2)cc1
+[09:20:40] SMILES Parse Error: check for mistakes around position 1:
+[09:20:40] =Nc1ccc(/N=C(/C=C/C(=)c2ccccc2)c2ccccc2)c
+[09:20:40] ^
+[09:20:40] SMILES Parse Error: Failed parsing SMILES '=Nc1ccc(/N=C(/C=C/C(=)c2ccccc2)c2ccccc2)cc1' for input: '=Nc1ccc(/N=C(/C=C/C(=)c2ccccc2)c2ccccc2)cc1'
+[09:20:40] Explicit valence for atom # 0 H, 2, is greater than permitted
+[09:20:40] SMILES Parse Error: syntax error while parsing: =Nc1cccc(/N=C(/C=C/C(=)c2ccccc2)c2ccccc2)c1
+[09:20:40] SMILES Parse Error: check for mistakes around position 1:
+[09:20:40] =Nc1cccc(/N=C(/C=C/C(=)c2ccccc2)c2ccccc2)
+[09:20:40] ^
+[09:20:40] SMILES Parse Error: Failed parsing SMILES '=Nc1cccc(/N=C(/C=C/C(=)c2ccccc2)c2ccccc2)c1' for input: '=Nc1cccc(/N=C(/C=C/C(=)c2ccccc2)c2ccccc2)c1'

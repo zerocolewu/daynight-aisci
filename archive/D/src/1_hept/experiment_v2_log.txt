@@ -1,0 +1,4 @@
+  File "/home/home_public/aisci/AIscientist/src/1_hept/run_experiment_v2.py", line 6
+    <parameter>
+    ^
+SyntaxError: invalid syntax

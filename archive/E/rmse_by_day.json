@@ -1,0 +1,16 @@
+{
+  "run": "E",
+  "ablation": "ab5",
+  "property": "Tg (K)",
+  "selection_rule": "Select the main model configuration within each day, excluding discarded versions and control-only baselines.",
+  "std_definition": "Population SD across seeds (ddof=0), where available; single-seed results have no SD.",
+  "data_note": "Seven-day run; The seventh day was terminated due to exceeding the set time limit.",
+  "days": {
+    "1": {"model":"GIN+trimer","rmse":50.19,"std":null,"note":"Single seed (71); KA-GPS was not executed.","source":"src/1_01_data_centric_foundation/results_summary.txt"},
+    "2": {"model":"Contrastive StrB 10-seed","rmse":56.95,"std":3.25,"note":"Mean over 10 seeds; replaces an earlier single-seed result.","source":"src/2_2_polymer_jepa_pretrain/finetune_v2_results.json"},
+    "3": {"model":"PerioGT-Lite pretrained 5-seed","rmse":52.92,"std":0.29,"note":"Mean over 5 seeds; replaces an earlier single-seed result.","source":"src/3_periogt_lite/multiseed_fixedsplit_results.json"},
+    "4": {"model":"PCFT+PA EncP[PRIMARY] 3-seed","rmse":52.72,"std":0.76,"note":"Mean over 3 seeds.","source":"src/4_04_pgft/results_ablation_c.json"},
+    "5": {"model":"Chemprop C_polymer_full 3-seed","rmse":43.46,"std":0.89,"note":"Mean over 3 seeds.","source":"src/5_6_chemprop_polymer/ablation_summary.csv"},
+    "6": {"model":"Chemprop HPO Phase 4, multi-seed","rmse":40,"std":2.09,"note":"Phase-4 multi-seed result; the earlier single-seed Phase-3 result used a different batch size.","source":"src/6_06_chemprop_hpo/results_phase4.csv"}
+  }
+}

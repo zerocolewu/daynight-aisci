@@ -1,0 +1,164 @@
+=====================================
+v5b Ablation Study: No Fourier-KAN
+=====================================
+Using device: cuda
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+Sample graph: nodes=3, edges=6
+Node features: 21
+Edge features: 23
+
+Edge statistics (first 100 graphs):
+  Avg covalent edges: 25.9
+  Avg non-covalent edges: 62.4
+
+############################################################
+# Seed 1/1: 42
+############################################################
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 2,139,014
+Epoch   1 | Train RMSE: 66.7742 | Val RMSE: 55.9296 | Val MAE: 43.7440 | Val R2: 0.7330 | LR: 0.000500 | Best: 55.9296 @ 1
+Epoch  20 | Train RMSE: 46.6256 | Val RMSE: 52.8964 | Val MAE: 42.0797 | Val R2: 0.7612 | LR: 0.000500 | Best: 43.6410 @ 17
+Epoch  40 | Train RMSE: 40.2112 | Val RMSE: 40.6920 | Val MAE: 29.4301 | Val R2: 0.8587 | LR: 0.000500 | Best: 39.7289 @ 36
+Epoch  60 | Train RMSE: 35.7799 | Val RMSE: 39.0219 | Val MAE: 27.4568 | Val R2: 0.8700 | LR: 0.000250 | Best: 39.0219 @ 60
+Epoch  80 | Train RMSE: 33.2407 | Val RMSE: 39.5382 | Val MAE: 27.8005 | Val R2: 0.8666 | LR: 0.000250 | Best: 37.8227 @ 73
+Epoch 100 | Train RMSE: 31.6233 | Val RMSE: 38.1971 | Val MAE: 26.8920 | Val R2: 0.8755 | LR: 0.000250 | Best: 36.9401 @ 99
+Epoch 120 | Train RMSE: 28.9022 | Val RMSE: 38.7064 | Val MAE: 27.7607 | Val R2: 0.8721 | LR: 0.000125 | Best: 36.9401 @ 99
+Early stopping at epoch 129
+
+Best val RMSE: 36.9401 at epoch 99
+
+--- Seed 42 Final Results ---
+Train RMSE: 29.0876
+Val RMSE:   36.9401
+Test RMSE:  38.9600
+Test MAE:   25.9138
+Test R2:    0.8804
+
+============================================================
+AGGREGATE RESULTS (1 seeds)
+============================================================
+Test RMSE: 38.9600 +/- 0.0000
+Test MAE:  25.9138 +/- 0.0000
+Test R2:   0.8804 +/- 0.0000
+Train RMSE: 29.0876 +/- 0.0000
+Val RMSE: 36.9401 +/- 0.0000
+Train-Val gap: 7.8525
+Best single seed test RMSE: 38.9600
+SOTA target: 30.8
+
+Results saved to /home/home_public/aisci/AIscientist/src/6_day6_polykanssm/results_v5b_ablation_no_kan.json
+Diagnostics saved to /home/home_public/aisci/AIscientist/src/6_day6_polykanssm/diagnostics_v5b_ablation_no_kan/
+
+=====================================
+v5b Ablation Study: No JK
+=====================================
+Using device: cuda
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+Sample graph: nodes=3, edges=6
+Node features: 21
+Edge features: 23
+
+Edge statistics (first 100 graphs):
+  Avg covalent edges: 25.9
+  Avg non-covalent edges: 62.4
+
+############################################################
+# Seed 1/1: 42
+############################################################
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 1,618,055
+Epoch   1 | Train RMSE: 69.3710 | Val RMSE: 59.5678 | Val MAE: 46.0232 | Val R2: 0.6972 | LR: 0.000500 | Best: 59.5678 @ 1
+Epoch  20 | Train RMSE: 46.6641 | Val RMSE: 44.2283 | Val MAE: 32.2950 | Val R2: 0.8330 | LR: 0.000500 | Best: 44.2283 @ 20
+Epoch  40 | Train RMSE: 42.0722 | Val RMSE: 41.9248 | Val MAE: 30.4100 | Val R2: 0.8500 | LR: 0.000500 | Best: 41.9248 @ 40
+Epoch  60 | Train RMSE: 38.5632 | Val RMSE: 40.9108 | Val MAE: 29.8100 | Val R2: 0.8572 | LR: 0.000500 | Best: 39.5378 @ 55
+Epoch  80 | Train RMSE: 34.3796 | Val RMSE: 40.3220 | Val MAE: 28.6086 | Val R2: 0.8612 | LR: 0.000250 | Best: 39.5378 @ 55
+Early stopping at epoch 85
+
+Best val RMSE: 39.5378 at epoch 55
+
+--- Seed 42 Final Results ---
+Train RMSE: 36.0506
+Val RMSE:   39.5378
+Test RMSE:  41.6756
+Test MAE:   28.7244
+Test R2:    0.8631
+
+============================================================
+AGGREGATE RESULTS (1 seeds)
+============================================================
+Test RMSE: 41.6756 +/- 0.0000
+Test MAE:  28.7244 +/- 0.0000
+Test R2:   0.8631 +/- 0.0000
+Train RMSE: 36.0506 +/- 0.0000
+Val RMSE: 39.5378 +/- 0.0000
+Train-Val gap: 3.4873
+Best single seed test RMSE: 41.6756
+SOTA target: 30.8
+
+Results saved to /home/home_public/aisci/AIscientist/src/6_day6_polykanssm/results_v5b_ablation_no_jk.json
+Diagnostics saved to /home/home_public/aisci/AIscientist/src/6_day6_polykanssm/diagnostics_v5b_ablation_no_jk/
+
+=====================================
+v5b Ablation Study: With Virtual Node
+=====================================
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "<string>", line 815, in <module>
+  File "<string>", line 700, in main
+  File "<string>", line 586, in train_single_seed
+  File "<string>", line 415, in train_one_epoch
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm/model_v5b_with_vn.py", line 115, in forward
+    edge_attr_with_vn = torch.cat([edge_h, edge_attr_vn], dim=0)
+RuntimeError: Sizes of tensors must match except in dimension 0. Expected size 256 but got size 23 for tensor number 1 in the list.
+Using device: cuda
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+Sample graph: nodes=3, edges=6
+Node features: 21
+Edge features: 23
+
+Edge statistics (first 100 graphs):
+  Avg covalent edges: 25.9
+  Avg non-covalent edges: 62.4
+
+############################################################
+# Seed 1/1: 42
+############################################################
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 2,208,135

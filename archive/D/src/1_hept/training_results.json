@@ -1,0 +1,13 @@
+{
+  "model_name": "HEPT",
+  "best_val_rmse": 51.95,
+  "best_epoch": 86,
+  "test_rmse": 49.58,
+  "test_mae": 35.93,
+  "test_r2": 0.8041,
+  "training_time_minutes": 15.2,
+  "num_parameters": 2876804,
+  "target_baseline_rmse": 30.8,
+  "gat_baseline_rmse": 50.5,
+  "target_achieved": false
+}

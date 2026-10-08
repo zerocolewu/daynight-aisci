@@ -1,0 +1,34 @@
+Baseline Training
+Device: cuda:0
+Seed: 71
+LR: 0.0005, WD: 0.0001, Batch: 64
+Max Epochs: 300, Patience: 30
+================================================================================
+  Built: train=5162, val=573, test=1435 (45s)
+  Model params: 256,001
+  epoch  10/300 | train=0.4424 | val=0.4330 | best=0.4330@10 | lr=5.00e-04 | waited=0 | time=29s
+  epoch  20/300 | train=0.4157 | val=0.3868 | best=0.3868@20 | lr=5.00e-04 | waited=0 | time=58s
+  epoch  30/300 | train=0.3970 | val=0.3992 | best=0.3779@28 | lr=5.00e-04 | waited=2 | time=87s
+  epoch  40/300 | train=0.3750 | val=0.3693 | best=0.3580@38 | lr=5.00e-04 | waited=2 | time=114s
+  epoch  50/300 | train=0.3532 | val=0.3733 | best=0.3454@48 | lr=5.00e-04 | waited=2 | time=138s
+  epoch  60/300 | train=0.3428 | val=0.3765 | best=0.3367@54 | lr=5.00e-04 | waited=6 | time=165s
+  epoch  70/300 | train=0.3311 | val=0.3252 | best=0.3185@65 | lr=5.00e-04 | waited=5 | time=184s
+  epoch  80/300 | train=0.3039 | val=0.3139 | best=0.3123@79 | lr=2.50e-04 | waited=1 | time=213s
+  epoch  90/300 | train=0.2965 | val=0.3105 | best=0.3105@90 | lr=2.50e-04 | waited=0 | time=243s
+  epoch 100/300 | train=0.2867 | val=0.3140 | best=0.3016@92 | lr=2.50e-04 | waited=8 | time=269s
+  epoch 110/300 | train=0.2800 | val=0.3143 | best=0.3016@92 | lr=1.25e-04 | waited=18 | time=297s
+  epoch 120/300 | train=0.2697 | val=0.3008 | best=0.2984@117 | lr=6.25e-05 | waited=3 | time=324s
+  epoch 130/300 | train=0.2703 | val=0.3004 | best=0.2977@124 | lr=6.25e-05 | waited=6 | time=353s
+  epoch 140/300 | train=0.2635 | val=0.2977 | best=0.2933@132 | lr=6.25e-05 | waited=8 | time=380s
+  epoch 150/300 | train=0.2654 | val=0.2996 | best=0.2933@132 | lr=3.13e-05 | waited=18 | time=407s
+  epoch 160/300 | train=0.2597 | val=0.2983 | best=0.2933@132 | lr=1.56e-05 | waited=28 | time=435s
+  epoch 162/300 | train=0.2583 | val=0.2984 | best=0.2933@132 | lr=1.56e-05 | waited=30 | time=441s
+
+=== Final Results (Baseline) ===
+  Best epoch: 132 / 162
+  Train RMSE: 26.511 K
+  Val RMSE:   33.105 K
+  Test RMSE:  36.846 K
+  Test MAE:   24.657 K
+  Test R²:    0.8881
+  Total time: 442s

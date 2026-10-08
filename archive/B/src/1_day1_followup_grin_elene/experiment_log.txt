@@ -1,0 +1,180 @@
+Experiment started: 2026-05-23 05:04:55.734333
+Device: cuda:0
+Configurations: 5 conditions x 3 seeds = 15 runs
+Multimer: {1,3}-RU mixed, Feature: rich
+Max epochs: 300, patience: 30, lr: 0.001
+Batch size: 32, L1 lambda: 0.001, L1 warmup: 50
+================================================================================
+
+============================================================
+[2026-05-23 05:04:55.735559] Starting: GAT+mean (cond=A), seed=71
+============================================================
+  epoch  20/300 | train_rmse=0.4367 | val_rmse=0.4324 | best=0.4252@19 | waited=1 | time=74s
+  epoch  40/300 | train_rmse=0.4139 | val_rmse=0.4108 | best=0.4108@40 | waited=0 | time=155s
+  epoch  60/300 | train_rmse=0.4001 | val_rmse=0.4622 | best=0.4032@54 | waited=6 | time=250s
+  epoch  80/300 | train_rmse=0.3901 | val_rmse=0.4138 | best=0.3914@70 | waited=10 | time=336s
+  epoch 100/300 | train_rmse=0.3839 | val_rmse=0.3894 | best=0.3822@99 | waited=1 | time=417s
+  epoch 120/300 | train_rmse=0.3789 | val_rmse=0.3806 | best=0.3796@105 | waited=15 | time=499s
+  epoch 140/300 | train_rmse=0.3757 | val_rmse=0.3985 | best=0.3760@121 | waited=19 | time=586s
+  epoch 160/300 | train_rmse=0.3683 | val_rmse=0.3780 | best=0.3703@158 | waited=2 | time=669s
+  epoch 180/300 | train_rmse=0.3667 | val_rmse=0.3605 | best=0.3605@180 | waited=0 | time=755s
+  epoch 200/300 | train_rmse=0.3582 | val_rmse=0.3867 | best=0.3605@180 | waited=20 | time=847s
+  epoch 210/300 | train_rmse=0.3540 | val_rmse=0.3709 | best=0.3605@180 | waited=30 | time=893s
+[2026-05-23 05:20:21.833664] Finished: GAT+mean (cond=A), seed=71 | test_rmse=42.638 | test_mae=29.642 | r2=0.8502 | best_epoch=180 | total_epochs=210 | time=895s
+
+============================================================
+[2026-05-23 05:20:21.839350] Starting: GAT+mean (cond=A), seed=72
+============================================================
+  epoch  20/300 | train_rmse=0.4392 | val_rmse=0.4145 | best=0.4145@20 | waited=0 | time=90s
+  epoch  40/300 | train_rmse=0.4115 | val_rmse=0.4309 | best=0.4053@26 | waited=14 | time=180s
+  epoch  60/300 | train_rmse=0.4054 | val_rmse=0.4137 | best=0.4025@56 | waited=4 | time=265s
+  epoch  80/300 | train_rmse=0.3920 | val_rmse=0.4136 | best=0.3985@70 | waited=10 | time=351s
+  epoch 100/300 | train_rmse=0.3837 | val_rmse=0.4021 | best=0.3944@82 | waited=18 | time=438s
+  epoch 120/300 | train_rmse=0.3782 | val_rmse=0.3866 | best=0.3866@120 | waited=0 | time=524s
+  epoch 140/300 | train_rmse=0.3717 | val_rmse=0.3875 | best=0.3865@126 | waited=14 | time=619s
+  epoch 160/300 | train_rmse=0.3657 | val_rmse=0.3859 | best=0.3850@159 | waited=1 | time=702s
+  epoch 180/300 | train_rmse=0.3585 | val_rmse=0.3972 | best=0.3849@174 | waited=6 | time=796s
+  epoch 200/300 | train_rmse=0.3602 | val_rmse=0.3968 | best=0.3807@192 | waited=8 | time=877s
+  epoch 220/300 | train_rmse=0.3531 | val_rmse=0.4021 | best=0.3807@192 | waited=28 | time=969s
+  epoch 222/300 | train_rmse=0.3525 | val_rmse=0.4040 | best=0.3807@192 | waited=30 | time=979s
+[2026-05-23 05:37:12.965029] Finished: GAT+mean (cond=A), seed=72 | test_rmse=45.080 | test_mae=31.438 | r2=0.8351 | best_epoch=192 | total_epochs=222 | time=981s
+
+============================================================
+[2026-05-23 05:37:12.967907] Starting: GAT+mean (cond=A), seed=73
+============================================================
+  epoch  20/300 | train_rmse=0.4271 | val_rmse=0.4666 | best=0.4666@19 | waited=1 | time=91s
+  epoch  40/300 | train_rmse=0.4129 | val_rmse=0.4745 | best=0.4507@38 | waited=2 | time=183s
+  epoch  60/300 | train_rmse=0.3965 | val_rmse=0.4657 | best=0.4473@55 | waited=5 | time=255s
+  epoch  80/300 | train_rmse=0.3875 | val_rmse=0.4529 | best=0.4459@74 | waited=6 | time=321s
+  epoch 100/300 | train_rmse=0.3791 | val_rmse=0.4539 | best=0.4381@98 | waited=2 | time=407s
+  epoch 120/300 | train_rmse=0.3728 | val_rmse=0.4429 | best=0.4375@108 | waited=12 | time=490s
+  epoch 140/300 | train_rmse=0.3658 | val_rmse=0.4744 | best=0.4334@131 | waited=9 | time=581s
+  epoch 160/300 | train_rmse=0.3591 | val_rmse=0.4468 | best=0.4334@131 | waited=29 | time=671s
+  epoch 161/300 | train_rmse=0.3557 | val_rmse=0.4565 | best=0.4334@131 | waited=30 | time=676s
+[2026-05-23 05:49:01.351970] Finished: GAT+mean (cond=A), seed=73 | test_rmse=45.989 | test_mae=31.564 | r2=0.8322 | best_epoch=131 | total_epochs=161 | time=678s
+
+============================================================
+[2026-05-23 05:49:01.355257] Starting: GAT+max (cond=B), seed=71
+============================================================
+  epoch  20/300 | train_rmse=0.3982 | val_rmse=0.4166 | best=0.4166@20 | waited=0 | time=79s
+  epoch  40/300 | train_rmse=0.3728 | val_rmse=0.4691 | best=0.3984@36 | waited=4 | time=169s
+  epoch  60/300 | train_rmse=0.3549 | val_rmse=0.4274 | best=0.3945@46 | waited=14 | time=256s
+  epoch  80/300 | train_rmse=0.3486 | val_rmse=0.4108 | best=0.3882@74 | waited=6 | time=346s
+  epoch 100/300 | train_rmse=0.3343 | val_rmse=0.4088 | best=0.3802@96 | waited=4 | time=436s
+  epoch 120/300 | train_rmse=0.3345 | val_rmse=0.4284 | best=0.3802@96 | waited=24 | time=522s
+  epoch 126/300 | train_rmse=0.3307 | val_rmse=0.4353 | best=0.3802@96 | waited=30 | time=550s
+[2026-05-23 05:58:45.032082] Finished: GAT+max (cond=B), seed=71 | test_rmse=44.130 | test_mae=32.401 | r2=0.8396 | best_epoch=96 | total_epochs=126 | time=553s
+
+============================================================
+[2026-05-23 05:58:45.035091] Starting: GAT+max (cond=B), seed=72
+============================================================
+  epoch  20/300 | train_rmse=0.4113 | val_rmse=0.4319 | best=0.4170@18 | waited=2 | time=90s
+  epoch  40/300 | train_rmse=0.3767 | val_rmse=0.4652 | best=0.3916@32 | waited=8 | time=177s
+  epoch  60/300 | train_rmse=0.3569 | val_rmse=0.4537 | best=0.3916@32 | waited=28 | time=261s
+  epoch  62/300 | train_rmse=0.3586 | val_rmse=0.5078 | best=0.3916@32 | waited=30 | time=270s
+[2026-05-23 06:03:49.437322] Finished: GAT+max (cond=B), seed=72 | test_rmse=47.074 | test_mae=34.483 | r2=0.8202 | best_epoch=32 | total_epochs=62 | time=272s
+
+============================================================
+[2026-05-23 06:03:49.439873] Starting: GAT+max (cond=B), seed=73
+============================================================
+  epoch  20/300 | train_rmse=0.3935 | val_rmse=0.4637 | best=0.4637@20 | waited=0 | time=86s
+  epoch  40/300 | train_rmse=0.3732 | val_rmse=0.5276 | best=0.4549@21 | waited=19 | time=173s
+  epoch  51/300 | train_rmse=0.3610 | val_rmse=0.5255 | best=0.4549@21 | waited=30 | time=220s
+[2026-05-23 06:08:03.387354] Finished: GAT+max (cond=B), seed=73 | test_rmse=49.014 | test_mae=36.036 | r2=0.8094 | best_epoch=21 | total_epochs=51 | time=222s
+
+============================================================
+[2026-05-23 06:08:03.390664] Starting: GAT+max+L1 (cond=C), seed=71
+============================================================
+  epoch  20/300 | train_rmse=0.4017 | val_rmse=0.4283 | best=0.4216@18 | waited=2 | time=84s
+  epoch  40/300 | train_rmse=0.3781 | val_rmse=0.4388 | best=0.3986@32 | waited=8 | time=176s
+  epoch  60/300 | train_rmse=0.4656 | val_rmse=0.4378 | best=0.3908@49 | waited=11 | time=258s | L1=52.084727 | sparsity=0.0163
+  epoch  79/300 | train_rmse=0.4318 | val_rmse=0.4469 | best=0.3908@49 | waited=30 | time=351s | L1=31.258421 | sparsity=0.0333
+[2026-05-23 06:14:29.158846] Finished: GAT+max+L1 (cond=C), seed=71 | test_rmse=45.031 | test_mae=31.777 | r2=0.8329 | best_epoch=49 | total_epochs=79 | time=353s | final_sparsity=0.0071
+
+============================================================
+[2026-05-23 06:14:29.161362] Starting: GAT+max+L1 (cond=C), seed=72
+============================================================
+  epoch  20/300 | train_rmse=0.4066 | val_rmse=0.4449 | best=0.4287@18 | waited=2 | time=90s
+  epoch  40/300 | train_rmse=0.3789 | val_rmse=0.4384 | best=0.3875@36 | waited=4 | time=163s
+  epoch  60/300 | train_rmse=0.4679 | val_rmse=0.4281 | best=0.3863@41 | waited=19 | time=255s | L1=55.714867 | sparsity=0.0158
+  epoch  71/300 | train_rmse=0.4392 | val_rmse=0.3921 | best=0.3863@41 | waited=30 | time=300s | L1=37.925641 | sparsity=0.0223
+[2026-05-23 06:20:04.255920] Finished: GAT+max+L1 (cond=C), seed=72 | test_rmse=46.778 | test_mae=33.843 | r2=0.8225 | best_epoch=41 | total_epochs=71 | time=302s | final_sparsity=0.0073
+
+============================================================
+[2026-05-23 06:20:04.259159] Starting: GAT+max+L1 (cond=C), seed=73
+============================================================
+  epoch  20/300 | train_rmse=0.3988 | val_rmse=0.4765 | best=0.4765@20 | waited=0 | time=91s
+  epoch  40/300 | train_rmse=0.3726 | val_rmse=0.5107 | best=0.4530@23 | waited=17 | time=184s
+  epoch  53/300 | train_rmse=0.6030 | val_rmse=0.4794 | best=0.4530@23 | waited=30 | time=245s | L1=198.033742 | sparsity=0.0071
+[2026-05-23 06:24:44.873621] Finished: GAT+max+L1 (cond=C), seed=73 | test_rmse=48.675 | test_mae=35.942 | r2=0.8120 | best_epoch=23 | total_epochs=53 | time=247s | final_sparsity=0.0072
+
+============================================================
+[2026-05-23 06:24:44.877183] Starting: GAT+mean+ELENE (cond=D), seed=71
+============================================================
+  epoch  20/300 | train_rmse=0.4380 | val_rmse=0.4353 | best=0.4316@19 | waited=1 | time=92s
+  epoch  40/300 | train_rmse=0.4173 | val_rmse=0.4172 | best=0.4141@39 | waited=1 | time=180s
+  epoch  60/300 | train_rmse=0.4026 | val_rmse=0.4181 | best=0.4017@51 | waited=9 | time=262s
+  epoch  80/300 | train_rmse=0.3919 | val_rmse=0.4046 | best=0.3950@78 | waited=2 | time=353s
+  epoch 100/300 | train_rmse=0.3887 | val_rmse=0.4013 | best=0.3886@97 | waited=3 | time=446s
+  epoch 120/300 | train_rmse=0.3786 | val_rmse=0.4028 | best=0.3818@112 | waited=8 | time=530s
+  epoch 140/300 | train_rmse=0.3737 | val_rmse=0.3998 | best=0.3719@121 | waited=19 | time=619s
+  epoch 151/300 | train_rmse=0.3690 | val_rmse=0.3888 | best=0.3719@121 | waited=30 | time=671s
+[2026-05-23 06:37:08.649125] Finished: GAT+mean+ELENE (cond=D), seed=71 | test_rmse=44.897 | test_mae=31.803 | r2=0.8339 | best_epoch=121 | total_epochs=151 | time=673s
+
+============================================================
+[2026-05-23 06:37:08.652520] Starting: GAT+mean+ELENE (cond=D), seed=72
+============================================================
+  epoch  20/300 | train_rmse=0.4360 | val_rmse=0.4254 | best=0.4186@18 | waited=2 | time=86s
+  epoch  40/300 | train_rmse=0.4183 | val_rmse=0.4083 | best=0.4071@36 | waited=4 | time=147s
+  epoch  60/300 | train_rmse=0.4029 | val_rmse=0.4298 | best=0.4027@45 | waited=15 | time=232s
+  epoch  80/300 | train_rmse=0.3945 | val_rmse=0.4084 | best=0.4003@78 | waited=2 | time=320s
+  epoch 100/300 | train_rmse=0.3859 | val_rmse=0.4031 | best=0.3891@95 | waited=5 | time=411s
+  epoch 120/300 | train_rmse=0.3789 | val_rmse=0.4068 | best=0.3891@95 | waited=25 | time=504s
+  epoch 125/300 | train_rmse=0.3778 | val_rmse=0.4032 | best=0.3891@95 | waited=30 | time=526s
+[2026-05-23 06:47:08.899836] Finished: GAT+mean+ELENE (cond=D), seed=72 | test_rmse=46.445 | test_mae=32.543 | r2=0.8250 | best_epoch=95 | total_epochs=125 | time=528s
+
+============================================================
+[2026-05-23 06:47:08.903598] Starting: GAT+mean+ELENE (cond=D), seed=73
+============================================================
+  epoch  20/300 | train_rmse=0.4345 | val_rmse=0.4713 | best=0.4615@15 | waited=5 | time=83s
+  epoch  40/300 | train_rmse=0.4098 | val_rmse=0.4680 | best=0.4546@37 | waited=3 | time=170s
+  epoch  60/300 | train_rmse=0.3926 | val_rmse=0.4825 | best=0.4422@49 | waited=11 | time=257s
+  epoch  80/300 | train_rmse=0.3886 | val_rmse=0.4396 | best=0.4343@78 | waited=2 | time=338s
+  epoch 100/300 | train_rmse=0.3811 | val_rmse=0.4406 | best=0.4313@93 | waited=7 | time=429s
+  epoch 120/300 | train_rmse=0.3786 | val_rmse=0.4490 | best=0.4226@102 | waited=18 | time=515s
+  epoch 140/300 | train_rmse=0.3695 | val_rmse=0.4415 | best=0.4206@124 | waited=16 | time=608s
+  epoch 154/300 | train_rmse=0.3662 | val_rmse=0.4409 | best=0.4206@124 | waited=30 | time=672s
+[2026-05-23 06:59:34.187926] Finished: GAT+mean+ELENE (cond=D), seed=73 | test_rmse=45.746 | test_mae=31.703 | r2=0.8339 | best_epoch=124 | total_epochs=154 | time=675s
+
+============================================================
+[2026-05-23 06:59:34.191753] Starting: GAT+max+L1+ELENE (cond=E), seed=71
+============================================================
+  epoch  20/300 | train_rmse=0.3998 | val_rmse=0.4657 | best=0.4247@16 | waited=4 | time=92s
+  epoch  40/300 | train_rmse=0.3737 | val_rmse=0.4035 | best=0.4022@22 | waited=18 | time=183s
+  epoch  60/300 | train_rmse=0.4672 | val_rmse=0.4337 | best=0.3988@46 | waited=14 | time=261s | L1=52.013299 | sparsity=0.0173
+  epoch  76/300 | train_rmse=0.4285 | val_rmse=0.4122 | best=0.3988@46 | waited=30 | time=333s | L1=31.703119 | sparsity=0.0291
+[2026-05-23 07:06:27.214113] Finished: GAT+max+L1+ELENE (cond=E), seed=71 | test_rmse=46.545 | test_mae=34.154 | r2=0.8215 | best_epoch=46 | total_epochs=76 | time=335s | final_sparsity=0.0139
+
+============================================================
+[2026-05-23 07:06:27.217968] Starting: GAT+max+L1+ELENE (cond=E), seed=72
+============================================================
+  epoch  20/300 | train_rmse=0.3989 | val_rmse=0.4309 | best=0.4166@16 | waited=4 | time=88s
+  epoch  40/300 | train_rmse=0.3694 | val_rmse=0.4068 | best=0.4068@40 | waited=0 | time=165s
+  epoch  60/300 | train_rmse=0.4699 | val_rmse=0.4116 | best=0.3979@48 | waited=12 | time=261s | L1=52.326974 | sparsity=0.0170
+  epoch  78/300 | train_rmse=0.4292 | val_rmse=0.4655 | best=0.3979@48 | waited=30 | time=351s | L1=30.648786 | sparsity=0.0268
+[2026-05-23 07:13:40.157087] Finished: GAT+max+L1+ELENE (cond=E), seed=72 | test_rmse=46.757 | test_mae=34.478 | r2=0.8226 | best_epoch=48 | total_epochs=78 | time=353s | final_sparsity=0.0140
+
+============================================================
+[2026-05-23 07:13:40.161034] Starting: GAT+max+L1+ELENE (cond=E), seed=73
+============================================================
+  epoch  20/300 | train_rmse=0.3986 | val_rmse=0.4760 | best=0.4760@20 | waited=0 | time=83s
+  epoch  40/300 | train_rmse=0.3767 | val_rmse=0.5597 | best=0.4675@24 | waited=16 | time=164s
+  epoch  60/300 | train_rmse=0.4646 | val_rmse=0.4853 | best=0.4586@47 | waited=13 | time=253s | L1=52.574469 | sparsity=0.0135
+  epoch  80/300 | train_rmse=0.4207 | val_rmse=0.4632 | best=0.4527@70 | waited=10 | time=354s | L1=30.572470 | sparsity=0.0337
+  epoch 100/300 | train_rmse=0.4087 | val_rmse=0.4655 | best=0.4488@92 | waited=8 | time=451s | L1=25.318621 | sparsity=0.0345
+  epoch 120/300 | train_rmse=0.4032 | val_rmse=0.4602 | best=0.4466@112 | waited=8 | time=527s | L1=24.968393 | sparsity=0.0239
+  epoch 140/300 | train_rmse=0.3988 | val_rmse=0.4532 | best=0.4466@112 | waited=28 | time=624s | L1=24.417003 | sparsity=0.0312
+  epoch 142/300 | train_rmse=0.3946 | val_rmse=0.4764 | best=0.4466@112 | waited=30 | time=634s | L1=23.693172 | sparsity=0.0379
+[2026-05-23 07:25:28.104573] Finished: GAT+max+L1+ELENE (cond=E), seed=73 | test_rmse=47.605 | test_mae=34.510 | r2=0.8202 | best_epoch=112 | total_epochs=142 | time=636s | final_sparsity=0.0304
+================================================================================
+All experiments finished: 2026-05-23 07:25:28.107199

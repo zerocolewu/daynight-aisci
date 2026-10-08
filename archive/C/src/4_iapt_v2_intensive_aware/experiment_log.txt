@@ -1,0 +1,136 @@
+======================================================================
+IAPT v2: Intensive-Aware Polymer Transformer for Tg
+Target: Beat RMSE 30.8
+======================================================================
+Device: cuda Hidden=256 GNN=5 LG=2 BS=32
+Loading cached data from /home/home_public/aisci/AIscientist/src/4_iapt_v2_intensive_aware/processed_data.pkl
+  train: 5162
+  val: 573
+  test: 1435
+
+======================================================================
+Variant: IAPT_v2_mean pool=mean lg=True eq=True
+======================================================================
+Params: 873,483
+  Ep  1 TrRMSE=59.59 VaRMSE=55.42 VaR2=0.7525 7.0s
+  Ep 10 TrRMSE=42.54 VaRMSE=43.08 VaR2=0.8504 6.7s
+  Ep 20 TrRMSE=36.48 VaRMSE=41.11 VaR2=0.8638 5.9s
+  Ep 30 TrRMSE=30.58 VaRMSE=39.03 VaR2=0.8772 6.8s
+  Ep 40 TrRMSE=26.71 VaRMSE=35.35 VaR2=0.8993 6.3s
+  Ep 50 TrRMSE=24.20 VaRMSE=37.18 VaR2=0.8886 5.3s
+  Ep 60 TrRMSE=18.20 VaRMSE=38.03 VaR2=0.8835 5.3s
+  Ep 70 TrRMSE=17.69 VaRMSE=39.24 VaR2=0.8759 6.2s
+  Early stop ep70
+
+  BestVal=35.35@ep40 Test: RMSE=37.89 MAE=25.74 R2=0.8886
+
+======================================================================
+Variant: IAPT_v2_max pool=max lg=True eq=True
+======================================================================
+Params: 873,483
+  Ep  1 TrRMSE=59.05 VaRMSE=49.21 VaR2=0.8049 6.2s
+  Ep 10 TrRMSE=36.87 VaRMSE=43.59 VaR2=0.8469 5.5s
+  Ep 20 TrRMSE=28.53 VaRMSE=38.78 VaR2=0.8788 5.8s
+  Ep 30 TrRMSE=23.07 VaRMSE=38.56 VaR2=0.8802 6.8s
+  Ep 40 TrRMSE=19.75 VaRMSE=37.99 VaR2=0.8837 6.3s
+  Ep 50 TrRMSE=18.40 VaRMSE=36.66 VaR2=0.8917 6.7s
+  Ep 60 TrRMSE=17.31 VaRMSE=34.98 VaR2=0.9014 6.4s
+  Ep 70 TrRMSE=13.15 VaRMSE=35.46 VaR2=0.8987 6.5s
+  Ep 80 TrRMSE=12.94 VaRMSE=34.97 VaR2=0.9015 6.1s
+  Ep 90 TrRMSE=12.77 VaRMSE=34.55 VaR2=0.9038 7.1s
+  Ep100 TrRMSE=12.18 VaRMSE=35.89 VaR2=0.8962 6.2s
+  Ep110 TrRMSE=10.42 VaRMSE=34.88 VaR2=0.9020 6.1s
+  Early stop ep115
+
+  BestVal=34.20@ep85 Test: RMSE=35.35 MAE=23.57 R2=0.9030
+
+======================================================================
+Variant: IAPT_v2_att pool=attention lg=True eq=True
+======================================================================
+Params: 1,005,323
+  Ep  1 TrRMSE=60.70 VaRMSE=48.98 VaR2=0.8067 11.3s
+  Ep 10 TrRMSE=43.59 VaRMSE=49.42 VaR2=0.8032 11.1s
+  Ep 20 TrRMSE=38.63 VaRMSE=42.22 VaR2=0.8563 11.1s
+  Ep 30 TrRMSE=33.16 VaRMSE=43.44 VaR2=0.8480 11.1s
+  Ep 40 TrRMSE=29.72 VaRMSE=37.59 VaR2=0.8862 11.3s
+  Ep 50 TrRMSE=24.08 VaRMSE=37.44 VaR2=0.8870 11.4s
+  Ep 60 TrRMSE=22.36 VaRMSE=36.32 VaR2=0.8937 11.3s
+  Ep 70 TrRMSE=21.06 VaRMSE=36.74 VaR2=0.8912 11.1s
+  Ep 80 TrRMSE=18.12 VaRMSE=39.93 VaR2=0.8715 10.9s
+  Ep 90 TrRMSE=17.21 VaRMSE=39.22 VaR2=0.8761 11.5s
+  Early stop ep90
+
+  BestVal=36.32@ep60 Test: RMSE=35.19 MAE=23.65 R2=0.9039
+
+======================================================================
+Variant: IAPT_v2_sum pool=sum lg=True eq=True
+======================================================================
+Params: 873,483
+  Ep  1 TrRMSE=58.68 VaRMSE=55.08 VaR2=0.7555 6.2s
+  Ep 10 TrRMSE=43.08 VaRMSE=45.84 VaR2=0.8307 6.9s
+  Ep 20 TrRMSE=35.83 VaRMSE=46.59 VaR2=0.8251 6.2s
+  Ep 30 TrRMSE=31.57 VaRMSE=38.71 VaR2=0.8792 5.0s
+  Ep 40 TrRMSE=27.73 VaRMSE=38.34 VaR2=0.8816 5.1s
+  Ep 50 TrRMSE=24.18 VaRMSE=38.55 VaR2=0.8803 5.6s
+  Ep 60 TrRMSE=21.78 VaRMSE=38.02 VaR2=0.8835 5.5s
+  Ep 70 TrRMSE=20.31 VaRMSE=37.62 VaR2=0.8860 6.5s
+  Ep 80 TrRMSE=19.86 VaRMSE=37.26 VaR2=0.8881 6.0s
+  Ep 90 TrRMSE=17.74 VaRMSE=37.89 VaR2=0.8843 6.1s
+  Ep100 TrRMSE=14.26 VaRMSE=37.32 VaR2=0.8878 6.5s
+  Early stop ep106
+
+  BestVal=36.54@ep76 Test: RMSE=35.99 MAE=24.12 R2=0.8995
+
+======================================================================
+Variant: IAPT_v2_no_eq pool=mean lg=True eq=False
+======================================================================
+Params: 872,715
+  Ep  1 TrRMSE=58.38 VaRMSE=60.35 VaR2=0.7066 5.0s
+  Ep 10 TrRMSE=43.08 VaRMSE=43.87 VaR2=0.8449 6.6s
+  Ep 20 TrRMSE=35.88 VaRMSE=40.11 VaR2=0.8703 6.1s
+  Ep 30 TrRMSE=31.27 VaRMSE=39.61 VaR2=0.8736 4.9s
+  Ep 40 TrRMSE=26.99 VaRMSE=37.89 VaR2=0.8843 6.7s
+  Ep 50 TrRMSE=20.97 VaRMSE=36.61 VaR2=0.8920 6.7s
+  Ep 60 TrRMSE=19.10 VaRMSE=36.58 VaR2=0.8922 6.3s
+  Ep 70 TrRMSE=18.10 VaRMSE=36.45 VaR2=0.8929 6.9s
+  Ep 80 TrRMSE=15.55 VaRMSE=36.75 VaR2=0.8912 5.8s
+  Early stop ep84
+
+  BestVal=34.91@ep54 Test: RMSE=36.76 MAE=24.23 R2=0.8951
+
+======================================================================
+Variant: IAPT_v2_no_lg pool=mean lg=False eq=True
+======================================================================
+Params: 773,387
+  Ep  1 TrRMSE=59.96 VaRMSE=48.37 VaR2=0.8115 4.8s
+  Ep 10 TrRMSE=41.73 VaRMSE=46.43 VaR2=0.8263 5.5s
+  Ep 20 TrRMSE=35.55 VaRMSE=40.27 VaR2=0.8693 5.7s
+  Ep 30 TrRMSE=30.77 VaRMSE=38.29 VaR2=0.8819 5.6s
+  Ep 40 TrRMSE=27.16 VaRMSE=36.59 VaR2=0.8921 5.4s
+  Ep 50 TrRMSE=22.00 VaRMSE=36.11 VaR2=0.8950 5.9s
+  Ep 60 TrRMSE=19.13 VaRMSE=37.32 VaR2=0.8878 3.3s
+  Ep 70 TrRMSE=17.69 VaRMSE=37.42 VaR2=0.8872 4.9s
+  Ep 80 TrRMSE=14.99 VaRMSE=37.37 VaR2=0.8874 5.4s
+  Early stop ep85
+
+  BestVal=35.89@ep55 Test: RMSE=36.43 MAE=24.32 R2=0.8970
+
+======================================================================
+FINAL RESULTS
+======================================================================
+
+Variant              RMSE       MAE        R2         BestEp    
+------------------------------------------------------------
+IAPT_v2_mean         37.89      25.74      0.8886     40        
+IAPT_v2_max          35.35      23.57      0.9030     85        
+IAPT_v2_att          35.19      23.65      0.9039     60        
+IAPT_v2_sum          35.99      24.12      0.8995     76        
+IAPT_v2_no_eq        36.76      24.23      0.8951     54        
+IAPT_v2_no_lg        36.43      24.32      0.8970     55        
+
+Best: IAPT_v2_att RMSE=35.19
+Target: 30.8
+Gap: 4.39
+
+Results: /home/home_public/aisci/AIscientist/src/4_iapt_v2_intensive_aware/results.csv
+Done!

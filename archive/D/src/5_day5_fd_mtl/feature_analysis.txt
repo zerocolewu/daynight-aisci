@@ -1,0 +1,81 @@
+================================================================================
+FEATURE-PROPERTY CORRELATION ANALYSIS
+================================================================================
+
+Total features: 154
+Correlation threshold: 0.05
+
+Shared features (important for >=2 properties): 0
+Feature indices: []
+
+Tg-specific features: 0
+Feature indices: []
+
+Tm-specific features: 0
+Feature indices: []
+
+Egc-specific features: 0
+Feature indices: []
+
+Unimportant features: 154
+Feature indices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] ... and 134 more
+
+
+================================================================================
+TOP 15 FEATURES FOR EACH PROPERTY
+================================================================================
+
+
+Tg:
+----------------------------------------
+   1. Feature 100: r= 0.0302, p=1.06e-02
+   2. Feature 131: r= 0.0300, p=1.12e-02
+   3. Feature  96: r= 0.0284, p=1.63e-02
+   4. Feature  97: r= 0.0284, p=1.63e-02
+   5. Feature  98: r= 0.0284, p=1.63e-02
+   6. Feature 144: r= 0.0273, p=2.09e-02
+   7. Feature  95: r= 0.0266, p=2.42e-02
+   8. Feature  20: r= 0.0258, p=2.87e-02
+   9. Feature 146: r= 0.0244, p=3.88e-02
+  10. Feature  94: r=-0.0233, p=4.88e-02
+  11. Feature  35: r= 0.0228, p=5.39e-02
+  12. Feature  88: r=-0.0209, p=7.70e-02
+  13. Feature  87: r=-0.0200, p=8.98e-02
+  14. Feature 110: r= 0.0199, p=9.16e-02
+  15. Feature 130: r= 0.0189, p=1.10e-01
+
+Tm:
+----------------------------------------
+   1. Feature  88: r=-0.0460, p=5.48e-03
+   2. Feature  87: r=-0.0452, p=6.30e-03
+   3. Feature 148: r= 0.0400, p=1.57e-02
+   4. Feature 142: r=-0.0378, p=2.24e-02
+   5. Feature  30: r= 0.0346, p=3.64e-02
+   6. Feature 139: r= 0.0344, p=3.75e-02
+   7. Feature 121: r=-0.0344, p=3.78e-02
+   8. Feature  22: r=-0.0339, p=4.07e-02
+   9. Feature 111: r=-0.0327, p=4.79e-02
+  10. Feature 135: r= 0.0326, p=4.88e-02
+  11. Feature  89: r= 0.0316, p=5.65e-02
+  12. Feature 130: r= 0.0304, p=6.65e-02
+  13. Feature  32: r=-0.0302, p=6.82e-02
+  14. Feature 116: r=-0.0300, p=6.95e-02
+  15. Feature  34: r= 0.0289, p=8.05e-02
+
+Egc:
+----------------------------------------
+   1. Feature 148: r=-0.0415, p=1.58e-02
+   2. Feature 138: r=-0.0339, p=4.90e-02
+   3. Feature  90: r= 0.0330, p=5.52e-02
+   4. Feature 147: r=-0.0296, p=8.53e-02
+   5. Feature 139: r= 0.0290, p=9.22e-02
+   6. Feature  27: r=-0.0287, p=9.50e-02
+   7. Feature  17: r= 0.0279, p=1.05e-01
+   8. Feature 106: r=-0.0271, p=1.15e-01
+   9. Feature 101: r=-0.0269, p=1.18e-01
+  10. Feature 150: r=-0.0269, p=1.18e-01
+  11. Feature 151: r=-0.0263, p=1.26e-01
+  12. Feature 118: r= 0.0261, p=1.29e-01
+  13. Feature   4: r= 0.0259, p=1.32e-01
+  14. Feature 103: r=-0.0256, p=1.37e-01
+  15. Feature  57: r= 0.0250, p=1.46e-01

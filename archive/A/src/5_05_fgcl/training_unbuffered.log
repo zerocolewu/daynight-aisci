@@ -1,0 +1,7 @@
+/bin/bash: 第 1 行： kill: (1199421) - 没有那个进程
+/bin/bash: 第 1 行： kill: sleep: 参数必须是进程或任务 ID
+/bin/bash: 第 1 行： kill: (3) - 不允许的操作
+/bin/bash: 第 1 行： kill: PYTHONUNBUFFERED=1: 参数必须是进程或任务 ID
+/bin/bash: 第 1 行： kill: nohup: 参数必须是进程或任务 ID
+/bin/bash: 第 1 行： kill: python: 参数必须是进程或任务 ID
+/bin/bash: 第 1 行： kill: train_fgcl.py: 参数必须是进程或任务 ID

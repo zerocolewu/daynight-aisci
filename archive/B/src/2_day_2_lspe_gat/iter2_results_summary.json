@@ -1,0 +1,94 @@
+{
+  "previous": {
+    "baseline": {
+      "test_rmse": 38.51,
+      "test_mae": 24.96,
+      "test_r2": 0.8777
+    },
+    "static_rwpe_k16": {
+      "test_rmse": 36.29,
+      "test_mae": 24.01,
+      "test_r2": 0.8914
+    },
+    "lspe_gat": {
+      "test_rmse": 37.96,
+      "test_mae": 24.54,
+      "test_r2": 0.8812
+    },
+    "lspe_gat_edge": {
+      "test_rmse": 37.85,
+      "test_mae": 24.34,
+      "test_r2": 0.8819
+    }
+  },
+  "new": {
+    "static_rwpe_k24": {
+      "test_rmse": {
+        "mean": 37.07271957397461,
+        "std": 0.48265090554571255
+      },
+      "test_mae": {
+        "mean": 24.437153498331707,
+        "std": 0.6638150324112996
+      },
+      "test_r2": {
+        "mean": 0.8867499033610026,
+        "std": 0.0029447039013150975
+      },
+      "best_epoch_mean": 124.33333333333333,
+      "n_params": 262145.0,
+      "seeds_completed": 3
+    },
+    "static_rwpe_k32": {
+      "test_rmse": {
+        "mean": 35.940144856770836,
+        "std": 0.6432109140663433
+      },
+      "test_mae": {
+        "mean": 23.667755126953125,
+        "std": 0.708578926107834
+      },
+      "test_r2": {
+        "mean": 0.893547793229421,
+        "std": 0.003785672270787503
+      },
+      "best_epoch_mean": 153.33333333333334,
+      "n_params": 264193.0,
+      "seeds_completed": 3
+    },
+    "skip_rwpe_k16": {
+      "test_rmse": {
+        "mean": 38.12929153442383,
+        "std": 0.32697894565491736
+      },
+      "test_mae": {
+        "mean": 25.23916180928548,
+        "std": 0.8468550825631955
+      },
+      "test_r2": {
+        "mean": 0.8802141547203064,
+        "std": 0.0020594096798961237
+      },
+      "best_epoch_mean": 129.33333333333334,
+      "n_params": 344321.0,
+      "seeds_completed": 3
+    },
+    "skip_rwpe_k32": {
+      "test_rmse": {
+        "mean": 38.258890787760414,
+        "std": 0.6648509376977311
+      },
+      "test_mae": {
+        "mean": 24.99201265970866,
+        "std": 0.17817555572497448
+      },
+      "test_r2": {
+        "mean": 0.8793709675470988,
+        "std": 0.004216234149820953
+      },
+      "best_epoch_mean": 140.0,
+      "n_params": 364801.0,
+      "seeds_completed": 3
+    }
+  }
+}

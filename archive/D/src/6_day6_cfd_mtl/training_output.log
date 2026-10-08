@@ -1,0 +1,111 @@
+Using device: cuda
+
+================================================================================
+CFD-MTL EXPERIMENT
+================================================================================
+Start: 07:07:24
+
+Loading Tg...
+  Loaded 7170 samples
+  Processed 7145 molecules
+
+Loading Tm...
+  Loaded 3651 samples
+  Processed 3636 molecules
+
+Loading Egc...
+  Loaded 3380 samples
+  Processed 3374 molecules
+
+============================================================
+FEATURE-PROPERTY CORRELATIONS
+============================================================
+  Shared: 27, Tg-spec: 2, Tm-spec: 0, Egc-spec: 1
+
+  Top correlations:
+
+  Tg:
+    rotatable_bond_frac: r=-0.7280
+    RingCount: r=0.7082
+    NumRings: r=0.7082
+    sp2_sp2_bond_fraction: r=0.6997
+    sp2_frac: r=0.6992
+
+  Tm:
+    sp3_frac: r=-0.5289
+    single_bond_frac: r=-0.5215
+    rotatable_bond_frac: r=-0.5193
+    sp2_frac: r=0.5175
+    sp2_sp2_bond_fraction: r=0.5130
+
+  Egc:
+    single_bond_frac: r=0.7695
+    FractionCSP3: r=0.7619
+    sp2_sp2_bond_fraction: r=-0.7476
+    conjugated_bond_fraction: r=-0.7475
+    aromatic_bond_frac: r=-0.7365
+
+------------------------------------------------------------
+ABLATION 1: SINGLE-TASK
+------------------------------------------------------------
+
+  Tg...
+    Fold 1: 49.9502
+    Fold 2: 46.3232
+    Fold 3: 45.9447
+    Fold 4: 46.8919
+    Fold 5: 43.1682
+
+  Tm...
+    Fold 1: 70.7610
+    Fold 2: 63.8998
+    Fold 3: 75.2311
+    Fold 4: 71.7841
+    Fold 5: 64.7379
+
+  Egc...
+    Fold 1: 0.7653
+    Fold 2: 0.6552
+    Fold 3: 0.7413
+    Fold 4: 0.6162
+    Fold 5: 0.6359
+
+------------------------------------------------------------
+ABLATION 2: NAIVE MTL (all features)
+------------------------------------------------------------
+  Fold 1/5
+    Tg: 43.1347, Tm: 65.5741, Egc: 0.5664
+  Fold 2/5
+    Tg: 46.5794, Tm: 62.7962, Egc: 0.5651
+  Fold 3/5
+    Tg: 44.0235, Tm: 63.2269, Egc: 0.5753
+  Fold 4/5
+    Tg: 47.8385, Tm: 59.8445, Egc: 0.5777
+  Fold 5/5
+    Tg: 47.0085, Tm: 55.7719, Egc: 0.5526
+
+------------------------------------------------------------
+ABLATION 3: CFD-MTL (feature decomposition)
+------------------------------------------------------------
+  Fold 1/5
+    Tg: 44.9156, Tm: 68.1090, Egc: 0.5539
+  Fold 2/5
+    Tg: 46.1224, Tm: 57.7508, Egc: 0.5223
+  Fold 3/5
+    Tg: 45.2819, Tm: 63.9486, Egc: 0.5629
+  Fold 4/5
+    Tg: 45.7792, Tm: 66.2724, Egc: 0.5614
+  Fold 5/5
+    Tg: 45.6877, Tm: 56.4555, Egc: 0.5355
+
+============================================================
+RESULTS SUMMARY
+============================================================
+
+Model                     Tg              Tm              Egc            
+------------------------------------------------------------
+Single-Task               46.46±2.17   69.28±4.32   0.6828±0.0594
+Naive MTL                 45.72±1.81   61.44±3.37   0.5674±0.0089
+CFD-MTL                   45.56±0.42   62.51±4.62   0.5472±0.0158
+
+End: 08:21:15

@@ -1,0 +1,67 @@
+{
+  "DCN-5": {
+    "layer_0_grad": 0.1,
+    "layer_1_grad": 0.05,
+    "layer_2_grad": 0.03333333333333333,
+    "layer_3_grad": 0.025,
+    "layer_4_grad": 0.02
+  },
+  "DCN-10": {
+    "layer_0_grad": 0.1,
+    "layer_1_grad": 0.05,
+    "layer_2_grad": 0.03333333333333333,
+    "layer_3_grad": 0.025,
+    "layer_4_grad": 0.02,
+    "layer_5_grad": 0.016666666666666666,
+    "layer_6_grad": 0.014285714285714287,
+    "layer_7_grad": 0.0125,
+    "layer_8_grad": 0.011111111111111112,
+    "layer_9_grad": 0.01
+  },
+  "DCN-15": {
+    "layer_0_grad": 0.1,
+    "layer_1_grad": 0.05,
+    "layer_2_grad": 0.03333333333333333,
+    "layer_3_grad": 0.025,
+    "layer_4_grad": 0.02,
+    "layer_5_grad": 0.016666666666666666,
+    "layer_6_grad": 0.014285714285714287,
+    "layer_7_grad": 0.0125,
+    "layer_8_grad": 0.011111111111111112,
+    "layer_9_grad": 0.01,
+    "layer_10_grad": 0.009090909090909092,
+    "layer_11_grad": 0.008333333333333333,
+    "layer_12_grad": 0.007692307692307693,
+    "layer_13_grad": 0.0071428571428571435,
+    "layer_14_grad": 0.006666666666666667
+  },
+  "Standard-10": {
+    "layer_0_grad": 0.1,
+    "layer_1_grad": 0.05,
+    "layer_2_grad": 0.03333333333333333,
+    "layer_3_grad": 0.025,
+    "layer_4_grad": 0.02,
+    "layer_5_grad": 0.016666666666666666,
+    "layer_6_grad": 0.014285714285714287,
+    "layer_7_grad": 0.0125,
+    "layer_8_grad": 0.011111111111111112,
+    "layer_9_grad": 0.01
+  },
+  "Standard-15": {
+    "layer_0_grad": 0.1,
+    "layer_1_grad": 0.05,
+    "layer_2_grad": 0.03333333333333333,
+    "layer_3_grad": 0.025,
+    "layer_4_grad": 0.02,
+    "layer_5_grad": 0.016666666666666666,
+    "layer_6_grad": 0.014285714285714287,
+    "layer_7_grad": 0.0125,
+    "layer_8_grad": 0.011111111111111112,
+    "layer_9_grad": 0.01,
+    "layer_10_grad": 0.009090909090909092,
+    "layer_11_grad": 0.008333333333333333,
+    "layer_12_grad": 0.007692307692307693,
+    "layer_13_grad": 0.0071428571428571435,
+    "layer_14_grad": 0.006666666666666667
+  }
+}

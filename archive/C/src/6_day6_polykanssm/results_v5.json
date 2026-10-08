@@ -1,0 +1,98 @@
+{
+  "experiment": "main_v5",
+  "model": "PolyKAN-SSM-v5",
+  "config": {
+    "data_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+    "work_dir": "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm",
+    "hidden_dim": 256,
+    "num_layers": 4,
+    "dropout": 0.25,
+    "spectral_radius": 0.99,
+    "num_frequencies": 4,
+    "lr": 0.0005,
+    "weight_decay": 0.002,
+    "batch_size": 32,
+    "max_epochs": 500,
+    "patience": 30,
+    "scheduler_patience": 15,
+    "scheduler_factor": 0.5,
+    "noncovalent_cutoff": 5.0,
+    "num_seeds": 5,
+    "train_ratio": 0.72,
+    "val_ratio": 0.08,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      2024
+    ]
+  },
+  "node_dim": 21,
+  "edge_dim": 23,
+  "num_samples": 7170,
+  "mean_test_rmse": 39.21311319130611,
+  "std_test_rmse": 1.3914386795834603,
+  "mean_test_mae": 26.035086910095366,
+  "std_test_mae": 0.9168407964127621,
+  "mean_test_r2": 0.8771466087699806,
+  "mean_train_rmse": 22.239940832739794,
+  "mean_val_rmse": 38.65418677071081,
+  "train_val_gap": 16.414245937971014,
+  "best_test_rmse": 37.55064161869421,
+  "sota_target": 30.8,
+  "beat_sota": false,
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "best_epoch": 115,
+      "train_rmse": 23.038278515762194,
+      "val_rmse": 34.58983123616165,
+      "test_rmse": 39.51852451692016,
+      "test_mae": 25.231235607118972,
+      "test_r2": 0.8769399712067772,
+      "num_params": 2209159
+    },
+    {
+      "seed": 123,
+      "best_epoch": 101,
+      "train_rmse": 23.1836230077736,
+      "val_rmse": 37.499053810347945,
+      "test_rmse": 37.65837775643853,
+      "test_mae": 25.301191252283104,
+      "test_r2": 0.8842219345161216,
+      "num_params": 2209159
+    },
+    {
+      "seed": 456,
+      "best_epoch": 104,
+      "train_rmse": 21.82402469894518,
+      "val_rmse": 39.96093881279223,
+      "test_rmse": 37.55064161869421,
+      "test_mae": 25.777162468568374,
+      "test_r2": 0.8852499271035924,
+      "num_params": 2209159
+    },
+    {
+      "seed": 789,
+      "best_epoch": 98,
+      "train_rmse": 24.793711198260773,
+      "val_rmse": 42.74649703165367,
+      "test_rmse": 40.95792353521413,
+      "test_mae": 27.751293726914437,
+      "test_r2": 0.8678392298272887,
+      "num_params": 2209159
+    },
+    {
+      "seed": 2024,
+      "best_epoch": 164,
+      "train_rmse": 18.36006674295722,
+      "val_rmse": 38.474612962598535,
+      "test_rmse": 40.38009852926349,
+      "test_mae": 26.11455149559194,
+      "test_r2": 0.8714819811961234,
+      "num_params": 2209159
+    }
+  ],
+  "timestamp": "2026-05-08T15:40:37.914793"
+}

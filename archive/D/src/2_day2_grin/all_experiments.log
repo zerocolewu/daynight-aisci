@@ -1,0 +1,1012 @@
+Results directory: /home/home_public/aisci/AIscientist/src/2_day2_grin/results_v2_20260324_090902
+
+================================================================================
+Experiment: Baseline: GIN with mean aggregation, no augmentation
+================================================================================
+Config: {
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.15,
+  "lr": 0.0005,
+  "weight_decay": 1e-05,
+  "max_epochs": 300,
+  "patience": 40,
+  "readout": "mean",
+  "name": "Baseline: GIN with mean aggregation, no augmentation",
+  "use_max_aggregation": false,
+  "use_l1": false,
+  "l1_lambda": 0.0,
+  "augmentation": null
+}
+Device: cuda
+Loading data...
+Total samples in dataset: 7170
+Split train: 5736 samples
+Target scaler fitted: mean=142.61, std=112.05
+Successfully loaded 5736 graphs, 0 failed
+Total samples in dataset: 7170
+Split val: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Total samples in dataset: 7170
+Split test: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Input dimension: 148
+Model parameters: 737,030
+
+Starting training for 300 epochs...
+Epoch   1/300: Train Loss: 0.3260, Val RMSE: 61.54, Val MAE: 48.11
+Epoch  10/300: Train Loss: 0.1447, Val RMSE: 39.97, Val MAE: 29.24
+Epoch  20/300: Train Loss: 0.1154, Val RMSE: 37.55, Val MAE: 27.17
+Epoch  30/300: Train Loss: 0.0992, Val RMSE: 38.04, Val MAE: 27.71
+Epoch  40/300: Train Loss: 0.0867, Val RMSE: 36.41, Val MAE: 26.25
+Epoch  50/300: Train Loss: 0.0739, Val RMSE: 35.45, Val MAE: 25.09
+Epoch  60/300: Train Loss: 0.0673, Val RMSE: 35.60, Val MAE: 25.95
+Epoch  70/300: Train Loss: 0.0559, Val RMSE: 35.04, Val MAE: 24.55
+Epoch  80/300: Train Loss: 0.0552, Val RMSE: 34.79, Val MAE: 24.59
+Epoch  90/300: Train Loss: 0.0473, Val RMSE: 35.30, Val MAE: 24.38
+Epoch 100/300: Train Loss: 0.0427, Val RMSE: 33.17, Val MAE: 23.21
+Epoch 110/300: Train Loss: 0.0393, Val RMSE: 34.61, Val MAE: 23.73
+Epoch 120/300: Train Loss: 0.0360, Val RMSE: 34.29, Val MAE: 23.52
+Epoch 130/300: Train Loss: 0.0335, Val RMSE: 34.08, Val MAE: 23.67
+Epoch 140/300: Train Loss: 0.0320, Val RMSE: 33.25, Val MAE: 23.01
+Epoch 150/300: Train Loss: 0.0291, Val RMSE: 33.19, Val MAE: 22.97
+Epoch 160/300: Train Loss: 0.0267, Val RMSE: 33.84, Val MAE: 22.93
+Epoch 170/300: Train Loss: 0.0253, Val RMSE: 33.15, Val MAE: 22.57
+Epoch 180/300: Train Loss: 0.0248, Val RMSE: 33.33, Val MAE: 22.55
+Epoch 190/300: Train Loss: 0.0240, Val RMSE: 32.92, Val MAE: 22.29
+Epoch 200/300: Train Loss: 0.0218, Val RMSE: 32.83, Val MAE: 22.21
+Epoch 210/300: Train Loss: 0.0210, Val RMSE: 32.97, Val MAE: 22.24
+Epoch 220/300: Train Loss: 0.0203, Val RMSE: 32.87, Val MAE: 22.10
+Epoch 230/300: Train Loss: 0.0197, Val RMSE: 32.53, Val MAE: 22.00
+Epoch 240/300: Train Loss: 0.0192, Val RMSE: 32.72, Val MAE: 22.09
+Epoch 250/300: Train Loss: 0.0185, Val RMSE: 32.71, Val MAE: 21.92
+Epoch 260/300: Train Loss: 0.0181, Val RMSE: 32.57, Val MAE: 21.96
+Epoch 270/300: Train Loss: 0.0174, Val RMSE: 32.54, Val MAE: 21.92
+Epoch 280/300: Train Loss: 0.0176, Val RMSE: 32.52, Val MAE: 21.95
+
+Early stopping at epoch 282
+
+Best validation RMSE: 32.12 at epoch 242
+Test RMSE: 32.31
+Test MAE: 20.85
+
+================================================================================
+Experiment: Ablation 1: GIN with max aggregation only
+================================================================================
+Config: {
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.15,
+  "lr": 0.0005,
+  "weight_decay": 1e-05,
+  "max_epochs": 300,
+  "patience": 40,
+  "readout": "mean",
+  "name": "Ablation 1: GIN with max aggregation only",
+  "use_max_aggregation": true,
+  "use_l1": false,
+  "l1_lambda": 0.0,
+  "augmentation": null
+}
+Device: cuda
+Loading data...
+Total samples in dataset: 7170
+Split train: 5736 samples
+Target scaler fitted: mean=142.61, std=112.05
+Successfully loaded 5736 graphs, 0 failed
+Total samples in dataset: 7170
+Split val: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Total samples in dataset: 7170
+Split test: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Input dimension: 148
+Model parameters: 737,025
+
+Starting training for 300 epochs...
+Epoch   1/300: Train Loss: 0.3196, Val RMSE: 57.15, Val MAE: 44.93
+Epoch  10/300: Train Loss: 0.1233, Val RMSE: 47.06, Val MAE: 36.50
+Epoch  20/300: Train Loss: 0.0934, Val RMSE: 41.64, Val MAE: 31.81
+Epoch  30/300: Train Loss: 0.0760, Val RMSE: 40.30, Val MAE: 30.05
+Epoch  40/300: Train Loss: 0.0633, Val RMSE: 38.84, Val MAE: 28.79
+Epoch  50/300: Train Loss: 0.0552, Val RMSE: 37.16, Val MAE: 28.19
+Epoch  60/300: Train Loss: 0.0454, Val RMSE: 36.16, Val MAE: 25.92
+Epoch  70/300: Train Loss: 0.0408, Val RMSE: 36.25, Val MAE: 26.30
+Epoch  80/300: Train Loss: 0.0373, Val RMSE: 35.28, Val MAE: 24.76
+Epoch  90/300: Train Loss: 0.0328, Val RMSE: 35.09, Val MAE: 25.27
+Epoch 100/300: Train Loss: 0.0309, Val RMSE: 35.27, Val MAE: 24.69
+Epoch 110/300: Train Loss: 0.0294, Val RMSE: 34.45, Val MAE: 23.78
+Epoch 120/300: Train Loss: 0.0269, Val RMSE: 35.23, Val MAE: 24.93
+Epoch 130/300: Train Loss: 0.0235, Val RMSE: 34.66, Val MAE: 24.18
+Epoch 140/300: Train Loss: 0.0233, Val RMSE: 33.66, Val MAE: 23.49
+Epoch 150/300: Train Loss: 0.0212, Val RMSE: 34.52, Val MAE: 23.97
+Epoch 160/300: Train Loss: 0.0194, Val RMSE: 33.87, Val MAE: 22.91
+Epoch 170/300: Train Loss: 0.0180, Val RMSE: 33.72, Val MAE: 22.80
+Epoch 180/300: Train Loss: 0.0166, Val RMSE: 33.50, Val MAE: 22.41
+Epoch 190/300: Train Loss: 0.0166, Val RMSE: 33.85, Val MAE: 22.63
+Epoch 200/300: Train Loss: 0.0160, Val RMSE: 33.70, Val MAE: 22.44
+Epoch 210/300: Train Loss: 0.0153, Val RMSE: 33.84, Val MAE: 22.73
+
+Early stopping at epoch 215
+
+Best validation RMSE: 32.90 at epoch 175
+Test RMSE: 34.03
+Test MAE: 22.16
+
+================================================================================
+Experiment: Ablation 2: GIN with max aggregation + L1 sparsity
+================================================================================
+Config: {
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.15,
+  "lr": 0.0005,
+  "weight_decay": 1e-05,
+  "max_epochs": 300,
+  "patience": 40,
+  "readout": "mean",
+  "name": "Ablation 2: GIN with max aggregation + L1 sparsity",
+  "use_max_aggregation": true,
+  "use_l1": true,
+  "l1_lambda": 0.0005,
+  "augmentation": null
+}
+Device: cuda
+Loading data...
+Total samples in dataset: 7170
+Split train: 5736 samples
+Target scaler fitted: mean=142.61, std=112.05
+Successfully loaded 5736 graphs, 0 failed
+Total samples in dataset: 7170
+Split val: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Total samples in dataset: 7170
+Split test: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Input dimension: 148
+Model parameters: 737,025
+
+Starting training for 300 epochs...
+Epoch   1/300: Train Loss: 11.2356, Val RMSE: 61.04, Val MAE: 49.71
+Epoch  10/300: Train Loss: 1.5679, Val RMSE: 66.18, Val MAE: 51.03
+Epoch  20/300: Train Loss: 0.9573, Val RMSE: 97.48, Val MAE: 81.27
+Epoch  30/300: Train Loss: 0.3824, Val RMSE: 65.21, Val MAE: 53.80
+Epoch  40/300: Train Loss: 0.2429, Val RMSE: 67.60, Val MAE: 54.51
+Epoch  50/300: Train Loss: 0.2146, Val RMSE: 57.18, Val MAE: 46.25
+Epoch  60/300: Train Loss: 0.2083, Val RMSE: 50.97, Val MAE: 40.67
+Epoch  70/300: Train Loss: 0.1962, Val RMSE: 56.78, Val MAE: 46.34
+Epoch  80/300: Train Loss: 0.1989, Val RMSE: 52.98, Val MAE: 42.51
+Epoch  90/300: Train Loss: 0.1880, Val RMSE: 49.10, Val MAE: 39.10
+Epoch 100/300: Train Loss: 0.1839, Val RMSE: 56.81, Val MAE: 44.83
+Epoch 110/300: Train Loss: 0.1755, Val RMSE: 49.84, Val MAE: 39.52
+Epoch 120/300: Train Loss: 0.1736, Val RMSE: 57.86, Val MAE: 46.84
+Epoch 130/300: Train Loss: 0.1698, Val RMSE: 54.18, Val MAE: 44.00
+[09:38:41] Can't kekulize mol.  Unkekulized atoms: 143 144 145 146 147 148 149 150 151 152 153 154 155
+[09:38:42] Can't kekulize mol.  Unkekulized atoms: 155 156 157 160 163 164 165
+[09:38:42] Can't kekulize mol.  Unkekulized atoms: 83 84 85 86 87
+[09:38:42] Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22 23 24 25 26
+[09:38:42] Can't kekulize mol.  Unkekulized atoms: 104 105 106 107 108 115 116 119 120
+[09:38:42] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[09:38:43] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 90 91 92 93 94
+[09:38:43] Can't kekulize mol.  Unkekulized atoms: 275 276 277 280 283 284 285
+[09:38:43] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[09:38:43] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+[09:38:43] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 85 86 87 88 89
+[09:38:44] Can't kekulize mol.  Unkekulized atoms: 152 153 154 155 156 157 158 159 160 161 162 163 164
+[09:38:45] Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 197 200 201 202 203 204 205 206 207 210 211 212 213
+[09:38:45] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[09:38:46] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[09:38:46] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[09:38:46] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:38:46] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[09:38:46] Can't kekulize mol.  Unkekulized atoms: 61 62 63 66 69 70 71
+[09:38:46] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+[09:38:47] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+[09:38:47] Can't kekulize mol.  Unkekulized atoms: 169 170 171 174 175 176 177 178 179
+[09:38:47] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[09:38:47] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[09:38:47] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+[09:38:48] Can't kekulize mol.  Unkekulized atoms: 171 172 173 176 179 180 181
+[09:38:48] Can't kekulize mol.  Unkekulized atoms: 140 141 142 143 144 145 146 147 148 149 150 151 152
+[09:38:48] Can't kekulize mol.  Unkekulized atoms: 145 146 147 150 153 154 155
+[09:38:49] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:38:49] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:38:49] Can't kekulize mol.  Unkekulized atoms: 58 59 60 61 62
+[09:38:49] Can't kekulize mol.  Unkekulized atoms: 258 259 260 261 264 267 268 269 270 273 274
+[09:38:50] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[09:38:50] Can't kekulize mol.  Unkekulized atoms: 60 61 62 65 68 69 70
+[09:38:51] Can't kekulize mol.  Unkekulized atoms: 129 130 137 140 143 144 151
+[09:38:52] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 131 132 143
+[09:38:52] Can't kekulize mol.  Unkekulized atoms: 204 205 206 209 212 213 214
+[09:38:52] Can't kekulize mol.  Unkekulized atoms: 117 118 125 128 131 132 139
+[09:38:53] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[09:38:53] Can't kekulize mol.  Unkekulized atoms: 145 146 157 160 163 164 175
+[09:38:53] Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 135
+[09:38:53] Can't kekulize mol.  Unkekulized atoms: 149 150 165 168 171 172 187
+[09:38:53] Can't kekulize mol.  Unkekulized atoms: 112 113 114 117 120 121 122
+[09:38:53] Can't kekulize mol.  Unkekulized atoms: 89 90 91 94 97 98 99
+[09:38:54] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[09:38:54] Can't kekulize mol.  Unkekulized atoms: 114 115 116 119 122 123 124
+[09:38:55] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[09:38:56] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[09:38:56] Can't kekulize mol.  Unkekulized atoms: 102 103 104 107 110 111 112
+[09:38:56] Can't kekulize mol.  Unkekulized atoms: 106 107 117 120 123 124 134
+[09:38:56] Can't kekulize mol.  Unkekulized atoms: 298 299 300 301 304 307 308 309 310 313 314
+[09:38:57] Can't kekulize mol.  Unkekulized atoms: 148 149 150 151 154 157 158 159 160 163 164
+[09:38:57] Can't kekulize mol.  Unkekulized atoms: 144 145 146 147 148 149 150 168 169
+[09:38:58] Can't kekulize mol.  Unkekulized atoms: 109 110 111 114 117 118 119
+[09:38:58] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[09:38:58] Can't kekulize mol.  Unkekulized atoms: 169 170 171 172 173 174 175 176 177
+[09:38:58] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[09:38:58] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 123 124 131
+[09:38:58] Can't kekulize mol.  Unkekulized atoms: 214 215 216 217 218 219 220 221 224 227 228 229 230 231 232 233 234 237 238 239 240
+[09:38:58] Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 195
+[09:38:59] Can't kekulize mol.  Unkekulized atoms: 110 111 112 113 114 115 116 117 118
+[09:38:59] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:38:59] Can't kekulize mol.  Unkekulized atoms: 125 126 127 128 129 136 137 140 141
+[09:38:59] Can't kekulize mol.  Unkekulized atoms: 96 97 98 101 104 105 106
+[09:39:00] Can't kekulize mol.  Unkekulized atoms: 87 88 89 92 95 96 97
+[09:39:01] Can't kekulize mol.  Unkekulized atoms: 118 119 132 135 138 139 152
+[09:39:01] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[09:39:01] Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+[09:39:01] Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+[09:39:02] Can't kekulize mol.  Unkekulized atoms: 138 139 140 143 146 147 148
+[09:39:02] Can't kekulize mol.  Unkekulized atoms: 165 166 167 168 169 176 177 180 181
+[09:39:02] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[09:39:02] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 89 90 91
+[09:39:02] Can't kekulize mol.  Unkekulized atoms: 85 86 87 90 93 94 95
+
+Early stopping at epoch 135
+
+Best validation RMSE: 43.93 at epoch 95
+Test RMSE: 44.54
+Test MAE: 32.74
+
+================================================================================
+Experiment: Full GRIN: Max aggregation + L1 + {1,3}-RU augmentation
+================================================================================
+Config: {
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.15,
+  "lr": 0.0005,
+  "weight_decay": 1e-05,
+  "max_epochs": 300,
+  "patience": 40,
+  "readout": "mean",
+  "name": "Full GRIN: Max aggregation + L1 + {1,3}-RU augmentation",
+  "use_max_aggregation": true,
+  "use_l1": true,
+  "l1_lambda": 0.0005,
+  "augmentation": "both"
+}
+Device: cuda
+Loading data...
+Total samples in dataset: 7170
+Split train: 5736 samples
+Target scaler fitted: mean=142.61, std=112.05
+After both augmentation: 11472 samples
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 143 144 145 146 147 148 149 150 151 152 153 154 155
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 155 156 157 160 163 164 165
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 83 84 85 86 87
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22 23 24 25 26
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 104 105 106 107 108 115 116 119 120
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 90 91 92 93 94
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 275 276 277 280 283 284 285
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 85 86 87 88 89
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 152 153 154 155 156 157 158 159 160 161 162 163 164
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 197 200 201 202 203 204 205 206 207 210 211 212 213
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 61 62 63 66 69 70 71
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 169 170 171 174 175 176 177 178 179
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 171 172 173 176 179 180 181
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 140 141 142 143 144 145 146 147 148 149 150 151 152
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 145 146 147 150 153 154 155
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 58 59 60 61 62
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 258 259 260 261 264 267 268 269 270 273 274
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 60 61 62 65 68 69 70
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 129 130 137 140 143 144 151
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 131 132 143
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 204 205 206 209 212 213 214
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 117 118 125 128 131 132 139
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 145 146 157 160 163 164 175
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 135
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 149 150 165 168 171 172 187
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 112 113 114 117 120 121 122
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 89 90 91 94 97 98 99
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 114 115 116 119 122 123 124
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 102 103 104 107 110 111 112
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 106 107 117 120 123 124 134
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 298 299 300 301 304 307 308 309 310 313 314
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 148 149 150 151 154 157 158 159 160 163 164
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 144 145 146 147 148 149 150 168 169
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 109 110 111 114 117 118 119
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 169 170 171 172 173 174 175 176 177
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 123 124 131
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 214 215 216 217 218 219 220 221 224 227 228 229 230 231 232 233 234 237 238 239 240
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 195
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 110 111 112 113 114 115 116 117 118
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 125 126 127 128 129 136 137 140 141
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 96 97 98 101 104 105 106
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 87 88 89 92 95 96 97
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 118 119 132 135 138 139 152
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 138 139 140 143 146 147 148
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 165 166 167 168 169 176 177 180 181
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 89 90 91
+[09:39:02] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[09:39:02] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 121
+[09:39:03] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[09:39:03] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[09:39:03] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 179 180 183 184
+[09:39:03] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[09:39:04] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 121 122 123 124 125
+[09:39:04] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 92 93 94
+[09:39:04] Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+[09:39:04] Can't kekulize mol.  Unkekulized atoms: 124 125 126 129 132 133 134
+[09:39:05] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[09:39:05] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[09:39:05] Can't kekulize mol.  Unkekulized atoms: 117 118 119 122 125 126 133
+[09:39:05] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[09:39:05] Can't kekulize mol.  Unkekulized atoms: 148 149 150 153 156 157 158
+[09:39:05] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[09:39:05] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[09:39:05] Can't kekulize mol.  Unkekulized atoms: 132 133 134 135 138 141 142 143 144 147 148
+[09:39:05] Can't kekulize mol.  Unkekulized atoms: 139 140 141 144 147 148 149
+[09:39:06] Can't kekulize mol.  Unkekulized atoms: 110 111 112 115 118 119 120
+[09:39:06] Can't kekulize mol.  Unkekulized atoms: 76 77 78 81 84 85 86
+[09:39:07] Can't kekulize mol.  Unkekulized atoms: 158 159 160 163 166 167 168
+[09:39:07] Can't kekulize mol.  Unkekulized atoms: 51 52 53 56 59 60 61
+[09:39:07] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 134 135 136
+[09:39:07] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[09:39:07] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[09:39:07] Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+[09:39:07] Can't kekulize mol.  Unkekulized atoms: 150 151 152 155 158 159 160
+[09:39:07] Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 155
+[09:39:08] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 129 130 131 132 133
+[09:39:08] Can't kekulize mol.  Unkekulized atoms: 133 134 145 148 151 152 163
+[09:39:08] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157
+[09:39:08] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[09:39:08] Can't kekulize mol.  Unkekulized atoms: 144 145 146 149 152 153 154
+[09:39:08] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+[09:39:09] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 173 174 175 176
+[09:39:09] Can't kekulize mol.  Unkekulized atoms: 121 122 123 126 129 130 145
+[09:39:09] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[09:39:09] Can't kekulize mol.  Unkekulized atoms: 56 57 58 59 60
+[09:39:10] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[09:39:10] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[09:39:10] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+[09:39:11] Can't kekulize mol.  Unkekulized atoms: 121 122 123 124 125 132 133 136 137
+[09:39:11] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[09:39:11] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 101 102 103 104 105
+[09:39:11] Can't kekulize mol.  Unkekulized atoms: 142 143 144 147 150 151 152
+[09:39:12] Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 126 127 128 135 136
+[09:39:12] Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 123
+[09:39:12] Can't kekulize mol.  Unkekulized atoms: 58 59 60 63 66 67 68
+[09:39:12] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[09:39:13] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[09:39:13] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 89
+[09:39:13] Can't kekulize mol.  Unkekulized atoms: 179 180 181 182 183 184 185 186 189 192 193 194 195 196 197 198 199 202 203 204 205
+[09:39:14] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 109 110 111 112 113
+[09:39:14] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[09:39:14] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[09:39:15] Can't kekulize mol.  Unkekulized atoms: 116 117 118 121 124 125 126
+[09:39:15] Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+[09:39:15] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 93
+[09:39:15] Can't kekulize mol.  Unkekulized atoms: 206 207 208 209 210 211 212 213 214 215 216 217 218
+[09:39:15] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[09:39:16] Can't kekulize mol.  Unkekulized atoms: 127 128 135 138 141 142 149
+[09:39:16] Can't kekulize mol.  Unkekulized atoms: 153 154 155 158 159 160 161 162 163
+[09:39:16] Can't kekulize mol.  Unkekulized atoms: 57 58 59 60 61
+[09:39:16] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[09:39:16] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[09:39:16] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[09:39:17] Can't kekulize mol.  Unkekulized atoms: 217 218 219 220 221 222 223 224 227 230 231 232 233 234 235 236 237 240 241 242 243
+[09:39:17] Can't kekulize mol.  Unkekulized atoms: 106 107 108 111 114 115 116
+[09:39:17] Can't kekulize mol.  Unkekulized atoms: 111 112 113 116 119 120 121
+[09:39:17] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[09:39:17] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[09:39:17] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157 158 159 160 161
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 82 83 84 85 86
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 74 75 76 79 82 83 84
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 85 86 87 90 93 94 95
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 121
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 179 180 183 184
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 121 122 123 124 125
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 92 93 94
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 124 125 126 129 132 133 134
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 117 118 119 122 125 126 133
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 148 149 150 153 156 157 158
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 132 133 134 135 138 141 142 143 144 147 148
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 139 140 141 144 147 148 149
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 110 111 112 115 118 119 120
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 76 77 78 81 84 85 86
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 158 159 160 163 166 167 168
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 51 52 53 56 59 60 61
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 134 135 136
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 150 151 152 155 158 159 160
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 155
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 129 130 131 132 133
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 133 134 145 148 151 152 163
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 144 145 146 149 152 153 154
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 173 174 175 176
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 121 122 123 126 129 130 145
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 56 57 58 59 60
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 121 122 123 124 125 132 133 136 137
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 101 102 103 104 105
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 142 143 144 147 150 151 152
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 126 127 128 135 136
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 123
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 58 59 60 63 66 67 68
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 89
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 179 180 181 182 183 184 185 186 189 192 193 194 195 196 197 198 199 202 203 204 205
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 109 110 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 116 117 118 121 124 125 126
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 93
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 206 207 208 209 210 211 212 213 214 215 216 217 218
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 127 128 135 138 141 142 149
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 153 154 155 158 159 160 161 162 163
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 57 58 59 60 61
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 217 218 219 220 221 222 223 224 227 230 231 232 233 234 235 236 237 240 241 242 243
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 106 107 108 111 114 115 116
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 111 112 113 116 119 120 121
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157 158 159 160 161
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 82 83 84 85 86
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 74 75 76 79 82 83 84
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[09:39:18] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[09:39:19] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[09:39:19] Can't kekulize mol.  Unkekulized atoms: 59 60 61 62 63
+[09:39:19] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[09:39:20] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[09:39:20] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[09:39:21] Can't kekulize mol.  Unkekulized atoms: 177 178 179 180 181 182 183 184 187 190 191 192 193 194 195 196 197 200 201 202 203
+[09:39:21] Can't kekulize mol.  Unkekulized atoms: 149 150 151 154 157 158 159
+[09:39:21] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[09:39:21] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[09:39:22] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[09:39:22] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[09:39:22] Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 128 131 132 133 134 137 138
+[09:39:22] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 132 133 134 135 136
+[09:39:23] Can't kekulize mol.  Unkekulized atoms: 150 151 172 175 178 179 200
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 59 60 61 62 63
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 177 178 179 180 181 182 183 184 187 190 191 192 193 194 195 196 197 200 201 202 203
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 149 150 151 154 157 158 159
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 128 131 132 133 134 137 138
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 132 133 134 135 136
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 150 151 172 175 178 179 200
+Successfully loaded 11300 graphs, 172 failed
+Total samples in dataset: 7170
+Split val: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Total samples in dataset: 7170
+Split test: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Input dimension: 148
+Model parameters: 737,025
+
+Starting training for 300 epochs...
+Epoch   1/300: Train Loss: 10.0793, Val RMSE: 70.15, Val MAE: 57.34
+Epoch  10/300: Train Loss: 1.0837, Val RMSE: 80.55, Val MAE: 67.41
+Epoch  20/300: Train Loss: 0.2607, Val RMSE: 47.29, Val MAE: 36.66
+Epoch  30/300: Train Loss: 0.2176, Val RMSE: 49.99, Val MAE: 39.31
+Epoch  40/300: Train Loss: 0.2086, Val RMSE: 50.12, Val MAE: 39.40
+Epoch  50/300: Train Loss: 0.2037, Val RMSE: 52.69, Val MAE: 41.66
+Epoch  60/300: Train Loss: 0.1974, Val RMSE: 55.11, Val MAE: 44.65
+Epoch  70/300: Train Loss: 0.1960, Val RMSE: 59.69, Val MAE: 47.80
+Epoch  80/300: Train Loss: 0.1882, Val RMSE: 55.48, Val MAE: 44.56
+Epoch  90/300: Train Loss: 0.1806, Val RMSE: 53.57, Val MAE: 42.76
+Epoch 100/300: Train Loss: 0.1796, Val RMSE: 51.69, Val MAE: 40.48
+Epoch 110/300: Train Loss: 0.1757, Val RMSE: 48.79, Val MAE: 37.98
+[09:53:01] Can't kekulize mol.  Unkekulized atoms: 143 144 145 146 147 148 149 150 151 152 153 154 155
+[09:53:01] Can't kekulize mol.  Unkekulized atoms: 155 156 157 160 163 164 165
+[09:53:01] Can't kekulize mol.  Unkekulized atoms: 83 84 85 86 87
+[09:53:01] Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22 23 24 25 26
+[09:53:02] Can't kekulize mol.  Unkekulized atoms: 104 105 106 107 108 115 116 119 120
+[09:53:02] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[09:53:02] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 90 91 92 93 94
+[09:53:02] Can't kekulize mol.  Unkekulized atoms: 275 276 277 280 283 284 285
+[09:53:02] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[09:53:03] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+[09:53:03] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 85 86 87 88 89
+[09:53:03] Can't kekulize mol.  Unkekulized atoms: 152 153 154 155 156 157 158 159 160 161 162 163 164
+[09:53:05] Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 197 200 201 202 203 204 205 206 207 210 211 212 213
+[09:53:05] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[09:53:05] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[09:53:05] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[09:53:06] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:53:06] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[09:53:06] Can't kekulize mol.  Unkekulized atoms: 61 62 63 66 69 70 71
+[09:53:06] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+[09:53:06] Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+[09:53:06] Can't kekulize mol.  Unkekulized atoms: 169 170 171 174 175 176 177 178 179
+[09:53:06] Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+[09:53:07] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[09:53:07] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+[09:53:08] Can't kekulize mol.  Unkekulized atoms: 171 172 173 176 179 180 181
+[09:53:08] Can't kekulize mol.  Unkekulized atoms: 140 141 142 143 144 145 146 147 148 149 150 151 152
+[09:53:08] Can't kekulize mol.  Unkekulized atoms: 145 146 147 150 153 154 155
+[09:53:08] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:53:09] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:53:09] Can't kekulize mol.  Unkekulized atoms: 58 59 60 61 62
+[09:53:09] Can't kekulize mol.  Unkekulized atoms: 258 259 260 261 264 267 268 269 270 273 274
+[09:53:10] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[09:53:10] Can't kekulize mol.  Unkekulized atoms: 60 61 62 65 68 69 70
+[09:53:11] Can't kekulize mol.  Unkekulized atoms: 129 130 137 140 143 144 151
+[09:53:11] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 131 132 143
+[09:53:12] Can't kekulize mol.  Unkekulized atoms: 204 205 206 209 212 213 214
+[09:53:12] Can't kekulize mol.  Unkekulized atoms: 117 118 125 128 131 132 139
+[09:53:12] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[09:53:13] Can't kekulize mol.  Unkekulized atoms: 145 146 157 160 163 164 175
+[09:53:13] Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 135
+[09:53:13] Can't kekulize mol.  Unkekulized atoms: 149 150 165 168 171 172 187
+[09:53:13] Can't kekulize mol.  Unkekulized atoms: 112 113 114 117 120 121 122
+[09:53:13] Can't kekulize mol.  Unkekulized atoms: 89 90 91 94 97 98 99
+[09:53:13] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[09:53:14] Can't kekulize mol.  Unkekulized atoms: 114 115 116 119 122 123 124
+[09:53:15] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[09:53:15] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[09:53:15] Can't kekulize mol.  Unkekulized atoms: 102 103 104 107 110 111 112
+[09:53:15] Can't kekulize mol.  Unkekulized atoms: 106 107 117 120 123 124 134
+[09:53:16] Can't kekulize mol.  Unkekulized atoms: 298 299 300 301 304 307 308 309 310 313 314
+[09:53:17] Can't kekulize mol.  Unkekulized atoms: 148 149 150 151 154 157 158 159 160 163 164
+[09:53:17] Can't kekulize mol.  Unkekulized atoms: 144 145 146 147 148 149 150 168 169
+[09:53:17] Can't kekulize mol.  Unkekulized atoms: 109 110 111 114 117 118 119
+[09:53:17] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[09:53:17] Can't kekulize mol.  Unkekulized atoms: 169 170 171 172 173 174 175 176 177
+[09:53:17] Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+[09:53:18] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 123 124 131
+[09:53:18] Can't kekulize mol.  Unkekulized atoms: 214 215 216 217 218 219 220 221 224 227 228 229 230 231 232 233 234 237 238 239 240
+[09:53:18] Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 195
+[09:53:18] Can't kekulize mol.  Unkekulized atoms: 110 111 112 113 114 115 116 117 118
+[09:53:18] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:53:19] Can't kekulize mol.  Unkekulized atoms: 125 126 127 128 129 136 137 140 141
+[09:53:19] Can't kekulize mol.  Unkekulized atoms: 96 97 98 101 104 105 106
+[09:53:19] Can't kekulize mol.  Unkekulized atoms: 87 88 89 92 95 96 97
+[09:53:20] Can't kekulize mol.  Unkekulized atoms: 118 119 132 135 138 139 152
+[09:53:20] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[09:53:20] Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+[09:53:21] Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+[09:53:21] Can't kekulize mol.  Unkekulized atoms: 138 139 140 143 146 147 148
+[09:53:21] Can't kekulize mol.  Unkekulized atoms: 165 166 167 168 169 176 177 180 181
+[09:53:21] Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+[09:53:21] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 89 90 91
+[09:53:22] Can't kekulize mol.  Unkekulized atoms: 85 86 87 90 93 94 95
+
+Early stopping at epoch 115
+
+Best validation RMSE: 44.34 at epoch 75
+Test RMSE: 46.34
+Test MAE: 33.76
+
+================================================================================
+Experiment: Additional: Mean aggregation + {1,3}-RU augmentation
+================================================================================
+Config: {
+  "batch_size": 64,
+  "hidden_dim": 256,
+  "num_layers": 5,
+  "dropout": 0.15,
+  "lr": 0.0005,
+  "weight_decay": 1e-05,
+  "max_epochs": 300,
+  "patience": 40,
+  "readout": "mean",
+  "name": "Additional: Mean aggregation + {1,3}-RU augmentation",
+  "use_max_aggregation": false,
+  "use_l1": false,
+  "l1_lambda": 0.0,
+  "augmentation": "both"
+}
+Device: cuda
+Loading data...
+Total samples in dataset: 7170
+Split train: 5736 samples
+Target scaler fitted: mean=142.61, std=112.05
+After both augmentation: 11472 samples
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 143 144 145 146 147 148 149 150 151 152 153 154 155
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 155 156 157 160 163 164 165
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 83 84 85 86 87
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 18 19 20 21 22 23 24 25 26
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 104 105 106 107 108 115 116 119 120
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 90 91 92 93 94
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 275 276 277 280 283 284 285
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 128 129 130
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 85 86 87 88 89
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 152 153 154 155 156 157 158 159 160 161 162 163 164
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 197 200 201 202 203 204 205 206 207 210 211 212 213
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 61 62 63 66 69 70 71
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 115
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 73 74 75 78 81 82 83
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 169 170 171 174 175 176 177 178 179
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 62 63 64 67 70 71 72
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 171 172 173 176 179 180 181
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 140 141 142 143 144 145 146 147 148 149 150 151 152
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 145 146 147 150 153 154 155
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 58 59 60 61 62
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 258 259 260 261 264 267 268 269 270 273 274
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 60 61 62 65 68 69 70
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 129 130 137 140 143 144 151
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 131 132 143
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 204 205 206 209 212 213 214
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 117 118 125 128 131 132 139
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 145 146 157 160 163 164 175
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 135
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 149 150 165 168 171 172 187
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 112 113 114 117 120 121 122
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 89 90 91 94 97 98 99
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 114 115 116 119 122 123 124
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 102 103 104 107 110 111 112
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 106 107 117 120 123 124 134
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 298 299 300 301 304 307 308 309 310 313 314
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 148 149 150 151 154 157 158 159 160 163 164
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 144 145 146 147 148 149 150 168 169
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 109 110 111 114 117 118 119
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 169 170 171 172 173 174 175 176 177
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 93 94 95 98 101 102 103
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 123 124 131
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 214 215 216 217 218 219 220 221 224 227 228 229 230 231 232 233 234 237 238 239 240
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 187 188 189 190 191 192 193 194 195
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 110 111 112 113 114 115 116 117 118
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 125 126 127 128 129 136 137 140 141
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 96 97 98 101 104 105 106
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 87 88 89 92 95 96 97
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 118 119 132 135 138 139 152
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 54 55 56 59 62 63 64
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 138 139 140 143 146 147 148
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 165 166 167 168 169 176 177 180 181
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 78 79 80 83 86 87 88
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 89 90 91
+[09:53:22] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[09:53:22] Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 121
+[09:53:22] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[09:53:22] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[09:53:22] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 179 180 183 184
+[09:53:23] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+[09:53:23] Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 121 122 123 124 125
+[09:53:23] Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 92 93 94
+[09:53:23] Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+[09:53:23] Can't kekulize mol.  Unkekulized atoms: 124 125 126 129 132 133 134
+[09:53:24] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[09:53:24] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[09:53:24] Can't kekulize mol.  Unkekulized atoms: 117 118 119 122 125 126 133
+[09:53:24] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[09:53:24] Can't kekulize mol.  Unkekulized atoms: 148 149 150 153 156 157 158
+[09:53:24] Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+[09:53:24] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[09:53:25] Can't kekulize mol.  Unkekulized atoms: 132 133 134 135 138 141 142 143 144 147 148
+[09:53:25] Can't kekulize mol.  Unkekulized atoms: 139 140 141 144 147 148 149
+[09:53:25] Can't kekulize mol.  Unkekulized atoms: 110 111 112 115 118 119 120
+[09:53:26] Can't kekulize mol.  Unkekulized atoms: 76 77 78 81 84 85 86
+[09:53:26] Can't kekulize mol.  Unkekulized atoms: 158 159 160 163 166 167 168
+[09:53:26] Can't kekulize mol.  Unkekulized atoms: 51 52 53 56 59 60 61
+[09:53:26] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 134 135 136
+[09:53:26] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[09:53:26] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[09:53:26] Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+[09:53:26] Can't kekulize mol.  Unkekulized atoms: 150 151 152 155 158 159 160
+[09:53:27] Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 155
+[09:53:27] Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 129 130 131 132 133
+[09:53:27] Can't kekulize mol.  Unkekulized atoms: 133 134 145 148 151 152 163
+[09:53:27] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157
+[09:53:27] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[09:53:27] Can't kekulize mol.  Unkekulized atoms: 144 145 146 149 152 153 154
+[09:53:28] Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+[09:53:28] Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 173 174 175 176
+[09:53:28] Can't kekulize mol.  Unkekulized atoms: 121 122 123 126 129 130 145
+[09:53:28] Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+[09:53:29] Can't kekulize mol.  Unkekulized atoms: 56 57 58 59 60
+[09:53:29] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[09:53:29] Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+[09:53:29] Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+[09:53:30] Can't kekulize mol.  Unkekulized atoms: 121 122 123 124 125 132 133 136 137
+[09:53:30] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[09:53:30] Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 101 102 103 104 105
+[09:53:30] Can't kekulize mol.  Unkekulized atoms: 142 143 144 147 150 151 152
+[09:53:31] Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 126 127 128 135 136
+[09:53:31] Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 123
+[09:53:31] Can't kekulize mol.  Unkekulized atoms: 58 59 60 63 66 67 68
+[09:53:31] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+[09:53:32] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[09:53:32] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 89
+[09:53:32] Can't kekulize mol.  Unkekulized atoms: 179 180 181 182 183 184 185 186 189 192 193 194 195 196 197 198 199 202 203 204 205
+[09:53:33] Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 109 110 111 112 113
+[09:53:33] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[09:53:33] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[09:53:33] Can't kekulize mol.  Unkekulized atoms: 116 117 118 121 124 125 126
+[09:53:33] Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+[09:53:34] Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 93
+[09:53:34] Can't kekulize mol.  Unkekulized atoms: 206 207 208 209 210 211 212 213 214 215 216 217 218
+[09:53:34] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[09:53:35] Can't kekulize mol.  Unkekulized atoms: 127 128 135 138 141 142 149
+[09:53:35] Can't kekulize mol.  Unkekulized atoms: 153 154 155 158 159 160 161 162 163
+[09:53:35] Can't kekulize mol.  Unkekulized atoms: 57 58 59 60 61
+[09:53:35] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[09:53:35] Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+[09:53:35] Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+[09:53:36] Can't kekulize mol.  Unkekulized atoms: 217 218 219 220 221 222 223 224 227 230 231 232 233 234 235 236 237 240 241 242 243
+[09:53:36] Can't kekulize mol.  Unkekulized atoms: 106 107 108 111 114 115 116
+[09:53:36] Can't kekulize mol.  Unkekulized atoms: 111 112 113 116 119 120 121
+[09:53:36] Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+[09:53:36] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[09:53:36] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[09:53:36] Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157 158 159 160 161
+[09:53:36] Can't kekulize mol.  Unkekulized atoms: 82 83 84 85 86
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 74 75 76 79 82 83 84
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 85 86 87 90 93 94 95
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 105 106 107 110 113 114 121
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 179 180 183 184
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 101
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 115 116 117 120 121 122 123 124 125
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 84 85 86 89 92 93 94
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 107 108 109 112 115 116 117
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 124 125 126 129 132 133 134
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 117 118 119 122 125 126 133
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 148 149 150 153 156 157 158
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 132 133 134 135 138 141 142 143 144 147 148
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 139 140 141 144 147 148 149
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 110 111 112 115 118 119 120
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 76 77 78 81 84 85 86
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 158 159 160 163 166 167 168
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 51 52 53 56 59 60 61
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 134 135 136
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 82 83 84 87 90 91 92
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 150 151 152 155 158 159 160
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 131 132 133 136 139 140 155
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 123 124 125 128 129 130 131 132 133
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 133 134 145 148 151 152 163
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 144 145 146 149 152 153 154
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 120 121 122 125 126 127 128 129 130
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 168 169 170 171 172 173 174 175 176
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 121 122 123 126 129 130 145
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 99 100 105 108 111 112 117
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 56 57 58 59 60
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 77 78 79 82 85 86 87
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 53 54 55 58 61 62 63
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 121 122 123 124 125 132 133 136 137
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 95 96 97 100 101 102 103 104 105
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 142 143 144 147 150 151 152
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 126 127 128 135 136
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 123
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 58 59 60 63 66 67 68
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 89
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 179 180 181 182 183 184 185 186 189 192 193 194 195 196 197 198 199 202 203 204 205
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 103 104 105 108 109 110 111 112 113
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 116 117 118 121 124 125 126
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 108 109 110 113 116 117 118
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 79 80 81 84 87 88 93
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 206 207 208 209 210 211 212 213 214 215 216 217 218
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 127 128 135 138 141 142 149
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 153 154 155 158 159 160 161 162 163
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 57 58 59 60 61
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 52 53 54 57 60 61 62
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 71 72 73 76 79 80 81
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 217 218 219 220 221 222 223 224 227 230 231 232 233 234 235 236 237 240 241 242 243
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 106 107 108 111 114 115 116
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 111 112 113 116 119 120 121
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 88 89 90 93 96 97 98
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 149 150 151 152 153 154 155 156 157 158 159 160 161
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 82 83 84 85 86
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 100 101 102 105 108 109 110
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 81 82 83 86 87 88 89 90 91
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 74 75 76 79 82 83 84
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 101 102 103 106 109 110 111
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 59 60 61 64 67 68 69
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 107 108 109 116 117
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+[09:53:37] Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+[09:53:38] Can't kekulize mol.  Unkekulized atoms: 59 60 61 62 63
+[09:53:38] Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+[09:53:39] Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+[09:53:39] Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+[09:53:39] Can't kekulize mol.  Unkekulized atoms: 177 178 179 180 181 182 183 184 187 190 191 192 193 194 195 196 197 200 201 202 203
+[09:53:40] Can't kekulize mol.  Unkekulized atoms: 149 150 151 154 157 158 159
+[09:53:40] Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+[09:53:40] Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+[09:53:41] Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+[09:53:41] Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+[09:53:41] Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 128 131 132 133 134 137 138
+[09:53:41] Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 132 133 134 135 136
+[09:53:41] Can't kekulize mol.  Unkekulized atoms: 150 151 172 175 178 179 200
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 97 98 99 102 105 106 107
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 152 153 154 157 160 161 162
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 70 71 72 75 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 59 60 61 62 63
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 76 77 78 79 80
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 140 141 142 145 148 149 150
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 83 84 85 88 91 92 93
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 177 178 179 180 181 182 183 184 187 190 191 192 193 194 195 196 197 200 201 202 203
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 149 150 151 154 157 158 159
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 91 92 93 96 99 100 105
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 118 119 120 123 126 127 128
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 75 76 77 80 83 84 85
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 86 87 88 91 94 95 96
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 122 123 124 125 128 131 132 133 134 137 138
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 126 127 128 131 132 133 134 135 136
+Error creating 3-RU molecule: Can't kekulize mol.  Unkekulized atoms: 150 151 172 175 178 179 200
+Successfully loaded 11300 graphs, 172 failed
+Total samples in dataset: 7170
+Split val: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Total samples in dataset: 7170
+Split test: 717 samples
+Successfully loaded 717 graphs, 0 failed
+Input dimension: 148
+Model parameters: 737,030
+
+Starting training for 300 epochs...
+Epoch   1/300: Train Loss: 0.2816, Val RMSE: 50.35, Val MAE: 37.64
+Epoch  10/300: Train Loss: 0.1320, Val RMSE: 44.38, Val MAE: 32.99
+Epoch  20/300: Train Loss: 0.0972, Val RMSE: 38.68, Val MAE: 27.73
+Epoch  30/300: Train Loss: 0.0776, Val RMSE: 39.76, Val MAE: 28.40
+Epoch  40/300: Train Loss: 0.0656, Val RMSE: 37.21, Val MAE: 26.11
+Epoch  50/300: Train Loss: 0.0560, Val RMSE: 37.38, Val MAE: 26.62
+Epoch  60/300: Train Loss: 0.0477, Val RMSE: 36.49, Val MAE: 24.95
+Epoch  70/300: Train Loss: 0.0405, Val RMSE: 36.57, Val MAE: 24.86
+Epoch  80/300: Train Loss: 0.0362, Val RMSE: 34.78, Val MAE: 23.38
+Epoch  90/300: Train Loss: 0.0349, Val RMSE: 35.55, Val MAE: 23.81
+Epoch 100/300: Train Loss: 0.0303, Val RMSE: 36.42, Val MAE: 23.96
+Epoch 110/300: Train Loss: 0.0285, Val RMSE: 35.59, Val MAE: 23.78
+Epoch 120/300: Train Loss: 0.0267, Val RMSE: 35.28, Val MAE: 23.00
+Epoch 130/300: Train Loss: 0.0242, Val RMSE: 34.09, Val MAE: 22.58
+Epoch 140/300: Train Loss: 0.0228, Val RMSE: 33.92, Val MAE: 22.44
+Epoch 150/300: Train Loss: 0.0212, Val RMSE: 33.61, Val MAE: 22.47
+Epoch 160/300: Train Loss: 0.0199, Val RMSE: 33.56, Val MAE: 22.18
+Epoch 170/300: Train Loss: 0.0189, Val RMSE: 33.60, Val MAE: 21.89
+Epoch 180/300: Train Loss: 0.0183, Val RMSE: 33.81, Val MAE: 22.62
+Epoch 190/300: Train Loss: 0.0171, Val RMSE: 33.81, Val MAE: 22.30
+Epoch 200/300: Train Loss: 0.0165, Val RMSE: 33.44, Val MAE: 21.77
+Epoch 210/300: Train Loss: 0.0159, Val RMSE: 34.10, Val MAE: 22.08
+
+Early stopping at epoch 214
+
+Best validation RMSE: 33.09 at epoch 174
+Test RMSE: 32.38
+Test MAE: 21.05
+
+================================================================================
+EXPERIMENT SUMMARY
+================================================================================
+           test_rmse  test_mae  best_val_rmse  best_epoch
+baseline       32.31     20.85          32.12       242.0
+max_only       34.03     22.16          32.90       175.0
+max_l1         44.54     32.74          43.93        95.0
+full_grin      46.34     33.76          44.34        75.0
+mean_aug       32.38     21.05          33.09       174.0
+
+Results saved to: /home/home_public/aisci/AIscientist/src/2_day2_grin/results_v2_20260324_090902

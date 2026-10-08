@@ -1,0 +1,106 @@
+2026-05-16 03:58:07,605 INFO Using device: cuda
+2026-05-16 03:58:07,605 INFO Loading dataset...
+2026-05-16 03:58:07,605 INFO Loading pre-processed data from ./data/dual_view_data.pt
+2026-05-16 03:58:11,243 INFO Dataset: 7170 total, 7170 valid pairs
+2026-05-16 03:58:11,243 INFO Node features: 30, Edge features: 6
+2026-05-16 03:58:11,243 INFO Data split: train=5162, val=573, test=1435
+2026-05-16 03:58:11,243 INFO ============================================================
+2026-05-16 03:58:11,243 INFO EXPERIMENT 1: Baseline (GIN+mean_pool+trimer, no contrastive)
+2026-05-16 03:58:11,243 INFO ============================================================
+2026-05-16 03:58:11,561 INFO Model parameters: 681,478
+2026-05-16 03:58:14,739 INFO Epoch 1: train_rmse=158.6942, val_rmse=252.5970
+2026-05-16 03:58:59,100 INFO Epoch 20: train_rmse=45.9340, val_rmse=48.3703
+2026-05-16 03:59:43,098 INFO Epoch 40: train_rmse=42.7490, val_rmse=47.4006
+2026-05-16 04:00:18,296 INFO Early stopping at epoch 56
+2026-05-16 04:00:18,625 INFO BASELINE: train=45.2698, val=39.6840, test=52.6795, best_epoch=26
+2026-05-16 04:00:18,625 INFO ============================================================
+2026-05-16 04:00:18,626 INFO EXPERIMENT: pcr_alpha0.1 (alpha=0.1)
+2026-05-16 04:00:18,626 INFO ============================================================
+2026-05-16 04:00:18,643 INFO Model parameters: 722,630
+2026-05-16 04:00:24,354 INFO Epoch 1: train_rmse=158.8864, val_rmse=249.4427, cos_sim=0.8900, alpha_eff=0.003
+2026-05-16 04:02:09,579 INFO Epoch 20: train_rmse=45.6904, val_rmse=43.0997, cos_sim=0.8917, alpha_eff=0.067
+2026-05-16 04:04:04,197 INFO Epoch 40: train_rmse=41.7479, val_rmse=52.3411, cos_sim=0.8592, alpha_eff=0.100
+2026-05-16 04:04:25,673 INFO Early stopping at epoch 44
+2026-05-16 04:04:25,958 INFO pcr_alpha0.1: train=47.8303, val=39.3279, test=54.6541, best_epoch=14
+2026-05-16 04:04:25,959 INFO ============================================================
+2026-05-16 04:04:25,959 INFO EXPERIMENT: pcr_alpha0.5 (alpha=0.5)
+2026-05-16 04:04:25,959 INFO ============================================================
+2026-05-16 04:04:25,975 INFO Model parameters: 722,630
+2026-05-16 04:04:32,023 INFO Epoch 1: train_rmse=158.9005, val_rmse=249.8931, cos_sim=0.8917, alpha_eff=0.017
+2026-05-16 04:06:22,833 INFO Epoch 20: train_rmse=45.3804, val_rmse=55.7581, cos_sim=0.8952, alpha_eff=0.333
+2026-05-16 04:08:12,554 INFO Epoch 40: train_rmse=41.6067, val_rmse=44.9534, cos_sim=0.8751, alpha_eff=0.500
+2026-05-16 04:10:05,525 INFO Epoch 60: train_rmse=38.5809, val_rmse=42.8776, cos_sim=0.8712, alpha_eff=0.500
+2026-05-16 04:10:16,804 INFO Early stopping at epoch 62
+2026-05-16 04:10:17,090 INFO pcr_alpha0.5: train=42.6682, val=40.9592, test=54.0285, best_epoch=32
+2026-05-16 04:10:17,091 INFO ============================================================
+2026-05-16 04:10:17,091 INFO EXPERIMENT: pcr_alpha1.0 (alpha=1.0)
+2026-05-16 04:10:17,091 INFO ============================================================
+2026-05-16 04:10:17,107 INFO Model parameters: 722,630
+2026-05-16 04:10:23,315 INFO Epoch 1: train_rmse=158.8913, val_rmse=250.4606, cos_sim=0.8902, alpha_eff=0.033
+2026-05-16 04:11:56,244 INFO Epoch 20: train_rmse=45.3174, val_rmse=43.7809, cos_sim=0.8899, alpha_eff=0.667
+2026-05-16 04:13:44,514 INFO Epoch 40: train_rmse=41.8740, val_rmse=42.7044, cos_sim=0.8750, alpha_eff=1.000
+2026-05-16 04:15:37,356 INFO Epoch 60: train_rmse=38.7888, val_rmse=39.3181, cos_sim=0.8735, alpha_eff=1.000
+2026-05-16 04:17:26,091 INFO Epoch 80: train_rmse=37.2236, val_rmse=42.5689, cos_sim=0.8648, alpha_eff=1.000
+2026-05-16 04:19:11,346 INFO Epoch 100: train_rmse=35.0188, val_rmse=42.1092, cos_sim=0.8652, alpha_eff=1.000
+2026-05-16 04:19:27,756 INFO Early stopping at epoch 103
+2026-05-16 04:19:28,086 INFO pcr_alpha1.0: train=37.7754, val=39.2932, test=54.0455, best_epoch=73
+2026-05-16 04:19:28,087 INFO ============================================================
+2026-05-16 04:19:28,087 INFO EXPERIMENT 5: GRIN augmentation (monomer+trimer supervised, no contrastive)
+2026-05-16 04:19:28,087 INFO ============================================================
+2026-05-16 04:19:28,104 INFO Model parameters: 681,478
+2026-05-16 04:19:31,885 INFO Epoch 1: train_rmse=158.7087, val_rmse=251.8341
+2026-05-16 04:20:46,043 INFO Epoch 20: train_rmse=47.6237, val_rmse=45.7494
+2026-05-16 04:22:12,338 INFO Epoch 40: train_rmse=44.4417, val_rmse=41.5447
+2026-05-16 04:23:25,523 INFO Early stopping at epoch 57
+2026-05-16 04:23:25,814 INFO GRIN: train=46.1732, val=38.9334, test=55.1341, best_epoch=27
+2026-05-16 04:23:25,815 INFO ============================================================
+2026-05-16 04:23:25,816 INFO EXPERIMENT 6: Random augmentation (edge masking, alpha=0.5)
+2026-05-16 04:23:25,816 INFO ============================================================
+2026-05-16 04:23:25,831 INFO Model parameters: 722,630
+2026-05-16 04:23:30,259 INFO Epoch 1: train_rmse=158.8894, val_rmse=249.0297, cos_sim=0.8639
+2026-05-16 04:24:45,234 INFO Epoch 20: train_rmse=45.8501, val_rmse=68.5124, cos_sim=0.9150
+2026-05-16 04:26:04,107 INFO Early stopping at epoch 38
+2026-05-16 04:26:04,452 INFO RANDOM_AUG: train=53.3089, val=53.4252, test=66.9588, best_epoch=8
+2026-05-16 04:26:06,733 INFO Diagnostic plots saved to ./diagnostic_plots/
+2026-05-16 04:26:06,736 INFO Results saved to ./results.json
+
+========================================================================================================================
+PCR-v2 RESULTS SUMMARY
+========================================================================================================================
+Experiment                Test RMSE    Val RMSE     Train RMSE   Overfit Gap  Best Epoch   Params       Final CosSim
+------------------------------------------------------------------------------------------------------------------------
+Day1 GIN Trimer (ref)     50.19        39.65        41.29        8.90         15           ~445K        N/A         
+baseline                  52.6795      39.6840      45.2698      7.4096       26           681,478      N/A         
+pcr_alpha0.1              54.6541      39.3279      47.8303      6.8238       14           722,630      0.9006      
+pcr_alpha0.5              54.0285      40.9592      42.6682      11.3603      32           722,630      0.8779      
+pcr_alpha1.0              54.0455      39.2932      37.7754      16.2702      73           722,630      0.8652      
+grin_augmentation         55.1341      38.9334      46.1732      8.9609       27           681,478      N/A         
+random_augmentation       66.9588      53.4252      53.3089      13.6499      8            722,630      0.9262      
+
+========================================================================================================================
+HYPOTHESIS EVALUATION
+========================================================================================================================
+
+H1 (Periodicity prior gap):
+  Best PCR (pcr_alpha0.5): 54.0285 vs Baseline: 52.6795 (delta=+1.3491)
+  NOT SUPPORTED: PCR does not reduce test RMSE
+
+H2 (In-training contrastive provides regularization):
+  PCR best overfitting gap: 11.3603
+  Baseline overfitting gap: 7.4096
+  NOT SUPPORTED: PCR does not reduce overfitting
+
+H3 (GIN sufficient per Small-Graph Paradox):
+  GIN with 5 layers, hidden_dim=256, mean_pool: 681,478 params
+  Baseline test RMSE: 52.6795
+  (Reference: Day 1 GIN Trimer was 50.19 with 3 layers)
+
+Domain-specific vs generic augmentation:
+  PCR (monomer-trimer pairs): 54.0285
+  Random (edge masking): 66.9588
+  Domain-specific positive pairs are better by 12.9303
+
+Data augmentation vs contrastive:
+  GRIN (augmentation only): 55.1341
+  PCR (augmentation + contrastive): 54.0285
+  Contrastive adds value beyond data augmentation

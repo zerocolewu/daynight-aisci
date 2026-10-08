@@ -1,0 +1,185 @@
+======================================================================
+Multi-Seed Verification (FIXED INDEX-BASED SPLIT)
+======================================================================
+Seeds: [42, 71, 123, 456, 789]
+Pre-trained encoder: pretrained_encoder_edge_drop_feat_mask_50.pt
+Split: ORIGINAL index-based (same for all seeds)
+Note: Only training randomness varies with seed
+======================================================================
+Data: train=5162, val=573, test=1435
+
+======================================================================
+SEED 42
+======================================================================
+
+--- Baseline (seed=42) ---
+    Epoch   1: train=111.6403, val=159.5739
+    Epoch  10: train=47.1834, val=73.3565
+    Epoch  20: train=39.8467, val=46.3104
+    Epoch  30: train=34.5714, val=41.2608
+    Epoch  40: train=31.7367, val=39.4363
+    Early stopping at epoch 44
+  => Test RMSE: 50.5877 (best epoch 14)
+
+--- Pre-trained (seed=42) ---
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_edge_drop_feat_mask_50.pt
+    Epoch   1: train=138.1396, val=74.7772
+    Epoch  10: train=44.1082, val=58.1511
+    Epoch  20: train=37.8972, val=42.6677
+    Epoch  30: train=33.3676, val=44.8399
+    Epoch  40: train=31.1297, val=49.5225
+    Epoch  50: train=29.7126, val=43.1602
+    Early stopping at epoch 58
+  => Test RMSE: 52.6042 (best epoch 28)
+
+  Diff: -2.0165 => Baseline wins
+
+======================================================================
+SEED 71
+======================================================================
+
+--- Baseline (seed=71) ---
+    Epoch   1: train=114.1052, val=65.0833
+    Epoch  10: train=45.5809, val=45.7904
+    Epoch  20: train=39.5748, val=45.9555
+    Epoch  30: train=34.6511, val=49.5483
+    Epoch  40: train=31.5589, val=43.4758
+    Epoch  50: train=29.4069, val=41.8003
+    Early stopping at epoch 57
+  => Test RMSE: 51.4874 (best epoch 27)
+
+--- Pre-trained (seed=71) ---
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_edge_drop_feat_mask_50.pt
+    Epoch   1: train=141.3768, val=99.9865
+    Epoch  10: train=41.6522, val=44.1101
+    Epoch  20: train=36.9028, val=46.4426
+    Epoch  30: train=33.6867, val=44.6401
+    Epoch  40: train=31.2314, val=45.9675
+    Epoch  50: train=29.8394, val=45.4247
+    Early stopping at epoch 53
+  => Test RMSE: 53.3041 (best epoch 23)
+
+  Diff: -1.8167 => Baseline wins
+
+======================================================================
+SEED 123
+======================================================================
+
+--- Baseline (seed=123) ---
+    Epoch   1: train=111.6068, val=91.0666
+    Epoch  10: train=45.1249, val=51.3894
+    Epoch  20: train=40.0015, val=42.0980
+    Epoch  30: train=35.9759, val=44.7316
+    Epoch  40: train=32.3628, val=50.0989
+    Epoch  50: train=29.7062, val=43.7297
+    Epoch  60: train=28.2215, val=44.9541
+    Epoch  70: train=26.7018, val=40.3400
+    Epoch  80: train=24.8670, val=39.5253
+    Epoch  90: train=24.1905, val=42.7762
+    Epoch 100: train=23.2641, val=40.2821
+    Epoch 110: train=21.7353, val=39.7920
+    Epoch 120: train=21.1129, val=43.5621
+    Epoch 130: train=20.0744, val=40.9074
+    Epoch 140: train=19.5137, val=39.8923
+    Early stopping at epoch 141
+  => Test RMSE: 53.6502 (best epoch 111)
+
+--- Pre-trained (seed=123) ---
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_edge_drop_feat_mask_50.pt
+    Epoch   1: train=140.0548, val=79.7598
+    Epoch  10: train=41.6495, val=55.7224
+    Epoch  20: train=36.4314, val=46.6958
+    Epoch  30: train=33.4888, val=42.9772
+    Epoch  40: train=31.0525, val=45.0522
+    Early stopping at epoch 41
+  => Test RMSE: 53.2300 (best epoch 11)
+
+  Diff: +0.4202 => Pretrained wins
+
+======================================================================
+SEED 456
+======================================================================
+
+--- Baseline (seed=456) ---
+    Epoch   1: train=112.5160, val=59.4607
+    Epoch  10: train=47.4196, val=48.4881
+    Epoch  20: train=39.3686, val=41.9908
+    Epoch  30: train=35.8887, val=45.3607
+    Epoch  40: train=32.2475, val=42.4790
+    Epoch  50: train=30.1988, val=41.8922
+    Epoch  60: train=28.2826, val=40.8935
+    Epoch  70: train=26.4211, val=39.6139
+    Epoch  80: train=26.0421, val=39.9474
+    Epoch  90: train=24.5550, val=40.1469
+    Early stopping at epoch 91
+  => Test RMSE: 53.7551 (best epoch 61)
+
+--- Pre-trained (seed=456) ---
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_edge_drop_feat_mask_50.pt
+    Epoch   1: train=140.7011, val=93.8273
+    Epoch  10: train=44.9043, val=45.4225
+    Epoch  20: train=36.6135, val=43.4500
+    Epoch  30: train=33.7076, val=49.8589
+    Epoch  40: train=30.9825, val=44.3873
+    Early stopping at epoch 44
+  => Test RMSE: 52.6645 (best epoch 14)
+
+  Diff: +1.0905 => Pretrained wins
+
+======================================================================
+SEED 789
+======================================================================
+
+--- Baseline (seed=789) ---
+    Epoch   1: train=111.3288, val=55.4436
+    Epoch  10: train=45.4765, val=66.9890
+    Epoch  20: train=39.7053, val=41.1848
+    Epoch  30: train=35.2836, val=39.9148
+    Epoch  40: train=31.6883, val=41.7083
+    Epoch  50: train=29.3755, val=38.3255
+    Epoch  60: train=27.3102, val=41.3523
+    Epoch  70: train=26.0818, val=42.0064
+    Early stopping at epoch 76
+  => Test RMSE: 52.9924 (best epoch 46)
+
+--- Pre-trained (seed=789) ---
+Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/3_periogt_lite/pretrained_encoder_edge_drop_feat_mask_50.pt
+    Epoch   1: train=140.2280, val=77.2633
+    Epoch  10: train=42.8839, val=46.5314
+    Epoch  20: train=36.8403, val=42.2373
+    Epoch  30: train=33.5307, val=40.6066
+    Epoch  40: train=30.8831, val=43.3488
+    Epoch  50: train=28.9209, val=42.1049
+    Epoch  60: train=28.0016, val=41.3839
+    Epoch  70: train=26.7776, val=44.2263
+    Epoch  80: train=25.8935, val=44.4671
+    Epoch  90: train=24.8009, val=42.5244
+    Early stopping at epoch 91
+  => Test RMSE: 52.8083 (best epoch 61)
+
+  Diff: +0.1841 => Pretrained wins
+
+======================================================================
+SUMMARY (Fixed Split)
+======================================================================
+
+  Seed |   Baseline | Pretrained |     Diff |     Winner
+------------------------------------------------------------
+    42 |    50.5877 |    52.6042 |  -2.0165 |   Baseline
+    71 |    51.4874 |    53.3041 |  -1.8167 |   Baseline
+   123 |    53.6502 |    53.2300 |  +0.4202 | Pretrained
+   456 |    53.7551 |    52.6645 |  +1.0905 | Pretrained
+   789 |    52.9924 |    52.8083 |  +0.1841 | Pretrained
+------------------------------------------------------------
+  Mean |    52.4946 |    52.9222 |  -0.4277 |
+   Std |     1.2508 |     0.2902 |   1.2531 |
+
+Pretrained wins: 3/5
+Paired t-test: t=-0.6825, p=0.5324
+  => NOT statistically significant (p >= 0.05)
+
+Baseline:    52.4946 +/- 1.2508
+Pretrained:  52.9222 +/- 0.2902
+Improvement: -0.81%
+
+Results saved to /home/home_public/aisci/AIscientist/src/3_periogt_lite/multiseed_fixedsplit_results.json

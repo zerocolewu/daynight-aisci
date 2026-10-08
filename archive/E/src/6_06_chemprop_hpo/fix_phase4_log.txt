@@ -1,0 +1,39 @@
+Using device: cuda
+Loading pre-constructed polymer graphs from /home/home_public/aisci/AIscientist/src/5_6_chemprop_polymer/graphs_polymer.pkl
+Loaded 6960 polymer graphs
+
+=== Re-running Phase 4: dense_d5_h1200 with bs=16 ===
+
+============================================================
+Config: v2_dense_d5_h1200_seed42
+  depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True, seed=42, bs=16
+============================================================
+  Split: train=5011, val=557, test=1392
+  Model parameters: 23,665,201
+  Epoch   1 | Train RMSE: 1001.7979 | Val RMSE: 56.6217 | Best Val: 56.6217 (ep 1)
+  Epoch  20 | Train RMSE: 47.1085 | Val RMSE: 39.7295 | Best Val: 38.8120 (ep 18)
+  Epoch  40 | Train RMSE: 39.0078 | Val RMSE: 37.6027 | Best Val: 35.8090 (ep 38)
+  Epoch  60 | Train RMSE: 35.8851 | Val RMSE: 35.3189 | Best Val: 35.3189 (ep 60)
+  Epoch  80 | Train RMSE: 31.8592 | Val RMSE: 36.8605 | Best Val: 33.7069 (ep 64)
+  Epoch 100 | Train RMSE: 30.2456 | Val RMSE: 33.6438 | Best Val: 32.4727 (ep 90)
+  Epoch 120 | Train RMSE: 28.2869 | Val RMSE: 35.5233 | Best Val: 32.4727 (ep 90)
+  Early stopping at epoch 120, best val RMSE: 32.4727 at epoch 90
+
+  FINAL RESULTS (v2_dense_d5_h1200_seed42, seed=42):
+    Train RMSE: 27.2147 | MAE: 18.2533 | R2: 0.9396
+    Val   RMSE: 32.4727 | MAE: 22.5133 | R2: 0.9156
+    Test  RMSE: 41.7050 | MAE: 27.2348 | R2: 0.8547
+    Overfitting gap: -14.4903 (UNDERFITTING)
+    Best epoch: 90
+
+============================================================
+Config: v2_dense_d5_h1200_seed71
+  depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True, seed=71, bs=16
+============================================================
+  Split: train=5011, val=557, test=1392
+  Model parameters: 23,665,201
+  Epoch   1 | Train RMSE: 79.9591 | Val RMSE: 54.7720 | Best Val: 54.7720 (ep 1)
+  Epoch  20 | Train RMSE: 45.6389 | Val RMSE: 49.8564 | Best Val: 42.6327 (ep 16)
+  Epoch  40 | Train RMSE: 41.1636 | Val RMSE: 44.9992 | Best Val: 41.1523 (ep 35)
+  Epoch  60 | Train RMSE: 36.8869 | Val RMSE: 38.9405 | Best Val: 38.9405 (ep 60)
+  Epoch  80 | Train RMSE: 33.3554 | Val RMSE: 39.1156 | Best Val: 37.5793 (ep 67)

@@ -1,0 +1,41 @@
+================================================================================
+MODEL COMPARISON AGAINST BASELINES
+================================================================================
+
+Literature Baselines:
+----------------------------------------
+  Tg:  32.31
+  Tm:  59.18 +/- 1.12
+  Egc: 0.5262 +/- 0.0471
+
+
+Our Results (5-fold CV):
+----------------------------------------
+
+Single-Task Baseline:
+  Tg: 117.0698 +/- 0.9377 (worse than baseline by 262.33%)
+  Tm: 118.2200 +/- 2.1799 (worse than baseline by 99.76%)
+  Egc: 1.6804 +/- 0.0413 (worse than baseline by 219.34%)
+
+MTL All Features:
+  Tg: 180.8196 +/- 0.9666 (worse than baseline by 459.64%)
+  Tm: 227.7555 +/- 1.0200 (worse than baseline by 284.85%)
+  Egc: 4.7536 +/- 0.0279 (worse than baseline by 803.39%)
+
+MTL Shared Only:
+  Tg: 180.8100 +/- 0.9716 (worse than baseline by 459.61%)
+  Tm: 227.7319 +/- 1.0159 (worse than baseline by 284.81%)
+  Egc: 4.7467 +/- 0.0151 (worse than baseline by 802.07%)
+
+MTL Feature Decomposition:
+  Tg: 180.8172 +/- 0.9659 (worse than baseline by 459.63%)
+  Tm: 227.7418 +/- 1.0301 (worse than baseline by 284.83%)
+  Egc: 4.7551 +/- 0.0274 (worse than baseline by 803.67%)
+
+================================================================================
+TARGET CRITERIA ASSESSMENT
+================================================================================
+
+Target: Tg < 31.5, Tm < 55.0, Egc < 0.50
+
+Best model (MTL Feature Decomposition):

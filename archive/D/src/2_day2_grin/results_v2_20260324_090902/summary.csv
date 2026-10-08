@@ -1,0 +1,6 @@
+,test_rmse,test_mae,best_val_rmse,best_epoch
+baseline,32.31,20.85,32.12,242.0
+max_only,34.03,22.16,32.9,175.0
+max_l1,44.54,32.74,43.93,95.0
+full_grin,46.34,33.76,44.34,75.0
+mean_aug,32.38,21.05,33.09,174.0

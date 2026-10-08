@@ -1,0 +1,67 @@
+{
+  "model_name": "PIPGA_SingleEdge",
+  "config": {
+    "node_dim": 128,
+    "edge_dim": 64,
+    "num_layers": 4,
+    "num_heads": 4,
+    "distance_threshold": 3,
+    "batch_size": 32,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "max_epochs": 200,
+    "early_stopping_patience": 20,
+    "scheduler_patience": 10,
+    "scheduler_factor": 0.5,
+    "n_folds": 5,
+    "seed": 42,
+    "model_name": "PIPGA_SingleEdge",
+    "use_softmax": false,
+    "use_fingerprint": true,
+    "use_self_loop": true,
+    "use_multi_edge": false
+  },
+  "test_rmse_mean": 39.09407424926758,
+  "test_rmse_std": 2.136551449477082,
+  "test_mae_mean": 26.846215438842773,
+  "test_mae_std": 2.049851869732394,
+  "test_r2_mean": 0.8775534838438034,
+  "test_r2_std": 0.01742951103047559,
+  "fold_results": [
+    {
+      "fold": 0,
+      "test_rmse": 37.834476470947266,
+      "test_mae": 26.230342864990234,
+      "test_r2": 0.8868426829576492,
+      "best_epoch": 14
+    },
+    {
+      "fold": 1,
+      "test_rmse": 42.6163215637207,
+      "test_mae": 30.732681274414062,
+      "test_r2": 0.8467990159988403,
+      "best_epoch": 1
+    },
+    {
+      "fold": 2,
+      "test_rmse": 38.697059631347656,
+      "test_mae": 26.571014404296875,
+      "test_r2": 0.8846157342195511,
+      "best_epoch": 4
+    },
+    {
+      "fold": 3,
+      "test_rmse": 40.0231819152832,
+      "test_mae": 26.042646408081055,
+      "test_r2": 0.8718473613262177,
+      "best_epoch": 7
+    },
+    {
+      "fold": 4,
+      "test_rmse": 36.29933166503906,
+      "test_mae": 24.65439224243164,
+      "test_r2": 0.8976626247167587,
+      "best_epoch": 36
+    }
+  ]
+}

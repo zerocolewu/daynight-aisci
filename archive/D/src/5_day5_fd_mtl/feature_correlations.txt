@@ -1,0 +1,58 @@
+================================================================================
+FEATURE-PROPERTY CORRELATION ANALYSIS
+================================================================================
+
+Correlation threshold: 0.3
+
+Shared features (≥2 properties): 51
+Tg-specific features: 24
+Tm-specific features: 0
+Egc-specific features: 5
+
+
+Top correlations for each property:
+----------------------------------------
+
+Tg top 10:
+  1. rotatable_bond_frac: r=-0.7280
+  2. RingCount: r=0.7082
+  3. NumRings: r=0.7082
+  4. sp2_frac: r=0.6992
+  5. FractionCSP3: r=-0.6912
+  6. FractionCSP3_2: r=-0.6912
+  7. single_bond_frac: r=-0.6851
+  8. sp3_frac: r=-0.6789
+  9. ring6: r=0.6634
+  10. NumAromaticRings: r=0.6633
+
+Tm top 10:
+  1. sp3_frac: r=-0.5289
+  2. single_bond_frac: r=-0.5215
+  3. rotatable_bond_frac: r=-0.5193
+  4. sp2_frac: r=0.5175
+  5. FractionCSP3: r=-0.5126
+  6. FractionCSP3_2: r=-0.5126
+  7. aromatic_bond_frac: r=0.4972
+  8. ring6: r=0.4618
+  9. RingCount: r=0.4617
+  10. NumRings: r=0.4617
+
+Egc top 10:
+  1. single_bond_frac: r=0.7695
+  2. FractionCSP3: r=0.7619
+  3. FractionCSP3_2: r=0.7619
+  4. aromatic_bond_frac: r=-0.7365
+  5. sp2_frac: r=-0.7192
+  6. sp3_frac: r=0.7110
+  7. NumAromaticRings: r=-0.6416
+  8. NumAromaticRings2: r=-0.6416
+  9. NumAromaticRings3: r=-0.6416
+  10. aromatic_bonds: r=-0.6324
+
+
+Feature indices for each property:
+----------------------------------------
+Shared: [0, 1, 2, 3, 4, 7, 8, 9, 10, 14, 15, 21, 22, 24, 25, 26, 27, 32, 36, 37]...
+Tg-specific: [5, 11, 23, 28, 31, 33, 34, 35, 45, 49, 51, 53, 57, 59, 60, 61, 64, 66, 67, 78, 90, 111, 115, 123]
+Tm-specific: []
+Egc-specific: [13, 17, 69, 83, 109]

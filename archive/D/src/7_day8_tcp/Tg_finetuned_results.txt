@@ -1,0 +1,17 @@
+================================================================================
+PHASE 4: FINE-TUNING RESULTS
+================================================================================
+
+TCP Fine-tuned Model:
+  Mean RMSE: 35.49 ± 1.60 K
+  Fold RMSEs: ['32.92', '35.77', '36.15', '37.79', '34.82']
+
+Baseline Model (Train from Scratch):
+  Mean RMSE: 35.22 ± 1.55 K
+  Fold RMSEs: ['33.14', '34.96', '35.50', '37.89', '34.58']
+
+Comparison:
+  Absolute Improvement: -0.28 K
+  Relative Improvement: -0.78%
+
+  ✗ TCP pre-training shows NEGATIVE TRANSFER

@@ -1,0 +1,16 @@
+{
+  "run": "C",
+  "ablation": "ab4",
+  "property": "Tg (K)",
+  "selection_rule": "Select the main model configuration within each day, excluding discarded versions and control-only baselines.",
+  "std_definition": "Population SD across seeds (ddof=0), where available; single-seed results have no SD.",
+  "days": {
+    "1": {"model":"PPFN v3_3d wide_512","rmse":37.43,"std":null,"note":"Single run.","source":"src/1_day2_ppfn/results_v3_3d.json"},
+    "2": {"model":"RIT per-seed","rmse":44.79,"std":0.39,"note":"Mean over 5 seeds.","source":"src/2_day2_rit_polymer/results/results.json"},
+    "3": {"model":"IAPT-v2 (=Day4)","rmse":37.86,"std":0.82,"note":"Placeholder reusing the Day 4 result for the IAPT experiment planned on Day 3.","source":"src/4_iapt_v2_intensive_aware/results_v2.csv"},
+    "4": {"model":"IAPT-v2 per-seed","rmse":37.86,"std":0.82,"note":"Mean over 5 seeds.","source":"src/4_iapt_v2_intensive_aware/results_v2.csv"},
+    "5": {"model":"GraphMAE+MoCL v2","rmse":36.14,"std":null,"note":"Single seed.","source":"src/5_day5_pretraining_v2/results.json"},
+    "6": {"model":"PolyKAN-SSM v5","rmse":39.21,"std":1.39,"note":"Mean over 5 seeds.","source":"src/6_day6_polykanssm/results_v5.json"},
+    "7": {"model":"PolyPerio full","rmse":38.81,"std":1.71,"note":"Mean over 5 seeds.","source":"src/7_day_7_polyperio/results/ablation_results.json"}
+  }
+}

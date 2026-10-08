@@ -1,0 +1,50 @@
+================================================================================
+DATA ANALYSIS REPORT - Polymer Tg Prediction
+================================================================================
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total samples: 7170
+Columns: ['Smiles', 'Tg']
+Data path: /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv
+
+2. Tg DISTRIBUTION STATISTICS
+--------------------------------------------------------------------------------
+Mean Tg: 141.87°C
+Median Tg: 134.00°C
+Std Tg: 112.15°C
+Min Tg: -139.00°C
+Max Tg: 495.00°C
+Skewness: 0.1257
+Kurtosis: -0.7056
+Shapiro-Wilk test: statistic=0.9863, p-value=1.2087e-21
+
+3. OUTLIER ANALYSIS
+--------------------------------------------------------------------------------
+Samples outside [100K, 800K]: 2843
+Samples outside reasonable Celsius range: 0
+Statistical outliers (IQR method): 0
+Q1: 55.00, Q3: 231.00, IQR: 176.00
+IQR bounds: [-209.00, 495.00]
+
+4. DUPLICATE ANALYSIS
+--------------------------------------------------------------------------------
+Unique SMILES with multiple entries: 0
+Total duplicate entries: 0
+High variability duplicates (std > 10°C): 0
+
+5. SMILES VALIDITY
+--------------------------------------------------------------------------------
+Valid SMILES: 7170/7170 (100.00%)
+Invalid SMILES: 0/7170
+SMILES with connection points (*): 7170/7170
+
+6. VISUALIZATIONS
+--------------------------------------------------------------------------------
+Tg distribution plot: figures/tg_distribution.png
+
+7. RECOMMENDATIONS
+--------------------------------------------------------------------------------
+- Tg distribution is not normal. Consider transformations or non-parametric methods.
+- All SMILES contain connection points (*), indicating they are polymer repeat units.
+- Consider data augmentation through multimer generation for improved model performance.

@@ -1,0 +1,953 @@
+2026-05-15 21:31:54,076 INFO 
+======================================================================
+2026-05-15 21:31:54,077 INFO PHASE 1: DATA PREPROCESSING
+2026-05-15 21:31:54,077 INFO ======================================================================
+2026-05-15 21:32:02,215 INFO PI1M dataset size: 299994
+2026-05-15 21:32:02,309 INFO Tg dataset size: 7170
+2026-05-15 21:32:02,309 INFO Tg splits: train=5162, val=573, test=1435
+2026-05-15 21:32:02,310 INFO Phase 1 completed in 8.2s
+2026-05-15 21:32:02,310 INFO 
+======================================================================
+2026-05-15 21:32:02,310 INFO PHASE 2: CONTRASTIVE PRE-TRAINING ON PI1M
+2026-05-15 21:32:02,310 INFO ======================================================================
+2026-05-15 21:32:02,317 INFO Using device: cuda
+2026-05-15 21:32:02,634 INFO Starting contrastive pre-training for 30 epochs
+2026-05-15 21:32:02,634 INFO Encoder params: 608,517
+2026-05-15 21:32:02,634 INFO Projection head params: 99,200
+2026-05-15 21:32:02,634 INFO Temperature: 0.1, lambda_var: 25.0, lambda_cov: 1.0
+2026-05-15 21:32:04,010 INFO Epoch 1/30 | Step 0/1171 | Total: 22.8230 (Cont: 5.0884, Var: 0.702313, Cov: 0.176749)
+2026-05-15 21:32:08,340 INFO Epoch 1/30 | Step 50/1171 | Total: 11.7143 (Cont: 0.7805, Var: 0.329161, Cov: 2.704831)
+2026-05-15 21:32:12,306 INFO Epoch 1/30 | Step 100/1171 | Total: 10.9628 (Cont: 0.6222, Var: 0.329346, Cov: 2.106991)
+2026-05-15 21:32:16,443 INFO Epoch 1/30 | Step 150/1171 | Total: 10.5613 (Cont: 0.7024, Var: 0.286379, Cov: 2.699472)
+2026-05-15 21:32:20,870 INFO Epoch 1/30 | Step 200/1171 | Total: 9.6302 (Cont: 0.5755, Var: 0.251375, Cov: 2.770376)
+2026-05-15 21:32:25,345 INFO Epoch 1/30 | Step 250/1171 | Total: 9.5258 (Cont: 0.5299, Var: 0.264681, Cov: 2.378905)
+2026-05-15 21:32:29,335 INFO Epoch 1/30 | Step 300/1171 | Total: 8.4316 (Cont: 0.4575, Var: 0.199158, Cov: 2.995217)
+2026-05-15 21:32:33,609 INFO Epoch 1/30 | Step 350/1171 | Total: 8.2437 (Cont: 0.4889, Var: 0.180934, Cov: 3.231528)
+2026-05-15 21:32:37,712 INFO Epoch 1/30 | Step 400/1171 | Total: 8.4476 (Cont: 0.4974, Var: 0.168645, Cov: 3.734025)
+2026-05-15 21:32:42,004 INFO Epoch 1/30 | Step 450/1171 | Total: 7.8058 (Cont: 0.5348, Var: 0.142469, Cov: 3.709279)
+2026-05-15 21:32:46,321 INFO Epoch 1/30 | Step 500/1171 | Total: 7.2327 (Cont: 0.4406, Var: 0.135996, Cov: 3.392206)
+2026-05-15 21:32:50,426 INFO Epoch 1/30 | Step 550/1171 | Total: 7.0614 (Cont: 0.5404, Var: 0.122323, Cov: 3.463009)
+2026-05-15 21:32:54,894 INFO Epoch 1/30 | Step 600/1171 | Total: 7.2174 (Cont: 0.4956, Var: 0.138395, Cov: 3.261992)
+2026-05-15 21:32:59,149 INFO Epoch 1/30 | Step 650/1171 | Total: 6.9937 (Cont: 0.4207, Var: 0.146096, Cov: 2.920578)
+2026-05-15 21:33:03,654 INFO Epoch 1/30 | Step 700/1171 | Total: 7.3048 (Cont: 0.4773, Var: 0.109184, Cov: 4.097922)
+2026-05-15 21:33:07,741 INFO Epoch 1/30 | Step 750/1171 | Total: 6.9058 (Cont: 0.4298, Var: 0.125075, Cov: 3.349103)
+2026-05-15 21:33:12,259 INFO Epoch 1/30 | Step 800/1171 | Total: 6.7164 (Cont: 0.4813, Var: 0.123177, Cov: 3.155646)
+2026-05-15 21:33:16,735 INFO Epoch 1/30 | Step 850/1171 | Total: 6.3351 (Cont: 0.4476, Var: 0.060206, Cov: 4.382349)
+2026-05-15 21:33:20,842 INFO Epoch 1/30 | Step 900/1171 | Total: 6.4262 (Cont: 0.4906, Var: 0.081705, Cov: 3.893015)
+2026-05-15 21:33:25,286 INFO Epoch 1/30 | Step 950/1171 | Total: 6.7513 (Cont: 0.4304, Var: 0.090838, Cov: 4.049973)
+2026-05-15 21:33:29,781 INFO Epoch 1/30 | Step 1000/1171 | Total: 6.1613 (Cont: 0.5207, Var: 0.063448, Cov: 4.054447)
+2026-05-15 21:33:33,926 INFO Epoch 1/30 | Step 1050/1171 | Total: 5.9554 (Cont: 0.3812, Var: 0.108986, Cov: 2.849571)
+2026-05-15 21:33:38,291 INFO Epoch 1/30 | Step 1100/1171 | Total: 6.1683 (Cont: 0.4963, Var: 0.099317, Cov: 3.189056)
+2026-05-15 21:33:42,419 INFO Epoch 1/30 | Step 1150/1171 | Total: 6.0357 (Cont: 0.4605, Var: 0.090649, Cov: 3.308996)
+2026-05-15 21:33:44,496 INFO Epoch 1/30 | Total: 7.9794 (Cont: 0.5408, Var: 0.169209, Cov: 3.208349) | Emb Var: 0.6932 | Cos Sim: 0.0011 | Collapse: False | Time: 101.9s | LR: 0.000997
+2026-05-15 21:33:44,556 INFO Saved best encoder (loss=7.979421) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:33:45,294 INFO Epoch 2/30 | Step 0/1171 | Total: 6.0477 (Cont: 0.4523, Var: 0.113817, Cov: 2.749975)
+2026-05-15 21:33:49,373 INFO Epoch 2/30 | Step 50/1171 | Total: 5.5709 (Cont: 0.3645, Var: 0.066786, Cov: 3.536793)
+2026-05-15 21:33:53,866 INFO Epoch 2/30 | Step 100/1171 | Total: 5.7947 (Cont: 0.3901, Var: 0.088003, Cov: 3.204572)
+2026-05-15 21:33:58,340 INFO Epoch 2/30 | Step 150/1171 | Total: 5.2008 (Cont: 0.3415, Var: 0.040166, Cov: 3.855221)
+2026-05-15 21:34:02,427 INFO Epoch 2/30 | Step 200/1171 | Total: 5.3255 (Cont: 0.3703, Var: 0.051866, Cov: 3.658564)
+2026-05-15 21:34:06,903 INFO Epoch 2/30 | Step 250/1171 | Total: 5.5305 (Cont: 0.3987, Var: 0.079380, Cov: 3.147320)
+2026-05-15 21:34:11,328 INFO Epoch 2/30 | Step 300/1171 | Total: 5.3652 (Cont: 0.4091, Var: 0.077527, Cov: 3.017950)
+2026-05-15 21:34:15,286 INFO Epoch 2/30 | Step 350/1171 | Total: 4.8819 (Cont: 0.3700, Var: 0.062283, Cov: 2.954856)
+2026-05-15 21:34:19,639 INFO Epoch 2/30 | Step 400/1171 | Total: 5.1872 (Cont: 0.3842, Var: 0.067893, Cov: 3.105730)
+2026-05-15 21:34:24,039 INFO Epoch 2/30 | Step 450/1171 | Total: 5.0180 (Cont: 0.3854, Var: 0.040968, Cov: 3.608470)
+2026-05-15 21:34:28,176 INFO Epoch 2/30 | Step 500/1171 | Total: 5.0747 (Cont: 0.3870, Var: 0.046344, Cov: 3.529094)
+2026-05-15 21:34:32,660 INFO Epoch 2/30 | Step 550/1171 | Total: 4.9064 (Cont: 0.3711, Var: 0.064441, Cov: 2.924306)
+2026-05-15 21:34:37,009 INFO Epoch 2/30 | Step 600/1171 | Total: 5.1730 (Cont: 0.4313, Var: 0.050343, Cov: 3.483161)
+2026-05-15 21:34:40,907 INFO Epoch 2/30 | Step 650/1171 | Total: 4.6603 (Cont: 0.3827, Var: 0.050826, Cov: 3.006988)
+2026-05-15 21:34:45,072 INFO Epoch 2/30 | Step 700/1171 | Total: 4.8193 (Cont: 0.3786, Var: 0.060722, Cov: 2.922742)
+2026-05-15 21:34:49,483 INFO Epoch 2/30 | Step 750/1171 | Total: 4.7112 (Cont: 0.3633, Var: 0.059796, Cov: 2.853031)
+2026-05-15 21:34:53,474 INFO Epoch 2/30 | Step 800/1171 | Total: 4.8710 (Cont: 0.3893, Var: 0.074659, Cov: 2.615230)
+2026-05-15 21:34:57,781 INFO Epoch 2/30 | Step 850/1171 | Total: 4.7320 (Cont: 0.3940, Var: 0.075244, Cov: 2.456883)
+2026-05-15 21:35:02,030 INFO Epoch 2/30 | Step 900/1171 | Total: 4.4826 (Cont: 0.3728, Var: 0.049699, Cov: 2.867299)
+2026-05-15 21:35:06,098 INFO Epoch 2/30 | Step 950/1171 | Total: 4.6996 (Cont: 0.3907, Var: 0.041569, Cov: 3.269712)
+2026-05-15 21:35:10,602 INFO Epoch 2/30 | Step 1000/1171 | Total: 4.6004 (Cont: 0.3879, Var: 0.041439, Cov: 3.176523)
+2026-05-15 21:35:15,035 INFO Epoch 2/30 | Step 1050/1171 | Total: 4.2097 (Cont: 0.3147, Var: 0.032521, Cov: 3.081980)
+2026-05-15 21:35:19,244 INFO Epoch 2/30 | Step 1100/1171 | Total: 4.2118 (Cont: 0.3788, Var: 0.028398, Cov: 3.123029)
+2026-05-15 21:35:23,668 INFO Epoch 2/30 | Step 1150/1171 | Total: 4.1486 (Cont: 0.3681, Var: 0.039996, Cov: 2.780591)
+2026-05-15 21:35:25,418 INFO Epoch 2/30 | Total: 4.9051 (Cont: 0.3880, Var: 0.053324, Cov: 3.183991) | Emb Var: 0.9219 | Cos Sim: -0.0023 | Collapse: False | Time: 100.9s | LR: 0.000989
+2026-05-15 21:35:25,470 INFO Saved best encoder (loss=4.905125) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:35:26,212 INFO Epoch 3/30 | Step 0/1171 | Total: 4.0007 (Cont: 0.2704, Var: 0.036037, Cov: 2.829414)
+2026-05-15 21:35:30,689 INFO Epoch 3/30 | Step 50/1171 | Total: 4.4062 (Cont: 0.3965, Var: 0.057920, Cov: 2.561674)
+2026-05-15 21:35:34,821 INFO Epoch 3/30 | Step 100/1171 | Total: 4.2487 (Cont: 0.4071, Var: 0.038837, Cov: 2.870639)
+2026-05-15 21:35:39,129 INFO Epoch 3/30 | Step 150/1171 | Total: 4.1904 (Cont: 0.3885, Var: 0.032382, Cov: 2.992400)
+2026-05-15 21:35:43,659 INFO Epoch 3/30 | Step 200/1171 | Total: 4.3824 (Cont: 0.3609, Var: 0.060933, Cov: 2.498128)
+2026-05-15 21:35:47,745 INFO Epoch 3/30 | Step 250/1171 | Total: 4.0808 (Cont: 0.3624, Var: 0.024214, Cov: 3.113101)
+2026-05-15 21:35:52,196 INFO Epoch 3/30 | Step 300/1171 | Total: 4.1274 (Cont: 0.3810, Var: 0.027459, Cov: 3.059952)
+2026-05-15 21:35:56,665 INFO Epoch 3/30 | Step 350/1171 | Total: 4.1282 (Cont: 0.3681, Var: 0.038668, Cov: 2.793490)
+2026-05-15 21:36:00,551 INFO Epoch 3/30 | Step 400/1171 | Total: 4.1425 (Cont: 0.3780, Var: 0.040328, Cov: 2.756290)
+2026-05-15 21:36:05,004 INFO Epoch 3/30 | Step 450/1171 | Total: 3.9752 (Cont: 0.3025, Var: 0.040479, Cov: 2.660695)
+2026-05-15 21:36:09,380 INFO Epoch 3/30 | Step 500/1171 | Total: 3.8386 (Cont: 0.3188, Var: 0.028977, Cov: 2.795334)
+2026-05-15 21:36:13,489 INFO Epoch 3/30 | Step 550/1171 | Total: 4.1456 (Cont: 0.3593, Var: 0.040093, Cov: 2.783928)
+2026-05-15 21:36:17,794 INFO Epoch 3/30 | Step 600/1171 | Total: 3.5765 (Cont: 0.3553, Var: 0.024110, Cov: 2.618457)
+2026-05-15 21:36:22,179 INFO Epoch 3/30 | Step 650/1171 | Total: 3.5828 (Cont: 0.3126, Var: 0.024546, Cov: 2.656616)
+2026-05-15 21:36:26,361 INFO Epoch 3/30 | Step 700/1171 | Total: 4.1976 (Cont: 0.3565, Var: 0.055828, Cov: 2.445422)
+2026-05-15 21:36:30,651 INFO Epoch 3/30 | Step 750/1171 | Total: 3.8797 (Cont: 0.3939, Var: 0.031965, Cov: 2.686645)
+2026-05-15 21:36:34,800 INFO Epoch 3/30 | Step 800/1171 | Total: 3.9174 (Cont: 0.3875, Var: 0.030062, Cov: 2.778388)
+2026-05-15 21:36:38,867 INFO Epoch 3/30 | Step 850/1171 | Total: 3.8865 (Cont: 0.4102, Var: 0.038007, Cov: 2.526112)
+2026-05-15 21:36:43,452 INFO Epoch 3/30 | Step 900/1171 | Total: 3.8230 (Cont: 0.3304, Var: 0.031277, Cov: 2.710618)
+2026-05-15 21:36:47,639 INFO Epoch 3/30 | Step 950/1171 | Total: 3.8078 (Cont: 0.3086, Var: 0.026912, Cov: 2.826433)
+2026-05-15 21:36:51,883 INFO Epoch 3/30 | Step 1000/1171 | Total: 3.5258 (Cont: 0.2983, Var: 0.030766, Cov: 2.458418)
+2026-05-15 21:36:56,674 INFO Epoch 3/30 | Step 1050/1171 | Total: 3.7057 (Cont: 0.3196, Var: 0.012165, Cov: 3.081954)
+2026-05-15 21:37:01,334 INFO Epoch 3/30 | Step 1100/1171 | Total: 3.6895 (Cont: 0.3735, Var: 0.023731, Cov: 2.722717)
+2026-05-15 21:37:05,548 INFO Epoch 3/30 | Step 1150/1171 | Total: 3.4868 (Cont: 0.3631, Var: 0.024237, Cov: 2.517766)
+2026-05-15 21:37:07,495 INFO Epoch 3/30 | Total: 3.9524 (Cont: 0.3511, Var: 0.033647, Cov: 2.760051) | Emb Var: 0.9910 | Cos Sim: -0.0026 | Collapse: False | Time: 102.0s | LR: 0.000976
+2026-05-15 21:37:07,547 INFO Saved best encoder (loss=3.952366) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:37:08,227 INFO Epoch 4/30 | Step 0/1171 | Total: 3.7349 (Cont: 0.3538, Var: 0.028518, Cov: 2.668204)
+2026-05-15 21:37:12,420 INFO Epoch 4/30 | Step 50/1171 | Total: 3.7821 (Cont: 0.3286, Var: 0.038165, Cov: 2.499385)
+2026-05-15 21:37:17,022 INFO Epoch 4/30 | Step 100/1171 | Total: 3.5968 (Cont: 0.3457, Var: 0.025349, Cov: 2.617298)
+2026-05-15 21:37:21,527 INFO Epoch 4/30 | Step 150/1171 | Total: 3.7009 (Cont: 0.3645, Var: 0.016279, Cov: 2.929410)
+2026-05-15 21:37:25,691 INFO Epoch 4/30 | Step 200/1171 | Total: 3.6695 (Cont: 0.3247, Var: 0.028178, Cov: 2.640373)
+2026-05-15 21:37:30,169 INFO Epoch 4/30 | Step 250/1171 | Total: 3.5387 (Cont: 0.3033, Var: 0.034229, Cov: 2.379659)
+2026-05-15 21:37:34,555 INFO Epoch 4/30 | Step 300/1171 | Total: 3.9411 (Cont: 0.3865, Var: 0.029402, Cov: 2.819591)
+2026-05-15 21:37:38,670 INFO Epoch 4/30 | Step 350/1171 | Total: 3.6226 (Cont: 0.3448, Var: 0.014359, Cov: 2.918823)
+2026-05-15 21:37:43,194 INFO Epoch 4/30 | Step 400/1171 | Total: 3.3425 (Cont: 0.3387, Var: 0.014197, Cov: 2.648896)
+2026-05-15 21:37:47,681 INFO Epoch 4/30 | Step 450/1171 | Total: 3.3894 (Cont: 0.3145, Var: 0.024446, Cov: 2.463709)
+2026-05-15 21:37:51,901 INFO Epoch 4/30 | Step 500/1171 | Total: 3.8099 (Cont: 0.3248, Var: 0.021765, Cov: 2.941028)
+2026-05-15 21:37:56,467 INFO Epoch 4/30 | Step 550/1171 | Total: 3.4310 (Cont: 0.3147, Var: 0.030405, Cov: 2.356180)
+2026-05-15 21:38:01,003 INFO Epoch 4/30 | Step 600/1171 | Total: 3.7278 (Cont: 0.3051, Var: 0.053700, Cov: 2.080185)
+2026-05-15 21:38:05,122 INFO Epoch 4/30 | Step 650/1171 | Total: 3.3810 (Cont: 0.3081, Var: 0.024163, Cov: 2.468778)
+2026-05-15 21:38:09,694 INFO Epoch 4/30 | Step 700/1171 | Total: 3.8517 (Cont: 0.3115, Var: 0.055378, Cov: 2.155738)
+2026-05-15 21:38:14,214 INFO Epoch 4/30 | Step 750/1171 | Total: 3.4889 (Cont: 0.3227, Var: 0.018579, Cov: 2.701698)
+2026-05-15 21:38:18,674 INFO Epoch 4/30 | Step 800/1171 | Total: 3.5737 (Cont: 0.3447, Var: 0.044800, Cov: 2.108977)
+2026-05-15 21:38:23,513 INFO Epoch 4/30 | Step 850/1171 | Total: 3.4276 (Cont: 0.3308, Var: 0.028326, Cov: 2.388612)
+2026-05-15 21:38:28,044 INFO Epoch 4/30 | Step 900/1171 | Total: 3.2122 (Cont: 0.2772, Var: 0.017442, Cov: 2.498945)
+2026-05-15 21:38:32,205 INFO Epoch 4/30 | Step 950/1171 | Total: 3.0675 (Cont: 0.2790, Var: 0.012296, Cov: 2.481074)
+2026-05-15 21:38:36,860 INFO Epoch 4/30 | Step 1000/1171 | Total: 3.1335 (Cont: 0.3040, Var: 0.023279, Cov: 2.247563)
+2026-05-15 21:38:41,866 INFO Epoch 4/30 | Step 1050/1171 | Total: 3.3975 (Cont: 0.3002, Var: 0.033646, Cov: 2.256146)
+2026-05-15 21:38:46,237 INFO Epoch 4/30 | Step 1100/1171 | Total: 3.1848 (Cont: 0.2850, Var: 0.022676, Cov: 2.332817)
+2026-05-15 21:38:50,754 INFO Epoch 4/30 | Step 1150/1171 | Total: 3.2274 (Cont: 0.2816, Var: 0.027733, Cov: 2.252474)
+2026-05-15 21:38:52,585 INFO Epoch 4/30 | Total: 3.4683 (Cont: 0.3277, Var: 0.025568, Cov: 2.501360) | Emb Var: 1.0109 | Cos Sim: -0.0026 | Collapse: False | Time: 105.0s | LR: 0.000957
+2026-05-15 21:38:52,631 INFO Saved best encoder (loss=3.468296) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:38:53,340 INFO Epoch 5/30 | Step 0/1171 | Total: 3.0419 (Cont: 0.3117, Var: 0.017074, Cov: 2.303358)
+2026-05-15 21:38:57,868 INFO Epoch 5/30 | Step 50/1171 | Total: 3.3238 (Cont: 0.3091, Var: 0.022329, Cov: 2.456472)
+2026-05-15 21:39:01,783 INFO Epoch 5/30 | Step 100/1171 | Total: 3.0372 (Cont: 0.2940, Var: 0.008339, Cov: 2.534721)
+2026-05-15 21:39:06,218 INFO Epoch 5/30 | Step 150/1171 | Total: 3.4421 (Cont: 0.3074, Var: 0.024558, Cov: 2.520800)
+2026-05-15 21:39:10,615 INFO Epoch 5/30 | Step 200/1171 | Total: 3.1712 (Cont: 0.3014, Var: 0.019908, Cov: 2.372114)
+2026-05-15 21:39:14,726 INFO Epoch 5/30 | Step 250/1171 | Total: 3.1846 (Cont: 0.3235, Var: 0.027788, Cov: 2.166404)
+2026-05-15 21:39:19,220 INFO Epoch 5/30 | Step 300/1171 | Total: 3.2366 (Cont: 0.2875, Var: 0.031971, Cov: 2.149803)
+2026-05-15 21:39:23,712 INFO Epoch 5/30 | Step 350/1171 | Total: 3.1322 (Cont: 0.3017, Var: 0.025312, Cov: 2.197707)
+2026-05-15 21:39:27,774 INFO Epoch 5/30 | Step 400/1171 | Total: 3.1725 (Cont: 0.2852, Var: 0.027961, Cov: 2.188352)
+2026-05-15 21:39:31,935 INFO Epoch 5/30 | Step 450/1171 | Total: 3.4230 (Cont: 0.3370, Var: 0.033116, Cov: 2.258148)
+2026-05-15 21:39:36,375 INFO Epoch 5/30 | Step 500/1171 | Total: 3.2401 (Cont: 0.3266, Var: 0.035076, Cov: 2.036682)
+2026-05-15 21:39:40,419 INFO Epoch 5/30 | Step 550/1171 | Total: 3.2181 (Cont: 0.3095, Var: 0.027249, Cov: 2.227432)
+2026-05-15 21:39:44,951 INFO Epoch 5/30 | Step 600/1171 | Total: 3.1114 (Cont: 0.3337, Var: 0.025727, Cov: 2.134457)
+2026-05-15 21:39:49,383 INFO Epoch 5/30 | Step 650/1171 | Total: 3.2903 (Cont: 0.3150, Var: 0.010480, Cov: 2.713280)
+2026-05-15 21:39:53,765 INFO Epoch 5/30 | Step 700/1171 | Total: 2.8918 (Cont: 0.2803, Var: 0.016337, Cov: 2.203002)
+2026-05-15 21:39:57,556 INFO Epoch 5/30 | Step 750/1171 | Total: 3.2748 (Cont: 0.3426, Var: 0.015609, Cov: 2.541998)
+2026-05-15 21:40:01,906 INFO Epoch 5/30 | Step 800/1171 | Total: 3.0421 (Cont: 0.2648, Var: 0.024967, Cov: 2.153057)
+2026-05-15 21:40:06,038 INFO Epoch 5/30 | Step 850/1171 | Total: 3.2538 (Cont: 0.2933, Var: 0.026319, Cov: 2.302519)
+2026-05-15 21:40:10,603 INFO Epoch 5/30 | Step 900/1171 | Total: 2.8330 (Cont: 0.2791, Var: 0.017108, Cov: 2.126123)
+2026-05-15 21:40:15,200 INFO Epoch 5/30 | Step 950/1171 | Total: 3.1099 (Cont: 0.3441, Var: 0.025307, Cov: 2.133161)
+2026-05-15 21:40:19,504 INFO Epoch 5/30 | Step 1000/1171 | Total: 3.1062 (Cont: 0.3099, Var: 0.021444, Cov: 2.260194)
+2026-05-15 21:40:23,938 INFO Epoch 5/30 | Step 1050/1171 | Total: 2.9355 (Cont: 0.3065, Var: 0.018293, Cov: 2.171712)
+2026-05-15 21:40:28,302 INFO Epoch 5/30 | Step 1100/1171 | Total: 2.9373 (Cont: 0.2918, Var: 0.011976, Cov: 2.346092)
+2026-05-15 21:40:32,366 INFO Epoch 5/30 | Step 1150/1171 | Total: 2.9844 (Cont: 0.3214, Var: 0.008963, Cov: 2.438904)
+2026-05-15 21:40:34,470 INFO Epoch 5/30 | Total: 3.1352 (Cont: 0.3120, Var: 0.020964, Cov: 2.299181) | Emb Var: 1.0303 | Cos Sim: -0.0026 | Collapse: False | Time: 101.8s | LR: 0.000934
+2026-05-15 21:40:34,537 INFO Saved best encoder (loss=3.135235) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:40:35,368 INFO Epoch 6/30 | Step 0/1171 | Total: 3.0090 (Cont: 0.2675, Var: 0.024451, Cov: 2.130189)
+2026-05-15 21:40:39,442 INFO Epoch 6/30 | Step 50/1171 | Total: 2.8314 (Cont: 0.2653, Var: 0.016505, Cov: 2.153507)
+2026-05-15 21:40:43,952 INFO Epoch 6/30 | Step 100/1171 | Total: 2.8112 (Cont: 0.2729, Var: 0.013248, Cov: 2.207093)
+2026-05-15 21:40:48,322 INFO Epoch 6/30 | Step 150/1171 | Total: 3.2828 (Cont: 0.3154, Var: 0.008596, Cov: 2.752530)
+2026-05-15 21:40:52,791 INFO Epoch 6/30 | Step 200/1171 | Total: 2.8506 (Cont: 0.2961, Var: 0.024869, Cov: 1.932825)
+2026-05-15 21:40:56,855 INFO Epoch 6/30 | Step 250/1171 | Total: 2.9480 (Cont: 0.3351, Var: 0.022330, Cov: 2.054718)
+2026-05-15 21:41:01,420 INFO Epoch 6/30 | Step 300/1171 | Total: 2.8892 (Cont: 0.3053, Var: 0.014758, Cov: 2.214928)
+2026-05-15 21:41:05,576 INFO Epoch 6/30 | Step 350/1171 | Total: 3.0066 (Cont: 0.2724, Var: 0.015661, Cov: 2.342706)
+2026-05-15 21:41:10,094 INFO Epoch 6/30 | Step 400/1171 | Total: 2.7956 (Cont: 0.3307, Var: 0.018680, Cov: 1.997908)
+2026-05-15 21:41:14,157 INFO Epoch 6/30 | Step 450/1171 | Total: 2.9340 (Cont: 0.3138, Var: 0.009730, Cov: 2.376944)
+2026-05-15 21:41:18,023 INFO Epoch 6/30 | Step 500/1171 | Total: 2.8533 (Cont: 0.2976, Var: 0.024541, Cov: 1.942175)
+2026-05-15 21:41:22,165 INFO Epoch 6/30 | Step 550/1171 | Total: 2.9776 (Cont: 0.3271, Var: 0.021658, Cov: 2.109073)
+2026-05-15 21:41:26,174 INFO Epoch 6/30 | Step 600/1171 | Total: 2.8165 (Cont: 0.2639, Var: 0.026451, Cov: 1.891290)
+2026-05-15 21:41:30,163 INFO Epoch 6/30 | Step 650/1171 | Total: 2.9138 (Cont: 0.2811, Var: 0.024855, Cov: 2.011284)
+2026-05-15 21:41:34,167 INFO Epoch 6/30 | Step 700/1171 | Total: 2.8637 (Cont: 0.2896, Var: 0.008188, Cov: 2.369399)
+2026-05-15 21:41:38,426 INFO Epoch 6/30 | Step 750/1171 | Total: 2.9221 (Cont: 0.2845, Var: 0.019083, Cov: 2.160550)
+2026-05-15 21:41:42,396 INFO Epoch 6/30 | Step 800/1171 | Total: 2.8857 (Cont: 0.2968, Var: 0.013488, Cov: 2.251679)
+2026-05-15 21:41:47,011 INFO Epoch 6/30 | Step 850/1171 | Total: 2.7364 (Cont: 0.2819, Var: 0.010430, Cov: 2.193745)
+2026-05-15 21:41:51,142 INFO Epoch 6/30 | Step 900/1171 | Total: 2.8049 (Cont: 0.3179, Var: 0.020334, Cov: 1.978602)
+2026-05-15 21:41:55,220 INFO Epoch 6/30 | Step 950/1171 | Total: 2.8210 (Cont: 0.3527, Var: 0.017181, Cov: 2.038855)
+2026-05-15 21:41:59,617 INFO Epoch 6/30 | Step 1000/1171 | Total: 2.6904 (Cont: 0.2991, Var: 0.016209, Cov: 1.986134)
+2026-05-15 21:42:04,082 INFO Epoch 6/30 | Step 1050/1171 | Total: 3.0578 (Cont: 0.3000, Var: 0.026660, Cov: 2.091303)
+2026-05-15 21:42:08,168 INFO Epoch 6/30 | Step 1100/1171 | Total: 2.8351 (Cont: 0.2863, Var: 0.024920, Cov: 1.925828)
+2026-05-15 21:42:12,566 INFO Epoch 6/30 | Step 1150/1171 | Total: 2.9877 (Cont: 0.2838, Var: 0.013609, Cov: 2.363698)
+2026-05-15 21:42:14,317 INFO Epoch 6/30 | Total: 2.9057 (Cont: 0.2997, Var: 0.017781, Cov: 2.161441) | Emb Var: 1.0373 | Cos Sim: -0.0025 | Collapse: False | Time: 99.8s | LR: 0.000905
+2026-05-15 21:42:14,384 INFO Saved best encoder (loss=2.905704) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:42:15,146 INFO Epoch 7/30 | Step 0/1171 | Total: 2.7252 (Cont: 0.2743, Var: 0.022277, Cov: 1.893986)
+2026-05-15 21:42:19,783 INFO Epoch 7/30 | Step 50/1171 | Total: 2.9014 (Cont: 0.3260, Var: 0.018169, Cov: 2.121207)
+2026-05-15 21:42:24,201 INFO Epoch 7/30 | Step 100/1171 | Total: 2.8559 (Cont: 0.3078, Var: 0.025849, Cov: 1.901900)
+2026-05-15 21:42:28,357 INFO Epoch 7/30 | Step 150/1171 | Total: 2.9900 (Cont: 0.3499, Var: 0.013838, Cov: 2.294127)
+2026-05-15 21:42:32,902 INFO Epoch 7/30 | Step 200/1171 | Total: 2.6900 (Cont: 0.3036, Var: 0.014913, Cov: 2.013545)
+2026-05-15 21:42:37,358 INFO Epoch 7/30 | Step 250/1171 | Total: 2.7223 (Cont: 0.3673, Var: 0.007491, Cov: 2.167727)
+2026-05-15 21:42:41,505 INFO Epoch 7/30 | Step 300/1171 | Total: 2.8571 (Cont: 0.3408, Var: 0.019762, Cov: 2.022213)
+2026-05-15 21:42:45,858 INFO Epoch 7/30 | Step 350/1171 | Total: 2.6489 (Cont: 0.2969, Var: 0.017422, Cov: 1.916437)
+2026-05-15 21:42:50,419 INFO Epoch 7/30 | Step 400/1171 | Total: 2.9993 (Cont: 0.2638, Var: 0.025968, Cov: 2.086290)
+2026-05-15 21:42:54,567 INFO Epoch 7/30 | Step 450/1171 | Total: 2.8126 (Cont: 0.2922, Var: 0.021896, Cov: 1.972925)
+2026-05-15 21:42:59,040 INFO Epoch 7/30 | Step 500/1171 | Total: 2.7052 (Cont: 0.2405, Var: 0.018975, Cov: 1.990240)
+2026-05-15 21:43:03,521 INFO Epoch 7/30 | Step 550/1171 | Total: 2.7179 (Cont: 0.2846, Var: 0.004522, Cov: 2.320226)
+2026-05-15 21:43:07,582 INFO Epoch 7/30 | Step 600/1171 | Total: 2.5744 (Cont: 0.2646, Var: 0.010085, Cov: 2.057753)
+2026-05-15 21:43:11,957 INFO Epoch 7/30 | Step 650/1171 | Total: 2.6614 (Cont: 0.2877, Var: 0.010798, Cov: 2.103757)
+2026-05-15 21:43:16,414 INFO Epoch 7/30 | Step 700/1171 | Total: 2.7016 (Cont: 0.3490, Var: 0.007096, Cov: 2.175160)
+2026-05-15 21:43:21,109 INFO Epoch 7/30 | Step 750/1171 | Total: 2.6234 (Cont: 0.2690, Var: 0.016795, Cov: 1.934503)
+2026-05-15 21:43:25,257 INFO Epoch 7/30 | Step 800/1171 | Total: 2.6540 (Cont: 0.2684, Var: 0.021845, Cov: 1.839460)
+2026-05-15 21:43:29,705 INFO Epoch 7/30 | Step 850/1171 | Total: 2.7322 (Cont: 0.2813, Var: 0.011466, Cov: 2.164218)
+2026-05-15 21:43:34,245 INFO Epoch 7/30 | Step 900/1171 | Total: 2.5879 (Cont: 0.2632, Var: 0.009654, Cov: 2.083313)
+2026-05-15 21:43:38,294 INFO Epoch 7/30 | Step 950/1171 | Total: 2.8921 (Cont: 0.2921, Var: 0.010366, Cov: 2.340832)
+2026-05-15 21:43:42,607 INFO Epoch 7/30 | Step 1000/1171 | Total: 2.5966 (Cont: 0.3099, Var: 0.014919, Cov: 1.913729)
+2026-05-15 21:43:47,007 INFO Epoch 7/30 | Step 1050/1171 | Total: 2.6209 (Cont: 0.2763, Var: 0.011188, Cov: 2.064873)
+2026-05-15 21:43:51,192 INFO Epoch 7/30 | Step 1100/1171 | Total: 2.6406 (Cont: 0.2963, Var: 0.012047, Cov: 2.043149)
+2026-05-15 21:43:55,776 INFO Epoch 7/30 | Step 1150/1171 | Total: 2.6121 (Cont: 0.2687, Var: 0.011892, Cov: 2.046062)
+2026-05-15 21:43:57,523 INFO Epoch 7/30 | Total: 2.7227 (Cont: 0.2872, Var: 0.015656, Cov: 2.044109) | Emb Var: 1.0492 | Cos Sim: -0.0026 | Collapse: False | Time: 103.1s | LR: 0.000873
+2026-05-15 21:43:57,582 INFO Saved best encoder (loss=2.722733) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:43:58,417 INFO Epoch 8/30 | Step 0/1171 | Total: 2.6709 (Cont: 0.2922, Var: 0.020645, Cov: 1.862652)
+2026-05-15 21:44:03,143 INFO Epoch 8/30 | Step 50/1171 | Total: 2.5211 (Cont: 0.2910, Var: 0.011706, Cov: 1.937459)
+2026-05-15 21:44:07,214 INFO Epoch 8/30 | Step 100/1171 | Total: 2.6973 (Cont: 0.2719, Var: 0.017722, Cov: 1.982354)
+2026-05-15 21:44:11,652 INFO Epoch 8/30 | Step 150/1171 | Total: 2.5844 (Cont: 0.2366, Var: 0.011604, Cov: 2.057681)
+2026-05-15 21:44:15,953 INFO Epoch 8/30 | Step 200/1171 | Total: 2.6016 (Cont: 0.2899, Var: 0.009008, Cov: 2.086530)
+2026-05-15 21:44:19,965 INFO Epoch 8/30 | Step 250/1171 | Total: 2.5166 (Cont: 0.2525, Var: 0.015466, Cov: 1.877405)
+2026-05-15 21:44:24,423 INFO Epoch 8/30 | Step 300/1171 | Total: 2.6081 (Cont: 0.2496, Var: 0.008263, Cov: 2.151953)
+2026-05-15 21:44:28,709 INFO Epoch 8/30 | Step 350/1171 | Total: 2.6548 (Cont: 0.2759, Var: 0.008895, Cov: 2.156587)
+2026-05-15 21:44:33,021 INFO Epoch 8/30 | Step 400/1171 | Total: 2.4675 (Cont: 0.2857, Var: 0.007549, Cov: 1.993017)
+2026-05-15 21:44:37,114 INFO Epoch 8/30 | Step 450/1171 | Total: 2.4583 (Cont: 0.2787, Var: 0.015123, Cov: 1.801538)
+2026-05-15 21:44:41,587 INFO Epoch 8/30 | Step 500/1171 | Total: 2.5798 (Cont: 0.2943, Var: 0.015007, Cov: 1.910342)
+2026-05-15 21:44:46,123 INFO Epoch 8/30 | Step 550/1171 | Total: 2.7123 (Cont: 0.3138, Var: 0.021104, Cov: 1.870898)
+2026-05-15 21:44:50,322 INFO Epoch 8/30 | Step 600/1171 | Total: 2.5357 (Cont: 0.2958, Var: 0.013167, Cov: 1.910711)
+2026-05-15 21:44:54,840 INFO Epoch 8/30 | Step 650/1171 | Total: 2.4705 (Cont: 0.2408, Var: 0.012082, Cov: 1.927719)
+2026-05-15 21:44:59,229 INFO Epoch 8/30 | Step 700/1171 | Total: 2.3571 (Cont: 0.2661, Var: 0.008806, Cov: 1.870918)
+2026-05-15 21:45:03,240 INFO Epoch 8/30 | Step 750/1171 | Total: 2.5224 (Cont: 0.2615, Var: 0.005092, Cov: 2.133637)
+2026-05-15 21:45:07,632 INFO Epoch 8/30 | Step 800/1171 | Total: 2.3989 (Cont: 0.2521, Var: 0.004782, Cov: 2.027199)
+2026-05-15 21:45:11,962 INFO Epoch 8/30 | Step 850/1171 | Total: 2.6229 (Cont: 0.2632, Var: 0.021916, Cov: 1.811864)
+2026-05-15 21:45:15,857 INFO Epoch 8/30 | Step 900/1171 | Total: 2.6200 (Cont: 0.2575, Var: 0.008665, Cov: 2.145864)
+2026-05-15 21:45:20,450 INFO Epoch 8/30 | Step 950/1171 | Total: 2.5144 (Cont: 0.2832, Var: 0.012488, Cov: 1.919009)
+2026-05-15 21:45:24,740 INFO Epoch 8/30 | Step 1000/1171 | Total: 2.5212 (Cont: 0.2845, Var: 0.020745, Cov: 1.718169)
+2026-05-15 21:45:29,128 INFO Epoch 8/30 | Step 1050/1171 | Total: 2.6454 (Cont: 0.3335, Var: 0.017137, Cov: 1.883538)
+2026-05-15 21:45:33,722 INFO Epoch 8/30 | Step 1100/1171 | Total: 2.3381 (Cont: 0.2500, Var: 0.012747, Cov: 1.769376)
+2026-05-15 21:45:38,015 INFO Epoch 8/30 | Step 1150/1171 | Total: 2.5932 (Cont: 0.3055, Var: 0.006889, Cov: 2.115410)
+2026-05-15 21:45:39,741 INFO Epoch 8/30 | Total: 2.5765 (Cont: 0.2777, Var: 0.014021, Cov: 1.948316) | Emb Var: 1.0697 | Cos Sim: -0.0026 | Collapse: False | Time: 102.2s | LR: 0.000836
+2026-05-15 21:45:39,796 INFO Saved best encoder (loss=2.576527) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:45:40,602 INFO Epoch 9/30 | Step 0/1171 | Total: 2.5461 (Cont: 0.2464, Var: 0.013782, Cov: 1.955140)
+2026-05-15 21:45:44,489 INFO Epoch 9/30 | Step 50/1171 | Total: 2.5029 (Cont: 0.3026, Var: 0.011917, Cov: 1.902337)
+2026-05-15 21:45:48,946 INFO Epoch 9/30 | Step 100/1171 | Total: 2.6256 (Cont: 0.2712, Var: 0.024328, Cov: 1.746171)
+2026-05-15 21:45:53,281 INFO Epoch 9/30 | Step 150/1171 | Total: 2.5920 (Cont: 0.2955, Var: 0.009574, Cov: 2.057132)
+2026-05-15 21:45:57,353 INFO Epoch 9/30 | Step 200/1171 | Total: 2.4277 (Cont: 0.2829, Var: 0.010841, Cov: 1.873714)
+2026-05-15 21:46:01,707 INFO Epoch 9/30 | Step 250/1171 | Total: 2.4576 (Cont: 0.2542, Var: 0.022424, Cov: 1.642703)
+2026-05-15 21:46:06,021 INFO Epoch 9/30 | Step 300/1171 | Total: 2.5370 (Cont: 0.2364, Var: 0.015927, Cov: 1.902383)
+2026-05-15 21:46:10,109 INFO Epoch 9/30 | Step 350/1171 | Total: 2.5793 (Cont: 0.2532, Var: 0.013484, Cov: 1.989023)
+2026-05-15 21:46:14,525 INFO Epoch 9/30 | Step 400/1171 | Total: 2.5314 (Cont: 0.2954, Var: 0.013490, Cov: 1.898690)
+2026-05-15 21:46:19,342 INFO Epoch 9/30 | Step 450/1171 | Total: 2.3637 (Cont: 0.2709, Var: 0.012541, Cov: 1.779277)
+2026-05-15 21:46:23,668 INFO Epoch 9/30 | Step 500/1171 | Total: 2.5078 (Cont: 0.2785, Var: 0.008206, Cov: 2.024212)
+2026-05-15 21:46:28,273 INFO Epoch 9/30 | Step 550/1171 | Total: 2.3681 (Cont: 0.2291, Var: 0.015620, Cov: 1.748492)
+2026-05-15 21:46:32,905 INFO Epoch 9/30 | Step 600/1171 | Total: 2.5363 (Cont: 0.2492, Var: 0.009204, Cov: 2.057033)
+2026-05-15 21:46:37,339 INFO Epoch 9/30 | Step 650/1171 | Total: 2.4313 (Cont: 0.2707, Var: 0.009701, Cov: 1.918049)
+2026-05-15 21:46:42,060 INFO Epoch 9/30 | Step 700/1171 | Total: 2.5789 (Cont: 0.2505, Var: 0.022343, Cov: 1.769833)
+2026-05-15 21:46:46,857 INFO Epoch 9/30 | Step 750/1171 | Total: 2.3399 (Cont: 0.2539, Var: 0.011064, Cov: 1.809415)
+2026-05-15 21:46:51,340 INFO Epoch 9/30 | Step 800/1171 | Total: 2.4965 (Cont: 0.2552, Var: 0.007341, Cov: 2.057765)
+2026-05-15 21:46:55,898 INFO Epoch 9/30 | Step 850/1171 | Total: 2.3794 (Cont: 0.2472, Var: 0.016463, Cov: 1.720607)
+2026-05-15 21:47:00,493 INFO Epoch 9/30 | Step 900/1171 | Total: 2.4520 (Cont: 0.2713, Var: 0.014078, Cov: 1.828794)
+2026-05-15 21:47:04,641 INFO Epoch 9/30 | Step 950/1171 | Total: 2.2916 (Cont: 0.3000, Var: 0.008108, Cov: 1.788928)
+2026-05-15 21:47:09,203 INFO Epoch 9/30 | Step 1000/1171 | Total: 2.4169 (Cont: 0.2921, Var: 0.016125, Cov: 1.721749)
+2026-05-15 21:47:13,665 INFO Epoch 9/30 | Step 1050/1171 | Total: 2.4014 (Cont: 0.2730, Var: 0.011392, Cov: 1.843526)
+2026-05-15 21:47:17,775 INFO Epoch 9/30 | Step 1100/1171 | Total: 2.4113 (Cont: 0.2408, Var: 0.014223, Cov: 1.814948)
+2026-05-15 21:47:22,210 INFO Epoch 9/30 | Step 1150/1171 | Total: 2.3105 (Cont: 0.2201, Var: 0.008356, Cov: 1.881487)
+2026-05-15 21:47:24,009 INFO Epoch 9/30 | Total: 2.4678 (Cont: 0.2707, Var: 0.012813, Cov: 1.876782) | Emb Var: 1.0585 | Cos Sim: -0.0026 | Collapse: False | Time: 104.2s | LR: 0.000796
+2026-05-15 21:47:24,070 INFO Saved best encoder (loss=2.467810) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:47:24,829 INFO Epoch 10/30 | Step 0/1171 | Total: 2.3621 (Cont: 0.2503, Var: 0.003367, Cov: 2.027622)
+2026-05-15 21:47:29,342 INFO Epoch 10/30 | Step 50/1171 | Total: 2.6015 (Cont: 0.3067, Var: 0.007868, Cov: 2.098085)
+2026-05-15 21:47:33,874 INFO Epoch 10/30 | Step 100/1171 | Total: 2.4180 (Cont: 0.2866, Var: 0.011802, Cov: 1.836344)
+2026-05-15 21:47:38,280 INFO Epoch 10/30 | Step 150/1171 | Total: 2.2509 (Cont: 0.2331, Var: 0.007670, Cov: 1.826057)
+2026-05-15 21:47:42,860 INFO Epoch 10/30 | Step 200/1171 | Total: 2.2659 (Cont: 0.2648, Var: 0.012363, Cov: 1.691980)
+2026-05-15 21:47:47,328 INFO Epoch 10/30 | Step 250/1171 | Total: 2.2968 (Cont: 0.2786, Var: 0.012678, Cov: 1.701198)
+2026-05-15 21:47:51,521 INFO Epoch 10/30 | Step 300/1171 | Total: 2.4022 (Cont: 0.2459, Var: 0.006639, Cov: 1.990317)
+2026-05-15 21:47:55,954 INFO Epoch 10/30 | Step 350/1171 | Total: 2.3956 (Cont: 0.2587, Var: 0.003601, Cov: 2.046832)
+2026-05-15 21:48:00,489 INFO Epoch 10/30 | Step 400/1171 | Total: 2.2375 (Cont: 0.2208, Var: 0.012225, Cov: 1.711156)
+2026-05-15 21:48:04,818 INFO Epoch 10/30 | Step 450/1171 | Total: 2.2453 (Cont: 0.2739, Var: 0.007734, Cov: 1.778051)
+2026-05-15 21:48:09,321 INFO Epoch 10/30 | Step 500/1171 | Total: 2.5241 (Cont: 0.2549, Var: 0.014136, Cov: 1.915756)
+2026-05-15 21:48:13,585 INFO Epoch 10/30 | Step 550/1171 | Total: 2.2546 (Cont: 0.2315, Var: 0.007516, Cov: 1.835154)
+2026-05-15 21:48:17,678 INFO Epoch 10/30 | Step 600/1171 | Total: 2.3601 (Cont: 0.2701, Var: 0.010309, Cov: 1.832323)
+2026-05-15 21:48:22,330 INFO Epoch 10/30 | Step 650/1171 | Total: 2.3870 (Cont: 0.2672, Var: 0.008358, Cov: 1.910859)
+2026-05-15 21:48:26,835 INFO Epoch 10/30 | Step 700/1171 | Total: 2.3507 (Cont: 0.2420, Var: 0.011172, Cov: 1.829395)
+2026-05-15 21:48:31,190 INFO Epoch 10/30 | Step 750/1171 | Total: 2.3332 (Cont: 0.2611, Var: 0.011973, Cov: 1.772761)
+2026-05-15 21:48:36,017 INFO Epoch 10/30 | Step 800/1171 | Total: 2.2589 (Cont: 0.2324, Var: 0.010200, Cov: 1.771471)
+2026-05-15 21:48:40,586 INFO Epoch 10/30 | Step 850/1171 | Total: 2.3252 (Cont: 0.2493, Var: 0.008925, Cov: 1.852836)
+2026-05-15 21:48:44,799 INFO Epoch 10/30 | Step 900/1171 | Total: 2.2576 (Cont: 0.2889, Var: 0.014882, Cov: 1.596675)
+2026-05-15 21:48:49,417 INFO Epoch 10/30 | Step 950/1171 | Total: 2.4776 (Cont: 0.2617, Var: 0.024365, Cov: 1.606767)
+2026-05-15 21:48:53,913 INFO Epoch 10/30 | Step 1000/1171 | Total: 2.2112 (Cont: 0.1917, Var: 0.019170, Cov: 1.540206)
+2026-05-15 21:48:58,408 INFO Epoch 10/30 | Step 1050/1171 | Total: 2.3102 (Cont: 0.2644, Var: 0.008033, Cov: 1.845065)
+2026-05-15 21:49:03,196 INFO Epoch 10/30 | Step 1100/1171 | Total: 2.2326 (Cont: 0.2577, Var: 0.008203, Cov: 1.769796)
+2026-05-15 21:49:07,970 INFO Epoch 10/30 | Step 1150/1171 | Total: 2.2986 (Cont: 0.2772, Var: 0.012976, Cov: 1.697068)
+2026-05-15 21:49:09,844 INFO Epoch 10/30 | Total: 2.3702 (Cont: 0.2625, Var: 0.011858, Cov: 1.811249) | Emb Var: 1.0674 | Cos Sim: -0.0026 | Collapse: False | Time: 105.8s | LR: 0.000753
+2026-05-15 21:49:09,914 INFO Saved best encoder (loss=2.370241) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:49:10,659 INFO Epoch 11/30 | Step 0/1171 | Total: 2.4308 (Cont: 0.2658, Var: 0.011888, Cov: 1.867811)
+2026-05-15 21:49:15,281 INFO Epoch 11/30 | Step 50/1171 | Total: 2.3677 (Cont: 0.2756, Var: 0.007477, Cov: 1.905191)
+2026-05-15 21:49:19,305 INFO Epoch 11/30 | Step 100/1171 | Total: 2.3250 (Cont: 0.2364, Var: 0.007780, Cov: 1.894124)
+2026-05-15 21:49:23,691 INFO Epoch 11/30 | Step 150/1171 | Total: 2.2279 (Cont: 0.2456, Var: 0.010066, Cov: 1.730623)
+2026-05-15 21:49:28,116 INFO Epoch 11/30 | Step 200/1171 | Total: 2.2325 (Cont: 0.2679, Var: 0.011093, Cov: 1.687313)
+2026-05-15 21:49:32,256 INFO Epoch 11/30 | Step 250/1171 | Total: 2.1830 (Cont: 0.2427, Var: 0.012911, Cov: 1.617489)
+2026-05-15 21:49:36,698 INFO Epoch 11/30 | Step 300/1171 | Total: 2.2296 (Cont: 0.2667, Var: 0.006876, Cov: 1.790997)
+2026-05-15 21:49:41,065 INFO Epoch 11/30 | Step 350/1171 | Total: 2.2851 (Cont: 0.2406, Var: 0.016396, Cov: 1.634620)
+2026-05-15 21:49:45,037 INFO Epoch 11/30 | Step 400/1171 | Total: 2.2700 (Cont: 0.2397, Var: 0.011959, Cov: 1.731349)
+2026-05-15 21:49:49,333 INFO Epoch 11/30 | Step 450/1171 | Total: 2.2284 (Cont: 0.2448, Var: 0.012992, Cov: 1.658870)
+2026-05-15 21:49:53,896 INFO Epoch 11/30 | Step 500/1171 | Total: 2.1397 (Cont: 0.2316, Var: 0.008191, Cov: 1.703330)
+2026-05-15 21:49:58,211 INFO Epoch 11/30 | Step 550/1171 | Total: 2.0779 (Cont: 0.2407, Var: 0.005765, Cov: 1.693099)
+2026-05-15 21:50:02,738 INFO Epoch 11/30 | Step 600/1171 | Total: 2.3052 (Cont: 0.2661, Var: 0.009855, Cov: 1.792731)
+2026-05-15 21:50:07,032 INFO Epoch 11/30 | Step 650/1171 | Total: 2.2518 (Cont: 0.2506, Var: 0.014158, Cov: 1.647206)
+2026-05-15 21:50:11,106 INFO Epoch 11/30 | Step 700/1171 | Total: 2.1384 (Cont: 0.2606, Var: 0.009144, Cov: 1.649134)
+2026-05-15 21:50:15,488 INFO Epoch 11/30 | Step 750/1171 | Total: 2.1757 (Cont: 0.2184, Var: 0.009089, Cov: 1.730046)
+2026-05-15 21:50:20,184 INFO Epoch 11/30 | Step 800/1171 | Total: 2.1280 (Cont: 0.2629, Var: 0.009345, Cov: 1.631379)
+2026-05-15 21:50:24,248 INFO Epoch 11/30 | Step 850/1171 | Total: 2.1277 (Cont: 0.2238, Var: 0.004080, Cov: 1.801833)
+2026-05-15 21:50:28,721 INFO Epoch 11/30 | Step 900/1171 | Total: 2.1803 (Cont: 0.2719, Var: 0.006210, Cov: 1.753171)
+2026-05-15 21:50:33,049 INFO Epoch 11/30 | Step 950/1171 | Total: 2.2783 (Cont: 0.2478, Var: 0.017252, Cov: 1.599257)
+2026-05-15 21:50:37,228 INFO Epoch 11/30 | Step 1000/1171 | Total: 2.7291 (Cont: 0.2904, Var: 0.039447, Cov: 1.452537)
+2026-05-15 21:50:41,736 INFO Epoch 11/30 | Step 1050/1171 | Total: 2.3536 (Cont: 0.2416, Var: 0.024084, Cov: 1.509852)
+2026-05-15 21:50:46,100 INFO Epoch 11/30 | Step 1100/1171 | Total: 2.2505 (Cont: 0.2379, Var: 0.006513, Cov: 1.849753)
+2026-05-15 21:50:50,245 INFO Epoch 11/30 | Step 1150/1171 | Total: 2.1407 (Cont: 0.2310, Var: 0.007125, Cov: 1.731563)
+2026-05-15 21:50:52,221 INFO Epoch 11/30 | Total: 2.2869 (Cont: 0.2568, Var: 0.011049, Cov: 1.753947) | Emb Var: 1.0685 | Cos Sim: -0.0026 | Collapse: False | Time: 102.3s | LR: 0.000706
+2026-05-15 21:50:52,292 INFO Saved best encoder (loss=2.286945) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:50:53,110 INFO Epoch 12/30 | Step 0/1171 | Total: 2.2132 (Cont: 0.2560, Var: 0.016812, Cov: 1.536823)
+2026-05-15 21:50:56,995 INFO Epoch 12/30 | Step 50/1171 | Total: 2.1897 (Cont: 0.2390, Var: 0.019156, Cov: 1.471747)
+2026-05-15 21:51:01,384 INFO Epoch 12/30 | Step 100/1171 | Total: 2.1463 (Cont: 0.2176, Var: 0.003674, Cov: 1.836894)
+2026-05-15 21:51:05,651 INFO Epoch 12/30 | Step 150/1171 | Total: 2.2079 (Cont: 0.2734, Var: 0.013512, Cov: 1.596745)
+2026-05-15 21:51:09,492 INFO Epoch 12/30 | Step 200/1171 | Total: 2.2562 (Cont: 0.2436, Var: 0.020738, Cov: 1.494182)
+2026-05-15 21:51:13,947 INFO Epoch 12/30 | Step 250/1171 | Total: 2.0903 (Cont: 0.2393, Var: 0.007959, Cov: 1.651970)
+2026-05-15 21:51:18,414 INFO Epoch 12/30 | Step 300/1171 | Total: 2.1280 (Cont: 0.2656, Var: 0.012566, Cov: 1.548217)
+2026-05-15 21:51:22,933 INFO Epoch 12/30 | Step 350/1171 | Total: 2.1864 (Cont: 0.2420, Var: 0.016874, Cov: 1.522543)
+2026-05-15 21:51:27,818 INFO Epoch 12/30 | Step 400/1171 | Total: 2.2101 (Cont: 0.2338, Var: 0.003801, Cov: 1.881247)
+2026-05-15 21:51:32,327 INFO Epoch 12/30 | Step 450/1171 | Total: 2.3063 (Cont: 0.2666, Var: 0.009757, Cov: 1.795784)
+2026-05-15 21:51:36,266 INFO Epoch 12/30 | Step 500/1171 | Total: 2.2665 (Cont: 0.2476, Var: 0.014501, Cov: 1.656376)
+2026-05-15 21:51:40,499 INFO Epoch 12/30 | Step 550/1171 | Total: 2.3323 (Cont: 0.2447, Var: 0.021114, Cov: 1.559745)
+2026-05-15 21:51:44,799 INFO Epoch 12/30 | Step 600/1171 | Total: 2.0859 (Cont: 0.1969, Var: 0.004938, Cov: 1.765561)
+2026-05-15 21:51:49,038 INFO Epoch 12/30 | Step 650/1171 | Total: 2.3733 (Cont: 0.2682, Var: 0.017348, Cov: 1.671437)
+2026-05-15 21:51:53,345 INFO Epoch 12/30 | Step 700/1171 | Total: 2.2062 (Cont: 0.2511, Var: 0.012058, Cov: 1.653664)
+2026-05-15 21:51:57,929 INFO Epoch 12/30 | Step 750/1171 | Total: 2.1573 (Cont: 0.2219, Var: 0.008721, Cov: 1.717369)
+2026-05-15 21:52:02,341 INFO Epoch 12/30 | Step 800/1171 | Total: 2.4091 (Cont: 0.2557, Var: 0.004435, Cov: 2.042504)
+2026-05-15 21:52:06,693 INFO Epoch 12/30 | Step 850/1171 | Total: 2.3921 (Cont: 0.2710, Var: 0.008614, Cov: 1.905760)
+2026-05-15 21:52:11,070 INFO Epoch 12/30 | Step 900/1171 | Total: 2.1950 (Cont: 0.2442, Var: 0.005568, Cov: 1.811554)
+2026-05-15 21:52:15,149 INFO Epoch 12/30 | Step 950/1171 | Total: 2.2895 (Cont: 0.2649, Var: 0.019330, Cov: 1.541360)
+2026-05-15 21:52:19,564 INFO Epoch 12/30 | Step 1000/1171 | Total: 2.2383 (Cont: 0.2502, Var: 0.012607, Cov: 1.672932)
+2026-05-15 21:52:23,984 INFO Epoch 12/30 | Step 1050/1171 | Total: 2.2657 (Cont: 0.2759, Var: 0.015707, Cov: 1.597165)
+2026-05-15 21:52:28,105 INFO Epoch 12/30 | Step 1100/1171 | Total: 2.1278 (Cont: 0.2360, Var: 0.009783, Cov: 1.647284)
+2026-05-15 21:52:32,583 INFO Epoch 12/30 | Step 1150/1171 | Total: 2.3272 (Cont: 0.2355, Var: 0.001976, Cov: 2.042336)
+2026-05-15 21:52:34,393 INFO Epoch 12/30 | Total: 2.2197 (Cont: 0.2518, Var: 0.010419, Cov: 1.707393) | Emb Var: 1.0724 | Cos Sim: -0.0027 | Collapse: False | Time: 102.1s | LR: 0.000658
+2026-05-15 21:52:34,436 INFO Saved best encoder (loss=2.219656) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:52:35,247 INFO Epoch 13/30 | Step 0/1171 | Total: 2.0336 (Cont: 0.2476, Var: 0.007857, Cov: 1.589635)
+2026-05-15 21:52:39,772 INFO Epoch 13/30 | Step 50/1171 | Total: 2.3264 (Cont: 0.2837, Var: 0.012313, Cov: 1.734864)
+2026-05-15 21:52:44,155 INFO Epoch 13/30 | Step 100/1171 | Total: 2.1954 (Cont: 0.2562, Var: 0.010854, Cov: 1.667791)
+2026-05-15 21:52:48,384 INFO Epoch 13/30 | Step 150/1171 | Total: 2.1036 (Cont: 0.2180, Var: 0.003706, Cov: 1.793013)
+2026-05-15 21:52:52,793 INFO Epoch 13/30 | Step 200/1171 | Total: 2.1240 (Cont: 0.2416, Var: 0.009762, Cov: 1.638305)
+2026-05-15 21:52:57,333 INFO Epoch 13/30 | Step 250/1171 | Total: 2.1785 (Cont: 0.2081, Var: 0.007068, Cov: 1.793678)
+2026-05-15 21:53:01,497 INFO Epoch 13/30 | Step 300/1171 | Total: 2.2401 (Cont: 0.2614, Var: 0.009831, Cov: 1.732838)
+2026-05-15 21:53:05,783 INFO Epoch 13/30 | Step 350/1171 | Total: 2.0328 (Cont: 0.2703, Var: 0.004740, Cov: 1.643985)
+2026-05-15 21:53:10,006 INFO Epoch 13/30 | Step 400/1171 | Total: 2.1392 (Cont: 0.2964, Var: 0.004697, Cov: 1.725347)
+2026-05-15 21:53:14,027 INFO Epoch 13/30 | Step 450/1171 | Total: 2.1821 (Cont: 0.2940, Var: 0.009358, Cov: 1.654188)
+2026-05-15 21:53:18,343 INFO Epoch 13/30 | Step 500/1171 | Total: 2.1960 (Cont: 0.2427, Var: 0.019236, Cov: 1.472455)
+2026-05-15 21:53:22,919 INFO Epoch 13/30 | Step 550/1171 | Total: 2.1629 (Cont: 0.2281, Var: 0.018258, Cov: 1.478366)
+2026-05-15 21:53:27,025 INFO Epoch 13/30 | Step 600/1171 | Total: 2.0331 (Cont: 0.2330, Var: 0.010738, Cov: 1.531604)
+2026-05-15 21:53:31,589 INFO Epoch 13/30 | Step 650/1171 | Total: 2.1334 (Cont: 0.2529, Var: 0.010017, Cov: 1.630087)
+2026-05-15 21:53:36,015 INFO Epoch 13/30 | Step 700/1171 | Total: 2.0702 (Cont: 0.2299, Var: 0.012478, Cov: 1.528371)
+2026-05-15 21:53:40,404 INFO Epoch 13/30 | Step 750/1171 | Total: 2.3711 (Cont: 0.2494, Var: 0.026819, Cov: 1.451212)
+2026-05-15 21:53:45,163 INFO Epoch 13/30 | Step 800/1171 | Total: 2.0315 (Cont: 0.2555, Var: 0.006289, Cov: 1.618810)
+2026-05-15 21:53:49,644 INFO Epoch 13/30 | Step 850/1171 | Total: 2.1977 (Cont: 0.2728, Var: 0.008582, Cov: 1.710359)
+2026-05-15 21:53:54,285 INFO Epoch 13/30 | Step 900/1171 | Total: 2.3198 (Cont: 0.2695, Var: 0.006894, Cov: 1.877922)
+2026-05-15 21:53:58,702 INFO Epoch 13/30 | Step 950/1171 | Total: 2.1792 (Cont: 0.2275, Var: 0.019949, Cov: 1.452921)
+2026-05-15 21:54:03,227 INFO Epoch 13/30 | Step 1000/1171 | Total: 2.4298 (Cont: 0.2297, Var: 0.003139, Cov: 2.121619)
+2026-05-15 21:54:07,490 INFO Epoch 13/30 | Step 1050/1171 | Total: 2.1060 (Cont: 0.2340, Var: 0.004470, Cov: 1.760230)
+2026-05-15 21:54:11,789 INFO Epoch 13/30 | Step 1100/1171 | Total: 2.2065 (Cont: 0.2328, Var: 0.006411, Cov: 1.813432)
+2026-05-15 21:54:16,005 INFO Epoch 13/30 | Step 1150/1171 | Total: 2.0568 (Cont: 0.1996, Var: 0.008180, Cov: 1.652691)
+2026-05-15 21:54:17,727 INFO Epoch 13/30 | Total: 2.1621 (Cont: 0.2445, Var: 0.009865, Cov: 1.671005) | Emb Var: 1.0775 | Cos Sim: -0.0026 | Collapse: False | Time: 103.3s | LR: 0.000608
+2026-05-15 21:54:17,772 INFO Saved best encoder (loss=2.162107) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:54:18,498 INFO Epoch 14/30 | Step 0/1171 | Total: 2.1860 (Cont: 0.2401, Var: 0.005314, Cov: 1.813017)
+2026-05-15 21:54:22,924 INFO Epoch 14/30 | Step 50/1171 | Total: 2.1229 (Cont: 0.2169, Var: 0.010671, Cov: 1.639281)
+2026-05-15 21:54:27,559 INFO Epoch 14/30 | Step 100/1171 | Total: 2.0205 (Cont: 0.2153, Var: 0.004444, Cov: 1.694122)
+2026-05-15 21:54:31,880 INFO Epoch 14/30 | Step 150/1171 | Total: 2.2744 (Cont: 0.2487, Var: 0.017953, Cov: 1.576886)
+2026-05-15 21:54:35,976 INFO Epoch 14/30 | Step 200/1171 | Total: 2.1546 (Cont: 0.2689, Var: 0.008828, Cov: 1.665019)
+2026-05-15 21:54:40,275 INFO Epoch 14/30 | Step 250/1171 | Total: 2.1552 (Cont: 0.2755, Var: 0.003824, Cov: 1.784124)
+2026-05-15 21:54:44,841 INFO Epoch 14/30 | Step 300/1171 | Total: 2.0312 (Cont: 0.2264, Var: 0.011212, Cov: 1.524516)
+2026-05-15 21:54:48,810 INFO Epoch 14/30 | Step 350/1171 | Total: 1.9767 (Cont: 0.2261, Var: 0.008394, Cov: 1.540765)
+2026-05-15 21:54:53,315 INFO Epoch 14/30 | Step 400/1171 | Total: 2.1700 (Cont: 0.2301, Var: 0.006399, Cov: 1.779921)
+2026-05-15 21:54:57,724 INFO Epoch 14/30 | Step 450/1171 | Total: 2.1797 (Cont: 0.2809, Var: 0.010275, Cov: 1.641972)
+2026-05-15 21:55:01,778 INFO Epoch 14/30 | Step 500/1171 | Total: 2.0532 (Cont: 0.2799, Var: 0.008752, Cov: 1.554497)
+2026-05-15 21:55:06,199 INFO Epoch 14/30 | Step 550/1171 | Total: 2.0377 (Cont: 0.2391, Var: 0.015520, Cov: 1.410546)
+2026-05-15 21:55:10,847 INFO Epoch 14/30 | Step 600/1171 | Total: 1.9197 (Cont: 0.2048, Var: 0.009391, Cov: 1.480162)
+2026-05-15 21:55:14,968 INFO Epoch 14/30 | Step 650/1171 | Total: 2.0634 (Cont: 0.2085, Var: 0.015217, Cov: 1.474465)
+2026-05-15 21:55:19,469 INFO Epoch 14/30 | Step 700/1171 | Total: 2.1302 (Cont: 0.2385, Var: 0.006415, Cov: 1.731375)
+2026-05-15 21:55:24,045 INFO Epoch 14/30 | Step 750/1171 | Total: 2.0942 (Cont: 0.2188, Var: 0.005058, Cov: 1.748934)
+2026-05-15 21:55:28,244 INFO Epoch 14/30 | Step 800/1171 | Total: 2.0275 (Cont: 0.2196, Var: 0.007265, Cov: 1.626304)
+2026-05-15 21:55:32,816 INFO Epoch 14/30 | Step 850/1171 | Total: 1.9993 (Cont: 0.2310, Var: 0.006179, Cov: 1.613805)
+2026-05-15 21:55:37,458 INFO Epoch 14/30 | Step 900/1171 | Total: 2.1186 (Cont: 0.2186, Var: 0.012321, Cov: 1.591922)
+2026-05-15 21:55:41,580 INFO Epoch 14/30 | Step 950/1171 | Total: 2.0626 (Cont: 0.2074, Var: 0.015313, Cov: 1.472397)
+2026-05-15 21:55:45,954 INFO Epoch 14/30 | Step 1000/1171 | Total: 2.0050 (Cont: 0.2470, Var: 0.007363, Cov: 1.573883)
+2026-05-15 21:55:50,428 INFO Epoch 14/30 | Step 1050/1171 | Total: 1.9445 (Cont: 0.2221, Var: 0.005115, Cov: 1.594506)
+2026-05-15 21:55:54,496 INFO Epoch 14/30 | Step 1100/1171 | Total: 2.1141 (Cont: 0.2547, Var: 0.007903, Cov: 1.661890)
+2026-05-15 21:55:59,088 INFO Epoch 14/30 | Step 1150/1171 | Total: 2.0204 (Cont: 0.2183, Var: 0.012248, Cov: 1.495897)
+2026-05-15 21:56:00,787 INFO Epoch 14/30 | Total: 2.1034 (Cont: 0.2385, Var: 0.009408, Cov: 1.629746) | Emb Var: 1.0782 | Cos Sim: -0.0026 | Collapse: False | Time: 103.0s | LR: 0.000557
+2026-05-15 21:56:00,863 INFO Saved best encoder (loss=2.103416) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:56:01,687 INFO Epoch 15/30 | Step 0/1171 | Total: 2.0412 (Cont: 0.1993, Var: 0.006035, Cov: 1.691011)
+2026-05-15 21:56:06,068 INFO Epoch 15/30 | Step 50/1171 | Total: 2.0538 (Cont: 0.2279, Var: 0.007173, Cov: 1.646563)
+2026-05-15 21:56:10,197 INFO Epoch 15/30 | Step 100/1171 | Total: 2.0672 (Cont: 0.2348, Var: 0.013236, Cov: 1.501470)
+2026-05-15 21:56:14,254 INFO Epoch 15/30 | Step 150/1171 | Total: 2.1537 (Cont: 0.2465, Var: 0.015457, Cov: 1.520745)
+2026-05-15 21:56:18,638 INFO Epoch 15/30 | Step 200/1171 | Total: 2.1556 (Cont: 0.2687, Var: 0.009888, Cov: 1.639774)
+2026-05-15 21:56:22,920 INFO Epoch 15/30 | Step 250/1171 | Total: 2.0999 (Cont: 0.2423, Var: 0.011511, Cov: 1.569811)
+2026-05-15 21:56:26,983 INFO Epoch 15/30 | Step 300/1171 | Total: 1.9662 (Cont: 0.1997, Var: 0.005734, Cov: 1.623101)
+2026-05-15 21:56:31,389 INFO Epoch 15/30 | Step 350/1171 | Total: 2.1833 (Cont: 0.2485, Var: 0.015068, Cov: 1.558149)
+2026-05-15 21:56:35,682 INFO Epoch 15/30 | Step 400/1171 | Total: 2.1095 (Cont: 0.2529, Var: 0.005490, Cov: 1.719277)
+2026-05-15 21:56:39,563 INFO Epoch 15/30 | Step 450/1171 | Total: 1.9909 (Cont: 0.2290, Var: 0.008750, Cov: 1.543150)
+2026-05-15 21:56:43,868 INFO Epoch 15/30 | Step 500/1171 | Total: 2.0609 (Cont: 0.2395, Var: 0.009853, Cov: 1.575079)
+2026-05-15 21:56:48,310 INFO Epoch 15/30 | Step 550/1171 | Total: 2.1035 (Cont: 0.2339, Var: 0.005951, Cov: 1.720769)
+2026-05-15 21:56:52,322 INFO Epoch 15/30 | Step 600/1171 | Total: 2.0063 (Cont: 0.2001, Var: 0.012376, Cov: 1.496876)
+2026-05-15 21:56:56,667 INFO Epoch 15/30 | Step 650/1171 | Total: 1.9271 (Cont: 0.1937, Var: 0.009853, Cov: 1.487034)
+2026-05-15 21:57:01,024 INFO Epoch 15/30 | Step 700/1171 | Total: 2.0284 (Cont: 0.2294, Var: 0.006019, Cov: 1.648535)
+2026-05-15 21:57:04,866 INFO Epoch 15/30 | Step 750/1171 | Total: 2.1780 (Cont: 0.2651, Var: 0.011382, Cov: 1.628339)
+2026-05-15 21:57:09,382 INFO Epoch 15/30 | Step 800/1171 | Total: 1.9261 (Cont: 0.2141, Var: 0.007686, Cov: 1.519786)
+2026-05-15 21:57:14,047 INFO Epoch 15/30 | Step 850/1171 | Total: 1.9492 (Cont: 0.2227, Var: 0.005764, Cov: 1.582485)
+2026-05-15 21:57:18,270 INFO Epoch 15/30 | Step 900/1171 | Total: 1.9811 (Cont: 0.2336, Var: 0.007410, Cov: 1.562257)
+2026-05-15 21:57:22,858 INFO Epoch 15/30 | Step 950/1171 | Total: 2.1480 (Cont: 0.2340, Var: 0.015202, Cov: 1.533984)
+2026-05-15 21:57:27,665 INFO Epoch 15/30 | Step 1000/1171 | Total: 1.9240 (Cont: 0.2225, Var: 0.009124, Cov: 1.473394)
+2026-05-15 21:57:31,720 INFO Epoch 15/30 | Step 1050/1171 | Total: 2.1629 (Cont: 0.2664, Var: 0.013036, Cov: 1.570644)
+2026-05-15 21:57:36,269 INFO Epoch 15/30 | Step 1100/1171 | Total: 2.0303 (Cont: 0.2375, Var: 0.003398, Cov: 1.707799)
+2026-05-15 21:57:40,336 INFO Epoch 15/30 | Step 1150/1171 | Total: 1.9562 (Cont: 0.2701, Var: 0.009872, Cov: 1.439356)
+2026-05-15 21:57:42,437 INFO Epoch 15/30 | Total: 2.0538 (Cont: 0.2333, Var: 0.008967, Cov: 1.596336) | Emb Var: 1.0790 | Cos Sim: -0.0026 | Collapse: False | Time: 101.6s | LR: 0.000505
+2026-05-15 21:57:42,500 INFO Saved best encoder (loss=2.053820) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:57:43,321 INFO Epoch 16/30 | Step 0/1171 | Total: 2.0190 (Cont: 0.2597, Var: 0.004546, Cov: 1.645696)
+2026-05-15 21:57:47,766 INFO Epoch 16/30 | Step 50/1171 | Total: 2.0032 (Cont: 0.2101, Var: 0.015880, Cov: 1.396047)
+2026-05-15 21:57:52,236 INFO Epoch 16/30 | Step 100/1171 | Total: 1.9388 (Cont: 0.2222, Var: 0.006421, Cov: 1.555990)
+2026-05-15 21:57:56,696 INFO Epoch 16/30 | Step 150/1171 | Total: 1.9537 (Cont: 0.2308, Var: 0.011165, Cov: 1.443819)
+2026-05-15 21:58:00,945 INFO Epoch 16/30 | Step 200/1171 | Total: 1.9739 (Cont: 0.2475, Var: 0.009755, Cov: 1.482474)
+2026-05-15 21:58:05,087 INFO Epoch 16/30 | Step 250/1171 | Total: 2.0103 (Cont: 0.2281, Var: 0.008585, Cov: 1.567636)
+2026-05-15 21:58:09,429 INFO Epoch 16/30 | Step 300/1171 | Total: 1.9888 (Cont: 0.2489, Var: 0.009755, Cov: 1.496050)
+2026-05-15 21:58:13,333 INFO Epoch 16/30 | Step 350/1171 | Total: 2.0660 (Cont: 0.2248, Var: 0.013811, Cov: 1.495931)
+2026-05-15 21:58:17,808 INFO Epoch 16/30 | Step 400/1171 | Total: 1.9791 (Cont: 0.2108, Var: 0.001525, Cov: 1.730217)
+2026-05-15 21:58:22,180 INFO Epoch 16/30 | Step 450/1171 | Total: 2.0797 (Cont: 0.2242, Var: 0.011658, Cov: 1.564115)
+2026-05-15 21:58:26,008 INFO Epoch 16/30 | Step 500/1171 | Total: 2.0726 (Cont: 0.2268, Var: 0.007980, Cov: 1.646270)
+2026-05-15 21:58:30,357 INFO Epoch 16/30 | Step 550/1171 | Total: 2.1108 (Cont: 0.2407, Var: 0.019074, Cov: 1.393250)
+2026-05-15 21:58:34,898 INFO Epoch 16/30 | Step 600/1171 | Total: 1.9129 (Cont: 0.1996, Var: 0.008670, Cov: 1.496555)
+2026-05-15 21:58:38,986 INFO Epoch 16/30 | Step 650/1171 | Total: 2.0110 (Cont: 0.2257, Var: 0.009390, Cov: 1.550541)
+2026-05-15 21:58:43,542 INFO Epoch 16/30 | Step 700/1171 | Total: 2.0639 (Cont: 0.2542, Var: 0.016731, Cov: 1.391409)
+2026-05-15 21:58:47,921 INFO Epoch 16/30 | Step 750/1171 | Total: 2.0099 (Cont: 0.2595, Var: 0.002687, Cov: 1.683158)
+2026-05-15 21:58:52,045 INFO Epoch 16/30 | Step 800/1171 | Total: 2.0620 (Cont: 0.2205, Var: 0.005638, Cov: 1.700533)
+2026-05-15 21:58:56,190 INFO Epoch 16/30 | Step 850/1171 | Total: 2.1410 (Cont: 0.2419, Var: 0.003757, Cov: 1.805115)
+2026-05-15 21:59:00,519 INFO Epoch 16/30 | Step 900/1171 | Total: 1.9228 (Cont: 0.2173, Var: 0.013226, Cov: 1.374760)
+2026-05-15 21:59:04,696 INFO Epoch 16/30 | Step 950/1171 | Total: 1.8944 (Cont: 0.1933, Var: 0.008421, Cov: 1.490526)
+2026-05-15 21:59:09,232 INFO Epoch 16/30 | Step 1000/1171 | Total: 2.1063 (Cont: 0.2425, Var: 0.005555, Cov: 1.724927)
+2026-05-15 21:59:13,527 INFO Epoch 16/30 | Step 1050/1171 | Total: 2.0144 (Cont: 0.2335, Var: 0.004758, Cov: 1.661910)
+2026-05-15 21:59:17,555 INFO Epoch 16/30 | Step 1100/1171 | Total: 1.9629 (Cont: 0.2387, Var: 0.005903, Cov: 1.576683)
+2026-05-15 21:59:21,938 INFO Epoch 16/30 | Step 1150/1171 | Total: 2.0021 (Cont: 0.2195, Var: 0.011751, Cov: 1.488828)
+2026-05-15 21:59:23,699 INFO Epoch 16/30 | Total: 2.0161 (Cont: 0.2298, Var: 0.008665, Cov: 1.569679) | Emb Var: 1.0810 | Cos Sim: -0.0026 | Collapse: False | Time: 101.2s | LR: 0.000453
+2026-05-15 21:59:23,763 INFO Saved best encoder (loss=2.016112) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 21:59:24,606 INFO Epoch 17/30 | Step 0/1171 | Total: 1.9809 (Cont: 0.2167, Var: 0.008704, Cov: 1.546603)
+2026-05-15 21:59:29,034 INFO Epoch 17/30 | Step 50/1171 | Total: 2.1542 (Cont: 0.2533, Var: 0.020543, Cov: 1.387357)
+2026-05-15 21:59:33,458 INFO Epoch 17/30 | Step 100/1171 | Total: 2.1464 (Cont: 0.2396, Var: 0.016295, Cov: 1.499460)
+2026-05-15 21:59:37,660 INFO Epoch 17/30 | Step 150/1171 | Total: 1.9660 (Cont: 0.2094, Var: 0.009422, Cov: 1.521084)
+2026-05-15 21:59:42,133 INFO Epoch 17/30 | Step 200/1171 | Total: 1.9079 (Cont: 0.2137, Var: 0.004924, Cov: 1.571015)
+2026-05-15 21:59:46,491 INFO Epoch 17/30 | Step 250/1171 | Total: 2.0958 (Cont: 0.2308, Var: 0.013810, Cov: 1.519812)
+2026-05-15 21:59:50,696 INFO Epoch 17/30 | Step 300/1171 | Total: 2.0237 (Cont: 0.2118, Var: 0.003420, Cov: 1.726406)
+2026-05-15 21:59:55,067 INFO Epoch 17/30 | Step 350/1171 | Total: 1.9656 (Cont: 0.2416, Var: 0.005891, Cov: 1.576677)
+2026-05-15 21:59:59,406 INFO Epoch 17/30 | Step 400/1171 | Total: 2.0737 (Cont: 0.2232, Var: 0.005404, Cov: 1.715397)
+2026-05-15 22:00:03,585 INFO Epoch 17/30 | Step 450/1171 | Total: 1.8856 (Cont: 0.1995, Var: 0.009989, Cov: 1.436455)
+2026-05-15 22:00:08,084 INFO Epoch 17/30 | Step 500/1171 | Total: 2.0099 (Cont: 0.2248, Var: 0.016910, Cov: 1.362424)
+2026-05-15 22:00:12,516 INFO Epoch 17/30 | Step 550/1171 | Total: 1.9770 (Cont: 0.2306, Var: 0.008740, Cov: 1.527943)
+2026-05-15 22:00:16,737 INFO Epoch 17/30 | Step 600/1171 | Total: 1.9258 (Cont: 0.2094, Var: 0.002507, Cov: 1.653790)
+2026-05-15 22:00:21,276 INFO Epoch 17/30 | Step 650/1171 | Total: 1.9896 (Cont: 0.1902, Var: 0.012936, Cov: 1.475914)
+2026-05-15 22:00:25,527 INFO Epoch 17/30 | Step 700/1171 | Total: 1.9039 (Cont: 0.1990, Var: 0.011232, Cov: 1.424149)
+2026-05-15 22:00:29,546 INFO Epoch 17/30 | Step 750/1171 | Total: 1.9031 (Cont: 0.2285, Var: 0.010511, Cov: 1.411809)
+2026-05-15 22:00:33,967 INFO Epoch 17/30 | Step 800/1171 | Total: 1.9031 (Cont: 0.2302, Var: 0.004828, Cov: 1.552124)
+2026-05-15 22:00:38,450 INFO Epoch 17/30 | Step 850/1171 | Total: 2.0281 (Cont: 0.2022, Var: 0.012083, Cov: 1.523864)
+2026-05-15 22:00:42,451 INFO Epoch 17/30 | Step 900/1171 | Total: 1.9799 (Cont: 0.2338, Var: 0.014697, Cov: 1.378668)
+2026-05-15 22:00:46,504 INFO Epoch 17/30 | Step 950/1171 | Total: 1.9620 (Cont: 0.1991, Var: 0.010162, Cov: 1.508791)
+2026-05-15 22:00:50,733 INFO Epoch 17/30 | Step 1000/1171 | Total: 1.8700 (Cont: 0.2036, Var: 0.007668, Cov: 1.474691)
+2026-05-15 22:00:54,973 INFO Epoch 17/30 | Step 1050/1171 | Total: 1.9588 (Cont: 0.2288, Var: 0.007254, Cov: 1.548715)
+2026-05-15 22:00:59,407 INFO Epoch 17/30 | Step 1100/1171 | Total: 1.9705 (Cont: 0.2074, Var: 0.008215, Cov: 1.557730)
+2026-05-15 22:01:03,899 INFO Epoch 17/30 | Step 1150/1171 | Total: 2.0748 (Cont: 0.2420, Var: 0.011862, Cov: 1.536251)
+2026-05-15 22:01:05,697 INFO Epoch 17/30 | Total: 1.9770 (Cont: 0.2247, Var: 0.008399, Cov: 1.542372) | Emb Var: 1.0736 | Cos Sim: -0.0027 | Collapse: False | Time: 101.9s | LR: 0.000402
+2026-05-15 22:01:05,764 INFO Saved best encoder (loss=1.977028) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:01:06,552 INFO Epoch 18/30 | Step 0/1171 | Total: 1.9256 (Cont: 0.2269, Var: 0.006269, Cov: 1.542012)
+2026-05-15 22:01:11,083 INFO Epoch 18/30 | Step 50/1171 | Total: 1.9725 (Cont: 0.2183, Var: 0.003033, Cov: 1.678313)
+2026-05-15 22:01:15,137 INFO Epoch 18/30 | Step 100/1171 | Total: 1.9597 (Cont: 0.2336, Var: 0.009393, Cov: 1.491257)
+2026-05-15 22:01:19,487 INFO Epoch 18/30 | Step 150/1171 | Total: 1.9911 (Cont: 0.2123, Var: 0.003828, Cov: 1.683073)
+2026-05-15 22:01:24,121 INFO Epoch 18/30 | Step 200/1171 | Total: 2.1044 (Cont: 0.2049, Var: 0.013473, Cov: 1.562613)
+2026-05-15 22:01:28,293 INFO Epoch 18/30 | Step 250/1171 | Total: 1.8984 (Cont: 0.1775, Var: 0.002574, Cov: 1.656515)
+2026-05-15 22:01:32,823 INFO Epoch 18/30 | Step 300/1171 | Total: 1.9854 (Cont: 0.2020, Var: 0.006709, Cov: 1.615632)
+2026-05-15 22:01:37,385 INFO Epoch 18/30 | Step 350/1171 | Total: 1.8986 (Cont: 0.2088, Var: 0.010414, Cov: 1.429454)
+2026-05-15 22:01:41,358 INFO Epoch 18/30 | Step 400/1171 | Total: 1.8374 (Cont: 0.2069, Var: 0.007538, Cov: 1.441993)
+2026-05-15 22:01:45,912 INFO Epoch 18/30 | Step 450/1171 | Total: 1.8796 (Cont: 0.2281, Var: 0.003883, Cov: 1.554398)
+2026-05-15 22:01:50,451 INFO Epoch 18/30 | Step 500/1171 | Total: 1.9762 (Cont: 0.1974, Var: 0.008369, Cov: 1.569587)
+2026-05-15 22:01:54,484 INFO Epoch 18/30 | Step 550/1171 | Total: 1.8149 (Cont: 0.2153, Var: 0.007074, Cov: 1.422721)
+2026-05-15 22:01:58,947 INFO Epoch 18/30 | Step 600/1171 | Total: 1.8934 (Cont: 0.2020, Var: 0.003592, Cov: 1.601661)
+2026-05-15 22:02:03,360 INFO Epoch 18/30 | Step 650/1171 | Total: 2.0623 (Cont: 0.2306, Var: 0.002102, Cov: 1.779136)
+2026-05-15 22:02:07,482 INFO Epoch 18/30 | Step 700/1171 | Total: 1.8885 (Cont: 0.2281, Var: 0.005476, Cov: 1.523483)
+2026-05-15 22:02:12,086 INFO Epoch 18/30 | Step 750/1171 | Total: 1.8648 (Cont: 0.2101, Var: 0.008143, Cov: 1.451121)
+2026-05-15 22:02:16,469 INFO Epoch 18/30 | Step 800/1171 | Total: 1.8474 (Cont: 0.1884, Var: 0.008076, Cov: 1.457126)
+2026-05-15 22:02:20,591 INFO Epoch 18/30 | Step 850/1171 | Total: 2.0203 (Cont: 0.2177, Var: 0.003527, Cov: 1.714506)
+2026-05-15 22:02:24,964 INFO Epoch 18/30 | Step 900/1171 | Total: 1.9074 (Cont: 0.1873, Var: 0.008536, Cov: 1.506639)
+2026-05-15 22:02:29,433 INFO Epoch 18/30 | Step 950/1171 | Total: 1.9482 (Cont: 0.2126, Var: 0.011839, Cov: 1.439578)
+2026-05-15 22:02:33,525 INFO Epoch 18/30 | Step 1000/1171 | Total: 1.9637 (Cont: 0.2040, Var: 0.011230, Cov: 1.478961)
+2026-05-15 22:02:38,159 INFO Epoch 18/30 | Step 1050/1171 | Total: 2.0592 (Cont: 0.2355, Var: 0.002917, Cov: 1.750701)
+2026-05-15 22:02:42,589 INFO Epoch 18/30 | Step 1100/1171 | Total: 1.8629 (Cont: 0.2075, Var: 0.004266, Cov: 1.548807)
+2026-05-15 22:02:46,829 INFO Epoch 18/30 | Step 1150/1171 | Total: 1.9105 (Cont: 0.1999, Var: 0.008737, Cov: 1.492167)
+2026-05-15 22:02:48,595 INFO Epoch 18/30 | Total: 1.9456 (Cont: 0.2215, Var: 0.008136, Cov: 1.520751) | Emb Var: 1.0754 | Cos Sim: -0.0026 | Collapse: False | Time: 102.8s | LR: 0.000352
+2026-05-15 22:02:48,665 INFO Saved best encoder (loss=1.945650) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:02:50,189 INFO Epoch 19/30 | Step 0/1171 | Total: 1.8905 (Cont: 0.2541, Var: 0.004797, Cov: 1.516433)
+2026-05-15 22:02:53,924 INFO Epoch 19/30 | Step 50/1171 | Total: 1.9459 (Cont: 0.2046, Var: 0.005009, Cov: 1.616047)
+2026-05-15 22:02:57,984 INFO Epoch 19/30 | Step 100/1171 | Total: 1.9136 (Cont: 0.1996, Var: 0.006712, Cov: 1.546243)
+2026-05-15 22:03:02,185 INFO Epoch 19/30 | Step 150/1171 | Total: 1.9153 (Cont: 0.2073, Var: 0.002723, Cov: 1.639934)
+2026-05-15 22:03:06,212 INFO Epoch 19/30 | Step 200/1171 | Total: 1.8745 (Cont: 0.2316, Var: 0.004088, Cov: 1.540728)
+2026-05-15 22:03:10,657 INFO Epoch 19/30 | Step 250/1171 | Total: 2.0117 (Cont: 0.2159, Var: 0.004783, Cov: 1.676184)
+2026-05-15 22:03:14,838 INFO Epoch 19/30 | Step 300/1171 | Total: 1.9152 (Cont: 0.2325, Var: 0.003928, Cov: 1.584486)
+2026-05-15 22:03:18,880 INFO Epoch 19/30 | Step 350/1171 | Total: 1.8346 (Cont: 0.2277, Var: 0.004629, Cov: 1.491219)
+2026-05-15 22:03:23,156 INFO Epoch 19/30 | Step 400/1171 | Total: 1.8479 (Cont: 0.2057, Var: 0.004623, Cov: 1.526644)
+2026-05-15 22:03:27,524 INFO Epoch 19/30 | Step 450/1171 | Total: 1.9531 (Cont: 0.2391, Var: 0.003847, Cov: 1.617742)
+2026-05-15 22:03:31,520 INFO Epoch 19/30 | Step 500/1171 | Total: 1.9376 (Cont: 0.2720, Var: 0.008539, Cov: 1.452130)
+2026-05-15 22:03:35,957 INFO Epoch 19/30 | Step 550/1171 | Total: 1.8825 (Cont: 0.2315, Var: 0.005327, Cov: 1.517796)
+2026-05-15 22:03:40,363 INFO Epoch 19/30 | Step 600/1171 | Total: 2.0805 (Cont: 0.2625, Var: 0.005704, Cov: 1.675432)
+2026-05-15 22:03:44,712 INFO Epoch 19/30 | Step 650/1171 | Total: 1.9180 (Cont: 0.2238, Var: 0.012464, Cov: 1.382603)
+2026-05-15 22:03:49,311 INFO Epoch 19/30 | Step 700/1171 | Total: 1.8617 (Cont: 0.1992, Var: 0.009908, Cov: 1.414848)
+2026-05-15 22:03:53,645 INFO Epoch 19/30 | Step 750/1171 | Total: 2.0016 (Cont: 0.2060, Var: 0.019419, Cov: 1.310112)
+2026-05-15 22:03:57,297 INFO Epoch 19/30 | Step 800/1171 | Total: 1.7948 (Cont: 0.1685, Var: 0.009389, Cov: 1.391543)
+2026-05-15 22:04:01,564 INFO Epoch 19/30 | Step 850/1171 | Total: 1.8509 (Cont: 0.2014, Var: 0.007856, Cov: 1.453032)
+2026-05-15 22:04:05,899 INFO Epoch 19/30 | Step 900/1171 | Total: 1.8413 (Cont: 0.2136, Var: 0.007176, Cov: 1.448367)
+2026-05-15 22:04:10,044 INFO Epoch 19/30 | Step 950/1171 | Total: 1.8888 (Cont: 0.2113, Var: 0.005328, Cov: 1.544327)
+2026-05-15 22:04:14,542 INFO Epoch 19/30 | Step 1000/1171 | Total: 1.9401 (Cont: 0.2230, Var: 0.002329, Cov: 1.658878)
+2026-05-15 22:04:18,910 INFO Epoch 19/30 | Step 1050/1171 | Total: 1.9502 (Cont: 0.2071, Var: 0.008887, Cov: 1.520873)
+2026-05-15 22:04:23,131 INFO Epoch 19/30 | Step 1100/1171 | Total: 1.7441 (Cont: 0.1934, Var: 0.004127, Cov: 1.447514)
+2026-05-15 22:04:27,380 INFO Epoch 19/30 | Step 1150/1171 | Total: 1.8389 (Cont: 0.2011, Var: 0.005390, Cov: 1.503111)
+2026-05-15 22:04:29,151 INFO Epoch 19/30 | Total: 1.9100 (Cont: 0.2172, Var: 0.007907, Cov: 1.495183) | Emb Var: 1.0894 | Cos Sim: -0.0027 | Collapse: False | Time: 100.5s | LR: 0.000304
+2026-05-15 22:04:29,210 INFO Saved best encoder (loss=1.910002) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:04:30,005 INFO Epoch 20/30 | Step 0/1171 | Total: 1.9146 (Cont: 0.2373, Var: 0.005897, Cov: 1.529912)
+2026-05-15 22:04:34,407 INFO Epoch 20/30 | Step 50/1171 | Total: 1.9253 (Cont: 0.1990, Var: 0.007084, Cov: 1.549278)
+2026-05-15 22:04:38,833 INFO Epoch 20/30 | Step 100/1171 | Total: 1.9156 (Cont: 0.2274, Var: 0.003007, Cov: 1.612989)
+2026-05-15 22:04:42,910 INFO Epoch 20/30 | Step 150/1171 | Total: 1.8644 (Cont: 0.2162, Var: 0.004162, Cov: 1.544136)
+2026-05-15 22:04:47,548 INFO Epoch 20/30 | Step 200/1171 | Total: 1.7694 (Cont: 0.1854, Var: 0.008048, Cov: 1.382818)
+2026-05-15 22:04:51,744 INFO Epoch 20/30 | Step 250/1171 | Total: 1.8816 (Cont: 0.2389, Var: 0.005554, Cov: 1.503855)
+2026-05-15 22:04:55,802 INFO Epoch 20/30 | Step 300/1171 | Total: 1.9628 (Cont: 0.2209, Var: 0.010877, Cov: 1.469957)
+2026-05-15 22:05:00,127 INFO Epoch 20/30 | Step 350/1171 | Total: 2.0322 (Cont: 0.2507, Var: 0.010193, Cov: 1.526728)
+2026-05-15 22:05:04,425 INFO Epoch 20/30 | Step 400/1171 | Total: 1.8058 (Cont: 0.2236, Var: 0.002790, Cov: 1.512367)
+2026-05-15 22:05:08,328 INFO Epoch 20/30 | Step 450/1171 | Total: 1.8540 (Cont: 0.1920, Var: 0.007876, Cov: 1.465094)
+2026-05-15 22:05:12,654 INFO Epoch 20/30 | Step 500/1171 | Total: 1.8751 (Cont: 0.2232, Var: 0.009493, Cov: 1.414491)
+2026-05-15 22:05:16,929 INFO Epoch 20/30 | Step 550/1171 | Total: 1.9459 (Cont: 0.1886, Var: 0.017397, Cov: 1.322322)
+2026-05-15 22:05:20,955 INFO Epoch 20/30 | Step 600/1171 | Total: 1.9064 (Cont: 0.2084, Var: 0.011669, Cov: 1.406264)
+2026-05-15 22:05:25,429 INFO Epoch 20/30 | Step 650/1171 | Total: 1.8126 (Cont: 0.1964, Var: 0.007895, Cov: 1.418816)
+2026-05-15 22:05:30,025 INFO Epoch 20/30 | Step 700/1171 | Total: 1.8921 (Cont: 0.2115, Var: 0.003124, Cov: 1.602508)
+2026-05-15 22:05:34,184 INFO Epoch 20/30 | Step 750/1171 | Total: 1.8415 (Cont: 0.2282, Var: 0.003340, Cov: 1.529820)
+2026-05-15 22:05:38,908 INFO Epoch 20/30 | Step 800/1171 | Total: 1.9228 (Cont: 0.1962, Var: 0.007442, Cov: 1.540593)
+2026-05-15 22:05:43,557 INFO Epoch 20/30 | Step 850/1171 | Total: 1.9239 (Cont: 0.2173, Var: 0.003647, Cov: 1.615478)
+2026-05-15 22:05:47,819 INFO Epoch 20/30 | Step 900/1171 | Total: 1.9601 (Cont: 0.2192, Var: 0.007119, Cov: 1.562969)
+2026-05-15 22:05:52,452 INFO Epoch 20/30 | Step 950/1171 | Total: 1.8664 (Cont: 0.2119, Var: 0.012257, Cov: 1.348063)
+2026-05-15 22:05:57,062 INFO Epoch 20/30 | Step 1000/1171 | Total: 1.8517 (Cont: 0.2262, Var: 0.011477, Cov: 1.338587)
+2026-05-15 22:06:01,166 INFO Epoch 20/30 | Step 1050/1171 | Total: 1.8441 (Cont: 0.2182, Var: 0.007737, Cov: 1.432466)
+2026-05-15 22:06:05,723 INFO Epoch 20/30 | Step 1100/1171 | Total: 2.0830 (Cont: 0.2256, Var: 0.019327, Cov: 1.374213)
+2026-05-15 22:06:10,130 INFO Epoch 20/30 | Step 1150/1171 | Total: 1.8542 (Cont: 0.2143, Var: 0.006755, Cov: 1.471081)
+2026-05-15 22:06:11,870 INFO Epoch 20/30 | Total: 1.8889 (Cont: 0.2153, Var: 0.007749, Cov: 1.479842) | Emb Var: 1.0746 | Cos Sim: -0.0026 | Collapse: False | Time: 102.7s | LR: 0.000258
+2026-05-15 22:06:11,941 INFO Saved best encoder (loss=1.888890) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:06:12,774 INFO Epoch 21/30 | Step 0/1171 | Total: 1.7962 (Cont: 0.2411, Var: 0.007939, Cov: 1.356607)
+2026-05-15 22:06:16,792 INFO Epoch 21/30 | Step 50/1171 | Total: 1.7995 (Cont: 0.2227, Var: 0.002717, Cov: 1.508901)
+2026-05-15 22:06:21,181 INFO Epoch 21/30 | Step 100/1171 | Total: 1.9460 (Cont: 0.2278, Var: 0.013112, Cov: 1.390319)
+2026-05-15 22:06:25,503 INFO Epoch 21/30 | Step 150/1171 | Total: 1.8051 (Cont: 0.2134, Var: 0.006697, Cov: 1.424334)
+2026-05-15 22:06:29,603 INFO Epoch 21/30 | Step 200/1171 | Total: 1.9003 (Cont: 0.2193, Var: 0.004110, Cov: 1.578202)
+2026-05-15 22:06:34,219 INFO Epoch 21/30 | Step 250/1171 | Total: 1.9057 (Cont: 0.1991, Var: 0.007313, Cov: 1.523740)
+2026-05-15 22:06:38,733 INFO Epoch 21/30 | Step 300/1171 | Total: 1.8853 (Cont: 0.2061, Var: 0.006894, Cov: 1.506822)
+2026-05-15 22:06:42,925 INFO Epoch 21/30 | Step 350/1171 | Total: 1.8060 (Cont: 0.1933, Var: 0.010006, Cov: 1.362539)
+2026-05-15 22:06:47,601 INFO Epoch 21/30 | Step 400/1171 | Total: 1.8963 (Cont: 0.2204, Var: 0.003710, Cov: 1.583169)
+2026-05-15 22:06:52,288 INFO Epoch 21/30 | Step 450/1171 | Total: 1.9212 (Cont: 0.2022, Var: 0.017888, Cov: 1.271806)
+2026-05-15 22:06:56,745 INFO Epoch 21/30 | Step 500/1171 | Total: 1.8343 (Cont: 0.2073, Var: 0.004795, Cov: 1.507152)
+2026-05-15 22:07:00,878 INFO Epoch 21/30 | Step 550/1171 | Total: 1.8781 (Cont: 0.2407, Var: 0.007402, Cov: 1.452337)
+2026-05-15 22:07:05,385 INFO Epoch 21/30 | Step 600/1171 | Total: 1.8875 (Cont: 0.1997, Var: 0.004449, Cov: 1.576546)
+2026-05-15 22:07:09,852 INFO Epoch 21/30 | Step 650/1171 | Total: 1.8511 (Cont: 0.2180, Var: 0.006505, Cov: 1.470541)
+2026-05-15 22:07:13,880 INFO Epoch 21/30 | Step 700/1171 | Total: 1.8352 (Cont: 0.2149, Var: 0.009160, Cov: 1.391283)
+2026-05-15 22:07:18,312 INFO Epoch 21/30 | Step 750/1171 | Total: 1.8441 (Cont: 0.2164, Var: 0.003890, Cov: 1.530463)
+2026-05-15 22:07:22,433 INFO Epoch 21/30 | Step 800/1171 | Total: 1.8459 (Cont: 0.2207, Var: 0.004321, Cov: 1.517154)
+2026-05-15 22:07:26,821 INFO Epoch 21/30 | Step 850/1171 | Total: 1.8211 (Cont: 0.2099, Var: 0.009018, Cov: 1.385828)
+2026-05-15 22:07:31,627 INFO Epoch 21/30 | Step 900/1171 | Total: 1.9583 (Cont: 0.2446, Var: 0.006916, Cov: 1.540829)
+2026-05-15 22:07:36,302 INFO Epoch 21/30 | Step 950/1171 | Total: 1.8611 (Cont: 0.2126, Var: 0.009731, Cov: 1.405212)
+2026-05-15 22:07:40,705 INFO Epoch 21/30 | Step 1000/1171 | Total: 1.8659 (Cont: 0.2241, Var: 0.009235, Cov: 1.410866)
+2026-05-15 22:07:45,403 INFO Epoch 21/30 | Step 1050/1171 | Total: 1.8418 (Cont: 0.2041, Var: 0.004804, Cov: 1.517572)
+2026-05-15 22:07:50,118 INFO Epoch 21/30 | Step 1100/1171 | Total: 1.8474 (Cont: 0.2039, Var: 0.004802, Cov: 1.523468)
+2026-05-15 22:07:54,318 INFO Epoch 21/30 | Step 1150/1171 | Total: 1.9474 (Cont: 0.2209, Var: 0.002441, Cov: 1.665478)
+2026-05-15 22:07:56,019 INFO Epoch 21/30 | Total: 1.8660 (Cont: 0.2122, Var: 0.007665, Cov: 1.462214) | Emb Var: 1.0835 | Cos Sim: -0.0027 | Collapse: False | Time: 104.1s | LR: 0.000214
+2026-05-15 22:07:56,071 INFO Saved best encoder (loss=1.866017) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:07:57,677 INFO Epoch 22/30 | Step 0/1171 | Total: 1.8660 (Cont: 0.2246, Var: 0.005030, Cov: 1.515697)
+2026-05-15 22:08:01,802 INFO Epoch 22/30 | Step 50/1171 | Total: 1.7985 (Cont: 0.1773, Var: 0.009548, Cov: 1.382479)
+2026-05-15 22:08:06,423 INFO Epoch 22/30 | Step 100/1171 | Total: 1.7424 (Cont: 0.1997, Var: 0.005806, Cov: 1.397532)
+2026-05-15 22:08:10,934 INFO Epoch 22/30 | Step 150/1171 | Total: 1.7903 (Cont: 0.1879, Var: 0.005125, Cov: 1.474184)
+2026-05-15 22:08:15,200 INFO Epoch 22/30 | Step 200/1171 | Total: 1.9097 (Cont: 0.2434, Var: 0.005278, Cov: 1.534364)
+2026-05-15 22:08:19,649 INFO Epoch 22/30 | Step 250/1171 | Total: 1.9688 (Cont: 0.2236, Var: 0.002225, Cov: 1.689620)
+2026-05-15 22:08:24,156 INFO Epoch 22/30 | Step 300/1171 | Total: 1.7573 (Cont: 0.1905, Var: 0.006914, Cov: 1.393928)
+2026-05-15 22:08:28,448 INFO Epoch 22/30 | Step 350/1171 | Total: 1.8788 (Cont: 0.2397, Var: 0.007711, Cov: 1.446241)
+2026-05-15 22:08:33,048 INFO Epoch 22/30 | Step 400/1171 | Total: 1.9475 (Cont: 0.2301, Var: 0.006634, Cov: 1.551584)
+2026-05-15 22:08:37,573 INFO Epoch 22/30 | Step 450/1171 | Total: 1.8472 (Cont: 0.2123, Var: 0.009477, Cov: 1.397982)
+2026-05-15 22:08:41,840 INFO Epoch 22/30 | Step 500/1171 | Total: 1.7420 (Cont: 0.2320, Var: 0.004989, Cov: 1.385181)
+2026-05-15 22:08:46,243 INFO Epoch 22/30 | Step 550/1171 | Total: 1.8225 (Cont: 0.1908, Var: 0.008098, Cov: 1.429190)
+2026-05-15 22:08:50,728 INFO Epoch 22/30 | Step 600/1171 | Total: 1.7521 (Cont: 0.1927, Var: 0.004817, Cov: 1.438912)
+2026-05-15 22:08:55,039 INFO Epoch 22/30 | Step 650/1171 | Total: 1.8721 (Cont: 0.2116, Var: 0.013273, Cov: 1.328666)
+2026-05-15 22:08:59,563 INFO Epoch 22/30 | Step 700/1171 | Total: 1.8314 (Cont: 0.2227, Var: 0.006425, Cov: 1.447979)
+2026-05-15 22:09:03,931 INFO Epoch 22/30 | Step 750/1171 | Total: 1.7291 (Cont: 0.1991, Var: 0.008464, Cov: 1.318402)
+2026-05-15 22:09:08,134 INFO Epoch 22/30 | Step 800/1171 | Total: 1.7558 (Cont: 0.2321, Var: 0.005962, Cov: 1.374631)
+2026-05-15 22:09:12,575 INFO Epoch 22/30 | Step 850/1171 | Total: 1.9264 (Cont: 0.1996, Var: 0.001282, Cov: 1.694743)
+2026-05-15 22:09:16,719 INFO Epoch 22/30 | Step 900/1171 | Total: 1.8661 (Cont: 0.1989, Var: 0.003219, Cov: 1.586690)
+2026-05-15 22:09:21,030 INFO Epoch 22/30 | Step 950/1171 | Total: 1.8910 (Cont: 0.2366, Var: 0.011895, Cov: 1.357020)
+2026-05-15 22:09:25,592 INFO Epoch 22/30 | Step 1000/1171 | Total: 1.8080 (Cont: 0.2097, Var: 0.004179, Cov: 1.493856)
+2026-05-15 22:09:30,176 INFO Epoch 22/30 | Step 1050/1171 | Total: 1.9059 (Cont: 0.2417, Var: 0.011119, Cov: 1.386142)
+2026-05-15 22:09:34,366 INFO Epoch 22/30 | Step 1100/1171 | Total: 1.8567 (Cont: 0.2052, Var: 0.012700, Cov: 1.333971)
+2026-05-15 22:09:38,821 INFO Epoch 22/30 | Step 1150/1171 | Total: 1.7225 (Cont: 0.2143, Var: 0.007322, Cov: 1.325144)
+2026-05-15 22:09:40,557 INFO Epoch 22/30 | Total: 1.8424 (Cont: 0.2103, Var: 0.007342, Cov: 1.448517) | Emb Var: 1.0827 | Cos Sim: -0.0027 | Collapse: False | Time: 104.5s | LR: 0.000174
+2026-05-15 22:09:40,617 INFO Saved best encoder (loss=1.842400) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:09:41,307 INFO Epoch 23/30 | Step 0/1171 | Total: 1.9115 (Cont: 0.2099, Var: 0.014319, Cov: 1.343604)
+2026-05-15 22:09:45,899 INFO Epoch 23/30 | Step 50/1171 | Total: 1.7710 (Cont: 0.2186, Var: 0.004618, Cov: 1.436973)
+2026-05-15 22:09:50,184 INFO Epoch 23/30 | Step 100/1171 | Total: 1.8927 (Cont: 0.1989, Var: 0.014071, Cov: 1.342041)
+2026-05-15 22:09:54,784 INFO Epoch 23/30 | Step 150/1171 | Total: 1.8783 (Cont: 0.1880, Var: 0.010780, Cov: 1.420829)
+2026-05-15 22:09:59,144 INFO Epoch 23/30 | Step 200/1171 | Total: 1.7858 (Cont: 0.2252, Var: 0.003869, Cov: 1.463856)
+2026-05-15 22:10:03,254 INFO Epoch 23/30 | Step 250/1171 | Total: 1.8247 (Cont: 0.2066, Var: 0.007595, Cov: 1.428195)
+2026-05-15 22:10:07,708 INFO Epoch 23/30 | Step 300/1171 | Total: 1.9265 (Cont: 0.2311, Var: 0.011468, Cov: 1.408677)
+2026-05-15 22:10:12,052 INFO Epoch 23/30 | Step 350/1171 | Total: 1.9206 (Cont: 0.1941, Var: 0.004251, Cov: 1.620259)
+2026-05-15 22:10:16,221 INFO Epoch 23/30 | Step 400/1171 | Total: 1.8680 (Cont: 0.2101, Var: 0.009945, Cov: 1.409241)
+2026-05-15 22:10:20,650 INFO Epoch 23/30 | Step 450/1171 | Total: 1.7371 (Cont: 0.1769, Var: 0.006538, Cov: 1.396806)
+2026-05-15 22:10:25,006 INFO Epoch 23/30 | Step 500/1171 | Total: 1.8337 (Cont: 0.2160, Var: 0.011829, Cov: 1.321922)
+2026-05-15 22:10:29,173 INFO Epoch 23/30 | Step 550/1171 | Total: 1.7477 (Cont: 0.2223, Var: 0.004711, Cov: 1.407690)
+2026-05-15 22:10:33,536 INFO Epoch 23/30 | Step 600/1171 | Total: 1.8053 (Cont: 0.2000, Var: 0.005924, Cov: 1.457202)
+2026-05-15 22:10:38,378 INFO Epoch 23/30 | Step 650/1171 | Total: 1.7395 (Cont: 0.2034, Var: 0.009337, Cov: 1.302687)
+2026-05-15 22:10:42,613 INFO Epoch 23/30 | Step 700/1171 | Total: 1.9028 (Cont: 0.2039, Var: 0.014974, Cov: 1.324598)
+2026-05-15 22:10:47,062 INFO Epoch 23/30 | Step 750/1171 | Total: 1.9449 (Cont: 0.2518, Var: 0.004693, Cov: 1.575778)
+2026-05-15 22:10:51,582 INFO Epoch 23/30 | Step 800/1171 | Total: 1.8027 (Cont: 0.2199, Var: 0.010776, Cov: 1.313397)
+2026-05-15 22:10:55,648 INFO Epoch 23/30 | Step 850/1171 | Total: 1.7621 (Cont: 0.2199, Var: 0.008187, Cov: 1.337516)
+2026-05-15 22:10:59,967 INFO Epoch 23/30 | Step 900/1171 | Total: 1.8303 (Cont: 0.2282, Var: 0.005000, Cov: 1.477054)
+2026-05-15 22:11:04,314 INFO Epoch 23/30 | Step 950/1171 | Total: 1.9517 (Cont: 0.2187, Var: 0.007283, Cov: 1.550844)
+2026-05-15 22:11:08,423 INFO Epoch 23/30 | Step 1000/1171 | Total: 1.8473 (Cont: 0.2316, Var: 0.004150, Cov: 1.511969)
+2026-05-15 22:11:12,857 INFO Epoch 23/30 | Step 1050/1171 | Total: 1.8808 (Cont: 0.2442, Var: 0.010861, Cov: 1.365090)
+2026-05-15 22:11:17,245 INFO Epoch 23/30 | Step 1100/1171 | Total: 1.7341 (Cont: 0.2391, Var: 0.004466, Cov: 1.383308)
+2026-05-15 22:11:21,327 INFO Epoch 23/30 | Step 1150/1171 | Total: 1.8761 (Cont: 0.2334, Var: 0.004997, Cov: 1.517763)
+2026-05-15 22:11:23,194 INFO Epoch 23/30 | Total: 1.8273 (Cont: 0.2072, Var: 0.007341, Cov: 1.436591) | Emb Var: 1.0632 | Cos Sim: -0.0027 | Collapse: False | Time: 102.6s | LR: 0.000137
+2026-05-15 22:11:23,254 INFO Saved best encoder (loss=1.827311) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:11:24,071 INFO Epoch 24/30 | Step 0/1171 | Total: 1.7896 (Cont: 0.2395, Var: 0.007633, Cov: 1.359313)
+2026-05-15 22:11:28,485 INFO Epoch 24/30 | Step 50/1171 | Total: 1.7896 (Cont: 0.2085, Var: 0.011625, Cov: 1.290479)
+2026-05-15 22:11:32,899 INFO Epoch 24/30 | Step 100/1171 | Total: 1.7989 (Cont: 0.2189, Var: 0.007561, Cov: 1.390993)
+2026-05-15 22:11:36,971 INFO Epoch 24/30 | Step 150/1171 | Total: 1.7508 (Cont: 0.2120, Var: 0.004892, Cov: 1.416523)
+2026-05-15 22:11:41,216 INFO Epoch 24/30 | Step 200/1171 | Total: 1.8285 (Cont: 0.2103, Var: 0.003116, Cov: 1.540309)
+2026-05-15 22:11:45,682 INFO Epoch 24/30 | Step 250/1171 | Total: 1.8785 (Cont: 0.2116, Var: 0.001300, Cov: 1.634367)
+2026-05-15 22:11:49,860 INFO Epoch 24/30 | Step 300/1171 | Total: 1.8110 (Cont: 0.1938, Var: 0.002859, Cov: 1.545720)
+2026-05-15 22:11:54,275 INFO Epoch 24/30 | Step 350/1171 | Total: 1.7827 (Cont: 0.1847, Var: 0.006210, Cov: 1.442732)
+2026-05-15 22:11:58,703 INFO Epoch 24/30 | Step 400/1171 | Total: 1.7856 (Cont: 0.2064, Var: 0.006893, Cov: 1.406826)
+2026-05-15 22:12:02,914 INFO Epoch 24/30 | Step 450/1171 | Total: 1.8363 (Cont: 0.2209, Var: 0.009313, Cov: 1.382571)
+2026-05-15 22:12:07,319 INFO Epoch 24/30 | Step 500/1171 | Total: 1.8659 (Cont: 0.1918, Var: 0.012804, Cov: 1.354023)
+2026-05-15 22:12:11,988 INFO Epoch 24/30 | Step 550/1171 | Total: 1.8428 (Cont: 0.2045, Var: 0.000774, Cov: 1.618983)
+2026-05-15 22:12:16,331 INFO Epoch 24/30 | Step 600/1171 | Total: 1.8299 (Cont: 0.1660, Var: 0.013282, Cov: 1.331768)
+2026-05-15 22:12:20,591 INFO Epoch 24/30 | Step 650/1171 | Total: 1.6780 (Cont: 0.2009, Var: 0.004594, Cov: 1.362263)
+2026-05-15 22:12:24,786 INFO Epoch 24/30 | Step 700/1171 | Total: 1.8489 (Cont: 0.2083, Var: 0.006826, Cov: 1.469872)
+2026-05-15 22:12:28,853 INFO Epoch 24/30 | Step 750/1171 | Total: 1.8944 (Cont: 0.2188, Var: 0.014287, Cov: 1.318425)
+2026-05-15 22:12:33,332 INFO Epoch 24/30 | Step 800/1171 | Total: 1.7127 (Cont: 0.1850, Var: 0.004120, Cov: 1.424691)
+2026-05-15 22:12:37,845 INFO Epoch 24/30 | Step 850/1171 | Total: 1.7761 (Cont: 0.2527, Var: 0.006496, Cov: 1.360978)
+2026-05-15 22:12:42,223 INFO Epoch 24/30 | Step 900/1171 | Total: 1.7827 (Cont: 0.1968, Var: 0.013914, Cov: 1.238066)
+2026-05-15 22:12:46,360 INFO Epoch 24/30 | Step 950/1171 | Total: 1.7401 (Cont: 0.1764, Var: 0.012359, Cov: 1.254737)
+2026-05-15 22:12:50,749 INFO Epoch 24/30 | Step 1000/1171 | Total: 1.7912 (Cont: 0.2287, Var: 0.006454, Cov: 1.401176)
+2026-05-15 22:12:55,335 INFO Epoch 24/30 | Step 1050/1171 | Total: 1.7187 (Cont: 0.1720, Var: 0.004011, Cov: 1.446416)
+2026-05-15 22:12:59,612 INFO Epoch 24/30 | Step 1100/1171 | Total: 1.8165 (Cont: 0.2129, Var: 0.003838, Cov: 1.507594)
+2026-05-15 22:13:04,173 INFO Epoch 24/30 | Step 1150/1171 | Total: 1.8797 (Cont: 0.2374, Var: 0.005084, Cov: 1.515239)
+2026-05-15 22:13:05,968 INFO Epoch 24/30 | Total: 1.8108 (Cont: 0.2053, Var: 0.007243, Cov: 1.424472) | Emb Var: 1.0749 | Cos Sim: -0.0026 | Collapse: False | Time: 102.7s | LR: 0.000105
+2026-05-15 22:13:06,035 INFO Saved best encoder (loss=1.810809) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:13:06,848 INFO Epoch 25/30 | Step 0/1171 | Total: 1.7797 (Cont: 0.1999, Var: 0.005260, Cov: 1.448313)
+2026-05-15 22:13:11,490 INFO Epoch 25/30 | Step 50/1171 | Total: 1.8085 (Cont: 0.2371, Var: 0.008313, Cov: 1.363524)
+2026-05-15 22:13:16,375 INFO Epoch 25/30 | Step 100/1171 | Total: 1.8183 (Cont: 0.2453, Var: 0.004359, Cov: 1.463975)
+2026-05-15 22:13:20,602 INFO Epoch 25/30 | Step 150/1171 | Total: 1.9690 (Cont: 0.2004, Var: 0.007586, Cov: 1.579034)
+2026-05-15 22:13:25,271 INFO Epoch 25/30 | Step 200/1171 | Total: 1.7711 (Cont: 0.2329, Var: 0.008423, Cov: 1.327619)
+2026-05-15 22:13:29,884 INFO Epoch 25/30 | Step 250/1171 | Total: 1.8174 (Cont: 0.2149, Var: 0.015993, Cov: 1.202700)
+2026-05-15 22:13:34,065 INFO Epoch 25/30 | Step 300/1171 | Total: 1.7700 (Cont: 0.1798, Var: 0.004656, Cov: 1.473725)
+2026-05-15 22:13:38,670 INFO Epoch 25/30 | Step 350/1171 | Total: 1.7738 (Cont: 0.2052, Var: 0.011757, Cov: 1.274750)
+2026-05-15 22:13:43,307 INFO Epoch 25/30 | Step 400/1171 | Total: 1.8376 (Cont: 0.2154, Var: 0.006204, Cov: 1.467057)
+2026-05-15 22:13:47,353 INFO Epoch 25/30 | Step 450/1171 | Total: 1.7794 (Cont: 0.1893, Var: 0.007554, Cov: 1.401254)
+2026-05-15 22:13:51,874 INFO Epoch 25/30 | Step 500/1171 | Total: 1.8260 (Cont: 0.2188, Var: 0.005317, Cov: 1.474285)
+2026-05-15 22:13:56,396 INFO Epoch 25/30 | Step 550/1171 | Total: 1.8227 (Cont: 0.2018, Var: 0.009953, Cov: 1.372134)
+2026-05-15 22:14:00,451 INFO Epoch 25/30 | Step 600/1171 | Total: 1.7924 (Cont: 0.2264, Var: 0.013943, Cov: 1.217430)
+2026-05-15 22:14:05,162 INFO Epoch 25/30 | Step 650/1171 | Total: 1.8019 (Cont: 0.1962, Var: 0.005841, Cov: 1.459618)
+2026-05-15 22:14:09,835 INFO Epoch 25/30 | Step 700/1171 | Total: 1.7851 (Cont: 0.1696, Var: 0.011583, Cov: 1.325934)
+2026-05-15 22:14:14,044 INFO Epoch 25/30 | Step 750/1171 | Total: 1.7803 (Cont: 0.2033, Var: 0.007367, Cov: 1.392884)
+2026-05-15 22:14:18,592 INFO Epoch 25/30 | Step 800/1171 | Total: 1.9355 (Cont: 0.2440, Var: 0.013576, Cov: 1.352110)
+2026-05-15 22:14:23,183 INFO Epoch 25/30 | Step 850/1171 | Total: 1.6940 (Cont: 0.1589, Var: 0.010392, Cov: 1.275267)
+2026-05-15 22:14:27,426 INFO Epoch 25/30 | Step 900/1171 | Total: 1.8589 (Cont: 0.2051, Var: 0.010823, Cov: 1.383295)
+2026-05-15 22:14:32,149 INFO Epoch 25/30 | Step 950/1171 | Total: 1.9269 (Cont: 0.2094, Var: 0.018493, Cov: 1.255099)
+2026-05-15 22:14:36,930 INFO Epoch 25/30 | Step 1000/1171 | Total: 1.8164 (Cont: 0.2169, Var: 0.005408, Cov: 1.464281)
+2026-05-15 22:14:41,250 INFO Epoch 25/30 | Step 1050/1171 | Total: 1.7540 (Cont: 0.1993, Var: 0.008368, Cov: 1.345498)
+2026-05-15 22:14:45,734 INFO Epoch 25/30 | Step 1100/1171 | Total: 1.8277 (Cont: 0.2113, Var: 0.008373, Cov: 1.407017)
+2026-05-15 22:14:50,135 INFO Epoch 25/30 | Step 1150/1171 | Total: 1.8494 (Cont: 0.2055, Var: 0.003313, Cov: 1.561108)
+2026-05-15 22:14:51,634 INFO Epoch 25/30 | Total: 1.7988 (Cont: 0.2032, Var: 0.007158, Cov: 1.416656) | Emb Var: 1.0688 | Cos Sim: -0.0026 | Collapse: False | Time: 105.6s | LR: 0.000076
+2026-05-15 22:14:51,671 INFO Saved best encoder (loss=1.798785) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:14:52,304 INFO Epoch 26/30 | Step 0/1171 | Total: 1.7351 (Cont: 0.1754, Var: 0.008026, Cov: 1.359014)
+2026-05-15 22:14:56,473 INFO Epoch 26/30 | Step 50/1171 | Total: 1.8864 (Cont: 0.2413, Var: 0.007265, Cov: 1.463423)
+2026-05-15 22:15:00,177 INFO Epoch 26/30 | Step 100/1171 | Total: 1.7689 (Cont: 0.2058, Var: 0.007633, Cov: 1.372242)
+2026-05-15 22:15:04,717 INFO Epoch 26/30 | Step 150/1171 | Total: 1.7316 (Cont: 0.2206, Var: 0.005044, Cov: 1.384933)
+2026-05-15 22:15:09,173 INFO Epoch 26/30 | Step 200/1171 | Total: 1.8744 (Cont: 0.1950, Var: 0.011331, Cov: 1.396147)
+2026-05-15 22:15:13,299 INFO Epoch 26/30 | Step 250/1171 | Total: 1.9814 (Cont: 0.2138, Var: 0.001675, Cov: 1.725735)
+2026-05-15 22:15:17,726 INFO Epoch 26/30 | Step 300/1171 | Total: 1.9250 (Cont: 0.2094, Var: 0.017025, Cov: 1.290002)
+2026-05-15 22:15:22,302 INFO Epoch 26/30 | Step 350/1171 | Total: 1.7649 (Cont: 0.1797, Var: 0.007270, Cov: 1.403411)
+2026-05-15 22:15:26,350 INFO Epoch 26/30 | Step 400/1171 | Total: 1.7583 (Cont: 0.1759, Var: 0.010615, Cov: 1.317089)
+2026-05-15 22:15:30,677 INFO Epoch 26/30 | Step 450/1171 | Total: 1.7180 (Cont: 0.2059, Var: 0.004371, Cov: 1.402833)
+2026-05-15 22:15:35,053 INFO Epoch 26/30 | Step 500/1171 | Total: 1.7593 (Cont: 0.1742, Var: 0.006498, Cov: 1.422576)
+2026-05-15 22:15:39,104 INFO Epoch 26/30 | Step 550/1171 | Total: 1.7001 (Cont: 0.2010, Var: 0.002575, Cov: 1.434775)
+2026-05-15 22:15:43,630 INFO Epoch 26/30 | Step 600/1171 | Total: 1.7724 (Cont: 0.1961, Var: 0.012355, Cov: 1.267488)
+2026-05-15 22:15:48,226 INFO Epoch 26/30 | Step 650/1171 | Total: 1.7882 (Cont: 0.1798, Var: 0.006281, Cov: 1.451371)
+2026-05-15 22:15:52,201 INFO Epoch 26/30 | Step 700/1171 | Total: 1.7683 (Cont: 0.2141, Var: 0.005978, Cov: 1.404770)
+2026-05-15 22:15:56,760 INFO Epoch 26/30 | Step 750/1171 | Total: 1.8084 (Cont: 0.1973, Var: 0.008942, Cov: 1.387586)
+2026-05-15 22:16:01,177 INFO Epoch 26/30 | Step 800/1171 | Total: 1.7432 (Cont: 0.2155, Var: 0.002759, Cov: 1.458754)
+2026-05-15 22:16:05,287 INFO Epoch 26/30 | Step 850/1171 | Total: 1.7674 (Cont: 0.1590, Var: 0.004414, Cov: 1.498034)
+2026-05-15 22:16:09,668 INFO Epoch 26/30 | Step 900/1171 | Total: 1.8013 (Cont: 0.1994, Var: 0.008251, Cov: 1.395691)
+2026-05-15 22:16:14,177 INFO Epoch 26/30 | Step 950/1171 | Total: 1.7337 (Cont: 0.1820, Var: 0.004817, Cov: 1.431303)
+2026-05-15 22:16:18,278 INFO Epoch 26/30 | Step 1000/1171 | Total: 1.7008 (Cont: 0.1990, Var: 0.004033, Cov: 1.401005)
+2026-05-15 22:16:22,894 INFO Epoch 26/30 | Step 1050/1171 | Total: 1.8017 (Cont: 0.2103, Var: 0.007401, Cov: 1.406419)
+2026-05-15 22:16:27,394 INFO Epoch 26/30 | Step 1100/1171 | Total: 1.8149 (Cont: 0.2104, Var: 0.005416, Cov: 1.469134)
+2026-05-15 22:16:31,551 INFO Epoch 26/30 | Step 1150/1171 | Total: 1.7673 (Cont: 0.2225, Var: 0.006705, Cov: 1.377121)
+2026-05-15 22:16:33,316 INFO Epoch 26/30 | Total: 1.7879 (Cont: 0.2021, Var: 0.007046, Cov: 1.409623) | Emb Var: 1.0704 | Cos Sim: -0.0027 | Collapse: False | Time: 101.6s | LR: 0.000053
+2026-05-15 22:16:33,375 INFO Saved best encoder (loss=1.787915) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:16:34,217 INFO Epoch 27/30 | Step 0/1171 | Total: 1.7633 (Cont: 0.1777, Var: 0.006771, Cov: 1.416338)
+2026-05-15 22:16:38,617 INFO Epoch 27/30 | Step 50/1171 | Total: 1.7988 (Cont: 0.2225, Var: 0.007835, Cov: 1.380495)
+2026-05-15 22:16:42,791 INFO Epoch 27/30 | Step 100/1171 | Total: 1.7423 (Cont: 0.1755, Var: 0.008718, Cov: 1.348837)
+2026-05-15 22:16:46,519 INFO Epoch 27/30 | Step 150/1171 | Total: 1.8777 (Cont: 0.2060, Var: 0.006497, Cov: 1.509303)
+2026-05-15 22:16:50,791 INFO Epoch 27/30 | Step 200/1171 | Total: 1.8072 (Cont: 0.2119, Var: 0.012186, Cov: 1.290666)
+2026-05-15 22:16:55,131 INFO Epoch 27/30 | Step 250/1171 | Total: 1.8033 (Cont: 0.2082, Var: 0.004152, Cov: 1.491332)
+2026-05-15 22:16:59,084 INFO Epoch 27/30 | Step 300/1171 | Total: 1.8412 (Cont: 0.2282, Var: 0.007047, Cov: 1.436865)
+2026-05-15 22:17:03,555 INFO Epoch 27/30 | Step 350/1171 | Total: 1.8161 (Cont: 0.2183, Var: 0.006719, Cov: 1.429839)
+2026-05-15 22:17:08,006 INFO Epoch 27/30 | Step 400/1171 | Total: 1.7572 (Cont: 0.2056, Var: 0.010261, Cov: 1.295109)
+2026-05-15 22:17:12,077 INFO Epoch 27/30 | Step 450/1171 | Total: 1.9246 (Cont: 0.1857, Var: 0.017774, Cov: 1.294547)
+2026-05-15 22:17:16,483 INFO Epoch 27/30 | Step 500/1171 | Total: 1.9285 (Cont: 0.2474, Var: 0.014886, Cov: 1.308959)
+2026-05-15 22:17:20,840 INFO Epoch 27/30 | Step 550/1171 | Total: 1.7478 (Cont: 0.1946, Var: 0.007436, Cov: 1.367213)
+2026-05-15 22:17:24,955 INFO Epoch 27/30 | Step 600/1171 | Total: 1.7540 (Cont: 0.1945, Var: 0.006504, Cov: 1.396978)
+2026-05-15 22:17:29,386 INFO Epoch 27/30 | Step 650/1171 | Total: 1.7606 (Cont: 0.1928, Var: 0.009058, Cov: 1.341349)
+2026-05-15 22:17:33,811 INFO Epoch 27/30 | Step 700/1171 | Total: 1.7729 (Cont: 0.2202, Var: 0.004360, Cov: 1.443644)
+2026-05-15 22:17:38,049 INFO Epoch 27/30 | Step 750/1171 | Total: 1.9134 (Cont: 0.1991, Var: 0.002963, Cov: 1.640237)
+2026-05-15 22:17:42,578 INFO Epoch 27/30 | Step 800/1171 | Total: 1.8664 (Cont: 0.2136, Var: 0.007530, Cov: 1.464502)
+2026-05-15 22:17:47,024 INFO Epoch 27/30 | Step 850/1171 | Total: 1.8129 (Cont: 0.1979, Var: 0.002475, Cov: 1.553179)
+2026-05-15 22:17:51,029 INFO Epoch 27/30 | Step 900/1171 | Total: 1.7804 (Cont: 0.1609, Var: 0.003691, Cov: 1.527206)
+2026-05-15 22:17:55,337 INFO Epoch 27/30 | Step 950/1171 | Total: 1.8571 (Cont: 0.1867, Var: 0.003044, Cov: 1.594254)
+2026-05-15 22:17:59,850 INFO Epoch 27/30 | Step 1000/1171 | Total: 1.8622 (Cont: 0.2028, Var: 0.002145, Cov: 1.605816)
+2026-05-15 22:18:03,880 INFO Epoch 27/30 | Step 1050/1171 | Total: 1.8767 (Cont: 0.1943, Var: 0.002846, Cov: 1.611253)
+2026-05-15 22:18:08,128 INFO Epoch 27/30 | Step 1100/1171 | Total: 1.7927 (Cont: 0.2121, Var: 0.011140, Cov: 1.302134)
+2026-05-15 22:18:12,439 INFO Epoch 27/30 | Step 1150/1171 | Total: 1.7895 (Cont: 0.2193, Var: 0.005724, Cov: 1.427082)
+2026-05-15 22:18:14,139 INFO Epoch 27/30 | Total: 1.7862 (Cont: 0.2015, Var: 0.007044, Cov: 1.408565) | Emb Var: 1.0736 | Cos Sim: -0.0027 | Collapse: False | Time: 100.8s | LR: 0.000034
+2026-05-15 22:18:14,198 INFO Saved best encoder (loss=1.786169) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:18:14,975 INFO Epoch 28/30 | Step 0/1171 | Total: 1.7921 (Cont: 0.2243, Var: 0.007975, Cov: 1.368375)
+2026-05-15 22:18:19,404 INFO Epoch 28/30 | Step 50/1171 | Total: 1.9602 (Cont: 0.2249, Var: 0.013904, Cov: 1.387661)
+2026-05-15 22:18:23,359 INFO Epoch 28/30 | Step 100/1171 | Total: 1.8045 (Cont: 0.2328, Var: 0.011781, Cov: 1.277185)
+2026-05-15 22:18:27,578 INFO Epoch 28/30 | Step 150/1171 | Total: 1.8397 (Cont: 0.2184, Var: 0.003029, Cov: 1.545543)
+2026-05-15 22:18:32,125 INFO Epoch 28/30 | Step 200/1171 | Total: 1.8237 (Cont: 0.1939, Var: 0.004607, Cov: 1.514689)
+2026-05-15 22:18:36,275 INFO Epoch 28/30 | Step 250/1171 | Total: 1.8468 (Cont: 0.2196, Var: 0.006880, Cov: 1.455114)
+2026-05-15 22:18:40,504 INFO Epoch 28/30 | Step 300/1171 | Total: 2.1305 (Cont: 0.1883, Var: 0.000912, Cov: 1.919447)
+2026-05-15 22:18:44,923 INFO Epoch 28/30 | Step 350/1171 | Total: 1.7437 (Cont: 0.2073, Var: 0.011970, Cov: 1.237178)
+2026-05-15 22:18:48,731 INFO Epoch 28/30 | Step 400/1171 | Total: 1.6660 (Cont: 0.1543, Var: 0.004074, Cov: 1.409809)
+2026-05-15 22:18:52,982 INFO Epoch 28/30 | Step 450/1171 | Total: 1.8483 (Cont: 0.2312, Var: 0.004176, Cov: 1.512691)
+2026-05-15 22:18:57,351 INFO Epoch 28/30 | Step 500/1171 | Total: 1.8687 (Cont: 0.2151, Var: 0.004290, Cov: 1.546343)
+2026-05-15 22:19:01,306 INFO Epoch 28/30 | Step 550/1171 | Total: 1.6836 (Cont: 0.1812, Var: 0.008248, Cov: 1.296201)
+2026-05-15 22:19:05,741 INFO Epoch 28/30 | Step 600/1171 | Total: 1.6779 (Cont: 0.2016, Var: 0.004170, Cov: 1.372086)
+2026-05-15 22:19:10,202 INFO Epoch 28/30 | Step 650/1171 | Total: 1.7964 (Cont: 0.2595, Var: 0.003316, Cov: 1.454064)
+2026-05-15 22:19:14,596 INFO Epoch 28/30 | Step 700/1171 | Total: 1.7921 (Cont: 0.2024, Var: 0.010992, Cov: 1.314904)
+2026-05-15 22:19:18,836 INFO Epoch 28/30 | Step 750/1171 | Total: 1.7830 (Cont: 0.1523, Var: 0.004606, Cov: 1.515587)
+2026-05-15 22:19:22,986 INFO Epoch 28/30 | Step 800/1171 | Total: 1.6667 (Cont: 0.1881, Var: 0.005007, Cov: 1.353400)
+2026-05-15 22:19:26,398 INFO Epoch 28/30 | Step 850/1171 | Total: 1.8600 (Cont: 0.1856, Var: 0.002707, Cov: 1.606745)
+2026-05-15 22:19:30,348 INFO Epoch 28/30 | Step 900/1171 | Total: 1.8576 (Cont: 0.2108, Var: 0.005339, Cov: 1.513393)
+2026-05-15 22:19:34,442 INFO Epoch 28/30 | Step 950/1171 | Total: 1.7569 (Cont: 0.1966, Var: 0.005189, Cov: 1.430545)
+2026-05-15 22:19:38,175 INFO Epoch 28/30 | Step 1000/1171 | Total: 1.8604 (Cont: 0.2221, Var: 0.003888, Cov: 1.541083)
+2026-05-15 22:19:42,532 INFO Epoch 28/30 | Step 1050/1171 | Total: 1.7657 (Cont: 0.2044, Var: 0.011238, Cov: 1.280319)
+2026-05-15 22:19:46,964 INFO Epoch 28/30 | Step 1100/1171 | Total: 1.9655 (Cont: 0.2353, Var: 0.008110, Cov: 1.527500)
+2026-05-15 22:19:50,923 INFO Epoch 28/30 | Step 1150/1171 | Total: 1.7408 (Cont: 0.1914, Var: 0.005628, Cov: 1.408660)
+2026-05-15 22:19:52,929 INFO Epoch 28/30 | Total: 1.7775 (Cont: 0.1999, Var: 0.007003, Cov: 1.402531) | Emb Var: 1.0914 | Cos Sim: -0.0026 | Collapse: False | Time: 98.7s | LR: 0.000021
+2026-05-15 22:19:52,970 INFO Saved best encoder (loss=1.777456) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:19:53,749 INFO Epoch 29/30 | Step 0/1171 | Total: 1.8160 (Cont: 0.2012, Var: 0.006903, Cov: 1.442260)
+2026-05-15 22:19:57,816 INFO Epoch 29/30 | Step 50/1171 | Total: 1.7645 (Cont: 0.1861, Var: 0.009577, Cov: 1.338987)
+2026-05-15 22:20:02,393 INFO Epoch 29/30 | Step 100/1171 | Total: 1.8567 (Cont: 0.2237, Var: 0.003202, Cov: 1.553003)
+2026-05-15 22:20:06,861 INFO Epoch 29/30 | Step 150/1171 | Total: 1.6173 (Cont: 0.1854, Var: 0.007157, Cov: 1.252984)
+2026-05-15 22:20:10,938 INFO Epoch 29/30 | Step 200/1171 | Total: 1.7851 (Cont: 0.2177, Var: 0.008054, Cov: 1.366052)
+2026-05-15 22:20:15,199 INFO Epoch 29/30 | Step 250/1171 | Total: 1.7021 (Cont: 0.1921, Var: 0.005218, Cov: 1.379588)
+2026-05-15 22:20:19,585 INFO Epoch 29/30 | Step 300/1171 | Total: 1.8250 (Cont: 0.2185, Var: 0.008246, Cov: 1.400393)
+2026-05-15 22:20:23,744 INFO Epoch 29/30 | Step 350/1171 | Total: 1.7854 (Cont: 0.2081, Var: 0.008390, Cov: 1.367620)
+2026-05-15 22:20:28,191 INFO Epoch 29/30 | Step 400/1171 | Total: 1.7623 (Cont: 0.1932, Var: 0.003385, Cov: 1.484512)
+2026-05-15 22:20:32,665 INFO Epoch 29/30 | Step 450/1171 | Total: 1.7255 (Cont: 0.1773, Var: 0.003075, Cov: 1.471320)
+2026-05-15 22:20:36,877 INFO Epoch 29/30 | Step 500/1171 | Total: 1.7443 (Cont: 0.1737, Var: 0.004654, Cov: 1.454270)
+2026-05-15 22:20:41,264 INFO Epoch 29/30 | Step 550/1171 | Total: 1.8637 (Cont: 0.2120, Var: 0.015453, Cov: 1.265356)
+2026-05-15 22:20:45,713 INFO Epoch 29/30 | Step 600/1171 | Total: 1.6635 (Cont: 0.1733, Var: 0.007480, Cov: 1.303112)
+2026-05-15 22:20:49,910 INFO Epoch 29/30 | Step 650/1171 | Total: 1.8079 (Cont: 0.2287, Var: 0.010184, Cov: 1.324577)
+2026-05-15 22:20:54,372 INFO Epoch 29/30 | Step 700/1171 | Total: 1.6971 (Cont: 0.1670, Var: 0.011517, Cov: 1.242167)
+2026-05-15 22:20:58,867 INFO Epoch 29/30 | Step 750/1171 | Total: 1.7526 (Cont: 0.1968, Var: 0.008099, Cov: 1.353312)
+2026-05-15 22:21:03,049 INFO Epoch 29/30 | Step 800/1171 | Total: 1.8000 (Cont: 0.1872, Var: 0.011001, Cov: 1.337805)
+2026-05-15 22:21:07,663 INFO Epoch 29/30 | Step 850/1171 | Total: 1.8167 (Cont: 0.2141, Var: 0.006118, Cov: 1.449657)
+2026-05-15 22:21:12,124 INFO Epoch 29/30 | Step 900/1171 | Total: 1.7298 (Cont: 0.1876, Var: 0.002869, Cov: 1.470491)
+2026-05-15 22:21:16,361 INFO Epoch 29/30 | Step 950/1171 | Total: 1.9147 (Cont: 0.2327, Var: 0.003810, Cov: 1.586760)
+2026-05-15 22:21:20,911 INFO Epoch 29/30 | Step 1000/1171 | Total: 1.8435 (Cont: 0.2167, Var: 0.014257, Cov: 1.270326)
+2026-05-15 22:21:25,545 INFO Epoch 29/30 | Step 1050/1171 | Total: 1.7757 (Cont: 0.1763, Var: 0.011404, Cov: 1.314340)
+2026-05-15 22:21:29,676 INFO Epoch 29/30 | Step 1100/1171 | Total: 1.8906 (Cont: 0.2128, Var: 0.014125, Cov: 1.324675)
+2026-05-15 22:21:34,061 INFO Epoch 29/30 | Step 1150/1171 | Total: 1.6546 (Cont: 0.2157, Var: 0.005365, Cov: 1.304726)
+2026-05-15 22:21:35,836 INFO Epoch 29/30 | Total: 1.7728 (Cont: 0.1994, Var: 0.007042, Cov: 1.397320) | Emb Var: 1.0725 | Cos Sim: -0.0027 | Collapse: False | Time: 102.9s | LR: 0.000013
+2026-05-15 22:21:35,903 INFO Saved best encoder (loss=1.772792) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:21:36,661 INFO Epoch 30/30 | Step 0/1171 | Total: 1.7636 (Cont: 0.2100, Var: 0.006399, Cov: 1.393600)
+2026-05-15 22:21:41,171 INFO Epoch 30/30 | Step 50/1171 | Total: 1.7840 (Cont: 0.2024, Var: 0.012211, Cov: 1.276316)
+2026-05-15 22:21:45,586 INFO Epoch 30/30 | Step 100/1171 | Total: 1.7103 (Cont: 0.1847, Var: 0.007187, Cov: 1.345876)
+2026-05-15 22:21:49,698 INFO Epoch 30/30 | Step 150/1171 | Total: 1.6667 (Cont: 0.1808, Var: 0.004406, Cov: 1.375714)
+2026-05-15 22:21:54,051 INFO Epoch 30/30 | Step 200/1171 | Total: 1.7008 (Cont: 0.1868, Var: 0.004715, Cov: 1.396143)
+2026-05-15 22:21:58,368 INFO Epoch 30/30 | Step 250/1171 | Total: 1.7090 (Cont: 0.1727, Var: 0.005827, Cov: 1.390592)
+2026-05-15 22:22:02,510 INFO Epoch 30/30 | Step 300/1171 | Total: 1.9120 (Cont: 0.2175, Var: 0.006260, Cov: 1.538018)
+2026-05-15 22:22:06,926 INFO Epoch 30/30 | Step 350/1171 | Total: 1.7964 (Cont: 0.1973, Var: 0.009073, Cov: 1.372320)
+2026-05-15 22:22:11,466 INFO Epoch 30/30 | Step 400/1171 | Total: 1.7975 (Cont: 0.1817, Var: 0.009690, Cov: 1.373537)
+2026-05-15 22:22:15,621 INFO Epoch 30/30 | Step 450/1171 | Total: 1.8348 (Cont: 0.2039, Var: 0.008879, Cov: 1.408880)
+2026-05-15 22:22:20,068 INFO Epoch 30/30 | Step 500/1171 | Total: 1.7999 (Cont: 0.2185, Var: 0.006725, Cov: 1.413270)
+2026-05-15 22:22:24,422 INFO Epoch 30/30 | Step 550/1171 | Total: 1.6292 (Cont: 0.1473, Var: 0.004077, Cov: 1.379992)
+2026-05-15 22:22:28,538 INFO Epoch 30/30 | Step 600/1171 | Total: 1.9181 (Cont: 0.2011, Var: 0.005454, Cov: 1.580567)
+2026-05-15 22:22:32,947 INFO Epoch 30/30 | Step 650/1171 | Total: 1.7928 (Cont: 0.2207, Var: 0.005956, Cov: 1.423186)
+2026-05-15 22:22:37,360 INFO Epoch 30/30 | Step 700/1171 | Total: 1.7255 (Cont: 0.1975, Var: 0.005918, Cov: 1.379995)
+2026-05-15 22:22:41,612 INFO Epoch 30/30 | Step 750/1171 | Total: 1.8171 (Cont: 0.2051, Var: 0.004795, Cov: 1.492093)
+2026-05-15 22:22:46,013 INFO Epoch 30/30 | Step 800/1171 | Total: 1.8445 (Cont: 0.2244, Var: 0.003376, Cov: 1.535697)
+2026-05-15 22:22:50,484 INFO Epoch 30/30 | Step 850/1171 | Total: 1.7034 (Cont: 0.1703, Var: 0.002882, Cov: 1.460977)
+2026-05-15 22:22:53,914 INFO Epoch 30/30 | Step 900/1171 | Total: 1.8913 (Cont: 0.2487, Var: 0.002368, Cov: 1.583371)
+2026-05-15 22:22:58,168 INFO Epoch 30/30 | Step 950/1171 | Total: 1.7793 (Cont: 0.2428, Var: 0.004111, Cov: 1.433748)
+2026-05-15 22:23:02,647 INFO Epoch 30/30 | Step 1000/1171 | Total: 1.8219 (Cont: 0.2272, Var: 0.005884, Cov: 1.447655)
+2026-05-15 22:23:06,837 INFO Epoch 30/30 | Step 1050/1171 | Total: 1.8528 (Cont: 0.2250, Var: 0.006025, Cov: 1.477200)
+2026-05-15 22:23:11,425 INFO Epoch 30/30 | Step 1100/1171 | Total: 1.7140 (Cont: 0.1946, Var: 0.006147, Cov: 1.365750)
+2026-05-15 22:23:15,911 INFO Epoch 30/30 | Step 1150/1171 | Total: 1.6776 (Cont: 0.2012, Var: 0.006709, Cov: 1.308582)
+2026-05-15 22:23:17,650 INFO Epoch 30/30 | Total: 1.7715 (Cont: 0.1994, Var: 0.006940, Cov: 1.398596) | Emb Var: 1.0872 | Cos Sim: -0.0027 | Collapse: False | Time: 101.7s | LR: 0.000010
+2026-05-15 22:23:17,725 INFO Saved best encoder (loss=1.771505) to /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:23:17,869 INFO Re-saved encoder with 'teacher_encoder' key for fine-tuning compatibility
+2026-05-15 22:23:17,869 INFO Phase 2 completed in 3075.6s
+2026-05-15 22:23:17,870 INFO 
+======================================================================
+2026-05-15 22:23:17,870 INFO PHASE 3: FINE-TUNING ON Tg
+2026-05-15 22:23:17,870 INFO ======================================================================
+2026-05-15 22:23:17,875 INFO Train: 5162, Val: 573, Test: 1435
+2026-05-15 22:23:17,875 INFO 
+============================================================
+2026-05-15 22:23:17,875 INFO BASELINE: Training from scratch (no pre-training)
+2026-05-15 22:23:17,875 INFO ============================================================
+2026-05-15 22:23:17,904 INFO 
+============================================================
+2026-05-15 22:23:17,904 INFO Strategy: baseline | LR: 0.0005 | Epochs: 500
+2026-05-15 22:23:17,904 INFO Trainable params: 641,542
+2026-05-15 22:23:17,904 INFO ============================================================
+2026-05-15 22:23:22,908 INFO [baseline] Epoch 1/500 | Train RMSE: 83.6467 | Val RMSE: 89.1111 | Val MAE: 66.3871 | Time: 5.0s
+2026-05-15 22:24:08,084 INFO [baseline] Epoch 10/500 | Train RMSE: 53.5814 | Val RMSE: 116.3697 | Val MAE: 96.0616 | Time: 4.9s
+2026-05-15 22:24:58,979 INFO [baseline] Epoch 20/500 | Train RMSE: 48.9142 | Val RMSE: 55.0012 | Val MAE: 41.8640 | Time: 5.2s
+2026-05-15 22:25:49,964 INFO [baseline] Epoch 30/500 | Train RMSE: 46.1090 | Val RMSE: 52.0353 | Val MAE: 40.3046 | Time: 5.2s
+2026-05-15 22:26:41,109 INFO [baseline] Epoch 40/500 | Train RMSE: 44.2765 | Val RMSE: 66.7246 | Val MAE: 53.9132 | Time: 5.1s
+2026-05-15 22:27:31,257 INFO [baseline] Epoch 50/500 | Train RMSE: 42.2491 | Val RMSE: 55.7296 | Val MAE: 43.5820 | Time: 5.1s
+2026-05-15 22:28:22,326 INFO [baseline] Epoch 60/500 | Train RMSE: 39.3460 | Val RMSE: 49.5162 | Val MAE: 38.0119 | Time: 5.3s
+2026-05-15 22:29:13,047 INFO [baseline] Epoch 70/500 | Train RMSE: 38.4752 | Val RMSE: 49.8717 | Val MAE: 38.6200 | Time: 5.0s
+2026-05-15 22:30:03,728 INFO [baseline] Epoch 80/500 | Train RMSE: 37.7034 | Val RMSE: 59.8449 | Val MAE: 46.2760 | Time: 4.7s
+2026-05-15 22:30:56,788 INFO [baseline] Epoch 90/500 | Train RMSE: 34.7279 | Val RMSE: 48.1489 | Val MAE: 37.1845 | Time: 5.1s
+2026-05-15 22:31:46,913 INFO [baseline] Epoch 100/500 | Train RMSE: 34.3802 | Val RMSE: 49.4634 | Val MAE: 37.8856 | Time: 5.0s
+2026-05-15 22:32:36,711 INFO [baseline] Epoch 110/500 | Train RMSE: 33.9865 | Val RMSE: 48.1349 | Val MAE: 36.7899 | Time: 4.9s
+2026-05-15 22:33:27,004 INFO [baseline] Epoch 120/500 | Train RMSE: 34.0621 | Val RMSE: 53.6298 | Val MAE: 41.1755 | Time: 5.3s
+2026-05-15 22:34:16,978 INFO [baseline] Epoch 130/500 | Train RMSE: 32.5084 | Val RMSE: 49.9276 | Val MAE: 36.9450 | Time: 5.0s
+2026-05-15 22:34:56,594 INFO Early stopping at epoch 138. Best val RMSE: 46.2030 at epoch 108
+2026-05-15 22:35:00,470 INFO 
+[baseline] Final Results:
+2026-05-15 22:35:00,470 INFO   Best Epoch: 108
+2026-05-15 22:35:00,470 INFO   Train RMSE: 24.3008
+2026-05-15 22:35:00,470 INFO   Val RMSE: 46.2030
+2026-05-15 22:35:00,470 INFO   Test RMSE: 56.1785
+2026-05-15 22:35:00,470 INFO   Test MAE: 39.5050
+2026-05-15 22:35:00,470 INFO   Overfitting Gap: -31.8777
+2026-05-15 22:35:00,473 INFO 
+============================================================
+2026-05-15 22:35:00,473 INFO STRATEGY A: Partial freeze (freeze first 3 GIN layers)
+2026-05-15 22:35:00,473 INFO ============================================================
+2026-05-15 22:35:00,575 INFO Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:35:00,577 INFO Frozen layers: 0-2, Trainable: layers 3-4 + head
+2026-05-15 22:35:00,577 INFO Trainable params: 299,267
+2026-05-15 22:35:00,578 INFO 
+============================================================
+2026-05-15 22:35:00,578 INFO Strategy: strategy_A_partial_freeze | LR: 0.0005 | Epochs: 500
+2026-05-15 22:35:00,578 INFO Trainable params: 299,267
+2026-05-15 22:35:00,578 INFO ============================================================
+2026-05-15 22:35:04,675 INFO [strategy_A_partial_freeze] Epoch 1/500 | Train RMSE: 99.3061 | Val RMSE: 73.5653 | Val MAE: 55.6873 | Time: 4.1s
+2026-05-15 22:35:42,237 INFO [strategy_A_partial_freeze] Epoch 10/500 | Train RMSE: 48.9240 | Val RMSE: 67.6279 | Val MAE: 50.1845 | Time: 4.4s
+2026-05-15 22:36:24,162 INFO [strategy_A_partial_freeze] Epoch 20/500 | Train RMSE: 43.8631 | Val RMSE: 69.2204 | Val MAE: 52.1125 | Time: 4.0s
+2026-05-15 22:37:06,131 INFO [strategy_A_partial_freeze] Epoch 30/500 | Train RMSE: 41.3960 | Val RMSE: 61.4768 | Val MAE: 47.8415 | Time: 4.3s
+2026-05-15 22:37:47,008 INFO [strategy_A_partial_freeze] Epoch 40/500 | Train RMSE: 39.8779 | Val RMSE: 67.4784 | Val MAE: 51.5296 | Time: 4.3s
+2026-05-15 22:38:28,369 INFO [strategy_A_partial_freeze] Epoch 50/500 | Train RMSE: 37.2685 | Val RMSE: 58.9973 | Val MAE: 44.8388 | Time: 4.2s
+2026-05-15 22:39:09,808 INFO [strategy_A_partial_freeze] Epoch 60/500 | Train RMSE: 35.9786 | Val RMSE: 60.9805 | Val MAE: 45.5814 | Time: 4.0s
+2026-05-15 22:39:52,065 INFO [strategy_A_partial_freeze] Epoch 70/500 | Train RMSE: 34.3299 | Val RMSE: 62.9565 | Val MAE: 47.8992 | Time: 4.4s
+2026-05-15 22:40:27,321 INFO Early stopping at epoch 78. Best val RMSE: 55.8931 at epoch 48
+2026-05-15 22:40:31,344 INFO 
+[strategy_A_partial_freeze] Final Results:
+2026-05-15 22:40:31,344 INFO   Best Epoch: 48
+2026-05-15 22:40:31,344 INFO   Train RMSE: 27.0193
+2026-05-15 22:40:31,344 INFO   Val RMSE: 55.8931
+2026-05-15 22:40:31,344 INFO   Test RMSE: 66.7750
+2026-05-15 22:40:31,344 INFO   Test MAE: 48.7408
+2026-05-15 22:40:31,344 INFO   Overfitting Gap: -39.7556
+2026-05-15 22:40:31,347 INFO 
+============================================================
+2026-05-15 22:40:31,347 INFO STRATEGY B: End-to-end fine-tuning (all layers)
+2026-05-15 22:40:31,347 INFO ============================================================
+2026-05-15 22:40:31,456 INFO Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:40:31,458 INFO 
+============================================================
+2026-05-15 22:40:31,459 INFO Strategy: strategy_B_end2end | LR: 0.0001 | Epochs: 500
+2026-05-15 22:40:31,459 INFO Trainable params: 641,542
+2026-05-15 22:40:31,459 INFO ============================================================
+2026-05-15 22:40:36,521 INFO [strategy_B_end2end] Epoch 1/500 | Train RMSE: 134.6817 | Val RMSE: 115.9829 | Val MAE: 93.2896 | Time: 5.1s
+2026-05-15 22:41:22,662 INFO [strategy_B_end2end] Epoch 10/500 | Train RMSE: 56.1126 | Val RMSE: 64.1543 | Val MAE: 50.3819 | Time: 5.1s
+2026-05-15 22:42:13,245 INFO [strategy_B_end2end] Epoch 20/500 | Train RMSE: 47.0401 | Val RMSE: 60.3638 | Val MAE: 46.3558 | Time: 5.1s
+2026-05-15 22:43:03,713 INFO [strategy_B_end2end] Epoch 30/500 | Train RMSE: 42.6927 | Val RMSE: 57.6700 | Val MAE: 43.4364 | Time: 5.0s
+2026-05-15 22:43:53,666 INFO [strategy_B_end2end] Epoch 40/500 | Train RMSE: 40.0915 | Val RMSE: 57.3470 | Val MAE: 43.9944 | Time: 5.1s
+2026-05-15 22:44:44,398 INFO [strategy_B_end2end] Epoch 50/500 | Train RMSE: 38.8040 | Val RMSE: 56.7455 | Val MAE: 42.5088 | Time: 5.1s
+2026-05-15 22:45:35,181 INFO [strategy_B_end2end] Epoch 60/500 | Train RMSE: 37.5782 | Val RMSE: 54.0986 | Val MAE: 41.2588 | Time: 5.1s
+2026-05-15 22:46:25,678 INFO [strategy_B_end2end] Epoch 70/500 | Train RMSE: 36.5830 | Val RMSE: 55.0896 | Val MAE: 41.8361 | Time: 5.2s
+2026-05-15 22:47:16,668 INFO [strategy_B_end2end] Epoch 80/500 | Train RMSE: 35.0999 | Val RMSE: 55.8351 | Val MAE: 42.2968 | Time: 5.1s
+2026-05-15 22:48:06,738 INFO [strategy_B_end2end] Epoch 90/500 | Train RMSE: 35.4275 | Val RMSE: 54.3770 | Val MAE: 41.0172 | Time: 5.0s
+2026-05-15 22:48:16,772 INFO Early stopping at epoch 92. Best val RMSE: 53.0814 at epoch 62
+2026-05-15 22:48:20,969 INFO 
+[strategy_B_end2end] Final Results:
+2026-05-15 22:48:20,969 INFO   Best Epoch: 62
+2026-05-15 22:48:20,969 INFO   Train RMSE: 25.0061
+2026-05-15 22:48:20,970 INFO   Val RMSE: 53.0814
+2026-05-15 22:48:20,970 INFO   Test RMSE: 65.3075
+2026-05-15 22:48:20,970 INFO   Test MAE: 48.8651
+2026-05-15 22:48:20,970 INFO   Overfitting Gap: -40.3013
+2026-05-15 22:48:20,973 INFO 
+============================================================
+2026-05-15 22:48:20,973 INFO STRATEGY C: Full freeze (only train head)
+2026-05-15 22:48:20,973 INFO ============================================================
+2026-05-15 22:48:21,075 INFO Loaded pre-trained encoder from /home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/pretrained_encoder_contrastive.pt
+2026-05-15 22:48:21,077 INFO All encoder layers frozen. Only training head.
+2026-05-15 22:48:21,077 INFO Trainable params: 33,025
+2026-05-15 22:48:21,077 INFO 
+============================================================
+2026-05-15 22:48:21,078 INFO Strategy: strategy_C_full_freeze | LR: 0.001 | Epochs: 500
+2026-05-15 22:48:21,078 INFO Trainable params: 33,025
+2026-05-15 22:48:21,078 INFO ============================================================
+2026-05-15 22:48:24,105 INFO [strategy_C_full_freeze] Epoch 1/500 | Train RMSE: 91.5797 | Val RMSE: 83.1071 | Val MAE: 63.6888 | Time: 3.0s
+2026-05-15 22:48:53,316 INFO [strategy_C_full_freeze] Epoch 10/500 | Train RMSE: 56.6768 | Val RMSE: 83.4026 | Val MAE: 65.3194 | Time: 3.7s
+2026-05-15 22:49:28,857 INFO [strategy_C_full_freeze] Epoch 20/500 | Train RMSE: 52.9918 | Val RMSE: 75.6223 | Val MAE: 59.7409 | Time: 3.1s
+2026-05-15 22:49:58,939 INFO [strategy_C_full_freeze] Epoch 30/500 | Train RMSE: 51.6851 | Val RMSE: 64.8018 | Val MAE: 51.5916 | Time: 3.0s
+2026-05-15 22:50:28,374 INFO [strategy_C_full_freeze] Epoch 40/500 | Train RMSE: 51.1850 | Val RMSE: 68.8497 | Val MAE: 54.8592 | Time: 3.3s
+2026-05-15 22:50:56,200 INFO [strategy_C_full_freeze] Epoch 50/500 | Train RMSE: 49.5253 | Val RMSE: 74.9238 | Val MAE: 58.7232 | Time: 2.6s
+2026-05-15 22:51:27,185 INFO [strategy_C_full_freeze] Epoch 60/500 | Train RMSE: 48.9792 | Val RMSE: 69.5125 | Val MAE: 53.6722 | Time: 3.3s
+2026-05-15 22:51:27,185 INFO Early stopping at epoch 60. Best val RMSE: 64.8018 at epoch 30
+2026-05-15 22:51:31,261 INFO 
+[strategy_C_full_freeze] Final Results:
+2026-05-15 22:51:31,261 INFO   Best Epoch: 30
+2026-05-15 22:51:31,261 INFO   Train RMSE: 42.9995
+2026-05-15 22:51:31,261 INFO   Val RMSE: 64.8018
+2026-05-15 22:51:31,261 INFO   Test RMSE: 77.3790
+2026-05-15 22:51:31,261 INFO   Test MAE: 56.3618
+2026-05-15 22:51:31,261 INFO   Overfitting Gap: -34.3795
+2026-05-15 22:51:31,266 INFO Phase 3 completed in 1693.4s
+2026-05-15 22:51:31,266 INFO 
+======================================================================
+2026-05-15 22:51:31,266 INFO PHASE 4: DIAGNOSTIC ANALYSIS
+2026-05-15 22:51:31,266 INFO ======================================================================
+[22:51:32] Can't kekulize mol.  Unkekulized atoms: 146 147 148 149 150 151 152 153 154 155 156 157 158
+[22:51:33] Can't kekulize mol.  Unkekulized atoms: 90 91 92 95 98 99 100
+[22:51:33] Can't kekulize mol.  Unkekulized atoms: 92 93 94 97 100 101 102
+[22:51:33] Can't kekulize mol.  Unkekulized atoms: 173 174 175 178 181 182 183
+[22:51:34] Can't kekulize mol.  Unkekulized atoms: 205 206 207 208 209 210 211 212 213 214 215 216 217
+[22:51:34] Can't kekulize mol.  Unkekulized atoms: 125 126 127 130 133 134 145
+[22:51:35] Can't kekulize mol.  Unkekulized atoms: 161 162 177 180 183 184 199
+[22:51:35] Can't kekulize mol.  Unkekulized atoms: 104 105 106 109 112 113 114
+[22:51:35] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 140 141 142 143 144
+[22:51:35] Can't kekulize mol.  Unkekulized atoms: 106 107 108 115 116
+[22:51:35] Can't kekulize mol.  Unkekulized atoms: 134 135 136 139 142 143 144
+[22:51:35] Can't kekulize mol.  Unkekulized atoms: 134 135 152 155 158 159 176
+[22:51:36] Can't kekulize mol.  Unkekulized atoms: 190 191 192 193 194 195 196 197 198 199 200 201 202
+[22:51:36] Can't kekulize mol.  Unkekulized atoms: 87 88 93 96 99 100 105
+[22:51:36] Can't kekulize mol.  Unkekulized atoms: 119 120 121 124 127 128 129
+[22:51:37] Can't kekulize mol.  Unkekulized atoms: 72 73 74 77 80 81 82
+[22:51:37] Can't kekulize mol.  Unkekulized atoms: 113 114 115 118 121 122 133
+[22:51:37] Can't kekulize mol.  Unkekulized atoms: 133 134 135 138 141 142 157
+[22:51:38] Can't kekulize mol.  Unkekulized atoms: 159 160 175 178 181 182 197
+2026-05-15 22:51:38,318 INFO Monomer-Trimer Cosine Similarity: 0.8826 +/- 0.1686 (n=500)
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/run_contrastive.py", line 335, in <module>
+    phase4_analysis(all_results, tg_dataset)
+  File "/home/home_public/aisci/AIscientist/src/2_2_polymer_jepa_pretrain/run_contrastive.py", line 203, in phase4_analysis
+    logger.info(f"Monomer-Trimer Cosine Similarity: {mono_trimer_sim:.4f}")
+TypeError: unsupported format string passed to tuple.__format__

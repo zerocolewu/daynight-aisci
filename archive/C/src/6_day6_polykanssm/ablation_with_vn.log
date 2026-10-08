@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "<string>", line 815, in <module>
+  File "<string>", line 700, in main
+  File "<string>", line 586, in train_single_seed
+  File "<string>", line 415, in train_one_epoch
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm/model_v5b_with_vn.py", line 131, in forward
+    h_ssm = h_nodes * lam + h_nodes + vn_per_node
+RuntimeError: The size of tensor a (1146) must match the size of tensor b (32) at non-singleton dimension 0
+Using device: cuda
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+Sample graph: nodes=3, edges=6
+Node features: 21
+Edge features: 23
+
+Edge statistics (first 100 graphs):
+  Avg covalent edges: 25.9
+  Avg non-covalent edges: 62.4
+
+############################################################
+# Seed 1/1: 42
+############################################################
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 2,208,135

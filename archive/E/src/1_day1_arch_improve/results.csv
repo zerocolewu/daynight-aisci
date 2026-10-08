@@ -1,0 +1,5 @@
+Experiment,Model,Data,Train RMSE,Val RMSE,Test RMSE,Best Epoch,Total Epochs,Params,Overfitting Gap
+gin_gat_trimer,gingat,GIN-GAT trimer,27.9905,39.0867,51.6608,64,94,"481,028",23.6703
+gin_gat_cyclized,gingat,GIN-GAT cyclized,35.8586,41.4966,54.0071,26,56,"481,028",18.1486
+gin_vn_trimer,gin,GIN+VN trimer,30.8960,38.6237,53.7805,74,104,"478,724",22.8845
+gin_vn_cyclized,gin,GIN+VN cyclized,31.9596,36.4985,51.1398,63,93,"478,724",19.1802

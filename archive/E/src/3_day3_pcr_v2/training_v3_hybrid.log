@@ -1,0 +1,125 @@
+2026-05-16 04:37:38,790 INFO Using device: cuda
+2026-05-16 04:37:38,790 INFO Loading dataset...
+2026-05-16 04:37:38,790 INFO Loading pre-processed data from ./data/dual_view_data.pt
+2026-05-16 04:37:42,363 INFO Dataset: 7170 total, 7170 valid pairs
+2026-05-16 04:37:42,363 INFO Node features: 30, Edge features: 6
+2026-05-16 04:37:42,363 INFO Data split: train=5162, val=573, test=1435
+2026-05-16 04:37:42,363 INFO ============================================================
+2026-05-16 04:37:42,363 INFO EXPERIMENT 1: Baseline (GIN+sum_pool+trimer, no contrastive)
+2026-05-16 04:37:42,363 INFO ============================================================
+2026-05-16 04:37:42,679 INFO Model parameters: 681,478
+2026-05-16 04:37:45,477 INFO Epoch 1: train_rmse=77.7497, val_rmse=156.7088
+2026-05-16 04:38:31,319 INFO Epoch 20: train_rmse=57.3791, val_rmse=75.2642
+2026-05-16 04:39:19,260 INFO Epoch 40: train_rmse=52.0960, val_rmse=77.3859
+2026-05-16 04:40:04,113 INFO Epoch 60: train_rmse=48.3471, val_rmse=66.4521
+2026-05-16 04:40:51,550 INFO Epoch 80: train_rmse=44.9801, val_rmse=80.2278
+2026-05-16 04:41:36,327 INFO Epoch 100: train_rmse=42.8450, val_rmse=67.8086
+2026-05-16 04:42:21,160 INFO Epoch 120: train_rmse=40.8001, val_rmse=70.3145
+2026-05-16 04:42:21,160 INFO Early stopping at epoch 120
+2026-05-16 04:42:21,492 INFO BASELINE: train=47.1375, val=65.0219, test=77.4978, best_epoch=70
+2026-05-16 04:42:21,493 INFO ============================================================
+2026-05-16 04:42:21,493 INFO EXPERIMENT: pcr_hybrid_a0.01 (alpha=0.01)
+2026-05-16 04:42:21,493 INFO ============================================================
+2026-05-16 04:42:21,511 INFO Model parameters: 722,630
+2026-05-16 04:42:26,967 INFO   Diag: cos_sim=0.9938, align=0.0125, unif=0.4501
+2026-05-16 04:42:27,097 INFO Epoch 1: train_rmse=79.0127, val_rmse=127.6454, cos_sim=0.8111, alpha_eff=0.0003
+2026-05-16 04:43:05,987 INFO   Diag: cos_sim=0.9027, align=0.1945, unif=0.1160
+2026-05-16 04:43:50,640 INFO   Diag: cos_sim=0.8488, align=0.3024, unif=0.0703
+2026-05-16 04:43:50,770 INFO Epoch 20: train_rmse=56.8650, val_rmse=75.1720, cos_sim=0.7946, alpha_eff=0.0067
+2026-05-16 04:44:35,231 INFO   Diag: cos_sim=0.8573, align=0.2853, unif=0.0718
+2026-05-16 04:45:17,891 INFO   Diag: cos_sim=0.8592, align=0.2815, unif=0.0593
+2026-05-16 04:45:18,004 INFO Epoch 40: train_rmse=51.4076, val_rmse=86.2653, cos_sim=0.7836, alpha_eff=0.0100
+2026-05-16 04:46:05,557 INFO   Diag: cos_sim=0.8526, align=0.2948, unif=0.0548
+2026-05-16 04:46:50,014 INFO   Diag: cos_sim=0.8521, align=0.2958, unif=0.0528
+2026-05-16 04:46:50,128 INFO Epoch 60: train_rmse=47.9047, val_rmse=81.1423, cos_sim=0.7824, alpha_eff=0.0100
+2026-05-16 04:47:38,110 INFO   Diag: cos_sim=0.8350, align=0.3301, unif=0.0538
+2026-05-16 04:48:11,608 INFO Early stopping at epoch 78
+2026-05-16 04:48:11,941 INFO pcr_hybrid_a0.01: train=55.0778, val=70.3194, test=76.1482, best_epoch=28
+2026-05-16 04:48:11,942 INFO ============================================================
+2026-05-16 04:48:11,942 INFO EXPERIMENT: pcr_hybrid_a0.05 (alpha=0.05)
+2026-05-16 04:48:11,943 INFO ============================================================
+2026-05-16 04:48:11,960 INFO Model parameters: 722,630
+2026-05-16 04:48:17,728 INFO   Diag: cos_sim=0.9923, align=0.0153, unif=0.4287
+2026-05-16 04:48:17,842 INFO Epoch 1: train_rmse=78.9772, val_rmse=127.8683, cos_sim=0.8205, alpha_eff=0.0017
+2026-05-16 04:48:55,813 INFO   Diag: cos_sim=0.9001, align=0.1998, unif=0.1167
+2026-05-16 04:49:40,728 INFO   Diag: cos_sim=0.8736, align=0.2527, unif=0.0919
+2026-05-16 04:49:40,829 INFO Epoch 20: train_rmse=57.0962, val_rmse=100.8190, cos_sim=0.7935, alpha_eff=0.0333
+2026-05-16 04:50:27,827 INFO   Diag: cos_sim=0.8569, align=0.2861, unif=0.0768
+2026-05-16 04:51:12,369 INFO   Diag: cos_sim=0.8613, align=0.2773, unif=0.0639
+2026-05-16 04:51:12,471 INFO Epoch 40: train_rmse=51.0975, val_rmse=90.4152, cos_sim=0.7847, alpha_eff=0.0500
+2026-05-16 04:51:59,198 INFO   Diag: cos_sim=0.8519, align=0.2962, unif=0.0543
+2026-05-16 04:52:45,489 INFO   Diag: cos_sim=0.8536, align=0.2927, unif=0.0578
+2026-05-16 04:52:45,603 INFO Epoch 60: train_rmse=47.6018, val_rmse=82.2488, cos_sim=0.7851, alpha_eff=0.0500
+2026-05-16 04:53:28,338 INFO   Diag: cos_sim=0.8459, align=0.3083, unif=0.0499
+2026-05-16 04:54:14,100 INFO   Diag: cos_sim=0.8478, align=0.3044, unif=0.0546
+2026-05-16 04:54:14,212 INFO Epoch 80: train_rmse=44.7073, val_rmse=92.5811, cos_sim=0.7843, alpha_eff=0.0500
+2026-05-16 04:54:56,411 INFO   Diag: cos_sim=0.8481, align=0.3038, unif=0.0537
+2026-05-16 04:55:43,616 INFO   Diag: cos_sim=0.8454, align=0.3091, unif=0.0496
+2026-05-16 04:55:43,729 INFO Epoch 100: train_rmse=42.4793, val_rmse=73.8079, cos_sim=0.7819, alpha_eff=0.0500
+2026-05-16 04:56:25,758 INFO   Diag: cos_sim=0.8345, align=0.3310, unif=0.0451
+2026-05-16 04:57:09,728 INFO   Diag: cos_sim=0.8340, align=0.3320, unif=0.0448
+2026-05-16 04:57:09,841 INFO Epoch 120: train_rmse=40.7113, val_rmse=77.1460, cos_sim=0.7793, alpha_eff=0.0500
+2026-05-16 04:57:49,521 INFO   Diag: cos_sim=0.8354, align=0.3293, unif=0.0463
+2026-05-16 04:58:31,759 INFO   Diag: cos_sim=0.8343, align=0.3314, unif=0.0448
+2026-05-16 04:58:31,860 INFO Epoch 140: train_rmse=38.9387, val_rmse=79.0289, cos_sim=0.7793, alpha_eff=0.0500
+2026-05-16 04:59:17,635 INFO   Diag: cos_sim=0.8327, align=0.3347, unif=0.0462
+2026-05-16 05:00:02,843 INFO   Diag: cos_sim=0.8354, align=0.3292, unif=0.0469
+2026-05-16 05:00:02,956 INFO Epoch 160: train_rmse=37.3097, val_rmse=82.1909, cos_sim=0.7772, alpha_eff=0.0500
+2026-05-16 05:00:41,558 INFO   Diag: cos_sim=0.8293, align=0.3414, unif=0.0419
+2026-05-16 05:01:16,355 INFO   Diag: cos_sim=0.8343, align=0.3314, unif=0.0450
+2026-05-16 05:01:16,468 INFO Epoch 180: train_rmse=36.5455, val_rmse=80.8021, cos_sim=0.7752, alpha_eff=0.0500
+2026-05-16 05:01:48,454 INFO Early stopping at epoch 188
+2026-05-16 05:01:48,764 INFO pcr_hybrid_a0.05: train=38.8907, val=63.4023, test=76.0863, best_epoch=138
+2026-05-16 05:01:48,765 INFO ============================================================
+2026-05-16 05:01:48,765 INFO EXPERIMENT: pcr_hybrid_a0.1 (alpha=0.1)
+2026-05-16 05:01:48,765 INFO ============================================================
+2026-05-16 05:01:48,783 INFO Model parameters: 722,630
+2026-05-16 05:01:53,905 INFO   Diag: cos_sim=0.9934, align=0.0131, unif=0.3745
+2026-05-16 05:01:54,033 INFO Epoch 1: train_rmse=79.2181, val_rmse=103.7062, cos_sim=0.8356, alpha_eff=0.0033
+2026-05-16 05:02:31,039 INFO   Diag: cos_sim=0.9106, align=0.1787, unif=0.1174
+2026-05-16 05:03:19,240 INFO   Diag: cos_sim=0.8799, align=0.2401, unif=0.0917
+2026-05-16 05:03:19,341 INFO Epoch 20: train_rmse=57.9053, val_rmse=96.1900, cos_sim=0.7998, alpha_eff=0.0667
+2026-05-16 05:04:02,022 INFO   Diag: cos_sim=0.8773, align=0.2454, unif=0.0750
+2026-05-16 05:04:39,200 INFO   Diag: cos_sim=0.8592, align=0.2817, unif=0.0659
+2026-05-16 05:04:39,314 INFO Epoch 40: train_rmse=51.5631, val_rmse=87.2834, cos_sim=0.7831, alpha_eff=0.1000
+2026-05-16 05:05:19,869 INFO   Diag: cos_sim=0.8620, align=0.2759, unif=0.0566
+2026-05-16 05:06:07,471 INFO   Diag: cos_sim=0.8521, align=0.2958, unif=0.0606
+2026-05-16 05:06:07,572 INFO Epoch 60: train_rmse=47.7161, val_rmse=82.7722, cos_sim=0.7828, alpha_eff=0.1000
+2026-05-16 05:06:52,223 INFO   Diag: cos_sim=0.8425, align=0.3149, unif=0.0575
+2026-05-16 05:07:33,486 INFO   Diag: cos_sim=0.8424, align=0.3153, unif=0.0581
+2026-05-16 05:07:33,600 INFO Epoch 80: train_rmse=44.7488, val_rmse=94.6796, cos_sim=0.7788, alpha_eff=0.1000
+2026-05-16 05:08:14,354 INFO   Diag: cos_sim=0.8422, align=0.3157, unif=0.0596
+2026-05-16 05:08:58,220 INFO   Diag: cos_sim=0.8430, align=0.3140, unif=0.0484
+2026-05-16 05:08:58,333 INFO Epoch 100: train_rmse=42.1861, val_rmse=78.6785, cos_sim=0.7709, alpha_eff=0.1000
+2026-05-16 05:09:19,399 INFO Early stopping at epoch 105
+2026-05-16 05:09:19,730 INFO pcr_hybrid_a0.1: train=47.8252, val=70.6774, test=74.7754, best_epoch=55
+2026-05-16 05:09:21,588 INFO Diagnostic plots saved to ./diagnostic_plots_v2/
+2026-05-16 05:09:21,592 INFO Results saved to ./results_v2.json
+
+========================================================================================================================
+PCR-v2 ITERATION 2 RESULTS (Hybrid Pooling)
+========================================================================================================================
+Experiment                Test RMSE    Val RMSE     Train RMSE   Overfit Gap  Best Epoch   Params       Final CosSim
+------------------------------------------------------------------------------------------------------------------------
+Day1 GIN Trimer (ref)     50.19        39.65        41.29        8.90         15           ~445K        N/A         
+Iter1 mean_pool bl (ref)  52.68        39.68        45.27        7.41         26           681K         N/A         
+baseline_sum_pool         77.4978      65.0219      47.1375      30.3603      70           681,478      N/A         
+pcr_hybrid_a0.01          76.1482      70.3194      55.0778      21.0705      28           722,630      0.7916      
+pcr_hybrid_a0.05          76.0863      63.4023      38.8907      37.1956      138          722,630      0.7766      
+pcr_hybrid_a0.1           74.7754      70.6774      47.8252      26.9502      55           722,630      0.7832      
+
+========================================================================================================================
+ANALYSIS
+========================================================================================================================
+
+Baseline validation (sum_pool should match ~50.19):
+  Baseline test RMSE: 77.4978 (Day 1 ref: 50.19)
+  Delta from Day 1: +27.3078
+
+PCR contrastive results:
+  pcr_hybrid_a0.01: test=76.1482 (delta from baseline: -1.3496), gap=21.0705, cos_sim=0.7916
+  pcr_hybrid_a0.05: test=76.0863 (delta from baseline: -1.4115), gap=37.1956, cos_sim=0.7766
+  pcr_hybrid_a0.1: test=74.7754 (delta from baseline: -2.7224), gap=26.9502, cos_sim=0.7832
+
+  BEST PCR (pcr_hybrid_a0.1) improves over baseline by 2.7224
+  PCR does NOT beat Day 1 reference (gap: 24.5854)

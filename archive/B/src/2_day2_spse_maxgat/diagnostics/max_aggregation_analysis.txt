@@ -1,0 +1,20 @@
+Max Aggregation Analysis
+============================================================
+
+Activation statistics (Treatment B - Max Aggregation):
+  conv1: mean=0.0100, std=0.0760, min=-0.3325, max=0.5630
+  conv2: mean=0.0110, std=0.0882, min=-0.5550, max=0.8524
+  conv3: mean=0.0277, std=0.1018, min=-0.5437, max=1.0236
+  conv4: mean=0.0366, std=0.1295, min=-0.7288, max=1.7490
+
+Activation statistics (Baseline - Mean Aggregation):
+  conv1: mean=0.0039, std=0.1358, min=-1.2816, max=0.8317
+  conv2: mean=-0.0008, std=0.3884, min=-2.0693, max=2.1969
+  conv3: mean=-0.0732, std=1.0183, min=-5.0449, max=6.2172
+  conv4: mean=-0.5827, std=2.0854, min=-12.9472, max=13.4997
+
+Variance ratio (Max / Mean):
+  conv1: max_var=0.0058, mean_var=0.0184, ratio=0.313
+  conv2: max_var=0.0078, mean_var=0.1509, ratio=0.052
+  conv3: max_var=0.0104, mean_var=1.0369, ratio=0.010
+  conv4: max_var=0.0168, mean_var=4.3488, ratio=0.004

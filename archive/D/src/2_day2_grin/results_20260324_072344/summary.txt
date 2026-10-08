@@ -1,0 +1,58 @@
+GRIN Experiments Summary Report
+================================
+
+Date: 2026-03-24
+Dataset: Tg (Glass Transition Temperature)
+Task: Polymer Property Prediction
+
+Completed Experiments (3/5):
+----------------------------
+
+1. BASELINE: GIN with mean aggregation, no augmentation
+   - Test RMSE: 76.08
+   - Test MAE: 52.27
+   - Best Val RMSE: 76.65 at epoch 199
+   - Configuration: Max_Aggregation=False, L1_Sparsity=False, Augmentation=None
+
+2. MAX_ONLY: GIN with max aggregation only
+   - Test RMSE: 78.75
+   - Test MAE: 54.56
+   - Best Val RMSE: 79.76 at epoch 200
+   - Configuration: Max_Aggregation=True, L1_Sparsity=False, Augmentation=None
+
+3. MAX_L1: GIN with max aggregation + L1 sparsity
+   - Test RMSE: 77.94
+   - Test MAE: 53.88
+   - Best Val RMSE: 79.33 at epoch 200
+   - Configuration: Max_Aggregation=True, L1_Sparsity=True, Augmentation=None
+
+Failed Experiments (2/5):
+-------------------------
+
+4. FULL_GRIN: Max aggregation + L1 + {1,3}-RU augmentation
+   - Status: FAILED
+   - Error: Batch size mismatch during training
+   - Root Cause: Augmentation creates graphs that fail SMILES-to-graph conversion,
+     causing variable batch sizes and tensor dimension mismatches
+
+5. MEAN_AUG: Mean aggregation + {1,3}-RU augmentation
+   - Status: NOT RUN (previous experiment failed)
+
+Key Findings:
+-------------
+- The baseline model (mean aggregation, no augmentation) performed BEST with Test RMSE of 76.08
+- Max aggregation alone performed slightly worse (RMSE: 78.75)
+- Adding L1 sparsity to max aggregation showed minor improvement (RMSE: 77.94 vs 78.75)
+- The augmentation feature has a critical bug that prevents training completion
+
+Recommendations:
+----------------
+1. Fix the augmentation pipeline to handle graph conversion failures gracefully
+2. Ensure batch sizes remain consistent even when some graphs fail to convert
+3. Consider using drop_last=True in DataLoader to avoid partial batches
+4. Add better error handling for SMILES-to-graph conversion
+5. Investigate why 3-RU augmentation is failing (possibly invalid SMILES generation)
+
+Results Directory:
+------------------
+/home/home_public/aisci/AIscientist/src/2_day2_grin/results_20260324_072344/

@@ -1,0 +1,20 @@
+{
+  "num_node_features": 159,
+  "hidden_dim": 256,
+  "num_layers": 3,
+  "edge_dim": 13,
+  "proj_dim": 128,
+  "lr": 0.0001,
+  "weight_decay": 0.01,
+  "batch_size": 32,
+  "pretrain_epochs": 5,
+  "pretrain_samples": 100000,
+  "num_negatives": 5,
+  "task_weights": {
+    "fgm": 1.0,
+    "cri": 0.5,
+    "egcl": 1.0
+  },
+  "ecfp_bits": 2048,
+  "log_dir": "/home/home_public/aisci/AIscientist/src/6_day6_pscp"
+}

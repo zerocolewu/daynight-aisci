@@ -1,0 +1,8 @@
+Residual MaxGAT: SPSE Parameters + Gates
+==================================================
+Residual gates: {'conv1.residual_gate': 0.5743847489356995, 'conv2.residual_gate': 0.5784298181533813, 'conv3.residual_gate': 0.5586707592010498, 'conv4.residual_gate': 0.5729952454566956}
+
+k=1: alpha=0.319805, beta=0.219928
+k=2: alpha=0.878198, beta=0.222634
+k=3: alpha=-0.404469, beta=0.194520
+k=4: alpha=0.370127, beta=-0.003286

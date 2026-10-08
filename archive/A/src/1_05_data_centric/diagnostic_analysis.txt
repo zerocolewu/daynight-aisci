@@ -1,0 +1,55 @@
+================================================================================
+DIAGNOSTIC ANALYSIS - Polymer Tg Prediction
+================================================================================
+
+1. BEST MODEL PERFORMANCE
+--------------------------------------------------------------------------------
+Best model: MLP
+RMSE: 38.7766°C
+MAE: 26.7965°C
+R²: 0.8781
+
+2. ERROR DISTRIBUTION ACROSS TG RANGES
+--------------------------------------------------------------------------------
+Tg Range (°C) | RMSE (°C) | MAE (°C) | Count
+--------------------------------------------------------------------------------
+   -95.5     | 107.89   |  95.44  |   13
+   -36.4     |  42.48   |  36.66  |   55
+    22.8     |  23.23   |  16.43  |  109
+    81.9     |  34.77   |  24.24  |  142
+   140.9     |  40.54   |  28.64  |  121
+   200.1     |  34.57   |  21.87  |  107
+   259.1     |  33.90   |  25.18  |   93
+   318.2     |  38.23   |  28.62  |   53
+   377.4     |  53.82   |  39.60  |   22
+   436.4     | 141.70   | 141.70  |    1
+
+3. FAILURE MODE ANALYSIS
+--------------------------------------------------------------------------------
+High error threshold (90th percentile): 61.95°C
+Correlation between |error| and Tg magnitude: -0.0314
+
+OBSERVATION: Weak correlation between errors and Tg magnitude.
+  Errors are relatively uniform across Tg ranges.
+
+4. RECOMMENDATIONS
+--------------------------------------------------------------------------------
+Based on diagnostic analysis:
+
+- Model performs best in Tg range: 22.8°C
+- Model struggles most in Tg range: 436.4°C
+
+5. VISUALIZATIONS
+--------------------------------------------------------------------------------
+- Predicted vs Actual: figures/predicted_vs_actual.png
+- Error Distribution: figures/error_distribution.png
+- Error Histogram: figures/error_histogram.png
+
+6. NEXT STEPS FOR IMPROVEMENT
+--------------------------------------------------------------------------------
+Data-centric approaches:
+- Incorporate multimer representations (2-5 repeat units)
+- Augment dataset with 3D conformer features
+- Consider ensemble methods combining multiple representations
+- Investigate data cleaning for high-error samples
+- Implement uncertainty quantification

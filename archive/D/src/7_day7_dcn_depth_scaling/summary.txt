@@ -1,0 +1,39 @@
+DCN-GIN Depth Scaling Experiment Summary
+==================================================
+Date: 2026-03-26 10:30:05.652737
+Dataset: Tg (7145 samples)
+
+
+DCN-GIN-5: 40.26 +/- 1.42 K
+  vs Day 2 5-layer GIN: -24.6% (worse)
+  vs CFD-MTL 3-layer GIN: +8.7% (better)
+
+DCN-GIN-10: 38.59 +/- 1.34 K
+  vs Day 2 5-layer GIN: -19.4% (worse)
+  vs CFD-MTL 3-layer GIN: +12.5% (better)
+
+DCN-GIN-15: 38.40 +/- 1.18 K
+  vs Day 2 5-layer GIN: -18.8% (worse)
+  vs CFD-MTL 3-layer GIN: +13.0% (better)
+
+Standard-GIN-10: 44.16 +/- 1.28 K
+  vs Day 2 5-layer GIN: -36.7% (worse)
+  vs CFD-MTL 3-layer GIN: -0.1% (worse)
+
+Standard-GIN-15: 47.64 +/- 3.83 K
+  vs Day 2 5-layer GIN: -47.4% (worse)
+  vs CFD-MTL 3-layer GIN: -8.0% (worse)
+
+==================================================
+DCN vs Standard Comparison:
+At depth 10: DCN is +12.6% better than Standard
+At depth 15: DCN is +19.4% better than Standard
+
+==================================================
+Key Findings:
+
+1. Best DCN model: DCN-GIN-15 with RMSE 38.40 K
+   - 18.8% worse than baseline (32.31 K)
+
+2. Gradient flow: DCN maintains better gradients at depth
+3. Feature reuse: All layers contribute, later layers show diminishing but non-zero contributions

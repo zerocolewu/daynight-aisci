@@ -1,0 +1,51 @@
+Using device: cuda
+
+############################################################
+# MAIN EXPERIMENT: PolyKAN-SSM v4
+############################################################
+Loading dataset...
+Dataset loaded: 7170 samples, columns: ['Smiles', 'Tg']
+After filtering NaN: 7170 samples
+Building graphs with non-covalent edges...
+Graph building complete: 7170 success, 0 failed
+
+Sample graph: nodes=3, edges=6
+Node features: 21
+Edge features: 23
+
+############################################################
+# Seed 1/5: 42
+############################################################
+
+============================================================
+Training seed 42
+============================================================
+Split (seed=42): train=5162, val=573, test=1435
+Target mean: 141.56, std: 112.42
+Node dim: 21, Edge dim: 23
+Model parameters: 1,054,290
+Epoch   1 | Train RMSE: 80.9187 | Val RMSE: 72.4993 | Val MAE: 58.3895 | Val R2: 0.5514 | LR: 0.000997 | Best: 72.4993 @ 1
+Epoch  20 | Train RMSE: 60.1789 | Val RMSE: 58.7320 | Val MAE: 45.3626 | Val R2: 0.7056 | LR: 0.000251 | Best: 53.0720 @ 2
+Early stopping at epoch 32
+
+Best val RMSE: 53.0720 at epoch 2
+
+--- Seed 42 Final Results ---
+Train RMSE: 53.0707
+Val RMSE:   53.0720
+Test RMSE:  53.2534
+Test MAE:   40.4297
+Test R2:    0.7765
+
+############################################################
+# Seed 2/5: 123
+############################################################
+
+============================================================
+Training seed 123
+============================================================
+Split (seed=123): train=5162, val=573, test=1435
+Target mean: 141.62, std: 112.19
+Node dim: 21, Edge dim: 23
+Model parameters: 1,054,290
+Epoch   1 | Train RMSE: 107.2307 | Val RMSE: 71.3875 | Val MAE: 57.2833 | Val R2: 0.6169 | LR: 0.000997 | Best: 71.3875 @ 1

@@ -1,0 +1,105 @@
+{
+  "dataset": "Tm",
+  "top_features": [
+    {
+      "rank": 1,
+      "feature": "sp2_frac",
+      "importance": 0.15119287347859478
+    },
+    {
+      "rank": 2,
+      "feature": "rotatable_bond_frac",
+      "importance": 0.11921943343117154
+    },
+    {
+      "rank": 3,
+      "feature": "N_count",
+      "importance": 0.05771519244355077
+    },
+    {
+      "rank": 4,
+      "feature": "FractionCSP3",
+      "importance": 0.05464271117505333
+    },
+    {
+      "rank": 5,
+      "feature": "FractionCSP3_2",
+      "importance": 0.047490059821091
+    },
+    {
+      "rank": 6,
+      "feature": "sp3_frac",
+      "importance": 0.03475187918903146
+    },
+    {
+      "rank": 7,
+      "feature": "amine",
+      "importance": 0.03243303441631685
+    },
+    {
+      "rank": 8,
+      "feature": "Kappa3",
+      "importance": 0.027999689080189117
+    },
+    {
+      "rank": 9,
+      "feature": "ether",
+      "importance": 0.026937010134384685
+    },
+    {
+      "rank": 10,
+      "feature": "MinAbsEStateIndex",
+      "importance": 0.02570406005051035
+    },
+    {
+      "rank": 11,
+      "feature": "MinEStateIndex",
+      "importance": 0.024254281536501852
+    },
+    {
+      "rank": 12,
+      "feature": "MaxAbsPartialCharge",
+      "importance": 0.0241342749615627
+    },
+    {
+      "rank": 13,
+      "feature": "MaxPartialCharge",
+      "importance": 0.02153760555264594
+    },
+    {
+      "rank": 14,
+      "feature": "single_bond_frac",
+      "importance": 0.020589629197734483
+    },
+    {
+      "rank": 15,
+      "feature": "SPS",
+      "importance": 0.017665986672067
+    },
+    {
+      "rank": 16,
+      "feature": "MinPartialCharge",
+      "importance": 0.017635519632612427
+    },
+    {
+      "rank": 17,
+      "feature": "HeavyAtomMolWt_ratio",
+      "importance": 0.017436114682684987
+    },
+    {
+      "rank": 18,
+      "feature": "MinAbsPartialCharge",
+      "importance": 0.0171824669039847
+    },
+    {
+      "rank": 19,
+      "feature": "FpDensityMorgan3",
+      "importance": 0.014302213950065529
+    },
+    {
+      "rank": 20,
+      "feature": "qed",
+      "importance": 0.011959304518598881
+    }
+  ]
+}

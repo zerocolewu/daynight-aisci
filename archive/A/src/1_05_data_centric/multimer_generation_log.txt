@@ -1,0 +1,157 @@
+================================================================================
+MULTIMER GENERATION LOG - Polymer 3D Structures
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Sample size: 100
+Total polymers processed: 100
+
+Success Rates:
+  2-mer: 13/100 (13.0%)
+  3-mer: 11/100 (11.0%)
+  4-mer: 6/100 (6.0%)
+  5-mer: 6/100 (6.0%)
+
+AGGREGATE STATISTICS
+--------------------------------------------------------------------------------
+
+2-mer Statistics (n=13):
+  num_atoms: mean=102.00, std=34.92, min=46.00, max=166.00
+  num_bonds: mean=103.92, std=36.04, min=45.00, max=167.00
+  num_heavy_atoms: mean=49.69, std=17.40, min=18.00, max=80.00
+  molecular_weight: mean=687.95, std=231.35, min=256.39, max=1085.15
+  radius_of_gyration: mean=8.29, std=1.79, min=5.43, max=11.30
+  end_to_end_distance: mean=18.89, std=8.27, min=8.00, max=35.36
+
+3-mer Statistics (n=11):
+  num_atoms: mean=143.55, std=52.66, min=68.00, max=248.00
+  num_bonds: mean=146.09, std=53.75, min=67.00, max=250.00
+  num_heavy_atoms: mean=67.91, std=22.46, min=27.00, max=102.00
+  molecular_weight: mean=945.23, std=302.94, min=383.58, max=1420.17
+  radius_of_gyration: mean=10.89, std=3.62, min=5.23, max=17.52
+  end_to_end_distance: mean=29.70, std=14.43, min=9.63, max=54.88
+
+4-mer Statistics (n=6):
+  num_atoms: mean=144.67, std=49.62, min=90.00, max=230.00
+  num_bonds: mean=147.00, std=51.11, min=89.00, max=233.00
+  num_heavy_atoms: mean=72.00, std=26.73, min=36.00, max=116.00
+  molecular_weight: mean=1015.22, std=367.58, min=510.76, max=1651.76
+  radius_of_gyration: mean=11.41, std=3.23, min=7.67, max=17.87
+  end_to_end_distance: mean=32.47, std=12.43, min=19.98, max=56.65
+
+5-mer Statistics (n=6):
+  num_atoms: mean=181.17, std=63.47, min=112.00, max=292.00
+  num_bonds: mean=185.17, std=66.73, min=111.00, max=301.00
+  num_heavy_atoms: mean=89.17, std=32.07, min=45.00, max=140.00
+  molecular_weight: mean=1243.58, std=417.77, min=637.95, max=1914.52
+  radius_of_gyration: mean=12.73, std=2.98, min=9.33, max=17.97
+  end_to_end_distance: mean=38.06, std=10.49, min=25.78, max=54.13
+
+SAMPLE DETAILED ENTRIES (first 10)
+--------------------------------------------------------------------------------
+
+Entry 1:
+  SMILES: *CC(*)C(=O)OCCCCCCn1c2ccccc2c2ccccc21
+  Tg: 48.00°C
+  2-mer: Failed
+  3-mer: Failed
+  4-mer: Failed
+  5-mer: Failed
+
+Entry 2:
+  SMILES: *CCCCCOC(=O)c1ccc(/C=C/c2ccc(C(=O)O*)cc2)cc1
+  Tg: 60.00°C
+  2-mer: Success
+    num_atoms: 92.0000
+    num_bonds: 95.0000
+    num_heavy_atoms: 50.0000
+    molecular_weight: 674.7900
+    radius_of_gyration: 8.2855
+    end_to_end_distance: 16.6688
+  3-mer: Success
+    num_atoms: 137.0000
+    num_bonds: 142.0000
+    num_heavy_atoms: 75.0000
+    molecular_weight: 1011.1770
+    radius_of_gyration: 10.2795
+    end_to_end_distance: 18.6772
+  4-mer: Failed
+  5-mer: Failed
+
+Entry 3:
+  SMILES: */C=C/c1ccc2c(c1)Sc1cc(*)ccc1N2c1ccc(OCCCCCCCCCCCC)cc1
+  Tg: 129.00°C
+  2-mer: Failed
+  3-mer: Failed
+  4-mer: Failed
+  5-mer: Failed
+
+Entry 4:
+  SMILES: *ON(C(F)(F)F)C(F)(Cl)C(*)(F)F
+  Tg: -50.00°C
+  2-mer: Failed
+  3-mer: Failed
+  4-mer: Failed
+  5-mer: Failed
+
+Entry 5:
+  SMILES: *Oc1ccc(C(c2ccc(OC(=O)c3ccccc3-c3ccccc3C(*)=O)cc2)(C(F)(F)F)C(F)(F)F)cc1
+  Tg: 162.00°C
+  2-mer: Failed
+  3-mer: Failed
+  4-mer: Failed
+  5-mer: Failed
+
+Entry 6:
+  SMILES: *CCCCCC(*)C
+  Tg: -66.00°C
+  2-mer: Failed
+  3-mer: Failed
+  4-mer: Failed
+  5-mer: Failed
+
+Entry 7:
+  SMILES: *CCCCCCNC(=O)c1ccc(C2(C)CC(C)(C)c3ccc(C(=O)N*)cc32)cc1
+  Tg: 190.00°C
+  2-mer: Success
+    num_atoms: 126.0000
+    num_bonds: 131.0000
+    num_heavy_atoms: 60.0000
+    molecular_weight: 811.1240
+    radius_of_gyration: 7.2511
+    end_to_end_distance: 14.1350
+  3-mer: Success
+    num_atoms: 188.0000
+    num_bonds: 196.0000
+    num_heavy_atoms: 90.0000
+    molecular_weight: 1215.6780
+    radius_of_gyration: 10.7417
+    end_to_end_distance: 24.7388
+  4-mer: Failed
+  5-mer: Failed
+
+Entry 8:
+  SMILES: *C(=O)Nc1cccc(NC(=O)/C=C/c2cccc(N3C(=O)c4ccc(*)cc4C3=O)c2)c1
+  Tg: 257.50°C
+  2-mer: Failed
+  3-mer: Failed
+  4-mer: Failed
+  5-mer: Failed
+
+Entry 9:
+  SMILES: *O[Si](*)(C)OCCCCCCCCCCCOc1ccc(C2COC(c3ccc(OCC(C)CC)cc3)OC2)cc1
+  Tg: 30.00°C
+  2-mer: Failed
+  3-mer: Failed
+  4-mer: Failed
+  5-mer: Failed
+
+Entry 10:
+  SMILES: *Oc1ccc(NC(=O)c2cc(NC(=O)c3ccc(OC(C)=O)cc3)cc(C(=O)Nc3ccc(Oc4ccc(C(C)(C)c5ccc(*)cc5)cc4)cc3)c2)cc1
+  Tg: 243.00°C
+  2-mer: Failed
+  3-mer: Failed
+  4-mer: Failed
+  5-mer: Failed
+

@@ -1,0 +1,266 @@
+Using device: cuda
+Experiment started at: 2026-03-25 01:41:09
+
+================================================================================
+Egc Conjugation-Specific Features Experiment
+================================================================================
+Working directory: /home/home_public/aisci/AIscientist/src/4_egc_conjugation
+Data path: /home/home_public/aisci/AIscientist/src/alldataset/Egc.csv
+Output directory: /home/home_public/aisci/AIscientist/src/4_egc_conjugation/results
+
+================================================================================
+Loading Egc Dataset
+================================================================================
+Loaded 3380 samples
+Columns: ['smiles', 'value']
+
+================================================================================
+Preparing Dataset with Conjugation Features
+================================================================================
+
+Successfully processed 3380 molecules
+Failed to process 0 molecules
+
+Feature dimensions:
+  Generic features: 148
+  Conjugation features: 10
+  Total features: 158
+
+Conjugation features: ['aromatic_ring_count', 'aromatic_ring_fraction', 'conjugated_bond_fraction', 'conjugation_length', 'sp2_sp2_bond_fraction', 'pi_electron_density', 'pi_electron_count', 'aromatic_atom_fraction', 'avg_conjugated_bond_order', 'aromatic_heteroatom_count']
+
+================================================================================
+Creating Stratified K-Fold Splits
+================================================================================
+Single bond fraction distribution:
+  Min: 0.0000
+  Max: 7.0000
+  Mean: 0.6444
+  Std: 1.0330
+
+Bin distribution:
+  Bin 0: 3230 samples (95.6%)
+  Bin 1: 150 samples (4.4%)
+  Bin 2: 0 samples (0.0%)
+  Bin 3: 0 samples (0.0%)
+  Bin 4: 0 samples (0.0%)
+
+Fold 1:
+  Train size: 2704
+  Val size: 676
+  Train bin distribution: [2584  120]
+  Val bin distribution: [646  30]
+
+Fold 2:
+  Train size: 2704
+  Val size: 676
+  Train bin distribution: [2584  120]
+  Val bin distribution: [646  30]
+
+Fold 3:
+  Train size: 2704
+  Val size: 676
+  Train bin distribution: [2584  120]
+  Val bin distribution: [646  30]
+
+Fold 4:
+  Train size: 2704
+  Val size: 676
+  Train bin distribution: [2584  120]
+  Val bin distribution: [646  30]
+
+Fold 5:
+  Train size: 2704
+  Val size: 676
+  Train bin distribution: [2584  120]
+  Val bin distribution: [646  30]
+
+================================================================================
+Fold 3 Diagnostic Analysis
+================================================================================
+
+Conjugation feature distribution in Fold 3:
+Validation set size: 676
+
+aromatic_ring_count:
+  Train: mean=1.5274, std=1.8781, min=0.0000, max=11.0000
+  Val:   mean=1.3683, std=1.6682, min=0.0000, max=9.0000
+
+aromatic_ring_fraction:
+  Train: mean=0.5428, std=0.4734, min=0.0000, max=1.0000
+  Val:   mean=0.5510, std=0.4729, min=0.0000, max=1.0000
+
+conjugated_bond_fraction:
+  Train: mean=0.4998, std=0.3110, min=0.0000, max=0.9747
+  Val:   mean=0.4914, std=0.3031, min=0.0000, max=0.9672
+
+conjugation_length:
+  Train: mean=9.1812, std=8.3512, min=0.0000, max=53.0000
+  Val:   mean=8.5488, std=7.6305, min=0.0000, max=40.0000
+
+sp2_sp2_bond_fraction:
+  Train: mean=0.4998, std=0.3110, min=0.0000, max=0.9747
+  Val:   mean=0.4914, std=0.3031, min=0.0000, max=0.9672
+
+pi_electron_density:
+  Train: mean=0.0339, std=0.0218, min=0.0000, max=0.0824
+  Val:   mean=0.0332, std=0.0208, min=0.0000, max=0.0810
+
+pi_electron_count:
+  Train: mean=11.8025, std=11.4670, min=0.0000, max=64.0000
+  Val:   mean=10.8062, std=10.4922, min=0.0000, max=52.0000
+
+aromatic_atom_fraction:
+  Train: mean=0.3239, std=0.3092, min=0.0000, max=0.9615
+  Val:   mean=0.3149, std=0.2943, min=0.0000, max=0.9545
+
+avg_conjugated_bond_order:
+  Train: mean=1.3667, std=0.4204, min=0.0000, max=2.0000
+  Val:   mean=1.3700, std=0.4378, min=0.0000, max=2.0000
+
+aromatic_heteroatom_count:
+  Train: mean=0.5544, std=1.1574, min=0.0000, max=8.0000
+  Val:   mean=0.4719, std=1.0324, min=0.0000, max=6.0000
+
+================================================================================
+Feature Correlation Analysis
+================================================================================
+
+Correlation of conjugation features with Egc:
+  conjugated_bond_fraction: r = -0.7474 ✓
+  sp2_sp2_bond_fraction: r = -0.7474 ✓
+  pi_electron_density: r = -0.7429 ✓
+  aromatic_atom_fraction: r = -0.7363 ✓
+  aromatic_ring_fraction: r = -0.6936 ✓
+  conjugation_length: r = -0.6593 ✓
+  aromatic_ring_count: r = -0.6434 ✓
+  pi_electron_count: r = -0.6071 ✓
+  aromatic_heteroatom_count: r = -0.4318 ✓
+  avg_conjugated_bond_order: r = -0.2540 
+
+================================================================================
+Running Stratified 5-Fold Cross-Validation
+================================================================================
+
+================================================================================
+Fold 1/5
+================================================================================
+Epoch 50/500: Train Loss=0.1171, Val Loss=0.1123, LR=0.000100
+Epoch 100/500: Train Loss=0.0796, Val Loss=0.0929, LR=0.000050
+Epoch 150/500: Train Loss=0.0712, Val Loss=0.0914, LR=0.000003
+Early stopping at epoch 180
+
+Fold 1 Results:
+  RMSE: 0.4992
+  MAE: 0.3477
+  R²: 0.9028
+
+================================================================================
+Fold 2/5
+================================================================================
+Epoch 50/500: Train Loss=0.1117, Val Loss=0.1135, LR=0.000100
+Epoch 100/500: Train Loss=0.0791, Val Loss=0.0946, LR=0.000050
+Epoch 150/500: Train Loss=0.0651, Val Loss=0.0916, LR=0.000025
+Epoch 200/500: Train Loss=0.0638, Val Loss=0.0880, LR=0.000006
+Early stopping at epoch 239
+
+Fold 2 Results:
+  RMSE: 0.5132
+  MAE: 0.3319
+  R²: 0.8930
+
+================================================================================
+Fold 3/5
+================================================================================
+Epoch 50/500: Train Loss=0.1110, Val Loss=0.1245, LR=0.000100
+Epoch 100/500: Train Loss=0.0838, Val Loss=0.1192, LR=0.000100
+Epoch 150/500: Train Loss=0.0657, Val Loss=0.1047, LR=0.000025
+Epoch 200/500: Train Loss=0.0615, Val Loss=0.1014, LR=0.000003
+Early stopping at epoch 233
+
+Fold 3 Results:
+  RMSE: 0.6145
+  MAE: 0.3625
+  R²: 0.8411
+
+================================================================================
+Fold 4/5
+================================================================================
+Epoch 50/500: Train Loss=0.1203, Val Loss=0.1083, LR=0.000100
+Epoch 100/500: Train Loss=0.0948, Val Loss=0.1056, LR=0.000050
+Epoch 150/500: Train Loss=0.0779, Val Loss=0.0874, LR=0.000050
+Epoch 200/500: Train Loss=0.0666, Val Loss=0.0847, LR=0.000013
+Epoch 250/500: Train Loss=0.0589, Val Loss=0.0835, LR=0.000002
+Early stopping at epoch 266
+
+Fold 4 Results:
+  RMSE: 0.5271
+  MAE: 0.3170
+  R²: 0.8856
+
+================================================================================
+Fold 5/5
+================================================================================
+Epoch 50/500: Train Loss=0.1178, Val Loss=0.0974, LR=0.000100
+Epoch 100/500: Train Loss=0.0886, Val Loss=0.0859, LR=0.000013
+Epoch 150/500: Train Loss=0.0854, Val Loss=0.0831, LR=0.000002
+Epoch 200/500: Train Loss=0.0852, Val Loss=0.0826, LR=0.000000
+Early stopping at epoch 219
+
+Fold 5 Results:
+  RMSE: 0.4772
+  MAE: 0.3264
+  R²: 0.9044
+
+================================================================================
+Overall Cross-Validation Results
+================================================================================
+Mean RMSE: 0.5262 ± 0.0471
+Mean MAE: 0.3371 ± 0.0161
+Mean R²: 0.8854 ± 0.0232
+
+Overall (pooled) RMSE: 0.5283
+Overall (pooled) MAE: 0.3371
+Overall (pooled) R²: 0.8857
+
+================================================================================
+Feature Importance Analysis
+================================================================================
+
+Top 20 most important features:
+  1. generic_67: 0.0527
+  2. generic_65: 0.0463
+  3. generic_26: 0.0450
+  4. generic_68: 0.0411
+  5. generic_69: 0.0391
+  6. generic_89: 0.0335
+  7. generic_19: 0.0289
+  8. generic_20: 0.0276
+  9. generic_17: 0.0270
+  10. generic_66: 0.0256
+  11. generic_18: 0.0254
+  12. generic_64: 0.0234
+  13. avg_conjugated_bond_order: 0.0219
+  14. generic_54: 0.0182
+  15. pi_electron_density: 0.0177
+  16. generic_50: 0.0174
+  17. generic_21: 0.0169
+  18. generic_30: 0.0163
+  19. generic_53: 0.0161
+  20. generic_63: 0.0159
+
+================================================================================
+Comparison with Baseline (Day 4)
+================================================================================
+Baseline mean RMSE: 1.19 ± 0.59
+Our mean RMSE: 0.5262 ± 0.0471
+Improvement: 55.8%
+
+Baseline Fold 3 RMSE: 2.25
+Our Fold 3 RMSE: 0.6145
+Improvement: 72.7%
+
+================================================================================
+Experiment Complete!
+================================================================================
+Results saved to: /home/home_public/aisci/AIscientist/src/4_egc_conjugation/results
+Experiment completed at: 2026-03-25 02:18:19

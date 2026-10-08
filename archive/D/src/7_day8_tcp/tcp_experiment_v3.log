@@ -1,0 +1,196 @@
+====================================================================================================
+                    TCP EXPERIMENT - PHASES 2-6 (Phase 1 already complete)
+====================================================================================================
+
+Start time: 2026-03-26 12:37:09
+
+✓ Phase 1 output found: 82.7 MB
+
+====================================================================================================
+NOTE: Phase 2 uncertainty estimation may take 30-60 minutes
+====================================================================================================
+
+====================================================================================================
+PHASE 2: QUICK DISTRIBUTION-AWARE SAMPLING
+====================================================================================================
+
+================================================================================
+PHASE 2: QUICK DISTRIBUTION-AWARE SAMPLING
+================================================================================
+
+Using device: cuda
+Found 988775 valid samples
+Selected 100000 samples randomly
+
+================================================================================
+PHASE 2 COMPLETE
+================================================================================
+Selected 100000 samples for pre-training
+Saved to: /home/home_public/aisci/AIscientist/src/7_day8_tcp/selected_indices.pt
+================================================================================
+
+
+====================================================================================================
+PHASE 2 COMPLETE - Elapsed: 0.1 min
+====================================================================================================
+
+✓ Saved selected indices
+
+====================================================================================================
+PHASE 3: TCP PRE-TRAINING
+====================================================================================================
+
+================================================================================
+PHASE 3: TCP PRE-TRAINING
+================================================================================
+
+Using device: cuda
+
+Loading pseudo-labels...
+Loaded 995799 polymers
+Valid samples: 988775
+
+Loading selected indices...
+Selected 100000 samples for pre-training
+
+Preparing selected PI1M samples...
+Processing selected samples:   0%|          | 0/100000 [00:00<?, ?it/s]Processing selected samples:   0%|          | 42/100000 [00:00<04:02, 411.76it/s]Processing selected samples:   0%|          | 96/100000 [00:00<03:26, 483.76it/s]Processing selected samples:   0%|          | 99/100000 [00:00<03:31, 473.09it/s]
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/run_phases_2_6.py", line 39, in run_phase
+    result = func()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase3_pretraining.py", line 301, in tcp_pretraining
+    real_idx = valid_indices[idx]
+IndexError: index 993196 is out of bounds for axis 0 with size 988775
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/run_phases_2_6.py", line 39, in run_phase
+    result = func()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase4_finetuning.py", line 255, in phase4_finetuning
+    if not os.path.exists('/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt'):
+NameError: name 'os' is not defined
+
+====================================================================================================
+✗ PHASE 3 FAILED - Elapsed: 0.0 min
+Error: index 993196 is out of bounds for axis 0 with size 988775
+====================================================================================================
+
+
+✗ Phase 3 failed. Trying to continue...
+
+====================================================================================================
+PHASE 4: FINE-TUNING ON Tg PREDICTION
+====================================================================================================
+
+================================================================================
+PHASE 4: FINE-TUNING ON Tg PREDICTION
+================================================================================
+
+Using device: cuda
+
+Loading Tg dataset...
+Loading Tg data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Found 7170 samples
+Successfully loaded 7170 valid samples
+
+Creating 5-fold splits...
+
+====================================================================================================
+✗ PHASE 4 FAILED - Elapsed: 0.4 min
+Error: name 'os' is not defined
+====================================================================================================
+
+
+✗ Phase 4 failed. Trying to continue...
+
+====================================================================================================
+PHASE 5: ABLATION STUDIES
+====================================================================================================
+
+================================================================================
+PHASE 5: ABLATION STUDIES
+================================================================================
+
+Using device: cuda
+
+Loading data...
+Loading Tg data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Found 7170 samples
+Successfully loaded 7170 valid samples
+Loading distribution-selected samples:   0%|          | 0/100000 [00:00<?, ?it/s]Loading distribution-selected samples:   0%|          | 41/100000 [00:00<04:06, 405.57it/s]Loading distribution-selected samples:   0%|          | 82/100000 [00:00<04:12, 396.49it/s]Loading distribution-selected samples:   0%|          | 99/100000 [00:00<04:02, 412.42it/s]
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/run_phases_2_6.py", line 39, in run_phase
+    result = func()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase5_ablation.py", line 308, in phase5_ablation_studies
+    real_idx = valid_indices[idx]
+IndexError: index 993196 is out of bounds for axis 0 with size 988775
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/run_phases_2_6.py", line 39, in run_phase
+    result = func()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase6_analysis.py", line 104, in phase6_analysis
+    checkpoint = torch_load_safe('/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt')
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase6_analysis.py", line 22, in torch_load_safe
+    return torch.load(path, weights_only=False)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt'
+
+====================================================================================================
+✗ PHASE 5 FAILED - Elapsed: 0.4 min
+Error: index 993196 is out of bounds for axis 0 with size 988775
+====================================================================================================
+
+
+✗ Phase 5 failed. Trying to continue...
+
+====================================================================================================
+PHASE 6: ANALYSIS AND COMPARISON
+====================================================================================================
+
+================================================================================
+PHASE 6: ANALYSIS AND COMPARISON
+================================================================================
+
+Using device: cuda
+
+Loading models...
+
+====================================================================================================
+✗ PHASE 6 FAILED - Elapsed: 0.0 min
+Error: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt'
+====================================================================================================
+
+
+✗ Phase 6 failed.
+
+====================================================================================================
+                                   EXPERIMENT COMPLETE
+====================================================================================================
+
+Total execution time: 0.8 minutes (0.0 hours)
+
+Phase Summary:
+Phase                          Status          Time (min)     
+------------------------------------------------------------
+Distribution Sampling          SUCCESS         0.1            
+TCP Pre-training               FAILED          0.0            
+Fine-tuning                    FAILED          0.4            
+Ablation Studies               FAILED          0.4            
+Analysis                       FAILED          0.0            
+
+------------------------------------------------------------
+
+Output Files:
+  ✓ PI1M_pseudo_labels.pt                    (82.7 MB)
+  ✓ selected_indices.pt                      (0.9 MB)
+  ✗ TCP_pretrained_model.pt                  
+  ✗ Tg_finetuned_results.txt                 
+  ✗ ablation_results.txt                     
+  ✗ thermodynamic_consistency.txt            
+  ✗ comparison_with_baseline.txt             
+
+End time: 2026-03-26 12:37:59
+====================================================================================================
+

@@ -1,0 +1,97 @@
+{
+  "model": "PolyKAN-SSM-v3",
+  "config": {
+    "data_path": "/home/home_public/aisci/AIscientist/src/alldataset/Tg.csv",
+    "work_dir": "/home/home_public/aisci/AIscientist/src/6_day6_polykanssm",
+    "hidden_dim": 256,
+    "num_layers": 5,
+    "dropout": 0.3,
+    "spectral_radius": 0.99,
+    "num_frequencies": 8,
+    "lr": 0.0005,
+    "weight_decay": 0.005,
+    "batch_size": 32,
+    "max_epochs": 500,
+    "patience": 40,
+    "scheduler_patience": 15,
+    "scheduler_factor": 0.5,
+    "noncovalent_cutoff": 5.0,
+    "num_seeds": 5,
+    "train_ratio": 0.7,
+    "val_ratio": 0.1,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      2024
+    ]
+  },
+  "node_dim": 21,
+  "edge_dim": 23,
+  "num_samples": 7170,
+  "mean_test_rmse": 39.95676745606403,
+  "std_test_rmse": 1.3013808382468688,
+  "mean_test_mae": 27.433735665926292,
+  "std_test_mae": 0.9255870568558557,
+  "mean_test_r2": 0.8723630588317988,
+  "mean_train_rmse": 29.224215389751084,
+  "mean_val_rmse": 40.44017468561966,
+  "train_val_gap": 11.215959295868576,
+  "best_test_rmse": 37.770659895412294,
+  "sota_target": 30.8,
+  "beat_sota": false,
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "best_epoch": 78,
+      "train_rmse": 27.83227273661722,
+      "val_rmse": 37.82180443991016,
+      "test_rmse": 39.472977408797526,
+      "test_mae": 27.150478567164313,
+      "test_r2": 0.8772785517472361,
+      "num_params": 2491915
+    },
+    {
+      "seed": 123,
+      "best_epoch": 104,
+      "train_rmse": 27.682634014109436,
+      "val_rmse": 40.193991508395534,
+      "test_rmse": 40.01040748540788,
+      "test_mae": 26.91654341648147,
+      "test_r2": 0.8690925854930368,
+      "num_params": 2491915
+    },
+    {
+      "seed": 456,
+      "best_epoch": 61,
+      "train_rmse": 30.169759675993436,
+      "val_rmse": 39.463983132199374,
+      "test_rmse": 37.770659895412294,
+      "test_mae": 26.388104476699684,
+      "test_r2": 0.8839367445859297,
+      "num_params": 2491915
+    },
+    {
+      "seed": 789,
+      "best_epoch": 96,
+      "train_rmse": 24.81165621514287,
+      "val_rmse": 41.511898376507666,
+      "test_rmse": 41.143318610204346,
+      "test_mae": 27.602294876901343,
+      "test_r2": 0.8664723972719315,
+      "num_params": 2491915
+    },
+    {
+      "seed": 2024,
+      "best_epoch": 40,
+      "train_rmse": 35.62475430689246,
+      "val_rmse": 43.20919597108556,
+      "test_rmse": 41.38647388049811,
+      "test_mae": 29.111256992384646,
+      "test_r2": 0.8650350150608599,
+      "num_params": 2491915
+    }
+  ],
+  "timestamp": "2026-05-08T08:58:01.081093"
+}

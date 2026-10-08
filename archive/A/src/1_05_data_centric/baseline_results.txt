@@ -1,0 +1,54 @@
+================================================================================
+BASELINE MODEL RESULTS - Polymer Tg Prediction
+================================================================================
+
+EXPERIMENT CONFIGURATION
+--------------------------------------------------------------------------------
+Total samples: 7170
+Train/Val/Test split: 80/10/10
+Random seed: 42
+Batch size: 32
+Max epochs: 200
+Early stopping patience: 20
+Device: cuda
+
+MLP BASELINE (ECFP Fingerprints)
+--------------------------------------------------------------------------------
+Architecture: 3-layer MLP
+Hidden dimensions: [512, 256, 128]
+Fingerprint: ECFP4 (radius=2, 2048 bits)
+Dropout: 0.3
+Optimizer: Adam (lr=0.001, weight_decay=1e-5)
+
+RESULTS:
+  RMSE: 38.7766°C
+  MAE: 26.7965°C
+  R²: 0.8781
+  Best val loss: 1410.8463
+  Epochs trained: 81
+
+Model saved: trained_models/mlp_baseline.pth
+
+SIMPLE GCN BASELINE (Graph Structure)
+--------------------------------------------------------------------------------
+Architecture: 3-layer GCN
+Hidden dimension: 128
+Node features: 5 (atomic num, degree, charge, hybridization, aromatic)
+Edge features: 4 (bond types)
+Pooling: Global mean pooling
+Dropout: 0.3
+Optimizer: Adam (lr=0.001, weight_decay=1e-5)
+
+RESULTS:
+  RMSE: 45.6924°C
+  MAE: 32.9822°C
+  R²: 0.8307
+  Best val loss: 1909.8574
+  Epochs trained: 192
+
+Model saved: trained_models/gcn_baseline.pth
+
+MODEL COMPARISON
+--------------------------------------------------------------------------------
+Best model (by RMSE): MLP
+Best model (by R²): MLP

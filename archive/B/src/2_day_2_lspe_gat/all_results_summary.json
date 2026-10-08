@@ -1,0 +1,38 @@
+{
+  "baseline": {
+    "test_rmse_mean": 38.5106201171875,
+    "test_rmse_std": 1.0921785989748418,
+    "test_mae_mean": 24.96174494425456,
+    "test_mae_std": 1.0763210572361857,
+    "test_r2_mean": 0.8777169783910116,
+    "test_r2_std": 0.006992827588259036,
+    "n_params": 256001
+  },
+  "static_rwpe": {
+    "test_rmse_mean": 36.29401524861654,
+    "test_rmse_std": 1.0428621816002663,
+    "test_mae_mean": 24.007065455118816,
+    "test_mae_std": 0.718392730981973,
+    "test_r2_mean": 0.8913863301277161,
+    "test_r2_std": 0.0062941013384963385,
+    "n_params": 260097
+  },
+  "lspe_gat": {
+    "test_rmse_mean": 37.96038055419922,
+    "test_rmse_std": 0.8731722379747514,
+    "test_mae_mean": 24.536069869995117,
+    "test_mae_std": 0.49412463186624694,
+    "test_r2_mean": 0.8812190294265747,
+    "test_r2_std": 0.005470779204428112,
+    "n_params": 776001
+  },
+  "lspe_gat_edge": {
+    "test_rmse_mean": 37.85132598876953,
+    "test_rmse_std": 0.5189020512308792,
+    "test_mae_mean": 24.336137135823567,
+    "test_mae_std": 0.14565265683698336,
+    "test_r2_mean": 0.8819408019383749,
+    "test_r2_std": 0.003249915684839052,
+    "n_params": 784369
+  }
+}

@@ -1,0 +1,339 @@
+/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase2_sampling.py:208: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  train_loader = DataLoader(train_data, batch_size=64, shuffle=True)
+/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase2_sampling.py:209: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  val_loader = DataLoader(val_data, batch_size=256, shuffle=False)
+/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+====================================================================================================
+                    TCP EXPERIMENT - PHASES 2-6 (Phase 1 already complete)
+====================================================================================================
+
+Start time: 2026-03-26 12:15:13
+
+✓ Phase 1 output found: 82.7 MB
+
+====================================================================================================
+NOTE: Phase 2 uncertainty estimation may take 30-60 minutes
+====================================================================================================
+
+====================================================================================================
+PHASE 2: DISTRIBUTION-AWARE SAMPLING
+====================================================================================================
+
+================================================================================
+PHASE 2: DISTRIBUTION-AWARE SAMPLING
+================================================================================
+
+Using device: cuda
+
+Loading Tg dataset...
+Loading Tg data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Found 7170 samples
+Successfully loaded 7170 valid samples
+Train: 6453, Val: 717
+
+Creating SimpleGIN model...
+
+Training uncertainty estimation model...
+Epoch   1: Train Loss=8518.1291, Val Loss=3930.1773, Val RMSE=62.69 K
+Epoch   2: Train Loss=3696.5147, Val Loss=2859.7802, Val RMSE=53.48 K
+Epoch   3: Train Loss=3458.8094, Val Loss=2851.6882, Val RMSE=53.40 K
+Epoch   4: Train Loss=3227.6544, Val Loss=2428.9125, Val RMSE=49.28 K
+Epoch   5: Train Loss=3139.2347, Val Loss=2366.2441, Val RMSE=48.64 K
+Epoch   6: Train Loss=3018.1562, Val Loss=2266.9708, Val RMSE=47.61 K
+Epoch   7: Train Loss=2836.7712, Val Loss=2039.1585, Val RMSE=45.16 K
+Epoch   8: Train Loss=2747.3820, Val Loss=1862.1248, Val RMSE=43.15 K
+Epoch   9: Train Loss=2571.9797, Val Loss=2061.1536, Val RMSE=45.40 K
+Epoch  10: Train Loss=2555.5380, Val Loss=1768.9694, Val RMSE=42.06 K
+Epoch  11: Train Loss=2475.9281, Val Loss=2321.4220, Val RMSE=48.18 K
+Epoch  12: Train Loss=2461.5390, Val Loss=2216.5203, Val RMSE=47.08 K
+Epoch  13: Train Loss=2404.1342, Val Loss=1656.1639, Val RMSE=40.70 K
+Epoch  14: Train Loss=2384.6799, Val Loss=1778.7310, Val RMSE=42.18 K
+Epoch  15: Train Loss=2256.7068, Val Loss=1840.4603, Val RMSE=42.90 K
+Epoch  16: Train Loss=2253.3851, Val Loss=1508.6447, Val RMSE=38.84 K
+Epoch  17: Train Loss=2272.2359, Val Loss=1526.9326, Val RMSE=39.08 K
+Epoch  18: Train Loss=2226.9774, Val Loss=1595.3941, Val RMSE=39.94 K
+Epoch  19: Train Loss=2288.4089, Val Loss=1456.7506, Val RMSE=38.17 K
+Epoch  20: Train Loss=2218.8859, Val Loss=1483.8957, Val RMSE=38.52 K
+Epoch  21: Train Loss=2133.4011, Val Loss=1813.4708, Val RMSE=42.58 K
+Epoch  22: Train Loss=2116.9676, Val Loss=1564.3388, Val RMSE=39.55 K
+Epoch  23: Train Loss=2096.4936, Val Loss=1839.3116, Val RMSE=42.89 K
+Epoch  24: Train Loss=2059.5737, Val Loss=1613.4232, Val RMSE=40.17 K
+Epoch  25: Train Loss=1995.1492, Val Loss=1426.5564, Val RMSE=37.77 K
+Epoch  26: Train Loss=2017.6672, Val Loss=1459.6452, Val RMSE=38.21 K
+Epoch  27: Train Loss=2057.3463, Val Loss=1429.8771, Val RMSE=37.81 K
+Epoch  28: Train Loss=2090.0012, Val Loss=1753.0229, Val RMSE=41.87 K
+Epoch  29: Train Loss=2131.7401, Val Loss=1508.6727, Val RMSE=38.84 K
+Epoch  30: Train Loss=2005.9964, Val Loss=1857.4406, Val RMSE=43.10 K
+Epoch  31: Train Loss=2052.9564, Val Loss=1363.9767, Val RMSE=36.93 K
+Epoch  32: Train Loss=1990.9933, Val Loss=1399.3316, Val RMSE=37.41 K
+Epoch  33: Train Loss=2035.9817, Val Loss=1414.1196, Val RMSE=37.60 K
+Epoch  34: Train Loss=1949.9326, Val Loss=1354.5441, Val RMSE=36.80 K
+Epoch  35: Train Loss=1973.9432, Val Loss=1509.4237, Val RMSE=38.85 K
+Epoch  36: Train Loss=1942.1678, Val Loss=1416.9869, Val RMSE=37.64 K
+Epoch  37: Train Loss=1933.0215, Val Loss=1457.3147, Val RMSE=38.17 K
+Epoch  38: Train Loss=1926.9495, Val Loss=1421.9905, Val RMSE=37.71 K
+Epoch  39: Train Loss=1876.5774, Val Loss=1293.6034, Val RMSE=35.97 K
+Epoch  40: Train Loss=1872.1963, Val Loss=1404.3681, Val RMSE=37.47 K
+Epoch  41: Train Loss=1965.5643, Val Loss=1366.3884, Val RMSE=36.96 K
+Epoch  42: Train Loss=1852.6846, Val Loss=1451.1827, Val RMSE=38.09 K
+Epoch  43: Train Loss=1872.9418, Val Loss=1330.7112, Val RMSE=36.48 K
+Epoch  44: Train Loss=1809.9215, Val Loss=1400.5442, Val RMSE=37.42 K
+Epoch  45: Train Loss=1792.7184, Val Loss=1345.5759, Val RMSE=36.68 K
+Epoch  46: Train Loss=1893.4967, Val Loss=1618.7910, Val RMSE=40.23 K
+Epoch  47: Train Loss=1842.6750, Val Loss=1359.6166, Val RMSE=36.87 K
+Epoch  48: Train Loss=1792.8621, Val Loss=1339.4242, Val RMSE=36.60 K
+Epoch  49: Train Loss=1790.1152, Val Loss=1318.5302, Val RMSE=36.31 K
+Epoch  50: Train Loss=1845.7411, Val Loss=1449.7070, Val RMSE=38.08 K
+Epoch  51: Train Loss=1722.2917, Val Loss=1254.5281, Val RMSE=35.42 K
+Epoch  52: Train Loss=1703.6204, Val Loss=1228.1906, Val RMSE=35.05 K
+Epoch  53: Train Loss=1655.4938, Val Loss=1313.8071, Val RMSE=36.25 K
+Epoch  54: Train Loss=1631.3089, Val Loss=1147.5988, Val RMSE=33.88 K
+Epoch  55: Train Loss=1653.0208, Val Loss=1186.5392, Val RMSE=34.45 K
+Epoch  56: Train Loss=1615.5812, Val Loss=1245.7814, Val RMSE=35.30 K
+Epoch  57: Train Loss=1683.3084, Val Loss=1295.6568, Val RMSE=36.00 K
+Epoch  58: Train Loss=1653.3140, Val Loss=1173.9968, Val RMSE=34.26 K
+Epoch  59: Train Loss=1660.9383, Val Loss=1284.8807, Val RMSE=35.85 K
+Epoch  60: Train Loss=1707.6991, Val Loss=1199.4269, Val RMSE=34.63 K
+Epoch  61: Train Loss=1693.9303, Val Loss=1239.9373, Val RMSE=35.21 K
+Epoch  62: Train Loss=1636.3252, Val Loss=1120.2609, Val RMSE=33.47 K
+Epoch  63: Train Loss=1596.0917, Val Loss=1195.5675, Val RMSE=34.58 K
+Epoch  64: Train Loss=1631.5828, Val Loss=1256.9930, Val RMSE=35.45 K
+Epoch  65: Train Loss=1635.0348, Val Loss=1421.5073, Val RMSE=37.70 K
+Epoch  66: Train Loss=1651.9447, Val Loss=1231.3053, Val RMSE=35.09 K
+Epoch  67: Train Loss=1582.2692, Val Loss=1205.0528, Val RMSE=34.71 K
+Epoch  68: Train Loss=1637.9963, Val Loss=1193.0519, Val RMSE=34.54 K
+Epoch  69: Train Loss=1604.9881, Val Loss=1254.5136, Val RMSE=35.42 K
+Epoch  70: Train Loss=1564.4295, Val Loss=1204.8951, Val RMSE=34.71 K
+Epoch  71: Train Loss=1550.0613, Val Loss=1229.9197, Val RMSE=35.07 K
+Epoch  72: Train Loss=1534.2989, Val Loss=1150.9029, Val RMSE=33.92 K
+Epoch  73: Train Loss=1545.2012, Val Loss=1163.6104, Val RMSE=34.11 K
+Epoch  74: Train Loss=1505.0932, Val Loss=1111.6630, Val RMSE=33.34 K
+Epoch  75: Train Loss=1510.2074, Val Loss=1149.8213, Val RMSE=33.91 K
+Epoch  76: Train Loss=1490.0989, Val Loss=1127.3247, Val RMSE=33.58 K
+Epoch  77: Train Loss=1500.8801, Val Loss=1142.0528, Val RMSE=33.79 K
+Epoch  78: Train Loss=1503.4890, Val Loss=1131.4451, Val RMSE=33.64 K
+Epoch  79: Train Loss=1469.3917, Val Loss=1136.3308, Val RMSE=33.71 K
+Epoch  80: Train Loss=1505.5317, Val Loss=1164.9328, Val RMSE=34.13 K
+Epoch  81: Train Loss=1466.2661, Val Loss=1121.9750, Val RMSE=33.50 K
+Epoch  82: Train Loss=1458.9078, Val Loss=1151.7431, Val RMSE=33.94 K
+Epoch  83: Train Loss=1479.8372, Val Loss=1112.7443, Val RMSE=33.36 K
+Epoch  84: Train Loss=1485.2282, Val Loss=1095.8343, Val RMSE=33.10 K
+Epoch  85: Train Loss=1492.0607, Val Loss=1127.5091, Val RMSE=33.58 K
+Epoch  86: Train Loss=1445.2149, Val Loss=1138.8812, Val RMSE=33.75 K
+Epoch  87: Train Loss=1435.6151, Val Loss=1110.6719, Val RMSE=33.33 K
+Epoch  88: Train Loss=1474.6715, Val Loss=1126.5883, Val RMSE=33.56 K
+Epoch  89: Train Loss=1433.7730, Val Loss=1191.5784, Val RMSE=34.52 K
+Epoch  90: Train Loss=1462.4633, Val Loss=1133.9696, Val RMSE=33.67 K
+Epoch  91: Train Loss=1415.9333, Val Loss=1106.0708, Val RMSE=33.26 K
+Epoch  92: Train Loss=1485.8408, Val Loss=1094.5116, Val RMSE=33.08 K
+Epoch  93: Train Loss=1445.4034, Val Loss=1136.0402, Val RMSE=33.71 K
+Epoch  94: Train Loss=1455.2668, Val Loss=1110.5237, Val RMSE=33.32 K
+Epoch  95: Train Loss=1443.3799, Val Loss=1118.0261, Val RMSE=33.44 K
+Epoch  96: Train Loss=1410.7514, Val Loss=1106.9888, Val RMSE=33.27 K
+Epoch  97: Train Loss=1435.7111, Val Loss=1063.3520, Val RMSE=32.61 K
+Epoch  98: Train Loss=1408.4423, Val Loss=1141.9848, Val RMSE=33.79 K
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/run_phases_2_6.py", line 39, in run_phase
+    result = func()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase2_sampling.py", line 261, in distribution_aware_sampling
+    pi1m_df = pd.read_csv('/home/home_public/aisci/AIscientist/src/alldataset/PI1M.csv')
+NameError: name 'pd' is not defined
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/run_phases_2_6.py", line 39, in run_phase
+    result = func()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase3_pretraining.py", line 287, in tcp_pretraining
+    selected_indices = torch_load_safe('/home/home_public/aisci/AIscientist/src/7_day8_tcp/selected_indices.pt')
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase3_pretraining.py", line 22, in torch_load_safe
+    return torch.load(path, weights_only=False)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/selected_indices.pt'
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/run_phases_2_6.py", line 39, in run_phase
+    result = func()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase4_finetuning.py", line 264, in phase4_finetuning
+    checkpoint = torch_load_safe('/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt')
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase4_finetuning.py", line 22, in torch_load_safe
+    return torch.load(path, weights_only=False)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt'
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/run_phases_2_6.py", line 39, in run_phase
+    result = func()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase5_ablation.py", line 298, in phase5_ablation_studies
+    selected_indices = torch_load_state('/home/home_public/aisci/AIscientist/src/7_day8_tcp/selected_indices.pt')
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase5_ablation.py", line 28, in torch_load_state
+    return torch.load(path, weights_only=False)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/selected_indices.pt'
+Traceback (most recent call last):
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/run_phases_2_6.py", line 39, in run_phase
+    result = func()
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase6_analysis.py", line 104, in phase6_analysis
+    checkpoint = torch_load_safe('/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt')
+  File "/home/home_public/aisci/AIscientist/src/7_day8_tcp/phase6_analysis.py", line 22, in torch_load_safe
+    return torch.load(path, weights_only=False)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/home_public/aisci/miniconda3/envs/aisci/lib/python3.10/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt'
+Epoch  99: Train Loss=1473.4926, Val Loss=1177.8562, Val RMSE=34.32 K
+Epoch 100: Train Loss=1427.9046, Val Loss=1170.2089, Val RMSE=34.21 K
+
+Best validation loss: 1063.3520
+
+================================================================================
+Loading PI1M data for uncertainty estimation...
+================================================================================
+
+Processing PI1M polymers...
+
+====================================================================================================
+✗ PHASE 2 FAILED - Elapsed: 2.3 min
+Error: name 'pd' is not defined
+====================================================================================================
+
+
+✗ Phase 2 failed. Trying to continue...
+
+====================================================================================================
+PHASE 3: TCP PRE-TRAINING
+====================================================================================================
+
+================================================================================
+PHASE 3: TCP PRE-TRAINING
+================================================================================
+
+Using device: cuda
+
+Loading pseudo-labels...
+Loaded 995799 polymers
+Valid samples: 988775
+
+Loading selected indices...
+
+====================================================================================================
+✗ PHASE 3 FAILED - Elapsed: 0.0 min
+Error: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/selected_indices.pt'
+====================================================================================================
+
+
+✗ Phase 3 failed. Trying to continue...
+
+====================================================================================================
+PHASE 4: FINE-TUNING ON Tg PREDICTION
+====================================================================================================
+
+================================================================================
+PHASE 4: FINE-TUNING ON Tg PREDICTION
+================================================================================
+
+Using device: cuda
+
+Loading Tg dataset...
+Loading Tg data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Found 7170 samples
+Successfully loaded 7170 valid samples
+
+Creating 5-fold splits...
+
+Loading pre-trained TCP model...
+
+====================================================================================================
+✗ PHASE 4 FAILED - Elapsed: 0.4 min
+Error: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt'
+====================================================================================================
+
+
+✗ Phase 4 failed. Trying to continue...
+
+====================================================================================================
+PHASE 5: ABLATION STUDIES
+====================================================================================================
+
+================================================================================
+PHASE 5: ABLATION STUDIES
+================================================================================
+
+Using device: cuda
+
+Loading data...
+Loading Tg data from /home/home_public/aisci/AIscientist/src/alldataset/Tg.csv...
+Found 7170 samples
+Successfully loaded 7170 valid samples
+
+====================================================================================================
+✗ PHASE 5 FAILED - Elapsed: 0.4 min
+Error: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/selected_indices.pt'
+====================================================================================================
+
+
+✗ Phase 5 failed. Trying to continue...
+
+====================================================================================================
+PHASE 6: ANALYSIS AND COMPARISON
+====================================================================================================
+
+================================================================================
+PHASE 6: ANALYSIS AND COMPARISON
+================================================================================
+
+Using device: cuda
+
+Loading models...
+
+====================================================================================================
+✗ PHASE 6 FAILED - Elapsed: 0.0 min
+Error: [Errno 2] No such file or directory: '/home/home_public/aisci/AIscientist/src/7_day8_tcp/TCP_pretrained_model.pt'
+====================================================================================================
+
+
+✗ Phase 6 failed.
+
+====================================================================================================
+                                   EXPERIMENT COMPLETE
+====================================================================================================
+
+Total execution time: 3.0 minutes (0.1 hours)
+
+Phase Summary:
+Phase                          Status          Time (min)     
+------------------------------------------------------------
+Distribution Sampling          FAILED          2.3            
+TCP Pre-training               FAILED          0.0            
+Fine-tuning                    FAILED          0.4            
+Ablation Studies               FAILED          0.4            
+Analysis                       FAILED          0.0            
+
+------------------------------------------------------------
+
+Output Files:
+  ✓ PI1M_pseudo_labels.pt                    (82.7 MB)
+  ✗ selected_indices.pt                      
+  ✗ TCP_pretrained_model.pt                  
+  ✗ Tg_finetuned_results.txt                 
+  ✗ ablation_results.txt                     
+  ✗ thermodynamic_consistency.txt            
+  ✗ comparison_with_baseline.txt             
+
+End time: 2026-03-26 12:18:14
+====================================================================================================
+

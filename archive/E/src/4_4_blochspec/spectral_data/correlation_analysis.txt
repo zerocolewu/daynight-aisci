@@ -1,0 +1,16 @@
+Feature Correlations with Tg
+============================================================
+Feature                      Pearson r         p-value    |r|>0.2
+------------------------------------------------------------
+spectral_gap                   -0.4683        0.00e+00        ***
+spectral_radius                +0.2040        3.10e-68        ***
+spectral_centroid              +0.5768        0.00e+00        ***
+spectral_variance              +0.1538        3.23e-39           
+low_freq_density               -0.6366        0.00e+00        ***
+band_width_max                 -0.4473        0.00e+00        ***
+band_width_mean                -0.3742       3.68e-237        ***
+band_flatness                  -0.0555        2.59e-06           
+spectral_gap_kpi               -0.1793        7.38e-53           
+density_at_Fermi               -0.3037       7.19e-153        ***
+spectral_skew                  -0.3548       1.00e-211        ***
+spectral_kurtosis              -0.2628       1.48e-113        ***

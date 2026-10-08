@@ -1,0 +1,240 @@
+Using device: cuda
+  Best depth: 7 (test RMSE: 40.0603)
+  Best hidden: 1200 (test RMSE: 38.1275)
+  Best lr: 0.001 (test RMSE: 36.5691)
+  Best dropout: 0.1 (test RMSE: 41.5132)
+Best from Phase 1: depth=7, hidden=1200, lr=0.001, dropout=0.1
+Phase 2 result: test_rmse=35.7190
+Loading pre-constructed polymer graphs from /home/home_public/aisci/AIscientist/src/5_6_chemprop_polymer/graphs_polymer.pkl
+Loaded 6960 polymer graphs
+
+######################################################################
+# PHASE 3: Dense Skip Connections
+######################################################################
+
+============================================================
+Config: dense_combined_d7_h1200
+  depth=7, hidden=1200, lr=0.001, dropout=0.1, dense=True, seed=71, bs=16
+============================================================
+  Split: train=5011, val=557, test=1392
+  Model parameters: 39,507,601
+  Epoch   1 | Train RMSE: 91.9429 | Val RMSE: 57.3933 | Best Val: 57.3933 (ep 1)
+  Epoch  20 | Train RMSE: 45.0996 | Val RMSE: 44.0200 | Best Val: 43.3260 (ep 15)
+  Epoch  40 | Train RMSE: 39.8954 | Val RMSE: 42.3473 | Best Val: 41.4469 (ep 33)
+  Epoch  60 | Train RMSE: 36.5480 | Val RMSE: 41.8550 | Best Val: 39.5866 (ep 51)
+  Epoch  80 | Train RMSE: 32.5974 | Val RMSE: 38.9330 | Best Val: 38.9330 (ep 80)
+  Epoch 100 | Train RMSE: 30.9375 | Val RMSE: 36.7514 | Best Val: 36.4904 (ep 99)
+  Epoch 120 | Train RMSE: 29.5085 | Val RMSE: 39.3773 | Best Val: 36.4904 (ep 99)
+  Early stopping at epoch 129, best val RMSE: 36.4904 at epoch 99
+
+  FINAL RESULTS (dense_combined_d7_h1200, seed=71):
+    Train RMSE: 27.7980 | MAE: 18.8672 | R2: 0.9374
+    Val   RMSE: 36.4904 | MAE: 24.0347 | R2: 0.8856
+    Test  RMSE: 35.7840 | MAE: 24.7030 | R2: 0.8934
+    Overfitting gap: -7.9860 (UNDERFITTING)
+    Best epoch: 99
+
+============================================================
+Config: dense_d7_h1200
+  depth=7, hidden=1200, lr=0.001, dropout=0.1, dense=True, seed=71, bs=16
+============================================================
+  Split: train=5011, val=557, test=1392
+  Model parameters: 39,507,601
+  Epoch   1 | Train RMSE: 90.1095 | Val RMSE: 66.7966 | Best Val: 66.7966 (ep 1)
+  Epoch  20 | Train RMSE: 45.2214 | Val RMSE: 43.4040 | Best Val: 43.4040 (ep 20)
+  Epoch  40 | Train RMSE: 38.9853 | Val RMSE: 44.3385 | Best Val: 41.4627 (ep 32)
+  Epoch  60 | Train RMSE: 37.0040 | Val RMSE: 40.3515 | Best Val: 39.0912 (ep 58)
+  Epoch  80 | Train RMSE: 33.3460 | Val RMSE: 39.7682 | Best Val: 38.4691 (ep 74)
+  Epoch 100 | Train RMSE: 30.6394 | Val RMSE: 40.9018 | Best Val: 37.7054 (ep 96)
+  Epoch 120 | Train RMSE: 29.2366 | Val RMSE: 39.4269 | Best Val: 37.6727 (ep 110)
+  Epoch 140 | Train RMSE: 28.2117 | Val RMSE: 38.0177 | Best Val: 36.5150 (ep 125)
+  Epoch 160 | Train RMSE: 27.1128 | Val RMSE: 38.3296 | Best Val: 36.5142 (ep 152)
+  Epoch 180 | Train RMSE: 26.6241 | Val RMSE: 38.7967 | Best Val: 36.5142 (ep 152)
+  Early stopping at epoch 182, best val RMSE: 36.5142 at epoch 152
+
+  FINAL RESULTS (dense_d7_h1200, seed=71):
+    Train RMSE: 24.4642 | MAE: 16.2162 | R2: 0.9515
+    Val   RMSE: 36.5142 | MAE: 24.5400 | R2: 0.8854
+    Test  RMSE: 35.7317 | MAE: 24.1984 | R2: 0.8937
+    Overfitting gap: -11.2675 (UNDERFITTING)
+    Best epoch: 152
+
+============================================================
+Config: dense_d5_h1200
+  depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True, seed=71, bs=16
+============================================================
+  Split: train=5011, val=557, test=1392
+  Model parameters: 23,665,201
+  Epoch   1 | Train RMSE: 78.3936 | Val RMSE: 68.4522 | Best Val: 68.4522 (ep 1)
+  Epoch  20 | Train RMSE: 46.2849 | Val RMSE: 46.0054 | Best Val: 43.9945 (ep 15)
+  Epoch  40 | Train RMSE: 40.2842 | Val RMSE: 43.0298 | Best Val: 40.4113 (ep 36)
+  Epoch  60 | Train RMSE: 35.9149 | Val RMSE: 42.2663 | Best Val: 37.9744 (ep 58)
+  Epoch  80 | Train RMSE: 33.2652 | Val RMSE: 40.7159 | Best Val: 37.9744 (ep 58)
+  Epoch 100 | Train RMSE: 31.0685 | Val RMSE: 40.0996 | Best Val: 37.1698 (ep 98)
+  Epoch 120 | Train RMSE: 28.7397 | Val RMSE: 38.1797 | Best Val: 36.7684 (ep 115)
+  Epoch 140 | Train RMSE: 33.3233 | Val RMSE: 36.9176 | Best Val: 36.5396 (ep 128)
+  Epoch 160 | Train RMSE: 26.3582 | Val RMSE: 37.0701 | Best Val: 35.8532 (ep 150)
+  Epoch 180 | Train RMSE: 24.8510 | Val RMSE: 36.7211 | Best Val: 35.4446 (ep 179)
+  Epoch 200 | Train RMSE: 35.2295 | Val RMSE: 47.1114 | Best Val: 35.4446 (ep 179)
+
+  FINAL RESULTS (dense_d5_h1200, seed=71):
+    Train RMSE: 20.9436 | MAE: 13.4656 | R2: 0.9645
+    Val   RMSE: 35.4446 | MAE: 23.5236 | R2: 0.8920
+    Test  RMSE: 35.4758 | MAE: 23.6312 | R2: 0.8952
+    Overfitting gap: -14.5322 (UNDERFITTING)
+    Best epoch: 179
+
+Phase 3 results saved (3 configs)
+
+Best overall: dense_d5_h1200 (test RMSE: 35.4758)
+
+============================================================
+Config: final_best_dense_d5_h1200_seed42
+  depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True, seed=42, bs=50
+============================================================
+  Split: train=5011, val=557, test=1392
+  Model parameters: 23,665,201
+  Epoch   1 | Train RMSE: 90.5890 | Val RMSE: 76.6293 | Best Val: 76.6293 (ep 1)
+  Epoch  20 | Train RMSE: 49.1911 | Val RMSE: 39.5284 | Best Val: 38.1860 (ep 18)
+  Epoch  40 | Train RMSE: 40.8683 | Val RMSE: 40.8116 | Best Val: 38.1860 (ep 18)
+  Epoch  60 | Train RMSE: 41.6507 | Val RMSE: 40.9722 | Best Val: 36.5472 (ep 54)
+  Epoch  80 | Train RMSE: 35.2676 | Val RMSE: 34.2061 | Best Val: 34.2061 (ep 80)
+  Epoch 100 | Train RMSE: 32.7278 | Val RMSE: 34.7842 | Best Val: 33.6539 (ep 94)
+  Epoch 120 | Train RMSE: 30.8353 | Val RMSE: 35.4556 | Best Val: 32.8044 (ep 114)
+  Epoch 140 | Train RMSE: 28.1976 | Val RMSE: 31.4528 | Best Val: 31.4528 (ep 140)
+  Epoch 160 | Train RMSE: 25.7296 | Val RMSE: 33.6783 | Best Val: 31.4528 (ep 140)
+  Early stopping at epoch 170, best val RMSE: 31.4528 at epoch 140
+
+  FINAL RESULTS (final_best_dense_d5_h1200_seed42, seed=42):
+    Train RMSE: 25.2894 | MAE: 17.3302 | R2: 0.9478
+    Val   RMSE: 31.4528 | MAE: 21.8360 | R2: 0.9208
+    Test  RMSE: 40.9522 | MAE: 27.2346 | R2: 0.8599
+    Overfitting gap: -15.6629 (UNDERFITTING)
+    Best epoch: 140
+
+============================================================
+Config: final_best_dense_d5_h1200_seed71
+  depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True, seed=71, bs=50
+============================================================
+  Split: train=5011, val=557, test=1392
+  Model parameters: 23,665,201
+  Epoch   1 | Train RMSE: 84.0077 | Val RMSE: 125.6539 | Best Val: 125.6539 (ep 1)
+  Epoch  20 | Train RMSE: 46.0172 | Val RMSE: 47.2643 | Best Val: 44.6989 (ep 19)
+  Epoch  40 | Train RMSE: 42.1818 | Val RMSE: 44.6211 | Best Val: 41.4497 (ep 38)
+  Epoch  60 | Train RMSE: 36.3279 | Val RMSE: 44.8657 | Best Val: 40.7169 (ep 58)
+  Epoch  80 | Train RMSE: 34.7746 | Val RMSE: 42.7741 | Best Val: 40.4181 (ep 66)
+  Epoch 100 | Train RMSE: 31.6866 | Val RMSE: 39.1914 | Best Val: 38.8367 (ep 99)
+  Epoch 120 | Train RMSE: 29.7525 | Val RMSE: 39.5999 | Best Val: 38.4683 (ep 112)
+  Epoch 140 | Train RMSE: 28.4327 | Val RMSE: 39.3696 | Best Val: 38.0128 (ep 137)
+  Epoch 160 | Train RMSE: 27.4186 | Val RMSE: 38.2949 | Best Val: 37.3744 (ep 144)
+  Epoch 180 | Train RMSE: 24.7324 | Val RMSE: 37.3616 | Best Val: 36.4439 (ep 170)
+  Epoch 200 | Train RMSE: 24.0362 | Val RMSE: 39.1711 | Best Val: 36.4439 (ep 170)
+  Early stopping at epoch 200, best val RMSE: 36.4439 at epoch 170
+
+  FINAL RESULTS (final_best_dense_d5_h1200_seed71, seed=71):
+    Train RMSE: 23.9531 | MAE: 16.6444 | R2: 0.9535
+    Val   RMSE: 36.4439 | MAE: 24.1764 | R2: 0.8859
+    Test  RMSE: 37.1104 | MAE: 25.8140 | R2: 0.8853
+    Overfitting gap: -13.1573 (UNDERFITTING)
+    Best epoch: 170
+
+============================================================
+Config: final_best_dense_d5_h1200_seed123
+  depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True, seed=123, bs=50
+============================================================
+  Split: train=5011, val=557, test=1392
+  Model parameters: 23,665,201
+  Epoch   1 | Train RMSE: 84.1765 | Val RMSE: 54.3031 | Best Val: 54.3031 (ep 1)
+  Epoch  20 | Train RMSE: 48.4949 | Val RMSE: 43.4188 | Best Val: 43.2234 (ep 18)
+  Epoch  40 | Train RMSE: 40.1583 | Val RMSE: 41.6918 | Best Val: 40.9659 (ep 32)
+  Epoch  60 | Train RMSE: 36.0644 | Val RMSE: 44.6078 | Best Val: 39.8236 (ep 46)
+  Early stopping at epoch 76, best val RMSE: 39.8236 at epoch 46
+
+  FINAL RESULTS (final_best_dense_d5_h1200_seed123, seed=123):
+    Train RMSE: 35.7240 | MAE: 25.4533 | R2: 0.8964
+    Val   RMSE: 39.8236 | MAE: 27.5790 | R2: 0.8637
+    Test  RMSE: 41.9501 | MAE: 28.9645 | R2: 0.8550
+    Overfitting gap: -6.2261 (UNDERFITTING)
+    Best epoch: 46
+
+  Multi-Seed: 40.00 ± 2.09
+======================================================================
+CHEMPROP HYPERPARAMETER OPTIMIZATION - FINAL REPORT
+======================================================================
+
+PHASE 1: One-Factor-At-A-Time Results
+----------------------------------------------------------------------
+Config               Test RMSE    Train RMSE   Gap        Epoch    Params      
+----------------------------------------------------------------------
+C_lr1e-03            36.5691      23.4225      -13.15(U)    139      695,101     
+B_hidden1200         38.1275      27.7588      -10.37(U)    111      9,260,401   
+B_hidden600          38.5197      29.8480      -8.67(U)    181      2,470,201   
+A_depth7             40.0603      34.2524      -5.81(U)    169      695,101     
+D_dropout0.1         41.5132      36.4792      -5.03(U)    192      695,101     
+D_dropout0.3         41.6028      35.8867      -5.72(U)    182      695,101     
+A_depth3             41.6296      36.5330      -5.10(U)    191      695,101     
+C_lr5e-04            42.0691      37.9434      -4.13(U)    54       695,101     
+C_lr1e-04            42.3056      35.7733      -6.53(U)    198      695,101     
+D_dropout0.0         42.4672      36.4775      -5.99(U)    182      695,101     
+B_hidden300          42.4900      35.9705      -6.52(U)    200      695,101     
+D_dropout0.2         42.5495      35.9309      -6.62(U)    195      695,101     
+A_depth5             43.0561      38.0237      -5.03(U)    124      695,101     
+
+Best hyperparameters from Phase 1:
+  Depth: 7
+  Hidden: 1200
+  LR: 0.001
+  Dropout: 0.1
+
+PHASE 2: Combined Best Configuration
+----------------------------------------------------------------------
+  Config: depth=7, hidden=1200, lr=0.001, dropout=0.1
+  Test RMSE: 35.7190
+  Train RMSE: 21.4394
+  Overfitting gap: -14.2796 (UNDERFITTING)
+  Best epoch: 130
+
+PHASE 3: Dense Skip Connections
+----------------------------------------------------------------------
+  dense_combined_d7_h1200:
+    Test RMSE: 35.7840 | Train RMSE: 27.7980 | Gap: -7.9860
+  dense_d7_h1200:
+    Test RMSE: 35.7317 | Train RMSE: 24.4642 | Gap: -11.2675
+  dense_d5_h1200:
+    Test RMSE: 35.4758 | Train RMSE: 20.9436 | Gap: -14.5322
+
+PHASE 4: Multi-Seed Verification
+----------------------------------------------------------------------
+  Config: depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True
+    Seed 42: Test RMSE=40.9522, Train RMSE=25.2894, Gap=-15.6629
+    Seed 71: Test RMSE=37.1104, Train RMSE=23.9531, Gap=-13.1573
+    Seed 123: Test RMSE=41.9501, Train RMSE=35.7240, Gap=-6.2261
+  Test RMSE: 40.00 ± 2.09
+  Train RMSE: 28.32 ± 5.26
+  Overfitting gap: -11.68 ± 3.99
+
+HYPOTHESIS ANALYSIS
+----------------------------------------------------------------------
+H12a - Capacity scaling and overfitting gap:
+  depth=3: gap=-5.10 (UNDERFITTING), test_rmse=41.63
+  depth=5: gap=-5.03 (UNDERFITTING), test_rmse=43.06
+  depth=7: gap=-5.81 (UNDERFITTING), test_rmse=40.06
+
+Dense skip connection effect:
+  dense_combined_d7_h1200: gap=-7.99 (UNDERFITTING), test_rmse=35.78
+  dense_d7_h1200: gap=-11.27 (UNDERFITTING), test_rmse=35.73
+  dense_d5_h1200: gap=-14.53 (UNDERFITTING), test_rmse=35.48
+
+OVERALL BEST CONFIGURATION
+----------------------------------------------------------------------
+  Config: dense_d5_h1200
+  depth=5, hidden=1200, lr=0.001, dropout=0.1, dense=True
+  Test RMSE: 35.4758
+  Train RMSE: 20.9436
+  Overfitting gap: -14.5322
+  Multi-seed: 40.00 ± 2.09
+
+Baseline (Day 5, default): ~43.46 ± 0.89
+Improvement: 7.98 RMSE
+
+DONE.
